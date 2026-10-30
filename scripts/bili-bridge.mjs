@@ -58,7 +58,7 @@ if (!/^\d{6,}$/.test(OWNER_UID)) {
 }
 
 const OC_BASE = "http://127.0.0.1:4096";   // opencode serve
-const OC_MODEL = { providerID: "opencode", id: "deepseek-v4.1-flash-free", variant: "max" };
+const OC_MODEL = { providerID: "modelscope", id: "Qwen/Qwen3.8-Flash-Next", variant: "high" };
 const OC_AGENT = "build";
 
 const POLL_MS = 12_000;        // 轮询间隔
