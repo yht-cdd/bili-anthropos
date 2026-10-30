@@ -94,7 +94,10 @@ async function cmdStats() {
   console.log("=== 账号 ===");
   console.log("  昵称:", d.uname, "| UID:", d.mid, "| Lv", d.level_info?.current_level);
   console.log("  硬币:", d.money, "| 粉丝:", rel.data?.follower ?? "-", "| 关注:", rel.data?.following ?? "-");
-  console.log("  实名:", d.vipStatus === 1 ? "✅ 已实名" : "❌ 未实名（投稿会被拦）");
+  // 警告：vipStatus 是大会员标志，不是实名。投稿不需要实名，
+  //       只需要在网页版投稿一次并验证手机号。
+  console.log("  大会员:", d.vipStatus === 1 ? "是" : "否");
+  console.log("  投稿权限:", "看 preupload 返回 OK=1 还是 601（与实名无关）");
   console.log("  大会员:", d.vip?.status ? "是" : "否");
 }
 

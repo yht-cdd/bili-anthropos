@@ -17,7 +17,7 @@
 | 私信能实时吗 | ✅ 能，同上。但**写私信封号风险高，建议只读** |
 | B 站有推送 API 吗 | ❌ 没有。官方 OpenAPI 不对个人开放评论流 |
 | WebSocket 值得做吗 | ❌ 不值得。私有协议 + protobuf，一次改版全废 |
-| 现在最大的阻塞 | **未实名**（`vipStatus: 0`），投稿接口直接 601 |
+| 投稿解锁条件 | **不是实名**，而是「网页版投稿一次 + 验证手机号」，之后 `preupload` 返回 `OK=1` |
 
 ---
 
@@ -255,7 +255,7 @@ w_rid:     951934fdf6394dc1ef5b8b3904caf6bc
 
 | 接口 | 状态 | 用途 | 耗时 |
 |---|---|---|---|
-| `GET /x/web-interface/nav` | ✅ | 登录态、等级、硬币、实名、wbi key | 56ms |
+| `GET /x/web-interface/nav` | ✅ | 登录态、等级、硬币、大会员、wbi key（**没有实名字段**） | 56ms |
 | `GET /x/relation/stat?vmid=` | ✅ | 粉丝数、关注数 | 65ms |
 | `GET /x/space/upstat?mid=` | ✅ | 播放量、点赞量汇总 | 61ms |
 | `GET /x/msgfeed/unread` | ✅ | **全局未读探针** | 45ms |
@@ -271,7 +271,7 @@ async function getStats() {
     mid: nav.data.mid,
     level: nav.data.level_info?.current_level,
     coins: nav.data.money,
-    realname: nav.data.vipStatus === 1,
+    realname: nav.data.vipStatus === 1,   // 警告：这是大会员标志，不是实名；投稿不看这个字段
     follower: rel.data?.follower,
     following: rel.data?.following,
     play: up.data?.archive?.view,
@@ -286,8 +286,8 @@ async function getStats() {
 |---|---|---|
 | `GET member.bilibili.com/x/web/archives` | ✅ | 我的稿件列表（含审核状态） |
 | `GET member.bilibili.com/x/web/index/stat` | ✅ | 创作中心数据看板 |
-| `GET member.bilibili.com/preupload` | ⛔ `601` | 上传预检 → **未实名被拦** |
-| `POST member.bilibili.com/x/vu/web/add/v3` | ⛔ | 投稿 → 需实名 |
+| `GET member.bilibili.com/preupload` | ✅ `OK=1` | 上传预检（**不需要实名**） |
+| `POST member.bilibili.com/x/vu/web/add/v3` | 待测 | 投稿提交（上传已通） |
 
 **实测返回**（0 稿件账号）：
 
@@ -310,7 +310,8 @@ async function getStats() {
 code=601 message=您上传视频过快
 ```
 
-> 这不是限速，是**未实名的统一话术**。实名后即消失。
+> 这不是限速，是**未解锁投稿权限的统一话术**。
+> 解锁条件是「网页版投稿一次 + 验证手机号」，**与实名无关**。
 
 ### 3.3 评论类
 
@@ -797,7 +798,7 @@ async function send(appr) {
 🟠 较高   fetch_session_msgs           每分钟 ≤ 1 次，且只在会话有更新时
 🔴 高     POST /x/v2/reply/add         每小时 ≤ 3 次，间隔 ≥ 90 秒
 🔴 极高   POST web_im/send_msg         ❌ 建议永不调用
-⛔ 禁止   member/preupload（未实名）    返回 601
+⚠️ 注意   member/preupload   参数 r 必须=upos（写 mp4 会 404 而非 601）
 ```
 
 **IP 因素**：杭州节点（`<YOUR_SERVER_IP>`）实测所有读接口正常，未触发风控。这是选择国内服务器的核心理由——GitHub Actions 的美国 IP 做写操作风险明显更高。
@@ -954,7 +955,7 @@ ps -o rss= -p "$(cat /opt/life/bili/data/daemon.pid)" | awk '{printf "%.1f MB\n"
 | 8 | 用 `document.cookie` 取 SESSDATA | HttpOnly，**取不到**，必须用 CDP `Storage.getCookies` |
 | 9 | 逐拍全量拉 @+reply+sessions | 会被风控，**必须先拉 unread 探针** |
 | 10 | 回复楼中楼只传 `parent` | 必须 **`root` + `parent` 都传** |
-| 11 | `preupload` 601 理解为限速 | 是**未实名的统一话术** |
+| 11 | `preupload` 601 理解为限速 | 是**未解锁投稿权限的统一话术**（网页版投一次 + 验证手机号即解锁，与实名无关） |
 | 12 | PowerShell 内联 JS 传服务器 | 被解析坏，**必须写文件 + Base64** |
 
 ---
@@ -968,7 +969,7 @@ ps -o rss= -p "$(cat /opt/life/bili/data/daemon.pid)" | awk '{printf "%.1f MB\n"
 等级：Lv2              硬币：68
 粉丝：1                关注：1
 稿件：0                未读：0
-实名：❌ 未实名        投稿：⛔ 被拦（601）
+实名：❌ 未实名        投稿：✅ 已解锁（手机号验证，非实名）
 ```
 
 ### 已跑通
@@ -983,7 +984,7 @@ ps -o rss= -p "$(cat /opt/life/bili/data/daemon.pid)" | awk '{printf "%.1f MB\n"
 
 ### 待办
 
-- [ ] **实名认证**（只有用户能做）→ 解锁投稿
+- [x] **网页版投稿一次 + 验证手机号**（不需要实名）→ 已解锁投稿
 - [ ] 养号 7 天（只读，建立正常行为画像）
 - [ ] 渲染管线跑通 → 出第一条视频
 - [ ] 回复四道闸接入 LLM
