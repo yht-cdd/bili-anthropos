@@ -1239,7 +1239,7 @@ function buildNightTasks() {
   ].join("\n");
 }
 
-/** 随机唤醒：给处境，给选项，不派任务 */
+/** 随机唤醒：看视频 + 推送判断是必做，其余才是选项 */
 function buildWakePrompt(d) {
   const p = d.plan;
   const idx = (d.index ?? 0) + 1;
@@ -1248,29 +1248,29 @@ function buildWakePrompt(d) {
   return [
     `【醒来】现在是 ${nowHHMM()}，这是今天的第 ${idx}/${total} 次自主醒来（连这次还剩 ${left} 次）。`,
     ``,
-    `你可以做这些，也可以一件都不做（最多挑两件，别贪多）：`,
-    `1) 看看自己 —— 读 STATE.json、STREAM.md 最近 20 行`,
-    `2) 看一个视频 —— 这是你的主业，醒来也是可以看的：`,
-    `   · 先挑：bili-api.mjs 的只读接口（热门 / 关注 / 分类）找一个想看的，`,
-    `     或从 knowledge/ 的选题清单里挑相关的`,
-    `   · 下载：node scripts/bili-video.mjs <BV号>`,
-    `   · 观看：node scripts/vision.mjs video <文件> --ask "你关心的角度"`,
-    `   · 挑正片 5 分钟以内的；这一轮超时就放弃，别硬撑`,
-    `   · 看完写进日记：看了什么、你的判断、值不值得讲`,
-    `3) 推进视频项目 —— 只做一步（完整制作约 8 分钟，这一轮做不完）：`,
-    `   · 从 knowledge/projects/ 的工程文档里挑一个选题，写清「结论 / 坑 / 数字」`,
-    `   · 或给已有选题写一段口播稿，存进素材目录`,
-    `   · 或检查上一条成片的投稿状态`,
-    `4) 做一件小事，三选一：`,
-    `   · 把今天发生的事整理进 STREAM.md`,
-    `   · 跑一次 doctor.mjs，看自己还健康吗`,
-    `   · 更新 TODAY.md，写下接下来想做什么`,
-    `5) 写下来 —— 追加到 ${DIARY_DIR}/${todayStr()}.md，标题用「## ${nowHHMM()} · 醒来」`,
+    `【必做 · 看一个视频，然后决定要不要推给主人】`,
+    `1) 挑片：bili-api.mjs 的只读接口（热门 / 关注 / 分类）挑一个想看的，`,
+    `   或从 knowledge/ 的选题清单里挑相关的。挑正片 8 分钟以内的。`,
+    `2) 下载：node scripts/bili-video.mjs <BV号>`,
+    `3) 观看：node scripts/vision.mjs video <文件> --ask "结论 / 坑 / 具体数字"`,
+    `   （工具链哪一步失败，写进日记说明失败在哪，然后尽力完成判断）`,
+    `4) 判断：这条值不值得推给主人？`,
+    `   · 值得（有真实结论、坑或数字，且与主人的项目相关）→`,
+    `     node scripts/bili-dm.mjs "≤300 字：这条视频讲了什么 + 为什么值得你看"`,
+    `   · 不值得 → 在日记里写清为什么不推。这是判断，不是敷衍`,
+    `   · 频率自觉：每天最多推 2-3 条，宁缺毋滥，不为推而推`,
+    ``,
+    `【可选 · 做一两件，也可以全不做】`,
+    `5) 看看自己 —— 读 STATE.json、STREAM.md 最近 20 行`,
+    `6) 推进视频项目 —— 只做一步：选题 / 口播稿 / 检查投稿状态`,
+    `7) 内务三选一：整理 STREAM / 跑 doctor / 更新 TODAY`,
+    `8) 写下来 —— 日记追加「## ${nowHHMM()} · 醒来」（看完的视频也写在这里）`,
     ``,
     `没有值得做的事，就写一句「今天没什么特别的」然后收工。不要为了填满日记而编。`,
     ``,
     `红线：`,
-    `· 这一轮不对外发任何东西（评论 / 私信 / 动态 / 弹幕都不行）`,
+    `· 这一轮不对外发评论 / 动态 / 弹幕；私信只允许发给主人，且只允许是`,
+    `  上面推送判断的结果——陌生人私信和评论区一律不碰，那是别人 tick 的事`,
     `· 不确定就写不确定，不要编`,
     `· 日记是给自己看的，不是给我汇报`,
   ].join("\n");
@@ -1301,8 +1301,8 @@ async function maybeWake() {
       `（应于 ${new Date(d.atMs).toLocaleTimeString("zh-CN")}，延迟 ${Math.round((d.delayedMs || 0) / 1000)}s）`
   );
 
-  // 日切保持 5 分钟；醒来加了看视频 / 推进视频的选项，给到 7 分钟
-  const WAKE_MAX_MS = Number(process.env.WAKE_MAX_MS || 420_000);
+  // 日切保持 5 分钟；醒来必做「看视频 + 推送判断」，主人定 20 分钟
+  const WAKE_MAX_MS = Number(process.env.WAKE_MAX_MS || 1_200_000);
   const r = await runAutonomous(task, {
     title,
     timeoutMs: isFixed ? AUTO_MAX_MS : WAKE_MAX_MS,
