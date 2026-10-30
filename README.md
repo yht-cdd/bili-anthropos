@@ -370,7 +370,10 @@ node /opt/life/scripts/bili-bridge.mjs --simulate "报出你的名字和所有�
 ├─ AGENT-INSTALL.md       给 agent 读的部署说明
 ├─ AGENTS.md              运行契约模板（她启动时读这个）
 ├─ scripts/
-│   ├─ bili-bridge.mjs    私信 ↔ 大脑 桥接
+│   ├─ bili-bridge.mjs    私信 ↔ 大脑 桥接（单会话常驻 + 自动压缩 + 失败重试）
+│   ├─ spawn-task.mjs     派活给子代理（免费模型阶梯，只回传结论）
+│   ├─ handover.mjs       换代前把记忆抽成档案
+│   ├─ session-reset.mjs  清空全部会话，只留一个默认会话
 │   ├─ bili-api.mjs       B 站只读 CLI
 │   ├─ bili-daemon.mjs    三级轮询感知守护
 │   ├─ bili-send.mjs      发送层（四道闸）

@@ -5,7 +5,7 @@
  * 职责：
  *   1. 轮询 B 站私信，只认 sender_uid == 主人 UID（secrets/owner_uid.txt）
  *   2. 把私信原文转成 opencode session 任务
- *   3. 等 AI 真正跑完（time.idle），提取回复文本
+ *   3. 等 AI 真正跑完（time.idle 到位 **且** outcome 不是 failed），提取回复文本
  *   4. 把回复发回主人私信
  *
  * 安全边界：
@@ -58,15 +58,37 @@ if (!/^\d{6,}$/.test(OWNER_UID)) {
 }
 
 const OC_BASE = "http://127.0.0.1:4096";   // opencode serve
-const OC_MODEL = { providerID: "modelscope", id: "Qwen/Qwen3.8-Flash-Next", variant: "high" };
+// 换模型不用改源码：模型下线时（实测 DeepSeek-V4.1-Flash 会直接 has no provider supported）
+// 只要改环境变量就能起，不用重新发版。
+const OC_MODEL = {
+  providerID: process.env.OC_PROVIDER_ID || "modelscope",
+  id: process.env.OC_MODEL_ID || "Qwen/Qwen3.8-Flash-Next",
+  variant: "high",
+};
 const OC_AGENT = "build";
 
+// 演练模式：所有私信只打日志不发出去。用来验证失败链路 / 超时补记，
+// 不至于为了测试真给账号发一条「模型挂了」。
+const DRY_DM = process.env.DRY_DM === "1";
+
 const POLL_MS = 12_000;        // 轮询间隔
-const WAIT_MAX_MS = 300_000;   // 单任务最长等待 5 分钟
+const WAIT_MAX_MS = Number(process.env.TASK_MAX_MS || 420_000);  // 单任务最长等 7 分钟
 const ACK_AFTER_MS = 20_000;   // 超过 20 秒还没完就先回一句「收到」
 const HEARTBEAT_EVERY = 25;    // 每 25 轮（约 5 分钟）写一次心跳
-const MAX_TURNS = 45;          // ⚠️ /message 单次最多返回 50 条（分页），
-                               //    所以阈值必须小于 50，否则「超过 80 条才换」永远触发不了
+
+// ── 会话寿命：只有一个会话，只压缩，不换代 ───────────────
+// 换会话 = 她失忆。之前按 45 条消息换，等于每聊几十句就把她打回原形。
+// 现在：同一个会话一直用；上下文涨到阈值就在原地压缩（compact），
+// 压缩也是模型调用，但换来的是「记得住前面」，比换会话便宜。
+// 阈值按主模型 1M 窗口取，留足余量；可用环境变量覆盖。
+const CTX_COMPACT_AT = Number(process.env.CTX_COMPACT_AT || 250_000);  // 到这就压缩
+const CTX_HARD_AT = Number(process.env.CTX_HARD_AT || 600_000);        // 到了就先压再干活
+
+// 超时之后继续守着这一轮。她常常在超时后几十秒才收尾，
+// 之前直接写「（这一轮没有产出文字）」把 496 字成果扔了。
+const LATE_HARVEST_MS = Number(process.env.LATE_HARVEST_MS || 600_000);
+const AUTO_MAX_MS = Number(process.env.AUTO_MAX_MS || 300_000);      // 自主回合上限
+const PUSH_MAX_MS = Number(process.env.PUSH_MAX_MS || 900_000);      // 手动 --push 上限（实测三步要 8 分钟以上）
 
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36";
 
@@ -190,6 +212,10 @@ async function sendDM(text, receiver = OWNER_UID) {
   const clean = String(text || "").trim();
   if (!clean) return { ok: false, why: "空内容" };
   if (clean.length > 900) return { ok: false, why: "过长" };
+  if (DRY_DM) {
+    log(`[演练] 本该发私信（${clean.length} 字）：${clean.replace(/\n/g, " ").slice(0, 60)}`);
+    return { ok: true, dry: true };
+  }
 
   const form = new URLSearchParams({
     "msg[sender_uid]": SELF_UID,
@@ -301,7 +327,14 @@ async function brainAlive() {
   }
 }
 
-/** 取或建 session */
+/**
+ * 拿会话。**只有一个会话，永远不换。**
+ *
+ * 换会话的代价是她失忆 —— 之前按 45 条消息换，每聊几十句就把她打回原形，
+ * 而且 19:40 那次正在干活的会话被换掉，活直接没了。
+ * 现在只在两种情况下建新会话：文件丢了、服务端确实没有这个会话。
+ * 上下文太大就压缩（compact），压不动也留着 —— 记得住比清爽重要。
+ */
 async function ensureSession() {
   let rec = null;
   try {
@@ -312,45 +345,178 @@ async function ensureSession() {
     try {
       const j = await oc(`/api/session/${rec.id}`);
       const d = j.data || j;
-      if (d && d.id) {
-        const msgs = await oc(`/api/session/${rec.id}/message`);
-        const n = (msgs.data || []).length;
-        if (n < MAX_TURNS) {
-          return rec.id;
+      if (d?.id) {
+        // 会话可能被绑在一个早就没额度的模型上（实测：绑了 deepseek 免费版，
+        // 每天额度一烧光，她收到消息也只能回「今天免费额度用完了」）。
+        // 会话不换，但模型必须和配置一致。
+        const cur = d.model || {};
+        if (cur.id && (cur.id !== OC_MODEL.id || cur.providerID !== OC_MODEL.providerID)) {
+          log(`🔧 会话绑的是 ${cur.providerID}/${cur.id}，与配置不符，改绑`);
+          await rebindModel(rec.id);
         }
-        log(`会话已 ${n} 条消息，轮换新 session`);
+        // 极端情况：已经撑到硬上限，先压一次再让她干活，不然这轮大概率报错
+        const usage = await contextUsage(rec.id);
+        if (usage >= CTX_HARD_AT) {
+          log(`🚨 上下文 ${usage} tokens 超过硬上限 ${CTX_HARD_AT}，先压缩再干活`);
+          await compactSession(rec.id, usage);
+        }
+        return rec.id;
       }
     } catch (e) {
       log("旧 session 不可用，重建:", e.message);
     }
   }
+  return await createSession("", "会话文件丢失或服务端不存在");
+}
 
+async function createSession(prevId = "", why = "") {
   const j = await oc("/api/session", {
     method: "POST",
     body: { location: { directory: HOME }, agent: OC_AGENT, model: OC_MODEL },
   });
   const d = j.data || j;
   if (!d?.id) throw new Error("创建 session 失败: " + JSON.stringify(j).slice(0, 200));
-  fs.writeFileSync(
-    SESSION_FILE,
-    JSON.stringify({ id: d.id, createdAt: Date.now() }, null, 2)
-  );
-  log("🆕 新 session:", d.id);
+  fs.writeFileSync(SESSION_FILE, JSON.stringify({ id: d.id, createdAt: Date.now(), why }, null, 2));
+  try {
+    fs.appendFileSync(
+      `${HOME}/bili/data/session_history.log`,
+      `${new Date().toISOString()} | 新会话 ${d.id} | 上一条 ${prevId || "-"} | 原因 ${why || "首次"}\n`
+    );
+  } catch {}
+  log(`🆕 新 session ${d.id}${why ? "（" + why + "）" : ""}`);
   return d.id;
 }
 
-/** 从 messages 里提取本次任务的 assistant 文本 */
-async function extractReply(sid, since, seen = new Set()) {
+/** 把会话的模型改绑到当前配置的模型（不换会话、不失忆） */
+async function rebindModel(sid) {
+  try {
+    const j = await oc(`/api/session/${sid}/model`, { method: "POST", body: { model: OC_MODEL }, timeout: 20_000 });
+    if (j.__status && j.__status >= 400) {
+      log("改绑模型失败:", JSON.stringify(j).slice(0, 160));
+      return false;
+    }
+    log(`🔧 已把会话模型改绑到 ${OC_MODEL.providerID}/${OC_MODEL.id}`);
+    return true;
+  } catch (e) {
+    log("改绑模型异常:", e.message);
+    return false;
+  }
+}
+
+/** 回合结束后顺手压缩：不占她的回复时间，也不会因为压缩把她卡住 */
+let COMPACTING = false;
+async function maybeCompact(sid) {
+  if (COMPACTING) return;
+  if (await sessionRunning(sid)) return;
+  const usage = await contextUsage(sid);
+  if (usage < CTX_COMPACT_AT) return;
+  COMPACTING = true;
+  try {
+    await compactSession(sid, usage);
+  } finally {
+    COMPACTING = false;
+  }
+}
+
+/**
+ * 这一轮真正喂进去的上下文有多大。
+ * session.tokens 是**累计值**（跨所有回合相加），拿来做阈值会误判；
+ * 单条 assistant 消息的 input + cache.read + output 才是「那一刻的上下文」。
+ */
+function turnTokens(m) {
+  const t = m?.tokens;
+  if (!t) return 0;
+  return Number(t.input || 0) + Number(t.cache?.read || 0) + Number(t.output || 0);
+}
+
+async function contextUsage(sid) {
+  try {
+    const j = await oc(`/api/session/${sid}/message`, { timeout: 15_000 });
+    for (const m of j.data || []) {
+      // /message 最新在前，第一条有 token 的就是当前上下文
+      if (m.type !== "assistant") continue;
+      const v = turnTokens(m);
+      if (v > 0) return v;
+    }
+  } catch (e) {
+    log("读上下文用量失败:", e.message);
+  }
+  return 0;
+}
+
+/** 会话里是否有正在跑的回合（两种信号取或：进程侧 active + 时间戳） */
+async function sessionRunning(sid) {
+  try {
+    const j = await oc("/api/session/active", { timeout: 8000 });
+    const d = j.data || {};
+    if (d[sid]) return true;
+  } catch {}
+  try {
+    const s = await oc(`/api/session/${sid}`, { timeout: 8000 });
+    const d = s.data || s;
+    const busy = Number(d?.time?.busy || 0);
+    const idle = Number(d?.time?.idle || 0);
+    return busy > idle;
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * 排一次压缩。
+ *
+ * 实测：POST /compact 带空对象 {} 才会被接受（不带 body 报 "Expected object"），
+ * 返回的是一条 delivery=steer 的队列消息 —— 它**不会在空闲时自己跑**，
+ * 而是等下一轮 prompt 开始时插进去执行。
+ * 所以这里只负责「排上队」，不去傻等它降下来（等不到，白等两分钟）。
+ */
+let lastCompactAt = 0;
+let compactWatch = null;   // 记下压缩前的用量，下一轮结束时对账
+const COMPACT_GAP_MS = 15 * 60_000;   // 压缩本身也是花钱的，别每轮都排
+
+async function compactSession(sid, before) {
+  if (Date.now() - lastCompactAt < COMPACT_GAP_MS) {
+    log("（距上次压缩不足 15 分钟，本轮不重复排）");
+    return false;
+  }
+  try {
+    const j = await oc(`/api/session/${sid}/compact`, {
+      method: "POST",
+      body: {},
+      timeout: 30_000,
+    });
+    if (j.__status && j.__status >= 400) {
+      log("压缩接口报错:", JSON.stringify(j).slice(0, 160));
+      return false;
+    }
+    lastCompactAt = Date.now();
+    compactWatch = { from: before, at: Date.now() };
+    log(`🗜 已排入压缩队列（压缩前 ${before} tokens），下一轮开始前生效`);
+    return true;
+  } catch (e) {
+    log("压缩失败:", e.message);
+    return false;
+  }
+}
+
+/** 从 messages 里提取本次任务的 assistant 文本 + 这一轮的结局 */
+async function readTurn(sid, since, seen = new Set()) {
   const j = await oc(`/api/session/${sid}/message`);
   const msgs = j.data || [];
   // ⚠️ /message 返回是【最新在前】的倒序数组，且分页最多 50 条。
   //    所以「哪条属于本轮」不能用下标判断（方向是反的），也不能只用时间戳判断
   //    （两个任务隔几秒就会互相污染）。用消息 id 做差集，再按时间正序取最新一块。
   const picked = [];
+  let end = null;      // 本轮的结束标记：opencode 每回合追加一条 type=idle 的消息，带 outcome
+  let lastErr = null;
   for (const m of msgs) {
-    if (m.type !== "assistant") continue;
-    if (seen.has(m.id)) continue;
     const t = Number(m.time?.created || 0);
+    if (m.type === "idle") {
+      if (!seen.has(m.id) && (!end || t > Number(end.time?.created || 0))) end = m;
+      continue;
+    }
+    if (m.type !== "assistant" || seen.has(m.id)) continue;
+    if (m.error) lastErr = m.error;
     if (t && t < since - 60_000) continue;
     for (const c of m.content || []) {
       if (c.type === "text") {
@@ -359,47 +525,105 @@ async function extractReply(sid, since, seen = new Set()) {
       }
     }
   }
-  if (!picked.length) return "";
   picked.sort((a, b) => a.t - b.t);
   const blocks = picked.map((x) => x.text);
   // 取最后一块；太短就把前一块拼上
-  let out = blocks[blocks.length - 1];
+  let out = blocks.length ? blocks[blocks.length - 1] : "";
   if (out.length < 12 && blocks.length > 1) {
     out = blocks[blocks.length - 2] + "\n\n" + out;
   }
-  return out;
+  return {
+    text: out,
+    outcome: String(end?.outcome || ""),
+    error: end?.error || lastErr || null,
+    endedAt: Number(end?.time?.created || 0),
+  };
+}
+
+async function snapshotIds(sid) {
+  try {
+    const b = await oc(`/api/session/${sid}/message`, { timeout: 10_000 });
+    return new Set((b.data || []).map((m) => m.id));
+  } catch (e) {
+    log("取消息基线失败（按空集处理）:", e.message);
+    return new Set();
+  }
+}
+
+/** 最新一条 user 消息的 id —— 用来判断「超时补记」期间有没有开新一轮 */
+async function newestUserId(sid) {
+  try {
+    const j = await oc(`/api/session/${sid}/message`, { timeout: 10_000 });
+    const u = (j.data || []).filter((m) => m.type === "user");
+    return u.length ? u[0].id : "";
+  } catch {
+    return "";
+  }
+}
+
+// ── 失败判定与告知 ────────────────────────────────────
+// 只等 time.idle 是不够的：模型报错时 idle 照样会被置上，
+// 于是「额度烧光 / 模型下线 / 401」全被当成「跑完了」，她就此沉默。
+// opencode 其实给得很清楚：每回合的 idle 消息带 outcome，失败还带 error。
+function redact(s) {
+  return String(s || "")
+    .replace(/sk-[A-Za-z0-9_-]{6,}/g, "sk-***")
+    .replace(/((?:api[_-]?key|token|password|passwd|secret|cookie)\s*[:=]\s*)\S+/gi, "$1***")
+    .slice(0, 160);
+}
+
+function describeFailure(error) {
+  const type = String(error?.type || "");
+  const msg = redact(error?.message || "");
+  const status = Number(error?.status || 0);
+  const all = `${type} ${msg}`;
+  if (status === 429 || /quota|insufficient|balance|rate.?limit|额度|余额|用量/i.test(all))
+    return { kind: "quota", text: "模型额度用完了（429 / 余额不足）" };
+  if (status === 401 || status === 403 || /unauthor|invalid.?api.?key|permission/i.test(all))
+    return { kind: "auth", text: "模型鉴权失败（key 或权限）" };
+  if (/no provider supported|model.?not.?found|does not exist|unknown model/i.test(all) || status === 404)
+    return { kind: "model", text: "这个模型 id 已经没有 provider 支持了" };
+  if (status >= 500) return { kind: "server", text: `模型服务端 ${status}` };
+  if (/timeout|timed?\s?out|ECONNRESET|ECONNREFUSED|fetch failed|socket/i.test(all))
+    return { kind: "network", text: "到模型那边的网络断了" };
+  return { kind: "other", text: msg || type || "未知错误" };
+}
+
+let lastFailNoticeAt = 0;
+let autoFailStreak = 0;
+const FAIL_NOTICE_GAP_MS = 10 * 60_000;
+
+/**
+ * 失败了要说出来。之前是沉默 —— 她静静地躺五分钟，主人以为她不想理人。
+ * 自主回合例外：半夜弹消息比不出声更糟，所以连续挂 3 次才报一次。
+ */
+async function notifyFailure(info, kind) {
+  if (kind === "autonomous") {
+    autoFailStreak += 1;
+    if (autoFailStreak < 3) {
+      log(`（自主回合连续失败 ${autoFailStreak} 次，先不打扰）`);
+      return;
+    }
+  }
+  if (Date.now() - lastFailNoticeAt < FAIL_NOTICE_GAP_MS) {
+    log("（失败通知冷却中，跳过）");
+    return;
+  }
+  lastFailNoticeAt = Date.now();
+  const ok = await sendDM(
+    `我这边模型这一轮没跑起来：${info.text}。自动重试过一次，还是不行。\n不是你的事，我过会儿再试。`
+  );
+  log(ok.ok ? "📤 已把「模型挂了」告诉主人" : `⚠️ 失败通知没发出去：${ok.why}`);
 }
 
 /**
- * 发任务并等结果
- *
- * kind 决定这段话的「出口」：
- *   reply      —— 有人问她（主人私信），产出会被转成私信发回去
- *   autonomous —— 她自己想干活，产出写进日记，不发任何人
- *   push       —— 自主动作，但**允许她用命令行主动推送一条给主人**
- *
- * 三者共用同一个会话和执行器，但终点完全不同。
- * 混用会让她的自言自语变成发给主人的消息 —— 这是必须分开的唯一理由。
- *
- * 为什么需要 push：autonomous 明确禁止发私信，
- * 但"主动推荐一条视频"这个动作本身就是要发私信。
- * 提示词得告诉她「自己用 bili-dm.mjs」，而不是「你的回复会自动转发」。
+ * 拼这一轮给她的说明：同一段话，出口不同，结尾的约束就不同。
  */
-async function runTask(text, { onAck, kind = "reply", timeoutMs = WAIT_MAX_MS } = {}) {
-  const sid = await ensureSession();
-  const since = Date.now();
-
-  // 基线：任务开始前已有消息的 id 集合。
-  // 不能用条数下标 —— /message 是倒序且分页，新消息在数组开头。
-  let seen = new Set();
-  try {
-    const b = await oc(`/api/session/${sid}/message`, { timeout: 10_000 });
-    seen = new Set((b.data || []).map((m) => m.id));
-  } catch (e) {
-    log("取消息基线失败（按空集处理）:", e.message);
-  }
-
-  const meta =
+function buildTurnMeta(text, kind, { retry = false } = {}) {
+  const note = retry
+    ? `\n（这是同一任务的第 2 次尝试：上一轮中途挂了，你可能已经做过一部分 —— 先检查再继续，别重复发一样的东西。）`
+    : "";
+  const body =
     kind === "autonomous"
       ? `[来源：自主动作 · 无人值守 · 无回复对象 · ${ts()}]\n` +
         `---\n${text}\n---\n` +
@@ -418,6 +642,23 @@ async function runTask(text, { onAck, kind = "reply", timeoutMs = WAIT_MAX_MS } 
       : `[来源：主人 B 站私信 · ${ts()}]\n` +
         `---\n${text}\n---\n` +
         `（提醒：你的回复会被自动转发到主人 B 站私信，请用纯文本、直接给结论。）`;
+  return body + note;
+}
+
+/**
+ * 跑一轮，不重试。
+ *
+ * 判定「这一轮完了」有两条：时间上 idle 到位（旧逻辑只有这条），
+ * 以及 outcome 不是 failed。少了后者，模型报错也会被当成做完 —— 这是她沉默五分钟的根因。
+ */
+async function runTurn(
+  text,
+  { onAck, kind = "reply", timeoutMs = WAIT_MAX_MS, lateTitle = "", retry = false } = {}
+) {
+  const sid = await ensureSession();
+  const since = Date.now();
+  const seen = await snapshotIds(sid);
+  const meta = buildTurnMeta(text, kind, { retry });
 
   const j = await oc(`/api/session/${sid}/prompt`, {
     method: "POST",
@@ -427,6 +668,7 @@ async function runTask(text, { onAck, kind = "reply", timeoutMs = WAIT_MAX_MS } 
   if (j.__status && j.__status >= 400) {
     throw new Error("prompt 提交失败: " + JSON.stringify(j).slice(0, 200));
   }
+  const turnUser = await newestUserId(sid);
 
   const deadline = Date.now() + timeoutMs;
   let acked = false;
@@ -446,8 +688,31 @@ async function runTask(text, { onAck, kind = "reply", timeoutMs = WAIT_MAX_MS } 
     const finished = idle > 0 && idle >= since - 3000 && (!busy || idle >= busy);
 
     if (finished) {
-      const reply = await extractReply(sid, since, seen);
-      return { ok: true, reply, sid, tookMs: Date.now() - since };
+      const t = await readTurn(sid, since, seen);
+      const sessOutcome = String(d?.outcome || "");
+      const outcome = t.outcome || sessOutcome;
+      const failed = outcome === "failed" || (!t.outcome && !!t.error);
+      // 上一轮排过压缩：这一轮开头它已经生效，收尾时对一次账
+      if (compactWatch) {
+        const u = await contextUsage(sid);
+        if (u > 0 && u < compactWatch.from * 0.9) log(`✅ 压缩生效：${compactWatch.from} → ${u} tokens`);
+        else log(`⚠️ 压缩后 ${u || "?"} tokens（压缩前 ${compactWatch.from}），没明显下降`);
+        compactWatch = null;
+      }
+      // 回合结束后 20 秒再看上下文：等 active 标记彻底落下去，压缩才不会被自己挡住。
+      // 放在后台，不占用她的回复时间。
+      setTimeout(() => {
+        maybeCompact(sid).catch((e) => log("自动压缩异常:", e.message));
+      }, 20_000).unref?.();
+      return {
+        ok: !failed,
+        failed,
+        reply: t.text,
+        outcome,
+        error: t.error,
+        sid,
+        tookMs: Date.now() - since,
+      };
     }
 
     if (!acked && onAck && Date.now() - since > ACK_AFTER_MS) {
@@ -460,7 +725,110 @@ async function runTask(text, { onAck, kind = "reply", timeoutMs = WAIT_MAX_MS } 
     }
   }
 
+  // 超时：她很可能还在跑。别急着盖棺，先把这一轮守住。
+  if (lateTitle) {
+    harvestLate(sid, since, seen, lateTitle, turnUser).catch((e) => log("补记异常:", e.message));
+  }
   return { ok: false, reply: "", sid, tookMs: Date.now() - since, timeout: true };
+}
+
+/**
+ * 发任务并等结果（失败重试一次，仍失败就报出来）
+ *
+ * kind 决定这段话的「出口」：
+ *   reply      —— 有人问她（主人私信），产出会被转成私信发回去
+ *   autonomous —— 她自己想干活，产出写进日记，不发任何人
+ *   push       —— 自主动作，但**允许她用命令行主动推送一条给主人**
+ *
+ * 三者共用同一个会话和执行器，但终点完全不同。
+ * 混用会让她的自言自语变成发给主人的消息 —— 这是必须分开的唯一理由。
+ */
+async function runTask(text, opts = {}) {
+  const first = await runTurn(text, opts);
+  if (!first.failed) return first;
+
+  const f1 = describeFailure(first.error);
+  log(`↻ 这一轮失败了（${f1.kind}: ${f1.text}），按约定重试一次`);
+
+  // 模型失效是「会话被绑死在那个 model 上」—— 但**不换会话**，
+  // 只把模型改绑到当前配置的模型，然后重试。记忆比干净重要。
+  if (f1.kind === "model") {
+    const sid = first.sid || (() => {
+      try {
+        return JSON.parse(fs.readFileSync(SESSION_FILE, "utf8")).id;
+      } catch {
+        return "";
+      }
+    })();
+    if (sid) await rebindModel(sid);
+  }
+
+  await sleep(f1.kind === "quota" || f1.kind === "network" ? 30_000 : 8_000);
+
+  const second = await runTurn(text, { ...opts, retry: true, onAck: null });
+  if (!second.failed) {
+    log("✅ 重试成功");
+    return { ...second, retried: true };
+  }
+
+  const f2 = describeFailure(second.error);
+  log(`❌ 重试仍然失败（${f2.kind}: ${f2.text}）—— 不再沉默`);
+  await notifyFailure(f2, opts.kind || "reply");
+  return { ...second, failure: f2, retried: true };
+}
+
+// ── 超时之后的补记 ────────────────────────────────────
+// 「（这一轮没有产出文字）」是怎么来的：她跑了 8 分钟，我们 7 分钟就放弃了；
+// 她在第 8 分钟写完、自己把私信发了，而我们早就往日记里盖了一句「没有产出」。
+// 现在超时不收工：继续守着同一轮，跑完把正文和实际动作补进日记。
+function harvestActions(sinceMs) {
+  try {
+    const p = `${HOME}/exec/bridge.log`;
+    if (!fs.existsSync(p)) return "";
+    const lines = fs.readFileSync(p, "utf8").trim().split("\n").slice(-300);
+    const hits = [];
+    for (const ln of lines) {
+      const m = ln.match(/^(\S+) \| ([^|]+) \| (.*)$/);
+      if (!m) continue;
+      const t = Date.parse(m[1]);
+      if (!t || t < sinceMs - 2000) continue;
+      const what = m[2].trim();
+      if (!/私信|回复|评论|动态|投稿/.test(what)) continue;
+      const len = (m[3].match(/(\d+)字/) || [])[1] || "";
+      hits.push(`· ${what}${len ? ` ${len} 字` : ""}`);
+    }
+    if (!hits.length) return "";
+    return `\n\n（本轮外部动作：\n${hits.slice(-6).join("\n")}\n）`;
+  } catch {
+    return "";
+  }
+}
+
+async function harvestLate(sid, since, seen, title, turnUser) {
+  log(`🕯 这一轮超时了，继续守着（最多 ${Math.round(LATE_HARVEST_MS / 60000)} 分钟），跑完补记`);
+  const deadline = Date.now() + LATE_HARVEST_MS;
+  while (Date.now() < deadline) {
+    await sleep(15_000);
+    // 已经开了新一轮就别补了 —— 那会把下一轮的话记到这一轮头上
+    if (turnUser) {
+      const now = await newestUserId(sid);
+      if (now && now !== turnUser) {
+        log("🕯 会话里已经开了新一轮，放弃补记");
+        return;
+      }
+    }
+    if (await sessionRunning(sid)) continue;
+    const t = await readTurn(sid, since, seen);
+    const body = cleanReply(t.text);
+    if (!body) {
+      log(`🕯 收尾了，但没有文字（outcome=${t.outcome || "?"}）`);
+      return;
+    }
+    diaryAppend(`${title}（补记）`, body + harvestActions(since));
+    log(`🕯 补记完成 ${body.length} 字`);
+    return;
+  }
+  log("🕯 守到上限，这一轮始终没回来");
 }
 
 // ── 回复清洗与分片 ────────────────────────────────────
@@ -503,7 +871,6 @@ function sliceReply(s, max = 380, maxParts = 4) {
 // 为什么单开一条路：私信回合的终点是「发一条消息」，自主回合没有收信人。
 // 如果复用同一条路，她半夜自己干的活会被当成回复发到主人手机上。
 const DIARY_DIR = `${HOME}/diary`;
-const AUTO_MAX_MS = 180_000;   // 自主回合比私信短：它不阻塞你，但不能真的挡住你
 let AUTO_BUSY = false;
 
 /** 按本地日期追加日记（不覆盖，一天一个文件） */
@@ -519,8 +886,8 @@ function diaryAppend(title, body) {
 }
 
 /**
- * 跑一轮自主回合：产出只进日记，绝不发私信。
- * 失败也不发私信 —— 半夜弹一条「出错了」比不出声更糟。
+ * 跑一轮自主回合：产出只进日记，不自动发私信。
+ * 失败也不立刻报警 —— 半夜弹一条「出错了」比不出声更糟，连续挂三次才报一次。
  */
 async function runAutonomous(task, { title = "自主回合", timeoutMs = AUTO_MAX_MS, kind = "autonomous" } = {}) {
   if (AUTO_BUSY) {
@@ -536,8 +903,22 @@ async function runAutonomous(task, { title = "自主回合", timeoutMs = AUTO_MA
       return { ok: false, error: "brain offline" };
     }
 
-    const r = await runTask(task, { kind, timeoutMs });
-    const body = cleanReply(r.reply) || "（这一轮没有产出文字）";
+    const r = await runTask(task, { kind, timeoutMs, lateTitle: title });
+    const text = cleanReply(r.reply);
+    const actions = harvestActions(t0);
+    // 没有正文时，也要把「她这一轮到底动了什么」留下来 —— 一句「没有产出文字」
+    // 会把「发了 496 字私信」这种事实抹掉。
+    let body;
+    if (text) {
+      body = text + actions;
+      autoFailStreak = 0;
+    } else if (r.timeout) {
+      body = "（这一轮没在时限内跑完，先记一笔；它跑完我会把正文补在这里）" + actions;
+    } else if (r.failed) {
+      body = `（这一轮模型没跑起来：${r.failure?.text || describeFailure(r.error).text}）` + actions;
+    } else {
+      body = "（这一轮没有文字输出）" + actions;
+    }
     const file = diaryAppend(title, body);
 
     try {
@@ -690,9 +1071,47 @@ async function maybeWake() {
   return r;
 }
 
+// ── 付费放行条 ────────────────────────────────────────
+// 免费模型用完时 spawn-task 会留一条待批记录；主人回一句「同意」，
+// 这里给他 12 小时放行 —— 不点这个头，任何人（包括她自己）都不能花 token。
+const APPROVAL_FILE = `${HOME}/bili/data/spend_approval.json`;
+const PENDING_FILE = `${HOME}/bili/data/spend_pending.json`;
+const APPROVE_RE = /^(同意|批准|可以|行|继续|花钱|ok|approve)([，,。.!！\s]*(继续|做|干|吧))*[，,。.!！\s]*$/i;
+
+function maybeApproveSpend(text) {
+  if (!APPROVE_RE.test(String(text || "").trim())) return null;
+  let pending = null;
+  try {
+    pending = JSON.parse(fs.readFileSync(PENDING_FILE, "utf8"));
+  } catch {
+    return null;   // 没有待批的事，就别把「好」当成授权
+  }
+  const grant = {
+    grantedAt: new Date().toISOString(),
+    expiresAt: Date.now() + 12 * 3600_000,
+    by: "owner",
+    note: String(pending.task || "").slice(0, 120),
+  };
+  try {
+    fs.mkdirSync(`${HOME}/bili/data`, { recursive: true });
+    fs.writeFileSync(APPROVAL_FILE, JSON.stringify(grant, null, 2) + "\n");
+    fs.unlinkSync(PENDING_FILE);
+  } catch (e) {
+    log("写放行条失败:", e.message);
+    return null;
+  }
+  log(`💳 主人批了付费：放行到 ${new Date(grant.expiresAt).toLocaleString("zh-CN")}`);
+  return grant;
+}
+
 // ── 主流程 ────────────────────────────────────────────
 async function handleOwnerMessage(text, raw) {
   log("📨 主人: " + text.replace(/\n/g, " ").slice(0, 120));
+
+  const grant = maybeApproveSpend(text);
+  if (grant) {
+    await sendDM("收到，放行 12 小时。这个活我现在继续做。");
+  }
 
   if (!(await brainAlive())) {
     await sendDM("我这边大脑没起来（opencode 服务离线），已经记下你的消息，等恢复后处理。");
@@ -715,12 +1134,18 @@ async function handleOwnerMessage(text, raw) {
     ``,
     `怎么处理：`,
     `1. 先判断这是不是一个任务。是任务就**真的去做**（执行命令、查数据、改文件），不要只回一句「好的」。`,
-    `2. 做完再决定要不要回。需要回就用：`,
+    `2. 要看的视频、要跑的十几条命令、要读的一堆文件 —— **派给子代理**，别自己扛：`,
+    `     node /opt/life/scripts/spawn-task.mjs --timeout 900 --task "具体要做什么、做完推给谁"`,
+    `   子代理干完只回你一段结论，过程不进你的上下文；需要主人看到的，让它自己用 bili-dm 发。`,
+    `3. 做完再决定要不要回。需要回就用：`,
     `     node /opt/life/scripts/bili-dm.mjs "你的回复" --to ${OWNER_UID}`,
     `   （不发 --to 默认也是主人；这个调用不受额度限制）`,
-    `3. 不需要回就不发。比如纯闲聊、或者你已经在日记里记完了。`,
-    `4. 把这一轮做了什么写进今天的日记。`,
+    `4. 不需要回就不发。比如纯闲聊、或者你已经在日记里记完了。`,
+    `5. 把这一轮做了什么写进今天的日记。`,
     ``,
+    grant
+      ? `（主人刚批了付费额度，12 小时内可以跑付费模型，直接用 spawn-task 即可。）`
+      : ``,
     `注意：主人可以不回复，但**不能不处理**。他给的指令必须执行或明确说明为什么做不了。`,
   ].join("\n");
 
@@ -729,7 +1154,8 @@ async function handleOwnerMessage(text, raw) {
   try {
     r = await runTask(task, {
       kind: "push",
-      timeoutMs: Math.max(WAIT_MAX_MS, 300_000),
+      timeoutMs: Number(process.env.REPLY_MAX_MS || 600_000),
+      lateTitle: "收到主人私信",
       // 超过 20 秒还没做完，先回一句「收到」——不然主人会以为她没收到
       onAck: async () => {
         await sendDM("收到，正在处理…");
@@ -737,11 +1163,17 @@ async function handleOwnerMessage(text, raw) {
     });
   } catch (e) {
     log("❌ 任务异常:", e.message);
-    await sendDM("出错了：" + e.message.slice(0, 200));
+    await sendDM("出错了：" + redact(e.message));
     return;
   }
 
-  const body = cleanReply(r.reply) || "（这一轮没有产出文字）";
+  const said = cleanReply(r.reply);
+  const actions = harvestActions(t0);
+  let body;
+  if (said) body = said + actions;
+  else if (r.timeout) body = "（时限内没结束，先记一笔；跑完我会把正文补进下一篇）" + actions;
+  else if (r.failed) body = `（模型没跑起来：${r.failure?.text || describeFailure(r.error).text}）` + actions;
+  else body = "（这一轮没有文字输出）" + actions;   // 至少留下她这一轮动过什么
   try {
     diaryAppend("收到主人私信", body);
   } catch (e) {
@@ -829,9 +1261,26 @@ const MODE = {
   repl: argv.includes("--repl"),
   autonomous: argv.includes("--autonomous"),
   push: argv.includes("--push"),
+  usage: argv.includes("--usage"),
+  compactNow: argv.includes("--compact-now"),
 };
 
-if (MODE.push) {
+if (MODE.usage) {
+  (async () => {
+    const sid = await ensureSession();
+    const u = await contextUsage(sid);
+    console.log(JSON.stringify({ session: sid, contextTokens: u, compactAt: CTX_COMPACT_AT, hardAt: CTX_HARD_AT }, null, 2));
+    process.exit(0);
+  })();
+} else if (MODE.compactNow) {
+  (async () => {
+    const sid = await ensureSession();
+    const u = await contextUsage(sid);
+    const ok = await compactSession(sid, u);
+    console.log(ok ? `已排入压缩队列：${u} tokens（下一轮开始时生效）` : `没排上（${u} tokens），看日志`);
+    process.exit(ok ? 0 : 1);
+  })();
+} else if (MODE.push) {
   // 自主回合 + 允许她主动推送：产出进日记，但她可以自己调 bili-dm.mjs 发一条给主人
   const i = argv.indexOf("--push");
   const text = argv[i + 1] || "看看今天有什么值得推给主人的。";
@@ -839,7 +1288,7 @@ if (MODE.push) {
     const r = await runAutonomous(text, {
       title: "主动推送",
       kind: "push",
-      timeoutMs: Number(process.env.PUSH_MAX_MS || 480_000),
+      timeoutMs: PUSH_MAX_MS,   // 实测三轮工具调用要 8 分钟以上，480s 必然半路放弃
     });
     console.log("\n──────── 回合结果 ────────");
     console.log(`ok=${r.ok}  日记=${r.file || "(无)"}  字数=${r.len || 0}`);
