@@ -1599,10 +1599,18 @@ const STRANGER_PER_TICK = Number(process.env.DM_PER_TICK || 2); // 一轮最多�
 async function tick() {
   tickCount++;
   const sessions = await getSessions();
-  const others = sessions.filter((s) => {
-    const t = String(s.talker_id || "");
-    return t && t !== SELF_UID;                 // 自己的会话跳过，防回环
-  });
+  const others = sessions
+    .filter((s) => {
+      const t = String(s.talker_id || "");
+      return t && t !== SELF_UID;                 // 自己的会话跳过，防回环
+    })
+    // 主人永远排第一个。不排序的话顺序由 B 站接口给（按最近消息倒序），
+    // 一个陌生人的长问题能把主人的消息堵在后面五分钟。
+    .sort((a, b) => {
+      const ao = String(a.talker_id) === OWNER_UID ? 0 : 1;
+      const bo = String(b.talker_id) === OWNER_UID ? 0 : 1;
+      return ao - bo;
+    });
   const forceScan = tickCount % HEARTBEAT_EVERY === 0;   // 每 5 分钟无视缓存全量扫一次
 
   if (!others.length) {
