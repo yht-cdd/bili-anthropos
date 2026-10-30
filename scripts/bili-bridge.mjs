@@ -1117,6 +1117,20 @@ async function maybeWake() {
 
   const r = await runAutonomous(task, { title, timeoutMs: AUTO_MAX_MS });
 
+  // 日切跑完，把「昨天」的日记完整寄给主人。
+  // 放在这时候是因为：日记是这一轮刚写完的，寄早了会漏掉最后一段。
+  if (isFixed) {
+    try {
+      const out = execSync(`node ${HOME}/scripts/mail-diary.mjs --date ${yesterdayStr()}`, {
+        encoding: "utf8",
+        timeout: 120_000,
+      }).trim();
+      log(`📧 日记：${out.split("\n")[0]}`);
+    } catch (e) {
+      log("⚠️ 日记寄送失败:", String(e.message).split("\n")[0]);
+    }
+  }
+
   try {
     wakeMarkFired(d.kind, d.index);
   } catch (e) {
