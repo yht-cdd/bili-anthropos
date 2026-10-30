@@ -43,13 +43,23 @@ const PENDING_FILE = path.join(HOME, "bili/data/spend_pending.json");
 const USAGE_FILE = path.join(HOME, "bili/data/spawn_usage.jsonl");
 const LEDGER_FILE = path.join(HOME, "exec/bridge.log");
 
-// ⚠️ 2026-10-30: opencode 自带的 *-free 模型额度已耗尽，切过去全部
-//    "AI.Error.QuotaExceeded: Free usage limit reached"，且至今未恢复。
-//    阶梯改为魔搭（2000 次/天免费额度，实测三个模型都能跑）。
+// 阶梯顺序是硬约定（见 config/agent-models.json 的 _note）：
+//   ① opencode 自带的 *-free 永远优先 —— 那是宿主给的免费额度，不用白不用
+//   ② 它们全部失败才降级到她自己的魔搭模型
+// 2026-10-30 曾因 opencode 额度耗尽把前六个删掉，2026-10-31 改回：
+// 额度会恢复，不能因为今天失败就把这条通道永久关掉。
+// 失败会快速返回（约 0.3s），六个全试完也不到 2 秒，代价可忽略。
 const DEFAULT_LADDER = [
-  { providerID: "modelscope", id: "Qwen/Qwen3.8-Flash-Next", label: "Qwen3.8-Flash-Next（魔搭·免费额度）", free: true },
-  { providerID: "modelscope", id: "deepseek-ai/DeepSeek-V4.1-Flash-1017", label: "DeepSeek V4.1 Flash 1017（魔搭·免费额度）", free: true },
-  { providerID: "modelscope", id: "Qwen/Qwen3.5-122B-A10B", label: "Qwen3.5-122B-A10B（魔搭·免费额度）", free: true },
+  { providerID: "opencode", id: "deepseek-v4.1-flash-free", label: "DeepSeek V4.1 Flash（免费）", free: true },
+  { providerID: "opencode", id: "glm-5.3-flash-free", label: "GLM-5.3-Flash（免费）", free: true },
+  { providerID: "opencode", id: "mimo-v2.6-flash-free", label: "MiMo-V2.6-Flash（免费）", free: true },
+  { providerID: "opencode", id: "nemotron-3.5-super-vl-free", label: "Nemotron 3.5 Super VL（免费·能看图）", free: true },
+  { providerID: "opencode", id: "flint-40b-free", label: "Flint 40B（免费）", free: true },
+  { providerID: "opencode", id: "beam-free", label: "Beam（免费）", free: true },
+  // ↓ 以下只在上面六个全挂时才轮到
+  { providerID: "modelscope", id: "Qwen/Qwen3.8-Flash-Next", label: "Qwen3.8-Flash-Next（她自己的主模型·降级兜底）", free: true },
+  { providerID: "modelscope", id: "deepseek-ai/DeepSeek-V4.1-Flash-1017", label: "DeepSeek V4.1 Flash 1017（魔搭·降级兜底）", free: true },
+  { providerID: "modelscope", id: "Qwen/Qwen3.5-122B-A10B", label: "Qwen3.5-122B-A10B（魔搭·降级兜底）", free: true },
 ];
 const DEFAULT_PAID = [
   { providerID: "modelscope", id: "Qwen/Qwen3.8-Flash-Next", label: "Qwen3.8-Flash-Next（魔搭·计额度）", free: false },
