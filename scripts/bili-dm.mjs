@@ -146,7 +146,9 @@ if (opt.status) {
 }
 
 // ── 参数校验 ──────────────────────────────────────────
-const clean = String(text).trim();
+// 把字面 "\n" 转成真换行：她在命令行里传的内容常常带转义符，
+// 不处理的话 B 站私信里会原样显示成 "\n\n"
+const clean = String(text).trim().replace(/\\n/g, "\n");
 if (!clean) {
   console.error('用法: node bili-dm.mjs "内容" [--to UID] [--dry] [--status]');
   process.exit(2);
