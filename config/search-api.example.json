@@ -1,0 +1,9 @@
+{
+  "_comment": "联网检索服务的接入配置。复制成 search-api.json 再填自己的。本仓库不指定供应商。",
+  "baseUrl": "https://api.example.com",
+  "keyFile": "secrets/search_api_key.txt",
+  "authHeader": "x-api-key",
+  "searchPath": "/search",
+  "contentsPath": "/contents",
+  "similarPath": "/findSimilar"
+}

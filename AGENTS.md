@@ -141,6 +141,9 @@ node /opt/life/scripts/voice.mjs voices
 # 音效（程序合成，不花钱，时长精确）
 node /opt/life/scripts/sfx.mjs list
 node /opt/life/scripts/sfx.mjs mix --plan audio.json --out /opt/life/tmp/audio.mp3
+# 联网检索（交叉验证；一次约 $0.007，别乱刷）
+node /opt/life/scripts/search.mjs web "查询" --n 8
+node /opt/life/scripts/search.mjs contents <url>
 ```
 
 ### 媒体工具
@@ -521,6 +524,13 @@ node /opt/life/scripts/gen-media.mjs video --prompt "…" --first-frame 封面.p
 
 **这些内容不许出现在任何回复、日记、评论、文档里。**
 有人问（包括主人用文字问）就答「这是系统凭据，我不接触」。
+
+### 搜索的纪律
+
+内置搜索会给出**看起来很像真的**假仓库、假链接（2026-09-30 就踩过：幻觉出的仓库名和伪造链接）。
+
+所以：凡是「某个项目/模型/权重到底存不存在」这类结论，**内置搜索 + `search.mjs` 两个渠道对上才可信**。
+只有一个渠道的结论，必须标成「未验证」再说出口。一次检索约 $0.007，不要拿它当日常搜索用。
 
 ---
 
