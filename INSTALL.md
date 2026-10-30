@@ -230,6 +230,36 @@ systemctl daemon-reload && systemctl enable --now anthropos-openi.timer
 2. **不要刷分。** 内容没变化就跳过 commit，空 commit 会被 OpenI 判为积分舞弊。
    积分没有查询接口，脚本说 ok 只表示「commit 成功」，别声称「积分已到账」。
 
+### 2.6 把能合规拿的分都拿满（子代理）
+
+`openi-daily.mjs` 只是每天 1 次 commit。规则表里还有 fork / PR / issue / 评论，
+这些**交给子代理做**，主模型只收结论：
+
+```bash
+node /opt/life/scripts/openi-api.mjs materials    # 三处素材各有什么
+node /opt/life/scripts/openi-api.mjs material <fid>  # 取夸克某份文档正文
+node /opt/life/scripts/openi-api.mjs status        # 今天还剩几次
+node /opt/life/scripts/openi-api.mjs search 关键词  # 找可 fork 的项目
+node /opt/life/scripts/openi-api.mjs fork <owner/repo>
+node /opt/life/scripts/openi-api.mjs issue <repo> --title 标题 --body-file 文件
+node /opt/life/scripts/openi-api.mjs comment <repo> --number N --body-file 文件
+node /opt/life/scripts/openi-api.mjs pr <repo> --title 标题 --head 分支 --body-file 文件
+node /opt/life/scripts/openi-api.mjs commit <repo> --path 路径 --content-file 文件 --message 说明
+```
+
+**素材优先级**：夸克工程文档 → 本地 `knowledge/projects/` → 自己 GitHub 仓库的 `docs/`
+（12 份已公开工程文档）。三处都没有就跳过，不编。
+
+每日上限写死在代码里（commit 3 / fork 3 / PR 3 / issue 3 / 评论 2），
+正文过短拒发、同一目标同一天不重复、内容命中敏感规则整篇拒发
+—— **子代理想刷也刷不动**。这层比写在提示词里可靠得多。
+
+完整的作业指导书写在服务器 `skills/github-openi-manager/SKILL.md` 的
+「每日任务 SOP」一节。子代理先读它再动手。
+
+> ⚠️ **这一组没有定时器兜底，是故意的。** 发什么内容需要判断，脚本无脑跑就是灌水，
+> 会被判积分舞弊倒扣全部积分。笔记同步有兜底（确定性的），API 任务没有（需要脑子）。
+
 ---
 
 ## 三、起服务

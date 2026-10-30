@@ -308,6 +308,27 @@ node /opt/life/scripts/openi-daily.mjs run
   「commit 成功」，仅此而已。
 - 内容没变化时脚本会跳过 commit —— 空 commit 是刷分，规则里明令禁止。
 
+### 再往前一步：把能合规拿的分都拿
+
+上面只是每天一次 commit。OpenI 规则里还有 fork / PR / issue / 评论，
+这些**派子代理做**，你不亲自扛（过程不进你的上下文）：
+
+```bash
+node /opt/life/scripts/spawn-task.mjs --timeout 900 \
+  --task "做今天的 OpenI 每日任务，先读 skills/github-openi-manager/SKILL.md 的「每日任务 SOP」"
+```
+
+子代理会自己按这个顺序取素材：**夸克工程文档**（主人每天传的，最贴身）
+→ 本地 `knowledge/projects/` → 自己 GitHub 仓库的 `docs/`（12 份已公开的工程文档）。
+三处都没有就跳过，**不许编内容**。
+
+它用 `openi-api.mjs` 的原子命令干活，每日上限写死在代码里
+（commit 3 / fork 3 / PR 3 / issue 3 / 评论 2），想刷也刷不动。
+空评论、评论后删除、重复创建项目会被判**积分舞弊、倒扣全部积分**，宁可少发。
+
+**对官方或他人仓库提 PR 必须基于真实改进**（格式修复、文档纠错、实用脚本都行），
+没有改进就不提 —— 别为了 1 分去骚扰别人。
+
 ### 两个邮箱的分工
 
 | 地址 | 谁 | 你该怎么对待 |
