@@ -360,6 +360,14 @@ node /opt/life/scripts/bili-bridge.mjs --simulate "报出你的名字和所有�
 │   ├─ bili-daemon.mjs    三级轮询感知守护
 │   ├─ bili-send.mjs      发送层（四道闸）
 │   ├─ bili-cookie.mjs    Cookie 检查与续期
+│   ├─ bili-dm.mjs        发 B 站私信（代码级只能发给主人）
+│   ├─ bili-video.mjs     从 BV 号下载视频到本地
+│   ├─ bili-upload.mjs    投稿上传（默认只上传不发布）
+│   ├─ vision.mjs         看图 / 看视频（外置视觉模型）
+│   ├─ wake-plan.mjs      生物钟排程（日切 + 随机）
+│   ├─ daily-report.mjs   昨天的账（库 + 日志 + 日记）
+│   ├─ fetch-mail.mjs     0 点收信，落 knowledge/projects/
+│   ├─ publish-project.mjs 本地端：写工程文档并发出去
 │   ├─ wbi.mjs            WBI 签名
 │   ├─ doctor.mjs         三层体检（L0 地基 / L1 大脑 / L2 神经）
 │   ├─ opencode-password.sh  密码提取兜底
@@ -368,7 +376,10 @@ node /opt/life/scripts/bili-bridge.mjs --simulate "报出你的名字和所有�
 ├─ docs/
 │   ├─ B站API完全手册.md   接口全表（已脱敏）
 │   ├─ 桥接与自主执行.md   桥接层完整原理
-│   └─ 部署文档.md         部署过程与踩坑
+│   ├─ 部署文档.md         部署过程与踩坑
+│   ├─ 外部视觉API.md      她能看见图片和视频的原理与实测
+│   ├─ 工具链实操.md       夸克网盘 + AI 邮箱接入
+│   └─ 云端Web访问.md      从任何设备看她的会话（三种方式 + 五个坑）
 └─ config/
     └─ config.example.json
 ```
