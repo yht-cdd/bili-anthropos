@@ -1,0 +1,12 @@
+[Unit]
+Description=每天维护一次 B 站登录态（续期 / 保活 / 验活）
+
+[Timer]
+# 凌晨 4:10 —— 避开 0 点的日记寄送和夜间自动任务
+OnCalendar=*-*-* 04:10:00
+# 开机补跑：机器重启过就立刻验一次，别等到明天
+Persistent=true
+RandomizedDelaySec=600
+
+[Install]
+WantedBy=timers.target

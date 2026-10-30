@@ -1,0 +1,13 @@
+[Unit]
+Description=Anthropos cookie maintenance - 续期 + 保活 + 验活
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/opt/life
+Environment=HOME=/root
+Environment=LIFE_HOME=/opt/life
+ExecStart=/bin/bash /opt/life/scripts/cookie-maintain.sh
+# 它自己会调 alert.mjs，这里不再叠加 OnFailure 告警，免得一次故障发两封
