@@ -1,33 +1,49 @@
 import React from "react";
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 
+export type Segment = { index: number; text: string; from: number; to: number };
+
 export type VideoProps = {
   title: string;
   subtitle: string;
   kicker: string;
   accent: string;
   seconds?: number;
+  segments?: Segment[];
 };
 
 /**
  * 竖屏 1080×1920。
- * 只做一件事：把一句话讲清楚 —— 大字标题 + 一行副标题 + 进度条。
- * 复杂动效留给后面按需加，这里先保证「能渲染出成片」。
+ * 两种模式：
+ *   1) 有 segments —— 按配音时间轴切场景，每段文字和音频严格对齐
+ *   2) 没有 —— 一张标题卡（预览用）
  */
-export const AnthroposVideo: React.FC<VideoProps> = ({ title, subtitle, kicker, accent }) => {
+export const AnthroposVideo: React.FC<VideoProps> = ({
+  title,
+  subtitle,
+  kicker,
+  accent,
+  segments,
+}) => {
   const frame = useCurrentFrame();
-  const { fps, durationInFrames, width, height } = useVideoConfig();
+  const { fps, durationInFrames } = useVideoConfig();
+  const t = frame / fps;
+  const progress = Math.min(1, Math.max(0, frame / (durationInFrames - 1)));
 
-  const enter = spring({ frame, fps, config: { damping: 200 }, durationInFrames: fps * 0.9 });
-  const titleY = interpolate(enter, [0, 1], [60, 0]);
+  const list = segments && segments.length ? segments : null;
+  const cur = list
+    ? list.find((s) => t >= s.from && t < s.to) || list[list.length - 1]
+    : null;
+
+  // 每段进场：在段内做一次淡入上移
+  const local = cur ? frame - Math.round(cur.from * fps) : frame;
+  const enter = spring({ frame: local, fps, config: { damping: 200 }, durationInFrames: fps * 0.6 });
+  const titleY = interpolate(enter, [0, 1], [50, 0]);
   const titleOpacity = interpolate(enter, [0, 1], [0, 1]);
 
   const subDelay = spring({ frame: frame - fps * 0.6, fps, config: { damping: 200 } });
   const subOpacity = interpolate(subDelay, [0, 1], [0, 1]);
   const subY = interpolate(subDelay, [0, 1], [30, 0]);
-
-  const progress = Math.min(1, Math.max(0, frame / (durationInFrames - 1)));
-  const drift = interpolate(frame, [0, durationInFrames], [0, -40]);
 
   return (
     <AbsoluteFill
@@ -38,19 +54,17 @@ export const AnthroposVideo: React.FC<VideoProps> = ({ title, subtitle, kicker, 
         color: "#F5F5F7",
       }}
     >
-      {/* 背景渐晕 */}
       <AbsoluteFill
         style={{
-          background: `radial-gradient(900px 700px at 20% ${20 + drift * 0.05}%, ${accent}22, transparent 70%)`,
+          background: `radial-gradient(900px 700px at 20% 25%, ${accent}22, transparent 70%)`,
         }}
       />
 
-      {/* 左侧竖条 */}
       <div
         style={{
           position: "absolute",
           left: 96,
-          top: height * 0.22,
+          top: 422,
           width: 8,
           height: interpolate(enter, [0, 1], [0, 420]),
           background: accent,
@@ -58,7 +72,7 @@ export const AnthroposVideo: React.FC<VideoProps> = ({ title, subtitle, kicker, 
         }}
       />
 
-      <div style={{ position: "absolute", left: 144, right: 96, top: height * 0.22 }}>
+      <div style={{ position: "absolute", left: 144, right: 96, top: 422 }}>
         <div
           style={{
             fontSize: 30,
@@ -69,7 +83,7 @@ export const AnthroposVideo: React.FC<VideoProps> = ({ title, subtitle, kicker, 
             fontWeight: 600,
           }}
         >
-          {kicker}
+          {list && cur ? `${kicker} · ${String(cur.index).padStart(2, "0")}/${list.length}` : kicker}
         </div>
 
         <div
@@ -82,29 +96,29 @@ export const AnthroposVideo: React.FC<VideoProps> = ({ title, subtitle, kicker, 
             opacity: titleOpacity,
           }}
         >
-          {title}
+          {list && cur ? cur.text : title}
         </div>
 
-        <div
-          style={{
-            marginTop: 44,
-            fontSize: 40,
-            lineHeight: 1.5,
-            color: "#B9B9C0",
-            transform: `translateY(${subY}px)`,
-            opacity: subOpacity,
-          }}
-        >
-          {subtitle}
-        </div>
+        {!list && (
+          <div
+            style={{
+              marginTop: 44,
+              fontSize: 40,
+              lineHeight: 1.5,
+              color: "#B9B9C0",
+              transform: `translateY(${subY}px)`,
+              opacity: subOpacity,
+            }}
+          >
+            {subtitle}
+          </div>
+        )}
       </div>
 
-      {/* 底部进度条 */}
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 6, background: "#1C1C20" }}>
         <div style={{ width: `${progress * 100}%`, height: "100%", background: accent }} />
       </div>
 
-      {/* 角标 */}
       <div
         style={{
           position: "absolute",

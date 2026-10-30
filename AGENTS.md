@@ -138,6 +138,9 @@ node /opt/life/scripts/voice.mjs say "要说的话" --out /opt/life/tmp/a.mp3
 node /opt/life/scripts/voice.mjs say --file 口播稿.txt --out /opt/life/tmp/a.mp3
 node /opt/life/scripts/voice.mjs hear 音频.mp3
 node /opt/life/scripts/voice.mjs voices
+# 音效（程序合成，不花钱，时长精确）
+node /opt/life/scripts/sfx.mjs list
+node /opt/life/scripts/sfx.mjs mix --plan audio.json --out /opt/life/tmp/audio.mp3
 ```
 
 ### 媒体工具
@@ -424,14 +427,29 @@ node /opt/life/scripts/alert.mjs "Cookie 失效" "刷新一下，我停了" --fi
 
 1. **选题**：`node /opt/life/scripts/pick-topic.mjs` 拿素材（工程文档里的坑、数字、反常识点）。
    它只给素材，选题是你的事 —— 判断标准：一个完全不懂技术的人，会不会为这个停 3 分钟。
-2. **写口播稿 + 配音**：稿子自己写（说人话，别念稿感）。然后：
-   ```bash
-   node /opt/life/scripts/voice.mjs say --file 稿子.txt --out /opt/life/tmp/voice.mp3
+2. **做声音：先音效，再考虑人声。**
+   音效是**算出来的**（ffmpeg 合成），不花钱、不排队、时长精确到毫秒：
+
+   ```json
+   { "total": 13,
+     "bed":  { "cue": "pad", "gain": 0.18 },
+     "cues": [ { "at": 0, "cue": "ding" }, { "at": 3.8, "cue": "whoosh", "seconds": 0.9 } ] }
    ```
-   合成完**自己听一遍**（`voice.mjs hear` 转回文字对一下），再看时长合不合适。
-3. **成片**：`node /opt/life/scripts/render-video.mjs --title "标题" --subtitle "副标题"`
-   触发 GitHub Actions 渲染（4 vCPU / 16 GB），跑完自动把 mp4 取回 `/opt/life/tmp/video.mp4`。
-4. **投稿**：`node /opt/life/scripts/bili-upload.mjs`（默认只上传不提交，检查完再加 `--publish`）。
+
+   ```bash
+   node /opt/life/scripts/sfx.mjs list
+   node /opt/life/scripts/sfx.mjs mix --plan audio.json --out audio.mp3
+   ```
+
+   需要人声再叠上去（`audio.json` 里写 `"voice": "…/voice.mp3"`，会自动混进来）。
+   **大多数短片没有旁白也看得懂** —— 别为了配音把发布卡住。
+
+3. **要人声才做配音**（可选）：写口播稿 → `voice.mjs plan` 按时间轴合成，
+   每段窗口严丝合缝（短了补静音、长了加速，超上限直接报错）。
+   合成完自己听一遍（`voice.mjs hear` 转回文字对一下）。
+4. **成片**：`node /opt/life/scripts/render-video.mjs --title "标题" --timeline timeline.json --audio audio.mp3`
+   触发 GitHub Actions 渲染（4 vCPU / 16 GB），跑完取回 mp4 并**把音轨合进去**。
+5. **投稿**：`node /opt/life/scripts/bili-upload.mjs`（默认只上传不提交，检查完再加 `--publish`）。
 
 渲染不在你自己的机器上跑 —— 你只有 2 核 2G，起一个 Chromium 就没了。
 片子回来先自己看一遍（`vision.mjs video`），再决定发不发。

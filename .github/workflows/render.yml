@@ -29,6 +29,11 @@ on:
         required: false
         default: "15"
         type: string
+      segments:
+        description: 配音时间轴（JSON 字符串，给了就按它切场景）
+        required: false
+        default: ""
+        type: string
 
 concurrency:
   group: render-video
@@ -66,18 +71,22 @@ jobs:
           KICKER: ${{ inputs.kicker }}
           ACCENT: ${{ inputs.accent }}
           SECONDS: ${{ inputs.seconds }}
+          SEGMENTS: ${{ inputs.segments }}
         run: |
           node -e '
             const fs = require("fs");
+            let segments = [];
+            try { if (process.env.SEGMENTS) segments = JSON.parse(process.env.SEGMENTS); } catch (e) { console.error("segments 解析失败，按无时间轴处理"); }
             const props = {
               title: process.env.TITLE || "",
               subtitle: process.env.SUBTITLE || "",
               kicker: process.env.KICKER || "ANTHROPOS",
               accent: process.env.ACCENT || "#FF6B6B",
               seconds: Number(process.env.SECONDS || 15),
+              segments,
             };
             fs.writeFileSync("props.json", JSON.stringify(props, null, 2));
-            console.log("props:", JSON.stringify(props));
+            console.log("props:", JSON.stringify({ ...props, segments: segments.length + " 段" }));
           '
 
       - name: 渲染

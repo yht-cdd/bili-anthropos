@@ -105,7 +105,25 @@ async function latestRun() {
     kicker: String(opt.kicker || "ANTHROPOS"),
     accent: String(opt.accent || "#FF6B6B"),
     seconds: String(opt.seconds || 15),
+    segments: "",
   };
+
+  // 有配音时间轴：视频场景严格按它的秒数切，渲染完再把音轨合上去
+  let totalSeconds = Number(opt.seconds || 15);
+  if (opt.timeline) {
+    const tl = JSON.parse(fs.readFileSync(String(opt.timeline), "utf8"));
+    const segs = (tl.segments || []).map((s) => ({
+      index: s.index,
+      text: String(s.text || "").slice(0, 90),
+      from: Number(s.from),
+      to: Number(s.to),
+    }));
+    if (!segs.length) { console.error("❌ timeline 里没有 segments"); process.exit(2); }
+    totalSeconds = Number(segs[segs.length - 1].to);
+    inputs.segments = JSON.stringify(segs);
+    inputs.seconds = String(totalSeconds);
+    console.log(`  按时间轴渲染：${segs.length} 段，共 ${totalSeconds}s`);
+  }
 
   const t0 = Date.now();
   console.log(`▶ 触发渲染：${title}`);
@@ -177,4 +195,20 @@ async function latestRun() {
 
   const size = fs.statSync(out).size;
   console.log(JSON.stringify({ ok: true, file: out, bytes: size, run: run.id, url: run.html_url }, null, 2));
+
+  // 有配音就合进去：画面流直接复制，不动画质，只加音轨
+  if (opt.audio) {
+    const audio = path.resolve(String(opt.audio));
+    if (!fs.existsSync(audio)) { console.error(`⚠️ 找不到音轨 ${audio}，视频保持无声`); process.exit(0); }
+    const muxed = out.replace(/\.mp4$/, "") + "-with-audio.mp4";
+    try {
+      execSync(
+        `ffmpeg -y -loglevel error -i "${out}" -i "${audio}" -c:v copy -c:a aac -b:a 192k -shortest "${muxed}"`,
+        { timeout: 300_000 }
+      );
+      console.log(`🔊 已合入音轨：${muxed}（${(fs.statSync(muxed).size / 1024).toFixed(0)} KB）`);
+    } catch (e) {
+      console.error(`⚠️ 合音轨失败：${String(e.message).split("\n")[0]}`);
+    }
+  }
 })();

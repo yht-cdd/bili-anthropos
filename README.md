@@ -378,6 +378,7 @@ node /opt/life/scripts/bili-bridge.mjs --simulate "报出你的名字和所有�
 │   ├─ render-video.mjs   触发 GitHub Actions 渲染并取回 mp4
 │   ├─ gen-media.mjs      图片 / 视频生成适配层（不绑定供应商）
 │   ├─ voice.mjs          配音 / 听写适配层（不绑定供应商）
+│   ├─ sfx.mjs            程序合成音效（免 API，时长精确）
 │   ├─ handover.mjs       换代前把记忆抽成档案
 │   ├─ session-reset.mjs  清空全部会话，只留一个默认会话
 │   ├─ bili-api.mjs       B 站只读 CLI

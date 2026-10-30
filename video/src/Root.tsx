@@ -10,6 +10,7 @@ const defaultProps: VideoProps = {
   kicker: "ANTHROPOS",
   accent: "#FF6B6B",
   seconds: 15,
+  segments: [],
 };
 
 export const RemotionRoot: React.FC = () => {
@@ -22,10 +23,12 @@ export const RemotionRoot: React.FC = () => {
       width={1080}
       height={1920}
       defaultProps={defaultProps}
-      // 时长由参数决定，不让调用方去算帧数
-      calculateMetadata={({ props }) => ({
-        durationInFrames: FPS * Math.max(3, Number(props.seconds ?? 15)),
-      })}
+      // 时长：有配音时间轴就按时间轴，没有就按 seconds
+      calculateMetadata={({ props }) => {
+        const segs = props.segments || [];
+        const total = segs.length ? segs[segs.length - 1].to : Number(props.seconds ?? 15);
+        return { durationInFrames: Math.round(FPS * Math.max(3, total)) };
+      }}
     />
   );
 };
