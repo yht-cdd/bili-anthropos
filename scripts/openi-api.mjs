@@ -157,40 +157,64 @@ function parseJsonl(out) {
 }
 
 function quarkBrowse(fid) {
-  const out = execFileSync("node", [QUARK_CLI, "browse", "--all", "--page-size", "50", "--parent-fid", fid], {
-    encoding: "utf8", timeout: 60_000, env: { ...process.env, OPENCLAW_CLI: "1" },
-    stdio: ["ignore", "pipe", "pipe"],
-  });
-  const rows = parseJsonl(out);
-  if (!rows.length) throw new Error("夸克没返回数据");
-  const bad = rows.find((r) => r.code !== 0);
-  if (bad) throw new Error(`夸克返回 ${bad.code} ${bad.msg || ""}`);
-  const list = [];
-  for (const r of rows) for (const f of r.data?.file_list || []) list.push(f);
-  return list;
+  // browse 的 stdout 只给前几项预览，完整列表被写到 --task-dir 下的 JSONL。
+  // 之前只解析 stdout → 13 项里只看到 5 项，上传的文档全被漏掉。
+  const taskDir = fs.mkdtempSync(path.join(os.tmpdir(), "quark-browse-"));
+  try {
+    const out = execFileSync("node", [QUARK_CLI, "browse", "--all", "--page-size", "100", "--parent-fid", fid, "--task-dir", taskDir], {
+      encoding: "utf8", timeout: 60_000, env: { ...process.env, OPENCLAW_CLI: "1" },
+      stdio: ["ignore", "pipe", "pipe"],
+    });
+    const rows = parseJsonl(out);
+    if (!rows.length) throw new Error("夸克没返回数据");
+    const bad = rows.find((r) => r.code !== 0);
+    if (bad) throw new Error(`夸克返回 ${bad.code} ${bad.msg || ""}`);
+    const resultFile = rows.map((r) => r.data?.file_path).find(Boolean);
+
+    const list = [];
+    if (resultFile && fs.existsSync(resultFile)) {
+      for (const l of fs.readFileSync(resultFile, "utf8").split("\n")) {
+        const t = l.trim();
+        if (!t.startsWith("{")) continue;
+        try { const j = JSON.parse(t); if (j.fid) list.push(j); } catch {}
+      }
+    }
+    if (!list.length) for (const r of rows) for (const f of r.data?.file_list || []) list.push(f);
+    return list;
+  } finally {
+    fs.rmSync(taskDir, { recursive: true, force: true });
+  }
 }
 
 function quarkMaterials() {
   try {
-    // search 实测会返回服务端异常 / 空结果，browse 反而稳定。
-    // 根目录 → 下钻一层文件夹 → 只看文档类文件。
-    const root = quarkBrowse("0");
+    // 上传时保留了子目录（openi-points/repo-hfdryb/... 那种），所以要往下钻。
+    // 带 8 位日期前缀的归档文件夹钻到 3 层，其他普通目录 2 层，
+    // 总调用次数封顶，免得一次 materials 把夸克刷爆。
     const all = [];
-    for (const item of root) {
-      if (item.category === 0 || item.file_type === "0") {
-        try { for (const f of quarkBrowse(item.fid)) all.push(f); } catch {}
-      } else {
-        all.push(item);
+    let calls = 0;
+    function dive(fid, depth, maxDepth) {
+      if (depth > maxDepth || calls >= 24) return;
+      calls += 1;
+      let items;
+      try { items = quarkBrowse(fid); } catch { return; }
+      for (const it of items) {
+        const isDir = it.category === 0 || it.file_type === "0";
+        if (isDir) dive(it.fid, depth + 1, /^\d{8}_/.test(it.filename || "") ? 3 : Math.min(maxDepth, 2));
+        else all.push(it);
       }
     }
+    dive("0", 0, 2);
+
     const docs = all.filter((f) => /\.(md|txt|docx?|pdf|pptx?|xlsx?|csv|json|py|mjs|ts)$/i.test(f.filename || ""));
     return {
       ok: docs.length > 0,
-      files: docs.slice(0, 30).map((f) => ({
+      files: docs.slice(0, 40).map((f) => ({
         name: f.filename, fid: f.fid, size: f.size || 0,
         updated: f.updated_at ? new Date(Number(f.updated_at)).toLocaleDateString("sv-SE") : "",
       })),
-      why: docs.length ? "" : `夸克根目录 ${root.length} 项、下钻后 ${all.length} 项，但没有可当素材的文档`,
+      scanned: all.length,
+      why: docs.length ? "" : `下钻 ${calls} 次、共 ${all.length} 项，但没有可当素材的文档`,
       hint: "挑一个文件，用 node openi-api.mjs material <fid> 取正文",
     };
   } catch (e) {
