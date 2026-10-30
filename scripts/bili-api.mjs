@@ -176,6 +176,35 @@ async function cmdUnread() {
   console.log(JSON.stringify(j.data, null, 2));
 }
 
+async function cmdSign(text, confirm) {
+  // 不带文本 = 查当前签名
+  if (!text) {
+    const nav = await get("https://api.bilibili.com/x/web-interface/nav");
+    if (nav.code !== 0) { console.log("❌", nav.code, nav.message); return; }
+    console.log(JSON.stringify({ sign: nav.data?.sign || "", uname: nav.data?.uname }, null, 2));
+    return;
+  }
+
+  const t = String(text).trim();
+  if (t.length > 70) {
+    console.log(`❌ 太长（${t.length} 字），B 站签名上限约 70 字`);
+    return;
+  }
+
+  if (!confirm) {
+    console.log("=== DRY RUN（未修改）===");
+    console.log("  新签名:", t);
+    console.log(`  字数：${t.length}`);
+    console.log("\n  加 --confirm 才会真的改");
+    return;
+  }
+
+  const j = await post("https://api.bilibili.com/x/member/web/sign/update", { user_sign: t });
+  console.log("=== 结果 ===");
+  console.log("  code:", j.code, "| message:", j.message || "");
+  if (j.code === 0) console.log("  ✅ 签名已更新");
+}
+
 async function cmdReply(key, text, root, confirm) {
   const aid = await resolveAid(key);
   const params = { oid: aid, type: 1, message: text };
@@ -226,6 +255,14 @@ try {
       const root = rootIdx >= 0 ? args[rootIdx + 1] : null;
       const text = args[1];
       await cmdReply(args[0], text, root, confirm);
+      break;
+    }
+    case "sign": {
+      // node bili-api.mjs sign                     查当前签名
+      // node bili-api.mjs sign "新签名" --confirm   改签名
+      const confirm = args.includes("--confirm");
+      const text = args.filter((a) => a !== "--confirm");
+      await cmdSign(text.join(" "), confirm);
       break;
     }
     case "watch": await cmdWatch(); break;
