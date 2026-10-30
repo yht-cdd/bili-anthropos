@@ -43,12 +43,13 @@ const PENDING_FILE = path.join(HOME, "bili/data/spend_pending.json");
 const USAGE_FILE = path.join(HOME, "bili/data/spawn_usage.jsonl");
 const LEDGER_FILE = path.join(HOME, "exec/bridge.log");
 
+// ⚠️ 2026-10-30: opencode 自带的 *-free 模型额度已耗尽，切过去全部
+//    "AI.Error.QuotaExceeded: Free usage limit reached"，且至今未恢复。
+//    阶梯改为魔搭（2000 次/天免费额度，实测三个模型都能跑）。
 const DEFAULT_LADDER = [
-  { providerID: "opencode", id: "deepseek-v4.1-flash-free", label: "DeepSeek V4.1 Flash（免费）", free: true },
-  { providerID: "opencode", id: "glm-5.3-flash-free", label: "GLM-5.3-Flash（免费）", free: true },
-  { providerID: "opencode", id: "mimo-v2.6-flash-free", label: "MiMo-V2.6-Flash（免费）", free: true },
-  { providerID: "opencode", id: "nemotron-3.5-super-vl-free", label: "Nemotron 3.5 Super VL（免费·能看图）", free: true },
-  { providerID: "opencode", id: "flint-40b-free", label: "Flint 40B（免费）", free: true },
+  { providerID: "modelscope", id: "Qwen/Qwen3.8-Flash-Next", label: "Qwen3.8-Flash-Next（魔搭·免费额度）", free: true },
+  { providerID: "modelscope", id: "deepseek-ai/DeepSeek-V4.1-Flash-1017", label: "DeepSeek V4.1 Flash 1017（魔搭·免费额度）", free: true },
+  { providerID: "modelscope", id: "Qwen/Qwen3.5-122B-A10B", label: "Qwen3.5-122B-A10B（魔搭·免费额度）", free: true },
 ];
 const DEFAULT_PAID = [
   { providerID: "modelscope", id: "Qwen/Qwen3.8-Flash-Next", label: "Qwen3.8-Flash-Next（魔搭·计额度）", free: false },

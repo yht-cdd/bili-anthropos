@@ -145,27 +145,32 @@ function gateContent(text, event) {
 
 /** 闸二：限速 */
 function gateRate(event) {
-  const now = Date.now();
+  // ⚠️ sends.sent_at 全表约定用「秒」，与 B 站接口时间戳一致。
+  //    ledger-check 补录的也是秒。两边混用会让这个闸门直接失效：
+  //    毫秒 now 减秒级旧记录 = 一个永远成立的巨大差值 → 冷却判断永远通过。
+  const now = Math.floor(Date.now() / 1000);
+  const gapSameSec = LIMIT.sameTargetGapMs / 1000;
+  const gapUserSec = LIMIT.sameUserGapMs / 1000;
 
   const hourCount = db.prepare("SELECT COUNT(*) c FROM sends WHERE sent_at > ? AND ok = 1")
-    .get(now - 3600_000).c;
+    .get(now - 3600).c;
   if (hourCount >= LIMIT.hourly) return { ok: false, why: `小时配额用尽（${hourCount}/${LIMIT.hourly}）` };
 
   const dayCount = db.prepare("SELECT COUNT(*) c FROM sends WHERE sent_at > ? AND ok = 1")
-    .get(now - 86400_000).c;
+    .get(now - 86400).c;
   if (dayCount >= LIMIT.daily) return { ok: false, why: `日配额用尽（${dayCount}/${LIMIT.daily}）` };
 
   const lastSame = db.prepare("SELECT MAX(sent_at) t FROM sends WHERE target = ? AND ok = 1")
     .get(event.ref || "")?.t;
-  if (lastSame && now - lastSame < LIMIT.sameTargetGapMs) {
-    const wait = Math.ceil((LIMIT.sameTargetGapMs - (now - lastSame)) / 1000);
+  if (lastSame && now - lastSame < gapSameSec) {
+    const wait = Math.ceil(gapSameSec - (now - lastSame));
     return { ok: false, why: `同目标冷却中，还需 ${wait} 秒` };
   }
 
   const lastUser = db.prepare("SELECT MAX(sent_at) t FROM sends WHERE user_id = ? AND ok = 1")
     .get(event.author_id || "")?.t;
-  if (lastUser && now - lastUser < LIMIT.sameUserGapMs) {
-    const wait = Math.ceil((LIMIT.sameUserGapMs - (now - lastUser)) / 60000);
+  if (lastUser && now - lastUser < gapUserSec) {
+    const wait = Math.ceil((gapUserSec - (now - lastUser)) / 60);
     return { ok: false, why: `同一用户冷却中，还需 ${wait} 分钟` };
   }
 
@@ -337,7 +342,7 @@ async function cmdSend(id, confirm) {
   db.prepare(`
     INSERT INTO sends(event_id, kind, target, user_id, text, rpid, sent_at, ok)
     VALUES(?,?,?,?,?,?,?,?)
-  `).run(id, e.kind, e.ref, e.author_id, d.text, String(j.data?.rpid || ""), Date.now(), ok);
+  `).run(id, e.kind, e.ref, e.author_id, d.text, String(j.data?.rpid || ""), Math.floor(Date.now() / 1000), ok);
 
   if (ok) {
     db.prepare("UPDATE drafts SET status = 1 WHERE event_id = ?").run(id);
@@ -360,9 +365,9 @@ function cmdReject(id, reason) {
 }
 
 function cmdStats() {
-  const now = Date.now();
-  const h = db.prepare("SELECT COUNT(*) c FROM sends WHERE sent_at > ? AND ok=1").get(now - 3600_000).c;
-  const d = db.prepare("SELECT COUNT(*) c FROM sends WHERE sent_at > ? AND ok=1").get(now - 86400_000).c;
+  const now = Math.floor(Date.now() / 1000);
+  const h = db.prepare("SELECT COUNT(*) c FROM sends WHERE sent_at > ? AND ok=1").get(now - 3600).c;
+  const d = db.prepare("SELECT COUNT(*) c FROM sends WHERE sent_at > ? AND ok=1").get(now - 86400).c;
   const total = db.prepare("SELECT COUNT(*) c FROM sends WHERE ok=1").get().c;
   const fail = db.prepare("SELECT COUNT(*) c FROM sends WHERE ok=0").get().c;
   const pending = db.prepare("SELECT COUNT(*) c FROM events WHERE status=0").get().c;
@@ -381,7 +386,7 @@ function cmdStats() {
   const rows = db.prepare("SELECT event_id, target, substr(text,1,30) t, ok, sent_at FROM sends ORDER BY sent_at DESC LIMIT 10").all();
   if (!rows.length) { console.log("  （无）"); return; }
   for (const r of rows) {
-    const t = new Date(r.sent_at).toLocaleString("zh-CN", { timeZone: "Asia/Shanghai", hour12: false });
+    const t = new Date(r.sent_at * 1000).toLocaleString("zh-CN", { timeZone: "Asia/Shanghai", hour12: false });
     console.log(`  ${r.ok ? "✅" : "❌"} ${t}  ${r.target}  ${r.t}`);
   }
 }

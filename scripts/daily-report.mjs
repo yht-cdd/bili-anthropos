@@ -70,10 +70,14 @@ const rows = (sql, ...a) => {
 const dmNew = count("SELECT COUNT(*) c FROM dm_seen WHERE at >= ? AND at < ?", start, END);
 
 // ── 发送 ──────────────────────────────────────────────
+// ⚠️ sends.sent_at 是「秒」（与 B 站接口一致），其余表多是毫秒。
+//    start / END 是毫秒，这里必须换算，否则一条都查不到。
+const START_SEC = Math.floor(start / 1000);
+const END_SEC = Math.floor(END / 1000);
 const sentRows = rows(
   "SELECT kind, COUNT(*) c FROM sends WHERE sent_at >= ? AND sent_at < ? GROUP BY kind",
-  start,
-  END
+  START_SEC,
+  END_SEC
 );
 const sentTotal = sentRows.reduce((n, r) => n + r.c, 0);
 const sentDetail = sentRows.map((r) => `${r.kind || "未标记"} ${r.c}`).join(" / ");
