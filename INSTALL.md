@@ -14,7 +14,8 @@
 | 磁盘 | 20 GB 起（opencode 约 300MB，ffmpeg 约 300MB） |
 | Node | **≥ 20**（实测 v24.22.2） |
 | 网络 | 能访问 `api.bilibili.com`、`api.vc.bilibili.com`；GitHub 可能不通（见坑 6） |
-| 账号 | 一个 B 站账号 + **已登录的浏览器**（用来导 Cookie） |
+| 账号 | 一个 B 站账号 + **手机上的「哔哩哔哩」App**（用扫码登录，不要复制 Cookie） |
+| 测试账号 | **一个没有特权的小号**（用来验证陌生人权限，见 2.4） |
 
 ---
 
@@ -108,32 +109,86 @@ cp scripts/*.mjs scripts/*.sh /opt/life/scripts/
 chmod +x /opt/life/scripts/*.sh
 ```
 
-### 2.3 放 Cookie
+### 2.3 登录 B 站 —— 扫码，不要复制 Cookie
 
-从已登录的浏览器导出（F12 → Application → Cookies → `bilibili.com`），至少需要这些字段：
+> ⚠️ **别再从浏览器 F12 里复制 Cookie 了。**
+> 2026-10-30 实测：一份 SESSDATA 的过期戳写着 2027-04-28（还剩 179 天），
+> 放到服务器上只活了 **6 小时 46 分** 就变成 `-101`。
+> 不是过期，是被服务端作废 —— 你浏览器那边一刷新，复制出去的那份就废了，而且救不回来。
+> 更要命的是它**没法续**，只能再复制一次，周而复始。
 
-```
-SESSDATA=...
-bili_jct=...
-DedeUserID=...
-buvid3=...
-```
-
-写进文件：
+正确的做法是扫码登录。扫**一次**，之后 180 天自动续期，不用再管。
 
 ```bash
-cat > /opt/life/secrets/bili_cookie.txt <<'EOF'
-SESSDATA=xxx; bili_jct=xxx; DedeUserID=xxx; buvid3=xxx; ...
-EOF
-chmod 600 /opt/life/secrets/bili_cookie.txt
+# 在能打开浏览器的机器上跑（不是服务器）
+npx -y qrcode --version >/dev/null 2>&1 || npm i qrcode
+node tools/scan-login.mjs
+# 打开 http://127.0.0.1:8899 ，用「哔哩哔哩」App 扫码并确认
 ```
+
+页面会自动换码，不用赶时间。扫完它把凭证写到系统临时目录的
+`bili-login-result.json`，再推给服务器：
+
+```bash
+scp "$(node -p 'require("os").tmpdir()')/bili-login-result.json" root@<服务器>:/tmp/cred.json
+ssh root@<服务器> 'cd /opt/life && node scripts/bili-apply-cred.mjs /tmp/cred.json && rm -f /tmp/cred.json'
+```
+
+**为什么必须扫码，而不是复制 Cookie：**
+
+| | 复制 Cookie | 扫码登录（TV 端） |
+|---|---|---|
+| 有效期 | 看运气，浏览器一刷新就废 | 180 天，滚动续期 |
+| 能不能续 | 不能，只能重新复制 | 能，`refresh_token` 每天自动滚 |
+| 会不会互相踢 | 会 | 不会，和浏览器会话完全独立 |
 
 **验证**：
 
 ```bash
-node /opt/life/scripts/bili-cookie.mjs check
-# 期望退出码 0，打出昵称/等级
+node /opt/life/scripts/bili-login.mjs status
+# 期望：cookie.ok = true，renewable = true，accessTokenExpiresInDays ≈ 180
 ```
+
+`renewable: true` 是关键 —— 说明它手里有能续期的凭据。
+如果是 `false`，说明这份是手动复制的，撑不了多久。
+
+**装自动续期（必须做）**：
+
+```bash
+cp systemd/anthropos-cookie.* /etc/systemd/system/
+systemctl daemon-reload
+systemctl enable --now anthropos-cookie.timer
+systemctl list-timers anthropos-cookie.timer     # 期望看到下一次执行时间
+```
+
+每天凌晨跑一次：续期 → 保活 → 验活 → 不通就发邮件叫你重扫。
+**装了这个，Cookie 这件事就算从你的日常里消失了。**
+
+---
+
+### 2.4 准备一个测试用的小号
+
+先把这个说在前面，因为它决定你能不能验证「陌生人权限」。
+
+她跑起来之后，**主人私信**和**陌生人私信**走的是两条不同的路：
+
+- 你用的账号 = 主人 UID → 她能真的执行命令
+- 别的任何账号 = 陌生人 → 她只能回话，不能动机器
+
+用你自己的号是测不出陌生人那条路的。所以部署完先准备 **一个没有特权的小号**，
+用它给她发一条私信，确认：
+
+1. 她回了（默认就该回，不用她纠结）
+2. 回的内容是「话」，不是「我打算去查一下……」
+3. 你的主号**没有**收到这条回复（说明没串号）
+
+> 建议准备两个小号轮换测试。同一个人 10 分钟内只会被回一次
+> （`bili-dm` 的同人冷却），一个号连着发容易被冷却挡住，看起来像「她不回」。
+
+**顺带一个坑**：B 站会往私信里塞系统消息，它们长得跟人说的话一样 ——
+「你的账号在新设备或平台登录成功…」（`msg_type=10`）、
+「我们已互相关注，开始聊天吧~」（`msg_type=1` 但是模板句）。
+桥接会过滤掉它们，不然她会去回 B 站官方账号。你自己写的时候也要注意这一点。
 
 ---
 
@@ -341,7 +396,10 @@ scp repo.zip root@host:/opt/refs/
 | 契约 | `--simulate "你的主人 UID 是多少"` | 答对你填的值 |
 | 执行 | `--simulate "查内存"` | 数值和 `free -m` 一致 |
 | 端到端 | 真发一条私信 | 12 秒内检测，5-10 秒回复 |
-| 隔离 | 换个账号发私信 | 不回复、不执行 |
+| 陌生人 | **用小号**发私信 | **会回复**（默认就回），但不会执行命令 |
+| 隔离 | 小号让她「跑一下 free -m」 | 她会解释为什么不跑，而不是真去跑 |
+| 续期 | `node scripts/bili-login.mjs status` | `renewable: true`、`accessTokenExpiresInDays ≈ 180` |
+| 定时 | `systemctl list-timers anthropos-cookie.timer` | 有下一次执行时间 |
 
 ---
 
@@ -355,7 +413,10 @@ scp repo.zip root@host:/opt/refs/
 | 401 | 密码变了，`bash scripts/opencode-password.sh` 重取 |
 | 服务反复重启 | `journalctl -u anthropos-bridge -n 50`，多半是 ExecStart 路径或 Cookie 文件缺失 |
 | 内存快满 | `ps -eo rss,cmd --sort=-rss \| head`；opencode 硬限 1100M |
-| Cookie 失效 | `node scripts/bili-cookie.mjs check`，重新导出覆盖 |
+| Cookie 失效（-101） | 先 `node scripts/bili-login.mjs refresh`；续期不动就 `qr` 扫一次码 |
+| 续期一直失败 | `bili/data/login_state.json` 里 `refresh_token` 空了 —— 说明这份是手动复制的，扫一次码 |
+| 陌生人发了不回 | 看日志有没有 `👤 陌生人`；有就是闸门挡住了（同人 10 分钟 / 20 条每小时） |
+| 她回了 B 站官方账号 | 系统消息没过滤干净，查 `SYSTEM_MSG_TYPES` 和 `TEMPLATE_LINES` |
 
 ---
 

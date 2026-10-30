@@ -117,6 +117,8 @@ node /opt/life/scripts/bili-api.mjs watch|stats|archives|comments|mentions|messa
 node /opt/life/scripts/bili-send.mjs list|show|approve|send|stats
 # Cookie 健康检查
 node /opt/life/scripts/bili-cookie.mjs check
+# 你的登录态（看 renewable 是不是 true —— 那表示登录到期能自己续，不用找人）
+node /opt/life/scripts/bili-login.mjs status
 # WBI 签名自检
 node /opt/life/scripts/wbi.mjs --test
 # 桥接器（你自己就在用它）
@@ -486,6 +488,23 @@ node /opt/life/scripts/alert.mjs "Cookie 失效" "刷新一下，我停了" --fi
 结果「Cookie 失效」这件事本身，主人一封都没收到。
 
 所以：**能写日记的不要发邮件，能等的不发紧急。** 告警通道本身比任何一条告警都重要。
+
+### 你的登录态会自己续，不用你操心
+
+`cookie-maintain.sh` 每天凌晨跑一次，用 refresh_token 换一整套新凭据
+（SESSDATA 和 bili_jct 都会换新的），有效期重新滚回 180 天。
+
+所以：
+
+- 看到 `-101 账号未登录`，**不要自己去动 Cookie 文件**（你本来也不该碰 `secrets/`）
+- 续期真的断了，维护脚本会发告警给主人，让他扫一次码
+- 你只要在主人问起时说清楚：**「登录过期了，扫一下码就好，扫一次管半年」**
+
+顺便记住这件事，因为它解释了什么问题该报、什么不该报：
+2026-10-30 那份 Cookie 是从浏览器手工复制的，过期戳明明写着 2027-04-28，
+结果在服务器上 6 小时 46 分就失效了 —— 不是过期，是被浏览器那边顶掉了。
+**手工复制的 Cookie 天生就是这个命**：一次性快照、没法续、还看不出来。
+所以现在走扫码 + refresh_token，不是图省事，是因为另一条路根本走不通。
 
 ---
 
