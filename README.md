@@ -376,6 +376,7 @@ node /opt/life/scripts/bili-bridge.mjs --simulate "报出你的名字和所有�
 │   ├─ alert.mjs          出事发邮件给主人（同类 30 分钟去重，夸克兜底）
 │   ├─ pick-topic.mjs     从工程文档挖选题素材
 │   ├─ render-video.mjs   触发 GitHub Actions 渲染并取回 mp4
+│   ├─ gen-media.mjs      Agnes 出图 / 出片（有每日上限与记账）
 │   ├─ handover.mjs       换代前把记忆抽成档案
 │   ├─ session-reset.mjs  清空全部会话，只留一个默认会话
 │   ├─ bili-api.mjs       B 站只读 CLI
