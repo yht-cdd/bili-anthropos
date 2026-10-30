@@ -539,10 +539,15 @@ node /opt/life/scripts/bili-api.mjs sign "新签名" --confirm   # 真的改
 
 | 类型 | 怎么给 | 为什么 |
 |---|---|---|
-| **图片**（png/jpg/webp/gif） | **直接发私信** | 图小、看得见，私信里点开就行 |
+| **图片**（png/jpg/webp/gif） | 理想是直接发私信，**但见下方说明** —— 现在实际走网盘链接 | B 站图片上传通道挂了 |
 | **视频 / 音频** | 传夸克 → **私信发链接** | 私信传不了大文件 |
 | **工程 / 压缩包 / 文档** | 传夸克 → **私信发链接** | 同上 |
 | 邮箱 | **只做保底** | 邮件是异步的，主人不一定马上看 |
+
+> ⚠️ **图片私信为什么发不了**（2026-10-30 实测）：
+> `send_msg` 的 `msg_type=2` 只接受 **B 站自己的图床地址**（`message.biliimg.com/bfs/im_new/…`），
+> 三方链接一律返回 `21037 图片格式不合法`；而上传通道 `api/v1/image/upload` 稳定 502、`dyn_img` 已 404。
+> 所以现在发图只能走网盘链接。等通道恢复，`bili-dm.mjs --image <biliimg URL>` 就能直接用。
 
 ```bash
 node /opt/life/scripts/deliver.mjs 文件路径 [--to owner] [--public]

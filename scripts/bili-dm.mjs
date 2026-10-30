@@ -146,14 +146,25 @@ if (opt.status) {
 }
 
 // ── 参数校验 ──────────────────────────────────────────
+// 发图片：--image <公网 URL>。
+// 注意：B 站自己的上传通道（api/v1/image/upload）实测稳定 502，
+// 但 send_msg 的 msg_type=2 接受任意公网 URL（官方文档写「也可用三方图床」）。
+// 所以这里只负责「用现成的 URL 发出去」，上传由别的地方负责。
+const IMAGE_URL = typeof opt.image === "string" ? opt.image.trim() : "";
+
+if (IMAGE_URL && !/^https?:\/\//i.test(IMAGE_URL)) {
+  console.error(`❌ --image 需要完整的 http(s) URL，收到：${IMAGE_URL}`);
+  process.exit(1);
+}
+
 // 把字面 "\n" 转成真换行：她在命令行里传的内容常常带转义符，
 // 不处理的话 B 站私信里会原样显示成 "\n\n"
 const clean = String(text).trim().replace(/\\n/g, "\n");
-if (!clean) {
-  console.error('用法: node bili-dm.mjs "内容" [--to UID] [--dry] [--status]');
+if (!clean && !IMAGE_URL) {
+  console.error('用法: node bili-dm.mjs "内容" [--to UID] [--image URL] [--dry] [--status]');
   process.exit(2);
 }
-if (clean.length > MAX_LEN) {
+if (!IMAGE_URL && clean.length > MAX_LEN) {
   console.error(`❌ 太长（${clean.length} 字），B 站私信上限约 ${MAX_LEN}`);
   process.exit(1);
 }
@@ -175,7 +186,15 @@ if (!IS_OWNER) {
 if (opt.dry) {
   console.log(
     JSON.stringify(
-      { dry: true, to: IS_OWNER ? "主人" : `${TO.slice(0, 4)}***${TO.slice(-2)}`, isOwner: IS_OWNER, len: clean.length },
+      {
+        dry: true,
+        to: IS_OWNER ? "主人" : `${TO.slice(0, 4)}***${TO.slice(-2)}`,
+        isOwner: IS_OWNER,
+        kind: IMAGE_URL ? "image" : "text",
+        len: clean.length,
+  kind: IMAGE_URL ? "image" : "text",
+        image: IMAGE_URL || undefined,
+      },
       null,
       2
     )
@@ -198,10 +217,12 @@ const form = new URLSearchParams({
   "msg[sender_uid]": SELF,
   "msg[receiver_id]": TO,
   "msg[receiver_type]": "1",
-  "msg[msg_type]": "1",
+  "msg[msg_type]": IMAGE_URL ? "2" : "1",
   "msg[dev_id]": DEV,
   "msg[timestamp]": String(Math.floor(Date.now() / 1000)),
-  "msg[content]": JSON.stringify({ content: clean }),
+  "msg[content]": IMAGE_URL
+    ? JSON.stringify({ url: IMAGE_URL, original: 1 })
+    : JSON.stringify({ content: clean }),
   csrf: CSRF,
 });
 
@@ -231,6 +252,7 @@ q.log.push({
   to: TO,
   isOwner: IS_OWNER,
   len: clean.length,
+  kind: IMAGE_URL ? "image" : "text",
   hash: createHash("sha1").update(clean).digest("hex").slice(0, 8),
 });
 q.lastAt = Date.now();
@@ -245,4 +267,12 @@ try {
   );
 } catch {}
 
-console.log(JSON.stringify({ ok: true, to: IS_OWNER ? "owner" : "other", msg_key: j.data?.msg_key, len: clean.length }));
+console.log(
+  JSON.stringify({
+    ok: true,
+    to: IS_OWNER ? "owner" : "other",
+    kind: IMAGE_URL ? "image" : "text",
+    msg_key: j.data?.msg_key,
+    len: clean.length,
+  })
+);

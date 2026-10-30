@@ -87,7 +87,13 @@ function dm(text) {
 
 /** 图片私信：需要能发图的客户端；没有就退化成链接 */
 function dmImage(f) {
-  if (!has("bili")) return { ok: false, why: "没有能发图私信的客户端" };
+  // 实测（2026-10-30）：send_msg 的 msg_type=2 只认 B 站自己的图床地址
+  // （message.biliimg.com/bfs/im_new/…），三方 URL 一律 code=21037；
+  // 而上传通道 api/v1/image/upload 目前稳定 502、dyn_img 已 404。
+  // 所以这里只在装了能发图的客户端时才尝试，失败就走网盘链接。
+  if (!has("bili")) {
+    return { ok: false, why: "B 站图片上传通道不可用（502），本机也没有能发图的客户端" };
+  }
   try {
     const r = execSync(`bili dm send --image "${f}"`, { encoding: "utf8", timeout: 180_000 });
     return { ok: true, detail: String(r).trim().slice(0, 200) };
