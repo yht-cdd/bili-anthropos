@@ -117,11 +117,6 @@ export const AnthroposVideo: React.FC<VideoProps> = ({ title, subtitle, kicker, 
       >
         ANTHROPOS
       </div>
-
-      {/* 安全区提示（渲染时会出现在成片里，正式版删掉这行） */}
-      <div style={{ position: "absolute", right: 60, bottom: 72, fontSize: 20, color: "#3A3A40" }}>
-        {width}×{height} · {fps}fps
-      </div>
     </AbsoluteFill>
   );
 };
