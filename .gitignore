@@ -1,0 +1,58 @@
+# Anthropos 运行数据 —— 一概不入库
+
+# 凭据
+secrets/
+*.cookie
+bili_cookie.txt
+.env
+.env.*
+auth.json
+service.json
+
+# 运行数据
+bili/data/
+bili/logs/
+bili/drafts/
+bili/outbox/
+bili/assets/
+logs/
+exec/
+journal/
+diary/
+inbox/
+outbox/
+*.db
+*.db-wal
+*.db-shm
+
+# 记忆文件（含个人内容）
+META.md
+SELF.md
+STATE.json
+STREAM.md
+TODAY.md
+BELIEFS.md
+QUESTIONS.md
+ALERT.md
+
+# 依赖与构建产物
+node_modules/
+dist/
+build/
+out/
+.next/
+*.tsbuildinfo
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时文件
+*.log
+*.tmp
+*.bak
+*.swp
+*~

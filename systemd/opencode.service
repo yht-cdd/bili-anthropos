@@ -1,0 +1,21 @@
+[Unit]
+Description=OpenCode server - AI runtime for Anthropos
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/life
+Environment=HOME=/root
+# ⚠️ 必须是绝对路径。写成 /usr/bin/node 会 status=203/EXEC
+ExecStart=/usr/local/bin/opencode serve --hostname 127.0.0.1 --port 4096
+Restart=always
+RestartSec=10
+MemoryMax=1100M
+MemoryHigh=900M
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

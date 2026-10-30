@@ -1,0 +1,23 @@
+[Unit]
+Description=Anthropos bridge - Bilibili DM to opencode brain
+After=network-online.target opencode.service
+Wants=network-online.target
+Requires=opencode.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/life
+Environment=HOME=/root
+Environment=LIFE_HOME=/opt/life
+# ⚠️ 必须是绝对路径。写成 /usr/bin/node 会 status=203/EXEC
+ExecStart=/usr/local/bin/node /opt/life/scripts/bili-bridge.mjs
+Restart=always
+RestartSec=15
+MemoryMax=250M
+MemoryHigh=180M
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

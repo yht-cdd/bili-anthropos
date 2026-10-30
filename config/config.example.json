@@ -1,0 +1,70 @@
+{
+  "$comment": "复制成 config.json 后按需修改。桥接器内置默认值，这个文件是可选的。",
+
+  "owner": {
+    "$comment": "唯一最高权限来源。必须是你自己的 B 站 UID。",
+    "uid": "YOUR_BILIBILI_UID",
+    "name": "YOUR_NAME"
+  },
+
+  "self": {
+    "$comment": "这个 AI 账号自己的 UID，桥接器会从 Cookie 的 DedeUserID 自动读取，这里只用于文档。",
+    "uid": "YOUR_AI_UID",
+    "name": "YOUR_AI_NAME"
+  },
+
+  "brain": {
+    "$comment": "新建 session 必须同时给 location + agent + model，少一个就永远不会执行。",
+    "baseUrl": "http://127.0.0.1:4096",
+    "auth": {
+      "username": "opencode",
+      "passwordSource": "journald",
+      "$comment": "journald = 从 journalctl -u opencode 抓；service.json = 读 /root/.config/opencode/service.json"
+    },
+    "agent": "build",
+    "model": {
+      "providerID": "opencode",
+      "id": "deepseek-v4.1-flash-free",
+      "variant": "max"
+    },
+    "location": {
+      "directory": "/opt/life"
+    }
+  },
+
+  "bridge": {
+    "$comment": "12 秒一轮。别低于 5 秒，B 站会当爬虫。",
+    "pollMs": 12000,
+    "heartbeatEvery": 25,
+    "waitMaxMs": 300000,
+    "ackAfterMs": 20000,
+    "maxTurnsPerSession": 80,
+    "replySliceChars": 380,
+    "maxReplySlices": 4
+  },
+
+  "limits": {
+    "$comment": "发送层的四道闸。allowDM 是硬开关，不是配置项——改动前先读 AGENTS.md 的绝对禁止第 4 条。",
+    "sameTargetGapMs": 90000,
+    "hourly": 3,
+    "daily": 20,
+    "maxLen": 500,
+    "minLen": 2,
+    "allowDM": false
+  },
+
+  "paths": {
+    "home": "/opt/life",
+    "cookieFile": "/opt/life/secrets/bili_cookie.txt",
+    "dbFile": "/opt/life/bili/data/bili.db",
+    "bridgeLog": "/opt/life/bili/logs/bridge.log",
+    "sessionFile": "/opt/life/bili/data/bridge_session.json"
+  },
+
+  "security": {
+    "$comment": "这三条不要改。改了等于把任意命令执行权限开放给任何会打字的人。",
+    "identityFromField": true,
+    "rejectSelfClaim": true,
+    "allowStrangerCommands": false
+  }
+}

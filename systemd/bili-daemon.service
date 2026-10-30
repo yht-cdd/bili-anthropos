@@ -1,0 +1,19 @@
+[Unit]
+Description=Bilibili realtime perception daemon (Anthropos)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/life
+ExecStart=/usr/local/bin/node /opt/life/scripts/bili-daemon.mjs
+Restart=always
+RestartSec=15
+MemoryMax=250M
+MemoryHigh=200M
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

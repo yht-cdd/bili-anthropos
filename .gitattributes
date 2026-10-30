@@ -1,0 +1,14 @@
+# 统一 LF。带 CRLF 的 .sh 会让 systemd 报 `bad interpreter: /bin/sh^M`，
+# 而那看起来和行尾毫无关系。
+* text=auto eol=lf
+
+*.sh      text eol=lf
+*.mjs     text eol=lf
+*.md      text eol=lf
+*.service text eol=lf
+*.json    text eol=lf
+*.svg     text eol=lf
+
+*.png     binary
+*.jpg     binary
+*.mp4     binary
