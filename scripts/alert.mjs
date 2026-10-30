@@ -50,7 +50,15 @@ for (let i = 0; i < argv.length; i += 1) {
 title = positional[0] || "";
 body = positional[1] || "";
 
-const DEDUP_MS = 30 * 60_000;
+const DEDUP_MS = 30 * 60_000;      // 同类告警 30 分钟内只发一次
+const URGENT_FLOOR_MS = 2 * 3600_000;  // 加了 --urgent 也不能裸奔：同一条 2 小时最多一封
+// 为什么失败也要记账：
+// 2026-10-30 实测踩过 —— Cookie 失效时桥接每 73 秒重发一次「urgent」告警，
+// urgent 会跳过全部去重，而失败又不写 state，于是它一直重试。
+// AgentSend 免费收件箱是 10 封/天，十几分钟就被刷光，
+// 结果真正需要的那封（Cookie 失效本身）反而发不出去。
+// 教训：**告警通道要有自己的配额意识**，它比任何一条告警都重要。
+const RETRY_FLOOR_MS = 60 * 60_000;
 
 function keyFile() {
   try { return fs.readFileSync(KEY_FILE, "utf8").trim(); } catch { return ""; }
@@ -119,8 +127,21 @@ function quarkFallback(file) {
 
   const state = loadState();
   const rec = state[title];
-  if (!opt.urgent && rec && Date.now() - Number(rec.at || 0) < DEDUP_MS) {
-    console.log(`（同类告警 30 分钟内已发过，跳过：${title}）`);
+  const sinceOk = rec?.at ? Date.now() - Number(rec.at) : Infinity;
+  const sinceTry = rec?.lastTry ? Date.now() - Number(rec.lastTry) : Infinity;
+
+  // ① 刚发成功过 —— 30 分钟（urgent 放宽到 2 小时）内不重复
+  const floor = opt.urgent ? URGENT_FLOOR_MS : DEDUP_MS;
+  if (sinceOk < floor) {
+    console.log(`（同类告警刚发过，跳过：${title}）`);
+    process.exit(0);
+  }
+  // ② 刚发失败过 —— 一小时内不再试。不然会把收件箱额度刷光，
+  //    真正要发的那封反而发不出去（2026-10-30 的真实事故）。
+  if (sinceTry < RETRY_FLOOR_MS) {
+    const mins = Math.round(sinceTry / 60_000);
+    console.log(`（上次发送失败，${mins} 分钟前；一小时内不再重试：${title}）`);
+    note(`退避跳过：${title}（距上次失败 ${mins} 分钟）`);
     process.exit(0);
   }
 
@@ -143,6 +164,22 @@ function quarkFallback(file) {
 
   let r = await sendMail(`[Anthropos 告警] ${title}`, text);
 
+  // 429 = 今天的邮件额度用完了。这时候再走夸克兜底也是发邮件，一样发不出去，
+  // 白白多花两分钟。直接留证据、说清楚。
+  if (!r.ok && /RATE_LIMIT|429/.test(r.why)) {
+    note(`额度耗尽，跳过兜底：${title}`);
+    try {
+      fs.appendFileSync(
+        path.join(HOME, "ALERT.md"),
+        `\n## ${stamp} · ${title}\n\n${text}\n\n> 邮件额度用完（AgentSend 免费收件箱 10 封/天），这封没发出去。\n`
+      );
+    } catch {}
+    state[title] = { ...(rec || {}), lastTry: Date.now() };
+    saveState(state);
+    console.error(`❌ 今天的邮件额度已用完（10 封/天），这条告警只写进了 ALERT.md`);
+    process.exit(1);
+  }
+
   if (!r.ok) {
     note(`主路失败：${r.why}`);
     const link = quarkFallback(opt.file);
@@ -152,15 +189,17 @@ function quarkFallback(file) {
   }
 
   if (r.ok) {
-    state[title] = { at: Date.now(), count: Number(rec?.count || 0) + 1 };
+    state[title] = { at: Date.now(), count: Number(rec?.count || 0) + 1, lastTry: Date.now() };
     saveState(state);
     note(`已发「${title}」→ ${r.to}`);
     console.log(JSON.stringify({ ok: true, id: r.id, to: r.to, subject: `[Anthropos 告警] ${title}` }));
     process.exit(0);
   }
 
-  // 两条都不通：至少留证据
+  // 两条都不通：至少留证据，并记下这次尝试的时间，让下次退避
   note(`全部失败：${title} | ${r.why}`);
+  state[title] = { ...(rec || {}), lastTry: Date.now() };
+  saveState(state);
   try {
     fs.appendFileSync(
       path.join(HOME, "ALERT.md"),
