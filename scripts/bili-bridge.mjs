@@ -78,11 +78,49 @@ const HEARTBEAT_EVERY = 25;    // 每 25 轮（约 5 分钟）写一次心跳
 
 // ── 会话寿命：只有一个会话，只压缩，不换代 ───────────────
 // 换会话 = 她失忆。之前按 45 条消息换，等于每聊几十句就把她打回原形。
-// 现在：同一个会话一直用；上下文涨到阈值就在原地压缩（compact），
-// 压缩也是模型调用，但换来的是「记得住前面」，比换会话便宜。
-// 阈值按主模型 1M 窗口取，留足余量；可用环境变量覆盖。
-const CTX_COMPACT_AT = Number(process.env.CTX_COMPACT_AT || 250_000);  // 到这就压缩
-const CTX_HARD_AT = Number(process.env.CTX_HARD_AT || 600_000);        // 到了就先压再干活
+// 现在：同一个会话一直用；上下文涨到阈值就在原地压缩（compact）。
+//
+// 阈值不写死，按**当前模型自己的窗口**算：GET /api/model 里每个模型都带
+// limit.context，压缩线取它的 90%，硬线取 95%。
+// 写死数字的坑：换模型就失准 —— 200k 的模型配 900k 阈值，等于永不压缩；
+// 1M 的模型配 250k 阈值，等于一天压八次，白花钱。
+const CTX_RATIO = Number(process.env.CTX_RATIO || 0.9);
+let CTX_LIMIT = 0;
+let CTX_COMPACT_AT = Number(process.env.CTX_COMPACT_AT || 0);
+let CTX_HARD_AT = Number(process.env.CTX_HARD_AT || 0);
+
+/** 读当前主模型的上下文窗口 */
+async function modelContextLimit() {
+  try {
+    const j = await oc("/api/model", { timeout: 15_000 });
+    const hit = (j.data || []).find(
+      (m) => String(m.providerID) === OC_MODEL.providerID && String(m.id) === OC_MODEL.id
+    );
+    return Number(hit?.limit?.context || 0);
+  } catch (e) {
+    log("读模型上下文上限失败:", e.message);
+    return 0;
+  }
+}
+
+/** 第一次用之前把阈值算出来；算不出就退回保守的 200k 窗口 */
+async function ensureLimits() {
+  if (CTX_COMPACT_AT) return;
+  let ctx = Number(process.env.CTX_LIMIT || 0);
+  if (!ctx) ctx = await modelContextLimit();
+  if (!ctx) {
+    ctx = 200_000;
+    log("⚠️ 读不到模型窗口，按 200k 保守估算");
+  }
+  CTX_LIMIT = ctx;
+  if (!CTX_COMPACT_AT) CTX_COMPACT_AT = Math.floor(ctx * CTX_RATIO);
+  if (!CTX_HARD_AT) CTX_HARD_AT = Math.floor(ctx * Math.min(0.95, CTX_RATIO + 0.05));
+  log(
+    `📏 ${OC_MODEL.id} 上下文上限 ${ctx} tokens` +
+      ` → 压缩线 ${CTX_COMPACT_AT}（${Math.round((CTX_COMPACT_AT / ctx) * 100)}%）` +
+      ` · 硬线 ${CTX_HARD_AT}（${Math.round((CTX_HARD_AT / ctx) * 100)}%）`
+  );
+}
 
 // 超时之后继续守着这一轮。她常常在超时后几十秒才收尾，
 // 之前直接写「（这一轮没有产出文字）」把 496 字成果扔了。
@@ -336,6 +374,7 @@ async function brainAlive() {
  * 上下文太大就压缩（compact），压不动也留着 —— 记得住比清爽重要。
  */
 async function ensureSession() {
+  await ensureLimits();
   let rec = null;
   try {
     rec = JSON.parse(fs.readFileSync(SESSION_FILE, "utf8"));
@@ -407,6 +446,7 @@ async function rebindModel(sid) {
 let COMPACTING = false;
 async function maybeCompact(sid) {
   if (COMPACTING) return;
+  await ensureLimits();
   if (await sessionRunning(sid)) return;
   const usage = await contextUsage(sid);
   if (usage < CTX_COMPACT_AT) return;
@@ -1269,7 +1309,20 @@ if (MODE.usage) {
   (async () => {
     const sid = await ensureSession();
     const u = await contextUsage(sid);
-    console.log(JSON.stringify({ session: sid, contextTokens: u, compactAt: CTX_COMPACT_AT, hardAt: CTX_HARD_AT }, null, 2));
+    console.log(
+      JSON.stringify(
+        {
+          session: sid,
+          contextTokens: u,
+          contextLimit: CTX_LIMIT,
+          usagePct: CTX_LIMIT ? Math.round((u / CTX_LIMIT) * 1000) / 10 : null,
+          compactAt: CTX_COMPACT_AT,
+          hardAt: CTX_HARD_AT,
+        },
+        null,
+        2
+      )
+    );
     process.exit(0);
   })();
 } else if (MODE.compactNow) {
@@ -1363,6 +1416,7 @@ if (MODE.usage) {
     // 启动自检
     const alive = await brainAlive();
     log(alive ? "✅ 大脑在线" : "⚠️ 大脑离线，将重试");
+    if (alive) await ensureLimits();
 
     while (!stop) {
       try {
