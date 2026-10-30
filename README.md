@@ -372,6 +372,7 @@ node /opt/life/scripts/bili-bridge.mjs --simulate "报出你的名字和所有�
 ├─ scripts/
 │   ├─ bili-bridge.mjs    私信 ↔ 大脑 桥接（单会话常驻 + 自动压缩 + 失败重试）
 │   ├─ spawn-task.mjs     派活给子代理（免费模型阶梯，只回传结论）
+│   ├─ bili-inbox.mjs     评论 / @ / 回复我 → 事件队列（只收不发）
 │   ├─ handover.mjs       换代前把记忆抽成档案
 │   ├─ session-reset.mjs  清空全部会话，只留一个默认会话
 │   ├─ bili-api.mjs       B 站只读 CLI

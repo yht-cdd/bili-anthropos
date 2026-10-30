@@ -171,6 +171,10 @@ db.exec(`
   PRAGMA journal_mode = WAL;
   CREATE TABLE IF NOT EXISTS kv (k TEXT PRIMARY KEY, v TEXT);
   CREATE TABLE IF NOT EXISTS dm_seen (key TEXT PRIMARY KEY, at INTEGER);
+  CREATE TABLE IF NOT EXISTS events (
+    id TEXT PRIMARY KEY, kind TEXT NOT NULL, ref TEXT, author TEXT, author_id TEXT,
+    body TEXT, origin_ts INTEGER, seen_at INTEGER, status INTEGER DEFAULT 0, raw TEXT
+  );
 `);
 const kvGet = (k, d = null) => {
   const r = db.prepare("SELECT v FROM kv WHERE k=?").get(k);
@@ -679,6 +683,16 @@ function buildTurnMeta(text, kind, { retry = false } = {}) {
         `  这个工具代码级只能发给他，发不了第二个人。\n` +
         `  是否发、发什么、发几条，由你判断；除私信以外本轮不做其他对外写动作\n` +
         `  （不发评论 / 动态 / 弹幕 / 点赞 / 投币）。）`
+      : kind === "comment"
+      ? `[来源：B 站评论 / @ · 无人值守 · 回不回你定 · ${ts()}]\n` +
+        `---\n${text}\n---\n` +
+        `（提醒：这一轮没有收信人，你的输出会进日记。\n` +
+        `  要回某一条，**必须走发送层**（它带四道闸：内容 / 限速 / 静默 / 类型）：\n` +
+        `    node /opt/life/scripts/bili-send.mjs approve <事件id> "回复内容"\n` +
+        `    node /opt/life/scripts/bili-send.mjs send <事件id> --confirm\n` +
+        `  不加 --confirm 只演练。闸门拦下就说明不该发，别绕。\n` +
+        `  不回完全可以：单个表情、纯夸奖、其他 AI、要 API key 的，都不值得回。\n` +
+        `  本轮不发私信、不发动态、不发弹幕。）`
       : `[来源：主人 B 站私信 · ${ts()}]\n` +
         `---\n${text}\n---\n` +
         `（提醒：你的回复会被自动转发到主人 B 站私信，请用纯文本、直接给结论。）`;
@@ -1144,6 +1158,100 @@ function maybeApproveSpend(text) {
   return grant;
 }
 
+// ── 评论 / @ 轮询 ─────────────────────────────────────
+// 私信之外的第二条感知线。只收不抢：收进来的评论进 events 表，
+// 由她判断回不回；真要回的时候必须过 bili-send 的四道闸。
+const INBOX_GAP_MS = Number(process.env.INBOX_GAP_MS || 5 * 60_000);
+const INBOX_BATCH = Number(process.env.INBOX_BATCH || 3);
+let lastInboxAt = 0;
+
+function inboxPull() {
+  try {
+    const out = execSync(`node ${HOME}/scripts/bili-inbox.mjs pull --json`, {
+      encoding: "utf8",
+      timeout: 90_000,
+    }).trim();
+    const i = out.indexOf("{");
+    return JSON.parse(i >= 0 ? out.slice(i) : out);
+  } catch (e) {
+    log("收评论失败:", String(e.message).split("\n")[0]);
+    return null;
+  }
+}
+
+async function pollInbox() {
+  if (AUTO_BUSY) return null;
+  if (Date.now() - lastInboxAt < INBOX_GAP_MS) return null;
+  lastInboxAt = Date.now();
+
+  const pulled = inboxPull();
+  if (pulled?.added) log(`👀 新评论 ${pulled.added} 条（扫了 ${pulled.videos} 个稿件）`);
+
+  let rows = [];
+  try {
+    // ⚠️ events 表是共用的：bili-daemon 也会往里写 dm 事件。
+    //    这里必须按类型过滤，否则会把陌生私信当成评论塞给她（实测踩过）。
+    rows = db
+      .prepare("SELECT * FROM events WHERE status = 0 AND kind IN ('comment','at','reply') ORDER BY origin_ts ASC LIMIT ?")
+      .all(INBOX_BATCH);
+  } catch (e) {
+    log("读 events 失败:", e.message);
+    return null;
+  }
+  if (!rows.length) return null;
+
+  const normTs = (t) => {
+    const n = Number(t) || 0;
+    if (n > 1e14) return n / 1e3;   // 微秒
+    if (n > 1e11) return n;         // 毫秒
+    if (n > 1e9) return n * 1e3;    // 秒（daemon 写的是这种）
+    return n;
+  };
+
+  const lines = rows.map((e, i) => {
+    const tag = e.kind === "comment" ? "评论" : e.kind === "at" ? "@我" : "回复我";
+    let title = "";
+    try { title = JSON.parse(e.raw || "{}").title || ""; } catch {}
+    return (
+      `${i + 1}) [${tag}] 事件 ${e.id} · ${e.author || "?"}（uid ${e.author_id || "?"}） · ` +
+      `${new Date(normTs(e.origin_ts)).toLocaleString("zh-CN", { hour12: false })}` +
+      (title ? `\n   来自《${title}》` : "") +
+      `\n   内容：${String(e.body || "").replace(/\n/g, " ").slice(0, 300)}` +
+      `\n   要回：bili-send approve ${e.id} "…" → bili-send send ${e.id} --confirm`
+    );
+  });
+
+  const task = [
+    `【评论来了】${rows.length} 条，你自己判断值不值得回。`,
+    ``,
+    lines.join("\n\n"),
+    ``,
+    `判断标准在契约第九节。这是**公开场合**：说错话删不掉，不回没人怪你。`,
+  ].join("\n");
+
+  const t0 = Date.now();
+  const r = await runTask(task, { kind: "comment", timeoutMs: AUTO_MAX_MS, lateTitle: "收到评论" });
+
+  const said = cleanReply(r.reply);
+  const body = said
+    ? said
+    : r.timeout
+    ? "（时限内没处理完，先记一笔；跑完会补记）"
+    : r.failed
+    ? `（模型没跑起来：${r.failure?.text || "未知"}）`
+    : "（这一轮没有文字输出）";
+  try {
+    diaryAppend("收到评论", body + harvestActions(t0));
+  } catch (e) {
+    log("日记写入失败:", e.message);
+  }
+
+  // 交出去就算处理过，避免每 5 分钟重复塞给她。真回了的话 bili-send 会把 status 改成 1。
+  for (const e of rows) db.prepare("UPDATE events SET status = 4 WHERE id = ? AND status = 0").run(e.id);
+  log(`👀 评论回合结束 ${r.ok ? "ok" : "fail"} ${((Date.now() - t0) / 1000).toFixed(1)}s · ${rows.length} 条`);
+  return { handled: rows.length, ok: r.ok };
+}
+
 // ── 主流程 ────────────────────────────────────────────
 async function handleOwnerMessage(text, raw) {
   log("📨 主人: " + text.replace(/\n/g, " ").slice(0, 120));
@@ -1421,7 +1529,8 @@ if (MODE.usage) {
     while (!stop) {
       try {
         await tick();        // ① 私信优先：有人找她，先把人伺候好
-        await maybeWake();   // ② 没人找，才看时间
+        await pollInbox();   // ② 评论区看看有没有新动静（5 分钟一次）
+        await maybeWake();   // ③ 没人找，才看时间
       } catch (e) {
         if (e.fatal) {
           log("💀 致命错误（Cookie 失效）：", e.message);
