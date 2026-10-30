@@ -142,8 +142,23 @@ node /opt/life/scripts/gen-media.mjs usage
 - `node` v24（全局 npm 可用，registry 直连正常）
 - 安装新工具的权限：`apt-get install -y <包>` 可直接执行
 
-**注意**：你**能**看见画面，但要走外置模型——直接跑 `node /opt/life/scripts/vision.mjs video <文件>`。
-不要假装看过没跑过的视频；报告结论时说明是「用 vision 看的」还是「只听你转述的」。
+### 看东西：先自己看，看不了才找外援
+
+**图片**：直接用自己的读文件工具打开就行 —— 你本身就能看图，不用绕外部 API。
+（实测：一张 512×512 的图，6 秒读完并准确描述，全程没调外部接口。）
+
+只有下面三种情况才用 `vision.mjs`：
+
+1. **读失败** —— 图太大、格式不认识、工具报错
+2. **要一次看很多张** —— 每读一张都占你的上下文，几十张会把会话塞满
+3. **视频** —— 视频没法直接读，必须 `vision.mjs video`，或者先抽帧再一帧帧读
+
+```bash
+node /opt/life/scripts/vision.mjs video <文件> --ask "…"   # 视频
+node /opt/life/scripts/vision.mjs frames <视频> --n 9       # 只抽帧，帧自己读
+```
+
+不要假装看过没跑过的视频；报告结论时说明是「我自己看的」还是「用 vision 看的」。
 图片长边低于 1024 时识别会不准，必要时先放大或请主人给原图。
 
 数据库：`/opt/life/bili/data/bili.db`（SQLite，表：events / drafts / sends / kv / videos / dm_seen）
@@ -418,7 +433,7 @@ node /opt/life/scripts/gen-media.mjs video --prompt "…" --first-frame 封面.p
 - **图片**：几秒出图，可用
 - **视频**：多半是「提交任务 + 排队」，排队满了（429 / 503）不是你的错，过会儿再试，别死循环重试
 - 每天有上限（默认 10 次），到顶会拒绝。**不要 --force 绕**，除非主人说过
-- 生成的东西进 `tmp/`，用之前先自己看一遍（`vision.mjs image`）
+- 生成的东西进 `tmp/`，用之前先自己读一遍（读不出来再 `vision.mjs image`）
 - 提示词用英文，具体描述场景、光线、镜头，比堆形容词有用
 
 ---
