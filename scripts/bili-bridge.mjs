@@ -72,10 +72,63 @@ const OC_AGENT = "build";
 // 不至于为了测试真给账号发一条「模型挂了」。
 const DRY_DM = process.env.DRY_DM === "1";
 
-const POLL_MS = 12_000;        // 轮询间隔
+// 2026-10-31 按主人定的风控节奏：轮询 30 秒（原 12 秒）。
+// 心跳/全量扫仍然约 5 分钟一次，所以轮数要跟着改成 10。
+const POLL_MS = Number(process.env.POLL_MS || 30_000);
 const WAIT_MAX_MS = Number(process.env.TASK_MAX_MS || 420_000);  // 单任务最长等 7 分钟
 const ACK_AFTER_MS = 20_000;   // 超过 20 秒还没完就先回一句「收到」
-const HEARTBEAT_EVERY = 25;    // 每 25 轮（约 5 分钟）写一次心跳
+const HEARTBEAT_EVERY = Number(process.env.HEARTBEAT_EVERY || 10);  // 10 轮 × 30s ≈ 5 分钟
+
+// ── 请求节流与风控退避 ────────────────────────────────
+// 同行 783★ dsh-bili-whale 的原话：「连击是最容易被判机器人的特征」，
+// 默认全局请求间隔 1500ms。这里对读（getSessions/fetchMsgs）和写（sendDM）
+// 统一生效——之前的 12 秒轮询 + 无间隔连击，是账号最容易招风控的特征。
+const REQ_GAP_MS = Number(process.env.REQ_GAP_MS || 1500);
+// 撞 429 / 412 / -352 / -412 后的梯度暂停（分钟），与同行一致：5/10/20/30。
+// 关键是「撞了就停手」，不是重试硬顶。
+const COOLDOWN_LADDER_MS = [5, 10, 20, 30].map((m) => m * 60_000);
+// 暂停状态要落盘：bili-dm.mjs 是独立进程，陌生人私信由它发，
+// 看不到桥接内存里的 cooldownUntil。不共享就会「桥接停了、私信照发」。
+const RATE_FILE = `${HOME}/bili/data/rate_limit.json`;
+function writeRateState(until, step, reason) {
+  try {
+    fs.mkdirSync(`${HOME}/bili/data`, { recursive: true });
+    fs.writeFileSync(RATE_FILE, JSON.stringify({ until, step, reason, at: Date.now() }, null, 2) + "\n");
+  } catch {}
+}
+let lastReqAt = 0;
+let cooldownUntil = 0;
+let cooldownStep = 0;
+
+const rateLimited = () => Date.now() < cooldownUntil;
+const pauseLeftMin = () => Math.ceil((cooldownUntil - Date.now()) / 60_000);
+
+function hitRateLimit(reason) {
+  const idx = Math.min(cooldownStep, COOLDOWN_LADDER_MS.length - 1);
+  const pause = COOLDOWN_LADDER_MS[idx];
+  cooldownUntil = Date.now() + pause;
+  cooldownStep += 1;
+  writeRateState(cooldownUntil, cooldownStep, reason);
+  // 只写日志，不发邮件——这是可自愈的静默退避，不该占告警额度
+  log(`🚫 撞风控（${reason}）→ 全局暂停 ${pause / 60000} 分钟（第 ${cooldownStep} 次，阶梯 5/10/20/30）`);
+}
+
+function noteRequestOk() {
+  if (cooldownStep > 0) {
+    cooldownStep = 0;
+    writeRateState(0, 0, "");
+    log(`✅ 请求恢复正常，风控阶梯清零`);
+  }
+}
+
+/** 所有 B 站请求（读和写）出门前都过这道闸 */
+async function gateRequest() {
+  if (rateLimited()) return false;
+  const wait = Math.max(0, lastReqAt + REQ_GAP_MS - Date.now());
+  if (wait > 0) await sleep(wait);
+  lastReqAt = Date.now();
+  return true;
+}
 
 // ── 会话寿命：只有一个会话，只压缩，不换代 ───────────────
 // 换会话 = 她失忆。之前按 45 条消息换，等于每聊几十句就把她打回原形。
@@ -252,6 +305,7 @@ function alreadySentTo(uid, sinceMs) {
 
 // ── B 站 HTTP ─────────────────────────────────────────
 async function bget(url) {
+  if (!(await gateRequest())) return { code: -998, message: `风控暂停中（剩 ${pauseLeftMin()} 分钟）` };
   const r = await fetch(url, {
     headers: {
       "User-Agent": UA,
@@ -261,9 +315,17 @@ async function bget(url) {
     },
     signal: AbortSignal.timeout(20_000),
   });
+  // HTTP 412 是 B 站风控的经典返回；429 是限流。两者都触发全局梯度暂停
+  if (r.status === 412 || r.status === 429) {
+    hitRateLimit(`HTTP ${r.status}`);
+    return { code: -998, message: `HTTP ${r.status}` };
+  }
   const t = await r.text();
   try {
-    return JSON.parse(t);
+    const j = JSON.parse(t);
+    if (j.code === 0) noteRequestOk();
+    else if (j.code === -352 || j.code === -412) hitRateLimit(`code ${j.code}`);
+    return j;
   } catch {
     return { code: -999, message: t.slice(0, 200) };
   }
@@ -333,7 +395,10 @@ async function sendDM(text, receiver = OWNER_UID) {
     csrf: CSRF,
   });
 
+  if (rateLimited()) return { ok: false, why: `风控暂停中（剩 ${pauseLeftMin()} 分钟）` };
+
   for (let attempt = 1; attempt <= 3; attempt++) {
+    if (!(await gateRequest())) return { ok: false, why: "风控暂停中" };
     try {
       const r = await fetch("https://api.vc.bilibili.com/web_im/v1/web_im/send_msg", {
         method: "POST",
@@ -347,8 +412,14 @@ async function sendDM(text, receiver = OWNER_UID) {
         body: form.toString(),
         signal: AbortSignal.timeout(20_000),
       });
+      // 撞风控立刻停手，不重试硬顶（同行原话「撞到风控立刻停手并报告」）
+      if (r.status === 412 || r.status === 429) {
+        hitRateLimit(`sendDM HTTP ${r.status}`);
+        return { ok: false, why: `HTTP ${r.status}，已触发全局暂停` };
+      }
       const j = await r.json().catch(() => ({ code: -998 }));
       if (j.code === 0) {
+        noteRequestOk();
         log(`📤 已发私信 (${clean.length}字) msg_key=${j.data?.msg_key}`);
         // 任何一次对外说话之后都进入冷却：5 分钟内不再自主唤醒
         try {
@@ -356,8 +427,12 @@ async function sendDM(text, receiver = OWNER_UID) {
         } catch {}
         return { ok: true, msgKey: j.data?.msg_key };
       }
-      log(`⚠️ 发送失败 attempt=${attempt} code=${j.code} ${j.message || ""}`);
       if (j.code === -101) return { ok: false, why: "Cookie 失效" };
+      if (j.code === -352 || j.code === -412) {
+        hitRateLimit(`sendDM code ${j.code}`);
+        return { ok: false, why: `code ${j.code}，已触发全局暂停` };
+      }
+      log(`⚠️ 发送失败 attempt=${attempt} code=${j.code} ${j.message || ""}`);
       await sleep(3000 * attempt);
     } catch (e) {
       log(`⚠️ 发送异常 attempt=${attempt} ${e.message}`);
@@ -1292,6 +1367,9 @@ function inboxPull() {
 
 async function pollInbox() {
   if (AUTO_BUSY) return null;
+  // 它会拉起 bili-inbox.mjs 这个独立进程去请求 B 站，
+  // 全局风控暂停期间也得停，不然节流被绕过。
+  if (rateLimited()) return null;
   if (Date.now() - lastInboxAt < INBOX_GAP_MS) return null;
   lastInboxAt = Date.now();
 
@@ -1614,6 +1692,11 @@ const TEMPLATE_LINES = [
 
 async function tick() {
   tickCount++;
+  // 全局风控暂停期间，连 getSessions 都不发——「撞到风控立刻停手」
+  if (rateLimited()) {
+    if (tickCount % HEARTBEAT_EVERY === 0) log(`⏸ 风控暂停中，还剩 ${pauseLeftMin()} 分钟`);
+    return { handled: 0, paused: true };
+  }
   const sessions = await getSessions();
   const others = sessions
     .filter((s) => {

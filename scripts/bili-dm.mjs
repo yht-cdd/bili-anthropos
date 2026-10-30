@@ -31,6 +31,9 @@ const COOKIE_FILE = process.env.BILI_COOKIE_FILE || path.join(HOME, "secrets/bil
 const OWNER_FILE = path.join(HOME, "secrets/owner_uid.txt");
 const QUOTA_FILE = path.join(HOME, "bili/data/reply_quota.json");
 const LOG_FILE = path.join(HOME, "exec/bridge.log");
+// 桥接撞到 429/412 时会写这个文件。本脚本是独立进程，看不到桥接内存里的
+// 暂停状态，所以必须落盘共享——不然「桥接送不了、私信照发」，风控白绕。
+const RATE_FILE = path.join(HOME, "bili/data/rate_limit.json");
 
 const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36";
@@ -101,6 +104,18 @@ function saveQuota(q) {
 }
 
 function checkQuota() {
+  // 闸零：平台风控全局暂停（由桥接写盘，所有发送通道共守）
+  try {
+    const r = JSON.parse(fs.readFileSync(RATE_FILE, "utf8"));
+    const left = Number(r.until || 0) - Date.now();
+    if (left > 0) {
+      return {
+        ok: false,
+        why: `平台风控全局暂停中，还剩 ${Math.ceil(left / 60000)} 分钟（${r.reason || "429/412"}，第 ${r.step || 1} 次）`,
+      };
+    }
+  } catch {}   // 文件不存在 = 没在暂停，放行
+
   const q = loadQuota();
   const hourAgo = Date.now() - 3600_000;
   const hourCount = q.log.filter((x) => x.to !== ownerUid && new Date(x.at).getTime() > hourAgo).length;
