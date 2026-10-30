@@ -121,6 +121,17 @@ function noteRequestOk() {
   }
 }
 
+// 启动时恢复落盘的暂停状态——不然 systemctl restart 一次就把风控暂停绕过去了。
+// 梯度暂停的意义在于「让平台看到我们在歇」，重启清零等于没歇。
+try {
+  const _r = JSON.parse(fs.readFileSync(RATE_FILE, "utf8"));
+  if (Number(_r.until || 0) > Date.now()) {
+    cooldownUntil = Number(_r.until);
+    cooldownStep = Number(_r.step || 1);
+    log(`⏸ 从上次运行恢复风控暂停：还剩 ${pauseLeftMin()} 分钟（${_r.reason || ""}）`);
+  }
+} catch {}   // 没有文件 = 没在暂停
+
 /** 所有 B 站请求（读和写）出门前都过这道闸 */
 async function gateRequest() {
   if (rateLimited()) return false;
