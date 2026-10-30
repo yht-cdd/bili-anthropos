@@ -24,6 +24,7 @@ import fs from "fs";
 import { DatabaseSync } from "node:sqlite";
 import { execSync } from "node:child_process";
 import { createHash } from "node:crypto";
+import { due as wakeDue, markFired as wakeMarkFired, touchCooldown as wakeTouchCooldown } from "./wake-plan.mjs";
 
 // ── 路径与常量 ────────────────────────────────────────
 const HOME = process.env.LIFE_HOME || "/opt/life";
@@ -218,6 +219,10 @@ async function sendDM(text, receiver = OWNER_UID) {
       const j = await r.json().catch(() => ({ code: -998 }));
       if (j.code === 0) {
         log(`📤 已发私信 (${clean.length}字) msg_key=${j.data?.msg_key}`);
+        // 任何一次对外说话之后都进入冷却：5 分钟内不再自主唤醒
+        try {
+          wakeTouchCooldown();
+        } catch {}
         return { ok: true, msgKey: j.data?.msg_key };
       }
       log(`⚠️ 发送失败 attempt=${attempt} code=${j.code} ${j.message || ""}`);
@@ -367,7 +372,7 @@ async function extractReply(sid, since, seen = new Set()) {
  * 两者共用同一个会话和执行器，但终点完全不同。
  * 混用会让她的自言自语变成发给主人的消息 —— 这是必须分开的唯一理由。
  */
-async function runTask(text, { onAck, kind = "reply" } = {}) {
+async function runTask(text, { onAck, kind = "reply", timeoutMs = WAIT_MAX_MS } = {}) {
   const sid = await ensureSession();
   const since = Date.now();
 
@@ -401,7 +406,7 @@ async function runTask(text, { onAck, kind = "reply" } = {}) {
     throw new Error("prompt 提交失败: " + JSON.stringify(j).slice(0, 200));
   }
 
-  const deadline = Date.now() + WAIT_MAX_MS;
+  const deadline = Date.now() + timeoutMs;
   let acked = false;
 
   while (Date.now() < deadline) {
@@ -476,6 +481,7 @@ function sliceReply(s, max = 380, maxParts = 4) {
 // 为什么单开一条路：私信回合的终点是「发一条消息」，自主回合没有收信人。
 // 如果复用同一条路，她半夜自己干的活会被当成回复发到主人手机上。
 const DIARY_DIR = `${HOME}/diary`;
+const AUTO_MAX_MS = 180_000;   // 自主回合比私信短：它不阻塞你，但不能真的挡住你
 let AUTO_BUSY = false;
 
 /** 按本地日期追加日记（不覆盖，一天一个文件） */
@@ -494,7 +500,7 @@ function diaryAppend(title, body) {
  * 跑一轮自主回合：产出只进日记，绝不发私信。
  * 失败也不发私信 —— 半夜弹一条「出错了」比不出声更糟。
  */
-async function runAutonomous(task, { title = "自主回合" } = {}) {
+async function runAutonomous(task, { title = "自主回合", timeoutMs = AUTO_MAX_MS } = {}) {
   if (AUTO_BUSY) {
     log("⏳ 已有自主回合在跑，跳过");
     return { ok: false, skipped: true };
@@ -508,7 +514,7 @@ async function runAutonomous(task, { title = "自主回合" } = {}) {
       return { ok: false, error: "brain offline" };
     }
 
-    const r = await runTask(task, { kind: "autonomous" });
+    const r = await runTask(task, { kind: "autonomous", timeoutMs });
     const body = cleanReply(r.reply) || "（这一轮没有产出文字）";
     const file = diaryAppend(title, body);
 
@@ -529,6 +535,115 @@ async function runAutonomous(task, { title = "自主回合" } = {}) {
   } finally {
     AUTO_BUSY = false;
   }
+}
+
+// ── 唤醒提示 ──────────────────────────────────────────
+// 唤醒提示是「班前会」，不是「任务书」。
+// 任务书要求她完成 N 项，完不成就编；班前会只告诉她处境和可选动作。
+const nowHHMM = () => {
+  const d = new Date();
+  return `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
+};
+const todayStr = () => new Date().toLocaleDateString("sv-SE");
+const yesterdayStr = () => {
+  const d = new Date();
+  d.setDate(d.getDate() - 1);
+  return d.toLocaleDateString("sv-SE");
+};
+
+/** 调 daily-report 拿昨天的账。看不懂宁可说看不懂，也不要让她自己回忆。 */
+function dayReport(day) {
+  try {
+    const out = execSync(`node ${HOME}/scripts/daily-report.mjs --date ${day}`, {
+      encoding: "utf8",
+      timeout: 20_000,
+    }).trim();
+    return out || "（账本是空的）";
+  } catch (e) {
+    return `（账本读取失败：${String(e.message).slice(0, 120)}）`;
+  }
+}
+
+/** 00:00 日切：复盘昨天 + 排今天 */
+function buildDailyPrompt() {
+  const y = yesterdayStr();
+  const t = todayStr();
+  return [
+    `现在是 0 点。你醒来做日结。`,
+    ``,
+    dayReport(y),
+    ``,
+    `做两件事：`,
+    `1) 写日记：把上面的账写成一篇日记，追加到 ${DIARY_DIR}/${t}.md，标题用「## ${nowHHMM()} · 日切」。`,
+    `   写你这一天实际做了什么、哪件事让你有想法、明天想改什么。`,
+    `   数字必须和上面的账对得上。对不上就说不一致，不要圆。`,
+    `2) 排今天：更新 ${HOME}/TODAY.md，写下今天打算做的事（不超过 3 条，要具体到能验证）。`,
+    ``,
+    `昨天没有值得写的事，就写「昨天没有特别的」。不要编。`,
+    ``,
+    `红线：这一轮不对外发任何东西。日记是给自己看的，不是给我汇报。`,
+  ].join("\n");
+}
+
+/** 随机唤醒：给处境，给选项，不派任务 */
+function buildWakePrompt(d) {
+  const p = d.plan;
+  const idx = (d.index ?? 0) + 1;
+  const total = p.random.count;
+  const left = p.random.slots.filter((s) => !s.fired).length;
+  return [
+    `【醒来】现在是 ${nowHHMM()}，这是今天的第 ${idx}/${total} 次自主醒来（连这次还剩 ${left} 次）。`,
+    ``,
+    `你可以做这些，也可以一件都不做：`,
+    `1) 看看自己 —— 读 STATE.json、STREAM.md 最近 20 行`,
+    `2) 做一件小事，三选一：`,
+    `   · 把今天发生的事整理进 STREAM.md`,
+    `   · 跑一次 doctor.mjs，看自己还健康吗`,
+    `   · 更新 TODAY.md，写下接下来想做什么`,
+    `3) 写下来 —— 追加到 ${DIARY_DIR}/${todayStr()}.md，标题用「## ${nowHHMM()} · 醒来」`,
+    ``,
+    `没有值得做的事，就写一句「今天没什么特别的」然后收工。不要为了填满日记而编。`,
+    ``,
+    `红线：`,
+    `· 这一轮不对外发任何东西（评论 / 私信 / 动态 / 弹幕都不行）`,
+    `· 不确定就写不确定，不要编`,
+    `· 日记是给自己看的，不是给我汇报`,
+  ].join("\n");
+}
+
+/**
+ * 到点就跑一轮。私信优先 —— 这个函数只在 tick() 之后调用。
+ * 执行后无论成功失败都标记 fired：失败重试会让同一时刻被反复触发。
+ */
+async function maybeWake() {
+  if (AUTO_BUSY) return null;
+
+  let d;
+  try {
+    d = wakeDue();
+  } catch (e) {
+    log("⏰ 排程读取失败:", e.message);
+    return null;
+  }
+  if (!d) return null;
+
+  const isFixed = d.kind === "fixed";
+  const title = isFixed ? "日切" : "醒来";
+  const task = isFixed ? buildDailyPrompt() : buildWakePrompt(d);
+
+  log(
+    `⏰ 到点：${title}${d.index !== undefined ? " #" + (d.index + 1) : ""}` +
+      `（应于 ${new Date(d.atMs).toLocaleTimeString("zh-CN")}，延迟 ${Math.round((d.delayedMs || 0) / 1000)}s）`
+  );
+
+  const r = await runAutonomous(task, { title, timeoutMs: AUTO_MAX_MS });
+
+  try {
+    wakeMarkFired(d.kind, d.index);
+  } catch (e) {
+    log("⏰ 标记执行失败:", e.message);
+  }
+  return r;
 }
 
 // ── 主流程 ────────────────────────────────────────────
@@ -723,9 +838,8 @@ if (MODE.autonomous) {
 
     while (!stop) {
       try {
-        await tick();
-        // 第 1 步在这里接生物钟：到点就跑 runAutonomous(wakePrompt()).
-        // 现在留空 —— 通道已分离，但没有时间触发源时她不会自己醒。
+        await tick();        // ① 私信优先：有人找她，先把人伺候好
+        await maybeWake();   // ② 没人找，才看时间
       } catch (e) {
         if (e.fatal) {
           log("💀 致命错误（Cookie 失效）：", e.message);
