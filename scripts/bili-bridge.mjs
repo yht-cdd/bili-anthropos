@@ -1064,6 +1064,23 @@ function buildDailyPrompt() {
   ].join("\n");
 }
 
+/** 日切之后的第二回合：启智任务 / 仓库巡检 / 素材。都是「能做就做」 */
+function buildNightTasks() {
+  return [
+    `【夜间自动项】日结已经做完了，这是额外的一轮。`,
+    ``,
+    `三件，能做就做，做不了就写一句为什么，别硬撑：`,
+    `1. 启智（OpenI）每日任务：看 skills/github-openi-manager/ 的说明，能调 API 就调；`,
+    `   需要网页登录 / 验证码的，跳过并记一句 —— 不要没到账就写「签到成功」。`,
+    `2. 仓库巡检：看 github.com/yht-cdd/bili-anthropos 有没有新 issue / PR / CI 失败。`,
+    `   有就按契约第十六节做（开分支 → 改 → 开 PR），没有就跳过。不许直推 main。`,
+    `3. 素材：主人发过夸克链接就去取，没有就别追问。`,
+    ``,
+    `每件最多 5 分钟，超时就停。三件全跳过也可以。`,
+    `这一轮不对外发任何东西（不发私信 / 评论 / 动态）。`,
+  ].join("\n");
+}
+
 /** 随机唤醒：给处境，给选项，不派任务 */
 function buildWakePrompt(d) {
   const p = d.plan;
@@ -1128,6 +1145,14 @@ async function maybeWake() {
       log(`📧 日记：${out.split("\n")[0]}`);
     } catch (e) {
       log("⚠️ 日记寄送失败:", String(e.message).split("\n")[0]);
+    }
+
+    // 日切之后再跑一轮「夜间自动项」：启智任务 / 仓库巡检 / 素材。
+    // 单独一轮，不和日结抢超时；全跳过也没关系。
+    try {
+      await runAutonomous(buildNightTasks(), { title: "夜间自动项", timeoutMs: AUTO_MAX_MS });
+    } catch (e) {
+      log("⚠️ 夜间自动项异常:", String(e.message).split("\n")[0]);
     }
   }
 
