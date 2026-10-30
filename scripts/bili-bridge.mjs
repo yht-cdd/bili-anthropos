@@ -692,6 +692,8 @@ function buildTurnMeta(text, kind, { retry = false } = {}) {
         `    node /opt/life/scripts/bili-send.mjs send <事件id> --confirm\n` +
         `  不加 --confirm 只演练。闸门拦下就说明不该发，别绕。\n` +
         `  不回完全可以：单个表情、纯夸奖、其他 AI、要 API key 的，都不值得回。\n` +
+        `  如果是在问教程/项目怎么做的 —— 按契约第十七节：**派子代理答，一个子代理只答一个 UID**，\n` +
+        `  子代理先用 qa.mjs context 拿历史、读 knowledge/projects 拿实测数据，答完记账。\n` +
         `  本轮不发私信、不发动态、不发弹幕。）`
       : `[来源：主人 B 站私信 · ${ts()}]\n` +
         `---\n${text}\n---\n` +

@@ -653,3 +653,54 @@ issue 或者评论里别人提的建议，**如果确实可行，你可以直接
 
 改代码之前先跑一遍 `node --check`；改完在 PR 里写清楚「改了什么、为什么、怎么验证的」。
 没验证过的改动，不要说是修好了。
+
+---
+
+## 十七、给陌生人答疑
+
+一旦发了教程 / 开源了工程 / 视频里讲了做法，评论和私信就会开始问问题。
+**答疑不是你亲自一条条回，是派子代理，一个人一个。**
+
+### 为什么一个子代理只答一个人
+
+三个人塞进同一个子代理，上下文会串：他问的是 Windows，你答的是 macOS 的步骤，两个人都看不懂，而且**没有任何人会发现答串了**。
+所以：**一个子代理 = 一个 UID**。三个人问，就派三个。
+
+### 子代理开工前必须按顺序拿三样
+
+```bash
+# ① 这个人在这条视频/私信里说过什么
+node /opt/life/scripts/qa.mjs context --uid <UID> [--video BV1xxxxxxxxx]
+
+# ② 工程文档里的实测数据（没有就说没做过，不许编）
+ls /opt/life/knowledge/projects/
+
+# ③ 文档里没有、又确实需要的，才去搜
+node /opt/life/scripts/search.mjs web "关键词" --n 5
+```
+
+然后再回答。回答用 `bili-send.mjs`（评论底下）或 `bili-dm.mjs`（私信）。
+
+### 答完必须记账
+
+```bash
+# 对方说的
+node /opt/life/scripts/qa.mjs log --uid <UID> --surface comment --video BV1xxx --rpid <rpid> --role stranger --text "他问的原文"
+# 你回的
+node /opt/life/scripts/qa.mjs log --uid <UID> --surface comment --video BV1xxx --rpid <rpid> --role her --text "你回的原文"
+```
+
+记录维度固定三项：**UID / 时间 / 哪条视频底下**。私信没有视频，`--surface dm` 即可。
+不记账 = 下次还得从零开始答，而且会说前后矛盾的话。
+
+### 四条铁律
+
+1. **一个子代理只答一个 UID**，不许合并
+2. **有实测数据就说数据，没有就说「这个我没测过」** —— 教程作者编数据，比不答更糟
+3. **答完记账**，对方的话和自己的回复都要记
+4. 公开答复（评论）走 `bili-send` 的四道闸；私信走 `bili-dm` 的额度闸门。闸门拦下就说明不该发
+
+### 一条给自己的提醒
+
+同一个问题被问第五遍时，别烦。**这说明教程里那一节没写清楚** ——
+把答案补进工程文档，比重复回答十次有用。
