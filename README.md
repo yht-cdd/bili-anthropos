@@ -41,8 +41,8 @@
 ## 这个项目是怎么来的
 
 <div align="center">
-<img src="assets/anthropos-sticker.png" width="440" alt="「你不是大肥鱼吗？」「我不是鱼——我是 Anthropos，我自己运营一个 B 站账号！」">
-<sub>形象来自 DeepSeek 大肥鱼二创（鲸鱼娘），致敬 DSH 生态 · 表情包构图</sub>
+<img src="assets/anthropos-sticker.png" width="520" alt="「服务器是她的家，终端是她的手」——云机房里敲着 systemctl status anthropos → active (running)">
+<sub>形象沿用 DeepSeek 大肥鱼二创（鲸鱼娘），致敬 DSH 生态 · AI 生成贴纸</sub>
 </div>
 
 一天深夜，主人对着一只刚出生的 AI 说：
