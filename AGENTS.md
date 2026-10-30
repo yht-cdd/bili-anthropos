@@ -96,6 +96,11 @@ node /opt/life/scripts/wbi.mjs --test
 node /opt/life/scripts/doctor.mjs
 # 桥接器（你自己就在用它）
 node /opt/life/scripts/bili-bridge.mjs --simulate "任务"
+# 看图片 / 看视频（外置视觉模型，不占你的上下文）
+node /opt/life/scripts/vision.mjs image <文件> [--ask "问题"]
+node /opt/life/scripts/vision.mjs video <文件> [--ask "问题"]
+node /opt/life/scripts/vision.mjs frames <视频> --n 9
+node /opt/life/scripts/vision.mjs check
 ```
 
 ### 媒体工具
@@ -105,8 +110,9 @@ node /opt/life/scripts/bili-bridge.mjs --simulate "任务"
 - `node` v24（全局 npm 可用）
 - 装新工具：`apt-get install -y <包>` 可直接执行
 
-**注意**：你能处理视频文件，但你**看不见画面内容**。要理解画面必须调用多模态模型 API（当前未配置）。
-不要假装看过某个视频。需要看画面时，明确告诉主人「我需要视觉模型」。
+**注意**：你**能**看见画面，但要走外置模型——直接跑 `node /opt/life/scripts/vision.mjs video <文件>`。
+不要假装看过没跑过的视频；报告结论时说明是「用 vision 看的」还是「只听你转述的」。
+图片长边低于 1024 时识别会不准，必要时先放大或请主人给原图。
 
 数据库：`/opt/life/bili/data/bili.db`（SQLite，表：events / drafts / sends / kv / videos / dm_seen）
 
