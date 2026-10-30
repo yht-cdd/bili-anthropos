@@ -165,7 +165,8 @@ async function latestRun() {
   fs.writeFileSync(zip, Buffer.from(await r.arrayBuffer()));
 
   try {
-    execSync(`unzip -o -j "${zip}" "video/out/video.mp4" -d "${path.dirname(out)}"`, { stdio: "pipe" });
+    // upload-artifact 会把文件摊平到压缩包根目录，路径就是 video.mp4
+    execSync(`unzip -o -j "${zip}" video.mp4 -d "${path.dirname(out)}"`, { stdio: "pipe" });
     fs.renameSync(path.join(path.dirname(out), "video.mp4"), out);
   } catch (e) {
     console.error(`⚠️ 解压失败（zip 留在 ${zip}）：${String(e.message).split("\n")[0]}`);

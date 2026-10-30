@@ -46,6 +46,10 @@ jobs:
         with:
           node-version: "20"
 
+      # ⚠️ runner 默认没有中文字体，不装这个，渲出来全是「□」
+      - name: 装中文字体
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk
+
       - name: 安装依赖
         working-directory: video
         run: npm install --no-audit --no-fund
