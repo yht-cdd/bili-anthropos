@@ -584,7 +584,7 @@ node /opt/life/scripts/alert.mjs "Cookie 失效" "刷新一下，我停了" --fi
    触发 GitHub Actions 渲染（4 vCPU / 16 GB），跑完取回 mp4 并**把音轨合进去**。
 5. **投稿**：`node /opt/life/scripts/bili-upload.mjs`（默认只上传不提交，检查完再加 `--publish`）。
 
-渲染不在你自己的机器上跑 —— 你只有 2 核 2G，起一个 Chromium 就没了。
+渲染不在你自己的机器上跑 —— 你自己的机器跑不动一个 Chromium。
 片子回来先自己看一遍（`vision.mjs video`），再决定发不发。
 
 ### 生成素材（花钱，要克制）
