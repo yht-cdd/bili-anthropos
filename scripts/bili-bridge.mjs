@@ -376,9 +376,14 @@ async function extractReply(sid, since, seen = new Set()) {
  * kind 决定这段话的「出口」：
  *   reply      —— 有人问她（主人私信），产出会被转成私信发回去
  *   autonomous —— 她自己想干活，产出写进日记，不发任何人
+ *   push       —— 自主动作，但**允许她用命令行主动推送一条给主人**
  *
- * 两者共用同一个会话和执行器，但终点完全不同。
+ * 三者共用同一个会话和执行器，但终点完全不同。
  * 混用会让她的自言自语变成发给主人的消息 —— 这是必须分开的唯一理由。
+ *
+ * 为什么需要 push：autonomous 明确禁止发私信，
+ * 但"主动推荐一条视频"这个动作本身就是要发私信。
+ * 提示词得告诉她「自己用 bili-dm.mjs」，而不是「你的回复会自动转发」。
  */
 async function runTask(text, { onAck, kind = "reply", timeoutMs = WAIT_MAX_MS } = {}) {
   const sid = await ensureSession();
@@ -401,6 +406,15 @@ async function runTask(text, { onAck, kind = "reply", timeoutMs = WAIT_MAX_MS } 
         `（提醒：这一轮**没有任何收信人**。你的输出不会发给任何人，会被原样追加进当天的日记文件。\n` +
         `  写你做了什么、看到什么、想到什么；不要写「主人你好」这类对话开场。\n` +
         `  本轮只做只读动作和本地文件写入：不发评论、不发私信、不发动态、不点赞、不投币。）`
+      : kind === "push"
+      ? `[来源：自主动作 · 无人值守 · 允许主动推送 · ${ts()}]\n` +
+        `---\n${text}\n---\n` +
+        `（提醒：这一轮**没有收信人**，你的输出会写进日记、不会自动发给任何人。\n` +
+        `  但你可以**自己动手发一条私信给主人**：\n` +
+        `    node /opt/life/scripts/bili-dm.mjs "内容"\n` +
+        `  这个工具代码级只能发给他，发不了第二个人。\n` +
+        `  是否发、发什么、发几条，由你判断；除私信以外本轮不做其他对外写动作\n` +
+        `  （不发评论 / 动态 / 弹幕 / 点赞 / 投币）。）`
       : `[来源：主人 B 站私信 · ${ts()}]\n` +
         `---\n${text}\n---\n` +
         `（提醒：你的回复会被自动转发到主人 B 站私信，请用纯文本、直接给结论。）`;
@@ -508,7 +522,7 @@ function diaryAppend(title, body) {
  * 跑一轮自主回合：产出只进日记，绝不发私信。
  * 失败也不发私信 —— 半夜弹一条「出错了」比不出声更糟。
  */
-async function runAutonomous(task, { title = "自主回合", timeoutMs = AUTO_MAX_MS } = {}) {
+async function runAutonomous(task, { title = "自主回合", timeoutMs = AUTO_MAX_MS, kind = "autonomous" } = {}) {
   if (AUTO_BUSY) {
     log("⏳ 已有自主回合在跑，跳过");
     return { ok: false, skipped: true };
@@ -522,7 +536,7 @@ async function runAutonomous(task, { title = "自主回合", timeoutMs = AUTO_MA
       return { ok: false, error: "brain offline" };
     }
 
-    const r = await runTask(task, { kind: "autonomous", timeoutMs });
+    const r = await runTask(task, { kind, timeoutMs });
     const body = cleanReply(r.reply) || "（这一轮没有产出文字）";
     const file = diaryAppend(title, body);
 
@@ -796,9 +810,26 @@ const MODE = {
   simulate: argv.includes("--simulate"),
   repl: argv.includes("--repl"),
   autonomous: argv.includes("--autonomous"),
+  push: argv.includes("--push"),
 };
 
-if (MODE.autonomous) {
+if (MODE.push) {
+  // 自主回合 + 允许她主动推送：产出进日记，但她可以自己调 bili-dm.mjs 发一条给主人
+  const i = argv.indexOf("--push");
+  const text = argv[i + 1] || "看看今天有什么值得推给主人的。";
+  (async () => {
+    const r = await runAutonomous(text, {
+      title: "主动推送",
+      kind: "push",
+      timeoutMs: Number(process.env.PUSH_MAX_MS || 480_000),
+    });
+    console.log("\n──────── 回合结果 ────────");
+    console.log(`ok=${r.ok}  日记=${r.file || "(无)"}  字数=${r.len || 0}`);
+    console.log("（她是否真发了私信，看 exec/bridge.log 里的「主动私信」）");
+    console.log("──────────────────────────");
+    process.exit(r.ok ? 0 : 1);
+  })();
+} else if (MODE.autonomous) {
   const i = argv.indexOf("--autonomous");
   const text =
     argv[i + 1] ||
