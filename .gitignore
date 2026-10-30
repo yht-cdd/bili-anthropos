@@ -56,3 +56,6 @@ desktop.ini
 *.bak
 *.swp
 *~
+
+# 私有的生成服务配置（含供应商信息），只存在于部署机器上
+config/media-api.json

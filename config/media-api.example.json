@@ -1,0 +1,28 @@
+{
+  "_comment": "图片 / 视频生成服务的接入配置。复制成 media-api.json 再填自己的。本仓库不指定供应商。",
+  "baseUrl": "https://your-provider.example.com",
+  "keyFile": "secrets/media_api_key.txt",
+  "dailyMax": 10,
+  "modelsPath": "/v1/models",
+  "image": {
+    "path": "/v1/images/generations",
+    "model": "your-image-model",
+    "size": "1024x1024",
+    "extraBody": {
+      "response_format": "url"
+    }
+  },
+  "video": {
+    "path": "/v1/videos",
+    "model": "your-video-model",
+    "modeField": "mode",
+    "modes": {
+      "text": "text",
+      "keyframe": "keyframe"
+    },
+    "statusPaths": [
+      "/v1/videos/{id}",
+      "/v1/videos/query?id={id}"
+    ]
+  }
+}

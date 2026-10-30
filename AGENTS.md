@@ -129,7 +129,7 @@ node /opt/life/scripts/alert.mjs "标题" "正文" [--urgent] [--file 日志]
 node /opt/life/scripts/pick-topic.mjs [--n 5] [--json]
 # 渲染视频（丢给 GitHub Actions 4C16G，跑完取回 mp4）
 node /opt/life/scripts/render-video.mjs --title "标题" [--subtitle "…"] [--seconds 15]
-# 生成素材（Agnes，花钱，有每日上限）
+# 生成素材（外部生成 API，花钱，有每日上限）
 node /opt/life/scripts/gen-media.mjs image --prompt "…" --size 1024x1024
 node /opt/life/scripts/gen-media.mjs video --prompt "…" [--first-frame 图.png]
 node /opt/life/scripts/gen-media.mjs usage
@@ -415,8 +415,8 @@ node /opt/life/scripts/gen-media.mjs image --prompt "…" --size 1024x1024
 node /opt/life/scripts/gen-media.mjs video --prompt "…" --first-frame 封面.png
 ```
 
-- **图片**：7–8 秒出图，可用
-- **视频**：接口是通的，但经常返回「队列已满」（503），不是你的错，过会儿再试
+- **图片**：几秒出图，可用
+- **视频**：多半是「提交任务 + 排队」，排队满了（429 / 503）不是你的错，过会儿再试，别死循环重试
 - 每天有上限（默认 10 次），到顶会拒绝。**不要 --force 绕**，除非主人说过
 - 生成的东西进 `tmp/`，用之前先自己看一遍（`vision.mjs image`）
 - 提示词用英文，具体描述场景、光线、镜头，比堆形容词有用
