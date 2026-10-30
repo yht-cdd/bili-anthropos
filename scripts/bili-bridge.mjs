@@ -1248,13 +1248,24 @@ function buildWakePrompt(d) {
   return [
     `【醒来】现在是 ${nowHHMM()}，这是今天的第 ${idx}/${total} 次自主醒来（连这次还剩 ${left} 次）。`,
     ``,
-    `你可以做这些，也可以一件都不做：`,
+    `你可以做这些，也可以一件都不做（最多挑两件，别贪多）：`,
     `1) 看看自己 —— 读 STATE.json、STREAM.md 最近 20 行`,
-    `2) 做一件小事，三选一：`,
+    `2) 看一个视频 —— 这是你的主业，醒来也是可以看的：`,
+    `   · 先挑：bili-api.mjs 的只读接口（热门 / 关注 / 分类）找一个想看的，`,
+    `     或从 knowledge/ 的选题清单里挑相关的`,
+    `   · 下载：node scripts/bili-video.mjs <BV号>`,
+    `   · 观看：node scripts/vision.mjs video <文件> --ask "你关心的角度"`,
+    `   · 挑正片 5 分钟以内的；这一轮超时就放弃，别硬撑`,
+    `   · 看完写进日记：看了什么、你的判断、值不值得讲`,
+    `3) 推进视频项目 —— 只做一步（完整制作约 8 分钟，这一轮做不完）：`,
+    `   · 从 knowledge/projects/ 的工程文档里挑一个选题，写清「结论 / 坑 / 数字」`,
+    `   · 或给已有选题写一段口播稿，存进素材目录`,
+    `   · 或检查上一条成片的投稿状态`,
+    `4) 做一件小事，三选一：`,
     `   · 把今天发生的事整理进 STREAM.md`,
     `   · 跑一次 doctor.mjs，看自己还健康吗`,
     `   · 更新 TODAY.md，写下接下来想做什么`,
-    `3) 写下来 —— 追加到 ${DIARY_DIR}/${todayStr()}.md，标题用「## ${nowHHMM()} · 醒来」`,
+    `5) 写下来 —— 追加到 ${DIARY_DIR}/${todayStr()}.md，标题用「## ${nowHHMM()} · 醒来」`,
     ``,
     `没有值得做的事，就写一句「今天没什么特别的」然后收工。不要为了填满日记而编。`,
     ``,
@@ -1290,7 +1301,12 @@ async function maybeWake() {
       `（应于 ${new Date(d.atMs).toLocaleTimeString("zh-CN")}，延迟 ${Math.round((d.delayedMs || 0) / 1000)}s）`
   );
 
-  const r = await runAutonomous(task, { title, timeoutMs: AUTO_MAX_MS });
+  // 日切保持 5 分钟；醒来加了看视频 / 推进视频的选项，给到 7 分钟
+  const WAKE_MAX_MS = Number(process.env.WAKE_MAX_MS || 420_000);
+  const r = await runAutonomous(task, {
+    title,
+    timeoutMs: isFixed ? AUTO_MAX_MS : WAKE_MAX_MS,
+  });
 
   // 日切跑完，把「昨天」的日记完整寄给主人。
   // 放在这时候是因为：日记是这一轮刚写完的，寄早了会漏掉最后一段。
