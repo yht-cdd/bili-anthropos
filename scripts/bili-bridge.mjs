@@ -1363,14 +1363,18 @@ function fireAlert(title, body, { urgent = false, file = "" } = {}) {
   try {
     const args = [title, body].map((s) => `"${String(s).replace(/"/g, '\\"')}"`).join(" ");
     const extra = `${urgent ? " --urgent" : ""}${file ? ` --file "${file}"` : ""}`;
-    execSync(`node ${HOME}/scripts/alert.mjs ${args}${extra}`, {
+    const out = execSync(`node ${HOME}/scripts/alert.mjs ${args}${extra}`, {
       encoding: "utf8",
       timeout: 120_000,
       stdio: "pipe",
     });
-    log(`📧 告警已发出：${title}`);
+    // alert.mjs 有三种结局：发出去了、去重跳过了、退避跳过了。
+    // 后两种也 exit 0，不能一律说「已发出」—— 之前就是这样骗了自己一晚上。
+    if (/跳过/.test(String(out))) log(`（告警这轮跳过：${title}）`);
+    else log(`📧 告警已发出：${title}`);
   } catch (e) {
-    log(`⚠️ 告警发送失败（${title}）：${String(e.message).split("\n")[0]}`);
+    const why = String(e.stderr || e.message).split("\n").filter(Boolean).pop() || e.message;
+    log(`⚠️ 告警发送失败（${title}）：${why.slice(0, 120)}`);
   }
 }
 
@@ -1878,7 +1882,10 @@ if (MODE.usage) {
               { urgent: true }
             );
           }
-          await sleep(60_000);
+          // Cookie 死了是个静止状态：再快也快不出登录态，只是把日志灌满。
+          // 5 分钟摸一次，够快（主人换完 Cookie 最多等 5 分钟），也不吵。
+          log("5 分钟后再试（换好 Cookie 就不用等，重启服务即可立刻接上）");
+          await sleep(300_000);
         } else {
           tickErrStreak += 1;
           log(`轮询异常（连续 ${tickErrStreak} 次）:`, e.message);
