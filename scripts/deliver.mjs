@@ -49,19 +49,31 @@ function has(bin) {
   try { execSync(`command -v ${bin}`, { stdio: "pipe" }); return true; } catch { return false; }
 }
 
-/** 传夸克并要一个分享链接 */
+/**
+ * 夸克的实际客户端是技能里的一个 node 脚本，不是独立命令。
+ * 环境变量 QUARK_CLI 可以覆盖（换成本机路径时用）。
+ */
+const QUARK_CLI =
+  process.env.QUARK_CLI || `node ${HOME}/skills/quarkclouddrive/scripts/quark-drive.cjs`;
+
+/** 传夸克并要一个分享链接：先 upload 拿 fid，再 share 拿 url */
 function quarkShare(f, isPublic) {
-  const bin = String(process.env.QUARK_CLI || "quark");
-  if (!has(bin)) throw Object.assign(new Error("服务器上没有夸克 CLI"), { code: 3 });
-  // url-type 1 = 公开永久；2 = 私密。公开链接才能往公共区域发。
-  const urlType = isPublic ? 1 : 2;
-  const out = execSync(
-    `OPENCLAW_CLI=1 ${bin} upload "${f}" --share --url-type ${urlType} --expired-type 1`,
-    { encoding: "utf8", timeout: 600_000 }
-  );
-  const m = String(out).match(/https:\/\/pan\.quark\.cn\/s\/\S+/);
-  if (!m) throw new Error("夸克没返回分享链接：" + String(out).slice(-200));
-  return m[0].trim();
+  let up;
+  try {
+    up = execSync(`OPENCLAW_CLI=1 ${QUARK_CLI} upload "${f}"`, { encoding: "utf8", timeout: 600_000 });
+  } catch (e) {
+    throw Object.assign(new Error(`夸克上传失败：${String(e.message).split("\n")[0]}`), { code: 3 });
+  }
+  const fid = (up.match(/"fids":\s*\[\s*"([^"]+)"/) || [])[1];
+  if (!fid) throw Object.assign(new Error("夸克没返回 fid：" + up.slice(-160)), { code: 3 });
+
+  const sh = execSync(`OPENCLAW_CLI=1 ${QUARK_CLI} share ${fid} --url-type ${isPublic ? 1 : 2} --expired-type 1`, {
+    encoding: "utf8",
+    timeout: 180_000,
+  });
+  const url = (sh.match(/"share_url":\s*"([^"]+)"/) || [])[1];
+  if (!url) throw Object.assign(new Error("夸克没返回分享链接：" + sh.slice(-160)), { code: 3 });
+  return url;
 }
 
 /** 发私信（文字） */
