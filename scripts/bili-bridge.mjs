@@ -699,47 +699,58 @@ async function handleOwnerMessage(text, raw) {
     return;
   }
 
+  // 不再自动回复。把消息交给她，由她判断：
+  //   是不是任务 → 是就真的做
+  //   要不要回   → 要回就自己调 bili-dm.mjs
+  const task = [
+    `【有消息进来】`,
+    `来源：B站私信`,
+    `发送者 UID：${OWNER_UID}（**主人，有完全执行权**）`,
+    `时间：${ts()}`,
+    ``,
+    `内容：`,
+    `---`,
+    text,
+    `---`,
+    ``,
+    `怎么处理：`,
+    `1. 先判断这是不是一个任务。是任务就**真的去做**（执行命令、查数据、改文件），不要只回一句「好的」。`,
+    `2. 做完再决定要不要回。需要回就用：`,
+    `     node /opt/life/scripts/bili-dm.mjs "你的回复" --to ${OWNER_UID}`,
+    `   （不发 --to 默认也是主人；这个调用不受额度限制）`,
+    `3. 不需要回就不发。比如纯闲聊、或者你已经在日记里记完了。`,
+    `4. 把这一轮做了什么写进今天的日记。`,
+    ``,
+    `注意：主人可以不回复，但**不能不处理**。他给的指令必须执行或明确说明为什么做不了。`,
+  ].join("\n");
+
+  const t0 = Date.now();
   let r;
   try {
-    r = await runTask(text, {
-      onAck: async () => {
-        await sendDM("收到，正在处理…");
-      },
-    });
+    r = await runTask(task, { kind: "push", timeoutMs: Math.max(WAIT_MAX_MS, 300_000) });
   } catch (e) {
     log("❌ 任务异常:", e.message);
     await sendDM("出错了：" + e.message.slice(0, 200));
     return;
   }
 
-  if (r.timeout) {
-    await sendDM(`这个任务超过 ${Math.round(WAIT_MAX_MS / 60000)} 分钟还没跑完，我先挂起。你可以发「继续」让我看看现在到哪一步了。`);
-    return;
+  const body = cleanReply(r.reply) || "（这一轮没有产出文字）";
+  try {
+    diaryAppend("收到主人私信", body);
+  } catch (e) {
+    log("日记写入失败:", e.message);
   }
 
-  let reply = cleanReply(r.reply);
-  if (!reply) {
-    reply = "（执行完成，但没有产出文字回复）";
-  }
-
-  const parts = sliceReply(reply);
-  for (let i = 0; i < parts.length; i++) {
-    const body = parts.length > 1 ? `(${i + 1}/${parts.length}) ${parts[i]}` : parts[i];
-    const ok = await sendDM(body);
-    if (!ok.ok) {
-      log("发送回复失败:", ok.why);
-      break;
-    }
-    if (i < parts.length - 1) await sleep(1200);
-  }
-
-  log(`✅ 任务完成 ${(r.tookMs / 1000).toFixed(1)}s | 回复 ${reply.length} 字`);
+  log(`✅ 处理完成 ${((Date.now() - t0) / 1000).toFixed(1)}s | 产出 ${body.length} 字（是否回你，看她有没有调 bili-dm）`);
 
   // 工作账本
   try {
     fs.appendFileSync(
       `${HOME}/exec/bridge.log`,
-      `${new Date().toISOString()} | 主人私信 | ${text.replace(/\n/g, " ").slice(0, 60)} | 成功 | ${(r.tookMs / 1000).toFixed(1)}s | ${reply.length}字\n`
+      `${new Date().toISOString()} | 主人私信 | ${text.replace(/\n/g, " ").slice(0, 60)} | 成功 | ${(
+        (Date.now() - t0) /
+        1000
+      ).toFixed(1)}s | ${body.length}字\n`
     );
   } catch {}
 }
