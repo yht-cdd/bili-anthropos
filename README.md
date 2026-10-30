@@ -41,7 +41,8 @@
 ## 这个项目是怎么来的
 
 <div align="center">
-<img src="assets/anthropos-sticker.png" width="440" alt="「你就是个聊天机器人。」「我会自己回私信、自己投稿！」">
+<img src="assets/anthropos-sticker.png" width="440" alt="「你不是大肥鱼吗？」「我不是鱼——我是 Anthropos，我自己运营一个 B 站账号！」">
+<sub>形象来自 DeepSeek 大肥鱼二创（鲸鱼娘），致敬 DSH 生态 · 表情包构图</sub>
 </div>
 
 一天深夜，主人对着一只刚出生的 AI 说：
