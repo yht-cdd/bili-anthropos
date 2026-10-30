@@ -41,8 +41,12 @@ const FALLBACK = ["Qwen/Qwen3.5-122B-A10B", "Shanghai_AI_Laboratory/Intern-S2-Pr
 
 const LONG_EDGE = 1568;        // 长边上限（再大只是浪费 token）
 const MIN_EDGE = 1024;         // 低于这个会读不准，提醒调用方
-const VIDEO_MAX_SEC = 120;     // 直传上限（实测 120s 可过）
-const VIDEO_MAX_BYTES = 6 * 1024 * 1024;
+const VIDEO_MAX_SEC = 180;     // 单段上限 3 分钟；超过就切段
+const VIDEO_MAX_BYTES = 40 * 1024 * 1024;
+const SEG_HEIGHT = 720;        // 统一 720P（看清屏幕文字的下限）
+const SEG_FPS = 16;            // 16fps：动作够用，体积可控
+const PER_SEG_BYTES = 30 * 1024 * 1024;
+const SEG_CONCURRENCY = 6;     // 所有段一次性并行送出
 const FRAMES_DEFAULT = 9;
 const TILE = 720;
 
@@ -185,15 +189,16 @@ function prepareImage(file) {
 function prepareVideo(file, p) {
   fs.mkdirSync(TMP_DIR, { recursive: true });
   const out = path.join(TMP_DIR, `vid-${Date.now()}.mp4`);
-  // 直传时降到 480p，体积够小、画面还看得清
+  const h = Math.min(SEG_HEIGHT, p.height || SEG_HEIGHT);
+  // 统一 720P / 16fps：这是能看清屏幕文字的底线，再低就认不出字幕
   ff([
     "-i", file,
-    "-vf", "scale=-2:480",
-    "-c:v", "libx264", "-preset", "veryfast", "-crf", "30",
+    "-vf", `scale=-2:${h},fps=${SEG_FPS}`,
+    "-c:v", "libx264", "-preset", "veryfast", "-crf", "28",
     "-c:a", "aac", "-b:a", "64k",
     "-movflags", "+faststart",
     out,
-  ]);
+  ], 300_000);
   return out;
 }
 
@@ -213,6 +218,37 @@ function makeGrid(file, p, n) {
   ], 240_000);
   return { out, cols, rows };
 }
+
+/**
+ * 切成 ≤segSec 秒的段，统一 720P / 16fps。
+ * 段之间用 -ss 定位（放在 -i 前），重编码保证每段都能独立解码。
+ */
+function splitVideo(file, p, segSec) {
+  fs.mkdirSync(TMP_DIR, { recursive: true });
+  const n = Math.ceil(p.duration / segSec);
+  const outs = [];
+  const h = Math.min(SEG_HEIGHT, p.height || SEG_HEIGHT);
+  for (let i = 0; i < n; i += 1) {
+    const start = i * segSec;
+    const dur = Math.min(segSec, p.duration - start);
+    const out = path.join(TMP_DIR, `seg-${i}-${Date.now()}.mp4`);
+    ff(
+      [
+        "-ss", String(start), "-t", String(dur), "-i", file,
+        "-vf", `scale=-2:${h},fps=${SEG_FPS}`,
+        "-c:v", "libx264", "-preset", "veryfast", "-crf", "28",
+        "-c:a", "aac", "-b:a", "64k",
+        "-movflags", "+faststart",
+        out,
+      ],
+      300_000
+    );
+    outs.push({ file: out, start, dur, size: fs.statSync(out).size });
+  }
+  return outs;
+}
+
+const mmss = (s) => `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
 
 // ── 入口 ──────────────────────────────────────────────
 const argv = process.argv.slice(2);
@@ -285,13 +321,13 @@ try {
     log(`   ${p.width}×${p.height}  ${p.duration.toFixed(1)}s  ${Math.round(p.size / 1024)}KB  音轨=${p.hasAudio ? "有" : "无"}`);
     const n = Number(opt.n || FRAMES_DEFAULT);
 
-    const tooLong = p.duration > VIDEO_MAX_SEC;
-    const tooBig = p.size > VIDEO_MAX_BYTES;
-    const forceFrames = cmd === "frames";
+    const forceFrames = cmd === "frames" || opt.quick === true;
+    const segLimit = Number(opt.seg) || VIDEO_MAX_SEC;
+    const fits = p.duration <= segLimit;
+    const segCount = Math.ceil(p.duration / segLimit);
 
-    if (forceFrames || tooLong || tooBig) {
-      const why = forceFrames ? "指定抽帧" : tooLong ? `超过 ${VIDEO_MAX_SEC}s` : "文件过大";
-      log(`   → ${why}，改抽 ${n} 帧拼一张图`);
+    if (forceFrames) {
+      log(`   → 指定抽帧，抽 ${n} 帧拼一张图`);
       const { out, cols, rows } = makeGrid(file, p, n);
       const b64 = fs.readFileSync(out).toString("base64");
       log(`   送图 ${Math.round(b64.length / 1024)}KB(base64)，${cols}×${rows} 网格`);
@@ -306,12 +342,12 @@ try {
         { type: "image_url", image_url: { url: `data:image/jpeg;base64,${b64}` } },
       ]);
       console.log(ans);
-    } else {
+    } else if (fits) {
       log(`   → 直传（${p.duration.toFixed(0)}s ≤ ${VIDEO_MAX_SEC}s）`);
       const v = prepareVideo(file, p);
       const size = fs.statSync(v).size;
       const b64 = fs.readFileSync(v).toString("base64");
-      log(`   压到 480p：${Math.round(size / 1024)}KB，base64 ${Math.round(b64.length / 1024)}KB`);
+      log(`   压到 ${SEG_HEIGHT}P/${SEG_FPS}fps：${Math.round(size / 1024)}KB，base64 ${Math.round(b64.length / 1024)}KB`);
       const ans = await ask([
         {
           type: "text",
@@ -323,6 +359,70 @@ try {
       ]);
       console.log(ans);
       try { fs.unlinkSync(v); } catch {}
+    } else if (segCount > 12) {
+      // 超过一小时：分块要二十多次调用，不划算，退回抽帧
+      log(`   → 超过 1 小时（${segCount} 块），退回抽帧`);
+      const { out, cols, rows } = makeGrid(file, p, Math.max(n, 12));
+      const b64 = fs.readFileSync(out).toString("base64");
+      const ans = await ask([
+        {
+          type: "text",
+          text:
+            askText ||
+            `这是一段 ${Math.round(p.duration / 60)} 分钟视频的抽样画面，按时间顺序排列。` +
+              `请概括主要内容。看不清就说看不清。`,
+        },
+        { type: "image_url", image_url: { url: `data:image/jpeg;base64,${b64}` } },
+      ]);
+      console.log(ans);
+    } else {
+      // 分块：每块 ≤5 分钟，逐块看，最后拼起来
+      log(`   → 分 ${segCount} 块（每块 ≤${segLimit}s），并行看完`);
+      const segs = splitVideo(file, p, segLimit);
+      log(`   切好 ${segs.length} 块：${segs.map((s) => `${Math.round(s.size / 1024)}KB`).join(" / ")}`);
+
+      // 并行跑：串行时 3 块要 3 分钟，并行只要最慢那一块的时长
+      const parts = new Array(segs.length);
+      let cursor = 0;
+      const t0 = Date.now();
+      const worker = async () => {
+        while (true) {
+          const i = cursor;
+          cursor += 1;
+          if (i >= segs.length) return;
+          const s = segs[i];
+          const tag = `[${i + 1}/${segs.length} ${mmss(s.start)}]`;
+          log(`   ${tag} 开始（${Math.round(s.size / 1024)}KB）`);
+          const b64 = fs.readFileSync(s.file).toString("base64");
+          try {
+            const ans = await ask(
+              [
+                {
+                  type: "text",
+                  text:
+                    (askText ? `${askText}\n\n` : "") +
+                    `这是同一段视频的第 ${i + 1}/${segs.length} 块（${mmss(s.start)}–${mmss(s.start + s.dur)}）。` +
+                    `只说这一块里发生了什么：讲了什么、出现什么画面和文字。不要总结全片。`,
+                },
+                { type: "video_url", video_url: { url: `data:video/mp4;base64,${b64}` } },
+              ],
+              { maxTokens: 600 }
+            );
+            parts[i] = `【${mmss(s.start)}–${mmss(s.start + s.dur)}】\n${ans}`;
+            log(`   ${tag} 完成`);
+          } catch (e) {
+            parts[i] = `【${mmss(s.start)}–${mmss(s.start + s.dur)}】\n（这一段没看成：${String(e.message).slice(0, 80)}）`;
+            log(`   ${tag} 失败：${String(e.message).slice(0, 60)}`);
+          } finally {
+            try { fs.unlinkSync(s.file); } catch {}
+          }
+        }
+      };
+      await Promise.all(
+        Array.from({ length: Math.min(SEG_CONCURRENCY, segs.length) }, () => worker())
+      );
+      log(`   并行完成，用时 ${Math.round((Date.now() - t0) / 1000)}s`);
+      console.log(parts.join("\n\n"));
     }
   } else {
     console.error(`❌ 未知命令：${cmd}\n\n${USAGE}`);

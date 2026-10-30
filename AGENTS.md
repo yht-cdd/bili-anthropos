@@ -101,6 +101,8 @@ node /opt/life/scripts/vision.mjs image <文件> [--ask "问题"]
 node /opt/life/scripts/vision.mjs video <文件> [--ask "问题"]
 node /opt/life/scripts/vision.mjs frames <视频> --n 9
 node /opt/life/scripts/vision.mjs check
+# 下载 B 站视频到本地（给它看之前要先拿下来）
+node /opt/life/scripts/bili-video.mjs BV1xxxxxxxxx [--p 2] [--info]
 ```
 
 ### 媒体工具
