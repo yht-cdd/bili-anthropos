@@ -5,10 +5,10 @@
  * 两种收信人，两套规则：
  *
  *   发给主人      —— 不限额。他叫她，她必须能回。
- *   发给陌生人    —— 走闸门：
- *                     · 每天最多 REPLY_DAILY 条（默认 8）
- *                     · 同一个人 30 天内只回一次
- *                     · 两次之间至少 60 秒
+ *   发给陌生人    —— 走闸门（对齐业界 Agent 客户端的宽松规格）：
+ *                     · 每小时最多 20 条
+ *                     · 同一个人冷却 10 分钟
+ *                     · 两次之间至少 10 秒
  *
  * 为什么要闸：私信是 B 站风控最凶的接口（判营销/骚扰），
  * 而且她一旦能主动找人，没有上限就是灾难。
@@ -36,9 +36,12 @@ const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36";
 
 // ── 闸门参数 ──────────────────────────────────────────
-const REPLY_DAILY = 8;        // 每天最多回复陌生人几条
-const SAME_USER_DAYS = 30;    // 同一个人多久之后才能再回
-const MIN_GAP_SEC = 60;       // 两次回复之间至少隔多久
+// 对齐业界主流 Agent 客户端（bili-cli）的规格：10 秒一条、每小时 20 条。
+// 之前是「8 条/天 + 同人 30 天 + 60 秒间隔」——太紧，正常聊两句就被拦住，
+// 反而不像人。现在的约束是「别在短时间内连着发」，不是「一天只能发八句」。
+const REPLY_HOURLY = Number(process.env.DM_HOURLY || 20);   // 每小时最多几条（陌生人）
+const MIN_GAP_SEC = Number(process.env.DM_GAP_SEC || 10);   // 两条之间至少隔多久
+const SAME_USER_MIN = Number(process.env.DM_SAME_USER_MIN || 10); // 同一个人多久能再收到一条（分钟）
 const MAX_LEN = 900;
 
 const argv = process.argv.slice(2);
@@ -99,42 +102,46 @@ function saveQuota(q) {
 
 function checkQuota() {
   const q = loadQuota();
-  const todayCount = q.log.filter((x) => dayOf(x.at) === today() && x.to !== ownerUid).length;
+  const hourAgo = Date.now() - 3600_000;
+  const hourCount = q.log.filter((x) => x.to !== ownerUid && new Date(x.at).getTime() > hourAgo).length;
 
-  if (todayCount >= REPLY_DAILY) {
-    return { ok: false, why: `今天已回复陌生人 ${todayCount} 条，达到上限 ${REPLY_DAILY}` };
+  if (hourCount >= REPLY_HOURLY) {
+    return { ok: false, why: `这一小时已回复陌生人 ${hourCount} 条，达到上限 ${REPLY_HOURLY}` };
   }
 
   const gap = Date.now() - q.lastAt;
   if (q.lastAt && gap < MIN_GAP_SEC * 1000) {
-    return { ok: false, why: `距上次回复只有 ${Math.round(gap / 1000)}s，冷却 ${MIN_GAP_SEC}s` };
+    return { ok: false, why: `距上次回复只有 ${Math.round(gap / 1000)}s，至少隔 ${MIN_GAP_SEC}s` };
   }
 
+  // 同一个人：给个短冷却，别连着刷屏；不是「30 天只能回一次」那种死规矩
   const sameUser = q.log
     .filter((x) => String(x.to) === TO)
     .sort((a, b) => new Date(b.at) - new Date(a.at))[0];
   if (sameUser) {
-    const days = Math.floor((Date.now() - new Date(sameUser.at).getTime()) / 86_400_000);
-    if (days < SAME_USER_DAYS) {
-      return { ok: false, why: `${SAME_USER_DAYS} 天内已经回过这个 UID（${days} 天前）` };
+    const mins = (Date.now() - new Date(sameUser.at).getTime()) / 60_000;
+    if (mins < SAME_USER_MIN) {
+      return { ok: false, why: `${Math.round(mins)} 分钟前刚回过这个 UID，同一个人冷却 ${SAME_USER_MIN} 分钟` };
     }
   }
 
-  return { ok: true, left: REPLY_DAILY - todayCount };
+  return { ok: true, left: REPLY_HOURLY - hourCount };
 }
 
 // ── status ────────────────────────────────────────────
 if (opt.status) {
   const q = loadQuota();
-  const todayCount = q.log.filter((x) => dayOf(x.at) === today() && x.to !== ownerUid).length;
+  const hourAgo = Date.now() - 3600_000;
+  const hourCount = q.log.filter((x) => x.to !== ownerUid && new Date(x.at).getTime() > hourAgo).length;
   console.log(
     JSON.stringify(
       {
-        date: today(),
         owner: `已配置（${ownerUid.length} 位）`,
-        repliedToday: todayCount,
-        dailyLimit: REPLY_DAILY,
-        left: Math.max(0, REPLY_DAILY - todayCount),
+        repliedLastHour: hourCount,
+        hourlyLimit: REPLY_HOURLY,
+        leftThisHour: Math.max(0, REPLY_HOURLY - hourCount),
+        minGapSec: MIN_GAP_SEC,
+        sameUserCooldownMin: SAME_USER_MIN,
         lastAt: q.lastAt ? new Date(q.lastAt).toISOString() : null,
         recent: q.log.slice(-5),
       },
