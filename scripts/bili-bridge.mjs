@@ -242,10 +242,18 @@ let pwCache = { pw: "", at: 0 };
 function getPassword() {
   if (pwCache.pw && Date.now() - pwCache.at < 60_000) return pwCache.pw;
   let pw = "";
+  // ① 固定密码文件（首选）。设了 OPENCODE_PASSWORD 之后 journald 里的随机密码就失效了
   try {
-    const sj = JSON.parse(fs.readFileSync("/root/.config/opencode/service.json", "utf8"));
-    pw = sj.password || "";
+    pw = fs.readFileSync(`${HOME}/secrets/opencode_password.txt`, "utf8").trim();
   } catch {}
+
+  // ② 环境变量
+  if (!pw) pw = String(process.env.OPENCODE_PASSWORD || "").trim();
+
+  // ⚠️ 不要读 /root/.config/opencode/service.json 的 password ——
+  //    实测那个是 401 的（客户端侧记录，不是服务端 Basic auth 密码）
+
+  // ③ journald 兜底（未设固定密码时才有用；每次启动都变）
   if (!pw) {
     try {
       pw = execSync(
@@ -564,20 +572,42 @@ function dayReport(day) {
   }
 }
 
-/** 00:00 日切：复盘昨天 + 排今天 */
+/** 收工程文档邮件。失败不阻断日切 —— 没收到信也要照常记账。 */
+function fetchMail() {
+  try {
+    const out = execSync(`node ${HOME}/scripts/fetch-mail.mjs`, {
+      encoding: "utf8",
+      timeout: 90_000,
+    }).trim();
+    return out || "（没有输出）";
+  } catch (e) {
+    return `（收信失败：${String(e.message).slice(0, 120)}）`;
+  }
+}
+
+/** 00:00 日切：先收信，再复盘昨天，最后排今天 */
 function buildDailyPrompt() {
   const y = yesterdayStr();
   const t = todayStr();
+  const mail = fetchMail();
   return [
     `现在是 0 点。你醒来做日结。`,
     ``,
+    `【第一件事：收信】`,
+    mail,
+    ``,
+    `（[PROJECT] 开头的是工程文档，已经落进 knowledge/projects/。\n` +
+      `  那是你「会什么」的唯一来源。以后有人问技术问题，先查这里；查不到就说没做过。）`,
+    ``,
+    `【昨天的账】`,
     dayReport(y),
     ``,
     `做两件事：`,
-    `1) 写日记：把上面的账写成一篇日记，追加到 ${DIARY_DIR}/${t}.md，标题用「## ${nowHHMM()} · 日切」。`,
+    `1) 写日记：把上面这些账写成一篇日记，追加到 ${DIARY_DIR}/${t}.md，标题用「## ${nowHHMM()} · 日切」。`,
     `   写你这一天实际做了什么、哪件事让你有想法、明天想改什么。`,
     `   数字必须和上面的账对得上。对不上就说不一致，不要圆。`,
     `2) 排今天：更新 ${HOME}/TODAY.md，写下今天打算做的事（不超过 3 条，要具体到能验证）。`,
+    `   选的时候想清楚：工程文档告诉你**能**做什么，昨天的账告诉你**该**做什么。`,
     ``,
     `昨天没有值得写的事，就写「昨天没有特别的」。不要编。`,
     ``,
