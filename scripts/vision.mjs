@@ -225,7 +225,9 @@ function makeGrid(file, p, n) {
  */
 function splitVideo(file, p, segSec) {
   fs.mkdirSync(TMP_DIR, { recursive: true });
-  const n = Math.ceil(p.duration / segSec);
+  // 最后一段如果太短（<3 秒），模型会直接拒收，并到上一段去
+  let n = Math.ceil(p.duration / segSec);
+  if (n > 1 && p.duration - (n - 1) * segSec < 3) n -= 1;
   const outs = [];
   const h = Math.min(SEG_HEIGHT, p.height || SEG_HEIGHT);
   for (let i = 0; i < n; i += 1) {
