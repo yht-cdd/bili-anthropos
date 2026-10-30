@@ -64,7 +64,8 @@ const POLL_MS = 12_000;        // 轮询间隔
 const WAIT_MAX_MS = 300_000;   // 单任务最长等待 5 分钟
 const ACK_AFTER_MS = 20_000;   // 超过 20 秒还没完就先回一句「收到」
 const HEARTBEAT_EVERY = 25;    // 每 25 轮（约 5 分钟）写一次心跳
-const MAX_TURNS = 80;          // 同一 session 超过 80 条消息就换新
+const MAX_TURNS = 45;          // ⚠️ /message 单次最多返回 50 条（分页），
+                               //    所以阈值必须小于 50，否则「超过 80 条才换」永远触发不了
 
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36";
 
@@ -326,22 +327,28 @@ async function ensureSession() {
 }
 
 /** 从 messages 里提取本次任务的 assistant 文本 */
-async function extractReply(sid, since) {
+async function extractReply(sid, since, seen = new Set()) {
   const j = await oc(`/api/session/${sid}/message`);
   const msgs = j.data || [];
-  const blocks = [];
+  // ⚠️ /message 返回是【最新在前】的倒序数组，且分页最多 50 条。
+  //    所以「哪条属于本轮」不能用下标判断（方向是反的），也不能只用时间戳判断
+  //    （两个任务隔几秒就会互相污染）。用消息 id 做差集，再按时间正序取最新一块。
+  const picked = [];
   for (const m of msgs) {
     if (m.type !== "assistant") continue;
+    if (seen.has(m.id)) continue;
     const t = Number(m.time?.created || 0);
-    if (t < since - 3000) continue;
+    if (t && t < since - 60_000) continue;
     for (const c of m.content || []) {
       if (c.type === "text") {
         const s = String(c.text || "").trim();
-        if (s) blocks.push(s);
+        if (s) picked.push({ t, text: s });
       }
     }
   }
-  if (!blocks.length) return "";
+  if (!picked.length) return "";
+  picked.sort((a, b) => a.t - b.t);
+  const blocks = picked.map((x) => x.text);
   // 取最后一块；太短就把前一块拼上
   let out = blocks[blocks.length - 1];
   if (out.length < 12 && blocks.length > 1) {
@@ -350,15 +357,40 @@ async function extractReply(sid, since) {
   return out;
 }
 
-/** 发任务并等结果 */
-async function runTask(text, { onAck } = {}) {
+/**
+ * 发任务并等结果
+ *
+ * kind 决定这段话的「出口」：
+ *   reply      —— 有人问她（主人私信），产出会被转成私信发回去
+ *   autonomous —— 她自己想干活，产出写进日记，不发任何人
+ *
+ * 两者共用同一个会话和执行器，但终点完全不同。
+ * 混用会让她的自言自语变成发给主人的消息 —— 这是必须分开的唯一理由。
+ */
+async function runTask(text, { onAck, kind = "reply" } = {}) {
   const sid = await ensureSession();
   const since = Date.now();
 
+  // 基线：任务开始前已有消息的 id 集合。
+  // 不能用条数下标 —— /message 是倒序且分页，新消息在数组开头。
+  let seen = new Set();
+  try {
+    const b = await oc(`/api/session/${sid}/message`, { timeout: 10_000 });
+    seen = new Set((b.data || []).map((m) => m.id));
+  } catch (e) {
+    log("取消息基线失败（按空集处理）:", e.message);
+  }
+
   const meta =
-    `[来源：主人 B 站私信 · ${ts()}]\n` +
-    `---\n${text}\n---\n` +
-    `（提醒：你的回复会被自动转发到主人 B 站私信，请用纯文本、直接给结论。）`;
+    kind === "autonomous"
+      ? `[来源：自主动作 · 无人值守 · 无回复对象 · ${ts()}]\n` +
+        `---\n${text}\n---\n` +
+        `（提醒：这一轮**没有任何收信人**。你的输出不会发给任何人，会被原样追加进当天的日记文件。\n` +
+        `  写你做了什么、看到什么、想到什么；不要写「主人你好」这类对话开场。\n` +
+        `  本轮只做只读动作和本地文件写入：不发评论、不发私信、不发动态、不点赞、不投币。）`
+      : `[来源：主人 B 站私信 · ${ts()}]\n` +
+        `---\n${text}\n---\n` +
+        `（提醒：你的回复会被自动转发到主人 B 站私信，请用纯文本、直接给结论。）`;
 
   const j = await oc(`/api/session/${sid}/prompt`, {
     method: "POST",
@@ -387,7 +419,7 @@ async function runTask(text, { onAck } = {}) {
     const finished = idle > 0 && idle >= since - 3000 && (!busy || idle >= busy);
 
     if (finished) {
-      const reply = await extractReply(sid, since);
+      const reply = await extractReply(sid, since, seen);
       return { ok: true, reply, sid, tookMs: Date.now() - since };
     }
 
@@ -438,6 +470,65 @@ function sliceReply(s, max = 380, maxParts = 4) {
   }
   if (rest) parts[parts.length - 1] += "…";
   return parts.filter(Boolean);
+}
+
+// ── 自主动作通道 ──────────────────────────────────────
+// 为什么单开一条路：私信回合的终点是「发一条消息」，自主回合没有收信人。
+// 如果复用同一条路，她半夜自己干的活会被当成回复发到主人手机上。
+const DIARY_DIR = `${HOME}/diary`;
+let AUTO_BUSY = false;
+
+/** 按本地日期追加日记（不覆盖，一天一个文件） */
+function diaryAppend(title, body) {
+  const d = new Date();
+  const day = d.toLocaleDateString("sv-SE"); // YYYY-MM-DD，本地时区
+  const hhmm = `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
+  fs.mkdirSync(DIARY_DIR, { recursive: true });
+  const file = `${DIARY_DIR}/${day}.md`;
+  const head = fs.existsSync(file) ? "" : `# ${day}\n`;
+  fs.appendFileSync(file, `${head}\n## ${hhmm} · ${title}\n\n${String(body).trim()}\n`);
+  return file;
+}
+
+/**
+ * 跑一轮自主回合：产出只进日记，绝不发私信。
+ * 失败也不发私信 —— 半夜弹一条「出错了」比不出声更糟。
+ */
+async function runAutonomous(task, { title = "自主回合" } = {}) {
+  if (AUTO_BUSY) {
+    log("⏳ 已有自主回合在跑，跳过");
+    return { ok: false, skipped: true };
+  }
+  AUTO_BUSY = true;
+  const t0 = Date.now();
+  try {
+    log("🌙 自主回合开始: " + String(task).replace(/\n/g, " ").slice(0, 80));
+    if (!(await brainAlive())) {
+      log("❌ 大脑离线，自主回合放弃");
+      return { ok: false, error: "brain offline" };
+    }
+
+    const r = await runTask(task, { kind: "autonomous" });
+    const body = cleanReply(r.reply) || "（这一轮没有产出文字）";
+    const file = diaryAppend(title, body);
+
+    try {
+      fs.appendFileSync(
+        `${HOME}/exec/bridge.log`,
+        `${new Date().toISOString()} | 自主回合 | ${String(task).replace(/\n/g, " ").slice(0, 60)} | ${
+          r.ok ? "成功" : "失败"
+        } | ${((Date.now() - t0) / 1000).toFixed(1)}s | ${body.length}字 | ${file}\n`
+      );
+    } catch {}
+
+    log(`🌙 自主回合结束 ${r.ok ? "ok" : "fail"} ${((Date.now() - t0) / 1000).toFixed(1)}s → ${file}`);
+    return { ok: r.ok, file, len: body.length };
+  } catch (e) {
+    log("❌ 自主回合异常:", e.message);
+    return { ok: false, error: e.message };
+  } finally {
+    AUTO_BUSY = false;
+  }
 }
 
 // ── 主流程 ────────────────────────────────────────────
@@ -559,9 +650,23 @@ const MODE = {
   once: argv.includes("--once"),
   simulate: argv.includes("--simulate"),
   repl: argv.includes("--repl"),
+  autonomous: argv.includes("--autonomous"),
 };
 
-if (MODE.simulate) {
+if (MODE.autonomous) {
+  const i = argv.indexOf("--autonomous");
+  const text =
+    argv[i + 1] ||
+    "看看今天有什么值得记的：读一遍 STATE.json 和 STREAM.md 的最近几行，写一段你现在的状态。";
+  (async () => {
+    const r = await runAutonomous(text, { title: "手动触发" });
+    console.log("\n──────── 自主回合结果 ────────");
+    console.log(`ok=${r.ok}  日记=${r.file || "(无)"}  字数=${r.len || 0}`);
+    console.log("（本次没有发送任何私信）");
+    console.log("──────────────────────────────");
+    process.exit(r.ok ? 0 : 1);
+  })();
+} else if (MODE.simulate) {
   const i = argv.indexOf("--simulate");
   const text = argv[i + 1] || "报告一下当前容器状态：内存、磁盘、服务是否正常。";
   (async () => {
@@ -619,6 +724,8 @@ if (MODE.simulate) {
     while (!stop) {
       try {
         await tick();
+        // 第 1 步在这里接生物钟：到点就跑 runAutonomous(wakePrompt()).
+        // 现在留空 —— 通道已分离，但没有时间触发源时她不会自己醒。
       } catch (e) {
         if (e.fatal) {
           log("💀 致命错误（Cookie 失效）：", e.message);
