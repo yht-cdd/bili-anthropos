@@ -727,7 +727,14 @@ async function handleOwnerMessage(text, raw) {
   const t0 = Date.now();
   let r;
   try {
-    r = await runTask(task, { kind: "push", timeoutMs: Math.max(WAIT_MAX_MS, 300_000) });
+    r = await runTask(task, {
+      kind: "push",
+      timeoutMs: Math.max(WAIT_MAX_MS, 300_000),
+      // 超过 20 秒还没做完，先回一句「收到」——不然主人会以为她没收到
+      onAck: async () => {
+        await sendDM("收到，正在处理…");
+      },
+    });
   } catch (e) {
     log("❌ 任务异常:", e.message);
     await sendDM("出错了：" + e.message.slice(0, 200));
