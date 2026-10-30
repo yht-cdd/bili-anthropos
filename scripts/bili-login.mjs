@@ -125,18 +125,41 @@ function writeCookie(cookies) {
   return [...jar.keys()];
 }
 
-/** 记下这次凭证是从哪来的、什么时候，方便 status 判断该不该续 */
-function rememberTokens(d, src) {
+/**
+ * 记下这次凭证是从哪来的、什么时候，方便 status 判断该不该续。
+ *
+ * ⚠️ B 站两个接口给的层级不一样，必须都吃：
+ *      TV 端扫码 poll   → data.access_token / data.refresh_token
+ *      oauth2 refresh   → data.token_info.access_token / data.token_info.refresh_token
+ *
+ * 只认外层会踩空：字段取到 undefined → 写进 state → JSON.stringify 把它丢掉
+ * → 下次续期发现「没有 refresh_token」。2026-10-30 实测踩过这个坑，
+ * 第一次续期就把刚扫来的 refresh_token 弄没了，等于白扫。
+ *
+ * 所以这里一律用「取到才覆盖」，取不到就保留旧值 —— 宁可留着旧的，
+ * 也不能把能用的弄丢。
+ */
+function rememberTokens(raw, src) {
+  const ti = raw.token_info || raw;
   const st = loadState();
-  st.access_token = d.access_token;
-  st.refresh_token = d.refresh_token;
-  st.mid = String(d.mid || st.mid || "");
+
+  if (ti.access_token) st.access_token = ti.access_token;
+  if (ti.refresh_token) st.refresh_token = ti.refresh_token;
+  if (raw.mid || ti.mid) st.mid = String(raw.mid || ti.mid);
+
   st.token_at = Date.now();
-  st.expires_at = d.expires_in ? Date.now() + Number(d.expires_in) * 1000 : st.expires_at;
+  const ttl = ti.expires_in || raw.expires_in;
+  if (ttl) st.expires_at = Date.now() + Number(ttl) * 1000;
+
   st.source = src;
   delete st.auth_code;      // 扫完了，这个码就作废了
   saveState(st);
   return st;
+}
+
+/** 只用来判断「手里到底有没有能续期的凭据」 */
+function hasRenewable(st = loadState()) {
+  return Boolean(st.access_token && st.refresh_token);
 }
 
 /** 用当前凭证问一下服务端：我们还是不是登录状态 */
@@ -225,8 +248,13 @@ async function cmdPoll({ waitSec = 180 } = {}) {
 // ── refresh：自动续期 ─────────────────────────────────
 async function cmdRefresh() {
   const st = loadState();
-  if (!st.refresh_token || !st.access_token) {
-    out({ ok: false, why: "没有 refresh_token，说明这份凭证是手动复制的 Cookie，续不了。跑 qr 扫一次码。" });
+  if (!hasRenewable(st)) {
+    out({
+      ok: false,
+      why:
+        "手里没有 access_token + refresh_token，这份凭证续不了。" +
+        "（只有扫码登录才会拿到它们；手动从浏览器复制的 Cookie 是一张死快照。）跑 qr 扫一次码。",
+    });
     process.exit(2);
   }
   const j = await post("/api/v2/oauth2/refresh_token", {
@@ -239,15 +267,29 @@ async function cmdRefresh() {
     // -101 / -400 都表示 refresh_token 本身也过期了，只能重扫
     process.exit(1);
   }
-  const keys = writeCookie(j.data.cookie_info?.cookies || []);
-  rememberTokens(j.data, "refresh");
+
+  const raw = j.data;
+  const ti = raw.token_info || raw;
+  if (!ti.access_token && !ti.refresh_token) {
+    out({
+      ok: false,
+      step: "refresh",
+      why: "返回里既没有 access_token 也没有 token_info，线上接口格式可能变了",
+      gotKeys: Object.keys(raw),
+    });
+    process.exit(1);
+  }
+
+  const keys = writeCookie(raw.cookie_info?.cookies || []);
+  const after = rememberTokens(raw, "refresh");
   const ck = await checkLogin();
   log(`续期成功${ck.ok ? "" : "（但 Cookie 仍然不通）"}`);
   out({
     ok: true,
     refreshed: true,
     cookieKeys: keys,
-    expiresInDays: j.data.expires_in ? Math.round(j.data.expires_in / 86400) : null,
+    tokenSaved: hasRenewable(after),
+    expiresInDays: after.expires_at ? Math.round((after.expires_at - Date.now()) / 86400_000) : null,
     loginCheck: ck,
   });
   process.exit(ck.ok ? 0 : 1);
@@ -257,11 +299,11 @@ async function cmdRefresh() {
 async function cmdStatus() {
   const st = loadState();
   const ck = await checkLogin();
-  const ageDays = st.token_at ? Math.round((Date.now() - st.token_at) / 86400_000 * 10) / 10 : null;
+  const ageDays = st.token_at ? Math.round(((Date.now() - st.token_at) / 86400_000) * 10) / 10 : null;
   out({
     cookie: { ok: ck.ok, code: ck.code, uname: ck.uname, mid: ck.mid, why: ck.why },
-    hasRefreshToken: !!st.refresh_token,
-    source: st.source || "(未知，可能是手动复制)",
+    renewable: hasRenewable(st),
+    source: st.source || "(未知，可能是手动复制的 Cookie，续不了)",
     tokenAgeDays: ageDays,
     refreshDue: st.token_at ? ageDays >= REFRESH_AFTER_DAYS : null,
     accessTokenExpiresInDays: st.expires_at ? Math.round((st.expires_at - Date.now()) / 86400_000) : null,
