@@ -313,7 +313,7 @@ git clone https://ghproxy.net/https://github.com/user/repo.git
 scp repo.zip root@host:/opt/refs/
 # 服务器：unzip
 
-# C. apt/npm 反而很快（阿里云内网），可以直接装包
+# C. apt/npm 反而很快（国内云内网），可以直接装包
 ```
 
 ### 坑 7 · `msg_key` 是 19 位数字，超过 JS 安全整数
