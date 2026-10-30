@@ -1,0 +1,19 @@
+{
+  "_comment": "语音合成 / 识别的接入配置。复制成 voice-api.json 再填自己的。本仓库不指定供应商。",
+  "baseUrl": "https://your-provider.example.com/v1",
+  "keyFile": "secrets/voice_api_key.txt",
+  "dailyMax": 60,
+  "tts": {
+    "style": "chat",
+    "path": "/chat/completions",
+    "model": "your-tts-model",
+    "voice": "default",
+    "role": "assistant",
+    "format": "wav"
+  },
+  "asr": {
+    "style": "chat",
+    "path": "/chat/completions",
+    "model": "your-asr-model"
+  }
+}

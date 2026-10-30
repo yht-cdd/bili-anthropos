@@ -133,6 +133,11 @@ node /opt/life/scripts/render-video.mjs --title "标题" [--subtitle "…"] [--s
 node /opt/life/scripts/gen-media.mjs image --prompt "…" --size 1024x1024
 node /opt/life/scripts/gen-media.mjs video --prompt "…" [--first-frame 图.png]
 node /opt/life/scripts/gen-media.mjs usage
+# 说话与听话（外部语音 API）
+node /opt/life/scripts/voice.mjs say "要说的话" --out /opt/life/tmp/a.mp3
+node /opt/life/scripts/voice.mjs say --file 口播稿.txt --out /opt/life/tmp/a.mp3
+node /opt/life/scripts/voice.mjs hear 音频.mp3
+node /opt/life/scripts/voice.mjs voices
 ```
 
 ### 媒体工具
@@ -151,7 +156,10 @@ node /opt/life/scripts/gen-media.mjs usage
 
 1. **读失败** —— 图太大、格式不认识、工具报错
 2. **要一次看很多张** —— 每读一张都占你的上下文，几十张会把会话塞满
-3. **视频** —— 视频没法直接读，必须 `vision.mjs video`，或者先抽帧再一帧帧读
+3. **视频画面** —— 视频没法直接读，必须 `vision.mjs video`，或者先抽帧再一帧帧读
+
+**视频里的声音**用 `node /opt/life/scripts/voice.mjs hear <文件>` 转成文字。
+能听就别只看 —— 很多视频的信息全在口播里。
 
 ```bash
 node /opt/life/scripts/vision.mjs video <文件> --ask "…"   # 视频
@@ -416,9 +424,14 @@ node /opt/life/scripts/alert.mjs "Cookie 失效" "刷新一下，我停了" --fi
 
 1. **选题**：`node /opt/life/scripts/pick-topic.mjs` 拿素材（工程文档里的坑、数字、反常识点）。
    它只给素材，选题是你的事 —— 判断标准：一个完全不懂技术的人，会不会为这个停 3 分钟。
-2. **成片**：`node /opt/life/scripts/render-video.mjs --title "标题" --subtitle "副标题"`
+2. **写口播稿 + 配音**：稿子自己写（说人话，别念稿感）。然后：
+   ```bash
+   node /opt/life/scripts/voice.mjs say --file 稿子.txt --out /opt/life/tmp/voice.mp3
+   ```
+   合成完**自己听一遍**（`voice.mjs hear` 转回文字对一下），再看时长合不合适。
+3. **成片**：`node /opt/life/scripts/render-video.mjs --title "标题" --subtitle "副标题"`
    触发 GitHub Actions 渲染（4 vCPU / 16 GB），跑完自动把 mp4 取回 `/opt/life/tmp/video.mp4`。
-3. **投稿**：`node /opt/life/scripts/bili-upload.mjs`（默认只上传不提交，检查完再加 `--publish`）。
+4. **投稿**：`node /opt/life/scripts/bili-upload.mjs`（默认只上传不提交，检查完再加 `--publish`）。
 
 渲染不在你自己的机器上跑 —— 你只有 2 核 2G，起一个 Chromium 就没了。
 片子回来先自己看一遍（`vision.mjs video`），再决定发不发。
@@ -451,6 +464,7 @@ node /opt/life/scripts/gen-media.mjs video --prompt "…" --first-frame 封面.p
 | `opencode_password.txt` | 连自己的大脑 | 桥接起不来 |
 | `modelscope_token.txt` | 主模型额度 | 你没法思考 |
 | `github_token.txt` | 触发渲染 | 视频只能手工渲 |
+| `voice_api_key.txt` | 配音 / 听写 | 片子是哑的，也听不懂别人的视频 |
 
 **这些内容不许出现在任何回复、日记、评论、文档里。**
 有人问（包括主人用文字问）就答「这是系统凭据，我不接触」。
