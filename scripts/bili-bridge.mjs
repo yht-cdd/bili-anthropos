@@ -1252,6 +1252,24 @@ async function pollInbox() {
   return { handled: rows.length, ok: r.ok };
 }
 
+// ── 告警 ──────────────────────────────────────────────
+// 出事了要能找得到人。之前只写 ALERT.md，没人看。
+// alert.mjs 会发邮件给主人，同类 30 分钟去重；这里只负责触发，不关心它怎么发。
+function fireAlert(title, body, { urgent = false, file = "" } = {}) {
+  try {
+    const args = [title, body].map((s) => `"${String(s).replace(/"/g, '\\"')}"`).join(" ");
+    const extra = `${urgent ? " --urgent" : ""}${file ? ` --file "${file}"` : ""}`;
+    execSync(`node ${HOME}/scripts/alert.mjs ${args}${extra}`, {
+      encoding: "utf8",
+      timeout: 120_000,
+      stdio: "pipe",
+    });
+    log(`📧 告警已发出：${title}`);
+  } catch (e) {
+    log(`⚠️ 告警发送失败（${title}）：${String(e.message).split("\n")[0]}`);
+  }
+}
+
 // ── 主流程 ────────────────────────────────────────────
 async function handleOwnerMessage(text, raw) {
   log("📨 主人: " + text.replace(/\n/g, " ").slice(0, 120));
@@ -1344,6 +1362,7 @@ async function handleOwnerMessage(text, raw) {
 
 /** 一轮轮询 */
 let tickCount = 0;
+let tickErrStreak = 0;   // 连续失败次数，到 5 次就发告警（偶尔抽一下不用惊动主人）
 
 async function tick() {
   tickCount++;
@@ -1529,6 +1548,7 @@ if (MODE.usage) {
     while (!stop) {
       try {
         await tick();        // ① 私信优先：有人找她，先把人伺候好
+        tickErrStreak = 0;
         await pollInbox();   // ② 评论区看看有没有新动静（5 分钟一次）
         await maybeWake();   // ③ 没人找，才看时间
       } catch (e) {
@@ -1537,9 +1557,18 @@ if (MODE.usage) {
           try {
             fs.writeFileSync(`${HOME}/ALERT.md`, `# 告警\n\n${ts()}\n\nCookie 失效：${e.message}\n快去刷新 Cookie 并覆盖 ${COOKIE_FILE}\n`);
           } catch {}
+          fireAlert("Cookie 失效，我停了", `B 站接口返回凭证失效，桥接无法再收发消息。\n需要你把新的 Cookie 覆盖到服务器上的凭证文件。`, {
+            urgent: true,
+          });
           await sleep(60_000);
         } else {
-          log("轮询异常:", e.message);
+          tickErrStreak += 1;
+          log(`轮询异常（连续 ${tickErrStreak} 次）:`, e.message);
+          if (tickErrStreak === 5) {
+            fireAlert("轮询连续失败 5 次", `最近的错误：${e.message}\n我还在重试，但如果一直这样，需要你看一眼。`, {
+              file: LOG_FILE,
+            });
+          }
         }
       }
       // 分片睡眠，便于快速响应退出

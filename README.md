@@ -373,6 +373,9 @@ node /opt/life/scripts/bili-bridge.mjs --simulate "报出你的名字和所有�
 │   ├─ bili-bridge.mjs    私信 ↔ 大脑 桥接（单会话常驻 + 自动压缩 + 失败重试）
 │   ├─ spawn-task.mjs     派活给子代理（免费模型阶梯，只回传结论）
 │   ├─ bili-inbox.mjs     评论 / @ / 回复我 → 事件队列（只收不发）
+│   ├─ alert.mjs          出事发邮件给主人（同类 30 分钟去重，夸克兜底）
+│   ├─ pick-topic.mjs     从工程文档挖选题素材
+│   ├─ render-video.mjs   触发 GitHub Actions 渲染并取回 mp4
 │   ├─ handover.mjs       换代前把记忆抽成档案
 │   ├─ session-reset.mjs  清空全部会话，只留一个默认会话
 │   ├─ bili-api.mjs       B 站只读 CLI

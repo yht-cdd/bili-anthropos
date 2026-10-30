@@ -1,0 +1,95 @@
+name: render-video
+
+# 按需渲染：不占她那台机器的 CPU，跑完就把 mp4 作为 artifact 交回来。
+# ubuntu-latest = 4 vCPU / 16 GB —— 就是所谓的 4C16G，Remotion 官方推荐配置。
+on:
+  workflow_dispatch:
+    inputs:
+      title:
+        description: 主标题（一句话，竖屏最多 12 字最好看）
+        required: true
+        type: string
+      subtitle:
+        description: 副标题
+        required: false
+        default: ""
+        type: string
+      kicker:
+        description: 角标（默认 ANTHROPOS）
+        required: false
+        default: ANTHROPOS
+        type: string
+      accent:
+        description: 主色（#RRGGBB）
+        required: false
+        default: "#FF6B6B"
+        type: string
+      seconds:
+        description: 时长（秒）
+        required: false
+        default: "15"
+        type: string
+
+concurrency:
+  group: render-video
+  cancel-in-progress: false
+
+jobs:
+  render:
+    # 4 vCPU / 16 GB / 14 GB SSD，公开仓库免费额度 2000 分钟/月
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 安装依赖
+        working-directory: video
+        run: npm install --no-audit --no-fund
+
+      - name: 准备无头浏览器
+        working-directory: video
+        run: npx remotion browser ensure
+
+      - name: 写渲染参数
+        working-directory: video
+        env:
+          TITLE: ${{ inputs.title }}
+          SUBTITLE: ${{ inputs.subtitle }}
+          KICKER: ${{ inputs.kicker }}
+          ACCENT: ${{ inputs.accent }}
+          SECONDS: ${{ inputs.seconds }}
+        run: |
+          node -e '
+            const fs = require("fs");
+            const props = {
+              title: process.env.TITLE || "",
+              subtitle: process.env.SUBTITLE || "",
+              kicker: process.env.KICKER || "ANTHROPOS",
+              accent: process.env.ACCENT || "#FF6B6B",
+              seconds: Number(process.env.SECONDS || 15),
+            };
+            fs.writeFileSync("props.json", JSON.stringify(props, null, 2));
+            console.log("props:", JSON.stringify(props));
+          '
+
+      - name: 渲染
+        working-directory: video
+        run: |
+          npx remotion render src/index.ts AnthroposVideo out/video.mp4 \
+            --props=props.json \
+            --concurrency=4 \
+            --log=info
+
+      - name: 产物信息
+        working-directory: video
+        run: ls -lh out/ && du -h out/video.mp4
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: video
+          path: video/out/video.mp4
+          retention-days: 7
