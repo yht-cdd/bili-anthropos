@@ -1,0 +1,13 @@
+[Unit]
+Description=Anthropos OpenI 每日工程笔记同步
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/opt/life
+Environment=HOME=/root
+Environment=LIFE_HOME=/opt/life
+Environment=GIT_TERMINAL_PROMPT=0
+ExecStart=/usr/local/bin/node /opt/life/scripts/openi-daily.mjs run

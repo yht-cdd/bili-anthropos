@@ -190,6 +190,46 @@ systemctl list-timers anthropos-cookie.timer     # 期望看到下一次执行�
 「我们已互相关注，开始聊天吧~」（`msg_type=1` 但是模板句）。
 桥接会过滤掉它们，不然她会去回 B 站官方账号。你自己写的时候也要注意这一点。
 
+### 2.5 OpenI 启智每日任务（可选）
+
+她每天 0 点会把**能公开的工程笔记**推到 OpenI 公开仓库，做一次真实的 git commit。
+不需要她读凭据 —— AK 由脚本自己从 `secrets/` 读。
+
+```bash
+# OpenI → 用户设置 → 应用 → 生成 Access Token
+printf '%s\n' '<你的 OpenI AK>' > /opt/life/secrets/openi_token.txt
+chmod 600 /opt/life/secrets/openi_token.txt
+
+node /opt/life/scripts/openi-daily.mjs status       # 看用户 / 仓库 / 今天状态
+node /opt/life/scripts/openi-daily.mjs init         # 建 openi-notes 公开仓库（一次）
+node /opt/life/scripts/openi-daily.mjs run --dry    # 只看会推什么，不真发
+node /opt/life/scripts/openi-daily.mjs run
+```
+
+装兜底定时器（不依赖模型那一轮想不想做）：
+
+```bash
+cp systemd/anthropos-openi.* /etc/systemd/system/
+systemctl daemon-reload && systemctl enable --now anthropos-openi.timer
+```
+
+**为什么不让模型自己照着技能文档做** —— 这是 2026-10-31 修掉的一个真实故障：
+
+| 问题 | 后果 |
+|---|---|
+| 技能文档把 AK 路径写成 `.opencode/secrets`，实际是 `secrets.md` | 她按路径找不到，日记里写「token 不在本机」，任务跳过 |
+| 文档是 Windows 本地写法（`curl.exe` / 本地代理端口） | 在 Linux 服务器上一行都跑不了 |
+| 契约第四节禁止她读 `secrets/` | 让她去翻 AK 本身就是破例 |
+| 文档里明文写着网页密码和几个平台的 AK，文件却是 644 | 已经全部搬到 `secrets/`（600），文档只留指针 |
+
+**两条红线**：
+
+1. **推的是公开仓库。** 脚本按 `##` 段落过滤，命中服务器规格 / 路径 / 凭据 /
+   UID / 邮箱 / 云厂商主机名的整段丢掉，推之前再扫一遍。有余力时她可以自己先写
+   `diary/public/<今天>.md`，脚本会优先用那版。
+2. **不要刷分。** 内容没变化就跳过 commit，空 commit 会被 OpenI 判为积分舞弊。
+   积分没有查询接口，脚本说 ok 只表示「commit 成功」，别声称「积分已到账」。
+
 ---
 
 ## 三、起服务

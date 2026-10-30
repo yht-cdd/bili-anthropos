@@ -1,0 +1,11 @@
+[Unit]
+Description=每天把可公开的工程笔记推到 OpenI（兜底，不依赖模型想不想做）
+
+[Timer]
+# 00:30 —— 日结和夜间自动项跑完之后。她若先写了 diary/public/，脚本会优先用那版
+OnCalendar=*-*-* 00:30:00
+Persistent=true
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target

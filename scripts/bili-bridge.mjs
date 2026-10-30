@@ -1135,8 +1135,14 @@ function buildNightTasks() {
     `【夜间自动项】日结已经做完了，这是额外的一轮。`,
     ``,
     `三件，能做就做，做不了就写一句为什么，别硬撑：`,
-    `1. 启智（OpenI）每日任务：看 skills/github-openi-manager/ 的说明，能调 API 就调；`,
-    `   需要网页登录 / 验证码的，跳过并记一句 —— 不要没到账就写「签到成功」。`,
+    `1. 启智（OpenI）每日任务：**跑 node /opt/life/scripts/openi-daily.mjs run**`,
+    `   AK 在 secrets/ 里由脚本读，你不碰、也不许去找。脚本会把日记里能公开的部分`,
+    `   推到 hfdryb/openi-notes 公开仓库；涉及服务器规格 / 路径 / 凭据 / UID / 邮箱的段落`,
+    `   它会整段丢掉，推之前还会再扫一遍。`,
+    `   有余力就先写一份 diary/public/<今天>.md（你自己判断什么能公开、什么不能），`,
+    `   脚本会优先用你写的那版；没写也没关系，它会自动从日记里挑。`,
+    `   看脚本输出说话：它说 ok 才算数，**不要自己写「积分已到账」**——积分没有查询接口，`,
+    `   你验证不了，就不许声称验证过。`,
     `2. 仓库巡检：看 github.com/yht-cdd/bili-anthropos 有没有新 issue / PR / CI 失败。`,
     `   有就按契约第十六节做（开分支 → 改 → 开 PR），没有就跳过。不许直推 main。`,
     `3. 素材：主人发过夸克链接就去取，没有就别追问。`,
@@ -1596,6 +1602,15 @@ let tickErrStreak = 0;   // 连续失败次数，到 5 次就发告警（偶尔�
 const HOLD_MAX_MIN = Number(process.env.DM_HOLD_MIN || 40);   // 压多久还发不出去就放弃
 const STRANGER_PER_TICK = Number(process.env.DM_PER_TICK || 2); // 一轮最多伺候几个陌生人
 
+// 私信里混着的「不是人说的话」。对它们回复等于对着空气说话，
+// 而且会让主人看到她在跟 B 站官方账号道谢。
+const SYSTEM_MSG_TYPES = new Set([10, 11, 12, 18]);
+const TEMPLATE_LINES = [
+  /^我们已互相关注，开始聊天吧/,
+  /^对方主动回复或关注你前/,
+  /^你已成功关注/,
+];
+
 async function tick() {
   tickCount++;
   const sessions = await getSessions();
@@ -1670,6 +1685,26 @@ async function tick() {
       if (dmSeen(key)) continue;
       // 陌生人：基线之前的老消息只标已读，不回
       if (!isOwner && Number(m.timestamp) < strangerSince) { dmMark(key); continue; }
+
+      // 陌生人会话里混着大量「不是人说的话」，回复它们就是对着空气说话。
+      // 2026-10-30 实测：B 站会往私信里塞这些，全都长得像正常消息。
+      //   · msg_type=10  「你的账号在新设备或平台登录成功…」系统通知
+      //   · msg_type=18  「对方主动回复或关注你前，最多发送 1 条消息」
+      //   · msg_type=1   但正文是「我们已互相关注，开始聊天吧~」这种模板句
+      if (!isOwner) {
+        if (SYSTEM_MSG_TYPES.has(Number(m.msg_type))) {
+          log(`🚫 跳过系统卡片 type=${m.msg_type}（${talker.slice(0, 4)}***）`);
+          dmMark(key);
+          continue;
+        }
+        const probe = msgText(m);
+        if (TEMPLATE_LINES.some((re) => re.test(probe))) {
+          log(`🚫 跳过系统模板句（${talker.slice(0, 4)}***）：${probe.slice(0, 30)}`);
+          dmMark(key);
+          continue;
+        }
+      }
+
       const text = msgText(m);
       if (!text) { dmMark(key); if (isOwner) log("跳过空消息 msg_type=" + m.msg_type); continue; }
       fresh.push({ m, key, text });
