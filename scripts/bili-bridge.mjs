@@ -1559,7 +1559,7 @@ function maybeApproveSpend(text) {
 // ── 评论 / @ 轮询 ─────────────────────────────────────
 // 私信之外的第二条感知线。只收不抢：收进来的评论进 events 表，
 // 由她判断回不回；真要回的时候必须过 bili-send 的四道闸。
-const INBOX_GAP_MS = Number(process.env.INBOX_GAP_MS || 5 * 60_000);
+const INBOX_GAP_MS = Number(process.env.INBOX_GAP_MS || 30_000); // 2026-10-31 主人令：5min→30s
 const INBOX_BATCH = Number(process.env.INBOX_BATCH || 3);
 let lastInboxAt = 0;
 

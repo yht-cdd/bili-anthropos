@@ -34,7 +34,7 @@ const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 const LIMIT = {
   sameTargetGapMs: 90_000,   // 同一目标最小间隔 90 秒
   hourly: 3,                 // 每小时最多 3 条
-  daily: 20,                 // 每天最多 20 条
+  daily: 30,                 // 每天最多 30 条（2026-10-31 主人令：20→30）
   sameUserGapMs: 30 * 60_000,// 同一用户 30 分钟内只回一次
   quietFrom: 0,              // 静默开始（0 点）
   quietTo: 7,                // 静默结束（7 点）
@@ -152,11 +152,12 @@ function gateRate(event) {
   const gapSameSec = LIMIT.sameTargetGapMs / 1000;
   const gapUserSec = LIMIT.sameUserGapMs / 1000;
 
-  const hourCount = db.prepare("SELECT COUNT(*) c FROM sends WHERE sent_at > ? AND ok = 1")
+  const hourCount = db.prepare("SELECT COUNT(*) c FROM sends WHERE sent_at > ? AND ok = 1 AND target != 'owner'")
     .get(now - 3600).c;
   if (hourCount >= LIMIT.hourly) return { ok: false, why: `小时配额用尽（${hourCount}/${LIMIT.hourly}）` };
 
-  const dayCount = db.prepare("SELECT COUNT(*) c FROM sends WHERE sent_at > ? AND ok = 1")
+  // 2026-10-31 主人令：给主人的发送不消耗全局配额
+  const dayCount = db.prepare("SELECT COUNT(*) c FROM sends WHERE sent_at > ? AND ok = 1 AND target != 'owner'")
     .get(now - 86400).c;
   if (dayCount >= LIMIT.daily) return { ok: false, why: `日配额用尽（${dayCount}/${LIMIT.daily}）` };
 
@@ -204,20 +205,28 @@ function gateKind(event) {
 // ══════════════════════════════════════════════════
 
 async function sendComment(event, text) {
-  // event.ref = "aid:123456"
-  const aid = String(event.ref || "").replace("aid:", "");
-  if (!/^\d+$/.test(aid)) return { code: -1, message: `无法解析 aid: ${event.ref}` };
+  // event.ref = "aid:123456"（视频）或 "oid:<动态id>"（动态，raw.ctype 给评论类型）
+  const extra = JSON.parse(event.raw || "null");
+  const ref = String(event.ref || "");
+  let oid, ctype;
+  if (ref.startsWith("oid:")) {
+    oid = ref.slice(4);
+    ctype = Number(extra?.ctype || 17);
+  } else {
+    oid = ref.replace("aid:", "");
+    ctype = 1;
+  }
+  if (!/^\d+$/.test(oid)) return { code: -1, message: `无法解析 oid: ${event.ref}` };
 
   const jar = loadCookie();
   const body = new URLSearchParams({
-    oid: aid,
-    type: "1",
+    oid,
+    type: String(ctype),
     message: text,
     csrf: jar.bili_jct,
   });
 
   // 如果是对某条评论的回复，带上 root
-  const extra = JSON.parse(event.raw || "null");
   const root = extra?.rpid ? String(extra.rpid) : null;
   if (root) { body.set("root", root); body.set("parent", root); }
 
@@ -366,8 +375,8 @@ function cmdReject(id, reason) {
 
 function cmdStats() {
   const now = Math.floor(Date.now() / 1000);
-  const h = db.prepare("SELECT COUNT(*) c FROM sends WHERE sent_at > ? AND ok=1").get(now - 3600).c;
-  const d = db.prepare("SELECT COUNT(*) c FROM sends WHERE sent_at > ? AND ok=1").get(now - 86400).c;
+  const h = db.prepare("SELECT COUNT(*) c FROM sends WHERE sent_at > ? AND ok=1 AND target != 'owner'").get(now - 3600).c;
+  const d = db.prepare("SELECT COUNT(*) c FROM sends WHERE sent_at > ? AND ok=1 AND target != 'owner'").get(now - 86400).c;
   const total = db.prepare("SELECT COUNT(*) c FROM sends WHERE ok=1").get().c;
   const fail = db.prepare("SELECT COUNT(*) c FROM sends WHERE ok=0").get().c;
   const pending = db.prepare("SELECT COUNT(*) c FROM events WHERE status=0").get().c;

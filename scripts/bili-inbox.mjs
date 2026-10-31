@@ -152,6 +152,38 @@ async function pull() {
     }
   }
 
+  // 我动态下的评论（2026-10-31 补：之前只收稿件评论/@/回复，动态是盲区）
+  try {
+    const dyn = await get("https://api.bilibili.com/x/polymer/web-dynamic/v1/feed/space", {
+      host_mid: SELF, offset: "", features: "itemOpUsStyle",
+    });
+    for (const it of dyn.data?.items || []) {
+      const basic = it.basic || {};
+      const oid = basic.comment_id_str || it.id_str;
+      const ctype = Number(basic.comment_type || 17);
+      if (!oid) continue;
+      const dr = await get("https://api.bilibili.com/x/v2/reply/main", { type: ctype, oid, mode: 3, ps: 20 });
+      for (const r of dr.data?.replies || []) {
+        const ts = Number(r.ctime || 0) * 1000;
+        if (ts && ts < since) continue;
+        if (String(r.mid) === SELF) continue;
+        const body = clip(r.content?.message, 400);
+        if (!body) continue;
+        const ev = {
+          id: `dyn:${r.rpid}`,
+          kind: "comment",
+          ref: `oid:${oid}`,
+          author: r.member?.uname || "",
+          authorId: r.mid,
+          body,
+          originTs: ts,
+          raw: { rpid: r.rpid, dyn_id: oid, ctype, surface: "dynamic", root: r.root || 0 },
+        };
+        if (addEvent(ev)) added.push({ ...ev, at: ts });
+      }
+    }
+  } catch { /* 动态拉取失败不阻断其余收取 */ }
+
   // @我的
   const at = await get("https://api.bilibili.com/x/msgfeed/at", { build: 0, mobi_app: "web" });
   if (at.code === 0) {
