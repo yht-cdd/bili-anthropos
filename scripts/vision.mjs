@@ -117,7 +117,7 @@ function quotaAdd(model) {
 }
 
 // ── 请求 ──────────────────────────────────────────────
-async function callOnce(model, parts, maxTokens = 900) {
+async function callOnce(model, parts, maxTokens = 100000) {
   const t0 = Date.now();
   const r = await fetch(`${BASE}/chat/completions`, {
     method: "POST",
