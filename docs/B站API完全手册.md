@@ -801,7 +801,7 @@ async function send(appr) {
 ⚠️ 注意   member/preupload   参数 r 必须=upos（写 mp4 会 404 而非 601）
 ```
 
-**IP 因素**：杭州节点（`<YOUR_SERVER_IP>`）实测所有读接口正常，未触发风控。这是选择国内服务器的核心理由——GitHub Actions 的美国 IP 做写操作风险明显更高。
+**IP 因素**：国内节点（`<YOUR_SERVER_REGION>`）实测所有读接口正常，未触发风控。这是选国内节点的核心理由——GitHub Actions 的美国 IP 做写操作风险明显更高。
 
 **行为画像因素**：一个 0 稿件、0 粉丝的账号突然高频自动回复，会被判定为机器人。所以：
 

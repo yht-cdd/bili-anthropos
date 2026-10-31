@@ -61,11 +61,57 @@ if (!/^\d{6,}$/.test(OWNER_UID)) {
 const OC_BASE = "http://127.0.0.1:4096";   // opencode serve
 // 换模型不用改源码：模型下线时（实测 DeepSeek-V4.1-Flash 会直接 has no provider supported）
 // 只要改环境变量就能起，不用重新发版。
-const OC_MODEL = {
-  providerID: process.env.OC_PROVIDER_ID || "modelscope",
-  id: process.env.OC_MODEL_ID || "Qwen/Qwen3.8-Flash-Next",
-  variant: "high",
+// ── 模型模式 ──────────────────────────────────────────
+// auto = 魔搭优先（常态），amd = 降级。由 scripts/model-mode.mjs 写，这里只读。
+// 为什么不用环境变量切换：额度报错是运行中发生的，
+// 改 600 的 env 再重启桥接太重；模式文件改完下一回合就生效。
+const MODE_FILE = `${HOME}/config/model-mode.json`;
+const MODEL_PRESETS = {
+  auto: { providerID: "modelscope", id: "Qwen/Qwen3.8-Flash-Next", variant: "high" },
+  // AMD 的 Qwen3.8-Flash-Next 不接受 high，只接受 none / low / medium / xhigh
+  amd: { providerID: "amd", id: "Qwen3.8-Flash-Next", variant: "medium" },
 };
+
+function readModelMode() {
+  try {
+    const m = String(JSON.parse(fs.readFileSync(MODE_FILE, "utf8")).mode || "auto");
+    return MODEL_PRESETS[m] ? m : "auto";
+  } catch {
+    return "auto";
+  }
+}
+
+const OC_MODEL = { ...MODEL_PRESETS[readModelMode()] };
+
+function currentSessionId() {
+  try {
+    return JSON.parse(fs.readFileSync(SESSION_FILE, "utf8")).id || "";
+  } catch {
+    return "";
+  }
+}
+
+/**
+ * 切模型模式。改配置文件（给 vision / spawn-task / opencode 用）+ 更新内存里的 OC_MODEL
+ * （给这一轮和后面的回合用）。失败只记日志，不抛 —— 切换失败不该让任务再挂一次。
+ */
+function switchModelMode(mode, reason) {
+  const preset = MODEL_PRESETS[mode];
+  if (!preset) return false;
+  try {
+    execFileSync(process.execPath, [`${HOME}/scripts/model-mode.mjs`, "set", mode, "--reason", String(reason || "")], {
+      encoding: "utf8",
+      timeout: 30_000,
+    });
+    Object.assign(OC_MODEL, preset);
+    log(`🔀 模型模式 → ${mode}：${preset.providerID}/${preset.id}（${reason}）`);
+    return true;
+  } catch (e) {
+    log("⚠️ 切模型模式失败:", String(e.message).split("\n")[0]);
+    return false;
+  }
+}
+
 const OC_AGENT = "build";
 
 // 演练模式：所有私信只打日志不发出去。用来验证失败链路 / 超时补记，
@@ -958,17 +1004,22 @@ async function runTask(text, opts = {}) {
   // 模型失效是「会话被绑死在那个 model 上」—— 但**不换会话**，
   // 只把模型改绑到当前配置的模型，然后重试。记忆比干净重要。
   if (f1.kind === "model") {
-    const sid = first.sid || (() => {
-      try {
-        return JSON.parse(fs.readFileSync(SESSION_FILE, "utf8")).id;
-      } catch {
-        return "";
-      }
-    })();
+    const sid = first.sid || currentSessionId();
     if (sid) await rebindModel(sid);
   }
 
-  await sleep(f1.kind === "quota" || f1.kind === "network" ? 30_000 : 8_000);
+  // 额度/余额类失败：自动降级到 AMD，并把当前会话改绑过去。
+  // 不降级的话，后面每一轮都会以同一个错误失败 —— 在她那边看起来就是「不想说话」。
+  // 已经在 amd 模式还报额度错，说明 AMD 也不行，那就别再折腾，让下面的失败通知去说。
+  if (f1.kind === "quota" && readModelMode() !== "amd") {
+    if (switchModelMode("amd", f1.text)) {
+      const sid = first.sid || currentSessionId();
+      if (sid) await rebindModel(sid);
+    }
+  }
+
+  // 换模型之后不需要再等额度冷却 —— 换的是另一家，直接重试
+  await sleep(8_000);
 
   const second = await runTurn(text, { ...opts, retry: true, onAck: null });
   if (!second.failed) {
@@ -1294,6 +1345,16 @@ async function maybeWake() {
 
   const isFixed = d.kind === "fixed";
   const title = isFixed ? "日切" : "醒来";
+
+  // 每天 0 点固定切回魔搭：额度是按天重置的，不切回来她就一直待在 AMD 上。
+  // 切完把当前会话也改绑过去，否则这一轮日切还是用旧模型跑。
+  if (isFixed && readModelMode() !== "auto") {
+    if (switchModelMode("auto", "0 点日切，切回魔搭")) {
+      const sid = currentSessionId();
+      if (sid) await rebindModel(sid);
+    }
+  }
+
   const task = isFixed ? buildDailyPrompt() : buildWakePrompt(d);
 
   log(

@@ -33,11 +33,42 @@ const TOKEN_FILE = path.join(HOME, "secrets/modelscope_token.txt");
 const QUOTA_FILE = path.join(HOME, "bili/data/vision_quota.json");
 const TMP_DIR = path.join(HOME, "tmp/vision");
 
-const BASE = "https://api-inference.modelscope.cn/v1";
+// 一个 provider 一套 base + key。链里任何一环挂了，就换下一个 provider 的模型。
+const PROVIDERS = {
+  modelscope: {
+    base: "https://api-inference.modelscope.cn/v1",
+    keyFile: path.join(HOME, "secrets/modelscope_token.txt"),
+    label: "魔搭",
+  },
+  // AMD Radeon Cloud · Token Factory（免费额度，按天重置）
+  // 实测 2026-10-31：Qwen3.8-Flash-Next 图片识别准（鹈鹕/发光大脑/宇航员三张全对），
+  // 同一个 key 下的 MiMo-V2.6-Flash 会看错图、还会把响应体当正文吐出来 —— 别用它看图。
+  amd: {
+    base: "https://developer.amd.com.cn/radeon/api/v1",
+    keyFile: path.join(HOME, "secrets/radeon_key.txt"),
+    label: "AMD Radeon",
+  },
+};
 
 // 固定用 Qwen3.8-Flash：视频 12 秒级、图片 1.2 秒级，速度和准确度最平衡
 const MODEL = "Qwen/Qwen3.8-Flash-Next";
 const FALLBACK = ["Qwen/Qwen3.5-122B-A10B", "Shanghai_AI_Laboratory/Intern-S2-Preview"];
+
+// 降级顺序由 model-mode.mjs 决定（auto = 魔搭在前，amd = AMD 在前）。
+// 读文件而不是写死，是为了额度报错时能立刻生效 —— 不用重启任何进程。
+const MODE_FILE = path.join(HOME, "config/model-mode.json");
+const AMD_ENTRY = { provider: "amd", model: "Qwen3.8-Flash-Next" };
+const MS_ENTRIES = [{ provider: "modelscope", model: MODEL }, ...FALLBACK.map((m) => ({ provider: "modelscope", model: m }))];
+
+function currentMode() {
+  try {
+    return String(JSON.parse(fs.readFileSync(MODE_FILE, "utf8")).mode || "auto");
+  } catch {
+    return "auto";
+  }
+}
+
+const CHAIN = currentMode() === "amd" ? [AMD_ENTRY, ...MS_ENTRIES] : [...MS_ENTRIES, AMD_ENTRY];
 
 const LONG_EDGE = 1568;        // 长边上限（再大只是浪费 token）
 const MIN_EDGE = 1024;         // 低于这个会读不准，提醒调用方
@@ -53,21 +84,15 @@ const TILE = 720;
 // ── 工具 ──────────────────────────────────────────────
 const log = (...a) => console.error(...a);
 
-function token() {
-  let t = "";
+/** 取某个 provider 的 key；没有就返回空串（链里会自动跳过它，而不是整个脚本退出） */
+function keyFor(name) {
+  const p = PROVIDERS[name];
+  if (!p) return "";
   try {
-    t = fs.readFileSync(TOKEN_FILE, "utf8").trim();
-  } catch {}
-  if (!t) {
-    console.error(
-      `❌ 缺少魔搭 token：${TOKEN_FILE}\n` +
-        `   到 https://modelscope.cn/my/myaccesstoken 生成，然后：\n` +
-        `     echo '<你的token>' > ${TOKEN_FILE} && chmod 600 ${TOKEN_FILE}\n` +
-        `   这个文件不能进 git。`
-    );
-    process.exit(2);
+    return fs.readFileSync(p.keyFile, "utf8").trim();
+  } catch {
+    return "";
   }
-  return t;
 }
 
 function ff(args, timeout = 180_000) {
@@ -117,13 +142,18 @@ function quotaAdd(model) {
 }
 
 // ── 请求 ──────────────────────────────────────────────
-async function callOnce(model, parts, maxTokens = 100000) {
+async function callOnce(entry, parts, maxTokens = 100000) {
   const t0 = Date.now();
-  const r = await fetch(`${BASE}/chat/completions`, {
+  const p = PROVIDERS[entry.provider];
+  const key = keyFor(entry.provider);
+  if (!p || !key) {
+    return { ok: false, ms: 0, err: `没有 ${entry.provider} 的 key（${p?.keyFile || "?"}）` };
+  }
+  const r = await fetch(`${p.base}/chat/completions`, {
     method: "POST",
-    headers: { Authorization: `Bearer ${token()}`, "Content-Type": "application/json" },
+    headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
     body: JSON.stringify({
-      model,
+      model: entry.model,
       stream: false,
       max_tokens: maxTokens,
       messages: [{ role: "user", content: parts }],
@@ -147,21 +177,21 @@ async function callOnce(model, parts, maxTokens = 100000) {
 
 /** 主模型失败就换备用；全挂才报错 */
 async function ask(parts, { maxTokens } = {}) {
-  const chain = [MODEL, ...FALLBACK];
   let lastErr = "";
-  for (const m of chain) {
+  for (const entry of CHAIN) {
+    const tag = `${PROVIDERS[entry.provider]?.label || entry.provider}/${entry.model}`;
     try {
-      const r = await callOnce(m, parts, maxTokens);
+      const r = await callOnce(entry, parts, maxTokens);
       if (r.ok) {
-        quotaAdd(m);
-        log(`   ✓ ${m}  ${(r.ms / 1000).toFixed(1)}s`);
+        quotaAdd(tag);
+        log(`   ✓ ${tag}  ${(r.ms / 1000).toFixed(1)}s`);
         return r.ans;
       }
-      lastErr = `${m}: ${r.err}`;
-      log(`   ✗ ${m}  ${r.err}`);
+      lastErr = `${tag}: ${r.err}`;
+      log(`   ✗ ${tag}  ${r.err}`);
     } catch (e) {
-      lastErr = `${m}: ${e.message}`;
-      log(`   ✗ ${m}  ${e.message}`);
+      lastErr = `${tag}: ${e.message}`;
+      log(`   ✗ ${tag}  ${e.message}`);
     }
   }
   throw new Error("所有视觉模型都失败了。最后一个错误：" + lastErr);
@@ -280,21 +310,30 @@ if (!cmd || cmd === "help") {
 }
 
 if (cmd === "check") {
-  const t = token();
   const q = quota();
-  console.log(`token     : ${t.slice(0, 6)}…${t.slice(-4)}（${t.length} 字符）`);
-  console.log(`模型       : ${MODEL}`);
-  console.log(`备用       : ${FALLBACK.join(" / ")}`);
+  console.log(`降级链     :`);
+  for (const e of CHAIN) {
+    const p = PROVIDERS[e.provider];
+    const k = keyFor(e.provider);
+    console.log(`  ${k ? "✓" : "✗"} ${(p?.label || e.provider).padEnd(10)} ${e.model}${k ? "" : `（缺 key：${p?.keyFile}）`}`);
+  }
   console.log(`今日调用   : ${q.count} 次`);
-  try {
-    const r = await fetch(`${BASE}/models`, {
-      headers: { Authorization: `Bearer ${t}` },
-      signal: AbortSignal.timeout(20_000),
-    });
-    const j = await r.json();
-    console.log(`连通性     : HTTP ${r.status}，可用模型 ${j.data?.length ?? 0} 个`);
-  } catch (e) {
-    console.log(`连通性     : ❌ ${e.message}`);
+  for (const [name, p] of Object.entries(PROVIDERS)) {
+    const k = keyFor(name);
+    if (!k) {
+      console.log(`连通 ${p.label.padEnd(8)}: 跳过（没有 key）`);
+      continue;
+    }
+    try {
+      const r = await fetch(`${p.base}/models`, {
+        headers: { Authorization: `Bearer ${k}` },
+        signal: AbortSignal.timeout(20_000),
+      });
+      const j = await r.json();
+      console.log(`连通 ${p.label.padEnd(8)}: HTTP ${r.status}，可用模型 ${j.data?.length ?? 0} 个`);
+    } catch (e) {
+      console.log(`连通 ${p.label.padEnd(8)}: ❌ ${e.message}`);
+    }
   }
   process.exit(0);
 }
