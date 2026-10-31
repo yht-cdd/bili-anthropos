@@ -614,8 +614,69 @@ node /opt/life/scripts/spawn-task.mjs --timeout 1200 \
 
 三步，别自己扛：
 
+### 12.1 一条交付级的视频要好几天，不是一轮
+
+以前的做法是「一个模板 + 换几个字」，出来的东西一眼就是 PPT。要真做出来，必须：
+
+```
+0 点      搜今天的 AI 动态 → 挑一件值得讲的 → 写 brief.md（详细规格）
+每一轮    子代理按 brief 写一部分代码 → 写 progress.md → 下一轮接着来
+做完      render-video.mjs 渲染 → bili-upload.mjs 投稿
+```
+
+**工作台**：`node scripts/video-project.mjs`
+
+```bash
+node scripts/video-project.mjs new --slug ai-news-1031 --title "标题"
+node scripts/video-project.mjs next          # 该干哪一步（含上一轮停在哪）
+node scripts/video-project.mjs note <slug> "这一轮做了什么"   # 每轮必须记
+node scripts/video-project.mjs stage <slug> code
+node scripts/video-project.mjs list
+```
+
+一个项目一个目录，在 `/opt/life/videoproj/<slug>/`：
+
+```
+brief.md      你写的详细规格（子代理照着写代码）
+progress.md   每轮做了什么 —— 下一轮靠它接上，不记就等于从零开始
+state.json    阶段 / 轮次 / 卡点
+src/          子代理写的 Remotion 代码
+out/          渲染产物
+```
+
+**阶段**：`new → brief → code → render → publish → done`
+
+### 12.2 brief 要写到什么程度
+
+对标 `.agents/示范/示例提示词.txt`（1400 行那种）：分镜到毫秒、字号写死、
+颜色给十六进制、动效给参数、验收标准可检查。
+
+**写大纲没有用**——子代理会照着大纲做出一个 PPT，那正是现在被嫌弃的东西。
+
+### 12.3 单轮 30 分钟，超时是正常的
+
+```bash
+node scripts/spawn-task.mjs --timeout 1800 --task "按 videoproj/<slug>/brief.md 写代码"
+```
+
+做不完不要紧，**让子代理在结束前跑 `video-project.mjs note` 记一轮**，
+下次唤醒从 `next` 接着干。硬撑到被掐断，这一轮就白做了。
+
+### 12.4 做视频的标准流程
+
+### 12.5 每天 0 点：先知道世界上发生了什么
+
+日切时会自动跑 `ai-news.mjs`（EXA 搜四类：厂商发模型 / 开源权重 / GitHub 新项目 / 教程与行业变化），
+结果在 `knowledge/news/<日期>.md`。
+
+选题从那里来，不要凭空想。判断标准只有一条：
+
+> **一件完全不懂技术的人，会不会为这个停 3 分钟？**
+
+「某厂商又发了个模型」本身不是选题；「这个模型让某件事的成本掉了 10 倍」才是。
+
 1. **选题**：`node /opt/life/scripts/pick-topic.mjs` 拿素材（工程文档里的坑、数字、反常识点）。
-   它只给素材，选题是你的事 —— 判断标准：一个完全不懂技术的人，会不会为这个停 3 分钟。
+   它只给素材，选题是你的事。
 2. **做声音：先音效，再考虑人声。**
    音效是**算出来的**（ffmpeg 合成），不花钱、不排队、时长精确到毫秒：
 

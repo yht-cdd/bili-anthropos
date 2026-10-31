@@ -80,7 +80,7 @@ for (let i = 0; i < argv.length; i += 1) {
   }
 }
 const TASK = String(opt.task || "").trim();
-const TIMEOUT_MS = Number(opt.timeout || 900) * 1000;
+const TIMEOUT_MS = Number(opt.timeout || 1800) * 1000;   // 默认 30 分钟：做视频这种活，15 分钟会卡在半路
 const KEEP = !!opt.keep;
 const JSON_OUT = !!opt.json;
 const ALLOW_PAID = !!opt["allow-paid"];   // 主人手动跑时才给；她自己在契约里不许用

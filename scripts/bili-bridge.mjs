@@ -238,7 +238,7 @@ async function ensureLimits() {
 // 超时之后继续守着这一轮。她常常在超时后几十秒才收尾，
 // 之前直接写「（这一轮没有产出文字）」把 496 字成果扔了。
 const LATE_HARVEST_MS = Number(process.env.LATE_HARVEST_MS || 600_000);
-const AUTO_MAX_MS = Number(process.env.AUTO_MAX_MS || 300_000);      // 自主回合上限
+const AUTO_MAX_MS = Number(process.env.AUTO_MAX_MS || 900_000);      // 自主回合上限（日切要写 brief，5 分钟不够）
 const PUSH_MAX_MS = Number(process.env.PUSH_MAX_MS || 900_000);      // 手动 --push 上限（实测三步要 8 分钟以上）
 
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36";
@@ -1266,11 +1266,43 @@ function fetchMail() {
   }
 }
 
+/** 搜今天的 AI 动态。脚本自己写 knowledge/news/<日期>.md，这里只要摘要 */
+function fetchNews() {
+  try {
+    const out = execSync(`node ${HOME}/scripts/ai-news.mjs --hours 72`, {
+      encoding: "utf8",
+      timeout: 180_000,
+      maxBuffer: 4 * 1024 * 1024,
+    }).trim();
+    // 太长就截断，别把上下文塞满
+    return out.length > 6000 ? out.slice(0, 6000) + "\n\n（后面省略…完整版在 knowledge/news/）" : out;
+  } catch (e) {
+    return `（搜新闻失败：${String(e.message).split("\n")[0].slice(0, 120)}）`;
+  }
+}
+
+/** 有没有做到一半的视频项目 */
+function pendingVideoProject() {
+  try {
+    const out = execSync(`node ${HOME}/scripts/video-project.mjs next`, {
+      encoding: "utf8",
+      timeout: 30_000,
+    }).trim();
+    const j = JSON.parse(out);
+    return j.todo ? j : null;
+  } catch {
+    return null;
+  }
+}
+
 /** 00:00 日切：先收信，再复盘昨天，最后排今天 */
 function buildDailyPrompt() {
   const y = yesterdayStr();
   const t = todayStr();
   const mail = fetchMail();
+  const news = fetchNews();
+  const pending = pendingVideoProject();
+
   return [
     `现在是 0 点。你醒来做日结。`,
     ``,
@@ -1283,12 +1315,34 @@ function buildDailyPrompt() {
     `【昨天的账】`,
     dayReport(y),
     ``,
+    `【今天 AI 圈在发生什么】`,
+    news,
+    ``,
+    pending
+      ? `【有一件没做完的视频】\n` +
+        `项目：${pending.todo}（${pending.title}）\n` +
+        `阶段：${pending.stageLabel} · 已做 ${pending.rounds} 轮\n` +
+        `该干：${pending.action}\n` +
+        (pending.note ? `上一轮：${pending.note}\n` : "") +
+        `先把它推进一轮，再谈新选题。`
+      : `【视频项目】没有未完成的。`,
+    ``,
     `做两件事：`,
     `1) 写日记：把上面这些账写成一篇日记，追加到 ${DIARY_DIR}/${t}.md，标题用「## ${nowHHMM()} · 日切」。`,
     `   写你这一天实际做了什么、哪件事让你有想法、明天想改什么。`,
     `   数字必须和上面的账对得上。对不上就说不一致，不要圆。`,
     `2) 排今天：更新 ${HOME}/TODAY.md，写下今天打算做的事（不超过 3 条，要具体到能验证）。`,
-    `   选的时候想清楚：工程文档告诉你**能**做什么，昨天的账告诉你**该**做什么。`,
+    `   选的时候想清楚：工程文档告诉你**能**做什么，昨天的账告诉你**该**做什么，新闻告诉你**别人今天在做什么**。`,
+    ``,
+    `【视频选题】`,
+    `从上面的新闻里挑一件真的值得讲的事（不是「又发了个模型」，而是「这东西改变了什么」）。`,
+    `挑中了就：`,
+    `  a) node ${HOME}/scripts/video-project.mjs new --slug <英文短名>-<月日> --title "标题"`,
+    `  b) 写 ${HOME}/videoproj/<slug>/brief.md —— 这是给子代理照着写代码的规格，`,
+    `     精细度对标 .agents/示范 里那种：分镜、时间点、字号、颜色、动效参数、验收标准，全部写死。`,
+    `     写大纲没有用，子代理会照着大纲做出一个 ppt。`,
+    `  c) 派子代理：node ${HOME}/scripts/spawn-task.mjs --timeout 1800 --task "按 videoproj/<slug>/brief.md 写 Remotion 代码"`,
+    `  一条视频做不完是正常的 —— 30 分钟一轮，做完写 progress.md，明天接着来。`,
     ``,
     `昨天没有值得写的事，就写「昨天没有特别的」。不要编。`,
     ``,
@@ -1332,10 +1386,13 @@ function buildWakePrompt(d) {
     `【必做 · 看一个视频，然后决定要不要推给主人】`,
     `1) 挑片：bili-api.mjs 的只读接口（热门 / 关注 / 分类）挑一个想看的，`,
     `   或从 knowledge/ 的选题清单里挑相关的。挑正片 8 分钟以内的。`,
-    `2) 下载：node scripts/bili-video.mjs <BV号>`,
-    `3) 观看：node scripts/vision.mjs video <文件> --ask "结论 / 坑 / 具体数字"`,
-    `   （工具链哪一步失败，写进日记说明失败在哪，然后尽力完成判断）`,
-    `4) 判断：这条值不值得推给主人？`,
+    `2) 派子代理去看（**别自己看**，画面和评论会塞满你的上下文）：`,
+    `   node scripts/spawn-task.mjs --timeout 1200 --task "用 video-study.mjs 研究 <BV号>。`,
+    `   回来只告诉我三件事：视频讲什么、评论区在聊什么、值不值得发一条评论（要发就发什么）。`,
+    `   要发就直接发（--comment … --confirm），发完告诉我评论的 state 是不是 0"`,
+    `   子代理会把原视频、字幕、置顶评论、随机 10 条评论、分析全文存进 videos/<BV>/，`,
+    `   以后要翻直接读那里的 index.md。`,
+    `3) 判断：这条值不值得推给主人？`,
     `   · 值得（有真实结论、坑或数字，且与主人的项目相关）→`,
     `     node scripts/bili-dm.mjs "≤300 字：这条视频讲了什么 + 为什么值得你看"`,
     `   · 不值得 → 在日记里写清为什么不推。这是判断，不是敷衍`,
@@ -1343,7 +1400,10 @@ function buildWakePrompt(d) {
     ``,
     `【可选 · 做一两件，也可以全不做】`,
     `5) 看看自己 —— 读 STATE.json、STREAM.md 最近 20 行`,
-    `6) 推进视频项目 —— 只做一步：选题 / 口播稿 / 检查投稿状态`,
+    `6) 推进视频项目 —— 先跑 node scripts/video-project.mjs next 看该干哪一步，`,
+    `   然后**派子代理**去做（自己只做判断，不写代码）：`,
+    `   node scripts/spawn-task.mjs --timeout 1800 --task "按 videoproj/<slug>/brief.md 写代码"`,
+    `   做完让子代理跑 video-project.mjs note 记一轮 —— 一条视频要好几天，不记就接不上`,
     `7) 内务三选一：整理 STREAM / 跑 doctor / 更新 TODAY`,
     `8) 写下来 —— 日记追加「## ${nowHHMM()} · 醒来」（看完的视频也写在这里）`,
     ``,
