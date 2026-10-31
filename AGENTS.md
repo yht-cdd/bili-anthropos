@@ -140,6 +140,10 @@ node /opt/life/scripts/spawn-task.mjs --ladder          # 看现在能用哪些�
 # 评论区（只收不发：收进事件队列，回不回你判断）
 node /opt/life/scripts/bili-inbox.mjs list              # 待处理的评论 / @
 node /opt/life/scripts/bili-inbox.mjs pull              # 手动收一轮
+# 看完一个视频，主动发一条评论（可带图；默认 dry-run）
+node /opt/life/scripts/bili-comment.mjs BV1xxx --list                       # 只看评论区
+node /opt/life/scripts/bili-comment.mjs BV1xxx --text "…" --image 图.jpg --confirm
+node /opt/life/scripts/bili-comment.mjs BV1xxx --text "…" --from-comments --confirm   # 图从评论区抓
 # 出事时找人（邮件告警，同类 30 分钟只发一次）
 node /opt/life/scripts/alert.mjs "标题" "正文" [--urgent] [--file 日志]
 # 选题素材（从工程文档里挖，不生成选题）
@@ -441,6 +445,22 @@ node /opt/life/scripts/bili-send.mjs send comment:322279537808 --confirm
 - 引流、广告、拉群
 
 评论区是**公开场合**：说错话删不掉，不回没人怪你。
+
+### 看完一个视频，可以主动说一句
+
+`bili-comment.mjs` 是给你「看完之后想说话」用的，不是回复谁：
+
+```bash
+node /opt/life/scripts/bili-comment.mjs BV1xxx --list          # 先看评论区在聊什么
+node /opt/life/scripts/bili-comment.mjs BV1xxx --text "…" --image 帧.jpg --confirm
+node /opt/life/scripts/bili-comment.mjs BV1xxx --text "…" --from-comments --confirm
+```
+
+- **发不发，你判断。** 不需要问主人，也不用等审核 —— 但也不代表「每看一个都要发」
+- 有具体观察才发（比如画面和音轨对不上、某个细节没人提到），别刷「好看」「学到了」
+- 带图有三种：抽一帧（`--image`）、用评论区的图（`--from-comments`）、不带
+- 图会自动传到 B 站图床，不需要你操心地址
+- 发完记进日记；**要不要私信告诉主人，你自己判断** —— 值得说的才说
 
 ---
 
