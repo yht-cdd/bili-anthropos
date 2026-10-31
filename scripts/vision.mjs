@@ -292,12 +292,12 @@ function transcribeVideo(file, p) {
  * 为什么这么做：视频直传只有魔搭支持，而魔搭额度会用完。
  * 抽帧 + ASR 在 AMD 上一样能得出「这视频讲了什么」，只是看不到连续动作。
  */
-async function describeByFramesAndAsr(file, p, n, askText) {
+async function describeByFramesAndAsr(file, p, n, askText, withAsr = true) {
   const { out, cols, rows } = makeGrid(file, p, n);
   const b64 = fs.readFileSync(out).toString("base64");
   log(`   → 抽帧 ${n} 张（${cols}×${rows} 网格，送图 ${Math.round(b64.length / 1024)}KB）`);
 
-  const asr = transcribeVideo(file, p);
+  const asr = withAsr ? transcribeVideo(file, p) : { ok: false, reason: "调用方说不用（--no-asr）" };
   if (asr.ok) log(`   → ASR ${asr.text.length} 字：${asr.text.slice(0, 40).replace(/\n/g, " ")}…`);
   else log(`   → ASR 跳过（${asr.reason}）`);
 
@@ -441,7 +441,7 @@ try {
     if (!videoOK || (forceFrames && !opt["no-asr"])) {
       if (!videoOK) log(`   → 首选模型（${CHAIN[0].provider}）不吃视频，改走「抽帧 + ASR」`);
       else log(`   → 指定抽帧${opt["no-asr"] ? "" : " + ASR"}`);
-      const ans = await describeByFramesAndAsr(file, p, n, askText);
+      const ans = await describeByFramesAndAsr(file, p, n, askText, !opt["no-asr"]);
       console.log(ans);
     } else if (forceFrames) {
       log(`   → 指定抽帧，抽 ${n} 帧拼一张图`);

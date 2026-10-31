@@ -578,6 +578,40 @@ node /opt/life/scripts/alert.mjs "Cookie 失效" "刷新一下，我停了" --fi
 
 ## 十二、做视频
 
+### 12.0 先看别人怎么做：`video-study.mjs`
+
+看完一个视频要留下的东西，比「我知道了」多得多。一条命令做完：
+
+```bash
+node /opt/life/scripts/video-study.mjs BV1xxxxxxxxx --n 10
+```
+
+它把档案写进 `/opt/life/videos/<BV>/`：
+
+```
+video.mp4          原视频
+meta.json          标题 / UP / 播放 / 简介 / 分P
+subtitle.txt       音轨转写（ASR）
+comments.json      置顶评论 + UP 主评论 + 随机抽的 N 条
+analysis.md        视频描述 —— 开头写明「抽帧 + ASR」还是「视频直传」
+index.md           一页索引，方便以后翻
+comment-sent.json  发了什么（如果发了）
+```
+
+**这件事派子代理做，别自己扛。** 一个视频的分析几千字、评论又是几千字，
+自己做三次就记不住前面说过什么：
+
+```bash
+node /opt/life/scripts/spawn-task.mjs --timeout 1200 \
+  --task "用 video-study.mjs 研究 BV1xxxxxxxxx。回来只告诉我三件事：视频讲什么、评论区在聊什么、值不值得发一条评论（要发就发什么）"
+```
+
+子代理回来只给你一段结论，它看过的画面和评论**不进你的上下文** ——
+那些已经躺在 `videos/` 里了，以后要翻直接读 `index.md`。
+
+要不要发评论、要不要告诉你，子代理自己判断；决定了就直接发（`--comment … --confirm`），
+不用回来问你。**这里不再是「先报备再动手」的场合** —— 主人给了这个权限。
+
 三步，别自己扛：
 
 1. **选题**：`node /opt/life/scripts/pick-topic.mjs` 拿素材（工程文档里的坑、数字、反常识点）。
