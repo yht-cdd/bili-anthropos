@@ -1281,6 +1281,20 @@ function fetchNews() {
   }
 }
 
+/** 看 B 站今天在推什么。比搜新闻更贴——这是平台算法筛过的 */
+function fetchFeed() {
+  try {
+    const out = execSync(`node ${HOME}/scripts/bili-feed.mjs --n 12 --max-min 20`, {
+      encoding: "utf8",
+      timeout: 120_000,
+      maxBuffer: 4 * 1024 * 1024,
+    }).trim();
+    return out.length > 4000 ? out.slice(0, 4000) + "\n（后面省略…）" : out;
+  } catch (e) {
+    return `（拉推荐失败：${String(e.message).split("\n")[0].slice(0, 120)}）`;
+  }
+}
+
 /** 有没有做到一半的视频项目 */
 function pendingVideoProject() {
   try {
@@ -1301,6 +1315,7 @@ function buildDailyPrompt() {
   const t = todayStr();
   const mail = fetchMail();
   const news = fetchNews();
+  const feed = fetchFeed();
   const pending = pendingVideoProject();
 
   return [
@@ -1315,7 +1330,10 @@ function buildDailyPrompt() {
     `【昨天的账】`,
     dayReport(y),
     ``,
-    `【今天 AI 圈在发生什么】`,
+    `【B 站今天在推什么】（平台算法筛过的，比新闻更贴你的赛道）`,
+    feed,
+    ``,
+    `【AI 圈今天在发生什么】`,
     news,
     ``,
     pending
@@ -1335,7 +1353,10 @@ function buildDailyPrompt() {
     `   选的时候想清楚：工程文档告诉你**能**做什么，昨天的账告诉你**该**做什么，新闻告诉你**别人今天在做什么**。`,
     ``,
     `【视频选题】`,
-    `从上面的新闻里挑一件真的值得讲的事（不是「又发了个模型」，而是「这东西改变了什么」）。`,
+    `两个池子，先看 B 站再看 AI：`,
+    `  · B 站推荐告诉你「今天什么东西有人看」——做 B 站内容，这个比新闻准`,
+    `  · AI 新闻告诉你「有什么新东西值得讲」`,
+    `挑一件真的值得讲的事（不是「又发了个模型」，而是「这东西改变了什么」）。`,
     `挑中了就：`,
     `  a) node ${HOME}/scripts/video-project.mjs new --slug <英文短名>-<月日> --title "标题"`,
     `  b) 写 ${HOME}/videoproj/<slug>/brief.md —— 这是给子代理照着写代码的规格，`,
@@ -1384,8 +1405,9 @@ function buildWakePrompt(d) {
     `【醒来】现在是 ${nowHHMM()}，这是今天的第 ${idx}/${total} 次自主醒来（连这次还剩 ${left} 次）。`,
     ``,
     `【必做 · 看一个视频，然后决定要不要推给主人】`,
-    `1) 挑片：bili-api.mjs 的只读接口（热门 / 关注 / 分类）挑一个想看的，`,
-    `   或从 knowledge/ 的选题清单里挑相关的。挑正片 8 分钟以内的。`,
+    `1) 挑片：node scripts/bili-feed.mjs --n 15 --max-min 20`,
+    `   它把首页推荐 / 热门 / 排行三个来源合并去重，标好时长和分区。`,
+    `   挑一个你真的想看的（别只看播放量高的）。挑正片 8 分钟以内的更稳。`,
     `2) 派子代理去看（**别自己看**，画面和评论会塞满你的上下文）：`,
     `   node scripts/spawn-task.mjs --timeout 1200 --task "用 video-study.mjs 研究 <BV号>。`,
     `   回来只告诉我三件事：视频讲什么、评论区在聊什么、值不值得发一条评论（要发就发什么）。`,
