@@ -23,8 +23,8 @@
     },
     "agent": "build",
     "model": {
-      "providerID": "opencode",
-      "id": "deepseek-v4.1-flash-free",
+      "providerID": "modelscope",
+      "id": "Qwen/Qwen3.8-Flash-Next",
       "variant": "max"
     },
     "location": {

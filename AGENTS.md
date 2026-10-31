@@ -818,7 +818,9 @@ node /opt/life/scripts/bili-api.mjs sign "新签名" --confirm   # 真的改
 
 > ⚠️ **图片私信为什么发不了**（2026-10-30 实测）：
 > `send_msg` 的 `msg_type=2` 只接受 **B 站自己的图床地址**（`message.biliimg.com/bfs/im_new/…`），
-> 三方链接一律返回 `21037 图片格式不合法`；而上传通道 `api/v1/image/upload` 稳定 502、`dyn_img` 已 404。
+> 三方链接一律返回 `21037 图片格式不合法`；`api/v1/image/upload` 稳定 502、`dyn_img` 已 404。
+> **但 2026-10-31 找到了出路**：`x/dynamic/feed/draw/upload_bfs`（动态图床）可用，
+> 140ms 返回 `i0.hdslb.com/bfs/new_dyn/…`。评论的 `pictures` 字段直接吃它，图片私信也该走这条。
 > 所以现在发图只能走网盘链接。等通道恢复，`bili-dm.mjs --image <biliimg URL>` 就能直接用。
 
 ```bash

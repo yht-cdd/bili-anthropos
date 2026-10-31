@@ -1,68 +1,20 @@
 {
   "_comment": "子代理的模型阶梯。从上往下试，第一个跑通的就用。free=true 表示不花 token 额度。改这个文件不用改代码。",
-  "_note": "优先级：opencode 自带的 *-free 永远排最前；只有它们全部失败，才降级到她自己的魔搭模型。2026-10-30 曾因 opencode 额度耗尽把阶梯整个换成魔搭，2026-10-31 改回——额度会恢复，不能因为今天失败就把它从阶梯里删掉。失败会快速返回（约 0.3s），6 个全试完也不到 2 秒，代价可忽略。",
+  "_note": "2026-10-31 同步线上实况：opencode 自带的 *-free 额度已耗尽、魔搭账户余额不足，amd/Qwen3.8-Flash-Next 和 brocod/deepseek-v4.1 是当前确认可用的。opencode 那批留在后面当兜底，额度恢复后会自动接上。",
   "ladder": [
-    {
-      "providerID": "opencode",
-      "id": "deepseek-v4.1-flash-free",
-      "label": "DeepSeek V4.1 Flash（免费）",
-      "free": true
-    },
-    {
-      "providerID": "opencode",
-      "id": "glm-5.3-flash-free",
-      "label": "GLM-5.3-Flash（免费）",
-      "free": true
-    },
-    {
-      "providerID": "opencode",
-      "id": "mimo-v2.6-flash-free",
-      "label": "MiMo-V2.6-Flash（免费）",
-      "free": true
-    },
-    {
-      "providerID": "opencode",
-      "id": "nemotron-3.5-super-vl-free",
-      "label": "Nemotron 3.5 Super VL（免费·能看图）",
-      "free": true
-    },
-    {
-      "providerID": "opencode",
-      "id": "flint-40b-free",
-      "label": "Flint 40B（免费）",
-      "free": true
-    },
-    {
-      "providerID": "opencode",
-      "id": "beam-free",
-      "label": "Beam（免费）",
-      "free": true
-    },
-    {
-      "providerID": "modelscope",
-      "id": "Qwen/Qwen3.8-Flash-Next",
-      "label": "Qwen3.8-Flash-Next（她自己的主模型·降级兜底）",
-      "free": true
-    },
-    {
-      "providerID": "modelscope",
-      "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "label": "DeepSeek V4.1 Flash 1017（魔搭·降级兜底）",
-      "free": true
-    },
-    {
-      "providerID": "modelscope",
-      "id": "Qwen/Qwen3.5-122B-A10B",
-      "label": "Qwen3.5-122B-A10B（魔搭·降级兜底）",
-      "free": true
-    }
+    { "providerID": "amd", "id": "Qwen3.8-Flash-Next", "label": "Qwen3.8-Flash-Next（AMD·262k 上下文）", "free": true },
+    { "providerID": "brocod", "id": "deepseek-v4.1", "label": "deepseek-v4.1（brocod·1M 上下文）", "free": true },
+    { "providerID": "modelscope", "id": "Qwen/Qwen3.8-Flash-Next", "label": "Qwen3.8-Flash-Next（魔搭·需余额）", "free": true },
+    { "providerID": "modelscope", "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017", "label": "DeepSeek V4.1 Flash 1017（魔搭）", "free": true },
+    { "providerID": "modelscope", "id": "Qwen/Qwen3.5-122B-A10B", "label": "Qwen3.5-122B-A10B（魔搭）", "free": true },
+    { "providerID": "opencode", "id": "deepseek-v4.1-flash-free", "label": "DeepSeek V4.1 Flash（opencode 免费，额度已耗尽）", "free": true },
+    { "providerID": "opencode", "id": "glm-5.3-flash-free", "label": "GLM-5.3-Flash（opencode 免费，额度已耗尽）", "free": true },
+    { "providerID": "opencode", "id": "mimo-v2.6-flash-free", "label": "MiMo-V2.6-Flash（opencode 免费，额度已耗尽）", "free": true },
+    { "providerID": "opencode", "id": "nemotron-3.5-super-vl-free", "label": "Nemotron 3.5 Super VL（免费·能看图，额度已耗尽）", "free": true },
+    { "providerID": "opencode", "id": "flint-40b-free", "label": "Flint 40B（opencode 免费，额度已耗尽）", "free": true },
+    { "providerID": "opencode", "id": "beam-free", "label": "Beam（opencode 免费，额度已耗尽）", "free": true }
   ],
   "paid": [
-    {
-      "providerID": "modelscope",
-      "id": "Qwen/Qwen3.8-Flash-Next",
-      "label": "Qwen3.8-Flash-Next（魔搭·计额度）",
-      "free": false
-    }
+    { "providerID": "modelscope", "id": "Qwen/Qwen3.8-Flash-Next", "label": "Qwen3.8-Flash-Next（魔搭·计额度）", "free": false }
   ]
 }

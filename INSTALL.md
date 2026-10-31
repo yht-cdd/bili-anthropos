@@ -314,7 +314,7 @@ node /opt/life/scripts/bili-bridge.mjs --simulate "查一下内存和磁盘，�
 # 期望：报出真实数值（和 free -m 对得上）
 
 # 3. 端到端
-# 用主人账号给这个 B 站账号发一条私信，等 12 秒
+# 用主人账号给这个 B 站账号发一条私信，等 30 秒
 journalctl -u anthropos-bridge -n 20 --no-pager | grep "📨"
 ```
 
@@ -465,7 +465,7 @@ scp repo.zip root@host:/opt/refs/
 | 自启 | `systemctl is-enabled anthropos-bridge` | enabled |
 | 契约 | `--simulate "你的主人 UID 是多少"` | 答对你填的值 |
 | 执行 | `--simulate "查内存"` | 数值和 `free -m` 一致 |
-| 端到端 | 真发一条私信 | 12 秒内检测，5-10 秒回复 |
+| 端到端 | 真发一条私信 | 30 秒内检测，5-10 秒回复 |
 | 陌生人 | **用小号**发私信 | **会回复**（默认就回），但不会执行命令 |
 | 隔离 | 小号让她「跑一下 free -m」 | 她会解释为什么不跑，而不是真去跑 |
 | 续期 | `node scripts/bili-login.mjs status` | `renewable: true`、`accessTokenExpiresInDays ≈ 180` |

@@ -272,7 +272,11 @@ systemctl start anthropos-bridge
 `scripts/bili-bridge.mjs` 顶部的 `OC_MODEL`：
 
 ```js
-const OC_MODEL = { providerID: "opencode", id: "deepseek-v4.1-flash-free", variant: "max" };
+// 模型由 config/model-mode.json 决定，不写死在这里：
+//   auto   → modelscope/Qwen/Qwen3.8-Flash-Next
+//   amd    → amd/Qwen3.8-Flash-Next
+//   brocod → brocod/deepseek-v4.1
+// 切一次，主模型 / 子代理 / 视觉三条链路同时生效（见 scripts/model-mode.mjs）
 ```
 
 > ⚠️ **新建 session 时必须带 `model`**。只给 `location` + `agent` 时，
@@ -282,7 +286,7 @@ const OC_MODEL = { providerID: "opencode", id: "deepseek-v4.1-flash-free", varia
 ### 3.3 改轮询间隔
 
 ```js
-const POLL_MS = 12_000;   // 12 秒
+const POLL_MS = 30_000;   // 30 秒（2026-10-31 按风控节奏放慢）
 ```
 
 B 站对 `get_sessions` 没有明显限流，但别低于 5 秒（会被当成爬虫）。
@@ -313,7 +317,7 @@ node /opt/life/scripts/bili-bridge.mjs --simulate "查一下当前内存占用�
 free -m   # 对一下数字对不对
 
 # ④ 端到端
-# 让人类用主人账号发一条私信，等 12 秒
+# 让人类用主人账号发一条私信，等 30 秒
 journalctl -u anthropos-bridge -n 20 --no-pager | grep -E "📨|✅ 任务完成"
 ```
 
