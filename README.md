@@ -306,7 +306,7 @@ systemctl start anthropos-bridge
 ## 七、目录
 
 ```
-scripts/          45 个脚本，一个脚本一件事
+scripts/          44 个脚本，一个脚本一件事
   bili-bridge     私信 ↔ 大脑（单会话、失败重试、超时补记、模型降级）
   bili-dm         发私信（闸门）
   bili-send       回评论（四道闸）
