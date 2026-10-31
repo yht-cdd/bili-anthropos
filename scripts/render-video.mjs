@@ -94,19 +94,69 @@ async function latestRun() {
   }
 
   const title = String(opt.title || "").trim();
-  if (!title) {
+  if (!title && !opt.project) {
     console.error('用法: node render-video.mjs --title "标题" [--subtitle "..."] [--seconds 15] [--no-wait]');
+    console.error('  或: node render-video.mjs --project <slug>   # 渲染 videoproj/<slug>/src 里的自定义工程');
     process.exit(2);
   }
 
   const inputs = {
-    title,
+    title: title || String(opt.project),
     subtitle: String(opt.subtitle || ""),
     kicker: String(opt.kicker || "ANTHROPOS"),
     accent: String(opt.accent || "#FF6B6B"),
     seconds: String(opt.seconds || 15),
     segments: "",
+    project: "",
   };
+
+  // ── 自定义工程：把 videoproj/<slug>/src 推到仓库再渲染 ──
+  // 为什么走这一步：她那台机器不是 git 仓库，子代理写的代码没法直接
+  // 出现在 GitHub Actions 的 checkout 里。所以用 Contents API 逐个文件推上去。
+  if (opt.project) {
+    const slug = String(opt.project);
+    if (!/^[a-z0-9][a-z0-9-]{1,60}$/.test(slug)) {
+      console.error(`❌ project 名不合法：${slug}`);
+      process.exit(2);
+    }
+    const srcDir = opt["src-dir"] ? String(opt["src-dir"]) : path.join(HOME, "videoproj", slug, "src");
+    if (!fs.existsSync(srcDir)) {
+      console.error(`❌ 找不到源码目录：${srcDir}`);
+      process.exit(2);
+    }
+    const files = fs.readdirSync(srcDir, { recursive: true })
+      .map((f) => String(f).replace(/\\/g, "/"))
+      .filter((f) => /\.(tsx?|jsx?|css|json)$/.test(f) && !f.includes("node_modules"));
+    if (!files.length) {
+      console.error(`❌ ${srcDir} 里没有可渲染的源码（.tsx/.ts/.css）`);
+      process.exit(2);
+    }
+    console.log(`▶ 上传项目 ${slug}（${files.length} 个文件）→ video/projects/${slug}/src/`);
+    for (const f of files) {
+      const abs = path.join(srcDir, f);
+      const content = fs.readFileSync(abs).toString("base64");
+      const remote = `video/projects/${slug}/src/${f}`;
+      // 先看有没有旧文件（更新要带 sha）
+      let sha = "";
+      try {
+        const cur = await gh(`/repos/${REPO}/contents/${remote}`);
+        sha = cur?.sha || "";
+      } catch {}
+      await gh(`/repos/${REPO}/contents/${remote}`, {
+        method: "PUT",
+        body: JSON.stringify({
+          message: `video(${slug}): ${sha ? "update" : "add"} ${f}`,
+          content,
+          ...(sha ? { sha } : {}),
+          branch: String(opt.ref || "main"),
+        }),
+      });
+      console.log(`   ✓ ${f}`);
+    }
+    inputs.project = slug;
+    // 自定义工程自己决定时长，这里只做兜底
+    inputs.seconds = String(opt.seconds || 15);
+  }
 
   // 有配音时间轴：视频场景严格按它的秒数切，渲染完再把音轨合上去
   let totalSeconds = Number(opt.seconds || 15);
