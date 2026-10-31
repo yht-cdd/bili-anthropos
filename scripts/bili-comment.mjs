@@ -200,8 +200,41 @@ async function listComments(aid) {
   });
   const j = await r.json().catch(() => ({}));
   const ok = j.code === 0;
-  console.log(`\n${ok ? "✅ 已发出" : "❌ 发送失败"} code=${j.code} ${j.message || ""}`);
-  if (j.data?.rpid) console.log(`  rpid=${j.data.rpid}  https://www.bilibili.com/video/${bv}#reply${j.data.rpid}`);
+  const rpid = String(j.data?.rpid || "");
+  console.log(`\n${ok ? "已提交" : "❌ 发送失败"} code=${j.code} ${j.message || ""}`);
+
+  // ── 发送成功 ≠ 别人看得见 ──────────────────────────
+  // B 站有个「阿瓦隆」系统：返回 code=0，但评论被标成 state=17（仅自己可见）。
+  // 2026-10-31 实测：带图评论发出去 code=0，游客视角却是 12006「没有该评论」。
+  // 所以这里必须自己查一次，否则我们就在替它撒谎。
+  let state = null;
+  let visible = null;
+  if (ok && rpid) {
+    await new Promise((res) => setTimeout(res, 4000));
+    try {
+      const d = await fetch(
+        `https://api.bilibili.com/x/v2/reply/detail?type=1&oid=${aid}&root=${rpid}&ps=1&pn=1`,
+        { headers: H, signal: AbortSignal.timeout(20_000) }
+      ).then((x) => x.json());
+      const node = d.data?.root || d.data?.reply;
+      state = node?.state ?? null;
+      visible = state === 0;
+    } catch {}
+  }
+
+  if (ok && rpid) {
+    if (visible === true) {
+      console.log(`✅ 公开可见（state=0）  rpid=${rpid}`);
+    } else if (state === 17) {
+      console.log(`⚠️ 已被「阿瓦隆」拦下：state=17，仅你自己可见 —— 别人看不到这条。`);
+      console.log(`   不是发送失败，是 B 站静默屏蔽。换措辞、等账号权重起来，或者过阵子再看。`);
+    } else if (state !== null) {
+      console.log(`⚠️ state=${state}（不是 0，可能审核中或受限）  rpid=${rpid}`);
+    } else {
+      console.log(`⚠️ 查不到这条评论的状态，无法确认是否公开  rpid=${rpid}`);
+    }
+    console.log(`   链接: https://www.bilibili.com/video/${bv}#reply${rpid}`);
+  }
 
   // ── 记账 ────────────────────────────────────────────
   try {
