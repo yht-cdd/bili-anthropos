@@ -169,10 +169,10 @@ export const S2Alive: React.FC = () => {
   const tickStep = LEFT_W / (TICKS - 1);
   const wakeAt = [6, 12, 18, 23];
 
-  // 第三拍（540 起）：真正的遮罩淡入 12 帧 → 遮罩之上放点题大字
-  const maskP = ip(f, 540, 552, 0, 0.9);
-  const quoteP = ip(f, 546, 574);
-  const underlineP = ip(f, 620, 660);
+  // 第三拍（本场相对帧 190 起，= 绝对 520）：真正的遮罩淡入 12 帧 → 遮罩之上放点题大字
+  const maskP = ip(f, 190, 202, 0, 0.9);
+  const quoteP = ip(f, 196, 224);
+  const underlineP = ip(f, 270, 310);
 
   // 第一拍：左栏三行字
   const t1 = ip(f, 10, 34);
