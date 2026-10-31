@@ -68,7 +68,9 @@ function currentMode() {
   }
 }
 
-const CHAIN = currentMode() === "amd" ? [AMD_ENTRY, ...MS_ENTRIES] : [...MS_ENTRIES, AMD_ENTRY];
+// 只有 auto（魔搭优先）时把魔搭放前面；brocod / amd 模式都优先用 AMD 看图，
+// 因为这两种模式的起因都是「魔搭不能用了」，再拿它试一次只是浪费时间。
+const CHAIN = currentMode() === "auto" ? [...MS_ENTRIES, AMD_ENTRY] : [AMD_ENTRY, ...MS_ENTRIES];
 
 const LONG_EDGE = 1568;        // 长边上限（再大只是浪费 token）
 const MIN_EDGE = 1024;         // 低于这个会读不准，提醒调用方

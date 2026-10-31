@@ -68,7 +68,10 @@ const OC_BASE = "http://127.0.0.1:4096";   // opencode serve
 const MODE_FILE = `${HOME}/config/model-mode.json`;
 const MODEL_PRESETS = {
   auto: { providerID: "modelscope", id: "Qwen/Qwen3.8-Flash-Next", variant: "high" },
-  // AMD 的 Qwen3.8-Flash-Next 不接受 high，只接受 none / low / medium / xhigh
+  // 降级目标不是 AMD：AMD 的 Qwen3.8 只有 262k 上下文，
+  // 而她的主会话 2026-10-31 已经 329k —— 塞不进去，请求直接被拒（实测）。
+  // AMD 留给看视频（图片小、上下文用不完），主大脑走 1M 上下文的 brocod。
+  brocod: { providerID: "brocod", id: "deepseek-v4.1", variant: "high" },
   amd: { providerID: "amd", id: "Qwen3.8-Flash-Next", variant: "medium" },
 };
 
@@ -1008,11 +1011,11 @@ async function runTask(text, opts = {}) {
     if (sid) await rebindModel(sid);
   }
 
-  // 额度/余额类失败：自动降级到 AMD，并把当前会话改绑过去。
-  // 不降级的话，后面每一轮都会以同一个错误失败 —— 在她那边看起来就是「不想说话」。
-  // 已经在 amd 模式还报额度错，说明 AMD 也不行，那就别再折腾，让下面的失败通知去说。
-  if (f1.kind === "quota" && readModelMode() !== "amd") {
-    if (switchModelMode("amd", f1.text)) {
+  // 额度/余额类失败：降级到 brocod（1M 上下文，塞得下她的大会话），并把会话改绑过去。
+  // 为什么不是 AMD：它的 Qwen3.8 只有 262k，她的会话已经 329k，实测直接被拒。
+  // 已经在 brocod 模式还报额度错，说明那边也不行，别再折腾，交给下面的失败通知。
+  if (f1.kind === "quota" && readModelMode() !== "brocod") {
+    if (switchModelMode("brocod", f1.text)) {
       const sid = first.sid || currentSessionId();
       if (sid) await rebindModel(sid);
     }
@@ -2072,7 +2075,19 @@ if (MODE.usage) {
     // 启动自检
     const alive = await brainAlive();
     log(alive ? "✅ 大脑在线" : "⚠️ 大脑离线，将重试");
-    if (alive) await ensureLimits();
+    if (alive) {
+      await ensureLimits();
+      // 会话可能还绑着已经挂掉的模型（模式切了，但 opencode.json 只影响新会话）。
+      // 启动时对齐一次，否则 Web UI 里手动发消息会一直撞同一个错误。
+      const sid0 = currentSessionId();
+      if (sid0) {
+        try {
+          await rebindModel(sid0);
+        } catch (e) {
+          log("⚠️ 启动对齐模型失败:", String(e.message).split("\n")[0]);
+        }
+      }
+    }
 
     while (!stop) {
       try {

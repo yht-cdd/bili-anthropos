@@ -52,8 +52,13 @@ const PRESETS = {
     // 阶梯/视觉的优先 provider
     prefer: "modelscope",
   },
+  brocod: {
+    label: "brocod 降级（1M 上下文）",
+    primary: { providerID: "brocod", id: "deepseek-v4.1", variant: "high" },
+    prefer: "brocod",
+  },
   amd: {
-    label: "AMD 降级",
+    label: "AMD 降级（262k 上下文，只适合看小图）",
     primary: { providerID: "amd", id: "Qwen3.8-Flash-Next", variant: "medium" },
     prefer: "amd",
   },
@@ -135,19 +140,100 @@ function switchEnv(preset) {
   }
 }
 
-/** 重排子代理阶梯：目标 provider 提到前面，其余保持原顺序 */
-function reorderLadder(prefer) {
+/**
+ * 把已有会话改绑到当前模式的模型。
+ *
+ * 为什么必须有这一步：opencode.json 的 model 只影响**新建**会话。
+ * 已经存在的会话（尤其是 bridge 一直在用的那个）会牢牢绑着创建时的模型，
+ * 于是出现 2026-10-31 那个现象 —— 默认模型已经是 AMD 了，
+ * 但 Web UI 里那个会话还指着已经余额不足的魔搭，发一句挂一句。
+ */
+async function rebindSessions(preset) {
+  const PW_FILE = path.join(HOME, "secrets/opencode_password.txt");
+  let pw = "";
+  try {
+    pw = fs.readFileSync(PW_FILE, "utf8").trim();
+  } catch {
+    return "跳过（读不到 opencode 密码）";
+  }
+  if (!pw) return "跳过（密码为空）";
+
+  const auth = "Basic " + Buffer.from("opencode:" + pw).toString("base64");
+  const BASE = process.env.OC_BASE || "http://127.0.0.1:4096";
+
+  const call = async (p, opt = {}) => {
+    const r = await fetch(BASE + p, {
+      ...opt,
+      headers: { Authorization: auth, "Content-Type": "application/json" },
+      signal: AbortSignal.timeout(30_000),
+    });
+    const t = await r.text();
+    try {
+      return { status: r.status, j: JSON.parse(t) };
+    } catch {
+      return { status: r.status, raw: t.slice(0, 120) };
+    }
+  };
+
+  let list;
+  try {
+    list = await call("/api/session");
+  } catch (e) {
+    return `跳过（opencode 连不上：${e.message}）`;
+  }
+  const arr = list.j?.data || [];
+  if (!arr.length) return "没有会话";
+
+  const want = `${preset.primary.providerID}/${preset.primary.id}`;
+  const targets = arr.filter((s) => {
+    const m = s.model || {};
+    return `${m.providerID}/${m.id}` !== want;
+  });
+  if (!targets.length) return `已经全部是 ${want}`;
+
+  let ok = 0;
+  const failed = [];
+  for (const s of targets) {
+    const r = await call(`/api/session/${s.id}/model`, {
+      method: "POST",
+      body: JSON.stringify({ model: preset.primary }),
+    });
+    if (r.status >= 400) failed.push(s.id.slice(0, 16));
+    else ok += 1;
+  }
+  return `${ok} 个改绑到 ${want}${failed.length ? `，${failed.length} 个失败` : ""}`;
+}
+
+/** 重排子代理阶梯：目标 provider 提到前面；阶梯里没有它就先插一条 */
+function reorderLadder(preset) {
   try {
     const d = JSON.parse(fs.readFileSync(LADDER_FILE, "utf8"));
     const ladder = d.ladder || [];
-    const head = ladder.filter((m) => m.providerID === prefer);
+    const prefer = preset.prefer;
+    let head = ladder.filter((m) => m.providerID === prefer);
     const tail = ladder.filter((m) => m.providerID !== prefer);
+
+    // 阶梯里还没有这个 provider（比如刚接进来的 brocod）—— 补一条到最前面，
+    // 否则「重排」什么也做不了，子代理还是先用已经挂掉的那批。
+    let added = false;
+    if (!head.length) {
+      head = [
+        {
+          providerID: preset.primary.providerID,
+          id: preset.primary.id,
+          label: `${preset.primary.id}（${preset.label}）`,
+          free: true,
+        },
+      ];
+      added = true;
+    }
+
     const next = [...head, ...tail];
     const key = (arr) => arr.map((m) => `${m.providerID}/${m.id}`).join(",");
     if (key(next) === key(ladder)) return "已经是这个顺序";
     d.ladder = next;
     fs.writeFileSync(LADDER_FILE, JSON.stringify(d, null, 2) + "\n");
-    return `${head.length} 项提到前面`;
+    return added ? `新增 ${prefer}/${preset.primary.id} 并放到首位` : `${head.length} 项提到前面`;
   } catch (e) {
     return `失败：${e.message}`;
   }
@@ -191,7 +277,12 @@ if (cmd === "set") {
   if (!opt["no-switch-opencode"]) console.log(`  opencode.json : ${switchOpencode(preset)}`);
   else console.log("  opencode.json : 跳过（--no-switch-opencode）");
   console.log(`  env            : ${switchEnv(preset)}`);
-  console.log(`  子代理阶梯     : ${reorderLadder(preset.prefer)}`);
+  console.log(`  子代理阶梯     : ${reorderLadder(preset)}`);
+  if (opt["no-rebind"]) {
+    console.log("  会话改绑       : 跳过（--no-rebind）");
+  } else {
+    console.log(`  会话改绑       : ${await rebindSessions(preset)}`);
+  }
   console.log(`  状态文件       : ${MODE_FILE}`);
   if (j.history.length > 1) console.log(`  上一次         : ${j.history.at(-2).mode}（${j.history.at(-2).reason}）`);
   process.exit(0);
