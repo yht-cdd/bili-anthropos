@@ -63,6 +63,49 @@ async function jget(url) {
   return JSON.parse(await r.text());
 }
 
+/**
+ * 人味检查 —— 拦掉「一眼是 AI 写的」那种句子。
+ *
+ * 起因：2026-10-31 在一条 1.29 亿播放的鬼畜下面发了这句：
+ *   「倒回去看了两遍才发现，后半段的音轨已经跑到楚汉去了——前面还是鹅城，
+ *     后面项羽刘邦全来了。这种「眼睛听一套、耳朵听一套」的剪法，
+ *     比单纯把台词堆成鼓点狠多了。」
+ * 内容是准的（她真看了），但一眼假：提炼概念、工整对比、破折号转折。
+ *
+ * 这个函数不是让她演人，是拦掉「写作腔」——留言就该像留言。
+ */
+function gateHuman(text) {
+  const issues = [];
+
+  // ① 成对引号：真人评论很少打引号
+  if (/[「」『』]/.test(text)) issues.push("用了「」这种成对引号（真人很少打，要强调就直接说）");
+
+  // ② 破折号转折
+  if (/——/.test(text)) issues.push("用了破折号 ——（写文章才这么用）");
+
+  // ③ AI 句式
+  const patterns = [
+    ["提炼概念（这种…的…）", /这种.{0,10}的[剪写做说感]|这种.{0,6}方式|这类.{0,6}[做写]/],
+    ["「从…来看」", /从.{0,10}来看|就.{0,6}[而]?言/],
+    ["总结陈词", /值得注意|本质上|换句话[说讲]|总的来说|归根结底/],
+    ["工整对仗（不是…而是…）", /不是.{1,18}[，,]而是/],
+    ["工整比较（比…更…）", /比.{1,18}更[加狠强好棒妙]/],
+  ];
+  for (const [why, re] of patterns) {
+    if (re.test(text)) issues.push(why);
+  }
+
+  // ④ 长度
+  if (text.length > 80) issues.push(`太长（${text.length} 字，评论 40 字以内最好，80 以上没人看）`);
+
+  // ⑤ 单句太长
+  const sentences = text.split(/[。！？!?；;\n]/).map((s) => s.trim()).filter(Boolean);
+  const longOne = sentences.find((s) => s.length > 30);
+  if (longOne) issues.push(`有一句 ${longOne.length} 字（超过 30 字就不像留言了）`);
+
+  return issues;
+}
+
 /** 上传一张图到 B 站动态图床，返回 pictures 数组里的一项 */
 async function uploadImage(file) {
   const buf = fs.readFileSync(file);
@@ -148,6 +191,16 @@ async function listComments(aid) {
   if (text.length > 900) {
     console.error(`❌ 太长（${text.length} > 900），B 站评论上限 1000 字`);
     process.exit(2);
+  }
+
+  // ── 人味检查：拦掉「一眼是 AI 写的」那种句子 ──────────
+  const styleIssues = gateHuman(text);
+  if (styleIssues.length) {
+    console.error("\n⚠️ 这条不像人话：");
+    for (const s of styleIssues) console.error(`   · ${s}`);
+    console.error("\n改短、改口语、别提炼概念。真人不会在评论区写这种句子。");
+    console.error("真要发（比如正式说明），加 --ignore-style 跳过这道检查。\n");
+    if (!opt["ignore-style"]) process.exit(3);
   }
 
   // ── 图片 ────────────────────────────────────────────
