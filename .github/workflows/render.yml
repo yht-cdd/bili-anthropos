@@ -39,6 +39,11 @@ on:
         required: false
         default: ""
         type: string
+      frames:
+        description: 只渲染指定帧范围（例如 0-779），留空渲染全部。调试用，省时间
+        required: false
+        default: ""
+        type: string
 
 concurrency:
   group: render-video
@@ -109,11 +114,23 @@ jobs:
 
       - name: 渲染
         working-directory: video
+        env:
+          FRAMES: ${{ inputs.frames }}
         run: |
-          npx remotion render src/index.ts AnthroposVideo out/video.mp4 \
-            --props=props.json \
-            --concurrency=4 \
-            --log=info
+          if [ -n "$FRAMES" ]; then
+            echo "只渲染帧范围：$FRAMES"
+            npx remotion render src/index.ts AnthroposVideo out/video.mp4 \
+              --frames="$FRAMES" \
+              --props=props.json \
+              --concurrency=4 \
+              --log=info
+          else
+            echo "渲染全部帧"
+            npx remotion render src/index.ts AnthroposVideo out/video.mp4 \
+              --props=props.json \
+              --concurrency=4 \
+              --log=info
+          fi
 
       - name: 产物信息
         working-directory: video

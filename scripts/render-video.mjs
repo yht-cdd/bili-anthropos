@@ -108,6 +108,8 @@ async function latestRun() {
     seconds: String(opt.seconds || 15),
     segments: "",
     project: "",
+    // 只渲染一段：调试用，省得每次等整条片子
+    frames: String(opt.frames || ""),
   };
 
   // ── 自定义工程：把 videoproj/<slug>/src 推到仓库再渲染 ──
