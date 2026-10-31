@@ -118,9 +118,55 @@ function norm(v, source) {
   }
 
   if (kind === "all" || kind === "rank") {
-    log("③ 排行");
+    log("③ 排行（全站）");
     const j = await get("https://api.bilibili.com/x/web-interface/ranking/v2?rid=0&type=all");
     const items = (j?.data?.list || []).map((x) => norm(x, "排行"));
+    log(`   → ${items.length} 条`);
+    buckets.push(...items);
+  }
+
+  // ④ AI 关键词搜索（按发布时间）
+  // 这是唯一能稳定拿到「今天有人在讲 AI」的来源。
+  // 首页推荐要账号画像、科技区热榜被数码和搞笑占着，都靠不住。
+  if (kind === "all" || kind === "ai") {
+    log("④ 搜 AI 相关新视频");
+    for (const kw of ["AI", "大模型", "AI Agent"]) {
+      try {
+        const u = `https://api.bilibili.com/x/web-interface/search/type?search_type=video&keyword=${encodeURIComponent(kw)}&order=pubdate&page=1`;
+        const j = await get(u);
+        const items = (j?.data?.result || [])
+          .map((x) => {
+            // 搜索结果字段不一样：duration 是 "mm:ss"，stat 在 x.play 之类
+            const dur = String(x.duration || "0:0").split(":").reduce((a, b) => a * 60 + Number(b), 0);
+            return {
+              bvid: String(x.bvid || ""),
+              title: String(x.title || "").replace(/<[^>]+>/g, ""),
+              up: String(x.author || ""),
+              upMid: String(x.mid || ""),
+              duration: dur,
+              view: Number(String(x.play || "0").replace(/[^0-9]/g, "")) || 0,
+              like: 0,
+              danmaku: Number(x.video_review) || 0,
+              reply: 0,
+              tname: String(x.typename || ""),
+              pubdate: String(x.pubdate ? new Date(Number(x.pubdate) * 1000).toISOString().slice(0, 10) : ""),
+              source: `搜索:${kw}`,
+            };
+          })
+          .filter((x) => x.bvid && x.duration > 60);
+        log(`   ${kw} → ${items.length} 条`);
+        buckets.push(...items);
+      } catch (e) {
+        log(`   ${kw} 失败: ${e.message}`);
+      }
+      await new Promise((r) => setTimeout(r, 500));
+    }
+  }
+  // ⑤ 科技区排行（兜底：AI 内容少的时候，至少还有点技术内容）
+  if (kind === "all" || kind === "tech") {
+    log("⑤ 科技区排行（AI / 数码 / 编程）");
+    const j = await get("https://api.bilibili.com/x/web-interface/ranking/v2?rid=188&type=all");
+    const items = (j?.data?.list || []).map((x) => norm(x, "科技区"));
     log(`   → ${items.length} 条`);
     buckets.push(...items);
   }
