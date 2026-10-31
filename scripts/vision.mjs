@@ -252,6 +252,72 @@ function makeGrid(file, p, n) {
 }
 
 /**
+ * 哪些「provider|model」能直接吃视频。
+ * 目前只有魔搭的 Qwen3.8-Flash-Next 实测可以（真传 mp4，不是帧）。
+ * AMD 的 Qwen3.8-Flash-Next 只收 image_url，传 video_url 会被 schema 拒掉 ——
+ * 所以魔搭没额度之后，视频必须换一条路：抽帧给眼睛 + ASR 给耳朵。
+ */
+const VIDEO_CAPABLE = new Set(["modelscope|Qwen/Qwen3.8-Flash-Next"]);
+
+function chainHeadSupportsVideo() {
+  const p = CHAIN[0];
+  return VIDEO_CAPABLE.has(`${p.provider}|${p.model}`);
+}
+
+/** 把视频里的声音抽成 mp3，交给 voice.mjs 转文字 */
+function transcribeVideo(file, p) {
+  if (!p.hasAudio) return { ok: false, reason: "没有音轨" };
+  fs.mkdirSync(TMP_DIR, { recursive: true });
+  const audio = path.join(TMP_DIR, `aud-${Date.now()}.mp3`);
+  try {
+    ff(["-i", file, "-vn", "-ac", "1", "-ar", "16000", "-b:a", "64k", audio], 300_000);
+    const raw = execFileSync(process.execPath, [path.join(HOME, "scripts", "voice.mjs"), "hear", audio], {
+      encoding: "utf8",
+      timeout: 600_000,
+      maxBuffer: 8 * 1024 * 1024,
+    });
+    const i = raw.indexOf("{");
+    const j = i >= 0 ? JSON.parse(raw.slice(i)) : null;
+    try { fs.unlinkSync(audio); } catch {}
+    if (!j?.ok || !j.text) return { ok: false, reason: "ASR 没识别出文字" };
+    return { ok: true, text: String(j.text).trim() };
+  } catch (e) {
+    try { fs.unlinkSync(audio); } catch {}
+    return { ok: false, reason: String(e.message).split("\n")[0] };
+  }
+}
+
+/**
+ * 抽帧 + ASR 的兜底路径：眼睛看画面，耳朵听声音。
+ * 为什么这么做：视频直传只有魔搭支持，而魔搭额度会用完。
+ * 抽帧 + ASR 在 AMD 上一样能得出「这视频讲了什么」，只是看不到连续动作。
+ */
+async function describeByFramesAndAsr(file, p, n, askText) {
+  const { out, cols, rows } = makeGrid(file, p, n);
+  const b64 = fs.readFileSync(out).toString("base64");
+  log(`   → 抽帧 ${n} 张（${cols}×${rows} 网格，送图 ${Math.round(b64.length / 1024)}KB）`);
+
+  const asr = transcribeVideo(file, p);
+  if (asr.ok) log(`   → ASR ${asr.text.length} 字：${asr.text.slice(0, 40).replace(/\n/g, " ")}…`);
+  else log(`   → ASR 跳过（${asr.reason}）`);
+
+  const head =
+    askText ||
+    `这是一段 ${Math.round(p.duration)} 秒视频，上面是按时间顺序（从左到右、从上到下）抽出的 ${n} 帧画面。` +
+      `请说明这个视频讲了什么：先一句话概括，再说画面里的关键信息和变化。`;
+  const tail = asr.ok
+    ? `\n\n【音轨转写】\n${asr.text}\n\n（画面和台词对不上就直说，不要硬凑。）`
+    : `\n\n（这段视频没有可用的音轨转写。）`;
+
+  const ans = await ask([
+    { type: "text", text: head + tail },
+    { type: "image_url", image_url: { url: `data:image/jpeg;base64,${b64}` } },
+  ]);
+  try { fs.unlinkSync(out); } catch {}
+  return ans;
+}
+
+/**
  * 切成 ≤segSec 秒的段，统一 720P / 16fps。
  * 段之间用 -ss 定位（放在 -i 前），重编码保证每段都能独立解码。
  */
@@ -368,8 +434,16 @@ try {
     const segLimit = Number(opt.seg) || VIDEO_MAX_SEC;
     const fits = p.duration <= segLimit;
     const segCount = Math.ceil(p.duration / segLimit);
+    const videoOK = chainHeadSupportsVideo();
 
-    if (forceFrames) {
+    // ① 首选模型不能吃视频（比如魔搭没额度、已经降到 AMD）→ 抽帧 + ASR
+    //    AMD 的 Qwen3.8 只收 image_url，video_url 会被 schema 直接拒掉。
+    if (!videoOK || (forceFrames && !opt["no-asr"])) {
+      if (!videoOK) log(`   → 首选模型（${CHAIN[0].provider}）不吃视频，改走「抽帧 + ASR」`);
+      else log(`   → 指定抽帧${opt["no-asr"] ? "" : " + ASR"}`);
+      const ans = await describeByFramesAndAsr(file, p, n, askText);
+      console.log(ans);
+    } else if (forceFrames) {
       log(`   → 指定抽帧，抽 ${n} 帧拼一张图`);
       const { out, cols, rows } = makeGrid(file, p, n);
       const b64 = fs.readFileSync(out).toString("base64");

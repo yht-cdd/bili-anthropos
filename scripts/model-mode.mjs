@@ -52,13 +52,8 @@ const PRESETS = {
     // 阶梯/视觉的优先 provider
     prefer: "modelscope",
   },
-  brocod: {
-    label: "brocod 降级（1M 上下文）",
-    primary: { providerID: "brocod", id: "deepseek-v4.1", variant: "high" },
-    prefer: "brocod",
-  },
   amd: {
-    label: "AMD 降级（262k 上下文，只适合看小图）",
+    label: "AMD Qwen3.8（固定降级档）",
     primary: { providerID: "amd", id: "Qwen3.8-Flash-Next", variant: "medium" },
     prefer: "amd",
   },

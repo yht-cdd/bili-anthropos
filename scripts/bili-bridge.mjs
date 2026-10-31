@@ -68,10 +68,9 @@ const OC_BASE = "http://127.0.0.1:4096";   // opencode serve
 const MODE_FILE = `${HOME}/config/model-mode.json`;
 const MODEL_PRESETS = {
   auto: { providerID: "modelscope", id: "Qwen/Qwen3.8-Flash-Next", variant: "high" },
-  // 降级目标不是 AMD：AMD 的 Qwen3.8 只有 262k 上下文，
-  // 而她的主会话 2026-10-31 已经 329k —— 塞不进去，请求直接被拒（实测）。
-  // AMD 留给看视频（图片小、上下文用不完），主大脑走 1M 上下文的 brocod。
-  brocod: { providerID: "brocod", id: "deepseek-v4.1", variant: "high" },
+  // 降级目标固定 AMD Qwen3.8。
+  // ⚠️ 它只有 262k 上下文，而她 2026-10-31 的会话是 329k ——
+  //    降级前必须先压缩会话，否则请求直接被拒（见 runTask 里的 compact）。
   amd: { providerID: "amd", id: "Qwen3.8-Flash-Next", variant: "medium" },
 };
 
@@ -987,6 +986,32 @@ async function runTurn(
 }
 
 /**
+ * 降到 AMD 之前先检查上下文。
+ *
+ * AMD 的 Qwen3.8-Flash-Next 只有 262k 窗口，而她的会话 2026-10-31 已经 329k。
+ * 不压缩就直接切，请求会被后端直接拒掉 —— 表现是「3 秒就结束、outcome=failed、
+ * 正文还是上一轮的残留」，特别像「她不想说话」。
+ */
+async function compactForAmd(sid) {
+  const AMD_WINDOW = 262_144;
+  const SAFE = Math.floor(AMD_WINDOW * 0.88); // 留 12% 给 system prompt 和这一轮的输出
+  const usage = await contextUsage(sid);
+  if (!usage) {
+    log("📐 读不到上下文用量，跳过压缩");
+    return;
+  }
+  if (usage < SAFE) {
+    log(`📐 上下文 ${usage} < ${SAFE}，装得下 AMD，不用压`);
+    return;
+  }
+  log(`📐 上下文 ${usage} 超过 AMD 窗口的 88%（${SAFE}/${AMD_WINDOW}），先压再切`);
+  await compactSession(sid, usage);
+  await sleep(12_000);
+  const after = await contextUsage(sid);
+  log(`📐 压缩后 ${after || "?"} tokens${after && after > AMD_WINDOW ? "（仍然超窗口）" : ""}`);
+}
+
+/**
  * 发任务并等结果（失败重试一次，仍失败就报出来）
  *
  * kind 决定这段话的「出口」：
@@ -1011,11 +1036,13 @@ async function runTask(text, opts = {}) {
     if (sid) await rebindModel(sid);
   }
 
-  // 额度/余额类失败：降级到 brocod（1M 上下文，塞得下她的大会话），并把会话改绑过去。
-  // 为什么不是 AMD：它的 Qwen3.8 只有 262k，她的会话已经 329k，实测直接被拒。
-  // 已经在 brocod 模式还报额度错，说明那边也不行，别再折腾，交给下面的失败通知。
-  if (f1.kind === "quota" && readModelMode() !== "brocod") {
-    if (switchModelMode("brocod", f1.text)) {
+  // 额度/余额类失败：降级到 AMD，并把会话改绑过去。
+  // ⚠️ AMD 只有 262k 上下文，她的会话可能已经 329k —— 所以先压缩再切，
+  //    否则请求会被直接拒掉，看起来像「切换失败了」。
+  if (f1.kind === "quota" && readModelMode() !== "amd") {
+    const sid0 = first.sid || currentSessionId();
+    if (sid0) await compactForAmd(sid0);
+    if (switchModelMode("amd", f1.text)) {
       const sid = first.sid || currentSessionId();
       if (sid) await rebindModel(sid);
     }
