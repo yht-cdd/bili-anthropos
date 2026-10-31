@@ -10,16 +10,16 @@ import { StatNumber, WhaleMark } from "../components/ui";
  *
  * 横屏骨架：左文右图。
  *   左栏 X.left（720）：三行文字 → 24 小时时间轴 → 7 × 24 → 醒来次数
- *   右栏 X.right（720）：机架剪影，高 620，垂直居中
- *   点题那句改成通栏居中（1600 宽，S.hero）
+ *   右栏 X.right（720）：机架剪影，高 880，垂直居中
+ *   点题那句改成通栏居中（1600 宽，S.quote），压在遮罩之上
  */
 
 const LEN = SCENES.alive.to - SCENES.alive.from; // 450
 export const S2_DURATION = LEN + M.overlap; // 465
 
 const LEFT_W = G.split.left; // 720
-const RACK_H = 620;
-const RACK_TOP = G.centerY - RACK_H / 2; // 230
+const RACK_H = 880; // 顶到安全区上下沿（100–980），每个单元约 273 高，塞得下 6 条硬盘槽
+const RACK_TOP = G.centerY - RACK_H / 2; // 100
 const TICKS = 24;
 
 const ip = (f: number, a: number, b: number, from = 0, to = 1) =>
@@ -28,26 +28,15 @@ const ip = (f: number, a: number, b: number, from = 0, to = 1) =>
     extrapolateRight: "clamp",
   });
 
-/** 机架上的指示灯：不同频率呼吸 */
-const Indicator: React.FC<{ period: number; frame: number; color: string }> = ({
-  period,
-  frame,
-  color,
-}) => {
-  const p = 0.25 + 0.75 * (0.5 + 0.5 * Math.sin((frame / period) * Math.PI * 2));
-  return (
-    <div
-      style={{
-        width: 8,
-        height: 8,
-        borderRadius: 4,
-        background: color,
-        opacity: p,
-        boxShadow: `0 0 12px ${color}`,
-      }}
-    />
-  );
-};
+/**
+ * 三个机架单元的差异 —— 灯色 / 硬盘槽数 / 指示灯亮灭位置都不同。
+ * 三个一模一样就成了装饰图案，不像设备。
+ */
+const RACK_UNITS = [
+  { id: "RACK-01", color: C.ok, slots: 6, leds: [1, 1, 0, 1, 0], period: 60 },
+  { id: "RACK-02", color: C.whale, slots: 5, leds: [1, 0, 1, 0, 1], period: 90 },
+  { id: "RACK-03", color: C.warm, slots: 6, leds: [0, 1, 1, 1, 0], period: 120 },
+];
 
 /** 右栏：一台一直亮着的机器（纯 CSS 矩形堆叠，只描边不填色） */
 const Rack: React.FC<{ frame: number }> = ({ frame }) => (
@@ -63,31 +52,108 @@ const Rack: React.FC<{ frame: number }> = ({ frame }) => (
       gap: 30,
     }}
   >
-    {[0, 1, 2].map((u) => (
+    {RACK_UNITS.map((u, i) => (
       <div
-        key={u}
+        key={u.id}
         style={{
+          position: "relative",
           flex: 1,
           border: `1px solid ${C.faint}`,
           borderRadius: 10,
-          padding: 24,
+          padding: 20,
           display: "flex",
           flexDirection: "column",
-          justifyContent: "space-between",
-          opacity: ip(frame, 0 + u * 12, 24 + u * 12, 0.2, 1),
+          gap: 12,
+          opacity: ip(frame, i * 12, 24 + i * 12, 0.2, 1),
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <Indicator period={[60, 90, 120][u]} frame={frame} color={C.whale} />
-          <div style={{ width: 44, height: 1, background: C.faint }} />
-          <div style={{ width: 120, height: 1, background: C.line }} />
+        {/* 顶部：状态灯 + 一道细缝 */}
+        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          <div
+            style={{
+              width: 4,
+              height: 4,
+              borderRadius: 2,
+              background: u.color,
+              boxShadow: `0 0 10px ${u.color}`,
+            }}
+          />
+          <div style={{ width: 56, height: 1, background: C.line }} />
           <div style={{ flex: 1 }} />
-          <Indicator period={[120, 60, 90][u]} frame={frame} color={C.ok} />
+          <div style={{ width: 28, height: 1, background: C.line }} />
         </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-          <div style={{ width: "78%", height: 1, background: C.line }} />
-          <div style={{ width: "56%", height: 1, background: C.line }} />
-          <div style={{ width: "64%", height: 1, background: C.line }} />
+
+        {/* 中部：横向硬盘槽（左端一条亮边） */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: 6,
+            flex: 1,
+            marginRight: 34,
+          }}
+        >
+          {Array.from({ length: u.slots }).map((_, k) => (
+            <div
+              key={k}
+              style={{
+                height: 20,
+                background: C.line,
+                borderRadius: 3,
+                display: "flex",
+                alignItems: "center",
+                paddingLeft: 3,
+                gap: 10,
+              }}
+            >
+              <div style={{ width: 3, height: 14, background: u.color, opacity: 0.7 }} />
+              <div style={{ width: "46%", height: 1, background: C.faint, opacity: 0.5 }} />
+            </div>
+          ))}
+        </div>
+
+        {/* 右侧：一排竖着的运行指示灯 */}
+        <div
+          style={{
+            position: "absolute",
+            right: 20,
+            top: 64,
+            display: "flex",
+            flexDirection: "column",
+            gap: 10,
+          }}
+        >
+          {u.leds.map((on, k) => {
+            const p = on
+              ? 0.55 + 0.45 * (0.5 + 0.5 * Math.sin((frame / u.period) * Math.PI * 2 + k))
+              : 0.12;
+            return (
+              <div
+                key={k}
+                style={{
+                  width: 6,
+                  height: 6,
+                  borderRadius: 3,
+                  background: on ? u.color : C.faint,
+                  opacity: p,
+                  boxShadow: on ? `0 0 8px ${u.color}` : undefined,
+                }}
+              />
+            );
+          })}
+        </div>
+
+        {/* 底部：机架编号 */}
+        <div
+          style={{
+            fontFamily: F.mono,
+            fontSize: S.label,
+            lineHeight: 1,
+            color: C.faint,
+            letterSpacing: "0.08em",
+          }}
+        >
+          {u.id}
         </div>
       </div>
     ))}
@@ -103,10 +169,10 @@ export const S2Alive: React.FC = () => {
   const tickStep = LEFT_W / (TICKS - 1);
   const wakeAt = [6, 12, 18, 23];
 
-  // 第三拍：压暗 → 通栏点题
-  const dim = ip(f, 210, 240) * (1 - ip(f, 370, 400));
-  const quoteP = ip(f, 230, 260);
-  const underlineP = ip(f, 290, 330);
+  // 第三拍（540 起）：真正的遮罩淡入 12 帧 → 遮罩之上放点题大字
+  const maskP = ip(f, 540, 552, 0, 0.9);
+  const quoteP = ip(f, 546, 574);
+  const underlineP = ip(f, 620, 660);
 
   // 第一拍：左栏三行字
   const t1 = ip(f, 10, 34);
@@ -210,8 +276,16 @@ export const S2Alive: React.FC = () => {
         </div>
       </Sequence>
 
-      {/* 第三拍：压暗 + 通栏点题 */}
-      <div style={{ position: "absolute", inset: 0, background: C.bg, opacity: dim * 0.72 }} />
+      {/* 第三拍：遮罩（盖住全部前景）→ 标题压在上面 */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background: C.bg,
+          opacity: maskP,
+          zIndex: 10,
+        }}
+      />
       <div
         style={{
           position: "absolute",
@@ -221,13 +295,14 @@ export const S2Alive: React.FC = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          zIndex: 11,
         }}
       >
         <div
           style={{
             fontFamily: F.sans,
             fontWeight: 900,
-            fontSize: S.hero,
+            fontSize: S.quote,
             color: C.text,
             letterSpacing: "0.02em",
             textAlign: "center",
