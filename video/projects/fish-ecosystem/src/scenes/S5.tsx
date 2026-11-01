@@ -68,11 +68,13 @@ export const S5: React.FC = () => {
 };
 
 // 红色「拦下」盖章: 本地帧300起, scale 2.6→1 压下来
+// 第5轮修复: top 62%→66.5%（下移约86px）。原位置旋转后左上角(y≈1079)压住
+// 「Jaccard 相似度 / 拦截线」注释行(y≈1100-1145)半行；下移后章顶角≈1167，注释行让开。
 const Stamp: React.FC<{ frame: number }> = ({ frame }) => {
   const sp = spring({ frame: frame - 300, fps: 30, config: { damping: 16, mass: 0.7, overshootClamping: true } });
   const scale = interpolate(sp, [0, 1], [2.6, 1]);
   return (
-    <div style={{ position: 'absolute', top: '62%', left: '50%', transform: `translate(-50%,-50%) rotate(-10deg) scale(${scale})`, opacity: sp, border: `10px solid ${MAGENTA}`, borderRadius: 22, padding: '14px 46px', color: MAGENTA, fontSize: TITLE_PX, fontWeight: 700, letterSpacing: 12, boxShadow: `0 0 40px ${MAGENTA}66, inset 0 0 24px ${MAGENTA}44` }}>
+    <div style={{ position: 'absolute', top: '66.5%', left: '50%', transform: `translate(-50%,-50%) rotate(-10deg) scale(${scale})`, opacity: sp, border: `10px solid ${MAGENTA}`, borderRadius: 22, padding: '14px 46px', color: MAGENTA, fontSize: TITLE_PX, fontWeight: 700, letterSpacing: 12, boxShadow: `0 0 40px ${MAGENTA}66, inset 0 0 24px ${MAGENTA}44` }}>
       拦下
     </div>
   );
