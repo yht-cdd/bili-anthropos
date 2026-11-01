@@ -83,10 +83,12 @@ const sentTotal = sentRows.reduce((n, r) => n + r.c, 0);
 const sentDetail = sentRows.map((r) => `${r.kind || "未标记"} ${r.c}`).join(" / ");
 
 // ── 视频 ──────────────────────────────────────────────
+// 计数用 COUNT(*) 真数，BV 清单只展示前 5（LIMIT 5 只限展示，不冒充总数——11-01 自查纠正）
+const watchedCount = count("SELECT COUNT(*) c FROM watched WHERE watched_at >= ? AND watched_at < ?", START_SEC, END_SEC);
 const watched = rows(
-  "SELECT bvid, title FROM videos WHERE updated_at >= ? AND updated_at < ? ORDER BY updated_at DESC LIMIT 5",
-  start,
-  END
+  "SELECT bvid, title FROM watched WHERE watched_at >= ? AND watched_at < ? ORDER BY watched_at DESC LIMIT 5",
+  START_SEC,
+  END_SEC
 );
 const inProgress = rows(
   "SELECT bvid, title, state FROM videos WHERE state IS NOT NULL AND state NOT IN ('done','published') ORDER BY updated_at DESC LIMIT 3"
@@ -122,7 +124,7 @@ try {
 push(`【${day} 的账】`);
 push(`私信：新到 ${dmNew} 条 / 回你 ${ownerTasks} 条`);
 push(`对外发送：${sentTotal} 条${sentDetail ? `（${sentDetail}）` : ""}`);
-push(`看视频：${watched.length} 条${watched.length ? `（${watched.map((v) => v.bvid).join("、")}）` : ""}`);
+push(`看视频：${watchedCount} 条${watched.length ? `（${watched.map((v) => v.bvid).join("、")}${watchedCount > 5 ? " 等" : ""}）` : ""}`);
 push(`进行中的视频：${inProgress.length ? inProgress.map((v) => `${v.bvid} ${v.state}`).join("、") : "无"}`);
 push(`醒来：${wakeTotal} 次（日切 ${wakeFixed} / 随机 ${Math.max(0, wakeTotal - wakeFixed)}）+ 自主动作 ${autoRounds} 回合`);
 if (fails) push(`失败：${fails} 次（看 exec/bridge.log）`);

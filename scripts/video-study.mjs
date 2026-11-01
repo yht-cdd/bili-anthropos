@@ -29,6 +29,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { DatabaseSync } from "node:sqlite";
 import { execFileSync, spawnSync } from "node:child_process";
 
 const HOME = process.env.LIFE_HOME || "/opt/life";
@@ -334,6 +335,21 @@ try {
   );
 } catch (e) {
   log("   ⚠️ 总日志写入失败:", e.message);
+}
+
+// ── ⑧.6 观看账本：日结的「看视频 N 条」读这张表 ────────
+// 此前 daily-report 拿投稿统计表 videos 冒充观看记录，永远是 0（2026-11-01 日结实锤）。
+try {
+  const dbase = new DatabaseSync(path.join(HOME, "bili/data/bili.db"));
+  dbase.exec(
+    "CREATE TABLE IF NOT EXISTS watched (bvid TEXT PRIMARY KEY, title TEXT, duration_s INTEGER, watched_at INTEGER, method TEXT, verdict TEXT)"
+  );
+  dbase.prepare(
+    "INSERT OR REPLACE INTO watched(bvid,title,duration_s,watched_at,method,verdict) VALUES(?,?,?,?,?,?)"
+  ).run(bv, meta.title, Math.round(meta.duration), Math.floor(Date.now() / 1000), method, sent ? (sent.error ? "failed" : "sent") : "none");
+  dbase.close();
+} catch (e) {
+  log("   ⚠️ watched 落账失败:", e.message);
 }
 
 // ── ⑨ 结论（给子代理 → 主模型看的）────────────────────
