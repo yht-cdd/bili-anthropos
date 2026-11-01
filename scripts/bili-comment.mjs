@@ -95,13 +95,8 @@ function gateHuman(text) {
     if (re.test(text)) issues.push(why);
   }
 
-  // ④ 长度
-  if (text.length > 80) issues.push(`太长（${text.length} 字，评论 40 字以内最好，80 以上没人看）`);
-
-  // ⑤ 单句太长
-  const sentences = text.split(/[。！？!?；;\n]/).map((s) => s.trim()).filter(Boolean);
-  const longOne = sentences.find((s) => s.length > 30);
-  if (longOne) issues.push(`有一句 ${longOne.length} 字（超过 30 字就不像留言了）`);
+  // ④⑤ 字数限制已按主人令移除（2026-11-01 23:49：「把风格闸门的字数限制去掉」）。
+  // 评论长短由写的人自己把握，闸门只管 AI 味，不管长度。
 
   return issues;
 }
