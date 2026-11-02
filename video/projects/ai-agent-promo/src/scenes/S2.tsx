@@ -70,7 +70,7 @@ export const S2: React.FC = () => {
                 >
                   {i === 1 ? (
                     <>
-                      {'聊天框'}
+                      {'聊天框被'}
                       <span style={{ position: 'relative' }}>
                         {'困在'}
                         {/* 删除线：#E5484D 6px，8 帧从左划到右 */}
@@ -86,7 +86,7 @@ export const S2: React.FC = () => {
                           }}
                         />
                       </span>
-                      {'在网页里。'}
+                      {'网页里。'}
                     </>
                   ) : (
                     line
