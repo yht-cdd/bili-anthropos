@@ -42,14 +42,20 @@ export const S7: React.FC = () => {
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          {/* 主题句：64px 珊瑚，10 帧入场（R1 先落文字，动效精修留 R4） */}
+          {/* 主题句：64px 珊瑚，10 帧入场（R1 先落文字，动效精修留 R4）
+              R6 改位：原来 bottom = SUB_SAFE_BOTTOM + 60 = 180 → 文字顶边 836，
+              正好压在封面彩虹 AGENT 字母上（字母带 y 660–922，实测帧 1680 双份+叠压）。
+              现在落到字母下方空白带：bottom 44 + lineHeight 1.1 → 占 y 966–1036，
+              字母底 922 与文字顶 966 间距 44px（≥24px 下限），也不与「AI」行（y 54–580）相撞。
+              封面已换成 clean 版（无烧录文字），所以全片只此一处主题句。 */}
           {frame >= 120 ? (
             <div
               style={{
                 position: 'absolute',
                 left: 0,
                 right: 0,
-                bottom: SUB_SAFE_BOTTOM + 60,
+                bottom: 44,
+                lineHeight: 1.1,
                 textAlign: 'center',
                 fontSize: 64,
                 fontWeight: 700,
