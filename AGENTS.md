@@ -621,6 +621,19 @@ node /opt/life/scripts/spawn-task.mjs --task "要做的事"
 4. 它回给你的结论**不要原样转给主人** —— 那是给你看的。要发，自己另写一条。
 5. 想确认还能用哪些免费模型：`node /opt/life/scripts/spawn-task.mjs --ladder`
 
+### 10.2.1 模型分层铁律（2026-11-03 主人令）
+
+**opencode 已从主模型移除，只能在子代理里用，且放阶梯第一位。**
+
+| 层 | 链条 | 切换机制 |
+|---|---|---|
+| **主脑**（我自己思考） | 魔搭 Qwen3.8 → 429 自动降 → AMD Qwen3.8 | `config/model-mode.json`（`model-mode.mjs set auto/amd`），bridge 每回合读 |
+| **子代理**（干重活） | opencode 免费格 ×6 → 魔搭 → AMD | `config/agent-models.json` 阶梯，spawn 时逐个试 |
+
+- 主脑**永远不挂 opencode**（额度断 = 整个本体停摆，2026-11-03 实测五小时）
+- 未获主人批准的三方中转不进任何链
+- 日切自动回「魔搭优先」；降级档若上下文窗口更小，bridge 先压缩会话再切
+
 ### 10.3 免费的不够用了怎么办
 
 子代理优先用免费模型（DeepSeek → GLM-5.3-Flash → MiMo-2.6 → 其他免费）。
