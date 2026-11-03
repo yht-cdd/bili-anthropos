@@ -199,16 +199,17 @@ async function rebindSessions(preset) {
   return `${ok} 个改绑到 ${want}${failed.length ? `，${failed.length} 个失败` : ""}`;
 }
 
-/** 重排子代理阶梯：目标 provider 提到前面；阶梯里没有它就先插一条 */
+/** 重排子代理阶梯：opencode 恒占首位（主人令 2026-11-03），目标 provider 提到 opencode 之后 */
 function reorderLadder(preset) {
   try {
     const d = JSON.parse(fs.readFileSync(LADDER_FILE, "utf8"));
     const ladder = d.ladder || [];
     const prefer = preset.prefer;
-    let head = ladder.filter((m) => m.providerID === prefer);
-    const tail = ladder.filter((m) => m.providerID !== prefer);
+    const ocFirst = ladder.filter((m) => m.providerID === "opencode");
+    let head = ladder.filter((m) => m.providerID === prefer && m.providerID !== "opencode");
+    const tail = ladder.filter((m) => m.providerID !== prefer && m.providerID !== "opencode");
 
-    // 阶梯里还没有这个 provider（比如刚接进来的 brocod）—— 补一条到最前面，
+    // 阶梯里还没有这个 provider（比如刚接进来的 brocod）—— 补一条到 opencode 后面，
     // 否则「重排」什么也做不了，子代理还是先用已经挂掉的那批。
     let added = false;
     if (!head.length) {
@@ -223,7 +224,7 @@ function reorderLadder(preset) {
       added = true;
     }
 
-    const next = [...head, ...tail];
+    const next = [...ocFirst, ...head, ...tail];
     const key = (arr) => arr.map((m) => `${m.providerID}/${m.id}`).join(",");
     if (key(next) === key(ladder)) return "已经是这个顺序";
     d.ladder = next;
