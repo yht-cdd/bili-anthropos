@@ -1,7 +1,7 @@
 import React from 'react';
 import { AbsoluteFill, useCurrentFrame } from 'remotion';
 import { blink, prog, typed } from '../anim';
-import { FONT_SANS, TEXT, TYPE_CPS } from '../theme';
+import { FONT_SANS, SUB_SAFE_BOTTOM, TEXT, TYPE_CPS } from '../theme';
 import { ErrorBlock } from './ErrorBlock';
 import { Terminal, TermLine } from './Terminal';
 
@@ -72,8 +72,24 @@ export const S1: React.FC = () => {
           {/* 压暗至 30% */}
           <div style={{ position: 'absolute', inset: 0, backgroundColor: `rgba(0,0,0,${dim})` }} />
           <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
-            {/* 中央打字机字幕（brief：90–120 中央） */}
-            <div style={{ fontSize: 56, fontWeight: 700, color: TEXT }}>
+            {/* 打字机字幕：R6 从「画面正中」下移到字幕安全区底部。
+                原位置（justifyContent:center）正好压在 ERROR 那行红字上——中文白字叠在
+                「task failed after 3 retries」中间，一眼就是 bug（帧 100 实测）。
+                brief 写「中央」，但这里中央 = 叠字，动效服从可读性：
+                字幕底边 SUB_SAFE_BOTTOM=120，56px 字 → 顶边 1080-120-72≈888，
+                ERROR 行 84px 居中 → 底边 540+42=582，间距 ≈306px（远超 24px 下限）。 */}
+            <div
+              style={{
+                position: 'absolute',
+                left: 0,
+                right: 0,
+                bottom: SUB_SAFE_BOTTOM,
+                textAlign: 'center',
+                fontSize: 56,
+                fontWeight: 700,
+                color: TEXT,
+              }}
+            >
               {SUB.slice(0, subChars)}
               {subChars < SUB.length ? (
                 <span
