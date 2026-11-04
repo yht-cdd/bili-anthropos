@@ -830,6 +830,10 @@ function describeFailure(error) {
   return { kind: "other", text: msg || type || "未知错误" };
 }
 
+// B12 环形切换：档位冷却表（内存即可——重启就当所有档恢复）
+const RING_COOLDOWN_MS = 10 * 60_000;
+const ringCooldown = new Map();
+
 let lastFailNoticeAt = 0;
 let autoFailStreak = 0;
 const FAIL_NOTICE_GAP_MS = 10 * 60_000;
@@ -851,6 +855,21 @@ async function notifyFailure(info, kind) {
     return;
   }
   lastFailNoticeAt = Date.now();
+  // B12 补丁二：告警去我化。11-03 实测私信通道也会一起挂（25003），
+  // 所以失败到达这里时，除私信外再走 alert.mjs（它自带 30 分钟去重 + 写 ALERT.md）。
+  try {
+    execFileSync(process.execPath, [
+      `${HOME}/scripts/alert.mjs`,
+      "主脑模型跑不动",
+      `bridge 自动告警：${info.text}（连续失败后仍未恢复）`,
+    ], { timeout: 30_000, stdio: "ignore" });
+    log("🚨 已走 alert.mjs 双通道告警");
+  } catch (e) {
+    // 退出码 3 = 邮件额度用完但 ALERT.md 已写入 —— 这不算没走通
+    const code = Number(e?.status || 0);
+    if (code === 2) log("📝 邮件额度满（alert 退出码 2），告警已落 ALERT.md —— 兜底生效，不算没走通");
+    else log(`⚠️ alert.mjs 没走通（退出码 ${code}）：${String(e?.message || e).slice(0, 80)}`);
+  }
   const ok = await sendDM(
     `我这边模型这一轮没跑起来：${info.text}。自动重试过一次，还是不行。\n不是你的事，我过会儿再试。`
   );
@@ -1036,15 +1055,26 @@ async function runTask(text, opts = {}) {
     if (sid) await rebindModel(sid);
   }
 
-  // 额度/余额类失败：降级到 AMD，并把会话改绑过去。
-  // ⚠️ AMD 只有 262k 上下文，她的会话可能已经 329k —— 所以先压缩再切，
-  //    否则请求会被直接拒掉，看起来像「切换失败了」。
-  if (f1.kind === "quota" && readModelMode() !== "amd") {
-    const sid0 = first.sid || currentSessionId();
-    if (sid0) await compactForAmd(sid0);
-    if (switchModelMode("amd", f1.text)) {
-      const sid = first.sid || currentSessionId();
-      if (sid) await rebindModel(sid);
+  // 额度/限流类失败：**环形切换**（B12 · 主人令 2026-11-04 立即改）。
+  // 旧逻辑是单程票 auto→amd：AMD 被限流后无处可降，11-03 六小时每回合撞同一堵墙。
+  // 主人查证：AMD 的 429 是限流不是余额——限流会恢复，那就两档轮着用。
+  // 防乒乓：被切走的一档进 10 分钟冷却；候选档自己在冷却则本回合不动（不会来回切）。
+  if (f1.kind === "quota" || f1.kind === "server") {
+    const cur = readModelMode();
+    const cand = cur === "auto" ? "amd" : "auto";
+    const until = ringCooldown.get(cand) || 0;
+    if (Date.now() >= until) {
+      const sid0 = first.sid || currentSessionId();
+      // AMD 只有 262k 上下文，会话可能超 —— 切去它之前先压缩，否则请求直接被拒
+      if (cand === "amd" && sid0) await compactForAmd(sid0);
+      if (switchModelMode(cand, `环形切换：${f1.text}`)) {
+        ringCooldown.set(cur, Date.now() + RING_COOLDOWN_MS);
+        if (sid0) await rebindModel(sid0);
+      } else {
+        ringCooldown.set(cand, Date.now() + 60_000);
+      }
+    } else {
+      log(`⏳ ${cand} 环形冷却中（剩 ${Math.ceil((until - Date.now()) / 1000)}s），本回合不来回切`);
     }
   }
 

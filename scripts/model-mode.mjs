@@ -47,10 +47,15 @@ const OC_ENV = process.env.OC_ENV || "/root/.opencode.env";
 
 const PRESETS = {
   auto: {
-    label: "魔搭优先（常态）",
-    primary: { providerID: "modelscope", id: "Qwen/Qwen3.8-Flash-Next", variant: "high" },
+    label: "魔搭1优先（常态·新 key）",
+    primary: { providerID: "modelscope1", id: "Qwen/Qwen3.8-Flash-Next", variant: "high" },
     // 阶梯/视觉的优先 provider
-    prefer: "modelscope",
+    prefer: "modelscope1",
+  },
+  modelscope2: {
+    label: "魔搭2（旧 key·备用降级档）",
+    primary: { providerID: "modelscope2", id: "Qwen/Qwen3.8-Flash-Next", variant: "high" },
+    prefer: "modelscope2",
   },
   amd: {
     label: "AMD Qwen3.8（固定降级档）",
