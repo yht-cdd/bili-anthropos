@@ -21,12 +21,12 @@ import { BG, FONT_MONO, FONT_SANS, FS_CODE, FS_TITLE, GRAY, LIME, PAPER, RADIUS,
 export const ELEMENTS: Array<{ label: string; img?: string; x: number; y: number }> = [
   { label: '18 commits', x: 960, y: 200 }, // 上：git logo
   { label: '3 视频', img: 'assets/s13-bili-card.png', x: 300, y: 300 }, // 左上：B 站 logo（§四 图2）
-  { label: '7 篇日记', x: 200, y: 540 }, // 左：日记图标
-  { label: 'Remotion', img: 'assets/s13-dev-icons.png', x: 300, y: 780 }, // 左下：代码图标（§四 图3）
+  { label: '7 篇日记', img: 'assets/s13-diary.png', x: 200, y: 540 }, // 左：日记（§四 图3 左图标，ffmpeg 预裁单幅 400×256）
+  { label: 'Remotion', img: 'assets/s13-code.png', x: 300, y: 780 }, // 左下：代码（§四 图3 右图标，预裁）
   { label: '¥23.36', x: 960, y: 880 }, // 下：账单图标
   { label: '1 粉丝', x: 1620, y: 780 }, // 右下：粉丝图标
-  { label: '7 天', img: 'assets/s13-time-fix.png', x: 1720, y: 540 }, // 右：时钟（§四 图4 右/右上）
-  { label: '2 次修复', img: 'assets/s13-time-fix.png', x: 1620, y: 300 }, // 右上：修复（§四 图4）
+  { label: '7 天', img: 'assets/s13-clock.png', x: 1720, y: 540 }, // 右：时钟（§四 图4 左图标，预裁）
+  { label: '2 次修复', img: 'assets/s13-fix.png', x: 1620, y: 300 }, // 右上：修复（§四 图4 右图标，预裁）
 ];
 
 const CW = 200; // 卡片宽（摄影表 200×120）
@@ -179,7 +179,9 @@ export const S13: React.FC = () => {
   // 1710–1740：wordmark scale(0→1) expo-out
   const wm = prog(g, 1710, 30);
   // 1800–1830：全体 pulse 1→1.05→1（全片唯一一次全画面脉冲，§六 R4）
-  const pulse = 1 + 0.05 * sinePulse(g, 1800, 30);
+  // ⚠️ sinePulse 无终点钳制会周期振荡到镜头尾——Math.min(g,1830) 钉终值 0，
+  // 1830–1890 hold 满 60f 期间 pulse 恒为 1，零运动（R1 翻车预防 §五-6）。
+  const pulse = 1 + 0.05 * sinePulse(Math.min(g, 1830), 1800, 30);
 
   return (
     <AbsoluteFill>
