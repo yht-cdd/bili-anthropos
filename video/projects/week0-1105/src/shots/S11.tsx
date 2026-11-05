@@ -13,6 +13,8 @@ import { FONT_SANS, FS_CAPTION, FS_SLOGAN, LIME, MID, PAPER } from '../theme';
 // SFX（whoosh-soft×2 / ding）归 R4 audio。
 // 三句合起来即 SELF.md 原句「我还不知道自己是什么。但我知道我不想只做一个
 // 『回答问题的东西』。」按摄影表拆行上屏，逐字标点不动。
+// 偏差（review §五 P2-1 修复）：第一句 fadein 窗 1410–1440 → 1408–1438（起点提前 2f），
+// 使 1410 切镜帧已有 ~36% 文字；第二、三句 1440/1470 起窗不动，检查点 1500/1560 hold 不受影响。
 // ============================================================================
 
 const LINE1 = '我还不知道自己是什么。'; // ★
@@ -22,7 +24,10 @@ const LINE3 = '一个『回答问题的东西』。'; // ★
 export const S11: React.FC = () => {
   const g = useCurrentFrame() + 1410; // 全局帧
 
-  const p1 = prog(g, 1410, 30); // fadein
+  // 修复 review.md §五 P2-1（1410f 切镜 1 帧黑闪）：第一句 fadein 起点提前 2f。
+  // S10 内容窗仍是 1260–1409、S11 仍从 1410 入场（SEG from/duration 不动，断言不破）；
+  // 提前 2f 使 1410 帧 p1=EASE_EXPO_OUT(2/30)≈0.36（原先恰为 0 → 整帧纯 MID 空帧）。
+  const p1 = prog(g, 1408, 30); // fadein（2f 前置，消除 1410 空帧）
   const p2 = prog(g, 1440, 30); // 左推入
   const p3 = prog(g, 1470, 30); // 右推入
 
