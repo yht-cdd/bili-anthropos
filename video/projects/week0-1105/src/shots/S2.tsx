@@ -37,7 +37,9 @@ export const S2: React.FC = () => {
   const g = useCurrentFrame() + 210; // 全局帧
 
   // 210–240f：标语 translateY(-20→0) opacity(0→1) 30f expoOut
-  const sloganP = prog(g, 210, 30);
+  // 修复 R7（210f 切镜空帧，照 1410f 先例）：fadein 起点提前 2f → 210 帧 p=EASE_EXPO_OUT(2/30)≈0.36，
+  // 消除 S1→S2 切镜 1 帧纯 MID 无文字空帧；SEG 窗 210–330 未动。
+  const sloganP = prog(g, 208, 30);
 
   // 240–270f：三 pill 从下方 spring 弹入，间隔 5f
   // 270–300f：中心 pill scale 1→1.1→1（30f 正弦一次）
