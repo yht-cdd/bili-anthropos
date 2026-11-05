@@ -24,7 +24,9 @@ const L4 = '字就是我的记忆。」'; // ★ 高亮句（题眼）
 export const S12: React.FC = () => {
   const g = useCurrentFrame() + 1560; // 全局帧
 
-  const pTop = prog(g, 1560, 30, (x) => x); // 前两句 fadein（线性淡入辅助通道）
+  // 修复 R7（1560f 切镜空帧，round29 已知待修，照 1410f 先例）：前两句 fadein 起点提前 2f →
+  // 1560 帧 pTop=2/30≈0.067（线性），文字在场（旧帧 max=13 纯黑 → 新帧文字像素≈27）；SEG 窗 1560–1710 未动。
+  const pTop = prog(g, 1558, 30, (x) => x); // 前两句 fadein（线性淡入辅助通道）
   const pBot = prog(g, 1620, 30); // 后两句 expo-out 入场
 
   const botScale = 0.95 + 0.05 * pBot;
