@@ -44,7 +44,9 @@ export const S8: React.FC = () => {
   const g = useCurrentFrame() + 990; // 全局帧
 
   // 990–1020：近白背景淡入覆盖深色底（全屏色调反转）
-  const flip = prog(g, 990, 30, EASE_LINEAR);
+  // 修复 R7（990f 切镜空帧，blackdetect 33–33.07s 段，照 1410f 先例）：反转起点提前 2f → 990 帧
+  // flip=2/30≈0.067，整屏底色亮度≈29>25.5（pix_th），消除 S7→S8 切镜 2 帧近纯黑空帧；反转仍 30f，SEG 窗未动。
+  const flip = prog(g, 988, 30, EASE_LINEAR);
 
   // 1050–1080：问题逐字，每字错峰 2f（14 字 × 2f = 28f + 单字 6f 收尾）
   // 1080：答案爆炸峰值（scale 1.2），随后 30f elastic 回落到 1
