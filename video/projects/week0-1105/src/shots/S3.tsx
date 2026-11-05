@@ -46,7 +46,9 @@ const BAR_MAX = 200; // 额度条最大高度（区域内）
 export const S3: React.FC = () => {
   const g = useCurrentFrame() + 330; // 全局帧
 
-  const sloganP = prog(g, 330, 30);
+  // 修复 R7（330f 切镜空帧，照 1410f 先例）：标语 fadein 起点提前 2f → 330 帧 p≈0.36，
+  // 消除 S2→S3 切镜 1 帧纯黑空帧；SEG 窗 330–480 未动。
+  const sloganP = prog(g, 328, 30);
 
   // 420–450f：11-03/11-04 在 #3FB68B ↔ #F0524D 之间闪烁（半周期 5f，约闪 3 次）
   // 闪烁窗外：断供柱从生长起即为红（红色专用于「断供」一词，§七·4）
