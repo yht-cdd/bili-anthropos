@@ -42,7 +42,9 @@ const LINE_STARTS = [750, 762, 773, 783, 792, 800, 807, 813];
 export const S6: React.FC = () => {
   const g = useCurrentFrame() + 720; // 全局帧
 
-  const sloganP = prog(g, 720, 30);
+  // 修复 R7（720f 切镜空帧，照 1410f 先例）：标语 fadein 起点提前 2f → 720 帧 p≈0.36，
+  // 消除 S5→S6 切镜 1 帧纯 MID 无文字空帧；SEG 窗 720–840 未动。
+  const sloganP = prog(g, 718, 30);
 
   return (
     <AbsoluteFill style={{ backgroundColor: MID }}>
