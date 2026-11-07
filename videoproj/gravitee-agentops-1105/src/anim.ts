@@ -1,1 +1,111 @@
-aW1wb3J0IHR5cGUgeyBDU1NQcm9wZXJ0aWVzIH0gZnJvbSAncmVhY3QnOwppbXBvcnQgeyBpbnRlcnBvbGF0ZSwgc3ByaW5nIH0gZnJvbSAncmVtb3Rpb24nOwoKLy8g6YCa55So57yT5YqoL+aPkuWAvOW3peWFtyDigJQg5LiOIHYzIGFuaW0udHMg5ZCM5LiA5a6e546w5bGC77yIYnJpZWYgwqfkuIDvvJrliqjmlYjnuqrlvovmsr/nlKggc2hvdGNyYWZ077yMCi8vIOWFpeWcuiA4LTEyIOW4pyBleHBvLW91dOOAgemAgOWcuiA0LTYg5bin44CB56aBIGxpbmVhciDkuLvliqjmlYjvvInjgIIKCmV4cG9ydCBjb25zdCBjbGFtcDAxID0gKHY6IG51bWJlcik6IG51bWJlciA9PiBNYXRoLm1heCgwLCBNYXRoLm1pbigxLCB2KSk7CgovLyBjdWJpYy1iZXppZXIoeDEseTEseDIseTIpIOaxguWAvO+8iE5ld3RvbiDov63ku6MgKyDkuozliIblhZzlupXvvIkKZXhwb3J0IGNvbnN0IGN1YmljQmV6aWVyID0gKHgxOiBudW1iZXIsIHkxOiBudW1iZXIsIHgyOiBudW1iZXIsIHkyOiBudW1iZXIpID0+IHsKICBjb25zdCBiZXogPSAoYTogbnVtYmVyLCBiOiBudW1iZXIsIHQ6IG51bWJlcik6IG51bWJlciA9PiB7CiAgICBjb25zdCB1ID0gMSAtIHQ7CiAgICByZXR1cm4gMyAqIHUgKiB1ICogdCAqIGEgKyAzICogdSAqIHQgKiB0ICogYiArIHQgKiB0ICogdDsKICB9OwogIHJldHVybiAoeDogbnVtYmVyKTogbnVtYmVyID0+IHsKICAgIGNvbnN0IHAgPSBjbGFtcDAxKHgpOwogICAgaWYgKHAgPT09IDAgfHwgcCA9PT0gMSkgcmV0dXJuIHA7CiAgICBsZXQgdCA9IHA7CiAgICBmb3IgKGxldCBpID0gMDsgaSA8IDg7IGkrKykgewogICAgICBjb25zdCB4ZSA9IGJleih4MSwgeDIsIHQpIC0gcDsKICAgICAgaWYgKE1hdGguYWJzKHhlKSA8IDFlLTUpIGJyZWFrOwogICAgICBjb25zdCB1ID0gMSAtIHQ7CiAgICAgIGNvbnN0IGQgPSAzICogdSAqIHUgKiB4MSArIDYgKiB1ICogdCAqICh4MiAtIHgxKSArIDMgKiB0ICogdCAqICgxIC0geDIpOwogICAgICBpZiAoTWF0aC5hYnMoZCkgPCAxZS02KSBicmVhazsKICAgICAgdCAtPSB4ZSAvIGQ7CiAgICAgIHQgPSBjbGFtcDAxKHQpOwogICAgfQogICAgLy8gTmV3dG9uIOS4jeaUtuaVm+aXtuS6jOWIhuWFnOW6lQogICAgaWYgKE1hdGguYWJzKGJleih4MSwgeDIsIHQpIC0gcCkgPiAxZS00KSB7CiAgICAgIGxldCBsbyA9IDA7CiAgICAgIGxldCBoaSA9IDE7CiAgICAgIGZvciAobGV0IGkgPSAwOyBpIDwgMjQ7IGkrKykgewogICAgICAgIHQgPSAobG8gKyBoaSkgLyAyOwogICAgICAgIGlmIChiZXooeDEsIHgyLCB0KSA8IHApIGxvID0gdDsKICAgICAgICBlbHNlIGhpID0gdDsKICAgICAgfQogICAgfQogICAgcmV0dXJuIGJleih5MSwgeTIsIHQpOwogIH07Cn07CgovLyDmm7Lnur/lupPvvIjlkIwgdjPvvJtsaW5lYXIg5LuF5YWB6K6455So5LqO5reh5pqXL+a3oeWHuuexu+i+heWKqemAmumBk++8jOS4u+WKqOaViOemgeeUqO+8iQpleHBvcnQgY29uc3QgRUFTRV9FWFBPX09VVCA9IGN1YmljQmV6aWVyKDAuMTksIDEuMCwgMC4yMiwgMS4wKTsgLy8g5Li75YqbIGV4cG8tb3V0CmV4cG9ydCBjb25zdCBFQVNFX0VYUE9fT1VUXzE2ID0gY3ViaWNCZXppZXIoMC4xNiwgMSwgMC4zLCAxKTsgLy8g5paH5a2X5YWl5Zy65Y+Y5L2TCmV4cG9ydCBjb25zdCBFQVNFX0lOT1VUID0gY3ViaWNCZXppZXIoMC42NSwgMCwgMC4zNSwgMSk7CmV4cG9ydCBjb25zdCBFQVNFX1NXRUVQID0gY3ViaWNCZXppZXIoMC4zMywgMCwgMC4xNSwgMSk7IC8vIOW3puKGkuWPs+aTpumZpC/mjqjlhaUKZXhwb3J0IGNvbnN0IEVBU0VfTElORUFSID0gKHg6IG51bWJlcik6IG51bWJlciA9PiBjbGFtcDAxKHgpOwoKLy8gMOKGkjEg6L+b5bqm77yaZnJhbWUg5LuOIHN0YXJ0IOi1t+e7jyBkdXIg5bin77yM5aWX57yT5YqoCmV4cG9ydCBjb25zdCBwcm9nID0gKAogIGZyYW1lOiBudW1iZXIsCiAgc3RhcnQ6IG51bWJlciwKICBkdXI6IG51bWJlciwKICBlYXNpbmc6ICh4OiBudW1iZXIpID0+IG51bWJlciA9IEVBU0VfRVhQT19PVVQsCik6IG51bWJlciA9PiBlYXNpbmcoZHVyIDw9IDAgPyAoZnJhbWUgPj0gc3RhcnQgPyAxIDogMCkgOiAoZnJhbWUgLSBzdGFydCkgLyBkdXIpOwoKLy8gY2xhbXAg6L+H55qE57q/5oCn5o+S5YC877yI5binIOKGkiDku7vmhI/lgLzvvIkKZXhwb3J0IGNvbnN0IGxlcnBGID0gKGZyYW1lOiBudW1iZXIsIGZyb206IFtudW1iZXIsIG51bWJlcl0sIHRvOiBbbnVtYmVyLCBudW1iZXJdKTogbnVtYmVyID0+CiAgaW50ZXJwb2xhdGUoZnJhbWUsIFtmcm9tWzBdLCBmcm9tWzFdXSwgdG8sIHsKICAgIGV4dHJhcG9sYXRlTGVmdDogJ2NsYW1wJywKICAgIGV4dHJhcG9sYXRlUmlnaHQ6ICdjbGFtcCcsCiAgfSk7CgovLyDorr7orqHnqL8gc3ByaW5nKDEsIHRlbnNpb24sIGZyaWN0aW9uKSDihpIgcmVtb3Rpb24gc3ByaW5nIOWPguaVsOaYoOWwhAovLyDms6jmhI/vvJrkuI3opoHliqAgZHVyYXRpb25JbkZyYW1lczogOTk5IOKAlOKAlCDkvJrmiorlvLnnsKfmi4nkvLjliLAgOTk5IOW4p+aJjeWujOaIkO+8iHYzIFIxYiDliKTkvovvvInjgIIKZXhwb3J0IGNvbnN0IHNwcmluZ0luID0gKAogIGZyYW1lOiBudW1iZXIsCiAgc3RhcnQ6IG51bWJlciwKICBvcHRzOiB7IHRlbnNpb24/OiBudW1iZXI7IGZyaWN0aW9uPzogbnVtYmVyIH0gPSB7fSwKKTogbnVtYmVyID0+CiAgc3ByaW5nKHsKICAgIGZyYW1lOiBmcmFtZSAtIHN0YXJ0LAogICAgZnBzOiAzMCwKICAgIGNvbmZpZzogeyBtYXNzOiAxLCBzdGlmZm5lc3M6IG9wdHMudGVuc2lvbiA/PyA4MCwgZGFtcGluZzogb3B0cy5mcmljdGlvbiA/PyAxMCB9LAogIH0pOwoKLy8gc2xhbSDpnIflsY/vvIhicmllZiDCp+S6jMK3UzLjgIxTaGFrZSBhbXBsaXR1ZGUgMTDjgI3nmoTlrp7njrDvvInvvJoKLy8g5oyH5pWw6KGw5YeP6Zi75bC85oyv6I2h77yMZHVyIOW4p+aUtuW5su+8m3NsYW0tZW50cmFuY2UtbW92ZXMg5Y2h55qE44CM5ZWq44CN5Zyo5Zue5by56YKj5LiA5LiL44CCCmV4cG9ydCBjb25zdCBzaGFrZVggPSAoZnJhbWU6IG51bWJlciwgaGl0OiBudW1iZXIsIGFtcCA9IDEwLCBkdXIgPSA4KTogbnVtYmVyID0+IHsKICBjb25zdCB0ID0gZnJhbWUgLSBoaXQ7CiAgaWYgKHQgPCAwIHx8IHQgPj0gZHVyKSByZXR1cm4gMDsKICByZXR1cm4gYW1wICogTWF0aC5leHAoLXQgLyAyLjIpICogTWF0aC5jb3ModCAqIDEuOSk7Cn07CgovLyDmiZPlrZfmnLrvvIjplJnls7DliLbvvInvvJrnrKwgaSDooYzku44gc3RhcnQgKyBpIMOXIGxpbmVHYXAg6LW377yM5q+P5a2X56ymIGNoYXJEdXIg5bin44CC6L+U5Zue6K+l6KGM5bey5omT5Ye65a2X56ym5pWwCmV4cG9ydCBjb25zdCB0eXBlZExpbmUgPSAoCiAgZnJhbWU6IG51bWJlciwKICBzdGFydDogbnVtYmVyLAogIGxpbmVJbmRleDogbnVtYmVyLAogIGxpbmVHYXA6IG51bWJlciwKICB0ZXh0TGVuOiBudW1iZXIsCiAgY2hhckR1cjogbnVtYmVyLAopOiBudW1iZXIgPT4KICBNYXRoLm1pbih0ZXh0TGVuLCBNYXRoLm1heCgwLCBNYXRoLmZsb29yKChmcmFtZSAtIChzdGFydCArIGxpbmVJbmRleCAqIGxpbmVHYXApKSAvIGNoYXJEdXIpKSk7CgovLyDlhYnmoIfpl6rng4HvvJpwZXJpb2Qg5bin5YWo5ZGo5pyf77yM5Y2K5Lqu5Y2K54Gt77yIcGVyaW9kPTQg5Y2zIGJyaWVmIFMxIOeahOOAjDQg5bin5b+r6Zeq44CN77yJCmV4cG9ydCBjb25zdCBibGluayA9IChmcmFtZTogbnVtYmVyLCBzdGFydDogbnVtYmVyLCBwZXJpb2QgPSAxMik6IG51bWJlciA9PgogIGZyYW1lID49IHN0YXJ0ID8gKE1hdGguZmxvb3IoKChmcmFtZSAtIHN0YXJ0KSAlIHBlcmlvZCkgLyAocGVyaW9kIC8gMikpID09PSAwID8gMSA6IDApIDogMDsKCi8vIOato+W8puiEieWGsiAwLi4x77yIcGVyaW9kIOW4p+WRqOacn++8iQpleHBvcnQgY29uc3Qgc2luZVB1bHNlID0gKGZyYW1lOiBudW1iZXIsIHN0YXJ0OiBudW1iZXIsIHBlcmlvZDogbnVtYmVyKTogbnVtYmVyID0+CiAgZnJhbWUgPCBzdGFydCA/IDAgOiAwLjUgLSAwLjUgKiBNYXRoLmNvcygoMiAqIE1hdGguUEkgKiAoZnJhbWUgLSBzdGFydCkpIC8gcGVyaW9kKTsKCi8vIOenkiDihpIgMzBmcHMg5binCmV4cG9ydCBjb25zdCBzZWMgPSAoczogbnVtYmVyKTogbnVtYmVyID0+IE1hdGgucm91bmQocyAqIDMwKTsKCi8vIOeUsSBzdHlsZSDniYfmrrXlkIjmiJAgdHJhbnNmb3JtIOS4sgpleHBvcnQgY29uc3QgdGYgPSAocGFydHM6IEFycmF5PHN0cmluZyB8IGZhbHNlIHwgbnVsbCB8IHVuZGVmaW5lZD4pOiBzdHJpbmcgPT4KICBwYXJ0cy5maWx0ZXIoQm9vbGVhbikuam9pbignICcpOwoKZXhwb3J0IHR5cGUgQ1NTID0gQ1NTUHJvcGVydGllczsK
+import type { CSSProperties } from 'react';
+import { interpolate, spring } from 'remotion';
+
+// 通用缓动/插值工具 — 与 v3 anim.ts 同一实现层（brief §一：动效纪律沿用 shotcraft，
+// 入场 8-12 帧 expo-out、退场 4-6 帧、禁 linear 主动效）。
+
+export const clamp01 = (v: number): number => Math.max(0, Math.min(1, v));
+
+// cubic-bezier(x1,y1,x2,y2) 求值（Newton 迭代 + 二分兜底）
+export const cubicBezier = (x1: number, y1: number, x2: number, y2: number) => {
+  const bez = (a: number, b: number, t: number): number => {
+    const u = 1 - t;
+    return 3 * u * u * t * a + 3 * u * t * t * b + t * t * t;
+  };
+  return (x: number): number => {
+    const p = clamp01(x);
+    if (p === 0 || p === 1) return p;
+    let t = p;
+    for (let i = 0; i < 8; i++) {
+      const xe = bez(x1, x2, t) - p;
+      if (Math.abs(xe) < 1e-5) break;
+      const u = 1 - t;
+      const d = 3 * u * u * x1 + 6 * u * t * (x2 - x1) + 3 * t * t * (1 - x2);
+      if (Math.abs(d) < 1e-6) break;
+      t -= xe / d;
+      t = clamp01(t);
+    }
+    // Newton 不收敛时二分兜底
+    if (Math.abs(bez(x1, x2, t) - p) > 1e-4) {
+      let lo = 0;
+      let hi = 1;
+      for (let i = 0; i < 24; i++) {
+        t = (lo + hi) / 2;
+        if (bez(x1, x2, t) < p) lo = t;
+        else hi = t;
+      }
+    }
+    return bez(y1, y2, t);
+  };
+};
+
+// 曲线库（同 v3；linear 仅允许用于淡暗/淡出类辅助通道，主动效禁用）
+export const EASE_EXPO_OUT = cubicBezier(0.19, 1.0, 0.22, 1.0); // 主力 expo-out
+export const EASE_EXPO_OUT_16 = cubicBezier(0.16, 1, 0.3, 1); // 文字入场变体
+export const EASE_INOUT = cubicBezier(0.65, 0, 0.35, 1);
+export const EASE_SWEEP = cubicBezier(0.33, 0, 0.15, 1); // 左→右擦除/推入
+export const EASE_LINEAR = (x: number): number => clamp01(x);
+
+// 0→1 进度：frame 从 start 起经 dur 帧，套缓动
+export const prog = (
+  frame: number,
+  start: number,
+  dur: number,
+  easing: (x: number) => number = EASE_EXPO_OUT,
+): number => easing(dur <= 0 ? (frame >= start ? 1 : 0) : (frame - start) / dur);
+
+// clamp 过的线性插值（帧 → 任意值）
+export const lerpF = (frame: number, from: [number, number], to: [number, number]): number =>
+  interpolate(frame, [from[0], from[1]], to, {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+
+// 设计稿 spring(1, tension, friction) → remotion spring 参数映射
+// 注意：不要加 durationInFrames: 999 —— 会把弹簧拉伸到 999 帧才完成（v3 R1b 判例）。
+export const springIn = (
+  frame: number,
+  start: number,
+  opts: { tension?: number; friction?: number } = {},
+): number =>
+  spring({
+    frame: frame - start,
+    fps: 30,
+    config: { mass: 1, stiffness: opts.tension ?? 80, damping: opts.friction ?? 10 },
+  });
+
+// slam 震屏（brief §二·S2「Shake amplitude 10」的实现）：
+// 指数衰减阻尼振荡，dur 帧收干；slam-entrance-moves 卡的「啪」在回弹那一下。
+export const shakeX = (frame: number, hit: number, amp = 10, dur = 8): number => {
+  const t = frame - hit;
+  if (t < 0 || t >= dur) return 0;
+  return amp * Math.exp(-t / 2.2) * Math.cos(t * 1.9);
+};
+
+// 打字机（错峰制）：第 i 行从 start + i × lineGap 起，每字符 charDur 帧。返回该行已打出字符数
+export const typedLine = (
+  frame: number,
+  start: number,
+  lineIndex: number,
+  lineGap: number,
+  textLen: number,
+  charDur: number,
+): number =>
+  Math.min(textLen, Math.max(0, Math.floor((frame - (start + lineIndex * lineGap)) / charDur)));
+
+// 光标闪烁：period 帧全周期，半亮半灭（period=4 即 brief S1 的「4 帧快闪」）
+export const blink = (frame: number, start: number, period = 12): number =>
+  frame >= start ? (Math.floor(((frame - start) % period) / (period / 2)) === 0 ? 1 : 0) : 0;
+
+// 正弦脉冲 0..1（period 帧周期）
+export const sinePulse = (frame: number, start: number, period: number): number =>
+  frame < start ? 0 : 0.5 - 0.5 * Math.cos((2 * Math.PI * (frame - start)) / period);
+
+// 秒 → 30fps 帧
+export const sec = (s: number): number => Math.round(s * 30);
+
+// 由 style 片段合成 transform 串
+export const tf = (parts: Array<string | false | null | undefined>): string =>
+  parts.filter(Boolean).join(' ');
+
+export type CSS = CSSProperties;

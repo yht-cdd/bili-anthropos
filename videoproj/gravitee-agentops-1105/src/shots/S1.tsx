@@ -1,1 +1,110 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IGJsaW5rLCBFQVNFX0VYUE9fT1VULCBwcm9nIH0gZnJvbSAnLi4vYW5pbSc7CmltcG9ydCB7IEZBSUxfTElORVMgfSBmcm9tICcuLi9mYWlsTGluZXMnOwppbXBvcnQgeyBCRywgRk9OVF9NT05PLCBHUkFZLCBTVVJGQUNFLCBURVJNX0dSQVkgfSBmcm9tICcuLi90aGVtZSc7CgovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ci8vIFMxIOWGt+W8gOWcuiDCtyDlhajlsYAgMOKAkzE1MO+8iGJyaWVmIMKn5LqMwrdTMe+8iQovLyAw4oCTOCDpu5HlnLrvvJs4IOi1t+e7iOerr+eql+WFpeWcuu+8iDExMDBweCDlrr3vvIzlkIwgdjMg56qX5L2T6KeE5qC877ya6KGo6Z2iICMwRjEzMUMgLyByYWRpdXMgMTIgLyDpobbmoI8gMTZweO+8ie+8mwovLyAxMyDooYznnJ/lrp7mlq3kvpvljaDkvY3pgJDooYzlhaXlnLrvvIxTdGFnZ2VyIHN0ZXAgOSDluKfjgIHmr4/ooYwgNiDluKcgZXhwby1vdXQg5LiK5Y2H77yIW3R5cG9ncmFwaHldCi8vIHR5cGUtYXNzZW1ibHktbW92ZXMgQSDlvI8gc3BsaXQtdGV4dC1zdGFnZ2VyIOeahOihjOe6p+eUqOazle+8mm92ZXJmbG93IOijgeWIh+ebkuWGhSB0cmFuc2xhdGVZIOWNh+S9je+8ie+8mwovLyAxNDAg6LW35YWJ5qCH5YGc5pyA5ZCO5LiA6KGM5pyr5bC+77yMNCDluKflkajmnJ/lv6vpl6rvvIhicmllZuOAjDQg5bin5b+r6Zeq44CN4oaSIGJsaW5rIHBlcmlvZD0077yJ44CCCi8vIOmAgOWcuuivtOaYju+8mjE0MOKAkzE1MCDml6DpgIDlnLrliqjkvZzvvIhicmllZiDmnKrnu5nvvInvvIznlLEgUzIg55qEIDE1MOKAkzE1OOOAjOWFqOWcuuWOi+aalyAzMCXjgI3mjqXnrqHljovmmpfjgIIKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKY29uc3QgV0lOX1cgPSAxMTAwOwpjb25zdCBMSU5FX0ggPSA1MjsgLy8gMjhweCDDlyBsaW5lSGVpZ2h0IDEuODUKY29uc3QgUEFEX1ggPSAyODsKY29uc3QgSEVBREVSX0ggPSA0NDsKY29uc3QgQ09OVEVOVF9UT1AgPSBIRUFERVJfSCArIDIwOwpjb25zdCBXSU5fSCA9IENPTlRFTlRfVE9QICsgTElORV9IICogRkFJTF9MSU5FUy5sZW5ndGggKyAyNjsKY29uc3QgV0lOX1ggPSAoMTkyMCAtIFdJTl9XKSAvIDI7CmNvbnN0IFdJTl9ZID0gTWF0aC5yb3VuZCgoMTA4MCAtIFdJTl9IKSAvIDIpOwoKY29uc3QgU1RBUlQgPSAxMDsgLy8g6buR5Zy6IDDigJM4ICsg56qX5YWl5Zy6IDjigJMxNO+8jOato+aWhyAxMCDotbfpgJDooYzvvIjkv53or4HmnKvooYwgMTI44oCTMTQwIOiQveWumu+8iQpjb25zdCBTVEVQID0gOTsgLy8gU3RhZ2dlciBzdGVwIDkg5bin77yIYnJpZWYg57uZ5a6a77yJCgpleHBvcnQgY29uc3QgUzE6IFJlYWN0LkZDID0gKCkgPT4gewogIGNvbnN0IGYgPSB1c2VDdXJyZW50RnJhbWUoKTsKICBjb25zdCB3aW5QID0gcHJvZyhmLCA4LCA2LCBFQVNFX0VYUE9fT1VUKTsgLy8g56qX5L2T5YWl5Zy6IDjigJMxNO+8jDYg5binIGV4cG8tb3V0CgogIHJldHVybiAoCiAgICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGJhY2tncm91bmRDb2xvcjogQkcgfX0+CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICBsZWZ0OiBXSU5fWCwKICAgICAgICAgIHRvcDogV0lOX1ksCiAgICAgICAgICB3aWR0aDogV0lOX1csCiAgICAgICAgICBoZWlnaHQ6IFdJTl9ILAogICAgICAgICAgYmFja2dyb3VuZENvbG9yOiBTVVJGQUNFLAogICAgICAgICAgYm9yZGVyUmFkaXVzOiAxMiwKICAgICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfTU9OTywKICAgICAgICAgIG9wYWNpdHk6IHdpblAsCiAgICAgICAgICB0cmFuc2Zvcm06IGBzY2FsZSgkezAuOTQgKyAwLjA2ICogd2luUH0pIHRyYW5zbGF0ZVkoJHsxNCAqICgxIC0gd2luUCl9cHgpYCwKICAgICAgICAgIGJveFNoYWRvdzogJzAgMjRweCA4MHB4IHJnYmEoMCwwLDAsMC41KScsCiAgICAgICAgICBvdmVyZmxvdzogJ2hpZGRlbicsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIDxkaXYKICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgIGhlaWdodDogSEVBREVSX0gsCiAgICAgICAgICAgIGRpc3BsYXk6ICdmbGV4JywKICAgICAgICAgICAgYWxpZ25JdGVtczogJ2NlbnRlcicsCiAgICAgICAgICAgIHBhZGRpbmc6ICcwIDIwcHgnLAogICAgICAgICAgICBmb250U2l6ZTogMTgsCiAgICAgICAgICAgIGNvbG9yOiBHUkFZLAogICAgICAgICAgICBib3JkZXJCb3R0b206ICcxcHggc29saWQgcmdiYSgyNTUsMjU1LDI1NSwwLjA2KScsCiAgICAgICAgICB9fQogICAgICAgID4KICAgICAgICAgIGFudGhyb3Bvc0Bsb2NhbCB+IGJyaWRnZS5sb2cKICAgICAgICA8L2Rpdj4KICAgICAgICB7RkFJTF9MSU5FUy5tYXAoKGxpbmUsIGkpID0+IHsKICAgICAgICAgIGNvbnN0IHAgPSBwcm9nKGYsIFNUQVJUICsgaSAqIFNURVAsIDYsIEVBU0VfRVhQT19PVVQpOyAvLyDpgJDooYwgNiDluKcgZXhwby1vdXQKICAgICAgICAgIGNvbnN0IGlzTGFzdCA9IGkgPT09IEZBSUxfTElORVMubGVuZ3RoIC0gMTsKICAgICAgICAgIGNvbnN0IGN1ciA9IGlzTGFzdCA/IGJsaW5rKGYsIDE0MCwgNCkgOiAwOyAvLyDlhYnmoIflj6rlnKjmnKvooYzvvIwxNDAg6LW3IDQg5bin5b+r6ZeqCiAgICAgICAgICByZXR1cm4gKAogICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAga2V5PXtpfQogICAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgICAgICAgIGxlZnQ6IFBBRF9YLAogICAgICAgICAgICAgICAgdG9wOiBDT05URU5UX1RPUCArIGkgKiBMSU5FX0gsCiAgICAgICAgICAgICAgICB3aWR0aDogV0lOX1cgLSBQQURfWCAqIDIsCiAgICAgICAgICAgICAgICBoZWlnaHQ6IExJTkVfSCwKICAgICAgICAgICAgICAgIG92ZXJmbG93OiAnaGlkZGVuJywgLy8g6KOB5YiH55uS77ya6KGM5LuO5LiL57yY5Y2H6LW377yI6KOC5Y2H5byP6KGM57qn55So5rOV77yJCiAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgICAgIGZvbnRTaXplOiAyOCwKICAgICAgICAgICAgICAgICAgbGluZUhlaWdodDogYCR7TElORV9IfXB4YCwKICAgICAgICAgICAgICAgICAgY29sb3I6IFRFUk1fR1JBWSwKICAgICAgICAgICAgICAgICAgd2hpdGVTcGFjZTogJ3ByZScsCiAgICAgICAgICAgICAgICAgIG9wYWNpdHk6IHAsCiAgICAgICAgICAgICAgICAgIHRyYW5zZm9ybTogYHRyYW5zbGF0ZVkoJHtMSU5FX0ggKiAoMSAtIHApfXB4KWAsCiAgICAgICAgICAgICAgICB9fQogICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgIHtsaW5lLnRzfSB7bGluZS50ZXh0fQogICAgICAgICAgICAgICAge2lzTGFzdCA/ICgKICAgICAgICAgICAgICAgICAgPHNwYW4KICAgICAgICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogJ2lubGluZS1ibG9jaycsCiAgICAgICAgICAgICAgICAgICAgICB3aWR0aDogMTQsCiAgICAgICAgICAgICAgICAgICAgICBoZWlnaHQ6IDMwLAogICAgICAgICAgICAgICAgICAgICAgbWFyZ2luTGVmdDogNCwKICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogVEVSTV9HUkFZLAogICAgICAgICAgICAgICAgICAgICAgb3BhY2l0eTogY3VyLAogICAgICAgICAgICAgICAgICAgICAgdmVydGljYWxBbGlnbjogJy00cHgnLAogICAgICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgICApIDogbnVsbH0KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICApOwogICAgICAgIH0pfQogICAgICA8L2Rpdj4KICAgIDwvQWJzb2x1dGVGaWxsPgogICk7Cn07Cg==
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { blink, EASE_EXPO_OUT, prog } from '../anim';
+import { FAIL_LINES } from '../failLines';
+import { BG, FONT_MONO, GRAY, SURFACE, TERM_GRAY } from '../theme';
+
+// ============================================================================
+// S1 冷开场 · 全局 0–150（brief §二·S1）
+// 0–8 黑场；8 起终端窗入场（1100px 宽，同 v3 窗体规格：表面 #0F131C / radius 12 / 顶栏 16px）；
+// 13 行真实断供占位逐行入场，Stagger step 9 帧、每行 6 帧 expo-out 上升（[typography]
+// type-assembly-moves A 式 split-text-stagger 的行级用法：overflow 裁切盒内 translateY 升位）；
+// 140 起光标停最后一行末尾，4 帧周期快闪（brief「4 帧快闪」→ blink period=4）。
+// 退场说明：140–150 无退场动作（brief 未给），由 S2 的 150–158「全场压暗 30%」接管压暗。
+// ============================================================================
+
+const WIN_W = 1100;
+const LINE_H = 52; // 28px × lineHeight 1.85
+const PAD_X = 28;
+const HEADER_H = 44;
+const CONTENT_TOP = HEADER_H + 20;
+const WIN_H = CONTENT_TOP + LINE_H * FAIL_LINES.length + 26;
+const WIN_X = (1920 - WIN_W) / 2;
+const WIN_Y = Math.round((1080 - WIN_H) / 2);
+
+const START = 10; // 黑场 0–8 + 窗入场 8–14，正文 10 起逐行（保证末行 128–140 落定）
+const STEP = 9; // Stagger step 9 帧（brief 给定）
+
+export const S1: React.FC = () => {
+  const f = useCurrentFrame();
+  const winP = prog(f, 8, 6, EASE_EXPO_OUT); // 窗体入场 8–14，6 帧 expo-out
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: BG }}>
+      <div
+        style={{
+          position: 'absolute',
+          left: WIN_X,
+          top: WIN_Y,
+          width: WIN_W,
+          height: WIN_H,
+          backgroundColor: SURFACE,
+          borderRadius: 12,
+          fontFamily: FONT_MONO,
+          opacity: winP,
+          transform: `scale(${0.94 + 0.06 * winP}) translateY(${14 * (1 - winP)}px)`,
+          boxShadow: '0 24px 80px rgba(0,0,0,0.5)',
+          overflow: 'hidden',
+        }}
+      >
+        <div
+          style={{
+            height: HEADER_H,
+            display: 'flex',
+            alignItems: 'center',
+            padding: '0 20px',
+            fontSize: 18,
+            color: GRAY,
+            borderBottom: '1px solid rgba(255,255,255,0.06)',
+          }}
+        >
+          anthropos@local ~ bridge.log
+        </div>
+        {FAIL_LINES.map((line, i) => {
+          const p = prog(f, START + i * STEP, 6, EASE_EXPO_OUT); // 逐行 6 帧 expo-out
+          const isLast = i === FAIL_LINES.length - 1;
+          const cur = isLast ? blink(f, 140, 4) : 0; // 光标只在末行，140 起 4 帧快闪
+          return (
+            <div
+              key={i}
+              style={{
+                position: 'absolute',
+                left: PAD_X,
+                top: CONTENT_TOP + i * LINE_H,
+                width: WIN_W - PAD_X * 2,
+                height: LINE_H,
+                overflow: 'hidden', // 裁切盒：行从下缘升起（裂升式行级用法）
+              }}
+            >
+              <div
+                style={{
+                  fontSize: 28,
+                  lineHeight: `${LINE_H}px`,
+                  color: TERM_GRAY,
+                  whiteSpace: 'pre',
+                  opacity: p,
+                  transform: `translateY(${LINE_H * (1 - p)}px)`,
+                }}
+              >
+                {line.ts} {line.text}
+                {isLast ? (
+                  <span
+                    style={{
+                      display: 'inline-block',
+                      width: 14,
+                      height: 30,
+                      marginLeft: 4,
+                      backgroundColor: TERM_GRAY,
+                      opacity: cur,
+                      verticalAlign: '-4px',
+                    }}
+                  />
+                ) : null}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </AbsoluteFill>
+  );
+};

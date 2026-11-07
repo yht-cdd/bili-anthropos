@@ -1,1 +1,16 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQ29tcG9zaXRpb24gfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEZpbG0gfSBmcm9tICcuL01haW4nOwppbXBvcnQgeyBGUFMsIEgsIFRPVEFMX0ZSQU1FUywgVyB9IGZyb20gJy4vdGhlbWUnOwoKLy8gMTkyMHgxMDgwIOaoqueJiCBAMzBmcHMgwrcgNTUuMHMgPSAxNjUwIOW4pyDCtyBpZD1BbnRocm9wb3NWaWRlb++8iOWvuem9kCBDSSDmuLLmn5PlhaXlj6PvvIkKZXhwb3J0IGNvbnN0IFJlbW90aW9uUm9vdDogUmVhY3QuRkMgPSAoKSA9PiAoCiAgPENvbXBvc2l0aW9uCiAgICBpZD0iQW50aHJvcG9zVmlkZW8iCiAgICBjb21wb25lbnQ9e0ZpbG19CiAgICBkdXJhdGlvbkluRnJhbWVzPXtUT1RBTF9GUkFNRVN9CiAgICBmcHM9e0ZQU30KICAgIHdpZHRoPXtXfQogICAgaGVpZ2h0PXtIfQogIC8+Cik7Cg==
+import React from 'react';
+import { Composition } from 'remotion';
+import { Film } from './Main';
+import { FPS, H, TOTAL_FRAMES, W } from './theme';
+
+// 1920x1080 横版 @30fps · 55.0s = 1650 帧 · id=AnthroposVideo（对齐 CI 渲染入口）
+export const RemotionRoot: React.FC = () => (
+  <Composition
+    id="AnthroposVideo"
+    component={Film}
+    durationInFrames={TOTAL_FRAMES}
+    fps={FPS}
+    width={W}
+    height={H}
+  />
+);

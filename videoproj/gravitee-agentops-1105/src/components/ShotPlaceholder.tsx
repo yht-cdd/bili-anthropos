@@ -1,1 +1,19 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsIH0gZnJvbSAncmVtb3Rpb24nOwppbXBvcnQgeyBCRywgRk9OVF9NT05PLCBHUkFZLCBURVJNX0dSQVkgfSBmcm9tICcuLi90aGVtZSc7CgovLyDljaDkvY3plZzvvIhTNOKAk1M377yMUjEg5pa95bel77yJ4oCUIOm7keW6lSArIOmVnOWPtyArIOWFqOWxgOW4p+WMuumXtCArIGJyaWVmIOauteWQje+8jOS+m+eyl+WJqueci+iKguWlj+OAggpleHBvcnQgY29uc3QgU2hvdFBsYWNlaG9sZGVyOiBSZWFjdC5GQzx7CiAgbGFiZWw6IHN0cmluZzsKICBuYW1lOiBzdHJpbmc7CiAgZnJvbTogbnVtYmVyOwogIHRvOiBudW1iZXI7Cn0+ID0gKHsgbGFiZWwsIG5hbWUsIGZyb20sIHRvIH0pID0+ICgKICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGJhY2tncm91bmRDb2xvcjogQkcsIGFsaWduSXRlbXM6ICdjZW50ZXInLCBqdXN0aWZ5Q29udGVudDogJ2NlbnRlcicgfX0+CiAgICA8ZGl2IHN0eWxlPXt7IGZvbnRGYW1pbHk6IEZPTlRfTU9OTywgZm9udFNpemU6IDk2LCBjb2xvcjogVEVSTV9HUkFZLCBmb250V2VpZ2h0OiA3MDAgfX0+e2xhYmVsfTwvZGl2PgogICAgPGRpdiBzdHlsZT17eyBmb250RmFtaWx5OiBGT05UX01PTk8sIGZvbnRTaXplOiAzMCwgY29sb3I6IEdSQVksIG1hcmdpblRvcDogMjAgfX0+e25hbWV9PC9kaXY+CiAgICA8ZGl2IHN0eWxlPXt7IGZvbnRGYW1pbHk6IEZPTlRfTU9OTywgZm9udFNpemU6IDI0LCBjb2xvcjogR1JBWSwgbWFyZ2luVG9wOiAxMiB9fT4KICAgICAgZnJhbWVzIHtmcm9tfeKAk3t0b30gwrcgcGxhY2Vob2xkZXLvvIhSMi9SMyDlrp7oo4XvvIkKICAgIDwvZGl2PgogIDwvQWJzb2x1dGVGaWxsPgopOwo=
+import React from 'react';
+import { AbsoluteFill } from 'remotion';
+import { BG, FONT_MONO, GRAY, TERM_GRAY } from '../theme';
+
+// 占位镜（S4–S7，R1 施工）— 黑底 + 镜号 + 全局帧区间 + brief 段名，供粗剪看节奏。
+export const ShotPlaceholder: React.FC<{
+  label: string;
+  name: string;
+  from: number;
+  to: number;
+}> = ({ label, name, from, to }) => (
+  <AbsoluteFill style={{ backgroundColor: BG, alignItems: 'center', justifyContent: 'center' }}>
+    <div style={{ fontFamily: FONT_MONO, fontSize: 96, color: TERM_GRAY, fontWeight: 700 }}>{label}</div>
+    <div style={{ fontFamily: FONT_MONO, fontSize: 30, color: GRAY, marginTop: 20 }}>{name}</div>
+    <div style={{ fontFamily: FONT_MONO, fontSize: 24, color: GRAY, marginTop: 12 }}>
+      frames {from}–{to} · placeholder（R2/R3 实装）
+    </div>
+  </AbsoluteFill>
+);

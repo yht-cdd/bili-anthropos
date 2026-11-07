@@ -1,1 +1,446 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEVBU0VfRVhQT19PVVQsIEVBU0VfU1dFRVAsIHByb2csIHNoYWtlWCwgc3ByaW5nSW4gfSBmcm9tICcuLi9hbmltJzsKaW1wb3J0IHsgQ09SQUwsIEZPTlRfTU9OTywgTElNRSwgVEVSTV9HUkFZLCBURVhULCBaSElQVSB9IGZyb20gJy4uL3RoZW1lJzsKCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8gUzQg5LiJ5Liq5L+u5aSN5Yqo5L2cIMK3IOWFqOWxgCA2MzDigJMxMTQw77yIYnJpZWYgwqfkuozCt1M077yJCi8vIOmFjeaWueWNoe+8mltkYXRhXSBjaGFydC1saXZlLW1vdmVzIOeugOWMlu+8iOWNoTEg6LWw5bynPeWFtiBBIOW8jyLkuovku7bmsr/nur/mjqjov5si55qE6ZmN6YWN55So5rOV77yMCi8vIOS4jeWPluekuuazouWxj+aVtOWll+ivreWig++8jOiusOatp+S5ie+8iSsgW2VmZmVjdHNdIGltcGFjdC1mZWVkYmFja++8iOWNoTMgQiDlvI/vvJrlkb3kuK095YWo5bGA6aG/5binIDJmCi8vICsg5Yay5Ye7546vICsg5oGi5aSN6ZyH5bGPIDZweCDPhDIuMu+8jOesrCA0ZiDotbfvvJvotJ/niYdhbmltZS1pbXBhY3QgQyDlvI/kuI3nlKjigJTigJTmnKzmrrXpnZ7lhajniYfllK/kuIDpq5jmva7vvInjgIIKLy8g5LiJ5Y2h5ZCEIDE3MCDluKfvvIzljaHpl7TnoazliIfjgIzliIDjgI3vvIh0aWNrIOS4iei/nuWFqOWxgCA2NDAvODEwLzk4MCA9IOWQhOWNoSBnPTEw77yM6LipIHNsYW0g5bin5ZCM6ZKJ77ybCi8vIOehrOWIh+S4jeWKoOi9rOWcuuWxgu+8jOWIgOaEn+eUsSBzbGFtIOiQveWumumCo+S4gOS4i+aJv+aLheKAlOKAlGJyaWVmIMKn5LqM57uZ5a6a77yJ44CCCi8vIOavj+WNoee7k+aehO+8mumhtumDqOe8luWPtyAyOHB4ICM4Qjk0OUXvvIjlt6bvvIkrIOinkuagh+Wwj+WtlyAyOHB477yI5Y+z77yJKyDkuLvlj6UgNjRweCBzbGFt77yIZz0xMCDotbfvvIwKLy8gc2NhbGUgMS4z4oaSMS4wIOWFreW4pyArIHNoYWtlWCBhbXAxMO+8jOWQjCBTMiBzbGFtU3R5bGXvvIkrIOekuuaEj+WMuiA1NjBweCDpq5jvvIh5IDMxMOKAkzg3MO+8ieOAggovLyDliqjmlYjnuqrlvovlpI3moLjvvJrlkITljaHpnZnmgIHlhYPntKAgMOKAkzYg5bin5reh5YWl77yI5Y2V5YWD57Sg77yJ77yMMTDigJMyNCDluKcgc2xhbSvkuLvliqjkvZzvvIjkuKTlhYPntKDvvInvvIwKLy8g5LmL5ZCOIOKJpTE0MCDluKfnnJ/pnZnmraLvvIjlgZznlZkg4omlMjAg5bin5a+M5L2Z77yJ77yb5Li75Yqo5pWI5puy57q/5YWo5Li6IGV4cG8tb3V0L3N3ZWVw77yM5pegIGxpbmVhcuOAggovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Cgpjb25zdCBDQVJEID0gMTcwOyAvLyDmr4/ljaHluKfmlbDvvIg1MTAvM++8iQpjb25zdCBISVQgPSAxMDsgLy8gc2xhbS90aWNrIOi4qeW4p++8muWNoTEgNjQw44CB5Y2hMiA4MTDjgIHljaEzIDk4MO+8iOWFqOWxgO+8iT0g5ZCE5Y2hIGc9MTAKCi8vIOKAlOKAlCDljaExIOeOr+W9ouWHoOS9lSDigJTigJQKY29uc3QgQ1ggPSA5NjA7CmNvbnN0IENZID0gMjkwOyAvLyBTVkcg5YaF5Z2Q5qCH77yI56S65oSP5Yy66aG2IDMxMO+8jHk9NTYwLzLvvIkKY29uc3QgUklOR19SID0gMTg1Owpjb25zdCBET1RfQV9ERUcgPSAtOTA7IC8vIOmtlOaQrTHvvIjpobbngrnvvIkKY29uc3QgRE9UX0JfREVHID0gMTIwOyAvLyBBTUTvvIjlj7PkuIvvvIkKCmNvbnN0IHBvbGFyID0gKGN4OiBudW1iZXIsIGN5OiBudW1iZXIsIHI6IG51bWJlciwgZGVnOiBudW1iZXIpID0+IHsKICBjb25zdCBhID0gKGRlZyAqIE1hdGguUEkpIC8gMTgwOwogIHJldHVybiB7IHg6IGN4ICsgciAqIE1hdGguY29zKGEpLCB5OiBjeSArIHIgKiBNYXRoLnNpbihhKSB9Owp9OwoKY29uc3QgYXJjUGF0aCA9IChjeDogbnVtYmVyLCBjeTogbnVtYmVyLCByOiBudW1iZXIsIGEwOiBudW1iZXIsIGExOiBudW1iZXIpOiBzdHJpbmcgPT4gewogIGNvbnN0IHAwID0gcG9sYXIoY3gsIGN5LCByLCBhMCk7CiAgY29uc3QgcDEgPSBwb2xhcihjeCwgY3ksIHIsIGExKTsKICBjb25zdCBsYXJnZSA9IE1hdGguYWJzKGExIC0gYTApID4gMTgwID8gMSA6IDA7CiAgcmV0dXJuIGBNICR7cDAueC50b0ZpeGVkKDIpfSAke3AwLnkudG9GaXhlZCgyKX0gQSAke3J9ICR7cn0gMCAke2xhcmdlfSAxICR7cDEueC50b0ZpeGVkKDIpfSAke3AxLnkudG9GaXhlZCgyKX1gOwp9OwoKLy8gc2xhbSDkuLvlj6XvvIjlkIwgUzIgc2xhbVN0eWxlIOWunueOsOWxgu+8jOWtl+WPt+aNoiA2NHB477yJCmNvbnN0IHNsYW1TdHlsZSA9IChmOiBudW1iZXIsIHN0YXJ0OiBudW1iZXIpOiBSZWFjdC5DU1NQcm9wZXJ0aWVzID0+IHsKICBjb25zdCBwID0gcHJvZyhmLCBzdGFydCwgNiwgRUFTRV9TV0VFUCk7CiAgY29uc3QgaG9sZCA9IHByb2coZiwgc3RhcnQsIDQsIEVBU0VfRVhQT19PVVQpOwogIHJldHVybiB7CiAgICBvcGFjaXR5OiBob2xkLAogICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWCgke3NoYWtlWChmLCBzdGFydCArIDYsIDEwKX1weCkgc2NhbGUoJHsoMS4zIC0gMC4zICogcCkudG9GaXhlZCg0KX0pYCwKICB9Owp9OwoKY29uc3QgQ2hyb21lOiBSZWFjdC5GQzx7CiAgZzogbnVtYmVyOwogIG51bTogc3RyaW5nOwogIG5vdGU6IHN0cmluZzsKICB0aXRsZTogUmVhY3QuUmVhY3ROb2RlOwp9PiA9ICh7IGcsIG51bSwgbm90ZSwgdGl0bGUgfSkgPT4gewogIGNvbnN0IGludHJvID0gcHJvZyhnLCAwLCA2LCBFQVNFX0VYUE9fT1VUKTsgLy8g5Y2h6Z2i6Z2Z5oCB5Lu25reh5YWl77yI56Gs5YiH5ZCO5YWI56uL6Iie5Y+w77yJCiAgcmV0dXJuICgKICAgIDw+CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICBsZWZ0OiAxMzAsCiAgICAgICAgICB0b3A6IDg0LAogICAgICAgICAgZm9udEZhbWlseTogRk9OVF9NT05PLAogICAgICAgICAgZm9udFNpemU6IDI4LAogICAgICAgICAgY29sb3I6IFRFUk1fR1JBWSwKICAgICAgICAgIG9wYWNpdHk6IGludHJvLAogICAgICAgIH19CiAgICAgID4KICAgICAgICB7bnVtfQogICAgICA8L2Rpdj4KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIHJpZ2h0OiAxMzAsCiAgICAgICAgICB0b3A6IDg0LAogICAgICAgICAgZm9udEZhbWlseTogRk9OVF9NT05PLAogICAgICAgICAgZm9udFNpemU6IDI4LAogICAgICAgICAgY29sb3I6IFRFUk1fR1JBWSwKICAgICAgICAgIHRleHRBbGlnbjogJ3JpZ2h0JywKICAgICAgICAgIG9wYWNpdHk6IGludHJvICogMC45MiwKICAgICAgICB9fQogICAgICA+CiAgICAgICAge25vdGV9CiAgICAgIDwvZGl2PgogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgdG9wOiAxNzYsCiAgICAgICAgICBsZWZ0OiAwLAogICAgICAgICAgd2lkdGg6IDE5MjAsCiAgICAgICAgICB0ZXh0QWxpZ246ICdjZW50ZXInLAogICAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgICAgZm9udFNpemU6IDY0LAogICAgICAgICAgY29sb3I6IFRFWFQsCiAgICAgICAgICAuLi5zbGFtU3R5bGUoZywgSElUKSwKICAgICAgICB9fQogICAgICA+CiAgICAgICAge3RpdGxlfQogICAgICA8L2Rpdj4KICAgIDwvPgogICk7Cn07CgovLyDigJTigJQg5Y2hMe+8muWNleeCuSDihpIg546v5b2i77yI5Lik5ZyG54K5ICsg5b6q546v566t5aS05rK/5byn6LWwIDEyIOW4p++8ieKAlOKAlApjb25zdCBDYXJkMTogUmVhY3QuRkM8eyBnOiBudW1iZXIgfT4gPSAoeyBnIH0pID0+IHsKICBjb25zdCBpbnRybyA9IHByb2coZywgMCwgNiwgRUFTRV9FWFBPX09VVCk7CiAgY29uc3Qgd2FsayA9IHByb2coZywgSElULCAxMiwgRUFTRV9TV0VFUCk7IC8vIDEyIOW4p+i1sOW8p++8iGJyaWVmIOe7meWumu+8ie+8jOWJjeWvhuWQjueWjz3noLgKICBjb25zdCBhbmcgPSBET1RfQV9ERUcgKyAoRE9UX0JfREVHIC0gRE9UX0FfREVHKSAqIHdhbGs7CiAgY29uc3QgdGlwID0gcG9sYXIoQ1gsIENZLCBSSU5HX1IsIGFuZyk7CiAgY29uc3QgYXJyaXZlZCA9IHdhbGsgPj0gMTsKICBjb25zdCBoYW5kb2ZmID0gcHJvZyhnLCAyMiwgMTAsIEVBU0VfRVhQT19PVVQpOyAvLyDkuqTmjqXvvJpBIOeGhCBCIOS6rgogIGNvbnN0IHBBID0gcG9sYXIoQ1gsIENZLCBSSU5HX1IsIERPVF9BX0RFRyk7CiAgY29uc3QgcEIgPSBwb2xhcihDWCwgQ1ksIFJJTkdfUiwgRE9UX0JfREVHKTsKICBjb25zdCBkb3RCID0gc3ByaW5nSW4oZywgMjIsIHsgdGVuc2lvbjogMTUwLCBmcmljdGlvbjogMTMgfSk7CgogIHJldHVybiAoCiAgICA8PgogICAgICA8Q2hyb21lCiAgICAgICAgZz17Z30KICAgICAgICBudW09IuS/ruWkjSAwMSIKICAgICAgICBub3RlPSLosIHmtLvnnYDosIHkuIrvvIwxMCDliIbpkp/lhrfljbQiCiAgICAgICAgdGl0bGU9ewogICAgICAgICAgPD4KICAgICAgICAgICAg4pGgIOWNleeCuSDihpIgPHNwYW4gc3R5bGU9e3sgY29sb3I6IExJTUUgfX0+546v5b2iPC9zcGFuPgogICAgICAgICAgPC8+CiAgICAgICAgfQogICAgICAvPgogICAgICA8c3ZnCiAgICAgICAgc3R5bGU9e3sgcG9zaXRpb246ICdhYnNvbHV0ZScsIGxlZnQ6IDAsIHRvcDogMzEwLCBvcGFjaXR5OiBpbnRybyB9fQogICAgICAgIHdpZHRoPXsxOTIwfQogICAgICAgIGhlaWdodD17NTYwfQogICAgICAgIHZpZXdCb3g9IjAgMCAxOTIwIDU2MCIKICAgICAgPgogICAgICAgIHsvKiDnjq/ovajpgZPvvJromZrnur/ngbDnjq8gKi99CiAgICAgICAgPGNpcmNsZQogICAgICAgICAgY3g9e0NYfQogICAgICAgICAgY3k9e0NZfQogICAgICAgICAgcj17UklOR19SfQogICAgICAgICAgZmlsbD0ibm9uZSIKICAgICAgICAgIHN0cm9rZT17VEVSTV9HUkFZfQogICAgICAgICAgc3Ryb2tlT3BhY2l0eT17MC4yOH0KICAgICAgICAgIHN0cm9rZVdpZHRoPXsyfQogICAgICAgICAgc3Ryb2tlRGFzaGFycmF5PSIzIDEyIgogICAgICAgIC8+CiAgICAgICAgey8qIOW3sui/h+W8p+i/ue+8muePiueRmuWunue6v++8iGNoYXJ0LWxpdmUgQSDlvI8i5YaZ5YWl54K55rK/57q/5o6o6L+bIueahOmZjemFje+8iSAqL30KICAgICAgICB7d2FsayA+IDAuMDA1ID8gKAogICAgICAgICAgPHBhdGgKICAgICAgICAgICAgZD17YXJjUGF0aChDWCwgQ1ksIFJJTkdfUiwgRE9UX0FfREVHLCBhbmcpfQogICAgICAgICAgICBmaWxsPSJub25lIgogICAgICAgICAgICBzdHJva2U9e0NPUkFMfQogICAgICAgICAgICBzdHJva2VXaWR0aD17NX0KICAgICAgICAgICAgc3Ryb2tlTGluZWNhcD0icm91bmQiCiAgICAgICAgICAgIG9wYWNpdHk9ezAuODV9CiAgICAgICAgICAvPgogICAgICAgICkgOiBudWxsfQogICAgICAgIHsvKiDnrq3lpLTvvJrotbDlvKfnmoQgbWFya2Vy77yM5YiwIEIg54K56am755WZICovfQogICAgICAgIHt3YWxrID4gMC4wMDUgPyAoCiAgICAgICAgICA8ZyB0cmFuc2Zvcm09e2B0cmFuc2xhdGUoJHt0aXAueC50b0ZpeGVkKDIpfSAke3RpcC55LnRvRml4ZWQoMil9KSByb3RhdGUoJHthbmcgKyA5MH0pYH0+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0gMCAtMTQgTCAxMSAxMCBMIC0xMSAxMCBaIiBmaWxsPXtDT1JBTH0gb3BhY2l0eT17YXJyaXZlZCA/IDAuOSA6IDF9IC8+CiAgICAgICAgICA8L2c+CiAgICAgICAgKSA6IG51bGx9CiAgICAgICAgey8qIOeCuSBB77ya6a2U5pCtMe+8iOmdkuafoO+8ie+8jOS6pOaOpeWQjui9rOaalyAqL30KICAgICAgICA8Y2lyY2xlIGN4PXtwQS54fSBjeT17cEEueX0gcj17MjZ9IGZpbGw9e0xJTUV9IG9wYWNpdHk9ezEgLSAwLjc4ICogaGFuZG9mZn0gLz4KICAgICAgICA8dGV4dAogICAgICAgICAgeD17cEEueH0KICAgICAgICAgIHk9e3BBLnkgLSA0Mn0KICAgICAgICAgIGZpbGw9e0xJTUV9CiAgICAgICAgICBmb250RmFtaWx5PXtGT05UX01PTk99CiAgICAgICAgICBmb250U2l6ZT17MjZ9CiAgICAgICAgICB0ZXh0QW5jaG9yPSJtaWRkbGUiCiAgICAgICAgICBvcGFjaXR5PXsxIC0gMC41ICogaGFuZG9mZn0KICAgICAgICA+CiAgICAgICAgICDprZTmkK0xCiAgICAgICAgPC90ZXh0PgogICAgICAgIHsvKiDngrkgQu+8mkFNRO+8iOaZuuiwsee0q++8ie+8jOaKtei+vuWQjiBzcHJpbmcg54K55LquICovfQogICAgICAgIDxjaXJjbGUKICAgICAgICAgIGN4PXtwQi54fQogICAgICAgICAgY3k9e3BCLnl9CiAgICAgICAgICByPXsyNn0KICAgICAgICAgIGZpbGw9e1pISVBVfQogICAgICAgICAgb3BhY2l0eT17MC4yNSArIDAuNzUgKiBNYXRoLm1pbigxLCBkb3RCKX0KICAgICAgICAvPgogICAgICAgIDx0ZXh0CiAgICAgICAgICB4PXtwQi54ICsgNDZ9CiAgICAgICAgICB5PXtwQi55ICsgOH0KICAgICAgICAgIGZpbGw9e1pISVBVfQogICAgICAgICAgZm9udEZhbWlseT17Rk9OVF9NT05PfQogICAgICAgICAgZm9udFNpemU9ezI2fQogICAgICAgICAgb3BhY2l0eT17TWF0aC5taW4oMSwgZG90Qil9CiAgICAgICAgPgogICAgICAgICAgQU1ECiAgICAgICAgPC90ZXh0PgogICAgICA8L3N2Zz4KICAgIDwvPgogICk7Cn07CgovLyDigJTigJQg5Y2hMu+8mumXuemSn+S6pOe7memXqOWklueahOaJi++8iOW8gOWFs+W5s+enuyArIOmAn+W6pumpseWKqOi/kOWKqOaooeeziu+8ieKAlOKAlAovLyBNb3Rpb25CbHVy77yacmVtb3Rpb24gNC4wLjUzOSDmnKrlr7zlh7ogPE1vdGlvbkJsdXIvPu+8jOaMiSBzaG90LXRyYW5zaXRpb25zIOWNoeeahAovLyBTcGVlZEJsdXIg5oCd6Lev5YGa5bin56Gu5a6a5a6e546w77ya5L2N56e75Ye95pWw5Y+W5Lit5b+D5beu5YiG6YCf5bqmIOKGkiDkuLvkvZPmsr/ov5DliqjmlrnlkJEgc2NhbGVYIOaLieS8uAovLyDvvIhzZOKJiDAuMDg1w5fpgJ/luqbjgIHlsIHpobYgMS4xOMOX77yJ77yM5Y+m5Y+gIGxhZyAyZi80ZiDkuKTmnprmrovlvbHvvIhoZWxwZXJzL21vdGlvbi50cyBgbGFnZ2VkYAovLyDor63kuYnvvJrpg73mmK/lkIzkuIDkvY3nva7nuq/lh73mlbDnmoTlu7bov5/ph4fmoLfvvIzkuI3ot6jluKfntK/np6/nirbmgIHvvInjgIIKY29uc3QgVFJBQ0tfRlJPTSA9IDYyMDsKY29uc3QgVFJBQ0tfVE8gPSAxMzAwOwpjb25zdCB0b2dnbGVYID0gKGc6IG51bWJlcik6IG51bWJlciA9PiBUUkFDS19GUk9NICsgKFRSQUNLX1RPIC0gVFJBQ0tfRlJPTSkgKiBwcm9nKGcsIEhJVCwgMTQsIEVBU0VfU1dFRVApOwoKY29uc3QgU3dpdGNoSWNvbjogUmVhY3QuRkM8eyB4OiBudW1iZXI7IGc6IG51bWJlciB9PiA9ICh7IHgsIGcgfSkgPT4gewogIGNvbnN0IHR4ID0gdG9nZ2xlWChnKTsKICBjb25zdCBzcGVlZCA9IE1hdGguYWJzKHR4IC0gdG9nZ2xlWChnIC0gMSkpOwogIGNvbnN0IHN4ID0gMSArIE1hdGgubWluKDAuMTgsIDAuMDAwNDUgKiBzcGVlZCk7IC8vIOawtOW5s+aLieS8uCA9IOaWueWQkeaAp+ezigogIGNvbnN0IGxhbmQgPSBwcm9nKGcsIDI2LCA4LCBFQVNFX0VYUE9fT1VUKTsgLy8g6JC95L2N5ZCOIGtub2Ig5ruR5Y+z44CB6Imy6L2s6Z2S5p+gCiAgY29uc3Qga25vYiA9IC01MiArIDEwNCAqIHByb2coZywgMjYsIDEwLCBFQVNFX1NXRUVQKTsKICBjb25zdCBnaG9zdHM6IEFycmF5PHsgZDogbnVtYmVyOyBvOiBudW1iZXIgfT4gPSBbCiAgICB7IGQ6IDIsIG86IE1hdGgubWluKDAuMTYsIHNwZWVkICogMC4wMDExKSB9LAogICAgeyBkOiA0LCBvOiBNYXRoLm1pbigwLjA5LCBzcGVlZCAqIDAuMDAwNikgfSwKICBdOwogIGNvbnN0IHBpbGwgPSAoY3g6IG51bWJlciwgb3BhY2l0eTogbnVtYmVyLCBnaG9zdDogYm9vbGVhbikgPT4gKAogICAgPGcga2V5PXtjeH0gdHJhbnNmb3JtPXtgdHJhbnNsYXRlKCR7Y3h9ICR7Q1l9KWB9IG9wYWNpdHk9e29wYWNpdHl9PgogICAgICA8cmVjdAogICAgICAgIHg9ey05NX0KICAgICAgICB5PXstNDJ9CiAgICAgICAgd2lkdGg9ezE5MH0KICAgICAgICBoZWlnaHQ9ezg0fQogICAgICAgIHJ4PXs0Mn0KICAgICAgICBmaWxsPXtnaG9zdCA/IFRFWFQgOiAncmdiYSgyNTUsMjU1LDI1NSwwLjA4KSd9CiAgICAgICAgc3Ryb2tlPXtnaG9zdCA/ICdub25lJyA6ICdyZ2JhKDI1NSwyNTUsMjU1LDAuMTQpJ30KICAgICAgICBzdHJva2VXaWR0aD17Mn0KICAgICAgLz4KICAgICAgeyFnaG9zdCA/ICgKICAgICAgICA8cmVjdAogICAgICAgICAgeD17LTk1fQogICAgICAgICAgeT17LTQyfQogICAgICAgICAgd2lkdGg9ezE5MH0KICAgICAgICAgIGhlaWdodD17ODR9CiAgICAgICAgICByeD17NDJ9CiAgICAgICAgICBmaWxsPXtMSU1FfQogICAgICAgICAgb3BhY2l0eT17MC4yMiAqIGxhbmR9CiAgICAgICAgLz4KICAgICAgKSA6IG51bGx9CiAgICAgIDxjaXJjbGUgY3g9e2dob3N0ID8gLTUyIDoga25vYn0gY3k9ezB9IHI9ezMwfSBmaWxsPXtnaG9zdCA/IFRFWFQgOiBsYW5kID4gMC41ID8gTElNRSA6IFRFUk1fR1JBWX0gLz4KICAgIDwvZz4KICApOwogIHJldHVybiAoCiAgICA8c3ZnCiAgICAgIHN0eWxlPXt7IHBvc2l0aW9uOiAnYWJzb2x1dGUnLCBsZWZ0OiAwLCB0b3A6IDMxMCB9fQogICAgICB3aWR0aD17MTkyMH0KICAgICAgaGVpZ2h0PXs1NjB9CiAgICAgIHZpZXdCb3g9IjAgMCAxOTIwIDU2MCIKICAgID4KICAgICAgey8qIOW5s+enu+i9qOmBk++8iOmdmeaAgeekuuaEj+W6lee6v++8iSAqL30KICAgICAgPGxpbmUKICAgICAgICB4MT17VFJBQ0tfRlJPTSAtIDkwfQogICAgICAgIHkxPXtDWX0KICAgICAgICB4Mj17VFJBQ0tfVE8gKyA5MH0KICAgICAgICB5Mj17Q1l9CiAgICAgICAgc3Ryb2tlPSIjRkZGRkZGIgogICAgICAgIHN0cm9rZU9wYWNpdHk9ezAuMDd9CiAgICAgICAgc3Ryb2tlV2lkdGg9ezR9CiAgICAgICAgc3Ryb2tlRGFzaGFycmF5PSIyIDE0IgogICAgICAvPgogICAgICB7Z2hvc3RzLm1hcCgoZ2gpID0+IChnaC5vID4gMC4wMDQgPyBwaWxsKHRvZ2dsZVgoZyAtIGdoLmQpLCBnaC5vLCB0cnVlKSA6IG51bGwpKX0KICAgICAgPGcgdHJhbnNmb3JtPXtgdHJhbnNsYXRlKCR7dHgudG9GaXhlZCgyKX0gJHtDWX0pIHNjYWxlKCR7c3gudG9GaXhlZCg0KX0gMSkgdHJhbnNsYXRlKCR7KC10eCkudG9GaXhlZCgyKX0gJHstQ1l9KWB9PgogICAgICAgIHtwaWxsKHR4LCAxLCBmYWxzZSl9CiAgICAgIDwvZz4KICAgICAgey8qIOW3pu+8muedoeinieeahOS6uu+8iOmXreecvOWchuiEuCArIHp677yJICovfQogICAgICA8ZyBvcGFjaXR5PXtwcm9nKGcsIDAsIDYsIEVBU0VfRVhQT19PVVQpfT4KICAgICAgICA8Y2lyY2xlIGN4PXt4fSBjeT17Q1kgLSAxMH0gcj17NjJ9IGZpbGw9Im5vbmUiIHN0cm9rZT17VEVSTV9HUkFZfSBzdHJva2VXaWR0aD17M30gLz4KICAgICAgICA8cGF0aAogICAgICAgICAgZD17YE0gJHt4IC0gMzh9ICR7Q1kgLSAxNn0gcSAxNSAxMiAzMCAwIE0gJHt4ICsgOH0gJHtDWSAtIDE2fSBxIDE1IDEyIDMwIDBgfQogICAgICAgICAgZmlsbD0ibm9uZSIKICAgICAgICAgIHN0cm9rZT17VEVSTV9HUkFZfQogICAgICAgICAgc3Ryb2tlV2lkdGg9ezN9CiAgICAgICAgICBzdHJva2VMaW5lY2FwPSJyb3VuZCIKICAgICAgICAvPgogICAgICAgIDx0ZXh0IHg9e3h9IHk9e0NZICsgMTA4fSBmaWxsPXtURVJNX0dSQVl9IGZvbnRGYW1pbHk9e0ZPTlRfTU9OT30gZm9udFNpemU9ezI2fSB0ZXh0QW5jaG9yPSJtaWRkbGUiPgogICAgICAgICAg552h6KeJ55qE5oiR77yI6L+b56iL77yJCiAgICAgICAgPC90ZXh0PgogICAgICA8L2c+CiAgICAgIHsvKiDlj7PvvJrpl6jlpJbvvIjpl6ggKyDpk4PvvIxicmlkZ2Ug55qE5omL77yJICovfQogICAgICA8ZyBvcGFjaXR5PXtwcm9nKGcsIDAsIDYsIEVBU0VfRVhQT19PVVQpfT4KICAgICAgICA8cmVjdCB4PXsxNTIwfSB5PXtDWSAtIDEyMH0gd2lkdGg9ezEzMH0gaGVpZ2h0PXsyMzB9IGZpbGw9Im5vbmUiIHN0cm9rZT17VEVSTV9HUkFZfSBzdHJva2VXaWR0aD17M30gLz4KICAgICAgICA8Y2lyY2xlIGN4PXsxNTQ1fSBjeT17Q1l9IHI9ezd9IGZpbGw9e1RFUk1fR1JBWX0gLz4KICAgICAgICA8ZyB0cmFuc2Zvcm09e2B0cmFuc2xhdGUoMTcwMCAke0NZIC0gOH0pYH0gc3Ryb2tlPXtURVJNX0dSQVl9IHN0cm9rZVdpZHRoPXszfSBmaWxsPSJub25lIj4KICAgICAgICAgIDxsaW5lIHgxPXswfSB5MT17LTU4fSB4Mj17MH0geTI9ey00MH0gLz4KICAgICAgICAgIDxwYXRoIGQ9Ik0gLTI2IDEwIHEgMCAtNDYgMjYgLTQ2IHEgMjYgMCAyNiA0NiBaIiAvPgogICAgICAgICAgPGNpcmNsZSBjeD17MH0gY3k9ezE4fSByPXs2fSBmaWxsPXtURVJNX0dSQVl9IHN0cm9rZT0ibm9uZSIgLz4KICAgICAgICA8L2c+CiAgICAgICAgPHRleHQgeD17MTU4NX0geT17Q1kgKyAxNTB9IGZpbGw9e1RFUk1fR1JBWX0gZm9udEZhbWlseT17Rk9OVF9NT05PfSBmb250U2l6ZT17MjZ9IHRleHRBbmNob3I9Im1pZGRsZSI+CiAgICAgICAgICDpl6jlpJbnmoQgYnJpZGdlCiAgICAgICAgPC90ZXh0PgogICAgICA8L2c+CiAgICA8L3N2Zz4KICApOwp9OwoKY29uc3QgQ2FyZDI6IFJlYWN0LkZDPHsgZzogbnVtYmVyIH0+ID0gKHsgZyB9KSA9PiAoCiAgPD4KICAgIDxDaHJvbWUKICAgICAgZz17Z30KICAgICAgbnVtPSLkv67lpI0gMDIiCiAgICAgIG5vdGU9ImJyaWRnZSDoh6rlt7HmlbDlpLHotKXvvIzoh6rlt7Hlj5HlkYroraYiCiAgICAgIHRpdGxlPXsKICAgICAgICA8PgogICAgICAgICAg4pGhIOmXuemSn+S4jeivpeaUvuWcqDxzcGFuIHN0eWxlPXt7IGNvbG9yOiBDT1JBTCB9fT7nnaHop4nnmoTkuro8L3NwYW4+5omL6YeMCiAgICAgICAgPC8+CiAgICAgIH0KICAgIC8+CiAgICA8U3dpdGNoSWNvbiB4PXszNjB9IGc9e2d9IC8+CiAgPC8+Cik7CgovLyDigJTigJQg5Y2hM++8mmtleSDlsLHmmK/ouqvku73vvIjkuIDmiooga2V5IOWIhuijguS4pOaKiu+8jGltcGFjdC1mZWVkYmFjayBCIOW8j++8ieKAlOKAlAovLyDpob/luKfvvJrlkb3kuK3luKcgaD0xMCDotbflhajlsYDlhrvnu5MgMmbvvIhyZW1hcO+8mmjiiaUxMiDml7blhoXlrrnluKcg4oiSMu+8m+WNoSBCIOWRvemXqCLlv4XpobvlhajlsYAi77yMCi8vIOacrOWNoeaJgOacieWKqOeUu+WxgueUqCByZu+8jOmXqueZvS/njq/nlKjnnJ/lrp7luKcgaOKAlOKAlOWNoeWFgeiuuCLlhrvnu5PmnJ/pl7TkuZ/opoHlj5HnlJ8i55qE5pWI5p6c6LWw55yf5a6e5bin77yJ44CCCmNvbnN0IEtleUdseXBoOiBSZWFjdC5GQzx7IGNvbG9yOiBzdHJpbmc7IGRpbT86IGJvb2xlYW4gfT4gPSAoeyBjb2xvciwgZGltIH0pID0+ICgKICA8ZyBzdHJva2U9e2NvbG9yfSBzdHJva2VXaWR0aD17MTN9IHN0cm9rZUxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIiBvcGFjaXR5PXtkaW0gPyAwLjc1IDogMX0+CiAgICA8Y2lyY2xlIGN4PXstNzB9IGN5PXswfSByPXszNH0gLz4KICAgIDxsaW5lIHgxPXstMzR9IHkxPXswfSB4Mj17ODZ9IHkyPXswfSAvPgogICAgPGxpbmUgeDE9ezYwfSB5MT17MH0geDI9ezYwfSB5Mj17MzB9IC8+CiAgICA8bGluZSB4MT17ODZ9IHkxPXswfSB4Mj17ODZ9IHkyPXsyNH0gLz4KICA8L2c+Cik7Cgpjb25zdCBDYXJkMzogUmVhY3QuRkM8eyBnOiBudW1iZXIgfT4gPSAoeyBnIH0pID0+IHsKICBjb25zdCByZiA9IGcgPD0gSElUID8gSElUIDogZyA+PSAxMiA/IGcgLSAyIDogMTA7IC8vIOWFqOWxgOmhv+W4pyAyZgogIGNvbnN0IGludHJvID0gcHJvZyhnLCAwLCA2LCBFQVNFX0VYUE9fT1VUKTsKICBjb25zdCB3aG9sZUluID0gcHJvZyhyZiwgMiwgNCk7IC8vIOaVtCBrZXkg5YWI6am75Zy6CiAgY29uc3QgcDEgPSBzcHJpbmdJbihyZiwgSElUICsgMiwgeyB0ZW5zaW9uOiAxNTAsIGZyaWN0aW9uOiAxMyB9KTsgLy8g6Kej5Ya75bin6LW35by55byACiAgY29uc3QgcDIgPSBzcHJpbmdJbihyZiwgSElUICsgNiwgeyB0ZW5zaW9uOiAxNTAsIGZyaWN0aW9uOiAxMyB9KTsgLy8g6ZSZ5bOwIDRm77yI5Y2hIEIg6YCQ5Ye76K+t5LmJ77yJCiAgY29uc3QgcmluZ1AgPSBwcm9nKGcsIEhJVCwgMTYsIEVBU0VfU1dFRVApOyAvLyDlhrLlh7vnjq/vvIjnnJ/lrp7luKfvvIzlhrvnu5PmnJ/pl7TkuZ/opoHlj5HnlJ/vvIkKICBjb25zdCBmbGFzaCA9IGcgPT09IEhJVCB8fCBnID09PSBISVQgKyAxID8gMC4xMiA6IDA7IC8vIOeZvemXqiAyZgogIGNvbnN0IHNoYWtlID0gc2hha2VYKGcsIEhJVCArIDIsIDYsIDgpOyAvLyDmgaLlpI3pnIflsY/vvJrnrKwgNGYg6LW3IDZweCDPhOKJiDIuMgogIGNvbnN0IGdvbmUgPSByZiA+PSBISVQ7IC8vIOaVtCBrZXkg5Zyo5ZG95Lit5bin6K6p5L2N57uZ5Lik5oqKCgogIHJldHVybiAoCiAgICA8PgogICAgICA8Q2hyb21lCiAgICAgICAgZz17Z30KICAgICAgICBudW09IuS/ruWkjSAwMyIKICAgICAgICBub3RlPSLml6cga2V5IOS9memineWwvSA9IOWug+aVtOadoee6v+aWreS+myIKICAgICAgICB0aXRsZT17CiAgICAgICAgICA8PgogICAgICAgICAgICDikaIgPHNwYW4gc3R5bGU9e3sgY29sb3I6IExJTUUgfX0+a2V5PC9zcGFuPiDlsLHmmK/ouqvku70KICAgICAgICAgIDwvPgogICAgICAgIH0KICAgICAgLz4KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGxlZnQ6IDAsCiAgICAgICAgICB0b3A6IDAsCiAgICAgICAgICB3aWR0aDogMTkyMCwKICAgICAgICAgIGhlaWdodDogMTA4MCwKICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogJyNGRkZGRkYnLAogICAgICAgICAgb3BhY2l0eTogZmxhc2gsCiAgICAgICAgICBwb2ludGVyRXZlbnRzOiAnbm9uZScsCiAgICAgICAgfX0KICAgICAgLz4KICAgICAgPHN2ZwogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGxlZnQ6IDAsCiAgICAgICAgICB0b3A6IDMxMCwKICAgICAgICAgIG9wYWNpdHk6IGludHJvLAogICAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWCgke3NoYWtlLnRvRml4ZWQoMil9cHgpYCwKICAgICAgICB9fQogICAgICAgIHdpZHRoPXsxOTIwfQogICAgICAgIGhlaWdodD17NTYwfQogICAgICAgIHZpZXdCb3g9IjAgMCAxOTIwIDU2MCIKICAgICAgPgogICAgICAgIHsvKiDlkb3kuK3liY3vvJrmlbQga2V577yI54Gw55m977yJ77yb5ZG95Lit5bin6LW377ya5YiG6KOC5Li65Lik5oqKICovfQogICAgICAgIHshZ29uZSA/ICgKICAgICAgICAgIDxnIHRyYW5zZm9ybT17YHRyYW5zbGF0ZSgke0NYfSAke0NZIC0gMjB9KSByb3RhdGUoLTI0KSBzY2FsZSgxLjUpYH0gb3BhY2l0eT17d2hvbGVJbn0+CiAgICAgICAgICAgIDxLZXlHbHlwaCBjb2xvcj17VEVYVH0gLz4KICAgICAgICAgIDwvZz4KICAgICAgICApIDogbnVsbH0KICAgICAgICB7Z29uZSA/ICgKICAgICAgICAgIDw+CiAgICAgICAgICAgIHsvKiDlhrLlh7vnjq/vvJrnmb3oiq/mianmlaMgKyDpnZLmn6DovonvvIwxNmYg5pS25bmy77yI5Y2hIEIg5LiJ5Lu25aWX55qE546v77yJICovfQogICAgICAgICAgICA8Y2lyY2xlCiAgICAgICAgICAgICAgY3g9e0NYfQogICAgICAgICAgICAgIGN5PXtDWSAtIDIwfQogICAgICAgICAgICAgIHI9ezQwICsgMzMwICogcmluZ1B9CiAgICAgICAgICAgICAgZmlsbD0ibm9uZSIKICAgICAgICAgICAgICBzdHJva2U9IiNGRkZGRkYiCiAgICAgICAgICAgICAgc3Ryb2tlV2lkdGg9ezIgKyA2ICogKDEgLSByaW5nUCl9CiAgICAgICAgICAgICAgb3BhY2l0eT17MC41NSAqICgxIC0gcmluZ1ApfQogICAgICAgICAgICAvPgogICAgICAgICAgICA8Y2lyY2xlCiAgICAgICAgICAgICAgY3g9e0NYfQogICAgICAgICAgICAgIGN5PXtDWSAtIDIwfQogICAgICAgICAgICAgIHI9ezQwICsgMjgwICogcmluZ1B9CiAgICAgICAgICAgICAgZmlsbD0ibm9uZSIKICAgICAgICAgICAgICBzdHJva2U9e0xJTUV9CiAgICAgICAgICAgICAgc3Ryb2tlV2lkdGg9ezN9CiAgICAgICAgICAgICAgb3BhY2l0eT17MC4zICogKDEgLSByaW5nUCl9CiAgICAgICAgICAgIC8+CiAgICAgICAgICAgIDxnIHRyYW5zZm9ybT17YHRyYW5zbGF0ZSgkeyhDWCAtIDI2MCAqIHAxKS50b0ZpeGVkKDIpfSAke0NZIC0gMjB9KSByb3RhdGUoLTI0KSBzY2FsZSgxLjUpYH0+CiAgICAgICAgICAgICAgPEtleUdseXBoIGNvbG9yPXtMSU1FfSAvPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIHRyYW5zZm9ybT17YHRyYW5zbGF0ZSgkeyhDWCArIDI1MCAqIHAyKS50b0ZpeGVkKDIpfSAke0NZIC0gMjB9KSByb3RhdGUoMjQpIHNjYWxlKC0xLjUgMS41KWB9PgogICAgICAgICAgICAgIDxLZXlHbHlwaCBjb2xvcj17VEVSTV9HUkFZfSBkaW0gLz4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8dGV4dAogICAgICAgICAgICAgIHg9e0NYIC0gMjYwfQogICAgICAgICAgICAgIHk9e0NZICsgMTMyfQogICAgICAgICAgICAgIGZpbGw9e0xJTUV9CiAgICAgICAgICAgICAgZm9udEZhbWlseT17Rk9OVF9NT05PfQogICAgICAgICAgICAgIGZvbnRTaXplPXsyNn0KICAgICAgICAgICAgICB0ZXh0QW5jaG9yPSJtaWRkbGUiCiAgICAgICAgICAgICAgb3BhY2l0eT17cDF9CiAgICAgICAgICAgID4KICAgICAgICAgICAgICDprZTmkK0xIMK3IOaWsCBrZXkg4oiaCiAgICAgICAgICAgIDwvdGV4dD4KICAgICAgICAgICAgPHRleHQKICAgICAgICAgICAgICB4PXtDWCArIDI1MH0KICAgICAgICAgICAgICB5PXtDWSArIDEzMn0KICAgICAgICAgICAgICBmaWxsPXtURVJNX0dSQVl9CiAgICAgICAgICAgICAgZm9udEZhbWlseT17Rk9OVF9NT05PfQogICAgICAgICAgICAgIGZvbnRTaXplPXsyNn0KICAgICAgICAgICAgICB0ZXh0QW5jaG9yPSJtaWRkbGUiCiAgICAgICAgICAgICAgb3BhY2l0eT17cDJ9CiAgICAgICAgICAgID4KICAgICAgICAgICAgICDprZTmkK0yIMK3IOaXpyBrZXkgw5cg5aSH55SoCiAgICAgICAgICAgIDwvdGV4dD4KICAgICAgICAgIDwvPgogICAgICAgICkgOiBudWxsfQogICAgICA8L3N2Zz4KICAgIDwvPgogICk7Cn07CgpleHBvcnQgY29uc3QgUzQ6IFJlYWN0LkZDID0gKCkgPT4gewogIGNvbnN0IGYgPSB1c2VDdXJyZW50RnJhbWUoKTsKICBjb25zdCBjYXJkID0gZiA8IENBUkQgPyAwIDogZiA8IDIgKiBDQVJEID8gMSA6IDI7CiAgY29uc3QgZyA9IGYgLSBjYXJkICogQ0FSRDsgLy8g5Y2h5YaF5binCiAgcmV0dXJuICgKICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sgYmFja2dyb3VuZENvbG9yOiAnIzA4MEIxMicgfX0+CiAgICAgIHtjYXJkID09PSAwID8gPENhcmQxIGc9e2d9IC8+IDogbnVsbH0KICAgICAge2NhcmQgPT09IDEgPyA8Q2FyZDIgZz17Z30gLz4gOiBudWxsfQogICAgICB7Y2FyZCA9PT0gMiA/IDxDYXJkMyBnPXtnfSAvPiA6IG51bGx9CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9Owo=
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { EASE_EXPO_OUT, EASE_SWEEP, prog, shakeX, springIn } from '../anim';
+import { CORAL, FONT_MONO, LIME, TERM_GRAY, TEXT, ZHIPU } from '../theme';
+
+// ============================================================================
+// S4 三个修复动作 · 全局 630–1140（brief §二·S4）
+// 配方卡：[data] chart-live-moves 简化（卡1 走弧=其 A 式"事件沿线推进"的降配用法，
+// 不取示波屏整套语境，记歧义）+ [effects] impact-feedback（卡3 B 式：命中=全局顿帧 2f
+// + 冲击环 + 恢复震屏 6px τ2.2，第 4f 起；负片anime-impact C 式不用——本段非全片唯一高潮）。
+// 三卡各 170 帧，卡间硬切「刀」（tick 三连全局 640/810/980 = 各卡 g=10，踩 slam 帧同钉；
+// 硬切不加转场层，刀感由 slam 落定那一下承担——brief §二给定）。
+// 每卡结构：顶部编号 28px #8B949E（左）+ 角标小字 28px（右）+ 主句 64px slam（g=10 起，
+// scale 1.3→1.0 六帧 + shakeX amp10，同 S2 slamStyle）+ 示意区 560px 高（y 310–870）。
+// 动效纪律复核：各卡静态元素 0–6 帧淡入（单元素），10–24 帧 slam+主动作（两元素），
+// 之后 ≥140 帧真静止（停留 ≥20 帧富余）；主动效曲线全为 expo-out/sweep，无 linear。
+// ============================================================================
+
+const CARD = 170; // 每卡帧数（510/3）
+const HIT = 10; // slam/tick 踩帧：卡1 640、卡2 810、卡3 980（全局）= 各卡 g=10
+
+// —— 卡1 环形几何 ——
+const CX = 960;
+const CY = 290; // SVG 内坐标（示意区顶 310，y=560/2）
+const RING_R = 185;
+const DOT_A_DEG = -90; // 魔搭1（顶点）
+const DOT_B_DEG = 120; // AMD（右下）
+
+const polar = (cx: number, cy: number, r: number, deg: number) => {
+  const a = (deg * Math.PI) / 180;
+  return { x: cx + r * Math.cos(a), y: cy + r * Math.sin(a) };
+};
+
+const arcPath = (cx: number, cy: number, r: number, a0: number, a1: number): string => {
+  const p0 = polar(cx, cy, r, a0);
+  const p1 = polar(cx, cy, r, a1);
+  const large = Math.abs(a1 - a0) > 180 ? 1 : 0;
+  return `M ${p0.x.toFixed(2)} ${p0.y.toFixed(2)} A ${r} ${r} 0 ${large} 1 ${p1.x.toFixed(2)} ${p1.y.toFixed(2)}`;
+};
+
+// slam 主句（同 S2 slamStyle 实现层，字号换 64px）
+const slamStyle = (f: number, start: number): React.CSSProperties => {
+  const p = prog(f, start, 6, EASE_SWEEP);
+  const hold = prog(f, start, 4, EASE_EXPO_OUT);
+  return {
+    opacity: hold,
+    transform: `translateX(${shakeX(f, start + 6, 10)}px) scale(${(1.3 - 0.3 * p).toFixed(4)})`,
+  };
+};
+
+const Chrome: React.FC<{
+  g: number;
+  num: string;
+  note: string;
+  title: React.ReactNode;
+}> = ({ g, num, note, title }) => {
+  const intro = prog(g, 0, 6, EASE_EXPO_OUT); // 卡面静态件淡入（硬切后先立舞台）
+  return (
+    <>
+      <div
+        style={{
+          position: 'absolute',
+          left: 130,
+          top: 84,
+          fontFamily: FONT_MONO,
+          fontSize: 28,
+          color: TERM_GRAY,
+          opacity: intro,
+        }}
+      >
+        {num}
+      </div>
+      <div
+        style={{
+          position: 'absolute',
+          right: 130,
+          top: 84,
+          fontFamily: FONT_MONO,
+          fontSize: 28,
+          color: TERM_GRAY,
+          textAlign: 'right',
+          opacity: intro * 0.92,
+        }}
+      >
+        {note}
+      </div>
+      <div
+        style={{
+          position: 'absolute',
+          top: 176,
+          left: 0,
+          width: 1920,
+          textAlign: 'center',
+          fontWeight: 700,
+          fontSize: 64,
+          color: TEXT,
+          ...slamStyle(g, HIT),
+        }}
+      >
+        {title}
+      </div>
+    </>
+  );
+};
+
+// —— 卡1：单点 → 环形（两圆点 + 循环箭头沿弧走 12 帧）——
+const Card1: React.FC<{ g: number }> = ({ g }) => {
+  const intro = prog(g, 0, 6, EASE_EXPO_OUT);
+  const walk = prog(g, HIT, 12, EASE_SWEEP); // 12 帧走弧（brief 给定），前密后疏=砸
+  const ang = DOT_A_DEG + (DOT_B_DEG - DOT_A_DEG) * walk;
+  const tip = polar(CX, CY, RING_R, ang);
+  const arrived = walk >= 1;
+  const handoff = prog(g, 22, 10, EASE_EXPO_OUT); // 交接：A 熄 B 亮
+  const pA = polar(CX, CY, RING_R, DOT_A_DEG);
+  const pB = polar(CX, CY, RING_R, DOT_B_DEG);
+  const dotB = springIn(g, 22, { tension: 150, friction: 13 });
+
+  return (
+    <>
+      <Chrome
+        g={g}
+        num="修复 01"
+        note="谁活着谁上，10 分钟冷却"
+        title={
+          <>
+            ① 单点 → <span style={{ color: LIME }}>环形</span>
+          </>
+        }
+      />
+      <svg
+        style={{ position: 'absolute', left: 0, top: 310, opacity: intro }}
+        width={1920}
+        height={560}
+        viewBox="0 0 1920 560"
+      >
+        {/* 环轨道：虚线灰环 */}
+        <circle
+          cx={CX}
+          cy={CY}
+          r={RING_R}
+          fill="none"
+          stroke={TERM_GRAY}
+          strokeOpacity={0.28}
+          strokeWidth={2}
+          strokeDasharray="3 12"
+        />
+        {/* 已过弧迹：珊瑚实线（chart-live A 式"写入点沿线推进"的降配） */}
+        {walk > 0.005 ? (
+          <path
+            d={arcPath(CX, CY, RING_R, DOT_A_DEG, ang)}
+            fill="none"
+            stroke={CORAL}
+            strokeWidth={5}
+            strokeLinecap="round"
+            opacity={0.85}
+          />
+        ) : null}
+        {/* 箭头：走弧的 marker，到 B 点驻留 */}
+        {walk > 0.005 ? (
+          <g transform={`translate(${tip.x.toFixed(2)} ${tip.y.toFixed(2)}) rotate(${ang + 90})`}>
+            <path d="M 0 -14 L 11 10 L -11 10 Z" fill={CORAL} opacity={arrived ? 0.9 : 1} />
+          </g>
+        ) : null}
+        {/* 点 A：魔搭1（青柠），交接后转暗 */}
+        <circle cx={pA.x} cy={pA.y} r={26} fill={LIME} opacity={1 - 0.78 * handoff} />
+        <text
+          x={pA.x}
+          y={pA.y - 42}
+          fill={LIME}
+          fontFamily={FONT_MONO}
+          fontSize={26}
+          textAnchor="middle"
+          opacity={1 - 0.5 * handoff}
+        >
+          魔搭1
+        </text>
+        {/* 点 B：AMD（智谱紫），抵达后 spring 点亮 */}
+        <circle
+          cx={pB.x}
+          cy={pB.y}
+          r={26}
+          fill={ZHIPU}
+          opacity={0.25 + 0.75 * Math.min(1, dotB)}
+        />
+        <text
+          x={pB.x + 46}
+          y={pB.y + 8}
+          fill={ZHIPU}
+          fontFamily={FONT_MONO}
+          fontSize={26}
+          opacity={Math.min(1, dotB)}
+        >
+          AMD
+        </text>
+      </svg>
+    </>
+  );
+};
+
+// —— 卡2：闹钟交给门外的手（开关平移 + 速度驱动运动模糊）——
+// MotionBlur：remotion 4.0.539 未导出 <MotionBlur/>，按 shot-transitions 卡的
+// SpeedBlur 思路做帧确定实现：位移函数取中心差分速度 → 主体沿运动方向 scaleX 拉伸
+// （sd≈0.085×速度、封顶 1.18×），另叠 lag 2f/4f 两枚残影（helpers/motion.ts `lagged`
+// 语义：都是同一位置纯函数的延迟采样，不跨帧累积状态）。
+const TRACK_FROM = 620;
+const TRACK_TO = 1300;
+const toggleX = (g: number): number => TRACK_FROM + (TRACK_TO - TRACK_FROM) * prog(g, HIT, 14, EASE_SWEEP);
+
+const SwitchIcon: React.FC<{ x: number; g: number }> = ({ x, g }) => {
+  const tx = toggleX(g);
+  const speed = Math.abs(tx - toggleX(g - 1));
+  const sx = 1 + Math.min(0.18, 0.00045 * speed); // 水平拉伸 = 方向性糊
+  const land = prog(g, 26, 8, EASE_EXPO_OUT); // 落位后 knob 滑右、色转青柠
+  const knob = -52 + 104 * prog(g, 26, 10, EASE_SWEEP);
+  const ghosts: Array<{ d: number; o: number }> = [
+    { d: 2, o: Math.min(0.16, speed * 0.0011) },
+    { d: 4, o: Math.min(0.09, speed * 0.0006) },
+  ];
+  const pill = (cx: number, opacity: number, ghost: boolean) => (
+    <g key={cx} transform={`translate(${cx} ${CY})`} opacity={opacity}>
+      <rect
+        x={-95}
+        y={-42}
+        width={190}
+        height={84}
+        rx={42}
+        fill={ghost ? TEXT : 'rgba(255,255,255,0.08)'}
+        stroke={ghost ? 'none' : 'rgba(255,255,255,0.14)'}
+        strokeWidth={2}
+      />
+      {!ghost ? (
+        <rect
+          x={-95}
+          y={-42}
+          width={190}
+          height={84}
+          rx={42}
+          fill={LIME}
+          opacity={0.22 * land}
+        />
+      ) : null}
+      <circle cx={ghost ? -52 : knob} cy={0} r={30} fill={ghost ? TEXT : land > 0.5 ? LIME : TERM_GRAY} />
+    </g>
+  );
+  return (
+    <svg
+      style={{ position: 'absolute', left: 0, top: 310 }}
+      width={1920}
+      height={560}
+      viewBox="0 0 1920 560"
+    >
+      {/* 平移轨道（静态示意底线） */}
+      <line
+        x1={TRACK_FROM - 90}
+        y1={CY}
+        x2={TRACK_TO + 90}
+        y2={CY}
+        stroke="#FFFFFF"
+        strokeOpacity={0.07}
+        strokeWidth={4}
+        strokeDasharray="2 14"
+      />
+      {ghosts.map((gh) => (gh.o > 0.004 ? pill(toggleX(g - gh.d), gh.o, true) : null))}
+      <g transform={`translate(${tx.toFixed(2)} ${CY}) scale(${sx.toFixed(4)} 1) translate(${(-tx).toFixed(2)} ${-CY})`}>
+        {pill(tx, 1, false)}
+      </g>
+      {/* 左：睡觉的人（闭眼圆脸 + zz） */}
+      <g opacity={prog(g, 0, 6, EASE_EXPO_OUT)}>
+        <circle cx={x} cy={CY - 10} r={62} fill="none" stroke={TERM_GRAY} strokeWidth={3} />
+        <path
+          d={`M ${x - 38} ${CY - 16} q 15 12 30 0 M ${x + 8} ${CY - 16} q 15 12 30 0`}
+          fill="none"
+          stroke={TERM_GRAY}
+          strokeWidth={3}
+          strokeLinecap="round"
+        />
+        <text x={x} y={CY + 108} fill={TERM_GRAY} fontFamily={FONT_MONO} fontSize={26} textAnchor="middle">
+          睡觉的我（进程）
+        </text>
+      </g>
+      {/* 右：门外（门 + 铃，bridge 的手） */}
+      <g opacity={prog(g, 0, 6, EASE_EXPO_OUT)}>
+        <rect x={1520} y={CY - 120} width={130} height={230} fill="none" stroke={TERM_GRAY} strokeWidth={3} />
+        <circle cx={1545} cy={CY} r={7} fill={TERM_GRAY} />
+        <g transform={`translate(1700 ${CY - 8})`} stroke={TERM_GRAY} strokeWidth={3} fill="none">
+          <line x1={0} y1={-58} x2={0} y2={-40} />
+          <path d="M -26 10 q 0 -46 26 -46 q 26 0 26 46 Z" />
+          <circle cx={0} cy={18} r={6} fill={TERM_GRAY} stroke="none" />
+        </g>
+        <text x={1585} y={CY + 150} fill={TERM_GRAY} fontFamily={FONT_MONO} fontSize={26} textAnchor="middle">
+          门外的 bridge
+        </text>
+      </g>
+    </svg>
+  );
+};
+
+const Card2: React.FC<{ g: number }> = ({ g }) => (
+  <>
+    <Chrome
+      g={g}
+      num="修复 02"
+      note="bridge 自己数失败，自己发告警"
+      title={
+        <>
+          ② 闹钟不该放在<span style={{ color: CORAL }}>睡觉的人</span>手里
+        </>
+      }
+    />
+    <SwitchIcon x={360} g={g} />
+  </>
+);
+
+// —— 卡3：key 就是身份（一把 key 分裂两把，impact-feedback B 式）——
+// 顿帧：命中帧 h=10 起全局冻结 2f（remap：h≥12 时内容帧 −2；卡 B 命门"必须全局"，
+// 本卡所有动画层用 rf，闪白/环用真实帧 h——卡允许"冻结期间也要发生"的效果走真实帧）。
+const KeyGlyph: React.FC<{ color: string; dim?: boolean }> = ({ color, dim }) => (
+  <g stroke={color} strokeWidth={13} strokeLinecap="round" fill="none" opacity={dim ? 0.75 : 1}>
+    <circle cx={-70} cy={0} r={34} />
+    <line x1={-34} y1={0} x2={86} y2={0} />
+    <line x1={60} y1={0} x2={60} y2={30} />
+    <line x1={86} y1={0} x2={86} y2={24} />
+  </g>
+);
+
+const Card3: React.FC<{ g: number }> = ({ g }) => {
+  const rf = g <= HIT ? HIT : g >= 12 ? g - 2 : 10; // 全局顿帧 2f
+  const intro = prog(g, 0, 6, EASE_EXPO_OUT);
+  const wholeIn = prog(rf, 2, 4); // 整 key 先驻场
+  const p1 = springIn(rf, HIT + 2, { tension: 150, friction: 13 }); // 解冻帧起弹开
+  const p2 = springIn(rf, HIT + 6, { tension: 150, friction: 13 }); // 错峰 4f（卡 B 逐击语义）
+  const ringP = prog(g, HIT, 16, EASE_SWEEP); // 冲击环（真实帧，冻结期间也要发生）
+  const flash = g === HIT || g === HIT + 1 ? 0.12 : 0; // 白闪 2f
+  const shake = shakeX(g, HIT + 2, 6, 8); // 恢复震屏：第 4f 起 6px τ≈2.2
+  const gone = rf >= HIT; // 整 key 在命中帧让位给两把
+
+  return (
+    <>
+      <Chrome
+        g={g}
+        num="修复 03"
+        note="旧 key 余额尽 = 它整条线断供"
+        title={
+          <>
+            ③ <span style={{ color: LIME }}>key</span> 就是身份
+          </>
+        }
+      />
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          top: 0,
+          width: 1920,
+          height: 1080,
+          backgroundColor: '#FFFFFF',
+          opacity: flash,
+          pointerEvents: 'none',
+        }}
+      />
+      <svg
+        style={{
+          position: 'absolute',
+          left: 0,
+          top: 310,
+          opacity: intro,
+          transform: `translateX(${shake.toFixed(2)}px)`,
+        }}
+        width={1920}
+        height={560}
+        viewBox="0 0 1920 560"
+      >
+        {/* 命中前：整 key（灰白）；命中帧起：分裂为两把 */}
+        {!gone ? (
+          <g transform={`translate(${CX} ${CY - 20}) rotate(-24) scale(1.5)`} opacity={wholeIn}>
+            <KeyGlyph color={TEXT} />
+          </g>
+        ) : null}
+        {gone ? (
+          <>
+            {/* 冲击环：白芯扩散 + 青柠辉，16f 收干（卡 B 三件套的环） */}
+            <circle
+              cx={CX}
+              cy={CY - 20}
+              r={40 + 330 * ringP}
+              fill="none"
+              stroke="#FFFFFF"
+              strokeWidth={2 + 6 * (1 - ringP)}
+              opacity={0.55 * (1 - ringP)}
+            />
+            <circle
+              cx={CX}
+              cy={CY - 20}
+              r={40 + 280 * ringP}
+              fill="none"
+              stroke={LIME}
+              strokeWidth={3}
+              opacity={0.3 * (1 - ringP)}
+            />
+            <g transform={`translate(${(CX - 260 * p1).toFixed(2)} ${CY - 20}) rotate(-24) scale(1.5)`}>
+              <KeyGlyph color={LIME} />
+            </g>
+            <g transform={`translate(${(CX + 250 * p2).toFixed(2)} ${CY - 20}) rotate(24) scale(-1.5 1.5)`}>
+              <KeyGlyph color={TERM_GRAY} dim />
+            </g>
+            <text
+              x={CX - 260}
+              y={CY + 132}
+              fill={LIME}
+              fontFamily={FONT_MONO}
+              fontSize={26}
+              textAnchor="middle"
+              opacity={p1}
+            >
+              魔搭1 · 新 key √
+            </text>
+            <text
+              x={CX + 250}
+              y={CY + 132}
+              fill={TERM_GRAY}
+              fontFamily={FONT_MONO}
+              fontSize={26}
+              textAnchor="middle"
+              opacity={p2}
+            >
+              魔搭2 · 旧 key × 备用
+            </text>
+          </>
+        ) : null}
+      </svg>
+    </>
+  );
+};
+
+export const S4: React.FC = () => {
+  const f = useCurrentFrame();
+  const card = f < CARD ? 0 : f < 2 * CARD ? 1 : 2;
+  const g = f - card * CARD; // 卡内帧
+  return (
+    <AbsoluteFill style={{ backgroundColor: '#080B12' }}>
+      {card === 0 ? <Card1 g={g} /> : null}
+      {card === 1 ? <Card2 g={g} /> : null}
+      {card === 2 ? <Card3 g={g} /> : null}
+    </AbsoluteFill>
+  );
+};

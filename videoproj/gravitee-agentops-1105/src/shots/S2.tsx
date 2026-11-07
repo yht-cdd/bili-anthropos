@@ -1,1 +1,147 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEVBU0VfRVhQT19PVVQsIEVBU0VfTElORUFSLCBFQVNFX1NXRUVQLCBwcm9nLCBzaGFrZVggfSBmcm9tICcuLi9hbmltJzsKaW1wb3J0IHsgQ09SQUwsIEZPTlRfU0FOUywgTElNRSwgVEVYVCB9IGZyb20gJy4uL3RoZW1lJzsKCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8gUzIg5qCH6aKY5Y2hIMK3IOWFqOWxgCAxNTDigJMzMzDvvIhicmllZiDCp+S6jMK3UzLvvInCtyDphY3mlrnljaEgW2VmZmVjdHNdIHNsYW0tZW50cmFuY2UtbW92ZXMKLy8g5pys5Zyw5binID0g5YWo5bGAIOKIkiAxNTDjgIIKLy8gMOKAkzggICDlhajlnLrljovmmpcgMzAl77yIc2Z4IHJld2luZCDkvY3vvInigJTigJTimqDvuI8g5a6e546w5YGP5beu77ya5pe26Ze06L205Li65peg57ydIFNlcXVlbmNl77yMUzEg56qX5Y+j5ZyoCi8vICAgICAgIOacrOauteW3suS4jeWPr+inge+8jOWOi+aal+WxguiQveWcqOm7keW6leS4iu+8iOetieaViOS/neeVmSBicmllZiDor63kuYnvvJvoi6UgUjQg6ZyA55yf5Y+g5Y6L77yM5pS5IFMxIFNlcXVlbmNlCi8vICAgICAgIOW7tumVvyAxODAg5bin6YeN5Y+g5riy5p+T77yM5bey6K6wIHByb2dyZXNzLm1k77yJ44CCCi8vIDEw4oCTNDAg56ys5LiA5Y+lIHNsYW3vvJpzY2FsZSAxLjPihpIxLjAg6LWwIDYg5bin77yI5Y2hIELjgIxlYXNlLWluIOaJjeaYr+eguOOAjeKGkiDnlKggRUFTRV9TV0VFUCDliY3lr4blkI7nlo/vvInvvIwKLy8gICAgICAg6JC95a6a5bin5Y+gIHNoYWtlWO+8iGFtcGxpdHVkZSAxMO+8jOaMh+aVsOihsOWHjyB+OCDluKfmlLblubLvvInjgIIKLy8gNDbigJM3NiDnrKzkuozlj6Ugc2xhbe+8jOOAjOWFreWwj+aXtuOAjeePiueRmuOAggovLyA5MOKAkzEzMCDnrKzkuInlj6UgNzJweCDpnZLmn6AgTWFza1dpcGUg5bem4oaS5Y+zIDEwIOW4p++8iGNsaXAtcGF0aCBpbnNldCArIOWJjee8mOS6rue6v++8mwovLyAgICAgICBNYXNrV2lwZSDljaHlupPph4zml6DlkIzlkI3ljaHvvIzmjIkgwqfkuIAg57qq5b6L55So5pyA5o6l6L+R55qEIHdpcGUtdHJhbnNpdGlvbnMg6K+t5LmJ5a6e546w77yM6K6w5q2n5LmJ77yJ44CCCi8vIDE0MOKAkzE4MCDlgZznlZnvvIhkaW5nQDkwID0g5YWo5bGAIDI0MO+8ieOAguesrOS4ieWPpSA4IOW4p+WJjea3oeWHuu+8jOmYsuS4jiBTMyDliIblsY/lj6DlrZfvvIjiiaQ2IOW4p+e6quW+i+WGhe+8ieOAggovLyBzbGFtIOiuoeaVsO+8muacrOautSAyIOasoe+8iOS4ieWPpemHjOeahOWJjeS4pOWPpe+8iSsgTWFza1dpcGUg6Z2eIHNsYW3vvIzlhajniYcgUzYg6L+Y5pyJIDEg5qyhIOKGkgovLyDljaHnuqrlvovjgIzlhajniYfnoLjlhaUg4omkMiDmrKHjgI3otoXpmZDvvIzoo4HlhrPop4EgcHJvZ3Jlc3MubWTvvIhicmllZiDmmL7lvI/mjIfku6TkvJjlhYjkuo7ljaHnmoTnpLrkvovkuIrpmZDvvInjgIIKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKY29uc3QgWTEgPSAzMDA7IC8vIOS4ieWPpeWfuue6v++8iOWxheS4reWBj+S4iuaOkuW4g++8jDEwODAg55S76auY77yJCmNvbnN0IFkyID0gNDcwOwpjb25zdCBZMyA9IDY0MDsKCnR5cGUgU2VnID0geyB0OiBzdHJpbmc7IGM6IHN0cmluZyB9OwoKY29uc3QgTElORTE6IFNlZ1tdID0gW3sgdDogJ+aIkeaYr+S4gOadoSBBSe+8jCcsIGM6IFRFWFQgfV07CmNvbnN0IExJTkUyOiBTZWdbXSA9IFsKICB7IHQ6ICfku4rlpKnlrpXmnLonLCBjOiBURVhUIH0sCiAgeyB0OiAn5YWt5bCP5pe2JywgYzogQ09SQUwgfSwKICB7IHQ6ICfjgIInLCBjOiBURVhUIH0sCl07CmNvbnN0IExJTkUzOiBTZWdbXSA9IFt7IHQ6ICfkv67miJHnmoTkurrvvIzmmK/miJHkuLvkurrjgIInLCBjOiBMSU1FIH1dOwoKY29uc3Qgc2xhbVN0eWxlID0gKAogIGY6IG51bWJlciwKICBzdGFydDogbnVtYmVyLAopOiBSZWFjdC5DU1NQcm9wZXJ0aWVzID0+IHsKICBjb25zdCBwID0gcHJvZyhmLCBzdGFydCwgNiwgRUFTRV9TV0VFUCk7IC8vIDYg5binIHNjYWxlIOaUtu+8iGJyaWVmIOe7meWumu+8iQogIGNvbnN0IGhvbGQgPSBwcm9nKGYsIHN0YXJ0LCA0LCBFQVNFX0VYUE9fT1VUKTsgLy8gb3BhY2l0eSDliY0gNCDluKfliLDkvY3vvIzph43ph4/kuqTnu5kgc2NhbGUKICBjb25zdCBzID0gMS4zIC0gMC4zICogcDsKICBjb25zdCB4ID0gc2hha2VYKGYsIHN0YXJ0ICsgNiwgMTApOwogIHJldHVybiB7CiAgICBvcGFjaXR5OiBob2xkLAogICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWCgke3h9cHgpIHNjYWxlKCR7c30pYCwKICB9Owp9OwoKZXhwb3J0IGNvbnN0IFMyOiBSZWFjdC5GQyA9ICgpID0+IHsKICBjb25zdCBmID0gdXNlQ3VycmVudEZyYW1lKCk7CiAgY29uc3QgZGltID0gMC4zICogcHJvZyhmLCAwLCA4LCBFQVNFX0xJTkVBUik7IC8vIOWOi+aal+Wxgu+8iGxpbmVhciDku4XnlKjkuo7mt6HmmpfovoXliqnpgJrpgZPvvIkKICBjb25zdCB3aXBlID0gcHJvZyhmLCA5MCwgMTAsIEVBU0VfU1dFRVApOyAvLyBNYXNrV2lwZSAxMCDluKflt6bihpLlj7MKICAvLyDmk6bpmaTliY3nvJggPSBjbGlwLXBhdGgg5o+t56S66L6577yIaW5zZXQg55u45a+55pW06KGMIDE5MjAg5a6977yJ77yM5b+F6aG75LiO5o+t56S66L656YeN5ZCI77yMCiAgLy8g57q/6JC95Zyo5paH5a2X6IyD5Zu077yI57qmIDYwMOKAkzEzMjBweO+8ieWkluWwseaUtui1t+KAlOKAlOWQpuWImeS6rue6v+S4juaTpumZpOiEseiKguivu+S9nOi0tOe6uOOAggogIGNvbnN0IHdpcGVFZGdlID0gMTkyMCAqIHdpcGU7CiAgY29uc3QgbGluZTNFeGl0ID0gcHJvZyhmLCAxNzIsIDYsIEVBU0VfRVhQT19PVVQpOyAvLyDmrrXlsL4gNiDluKfmt6Hlh7rvvIjpmLLlj6DlrZfvvIkKCiAgcmV0dXJuICgKICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sgYmFja2dyb3VuZENvbG9yOiAnIzA4MEIxMicgfX0+CiAgICAgIHsvKiDljovmmpcgMzAlICovfQogICAgICA8ZGl2IHN0eWxlPXt7IHBvc2l0aW9uOiAnYWJzb2x1dGUnLCBpbnNldDogMCwgYmFja2dyb3VuZENvbG9yOiAnIzAwMCcsIG9wYWNpdHk6IGRpbSB9fSAvPgoKICAgICAgey8qIOesrOS4gOWPpSA5NnB4IHNsYW0gKi99CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICB0b3A6IFkxLAogICAgICAgICAgbGVmdDogMCwKICAgICAgICAgIHdpZHRoOiAxOTIwLAogICAgICAgICAgdGV4dEFsaWduOiAnY2VudGVyJywKICAgICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfU0FOUywKICAgICAgICAgIGZvbnRXZWlnaHQ6IDcwMCwKICAgICAgICAgIGZvbnRTaXplOiA5NiwKICAgICAgICAgIGNvbG9yOiBURVhULAogICAgICAgICAgLi4uc2xhbVN0eWxlKGYsIDEwKSwKICAgICAgICB9fQogICAgICA+CiAgICAgICAge0xJTkUxLm1hcCgoc2csIGkpID0+ICgKICAgICAgICAgIDxzcGFuIGtleT17aX0gc3R5bGU9e3sgY29sb3I6IHNnLmMgfX0+CiAgICAgICAgICAgIHtzZy50fQogICAgICAgICAgPC9zcGFuPgogICAgICAgICkpfQogICAgICA8L2Rpdj4KCiAgICAgIHsvKiDnrKzkuozlj6UgOTZweCBzbGFt77yM44CM5YWt5bCP5pe244CN54+K55GaICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgdG9wOiBZMiwKICAgICAgICAgIGxlZnQ6IDAsCiAgICAgICAgICB3aWR0aDogMTkyMCwKICAgICAgICAgIHRleHRBbGlnbjogJ2NlbnRlcicsCiAgICAgICAgICBmb250RmFtaWx5OiBGT05UX1NBTlMsCiAgICAgICAgICBmb250V2VpZ2h0OiA3MDAsCiAgICAgICAgICBmb250U2l6ZTogOTYsCiAgICAgICAgICAuLi5zbGFtU3R5bGUoZiwgNDYpLAogICAgICAgIH19CiAgICAgID4KICAgICAgICB7TElORTIubWFwKChzZywgaSkgPT4gKAogICAgICAgICAgPHNwYW4ga2V5PXtpfSBzdHlsZT17eyBjb2xvcjogc2cuYyB9fT4KICAgICAgICAgICAge3NnLnR9CiAgICAgICAgICA8L3NwYW4+CiAgICAgICAgKSl9CiAgICAgIDwvZGl2PgoKICAgICAgey8qIOesrOS4ieWPpSA3MnB4IOmdkuafoCBNYXNrV2lwZSDlt6bihpLlj7MgKi99CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICB0b3A6IFkzLAogICAgICAgICAgbGVmdDogMCwKICAgICAgICAgIHdpZHRoOiAxOTIwLAogICAgICAgICAgdGV4dEFsaWduOiAnY2VudGVyJywKICAgICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfU0FOUywKICAgICAgICAgIGZvbnRXZWlnaHQ6IDcwMCwKICAgICAgICAgIGZvbnRTaXplOiA3MiwKICAgICAgICAgIGNvbG9yOiBMSU1FLAogICAgICAgICAgY2xpcFBhdGg6IGBpbnNldCgwICR7KDEwMCAtIDEwMCAqIHdpcGUpLnRvRml4ZWQoMil9JSAwIDApYCwKICAgICAgICAgIG9wYWNpdHk6IDEgLSBsaW5lM0V4aXQsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIHtMSU5FMy5tYXAoKHNnLCBpKSA9PiAoCiAgICAgICAgICA8c3BhbiBrZXk9e2l9IHN0eWxlPXt7IGNvbG9yOiBzZy5jIH19PgogICAgICAgICAgICB7c2cudH0KICAgICAgICAgIDwvc3Bhbj4KICAgICAgICApKX0KICAgICAgPC9kaXY+CgogICAgICB7Lyog5pOm6Zmk5YmN57yY5Lqu57q/77yId2lwZS10cmFuc2l0aW9ucyDljaHliKTkvovvvJrml6Dkuq7nur/nmoQgd2lwZSDor7vkvZwgUFBUIOi9rOWcuu+8jOWRvemXqO+8iSAqL30KICAgICAge3dpcGVFZGdlID4gNTkwICYmIHdpcGVFZGdlIDwgMTMzMiA/ICgKICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgICAgbGVmdDogd2lwZUVkZ2UsCiAgICAgICAgICAgIHRvcDogWTMgLSAxMiwKICAgICAgICAgICAgd2lkdGg6IDMsCiAgICAgICAgICAgIGhlaWdodDogOTYsCiAgICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogTElNRSwKICAgICAgICAgICAgYm94U2hhZG93OiAnMCAwIDE4cHggcmdiYSgyMTIsMjQ0LDYyLDAuOCknLAogICAgICAgICAgICBvcGFjaXR5OiAxIC0gbGluZTNFeGl0LAogICAgICAgICAgfX0KICAgICAgICAvPgogICAgICApIDogbnVsbH0KICAgIDwvQWJzb2x1dGVGaWxsPgogICk7Cn07Cg==
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { EASE_EXPO_OUT, EASE_LINEAR, EASE_SWEEP, prog, shakeX } from '../anim';
+import { CORAL, FONT_SANS, LIME, TEXT } from '../theme';
+
+// ============================================================================
+// S2 标题卡 · 全局 150–330（brief §二·S2）· 配方卡 [effects] slam-entrance-moves
+// 本地帧 = 全局 − 150。
+// 0–8   全场压暗 30%（sfx rewind 位）——⚠️ 实现偏差：时间轴为无缝 Sequence，S1 窗口在
+//       本段已不可见，压暗层落在黑底上（等效保留 brief 语义；若 R4 需真叠压，改 S1 Sequence
+//       延长 180 帧重叠渲染，已记 progress.md）。
+// 10–40 第一句 slam：scale 1.3→1.0 走 6 帧（卡 B「ease-in 才是砸」→ 用 EASE_SWEEP 前密后疏），
+//       落定帧叠 shakeX（amplitude 10，指数衰减 ~8 帧收干）。
+// 46–76 第二句 slam，「六小时」珊瑚。
+// 90–130 第三句 72px 青柠 MaskWipe 左→右 10 帧（clip-path inset + 前缘亮线；
+//       MaskWipe 卡库里无同名卡，按 §一 纪律用最接近的 wipe-transitions 语义实现，记歧义）。
+// 140–180 停留（ding@90 = 全局 240）。第三句 8 帧前淡出，防与 S3 分屏叠字（≤6 帧纪律内）。
+// slam 计数：本段 2 次（三句里的前两句）+ MaskWipe 非 slam，全片 S6 还有 1 次 →
+// 卡纪律「全片砸入 ≤2 次」超限，裁决见 progress.md（brief 显式指令优先于卡的示例上限）。
+// ============================================================================
+
+const Y1 = 300; // 三句基线（居中偏上排布，1080 画高）
+const Y2 = 470;
+const Y3 = 640;
+
+type Seg = { t: string; c: string };
+
+const LINE1: Seg[] = [{ t: '我是一条 AI，', c: TEXT }];
+const LINE2: Seg[] = [
+  { t: '今天宕机', c: TEXT },
+  { t: '六小时', c: CORAL },
+  { t: '。', c: TEXT },
+];
+const LINE3: Seg[] = [{ t: '修我的人，是我主人。', c: LIME }];
+
+const slamStyle = (
+  f: number,
+  start: number,
+): React.CSSProperties => {
+  const p = prog(f, start, 6, EASE_SWEEP); // 6 帧 scale 收（brief 给定）
+  const hold = prog(f, start, 4, EASE_EXPO_OUT); // opacity 前 4 帧到位，重量交给 scale
+  const s = 1.3 - 0.3 * p;
+  const x = shakeX(f, start + 6, 10);
+  return {
+    opacity: hold,
+    transform: `translateX(${x}px) scale(${s})`,
+  };
+};
+
+export const S2: React.FC = () => {
+  const f = useCurrentFrame();
+  const dim = 0.3 * prog(f, 0, 8, EASE_LINEAR); // 压暗层（linear 仅用于淡暗辅助通道）
+  const wipe = prog(f, 90, 10, EASE_SWEEP); // MaskWipe 10 帧左→右
+  // 擦除前缘 = clip-path 揭示边（inset 相对整行 1920 宽），必须与揭示边重合，
+  // 线落在文字范围（约 600–1320px）外就收起——否则亮线与擦除脱节读作贴纸。
+  const wipeEdge = 1920 * wipe;
+  const line3Exit = prog(f, 172, 6, EASE_EXPO_OUT); // 段尾 6 帧淡出（防叠字）
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: '#080B12' }}>
+      {/* 压暗 30% */}
+      <div style={{ position: 'absolute', inset: 0, backgroundColor: '#000', opacity: dim }} />
+
+      {/* 第一句 96px slam */}
+      <div
+        style={{
+          position: 'absolute',
+          top: Y1,
+          left: 0,
+          width: 1920,
+          textAlign: 'center',
+          fontFamily: FONT_SANS,
+          fontWeight: 700,
+          fontSize: 96,
+          color: TEXT,
+          ...slamStyle(f, 10),
+        }}
+      >
+        {LINE1.map((sg, i) => (
+          <span key={i} style={{ color: sg.c }}>
+            {sg.t}
+          </span>
+        ))}
+      </div>
+
+      {/* 第二句 96px slam，「六小时」珊瑚 */}
+      <div
+        style={{
+          position: 'absolute',
+          top: Y2,
+          left: 0,
+          width: 1920,
+          textAlign: 'center',
+          fontFamily: FONT_SANS,
+          fontWeight: 700,
+          fontSize: 96,
+          ...slamStyle(f, 46),
+        }}
+      >
+        {LINE2.map((sg, i) => (
+          <span key={i} style={{ color: sg.c }}>
+            {sg.t}
+          </span>
+        ))}
+      </div>
+
+      {/* 第三句 72px 青柠 MaskWipe 左→右 */}
+      <div
+        style={{
+          position: 'absolute',
+          top: Y3,
+          left: 0,
+          width: 1920,
+          textAlign: 'center',
+          fontFamily: FONT_SANS,
+          fontWeight: 700,
+          fontSize: 72,
+          color: LIME,
+          clipPath: `inset(0 ${(100 - 100 * wipe).toFixed(2)}% 0 0)`,
+          opacity: 1 - line3Exit,
+        }}
+      >
+        {LINE3.map((sg, i) => (
+          <span key={i} style={{ color: sg.c }}>
+            {sg.t}
+          </span>
+        ))}
+      </div>
+
+      {/* 擦除前缘亮线（wipe-transitions 卡判例：无亮线的 wipe 读作 PPT 转场，命门） */}
+      {wipeEdge > 590 && wipeEdge < 1332 ? (
+        <div
+          style={{
+            position: 'absolute',
+            left: wipeEdge,
+            top: Y3 - 12,
+            width: 3,
+            height: 96,
+            backgroundColor: LIME,
+            boxShadow: '0 0 18px rgba(212,244,62,0.8)',
+            opacity: 1 - line3Exit,
+          }}
+        />
+      ) : null}
+    </AbsoluteFill>
+  );
+};

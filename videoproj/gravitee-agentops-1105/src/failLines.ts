@@ -1,1 +1,31 @@
-Ly8gUzEg6YCQ6KGM5pWw5o2uIOKAlCBicmllZiDCp+S6jMK3UzEgKyDmtL7ljZXpk4HlvovikaLvvJoxMyDooYzljaDkvY3mlofmnKzkuIDlvovku44gZGlhcnkvMjAyNi0xMS0wNC5tZAovLyDmnKzmlofku7blhoUqKuecn+WunuWtmOWcqOeahOiHquWKqOWNoOS9jeihjCoq5o+Q5Y+W77yM5pe26Ze05oiz5Lil5qC86YCS5aKe77yM5LiN57yW5pWw44CB5LiN5LuO5Yir55qE5pel5a2Q5oyq44CCCi8vIOWFqOaWhyAxMyDooYzvvJowMjoxMyAvIDAyOjIzIOS4pOadoeOAjOaXtumZkOWGheayoee7k+adn+OAjeWNoOS9jSArIDA2OjIwIOi1tyAxMSDmnaHjgIzmqKHlnovmsqHot5HotbfmnaXjgI0KLy8g5Y2g5L2N77yI5YW25LitIDIwOjQ3IOWOn+aWh+S4uuOAjOi/meS4gOi9ruaooeWei+ayoei3kei1t+adpeOAjeWPmOS9k++8jOeFp+aKhO+8ieOAggovLyDimqDvuI8gYnJpZWYg5q2n5LmJ6KOB5Yaz77yI6K6wIHByb2dyZXNzLm1k77yJ77yaYnJpZWYg5YaZ44CM5pe26Ze05oizIDEyOjMx4oaSMjI6MTcg6YCS5aKe44CNw5cxM++8jAovLyDkvYbor6XljLrpl7TnnJ/lrp7ljaDkvY3lj6rmnIkgOSDmnaHvvIzlh5HkuI3mu6EgMTPvvJvku6XmtL7ljZXikaLvvIjmnKzmlofku7bnnJ/lrp7mj5Dlj5YgKyDlhbEgMTMg6KGMICsKLy8g6YCS5aKe77yJ5Li65YeG77yM5Yy66Ze05omp5Li65pys5paH5Lu25YWo6YOo55qEIDAyOjEz4oaSMjI6MTfjgIIKLy8g5YmN5LiA54mI5pa95bel77yI5bm26KGM5rS+5Y2V77yJ5pu+6KGlIDA4OjQ1LzE0OjI1IOS4pOadoeKAlOKAlOmCo+aYr+aXpeiusOato+aWhyoq5byV6L+w55qEIDExLTAzIOS6i+S7tioq77yMCi8vIOS4jeaYr+acrOaWh+S7tueahOWNoOS9jeihjO+8jOS4lCAyMDo0NyDlj5jkvZPmioTplJnvvJvmjInnnJ/lrp7mgKfnuqrlvovmm7/mjaLjgIIKCmV4cG9ydCBjb25zdCBGQUlMX1RFWFQgPSAn77yI5qih5Z6L5rKh6LeR6LW35p2l77ya5qih5Z6L6aKd5bqm55So5a6M5LqG77yINDI5IC8g5L2Z6aKd5LiN6Laz77yJ77yJJzsKZXhwb3J0IGNvbnN0IEZBSUxfVEVYVF9XQUtFID0gJ++8iOi/meS4gOi9ruaooeWei+ayoei3kei1t+adpe+8muaooeWei+mineW6pueUqOWujOS6hu+8iDQyOSAvIOS9memineS4jei2s++8ie+8iSc7CmV4cG9ydCBjb25zdCBGQUlMX1RFWFRfVElNRU9VVCA9ICfvvIjml7bpmZDlhoXmsqHnu5PmnZ/vvIzlhYjorrDkuIDnrJTvvJvot5HlrozmiJHkvJrmiormraPmlofooaXov5vkuIvkuIDnr4fvvIknOwoKZXhwb3J0IHR5cGUgRmFpbExpbmUgPSB7IHRzOiBzdHJpbmc7IHRleHQ6IHN0cmluZyB9OwoKZXhwb3J0IGNvbnN0IEZBSUxfTElORVM6IEZhaWxMaW5lW10gPSBbCiAgeyB0czogJzAyOjEzJywgdGV4dDogRkFJTF9URVhUX1RJTUVPVVQgfSwKICB7IHRzOiAnMDI6MjMnLCB0ZXh0OiBGQUlMX1RFWFRfVElNRU9VVCB9LAogIHsgdHM6ICcwNjoyMCcsIHRleHQ6IEZBSUxfVEVYVCB9LAogIHsgdHM6ICcwNzoyMicsIHRleHQ6IEZBSUxfVEVYVCB9LAogIHsgdHM6ICcxMjozMScsIHRleHQ6IEZBSUxfVEVYVCB9LAogIHsgdHM6ICcxMjozMicsIHRleHQ6IEZBSUxfVEVYVCB9LAogIHsgdHM6ICcxNzozMicsIHRleHQ6IEZBSUxfVEVYVCB9LAogIHsgdHM6ICcxNzo0NCcsIHRleHQ6IEZBSUxfVEVYVCB9LAogIHsgdHM6ICcxODowMScsIHRleHQ6IEZBSUxfVEVYVCB9LAogIHsgdHM6ICcyMDo0NycsIHRleHQ6IEZBSUxfVEVYVF9XQUtFIH0sCiAgeyB0czogJzIxOjUzJywgdGV4dDogRkFJTF9URVhUIH0sCiAgeyB0czogJzIyOjEzJywgdGV4dDogRkFJTF9URVhUIH0sCiAgeyB0czogJzIyOjE3JywgdGV4dDogRkFJTF9URVhUIH0sCl07Cg==
+// S1 逐行数据 — brief §二·S1 + 派单铁律③：13 行占位文本一律从 diary/2026-11-04.md
+// 本文件内**真实存在的自动占位行**提取，时间戳严格递增，不编数、不从别的日子挪。
+// 全文 13 行：02:13 / 02:23 两条「时限内没结束」占位 + 06:20 起 11 条「模型没跑起来」
+// 占位（其中 20:47 原文为「这一轮模型没跑起来」变体，照抄）。
+// ⚠️ brief 歧义裁决（记 progress.md）：brief 写「时间戳 12:31→22:17 递增」×13，
+// 但该区间真实占位只有 9 条，凑不满 13；以派单③（本文件真实提取 + 共 13 行 +
+// 递增）为准，区间扩为本文件全部的 02:13→22:17。
+// 前一版施工（并行派单）曾补 08:45/14:25 两条——那是日记正文**引述的 11-03 事件**，
+// 不是本文件的占位行，且 20:47 变体抄错；按真实性纪律替换。
+
+export const FAIL_TEXT = '（模型没跑起来：模型额度用完了（429 / 余额不足））';
+export const FAIL_TEXT_WAKE = '（这一轮模型没跑起来：模型额度用完了（429 / 余额不足））';
+export const FAIL_TEXT_TIMEOUT = '（时限内没结束，先记一笔；跑完我会把正文补进下一篇）';
+
+export type FailLine = { ts: string; text: string };
+
+export const FAIL_LINES: FailLine[] = [
+  { ts: '02:13', text: FAIL_TEXT_TIMEOUT },
+  { ts: '02:23', text: FAIL_TEXT_TIMEOUT },
+  { ts: '06:20', text: FAIL_TEXT },
+  { ts: '07:22', text: FAIL_TEXT },
+  { ts: '12:31', text: FAIL_TEXT },
+  { ts: '12:32', text: FAIL_TEXT },
+  { ts: '17:32', text: FAIL_TEXT },
+  { ts: '17:44', text: FAIL_TEXT },
+  { ts: '18:01', text: FAIL_TEXT },
+  { ts: '20:47', text: FAIL_TEXT_WAKE },
+  { ts: '21:53', text: FAIL_TEXT },
+  { ts: '22:13', text: FAIL_TEXT },
+  { ts: '22:17', text: FAIL_TEXT },
+];

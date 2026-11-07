@@ -1,1 +1,54 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCBTZXF1ZW5jZSB9IGZyb20gJ3JlbW90aW9uJzsKaW1wb3J0IHsgU2hvdFBsYWNlaG9sZGVyIH0gZnJvbSAnLi9jb21wb25lbnRzL1Nob3RQbGFjZWhvbGRlcic7CmltcG9ydCB7IFMxIH0gZnJvbSAnLi9zaG90cy9TMSc7CmltcG9ydCB7IFMyIH0gZnJvbSAnLi9zaG90cy9TMic7CmltcG9ydCB7IFMzIH0gZnJvbSAnLi9zaG90cy9TMyc7CmltcG9ydCB7IFM0IH0gZnJvbSAnLi9zaG90cy9TNCc7CmltcG9ydCB7IFM1IH0gZnJvbSAnLi9zaG90cy9TNSc7CmltcG9ydCB7IEZPTlRfU0FOUywgVE9UQUxfRlJBTUVTIH0gZnJvbSAnLi90aGVtZSc7CgovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ci8vIOS4u+aXtumXtOi9tCDigJQgYnJpZWYgwqfkuozmkYTlvbHooajvvIg3IOautSDCtyAzMGZwcyDCtyAxNjUwIOW4pyA9IDU1LjBz77yJ44CCCi8vIFIxIOiMg+WbtO+8mumqqOaetiArIFMx4oCTUzMg5a6e6KOF77ybUzTigJNTNyDljaDkvY3vvIhSMjogUzTigJNTNe+8jFIzOiBTNuKAk1M3K2F1ZGlv77yJ44CCCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCnR5cGUgU2xvdCA9IHsKICBpZDogc3RyaW5nOwogIG5hbWU6IHN0cmluZzsKICBmcm9tOiBudW1iZXI7CiAgZHVyYXRpb246IG51bWJlcjsKICBjb21wPzogUmVhY3QuRkM7Cn07CgpleHBvcnQgY29uc3QgU0VHOiBTbG90W10gPSBbCiAgeyBpZDogJ1MxJywgbmFtZTogJ+WGt+W8gOWcuiDCtyAxMyDooYzmlq3kvpvml6Xlv5cnLCBmcm9tOiAwLCBkdXJhdGlvbjogMTUwLCBjb21wOiBTMSB9LAogIHsgaWQ6ICdTMicsIG5hbWU6ICfmoIfpopjljaEgwrcgc2xhbSDkuInlj6UnLCBmcm9tOiAxNTAsIGR1cmF0aW9uOiAxODAsIGNvbXA6IFMyIH0sCiAgeyBpZDogJ1MzJywgbmFtZTogJ+mXrumimCDCtyDliIblsY/lr7nmr5QnLCBmcm9tOiAzMzAsIGR1cmF0aW9uOiAzMDAsIGNvbXA6IFMzIH0sCiAgeyBpZDogJ1M0JywgbmFtZTogJ+S4ieS4quS/ruWkjeWKqOS9nCcsIGZyb206IDYzMCwgZHVyYXRpb246IDUxMCwgY29tcDogUzQgfSwKICB7IGlkOiAnUzUnLCBuYW1lOiAn5rex5aSc5omL5pyvIMK3IGRpZmYnLCBmcm9tOiAxMTQwLCBkdXJhdGlvbjogMjQwLCBjb21wOiBTNSB9LAogIHsgaWQ6ICdTNicsIG5hbWU6ICfmlLbmnZ8gwrcgc2xhbSDlj4zlj6UnLCBmcm9tOiAxMzgwLCBkdXJhdGlvbjogMTIwIH0sCiAgeyBpZDogJ1M3JywgbmFtZTogJ+WwvuWNoSDCtyDlsIHpnaIgUHVzaEluJywgZnJvbTogMTUwMCwgZHVyYXRpb246IDE1MCB9LApdOwoKLy8g5pe26Ze06L205a6M5pW05oCn6Ieq5qOA77ya5peg57yd55u45o6l5LiU5oC76ZW/IDE2NTDvvIjlkIwgdjMgTWFpbiDnmoTmlq3oqIDvvIkKbGV0IGN1cnNvciA9IDA7CmZvciAoY29uc3QgcyBvZiBTRUcpIHsKICBpZiAocy5mcm9tICE9PSBjdXJzb3IpIHRocm93IG5ldyBFcnJvcihg5pe26Ze06L205pat6KOC77yaJHtzLmlkfSDlupTku44gJHtjdXJzb3J9IOW8gOWni2ApOwogIGN1cnNvciArPSBzLmR1cmF0aW9uOwp9CmlmIChjdXJzb3IgIT09IFRPVEFMX0ZSQU1FUykgdGhyb3cgbmV3IEVycm9yKGDml7bpl7TovbTmgLvplb8gJHtjdXJzb3J9IOKJoCAke1RPVEFMX0ZSQU1FU31gKTsKCmV4cG9ydCBjb25zdCBGaWxtOiBSZWFjdC5GQyA9ICgpID0+ICgKICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGJhY2tncm91bmRDb2xvcjogJyMwMDAnLCBmb250RmFtaWx5OiBGT05UX1NBTlMgfX0+CiAgICB7U0VHLm1hcCgocykgPT4gKAogICAgICA8U2VxdWVuY2Uga2V5PXtzLmlkfSBmcm9tPXtzLmZyb219IGR1cmF0aW9uSW5GcmFtZXM9e3MuZHVyYXRpb259IG5hbWU9e3MuaWR9PgogICAgICAgIHtzLmNvbXAgPyAoCiAgICAgICAgICA8cy5jb21wIC8+CiAgICAgICAgKSA6ICgKICAgICAgICAgIDxTaG90UGxhY2Vob2xkZXIgbGFiZWw9e3MuaWR9IG5hbWU9e3MubmFtZX0gZnJvbT17cy5mcm9tfSB0bz17cy5mcm9tICsgcy5kdXJhdGlvbn0gLz4KICAgICAgICApfQogICAgICA8L1NlcXVlbmNlPgogICAgKSl9CiAgPC9BYnNvbHV0ZUZpbGw+Cik7Cg==
+import React from 'react';
+import { AbsoluteFill, Sequence } from 'remotion';
+import { ShotPlaceholder } from './components/ShotPlaceholder';
+import { S1 } from './shots/S1';
+import { S2 } from './shots/S2';
+import { S3 } from './shots/S3';
+import { S4 } from './shots/S4';
+import { S5 } from './shots/S5';
+import { FONT_SANS, TOTAL_FRAMES } from './theme';
+
+// ============================================================================
+// 主时间轴 — brief §二摄影表（7 段 · 30fps · 1650 帧 = 55.0s）。
+// R1 范围：骨架 + S1–S3 实装；S4–S7 占位（R2: S4–S5，R3: S6–S7+audio）。
+// ============================================================================
+
+type Slot = {
+  id: string;
+  name: string;
+  from: number;
+  duration: number;
+  comp?: React.FC;
+};
+
+export const SEG: Slot[] = [
+  { id: 'S1', name: '冷开场 · 13 行断供日志', from: 0, duration: 150, comp: S1 },
+  { id: 'S2', name: '标题卡 · slam 三句', from: 150, duration: 180, comp: S2 },
+  { id: 'S3', name: '问题 · 分屏对比', from: 330, duration: 300, comp: S3 },
+  { id: 'S4', name: '三个修复动作', from: 630, duration: 510, comp: S4 },
+  { id: 'S5', name: '深夜手术 · diff', from: 1140, duration: 240, comp: S5 },
+  { id: 'S6', name: '收束 · slam 双句', from: 1380, duration: 120 },
+  { id: 'S7', name: '尾卡 · 封面 PushIn', from: 1500, duration: 150 },
+];
+
+// 时间轴完整性自检：无缝相接且总长 1650（同 v3 Main 的断言）
+let cursor = 0;
+for (const s of SEG) {
+  if (s.from !== cursor) throw new Error(`时间轴断裂：${s.id} 应从 ${cursor} 开始`);
+  cursor += s.duration;
+}
+if (cursor !== TOTAL_FRAMES) throw new Error(`时间轴总长 ${cursor} ≠ ${TOTAL_FRAMES}`);
+
+export const Film: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: '#000', fontFamily: FONT_SANS }}>
+    {SEG.map((s) => (
+      <Sequence key={s.id} from={s.from} durationInFrames={s.duration} name={s.id}>
+        {s.comp ? (
+          <s.comp />
+        ) : (
+          <ShotPlaceholder label={s.id} name={s.name} from={s.from} to={s.from + s.duration} />
+        )}
+      </Sequence>
+    ))}
+  </AbsoluteFill>
+);

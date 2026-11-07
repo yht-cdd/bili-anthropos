@@ -1,1 +1,28 @@
-Ly8g5YWo5bGA6KeG6KeJ57O757ufIOKAlCBicmllZiDCp+S4gO+8iOiJsuWAvOayv+eUqCB2MyB0aGVtZe+8jOmUmeivr+e6oi/nu4jnq6/ngbDmjIkgYnJpZWYg57uZ5a6a5YC877yJCi8vIDE2Ojkg6ZOB5b6L77yIMjAyNi0xMS0wMyDkuLvkurrku6TvvInvvJoxOTIww5cxMDgwQDMwZnBz77yM5oC7IDE2NTAg5binID0gNTUuMHMKZXhwb3J0IGNvbnN0IFcgPSAxOTIwOwpleHBvcnQgY29uc3QgSCA9IDEwODA7CmV4cG9ydCBjb25zdCBGUFMgPSAzMDsKZXhwb3J0IGNvbnN0IFRPVEFMX0ZSQU1FUyA9IDE2NTA7IC8vIDU1LjBzIMK3IGJyaWVmIMKn5LiACgovLyDog4zmma8KZXhwb3J0IGNvbnN0IEJHID0gJyMwODBCMTInOyAvLyDlupXvvIjmuJDlj5jkuIrnq68gLyDluLjop4Tnuq/oibLlupXvvIkKZXhwb3J0IGNvbnN0IEJHX0dSQURfVE9QID0gJyMwODBCMTInOwpleHBvcnQgY29uc3QgQkdfR1JBRF9CT1RUT00gPSAnIzEyMTgyMic7CmV4cG9ydCBjb25zdCBTVVJGQUNFID0gJyMwRjEzMUMnOyAvLyDnu4jnq6/nqpfooajpnaLvvIjlkIwgdjPvvIkKCi8vIOaWh+WtlyAvIOWTgeeJjOiJsu+8iGJyaWVmIMKn5LiA57uZ5a6a5YC877yJCmV4cG9ydCBjb25zdCBURVhUID0gJyNFQ0U5RTEnOyAvLyDnsbPnmb0KZXhwb3J0IGNvbnN0IENPUkFMID0gJyNEOTc3NTcnOyAvLyDnj4rnkZoKZXhwb3J0IGNvbnN0IExJTUUgPSAnI0Q0RjQzRSc7IC8vIOmdkuafoApleHBvcnQgY29uc3QgUkVEID0gJyNGMDUyNEQnOyAvLyDplJnor6/nuqIKZXhwb3J0IGNvbnN0IFRFUk1fR1JBWSA9ICcjOEI5NDlFJzsgLy8g57uI56uv54GwCmV4cG9ydCBjb25zdCBaSElQVSA9ICcjNUI1Q0YyJzsgLy8g5pm66LCx57SrCmV4cG9ydCBjb25zdCBHUkFZID0gJyM2QjcyODAnOyAvLyDpobbmoI8gLyDnnInpopjvvIjlkIwgdjPvvIkKZXhwb3J0IGNvbnN0IFdISVRFID0gJyNGRkZGRkYnOwoKLy8g5a2X5L2T77ya5YWc5bqV6ZO+5ZCMIHYz77yI5pys5py6IE5vdG8gU2FucyBDSksg5bey6KOF77ybSmV0QnJhaW5zIE1vbm8g5pyq6KOF5oyJ6ZO+6LWw77yJCmV4cG9ydCBjb25zdCBGT05UX1NBTlMgPQogICInTm90byBTYW5zIENKSyBTQycsICdOb3RvIFNhbnMgU0MnLCAnTm90byBTYW5zIENKSyBKUCcsICdQaW5nRmFuZyBTQycsICdNaWNyb3NvZnQgWWFIZWknLCBzYW5zLXNlcmlmIjsKZXhwb3J0IGNvbnN0IEZPTlRfTU9OTyA9CiAgIidKZXRCcmFpbnMgTW9ubycsIHVpLW1vbm9zcGFjZSwgJ1NGIE1vbm8nLCBNZW5sbywgQ29uc29sYXMsICdOb3RvIFNhbnMgTW9ubyBDSksgU0MnLCBtb25vc3BhY2UiOwo=
+// 全局视觉系统 — brief §一（色值沿用 v3 theme，错误红/终端灰按 brief 给定值）
+// 16:9 铁律（2026-11-03 主人令）：1920×1080@30fps，总 1650 帧 = 55.0s
+export const W = 1920;
+export const H = 1080;
+export const FPS = 30;
+export const TOTAL_FRAMES = 1650; // 55.0s · brief §一
+
+// 背景
+export const BG = '#080B12'; // 底（渐变上端 / 常规纯色底）
+export const BG_GRAD_TOP = '#080B12';
+export const BG_GRAD_BOTTOM = '#121822';
+export const SURFACE = '#0F131C'; // 终端窗表面（同 v3）
+
+// 文字 / 品牌色（brief §一给定值）
+export const TEXT = '#ECE9E1'; // 米白
+export const CORAL = '#D97757'; // 珊瑚
+export const LIME = '#D4F43E'; // 青柠
+export const RED = '#F0524D'; // 错误红
+export const TERM_GRAY = '#8B949E'; // 终端灰
+export const ZHIPU = '#5B5CF2'; // 智谱紫
+export const GRAY = '#6B7280'; // 顶栏 / 眉题（同 v3）
+export const WHITE = '#FFFFFF';
+
+// 字体：兜底链同 v3（本机 Noto Sans CJK 已装；JetBrains Mono 未装按链走）
+export const FONT_SANS =
+  "'Noto Sans CJK SC', 'Noto Sans SC', 'Noto Sans CJK JP', 'PingFang SC', 'Microsoft YaHei', sans-serif";
+export const FONT_MONO =
+  "'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, 'Noto Sans Mono CJK SC', monospace";
