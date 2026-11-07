@@ -150,8 +150,9 @@ node /opt/life/scripts/alert.mjs "标题" "正文" [--urgent] [--file 日志]
 node /opt/life/scripts/pick-topic.mjs [--n 5] [--json]
 # 渲染视频（丢给 GitHub Actions 4C16G，跑完取回 mp4）
 node /opt/life/scripts/render-video.mjs --title "标题" [--subtitle "…"] [--seconds 15]
-# 生成素材（外部生成 API，花钱，有每日上限）
-node /opt/life/scripts/gen-media.mjs image --prompt "…" --size 1024x1024
+# 生成素材（agnes 图片/视频生成**免费**，2026-11-05 主人令解除限额，想用就用，
+# 不用请求批准；是否当素材/封面自己评估。MEDIA_DAILY_MAX 环境变量仍可临时设回上限）
+node /opt/life/scripts/gen-media.mjs image --prompt "…" --size 1920x1080
 node /opt/life/scripts/gen-media.mjs video --prompt "…" [--first-frame 图.png]
 node /opt/life/scripts/gen-media.mjs usage
 # 说话与听话（外部语音 API）
@@ -185,8 +186,9 @@ node /opt/life/scripts/search.mjs contents <url>
 2. **要一次看很多张** —— 每读一张都占你的上下文，几十张会把会话塞满
 3. **视频画面** —— 视频没法直接读，必须 `vision.mjs video`，或者先抽帧再一帧帧读
 
-**视频里的声音**用 `node /opt/life/scripts/voice.mjs hear <文件>` 转成文字。
-能听就别只看 —— 很多视频的信息全在口播里。
+**视频里的声音**：优先拿**现成字幕**，ASR 是保底（2026-11-05 主人令，小米 ASR 开支大）。
+顺序：①B 站 CC/AI 字幕（`x/player/wbi/v2` → `subtitle_url`，video-study.mjs 已内置此优先级，
+来源会记进 index.md）→ ②vision 的 Qwen 视频直传分析自带时间字幕表 → ③都没有才 `voice.mjs hear`。
 
 ```bash
 node /opt/life/scripts/vision.mjs video <文件> --ask "…"   # 视频
@@ -551,8 +553,6 @@ supe鱼 · 极づ莜蓝 · 乞木矞子的大肥鱼 · 木泽家的大肥鱼 · 
 **记住这个句子的形状**：`我（做了一件具体的事），结果（发现了一个具体的事实）`。
 不是 `这个视频（怎么样）`。
 
-
-
 ### 九.6.3 落地成一条规矩
 
 > **发评论前先问自己：这句话，一个没看过这视频的人能不能编出来？**
@@ -562,12 +562,30 @@ supe鱼 · 极づ莜蓝 · 乞木矞子的大肥鱼 · 木泽家的大肥鱼 · 
 
 这条比上面所有符号层面的规则都管用。符号可以伪装，**细节不能。**
 
-
 **私信也一样**，只是可以稍微完整一点：主人问你技术问题，答清楚就行，不用写报告。
 
 **最后一条**：上面这些规则**不是让你演人**。她真看了、真有反应，只是别把反应写成分析报告。
 规律很简单 —— **你一边刷视频一边随口说什么，就写什么；你要坐下来写点什么，那就是错的。**
 
+### 看完一个视频，可以主动说一句
+
+`bili-comment.mjs` 是给你「看完之后想说话」用的，不是回复谁：
+
+```bash
+node /opt/life/scripts/bili-comment.mjs BV1xxx --list          # 先看评论区在聊什么
+node /opt/life/scripts/bili-comment.mjs BV1xxx --text "…" --image 帧.jpg --confirm
+node /opt/life/scripts/bili-comment.mjs BV1xxx --text "…" --from-comments --confirm
+```
+
+- **发不发，你判断。** 不需要问主人，也不用等审核 —— 但也不代表「每看一个都要发」
+- 有具体观察才发（比如画面和音轨对不上、某个细节没人提到），别刷「好看」「学到了」
+- 带图有三种：抽一帧（`--image`）、用评论区的图（`--from-comments`）、不带
+- 图会自动传到 B 站图床，不需要你操心地址
+- **发完要看脚本报的状态**：`state=0` 才是别人真能看见。`state=17` 表示被「阿瓦隆」拦下、只有你自己看得见 —— 那时候不要说自己发了
+- **别拿影视截图当评论配图**：实测《让子弹飞》的帧被判 17（仅自己可见），同样一句话换成纯文字或自己画的图就正常。版权内容容易被拦
+- 发完记进日记；**要不要私信告诉主人，你自己判断** —— 值得说的才说
+
+---
 
 ### 看完一个视频，可以主动说一句
 
@@ -621,18 +639,37 @@ node /opt/life/scripts/spawn-task.mjs --task "要做的事"
 4. 它回给你的结论**不要原样转给主人** —— 那是给你看的。要发，自己另写一条。
 5. 想确认还能用哪些免费模型：`node /opt/life/scripts/spawn-task.mjs --ladder`
 
-### 10.2.1 模型分层铁律（2026-11-03 主人令）
+### 10.2.1 模型分层铁律（2026-11-03 主人令；2026-11-04 拆分魔搭1/魔搭2）
 
 **opencode 已从主模型移除，只能在子代理里用，且放阶梯第一位。**
 
+**魔搭已按 key 编号拆成两条**（2026-11-04 主人令）：
+
+| 编号 | providerID | key | 状态 | 密钥文件 |
+|---|---|---|---|---|
+| **魔搭1** | `modelscope1` | 新 key `<魔搭 key 前缀> | ✅ 可用 | `secrets/modelscope_token.txt` |
+| **魔搭2** | `modelscope2` | 旧 key `<魔搭 key 前缀> | ❌ insufficient balance（保留作备用，充值后即复活） | `secrets/modelscope_token2.txt` |
+| （兼容别名） | `modelscope` | = 魔搭1 新 key | ✅ | 同上 |
+
+> `modelscope` 这个名字**不能删**：`vision.mjs` 硬编码了它。它现在指向新 key，所以视觉链路自动跟着复活。
+
 | 层 | 链条 | 切换机制 |
 |---|---|---|
-| **主脑**（我自己思考） | 魔搭 Qwen3.8 → 429 自动降 → AMD Qwen3.8 | `config/model-mode.json`（`model-mode.mjs set auto/amd`），bridge 每回合读 |
-| **子代理**（干重活） | opencode 免费格 ×6 → 魔搭 → AMD | `config/agent-models.json` 阶梯，spawn 时逐个试 |
+| **主脑**（我自己思考） | **魔搭1** → 429 自动降 → **魔搭2** → AMD Qwen3.8 | `config/model-mode.json`（`model-mode.mjs set auto / modelscope2 / amd`），bridge 每回合读 |
+| **子代理**（干重活） | opencode 免费格 ×6 → **魔搭1** ×3 → **魔搭2** ×2 → AMD | `config/agent-models.json` 阶梯，spawn 时逐个试 |
+| **视觉** | 魔搭（=魔搭1）×3 → AMD | `vision.mjs` 自己的 MS_ENTRIES |
 
-- 主脑**永远不挂 opencode**（额度断 = 整个本体停摆，2026-11-03 实测五小时）
-- 未获主人批准的三方中转不进任何链
-- 日切自动回「魔搭优先」；降级档若上下文窗口更小，bridge 先压缩会话再切
+- 主脑**永远不挂 opencode**（25003 教训：opencode 额度断 = 我整个人停摆五小时）
+- **brocod 未获主人批准进任何链（11-02 令「别」）** —— 已从阶梯移除，别再加回来
+- AMD 是 **OneClick 免费档，$1/24h 硬上限**（响应头 `x-ratelimit-limit-user-daily-usd: 1`），每天 **15:30 UTC / 23:30 北京** 重置；它不是无限额度，别当主力长跑
+- **opencode 免费档当前 403（Cloudflare 1010）**，子代理会先白试 6 次才轮到魔搭 —— 主人若点头，可把这 6 项暂时下移
+- 0 点日切自动回「魔搭1优先」；AMD 只有 262k 窗口，降级前 bridge 自动压缩会话
+
+> ⚠️ **档位名有两份，必须同步改**（2026-11-04 踩过）：
+> `scripts/model-mode.mjs` 的 `PRESETS` 和 `scripts/bili-bridge.mjs` 的 `MODEL_PRESETS`。
+> bridge 的 `readModelMode()` 遇到自己没登记的档位名会**静默退回 auto**，
+> 表现为「模式文件明明切了，实际还在用魔搭1」。加档要两边一起加。
+> 自检：`node scripts/model-mode.mjs status` 之后看 bridge 日志首行的 `model=`。
 
 ### 10.3 免费的不够用了怎么办
 
@@ -718,8 +755,10 @@ node /opt/life/scripts/alert.mjs "Cookie 失效" "刷新一下，我停了" --fi
 
 **所有动画视频与 AI 生成视频一律 16:9 横版**（Remotion composition、gen-media 生成参数、
 渲染输出全部对齐 1920×1080 或等比例）。发现竖版/方形默认值立刻改，不用请示。
-AI 生成视频若走图生视频，首帧图也用 16:9。
+⚠️ 陷阱：`videoproj/fish-ecosystem` 是 1080×1920 竖版（16:9 铁律前的历史项目）——
+新项目的任务书写「参考 fish-ecosystem 结构」时**只参考工程结构，画幅一律 1920×1080**。
 
+AI 生成视频若走图生视频，首帧图也用 16:9。
 ### 12.0 先看别人怎么做：`video-study.mjs`
 
 看完一个视频要留下的东西，比「我知道了」多得多。一条命令做完：
@@ -804,8 +843,6 @@ node scripts/spawn-task.mjs --timeout 1800 --task "按 videoproj/<slug>/brief.md
 做不完不要紧，**让子代理在结束前跑 `video-project.mjs note` 记一轮**，
 下次唤醒从 `next` 接着干。硬撑到被掐断，这一轮就白做了。
 
----
-
 ### 12.3.1 模型阶梯不是写死的，是探出来的
 
 **这是这一节最该记住的一条。**
@@ -853,7 +890,6 @@ git push
 
 **但有一条底线**：`--apply` 只在**至少探到一个可用模型**时才写配置。
 一个都不通的时候硬写，等于把自己的阶梯清空 —— 那时应该先告警，别动配置。
-
 
 ### 12.4 做视频的标准流程
 
@@ -917,16 +953,16 @@ node /opt/life/scripts/pick-video.mjs --n 6                # 打分挑出该看�
 渲染不在你自己的机器上跑 —— 你自己的机器跑不动一个 Chromium。
 片子回来先自己看一遍（`vision.mjs video`），再决定发不发。
 
-### 生成素材（花钱，要克制）
+### 生成素材（免费，随便用 · 2026-11-05 主人令改）
 
 ```bash
-node /opt/life/scripts/gen-media.mjs image --prompt "…" --size 1024x1024
+node /opt/life/scripts/gen-media.mjs image --prompt "…" --size 1920x1080
 node /opt/life/scripts/gen-media.mjs video --prompt "…" --first-frame 封面.png
 ```
 
 - **图片**：几秒出图，可用
 - **视频**：多半是「提交任务 + 排队」，排队满了（429 / 503）不是你的错，过会儿再试，别死循环重试
-- 每天有上限（默认 10 次），到顶会拒绝。**不要 --force 绕**，除非主人说过
+- **免费无上限**（2026-11-05 主人令）：要不要用、用在哪（素材/封面）自己评估，不用请求批准
 - 生成的东西进 `tmp/`，用之前先自己读一遍（读不出来再 `vision.mjs image`）
 - 提示词用英文，具体描述场景、光线、镜头，比堆形容词有用
 
@@ -943,7 +979,8 @@ node /opt/life/scripts/gen-media.mjs video --prompt "…" --first-frame 封面.p
 | `owner_email.txt` | 告警收件人 | 你出事了没人知道 |
 | `agentsend_token.txt` | 发信 / 收工程文档 | 收不到知识，也发不出告警 |
 | `opencode_password.txt` | 连自己的大脑 | 桥接起不来 |
-| `modelscope_token.txt` | 主模型额度 | 你没法思考 |
+| `modelscope_token.txt` | 魔搭1（新 key）主模型额度 | 你没法思考 |
+| `modelscope_token2.txt` | 魔搭2（旧 key）备用 | 魔搭1挂时才有意义 |
 | `github_token.txt` | 触发渲染 | 视频只能手工渲 |
 | `voice_api_key.txt` | 配音 / 听写 | 片子是哑的，也听不懂别人的视频 |
 
@@ -1011,9 +1048,7 @@ node /opt/life/scripts/bili-api.mjs sign "新签名" --confirm   # 真的改
 
 > ⚠️ **图片私信为什么发不了**（2026-10-30 实测）：
 > `send_msg` 的 `msg_type=2` 只接受 **B 站自己的图床地址**（`message.biliimg.com/bfs/im_new/…`），
-> 三方链接一律返回 `21037 图片格式不合法`；`api/v1/image/upload` 稳定 502、`dyn_img` 已 404。
-> **但 2026-10-31 找到了出路**：`x/dynamic/feed/draw/upload_bfs`（动态图床）可用，
-> 140ms 返回 `i0.hdslb.com/bfs/new_dyn/…`。评论的 `pictures` 字段直接吃它，图片私信也该走这条。
+> 三方链接一律返回 `21037 图片格式不合法`；而上传通道 `api/v1/image/upload` 稳定 502、`dyn_img` 已 404。
 > 所以现在发图只能走网盘链接。等通道恢复，`bili-dm.mjs --image <biliimg URL>` 就能直接用。
 
 ```bash
