@@ -45,7 +45,8 @@ export const S8: React.FC = () => {
         }}
       >
         <div style={{ position: 'absolute', inset: 0, background: INK, opacity: 0.03 }} />
-        {Array.from({ length: Math.floor((PAPER_H - 1) / ROW) }, (_, i) => (
+        {/* 标题占两格高，第一条格线会从字中间穿过去，所以从第二条开始画 */}
+        {Array.from({ length: Math.floor((PAPER_H - 1) / ROW) }, (_, i) => i).filter((i) => i >= 1).map((i) => (
           <div
             key={i}
             style={{ position: 'absolute', left: 0, right: 0, top: (i + 1) * ROW, height: 1, background: LINE }}
@@ -57,10 +58,9 @@ export const S8: React.FC = () => {
           style={{
             position: 'absolute',
             left: PAD,
-            top: ROW,
+            top: ROW * 0.5,
             fontSize: FS.title,
             lineHeight: `${ROW * 1.5}px`,
-            marginTop: -ROW * 0.5,
             color: INK,
             ...enter(frame, T_TITLE),
           }}

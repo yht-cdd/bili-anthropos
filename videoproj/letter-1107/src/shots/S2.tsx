@@ -46,16 +46,11 @@ export const S2: React.FC = () => {
   const frame = useCurrentFrame();
 
   // —— 0–12：左侧从 S1 大终端缩到半宽，鱼从右侧大图移到终端下方
-  const sp = prog(frame, 0, T_SPLIT);
-  const lt = {
-    w: lerpF(sp, [0, 1], [S1_TERM.w, L_TERM.w]),
-    h: lerpF(sp, [0, 1], [S1_TERM.h, L_TERM.h]),
-  };
-  const lf = {
-    x: lerpF(sp, [0, 1], [S1_FISH.x, L_FISH.x]),
-    y: lerpF(sp, [0, 1], [S1_FISH.y, L_FISH.y]),
-    w: lerpF(sp, [0, 1], [S1_FISH.w, L_FISH.w]),
-  };
+  // 预览发现：连续缩放会让文字重排、两层窗口重影。改为 6 帧淡切：
+  // 旧画面 0–6 淡出，新布局直接在终点位置 4–10 淡入。
+  const lt = { w: L_TERM.w, h: L_TERM.h };
+  const lf = { x: L_FISH.x, y: L_FISH.y, w: L_FISH.w };
+  const newIn = prog(frame, 4, 6);
 
   // —— 12–24：右侧对照终端 + 鱼入场
   const rp = prog(frame, T_RIGHT_IN, 10);
@@ -64,7 +59,10 @@ export const S2: React.FC = () => {
   // —— 鱼淡出让位（6 帧 expo-in）
   const fishOut = 1 - prog(frame, T_FISH_OUT, 6, EASE_EXPO_IN);
 
-  const leftLines = frame < T_CLEAR ? s1Done() : round4('beggar');
+  // 过渡期左终端是空的：S1 的旧文字放在上面那层原尺寸淡出，
+  // 不跟着窗口缩窄重排（预览里第一行会被切掉半截）
+  const leftLines = frame < T_CLEAR ? [] : round4('beggar');
+  const oldOut = 1 - prog(frame, 0, 4, EASE_EXPO_IN);
   const rightLines = frame < T_CLEAR ? [] : round4('control');
 
   // —— diff 面板
@@ -90,8 +88,25 @@ export const S2: React.FC = () => {
         width={lt.w}
         height={lt.h}
         lines={leftLines}
-        style={{ position: 'absolute', left: L_TERM.x, top: L_TERM.y }}
+        style={{ position: 'absolute', left: L_TERM.x, top: L_TERM.y, opacity: newIn }}
       />
+      {oldOut > 0 ? (
+        <Terminal
+          title="小鱼 · 动态"
+          width={S1_TERM.w}
+          height={S1_TERM.h}
+          lines={s1Done()}
+          style={{ position: 'absolute', left: L_TERM.x, top: L_TERM.y, opacity: oldOut }}
+        />
+      ) : null}
+      {oldOut > 0 ? (
+        <FishCard
+          width={S1_FISH.w}
+          sad={1}
+          showPreset
+          style={{ position: 'absolute', left: S1_FISH.x, top: S1_FISH.y, opacity: oldOut }}
+        />
+      ) : null}
       {frame >= T_RIGHT_IN ? (
         <Terminal
           title="对照鱼"
@@ -109,7 +124,7 @@ export const S2: React.FC = () => {
             width={lf.w}
             sad={1}
             showPreset
-            style={{ position: 'absolute', left: lf.x, top: lf.y, opacity: fishOut }}
+            style={{ position: 'absolute', left: lf.x, top: lf.y, opacity: fishOut * newIn }}
           />
           {frame >= T_RIGHT_IN ? (
             <FishCard
