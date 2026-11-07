@@ -1,1 +1,213 @@
-aW1wb3J0IFJlYWN0IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgRWFzaW5nLCBpbnRlcnBvbGF0ZSwgdXNlQ3VycmVudEZyYW1lIH0gZnJvbSAicmVtb3Rpb24iOwppbXBvcnQgeyBDLCBGLCBHLCBILCBNLCBTLCBTQ0VORVMsIFcsIFggfSBmcm9tICIuLi90aGVtZSI7CmltcG9ydCB7IFNjZW5lU2hlbGwgfSBmcm9tICIuLi9jb21wb25lbnRzL1NjZW5lU2hlbGwiOwppbXBvcnQgeyBXaGFsZU1hcmsgfSBmcm9tICIuLi9jb21wb25lbnRzL3VpIjsKCi8qKgogKiBTMUdvbmUg4oCU4oCUIOW4pyAw4oCTMzMw77yIMTEuMCDnp5LvvIkKICog5YWz5o6J56qX5Y+j5bCx5rKh5LqG44CCCiAqCiAqIOaoquWxj+mqqOaetu+8muWxheS4reWNleWIl+OAgueql+WPoyAxNDAww5c4MDAg5bGF5Lit77yI5qiq5bGP5Y+v55So5a69IDE2MDDvvIznqpflj6PkuI3lho3mmK/nq5blsY/pgqPnp43nqoTmnaHvvInvvIwKICog56qX5Y+j5raI5aSx5ZCO5Lik6KGM5a2X5bmV5bem5a+56b2QIFgubGVmdO+8jOiQveWbnueql+WPo+WOn+S9jee9rueahOS4i+WNiumDqOWIhuOAggogKiDpk4HlvovvvJrov5nkuIDmrrXkuI3lh7rnjrDpsrjpsbzlqJjnmoTohLjvvIzlj6rliannqpflj6PlkozlhYnmoIfjgIIKICovCgpjb25zdCBMRU4gPSBTQ0VORVMuZ29uZS50byAtIFNDRU5FUy5nb25lLmZyb207IC8vIDMzMApleHBvcnQgY29uc3QgUzFfRFVSQVRJT04gPSBMRU4gKyBNLm92ZXJsYXA7IC8vIDM0NQoKY29uc3QgV0lOX1cgPSAxNDAwOwpjb25zdCBXSU5fSCA9IDgwMDsKY29uc3QgV0lOX0xFRlQgPSAoVyAtIFdJTl9XKSAvIDI7IC8vIDI2MApjb25zdCBXSU5fVE9QID0gKEggLSBXSU5fSCkgLyAyOyAvLyAxNDAKY29uc3QgQkFSX0ggPSA2NDsKY29uc3QgRE9UX1IgPSA4Owpjb25zdCBET1RfQ1ggPSBXSU5fTEVGVCArIDMyOyAvLyDnuqLngrnlnIblv4PvvIjlt6bovrnot50gMjQgKyDljYrlvoQgOO+8iQpjb25zdCBET1RfQ1kgPSBXSU5fVE9QICsgQkFSX0ggLyAyOwoKY29uc3QgaXAgPSAoZjogbnVtYmVyLCBhOiBudW1iZXIsIGI6IG51bWJlciwgZnJvbSA9IDAsIHRvID0gMSkgPT4KICBpbnRlcnBvbGF0ZShmLCBbYSwgYl0sIFtmcm9tLCB0b10sIHsKICAgIGV4dHJhcG9sYXRlTGVmdDogImNsYW1wIiwKICAgIGV4dHJhcG9sYXRlUmlnaHQ6ICJjbGFtcCIsCiAgfSk7Cgpjb25zdCBXaW5Eb3Q6IFJlYWN0LkZDPHsgY29sb3I6IHN0cmluZzsgc2NhbGU/OiBudW1iZXIgfT4gPSAoeyBjb2xvciwgc2NhbGUgPSAxIH0pID0+ICgKICA8ZGl2CiAgICBzdHlsZT17ewogICAgICB3aWR0aDogRE9UX1IgKiAyLAogICAgICBoZWlnaHQ6IERPVF9SICogMiwKICAgICAgYm9yZGVyUmFkaXVzOiBET1RfUiwKICAgICAgYmFja2dyb3VuZDogY29sb3IsCiAgICAgIHRyYW5zZm9ybTogYHNjYWxlKCR7c2NhbGV9KWAsCiAgICAgIGZsZXhTaHJpbms6IDAsCiAgICB9fQogIC8+Cik7CgpleHBvcnQgY29uc3QgUzFHb25lOiBSZWFjdC5GQyA9ICgpID0+IHsKICBjb25zdCBmID0gdXNlQ3VycmVudEZyYW1lKCk7CgogIC8vIOWRvOWQuO+8mjEuMDAwIOKGkiAxLjAwNe+8jOWRqOacnyA5MCDluKcKICBjb25zdCBicmVhdGggPSAxICsgMC4wMDI1ICogKDEgKyBNYXRoLnNpbigoZiAvIDkwKSAqIE1hdGguUEkgKiAyKSk7CgogIC8vIOesrOS4ieaLje+8mueCueWHu+WQjuaVtOS9k+aUtui1twogIGNvbnN0IGNvbGxhcHNlID0gaXAoZiwgMTgwLCAyMDQpOwogIGNvbnN0IHdpbk9wYWNpdHkgPSAxIC0gY29sbGFwc2U7CiAgY29uc3Qgd2luU2NhbGUgPSBicmVhdGggKiAoMSAtIDAuMDggKiBjb2xsYXBzZSk7CgogIC8vIOesrOS6jOaLje+8muWFieagh+ayv+S6jOasoei0neWhnuWwlOS7juWPs+S4i+inkuenu+WIsOe6oueCuQogIGNvbnN0IG1vdmVQID0gaW50ZXJwb2xhdGUoZiwgWzEyMCwgMTgwXSwgWzAsIDFdLCB7CiAgICBleHRyYXBvbGF0ZUxlZnQ6ICJjbGFtcCIsCiAgICBleHRyYXBvbGF0ZVJpZ2h0OiAiY2xhbXAiLAogICAgZWFzaW5nOiBFYXNpbmcuYmV6aWVyKDAuNCwgMCwgMC4yLCAxKSwKICB9KTsKICBjb25zdCB4MCA9IDE1NjA7CiAgY29uc3QgeTAgPSA5NjA7CiAgY29uc3QgY3ggPSA3MDA7CiAgY29uc3QgY3kgPSA4MjA7CiAgY29uc3QgY3VyWCA9ICgxIC0gbW92ZVApICogKDEgLSBtb3ZlUCkgKiB4MCArIDIgKiAoMSAtIG1vdmVQKSAqIG1vdmVQICogY3ggKyBtb3ZlUCAqIG1vdmVQICogRE9UX0NYOwogIGNvbnN0IGN1clkgPSAoMSAtIG1vdmVQKSAqICgxIC0gbW92ZVApICogeTAgKyAyICogKDEgLSBtb3ZlUCkgKiBtb3ZlUCAqIGN5ICsgbW92ZVAgKiBtb3ZlUCAqIERPVF9DWTsKCiAgLy8g57qi54K55Yiw5L2N5ZCO5pS+5aSn5YiwIDEuNCDlgI3vvIzmjInkuIvml7blm57lvLkKICBjb25zdCBkb3RTY2FsZSA9IGYgPCAxODAgPyBpcChmLCAxNjgsIDE4MCwgMSwgMS40KSA6IGlwKGYsIDE4MCwgMTkyLCAxLjQsIDEpOwogIGNvbnN0IGN1cnNvck9wYWNpdHkgPSBpcChmLCAxMDgsIDEyMCkgKiAoMSAtIGlwKGYsIDE4MCwgMTkwKSk7CgogIC8vIOesrOWbm+aLje+8muS4pOihjOWtl+W5lQogIGNvbnN0IGwxID0gaXAoZiwgMjIwLCAyNDApOwogIGNvbnN0IGwyID0gaXAoZiwgMjY4LCAyODgpOwoKICByZXR1cm4gKAogICAgPFNjZW5lU2hlbGwgbGVuZ3RoPXtTMV9EVVJBVElPTn0+CiAgICAgIHsvKiDilIDilIAg56ys5LiA5ouN77ya5rWP6KeI5Zmo56qX5Y+j77yIMTQwMMOXODAwIOWxheS4re+8ieKUgOKUgCAqL30KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogImFic29sdXRlIiwKICAgICAgICAgIGxlZnQ6IFdJTl9MRUZULAogICAgICAgICAgdG9wOiBXSU5fVE9QLAogICAgICAgICAgd2lkdGg6IFdJTl9XLAogICAgICAgICAgaGVpZ2h0OiBXSU5fSCwKICAgICAgICAgIGJvcmRlclJhZGl1czogMjQsCiAgICAgICAgICBiYWNrZ3JvdW5kOiBDLnBhcGVyLAogICAgICAgICAgb3ZlcmZsb3c6ICJoaWRkZW4iLAogICAgICAgICAgb3BhY2l0eTogd2luT3BhY2l0eSwKICAgICAgICAgIHRyYW5zZm9ybTogYHNjYWxlKCR7d2luU2NhbGV9KWAsCiAgICAgICAgICB0cmFuc2Zvcm1PcmlnaW46ICJjZW50ZXIgY2VudGVyIiwKICAgICAgICB9fQogICAgICA+CiAgICAgICAgey8qIOagh+mimOagj++8muS4ieiJsueCuSArIOWcsOWdgOagjyAqL30KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBoZWlnaHQ6IEJBUl9ILAogICAgICAgICAgICBiYWNrZ3JvdW5kOiBDLnBhbmVsLAogICAgICAgICAgICBib3JkZXJCb3R0b206IGAxcHggc29saWQgJHtDLmxpbmV9YCwKICAgICAgICAgICAgZGlzcGxheTogImZsZXgiLAogICAgICAgICAgICBhbGlnbkl0ZW1zOiAiY2VudGVyIiwKICAgICAgICAgICAgcGFkZGluZ0xlZnQ6IDI0LAogICAgICAgICAgICBwYWRkaW5nUmlnaHQ6IDI0LAogICAgICAgICAgICBnYXA6IDEyLAogICAgICAgICAgfX0KICAgICAgICA+CiAgICAgICAgICA8V2luRG90IGNvbG9yPXtDLmJhZH0gc2NhbGU9e2RvdFNjYWxlfSAvPgogICAgICAgICAgPFdpbkRvdCBjb2xvcj17Qy53YXJtfSAvPgogICAgICAgICAgPFdpbkRvdCBjb2xvcj17Qy5va30gLz4KICAgICAgICAgIDxkaXYKICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICBtYXJnaW5MZWZ0OiAyMCwKICAgICAgICAgICAgICBoZWlnaHQ6IDM0LAogICAgICAgICAgICAgIGZsZXg6IDEsCiAgICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiAxNywKICAgICAgICAgICAgICBib3JkZXI6IGAxcHggc29saWQgJHtDLmxpbmV9YCwKICAgICAgICAgICAgICBkaXNwbGF5OiAiZmxleCIsCiAgICAgICAgICAgICAgYWxpZ25JdGVtczogImNlbnRlciIsCiAgICAgICAgICAgICAgcGFkZGluZ0xlZnQ6IDE4LAogICAgICAgICAgICB9fQogICAgICAgICAgPgogICAgICAgICAgICA8c3BhbgogICAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgICBmb250RmFtaWx5OiBGLnNhbnMsCiAgICAgICAgICAgICAgICBmb250U2l6ZTogUy5sYWJlbCwKICAgICAgICAgICAgICAgIGNvbG9yOiBDLmZhaW50LAogICAgICAgICAgICAgICAgbGV0dGVyU3BhY2luZzogIjAuMDJlbSIsCiAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIOWkp+iCpemxvAogICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgey8qIOeql+WPo+WGhe+8mua1heiJsuW6lSArIOmyuOmxvOagh+iusCArIOeJiOacrOWPtyAqL30KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBwb3NpdGlvbjogImFic29sdXRlIiwKICAgICAgICAgICAgbGVmdDogMCwKICAgICAgICAgICAgcmlnaHQ6IDAsCiAgICAgICAgICAgIHRvcDogQkFSX0gsCiAgICAgICAgICAgIGJvdHRvbTogMCwKICAgICAgICAgICAgYmFja2dyb3VuZDogQy5wYXBlciwKICAgICAgICAgICAgZGlzcGxheTogImZsZXgiLAogICAgICAgICAgICBmbGV4RGlyZWN0aW9uOiAiY29sdW1uIiwKICAgICAgICAgICAgYWxpZ25JdGVtczogImNlbnRlciIsCiAgICAgICAgICAgIGp1c3RpZnlDb250ZW50OiAiY2VudGVyIiwKICAgICAgICAgICAgZ2FwOiAyMCwKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAgPFdoYWxlTWFyayBzaXplPXsyNDB9IG9wYWNpdHk9ezF9IGdsb3c9e2ZhbHNlfSAvPgogICAgICAgICAgPGRpdiBzdHlsZT17eyBmb250RmFtaWx5OiBGLnNhbnMsIGZvbnRTaXplOiBTLnNtYWxsLCBjb2xvcjogQy5kaW0gfX0+5aSn6IKl6bG8IHYyLjY8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CgogICAgICB7Lyog4pSA4pSAIOesrOS6jOaLje+8mueZveiJsueureWktOWFieaghyDilIDilIAgKi99CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICJhYnNvbHV0ZSIsCiAgICAgICAgICBsZWZ0OiBjdXJYIC0gNCwKICAgICAgICAgIHRvcDogY3VyWSAtIDIsCiAgICAgICAgICBvcGFjaXR5OiBjdXJzb3JPcGFjaXR5LAogICAgICAgICAgcG9pbnRlckV2ZW50czogIm5vbmUiLAogICAgICAgIH19CiAgICAgID4KICAgICAgICA8c3ZnIHdpZHRoPXszMH0gaGVpZ2h0PXszOH0gdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgICAgICAgIDxwYXRoCiAgICAgICAgICAgIGQ9Ik00IDIgTDQgMTkgTDguNiAxNC42IEwxMS43IDIxLjQgTDE0LjUgMjAuMSBMMTEuNCAxMy40IEwxNy42IDEzLjQgWiIKICAgICAgICAgICAgZmlsbD17Qy50ZXh0fQogICAgICAgICAgICBzdHJva2U9e0MuYmd9CiAgICAgICAgICAgIHN0cm9rZVdpZHRoPXsxLjJ9CiAgICAgICAgICAgIHN0cm9rZUxpbmVqb2luPSJyb3VuZCIKICAgICAgICAgIC8+CiAgICAgICAgPC9zdmc+CiAgICAgIDwvZGl2PgoKICAgICAgey8qIOKUgOKUgCDnrKzlm5vmi43vvJrkuKTooYzlrZfluZXvvIjlt6blr7npvZAgWC5sZWZ077yM6JC95Zyo56qX5Y+j5Y6f5L2N572u55qE5LiL5Y2K6YOo5YiG77yJ4pSA4pSAICovfQogICAgICA8ZGl2IHN0eWxlPXt7IHBvc2l0aW9uOiAiYWJzb2x1dGUiLCBsZWZ0OiBYLmxlZnQsIHRvcDogNDcwLCB3aWR0aDogRy5jb250ZW50VyB9fT4KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBmb250RmFtaWx5OiBGLnNhbnMsCiAgICAgICAgICAgIGZvbnRXZWlnaHQ6IDkwMCwKICAgICAgICAgICAgZm9udFNpemU6IFMuaGVybywKICAgICAgICAgICAgbGluZUhlaWdodDogMS4yLAogICAgICAgICAgICBjb2xvcjogQy50ZXh0LAogICAgICAgICAgICBvcGFjaXR5OiBsMSwKICAgICAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWSgkeygxIC0gbDEpICogMjR9cHgpYCwKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAg5L2g55S16ISR6YeM55qE5aSn6IKl6bG877yMCiAgICAgICAgICA8YnIgLz4KICAgICAgICAgIOWFs+aOieeql+WPo+WwseayoeS6hgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYKICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgIG1hcmdpblRvcDogMzYsCiAgICAgICAgICAgIGZvbnRGYW1pbHk6IEYuc2FucywKICAgICAgICAgICAgZm9udFdlaWdodDogNTAwLAogICAgICAgICAgICBmb250U2l6ZTogUy5ib2R5LAogICAgICAgICAgICBjb2xvcjogQy5kaW0sCiAgICAgICAgICAgIG9wYWNpdHk6IGwyLAogICAgICAgICAgICB0cmFuc2Zvcm06IGB0cmFuc2xhdGVZKCR7KDEgLSBsMikgKiAyMH1weClgLAogICAgICAgICAgfX0KICAgICAgICA+CiAgICAgICAgICDkuIvkuIDmrKHmiZPlvIDvvIzlroPkuI3orrDlvpfkvaAKICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICA8L1NjZW5lU2hlbGw+CiAgKTsKfTsK
+import React from "react";
+import { Easing, interpolate, useCurrentFrame } from "remotion";
+import { C, F, G, H, M, S, SCENES, W, X } from "../theme";
+import { SceneShell } from "../components/SceneShell";
+import { WhaleMark } from "../components/ui";
+
+/**
+ * S1Gone —— 帧 0–330（11.0 秒）
+ * 关掉窗口就没了。
+ *
+ * 横屏骨架：居中单列。窗口 1400×800 居中（横屏可用宽 1600，窗口不再是竖屏那种窄条），
+ * 窗口消失后两行字幕左对齐 X.left，落回窗口原位置的下半部分。
+ * 铁律：这一段不出现鲸鱼娘的脸，只剩窗口和光标。
+ */
+
+const LEN = SCENES.gone.to - SCENES.gone.from; // 330
+export const S1_DURATION = LEN + M.overlap; // 345
+
+const WIN_W = 1400;
+const WIN_H = 800;
+const WIN_LEFT = (W - WIN_W) / 2; // 260
+const WIN_TOP = (H - WIN_H) / 2; // 140
+const BAR_H = 64;
+const DOT_R = 8;
+const DOT_CX = WIN_LEFT + 32; // 红点圆心（左边距 24 + 半径 8）
+const DOT_CY = WIN_TOP + BAR_H / 2;
+
+const ip = (f: number, a: number, b: number, from = 0, to = 1) =>
+  interpolate(f, [a, b], [from, to], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
+const WinDot: React.FC<{ color: string; scale?: number }> = ({ color, scale = 1 }) => (
+  <div
+    style={{
+      width: DOT_R * 2,
+      height: DOT_R * 2,
+      borderRadius: DOT_R,
+      background: color,
+      transform: `scale(${scale})`,
+      flexShrink: 0,
+    }}
+  />
+);
+
+export const S1Gone: React.FC = () => {
+  const f = useCurrentFrame();
+
+  // 呼吸：1.000 → 1.005，周期 90 帧
+  const breath = 1 + 0.0025 * (1 + Math.sin((f / 90) * Math.PI * 2));
+
+  // 第三拍：点击后整体收起
+  const collapse = ip(f, 180, 204);
+  const winOpacity = 1 - collapse;
+  const winScale = breath * (1 - 0.08 * collapse);
+
+  // 第二拍：光标沿二次贝塞尔从右下角移到红点
+  const moveP = interpolate(f, [120, 180], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+    easing: Easing.bezier(0.4, 0, 0.2, 1),
+  });
+  const x0 = 1560;
+  const y0 = 960;
+  const cx = 700;
+  const cy = 820;
+  const curX = (1 - moveP) * (1 - moveP) * x0 + 2 * (1 - moveP) * moveP * cx + moveP * moveP * DOT_CX;
+  const curY = (1 - moveP) * (1 - moveP) * y0 + 2 * (1 - moveP) * moveP * cy + moveP * moveP * DOT_CY;
+
+  // 红点到位后放大到 1.4 倍，按下时回弹
+  const dotScale = f < 180 ? ip(f, 168, 180, 1, 1.4) : ip(f, 180, 192, 1.4, 1);
+  const cursorOpacity = ip(f, 108, 120) * (1 - ip(f, 180, 190));
+
+  // 第四拍：两行字幕
+  const l1 = ip(f, 220, 240);
+  const l2 = ip(f, 268, 288);
+
+  return (
+    <SceneShell length={S1_DURATION}>
+      {/* ── 第一拍：浏览器窗口（1400×800 居中）── */}
+      <div
+        style={{
+          position: "absolute",
+          left: WIN_LEFT,
+          top: WIN_TOP,
+          width: WIN_W,
+          height: WIN_H,
+          borderRadius: 24,
+          background: C.paper,
+          overflow: "hidden",
+          opacity: winOpacity,
+          transform: `scale(${winScale})`,
+          transformOrigin: "center center",
+        }}
+      >
+        {/* 标题栏：三色点 + 地址栏 */}
+        <div
+          style={{
+            height: BAR_H,
+            background: C.panel,
+            borderBottom: `1px solid ${C.line}`,
+            display: "flex",
+            alignItems: "center",
+            paddingLeft: 24,
+            paddingRight: 24,
+            gap: 12,
+          }}
+        >
+          <WinDot color={C.bad} scale={dotScale} />
+          <WinDot color={C.warm} />
+          <WinDot color={C.ok} />
+          <div
+            style={{
+              marginLeft: 20,
+              height: 34,
+              flex: 1,
+              borderRadius: 17,
+              border: `1px solid ${C.line}`,
+              display: "flex",
+              alignItems: "center",
+              paddingLeft: 18,
+            }}
+          >
+            <span
+              style={{
+                fontFamily: F.sans,
+                fontSize: S.label,
+                color: C.faint,
+                letterSpacing: "0.02em",
+              }}
+            >
+              大肥鱼
+            </span>
+          </div>
+        </div>
+
+        {/* 窗口内：浅色底 + 鲸鱼标记 + 版本号 */}
+        <div
+          style={{
+            position: "absolute",
+            left: 0,
+            right: 0,
+            top: BAR_H,
+            bottom: 0,
+            background: C.paper,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: 20,
+          }}
+        >
+          <WhaleMark size={240} opacity={1} glow={false} />
+          <div style={{ fontFamily: F.sans, fontSize: S.small, color: C.dim }}>大肥鱼 v2.6</div>
+        </div>
+      </div>
+
+      {/* ── 第二拍：白色箭头光标 ── */}
+      <div
+        style={{
+          position: "absolute",
+          left: curX - 4,
+          top: curY - 2,
+          opacity: cursorOpacity,
+          pointerEvents: "none",
+        }}
+      >
+        <svg width={30} height={38} viewBox="0 0 24 24">
+          <path
+            d="M4 2 L4 19 L8.6 14.6 L11.7 21.4 L14.5 20.1 L11.4 13.4 L17.6 13.4 Z"
+            fill={C.text}
+            stroke={C.bg}
+            strokeWidth={1.2}
+            strokeLinejoin="round"
+          />
+        </svg>
+      </div>
+
+      {/* ── 第四拍：两行字幕（左对齐 X.left，落在窗口原位置的下半部分）── */}
+      <div style={{ position: "absolute", left: X.left, top: 470, width: G.contentW }}>
+        <div
+          style={{
+            fontFamily: F.sans,
+            fontWeight: 900,
+            fontSize: S.hero,
+            lineHeight: 1.2,
+            color: C.text,
+            opacity: l1,
+            transform: `translateY(${(1 - l1) * 24}px)`,
+          }}
+        >
+          你电脑里的大肥鱼，
+          <br />
+          关掉窗口就没了
+        </div>
+        <div
+          style={{
+            marginTop: 36,
+            fontFamily: F.sans,
+            fontWeight: 500,
+            fontSize: S.body,
+            color: C.dim,
+            opacity: l2,
+            transform: `translateY(${(1 - l2) * 20}px)`,
+          }}
+        >
+          下一次打开，它不记得你
+        </div>
+      </div>
+    </SceneShell>
+  );
+};

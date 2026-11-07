@@ -1,1 +1,19 @@
-ewogICJzbHVnIjogIm1vdGlvbi1raXQiLAogICJ0aXRsZSI6ICJPcHVzNS41IOawtOWHhumVnOWktOWKqOaViOW6k++8iDkg57uE5Lu2ICsg5ZSv5LiA57yT5Yqo5rqQICsg6IqC5aWP5pat6KiA77yJIiwKICAic3RhZ2UiOiAiZG9uZSIsCiAgImNyZWF0ZWRBdCI6ICIyMDI2LTExLTAzVDE3OjAzOjAwLjAwMFoiLAogICJ1cGRhdGVkQXQiOiAiMjAyNi0xMS0wM1QxNzozNTowMS4yMjBaIiwKICAiaGlzdG9yeSI6IFsKICAgIHsKICAgICAgImF0IjogIjIwMjYtMTEtMDNUMTc6MDM6MDAuMDAwWiIsCiAgICAgICJldmVudCI6ICJjcmVhdGVkIChTUEVDLm1kIOS4uuavjeacrO+8jOS4u+S6uuS7pCAyMDI2LTExLTA077ybc3RhdGUuanNvbiDkuo7nrKwgMiDmrKHmlr3lt6Xova7ooaXnmbvorrApIgogICAgfSwKICAgIHsKICAgICAgImF0IjogIjIwMjYtMTEtMDNUMTc6MzU6MDEuMjI2WiIsCiAgICAgICJldmVudCI6ICJyb3VuZCAxOiDnrKwx6L2u77ya5bqT5a6e546wK2RlbW8g6aqo5p6277yIZWFzaW5ncy50cy9Nb3Rpb24udHN4IOS5nee7hOS7tuWFqOW4piBTUEVDIOm7mOiupOWAvOS4jueUqOS6uuivneazqOmHiuOAgVJFQURNRSDpgInlnovooajjgIFkZW1vIDMwMOW4p+WNgeauteWQq+e7hOWQiOmVnOWktO+8m3BsYW5TZWdtZW50cyDmiorkupTmnaHoioLlpY/nuqrlvovlhpnmiJDmlq3oqIDvvJt0c2MgLS1ubyIKICAgIH0KICBdLAogICJyb3VuZHMiOiAxLAogICJub3RlIjogIuiHqueglOWKqOaViOW6k+e6v+S9nOW6n++8mlNQRUMubWQg5bey6KKr5Li75Lq6IDExLTA0IOaPkOS+m+eahCB2aWRlby1zaG90Y3JhZnQg5Y+W5Luj77yILnN1cGVyc2VkZWTvvInvvIx2My93ZWVrMCDnlJ/kuqfnur/lhajotbAgc2hvdGNyYWZ077yM5pys5bqT5Luj56CB55WZ5L2c5Y+C6ICD5LiN5YaN5o6o6L+bIgp9
+{
+  "slug": "motion-kit",
+  "title": "Opus5.5 水准镜头动效库（9 组件 + 唯一缓动源 + 节奏断言）",
+  "stage": "done",
+  "createdAt": "2026-11-03T17:03:00.000Z",
+  "updatedAt": "2026-11-03T17:35:01.220Z",
+  "history": [
+    {
+      "at": "2026-11-03T17:03:00.000Z",
+      "event": "created (SPEC.md 为母本，主人令 2026-11-04；state.json 于第 2 次施工轮补登记)"
+    },
+    {
+      "at": "2026-11-03T17:35:01.226Z",
+      "event": "round 1: 第1轮：库实现+demo 骨架（easings.ts/Motion.tsx 九组件全带 SPEC 默认值与用人话注释、README 选型表、demo 300帧十段含组合镜头；planSegments 把五条节奏纪律写成断言；tsc --no"
+    }
+  ],
+  "rounds": 1,
+  "note": "自研动效库线作废：SPEC.md 已被主人 11-04 提供的 video-shotcraft 取代（.superseded），v3/week0 生产线全走 shotcraft，本库代码留作参考不再推进"
+}

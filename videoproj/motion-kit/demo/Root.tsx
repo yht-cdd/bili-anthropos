@@ -1,1 +1,18 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQ29tcG9zaXRpb24gfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IE1vdGlvbktpdERlbW8gfSBmcm9tICcuL0RlbW8nOwppbXBvcnQgeyBGUFMsIEgsIFRPVEFMX0ZSQU1FUywgVyB9IGZyb20gJy4vdGhlbWUnOwoKLy8gMTAuMHMgKiAzMGZwcyA9IDMwMCDluKcgwrcgMTkyMHgxMDgwIOaoqueJiO+8iDEyLi0xIOeUu+W5hemTgeW+i++8iQpleHBvcnQgY29uc3QgUmVtb3Rpb25Sb290OiBSZWFjdC5GQyA9ICgpID0+IHsKICByZXR1cm4gKAogICAgPENvbXBvc2l0aW9uCiAgICAgIGlkPSJNb3Rpb25LaXREZW1vIgogICAgICBjb21wb25lbnQ9e01vdGlvbktpdERlbW99CiAgICAgIGR1cmF0aW9uSW5GcmFtZXM9e1RPVEFMX0ZSQU1FU30KICAgICAgZnBzPXtGUFN9CiAgICAgIHdpZHRoPXtXfQogICAgICBoZWlnaHQ9e0h9CiAgICAvPgogICk7Cn07Cg==
+import React from 'react';
+import { Composition } from 'remotion';
+import { MotionKitDemo } from './Demo';
+import { FPS, H, TOTAL_FRAMES, W } from './theme';
+
+// 10.0s * 30fps = 300 帧 · 1920x1080 横版（12.-1 画幅铁律）
+export const RemotionRoot: React.FC = () => {
+  return (
+    <Composition
+      id="MotionKitDemo"
+      component={MotionKitDemo}
+      durationInFrames={TOTAL_FRAMES}
+      fps={FPS}
+      width={W}
+      height={H}
+    />
+  );
+};

@@ -1,1 +1,48 @@
-aW1wb3J0IFJlYWN0IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCBTZXF1ZW5jZSB9IGZyb20gInJlbW90aW9uIjsKaW1wb3J0IHsgQywgU0NFTkVTIH0gZnJvbSAiLi90aGVtZSI7CmltcG9ydCB7IFMxX0RVUkFUSU9OLCBTMUdvbmUgfSBmcm9tICIuL3NjZW5lcy9TMUdvbmUiOwppbXBvcnQgeyBTMl9EVVJBVElPTiwgUzJBbGl2ZSB9IGZyb20gIi4vc2NlbmVzL1MyQWxpdmUiOwppbXBvcnQgeyBTM19EVVJBVElPTiwgUzNXYWtlIH0gZnJvbSAiLi9zY2VuZXMvUzNXYWtlIjsKaW1wb3J0IHsgUzRfRFVSQVRJT04sIFM0RGF5IH0gZnJvbSAiLi9zY2VuZXMvUzREYXkiOwppbXBvcnQgeyBTNV9EVVJBVElPTiwgUzVNaXNtYXRjaCB9IGZyb20gIi4vc2NlbmVzL1M1TWlzbWF0Y2giOwppbXBvcnQgeyBTNl9EVVJBVElPTiwgUzZBdmFsb24gfSBmcm9tICIuL3NjZW5lcy9TNkF2YWxvbiI7CmltcG9ydCB7IFM3X0RVUkFUSU9OLCBTN1JvdW5kcyB9IGZyb20gIi4vc2NlbmVzL1M3Um91bmRzIjsKaW1wb3J0IHsgUzhfRFVSQVRJT04sIFM4RW5kIH0gZnJvbSAiLi9zY2VuZXMvUzhFbmQiOwoKLyoqCiAqIDgg5Liq5Zy65pmv5oyJIFNDRU5FUyDnmoTovrnnlYzpobrluo/pk7rlvIDvvIzmgLvplb/mraPlpb0gNTQwMCDluKfjgIIKICoKICog5Lqk5Y+g5oCO5LmI5p2l55qE77ya5q+P5LiqIDxTZXF1ZW5jZT4g55qEIGR1cmF0aW9uSW5GcmFtZXMg5q+UIGJyaWVmIOihqOagvOmHjOeahOW4p+aVsAogKiDlpJogTS5vdmVybGFw77yIMTXvvInluKfvvIzkuo7mmK/kuIvkuIDlnLrlvIDlp4vnmoTpgqMgMTUg5bin6YeM5LiK5LiA5Zy66L+Y5rS7552AIOKAlOKAlAogKiDkuIrkuIDlnLrkuIrnp7sg4oiSODBweCDmt6Hlh7rvvIzkuIvkuIDlnLrku44gKzgwcHgg5Y6L5YWl77yIU2NlbmVTaGVsbCDotJ/otKPkvY3np7vvvInjgIIKICog5pyA5ZCO5LiA5bmV5LiN5Yqg5bC+5be077yM5YWN5b6X6LaK6L+HIDU0MDDjgIIKICovCmV4cG9ydCBjb25zdCBBbnRocm9wb3NWaWRlbzogUmVhY3QuRkMgPSAoKSA9PiAoCiAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBiYWNrZ3JvdW5kQ29sb3I6IEMuYmcgfX0+CiAgICA8U2VxdWVuY2UgZnJvbT17U0NFTkVTLmdvbmUuZnJvbX0gZHVyYXRpb25JbkZyYW1lcz17UzFfRFVSQVRJT059PgogICAgICA8UzFHb25lIC8+CiAgICA8L1NlcXVlbmNlPgogICAgPFNlcXVlbmNlIGZyb209e1NDRU5FUy5hbGl2ZS5mcm9tfSBkdXJhdGlvbkluRnJhbWVzPXtTMl9EVVJBVElPTn0+CiAgICAgIDxTMkFsaXZlIC8+CiAgICA8L1NlcXVlbmNlPgogICAgPFNlcXVlbmNlIGZyb209e1NDRU5FUy53YWtlLmZyb219IGR1cmF0aW9uSW5GcmFtZXM9e1MzX0RVUkFUSU9OfT4KICAgICAgPFMzV2FrZSAvPgogICAgPC9TZXF1ZW5jZT4KICAgIDxTZXF1ZW5jZSBmcm9tPXtTQ0VORVMuZGF5LmZyb219IGR1cmF0aW9uSW5GcmFtZXM9e1M0X0RVUkFUSU9OfT4KICAgICAgPFM0RGF5IC8+CiAgICA8L1NlcXVlbmNlPgogICAgPFNlcXVlbmNlIGZyb209e1NDRU5FUy5taXNtYXRjaC5mcm9tfSBkdXJhdGlvbkluRnJhbWVzPXtTNV9EVVJBVElPTn0+CiAgICAgIDxTNU1pc21hdGNoIC8+CiAgICA8L1NlcXVlbmNlPgogICAgPFNlcXVlbmNlIGZyb209e1NDRU5FUy5hdmFsb24uZnJvbX0gZHVyYXRpb25JbkZyYW1lcz17UzZfRFVSQVRJT059PgogICAgICA8UzZBdmFsb24gLz4KICAgIDwvU2VxdWVuY2U+CiAgICA8U2VxdWVuY2UgZnJvbT17U0NFTkVTLnJvdW5kcy5mcm9tfSBkdXJhdGlvbkluRnJhbWVzPXtTN19EVVJBVElPTn0+CiAgICAgIDxTN1JvdW5kcyAvPgogICAgPC9TZXF1ZW5jZT4KICAgIDxTZXF1ZW5jZSBmcm9tPXtTQ0VORVMuZW5kLmZyb219IGR1cmF0aW9uSW5GcmFtZXM9e1M4X0RVUkFUSU9OfT4KICAgICAgPFM4RW5kIC8+CiAgICA8L1NlcXVlbmNlPgogIDwvQWJzb2x1dGVGaWxsPgopOwo=
+import React from "react";
+import { AbsoluteFill, Sequence } from "remotion";
+import { C, SCENES } from "./theme";
+import { S1_DURATION, S1Gone } from "./scenes/S1Gone";
+import { S2_DURATION, S2Alive } from "./scenes/S2Alive";
+import { S3_DURATION, S3Wake } from "./scenes/S3Wake";
+import { S4_DURATION, S4Day } from "./scenes/S4Day";
+import { S5_DURATION, S5Mismatch } from "./scenes/S5Mismatch";
+import { S6_DURATION, S6Avalon } from "./scenes/S6Avalon";
+import { S7_DURATION, S7Rounds } from "./scenes/S7Rounds";
+import { S8_DURATION, S8End } from "./scenes/S8End";
+
+/**
+ * 8 个场景按 SCENES 的边界顺序铺开，总长正好 5400 帧。
+ *
+ * 交叠怎么来的：每个 <Sequence> 的 durationInFrames 比 brief 表格里的帧数
+ * 多 M.overlap（15）帧，于是下一场开始的那 15 帧里上一场还活着 ——
+ * 上一场上移 −80px 淡出，下一场从 +80px 压入（SceneShell 负责位移）。
+ * 最后一幕不加尾巴，免得越过 5400。
+ */
+export const AnthroposVideo: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: C.bg }}>
+    <Sequence from={SCENES.gone.from} durationInFrames={S1_DURATION}>
+      <S1Gone />
+    </Sequence>
+    <Sequence from={SCENES.alive.from} durationInFrames={S2_DURATION}>
+      <S2Alive />
+    </Sequence>
+    <Sequence from={SCENES.wake.from} durationInFrames={S3_DURATION}>
+      <S3Wake />
+    </Sequence>
+    <Sequence from={SCENES.day.from} durationInFrames={S4_DURATION}>
+      <S4Day />
+    </Sequence>
+    <Sequence from={SCENES.mismatch.from} durationInFrames={S5_DURATION}>
+      <S5Mismatch />
+    </Sequence>
+    <Sequence from={SCENES.avalon.from} durationInFrames={S6_DURATION}>
+      <S6Avalon />
+    </Sequence>
+    <Sequence from={SCENES.rounds.from} durationInFrames={S7_DURATION}>
+      <S7Rounds />
+    </Sequence>
+    <Sequence from={SCENES.end.from} durationInFrames={S8_DURATION}>
+      <S8End />
+    </Sequence>
+  </AbsoluteFill>
+);

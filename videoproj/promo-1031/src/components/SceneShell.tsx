@@ -1,1 +1,38 @@
-aW1wb3J0IFJlYWN0IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICJyZW1vdGlvbiI7CmltcG9ydCB7IEMsIHNjZW5lVHJhbnNpdGlvbiB9IGZyb20gIi4uL3RoZW1lIjsKCi8qKgogKiDlnLrmma/lpJblo7PjgIIKICoKICog5Y+q5bmy5LiA5Lu25LqL77ya5oqKIHRoZW1lLnNjZW5lVHJhbnNpdGlvbigpIOeahOe7k+aenOWll+WIsOeUu+mdouS4iiDigJTigJQKICog6L+b5Zy644CM5LuOICs4MHB4IOWOi+WFpeOAje+8jOWHuuWcuuOAjOS4iuenuyDiiJI4MHB4IOa3oeWHuuOAje+8jOS6pOWPoOeUsSBTY2VuZVNoZWxsIOS5i+mXtOeahAogKiBTZXF1ZW5jZSDlsL7lt7TvvIhNLm92ZXJsYXAg5bin77yJ5L+d6K+B44CCCiAqCiAqIOWcuuaZr+iHquW3seWPqueuoeWGheWuue+8jOS4jeeUqOmHjeWkjeWGmeS9jeenu++8jOS5n+S4jeWFgeiuuOeUqOe6ryBvcGFjaXR5IOS6pOWPiea6tuino+OAggogKgogKiBsZW5ndGjvvJrmnKzlnLrlnKjml7bpl7TovbTkuIrljaDnmoTluKfmlbDvvIjlkKvkuqTlj6DlsL7lt7TvvInvvIznlLHosIPnlKjmlrnkvKDlhaXjgIIKICovCmV4cG9ydCBjb25zdCBTY2VuZVNoZWxsOiBSZWFjdC5GQzx7CiAgbGVuZ3RoOiBudW1iZXI7CiAgY2hpbGRyZW4/OiBSZWFjdC5SZWFjdE5vZGU7Cn0+ID0gKHsgbGVuZ3RoLCBjaGlsZHJlbiB9KSA9PiB7CiAgY29uc3QgZnJhbWUgPSB1c2VDdXJyZW50RnJhbWUoKTsKCiAgLy8g5YWc5bqV77ya5bin5LiN5Zyo6IyD5Zu05YaF5bCx5LiN5riy5p+T77yI5q2j5bi45oOF5Ya155SxIDxTZXF1ZW5jZT4g5bey57uP6KOB5aW977yJCiAgaWYgKGZyYW1lIDwgMCB8fCBmcmFtZSA+PSBsZW5ndGgpIHJldHVybiBudWxsOwoKICBjb25zdCB0ID0gc2NlbmVUcmFuc2l0aW9uKGZyYW1lLCBsZW5ndGgpOwoKICByZXR1cm4gKAogICAgPEFic29sdXRlRmlsbAogICAgICBzdHlsZT17ewogICAgICAgIGJhY2tncm91bmRDb2xvcjogQy5iZywKICAgICAgICBvcGFjaXR5OiB0Lm9wYWNpdHksCiAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWSgke3QudHJhbnNsYXRlWX1weClgLAogICAgICB9fQogICAgPgogICAgICB7Y2hpbGRyZW59CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9Owo=
+import React from "react";
+import { AbsoluteFill, useCurrentFrame } from "remotion";
+import { C, sceneTransition } from "../theme";
+
+/**
+ * 场景外壳。
+ *
+ * 只干一件事：把 theme.sceneTransition() 的结果套到画面上 ——
+ * 进场「从 +80px 压入」，出场「上移 −80px 淡出」，交叠由 SceneShell 之间的
+ * Sequence 尾巴（M.overlap 帧）保证。
+ *
+ * 场景自己只管内容，不用重复写位移，也不允许用纯 opacity 交叉溶解。
+ *
+ * length：本场在时间轴上占的帧数（含交叠尾巴），由调用方传入。
+ */
+export const SceneShell: React.FC<{
+  length: number;
+  children?: React.ReactNode;
+}> = ({ length, children }) => {
+  const frame = useCurrentFrame();
+
+  // 兜底：帧不在范围内就不渲染（正常情况由 <Sequence> 已经裁好）
+  if (frame < 0 || frame >= length) return null;
+
+  const t = sceneTransition(frame, length);
+
+  return (
+    <AbsoluteFill
+      style={{
+        backgroundColor: C.bg,
+        opacity: t.opacity,
+        transform: `translateY(${t.translateY}px)`,
+      }}
+    >
+      {children}
+    </AbsoluteFill>
+  );
+};

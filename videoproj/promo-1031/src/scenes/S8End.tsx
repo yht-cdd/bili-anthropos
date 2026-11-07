@@ -1,1 +1,160 @@
-aW1wb3J0IFJlYWN0IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgaW50ZXJwb2xhdGUsIHVzZUN1cnJlbnRGcmFtZSB9IGZyb20gInJlbW90aW9uIjsKaW1wb3J0IHsgQywgRiwgSCwgUywgU0NFTkVTLCBXIH0gZnJvbSAiLi4vdGhlbWUiOwppbXBvcnQgeyBTY2VuZVNoZWxsIH0gZnJvbSAiLi4vY29tcG9uZW50cy9TY2VuZVNoZWxsIjsKaW1wb3J0IHsgR3JpZEJhY2tkcm9wLCBXaGFsZU1hcmsgfSBmcm9tICIuLi9jb21wb25lbnRzL3VpIjsKCi8qKgogKiBTOEVuZCDigJTigJQg5binIDQ5MDDigJM1NDAw77yIMTYuNyDnp5LvvIkKICog5pS25bC+ICsg6JC954mI44CCCiAqCiAqIOaoquWxj+mqqOaetu+8muWxheS4reWNleWIl+OAggogKiAgIOmYtuautSAx77yIMOKAkzMwMO+8ie+8muS4pOihjOaAu+e7k++8jFMuaGVyb++8jOmAmuagj+WxheS4rQogKiAgIOmYtuautSAy77yIMzAw4oCTNTAw77yJ77ya6bK46bG877yIMTYw77yJKyDlj7PkvqfmloflrZflnZflubbmjpLvvIzmlbTkvZPlrr0gOTAwIOWxheS4rQogKiAgIOacgOWQjiA2MCDluKfvvIhsb2NhbCA0NDDigJM1MDDvvInmt6HliLDlhajpu5EKICoKICog5pys5Zy65LiN5Yqg5Lqk5Y+g5bC+5be077yMZHVyYXRpb24gPSA1MDDvvIzlhajniYfmraPlpb3mlLblnKggNTQwMOOAggogKi8KCmNvbnN0IExFTiA9IFNDRU5FUy5lbmQudG8gLSBTQ0VORVMuZW5kLmZyb207IC8vIDUwMApleHBvcnQgY29uc3QgUzhfRFVSQVRJT04gPSBMRU47Cgpjb25zdCBMT0NLX1cgPSA5MDA7CmNvbnN0IExPQ0tfTEVGVCA9IFcgLyAyIC0gTE9DS19XIC8gMjsgLy8gNTEwCgpjb25zdCBpcCA9IChmOiBudW1iZXIsIGE6IG51bWJlciwgYjogbnVtYmVyLCBmcm9tID0gMCwgdG8gPSAxKSA9PgogIGludGVycG9sYXRlKGYsIFthLCBiXSwgW2Zyb20sIHRvXSwgewogICAgZXh0cmFwb2xhdGVMZWZ0OiAiY2xhbXAiLAogICAgZXh0cmFwb2xhdGVSaWdodDogImNsYW1wIiwKICB9KTsKCmV4cG9ydCBjb25zdCBTOEVuZDogUmVhY3QuRkMgPSAoKSA9PiB7CiAgY29uc3QgZiA9IHVzZUN1cnJlbnRGcmFtZSgpOwoKICAvLyDpmLbmrrUgMQogIGNvbnN0IGxpbmUxID0gaXAoZiwgMjAsIDUwKTsKICBjb25zdCBsaW5lMiA9IGlwKGYsIDYwLCA5MCk7CiAgY29uc3Qgc3RhZ2UxUCA9IDEgLSBpcChmLCAyODAsIDMxMik7CgogIC8vIOmYtuautSAyCiAgY29uc3Qgc3RhZ2UyUCA9IGlwKGYsIDMwMCwgMzQwKTsKICBjb25zdCBtYXJrUCA9IGlwKGYsIDMwMCwgMzQwKTsKICBjb25zdCBuYW1lUCA9IGlwKGYsIDMyMCwgMzYwKTsKICBjb25zdCBzdWJQID0gaXAoZiwgMzUwLCAzODUpOwogIGNvbnN0IGxpbmtQID0gaXAoZiwgMzgwLCA0MTIpOwogIC8vIOesrCA1MzQwIOW4p+i1t++8iGxvY2FsIDQ0MO+8iea3oeWIsOm7ke+8jOacgOWQjiA2MCDluKflhajpu5EKICBjb25zdCBmYWRlT3V0ID0gaXAoZiwgNDQwLCA1MDApOwoKICByZXR1cm4gKAogICAgPFNjZW5lU2hlbGwgbGVuZ3RoPXtTOF9EVVJBVElPTn0+CiAgICAgIHsvKiDpmLbmrrUgMiDnmoTog4zmma/lsYLvvJrkuIDlsYLmnoHmt6HnmoTmlbDmja7mtYEgKi99CiAgICAgIDxkaXYgc3R5bGU9e3sgcG9zaXRpb246ICJhYnNvbHV0ZSIsIGluc2V0OiAwLCBvcGFjaXR5OiBzdGFnZTJQICogMC4zNSB9fT4KICAgICAgICA8R3JpZEJhY2tkcm9wIG9wYWNpdHk9ezAuMDZ9IC8+CiAgICAgIDwvZGl2PgoKICAgICAgey8qIOKUgOKUgCDpmLbmrrUgMe+8muaAu+e7k+S4pOihjO+8iOmAmuagj+WxheS4re+8ieKUgOKUgCAqL30KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogImFic29sdXRlIiwKICAgICAgICAgIGxlZnQ6IDAsCiAgICAgICAgICByaWdodDogMCwKICAgICAgICAgIHRvcDogMzAwLAogICAgICAgICAgdGV4dEFsaWduOiAiY2VudGVyIiwKICAgICAgICAgIG9wYWNpdHk6IHN0YWdlMVAsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIDxkaXYKICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgIGZvbnRGYW1pbHk6IEYuc2FucywKICAgICAgICAgICAgZm9udFdlaWdodDogOTAwLAogICAgICAgICAgICBmb250U2l6ZTogUy5oZXJvLAogICAgICAgICAgICBsaW5lSGVpZ2h0OiAxLjMsCiAgICAgICAgICAgIGNvbG9yOiBDLnRleHQsCiAgICAgICAgICAgIG9wYWNpdHk6IGxpbmUxLAogICAgICAgICAgICB0cmFuc2Zvcm06IGB0cmFuc2xhdGVZKCR7KDEgLSBsaW5lMSkgKiAyNH1weClgLAogICAgICAgICAgICB3aGl0ZVNwYWNlOiAibm93cmFwIiwKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAg5LuO6YaS5p2l5Yiw5oqV56i/CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdgogICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgbWFyZ2luVG9wOiAzNiwKICAgICAgICAgICAgZm9udEZhbWlseTogRi5zYW5zLAogICAgICAgICAgICBmb250V2VpZ2h0OiA5MDAsCiAgICAgICAgICAgIGZvbnRTaXplOiBTLmhlcm8sCiAgICAgICAgICAgIGxpbmVIZWlnaHQ6IDEuMywKICAgICAgICAgICAgY29sb3I6IEMud2hhbGUsCiAgICAgICAgICAgIG9wYWNpdHk6IGxpbmUyLAogICAgICAgICAgICB0cmFuc2Zvcm06IGB0cmFuc2xhdGVZKCR7KDEgLSBsaW5lMikgKiAyNH1weClgLAogICAgICAgICAgICB3aGl0ZVNwYWNlOiAibm93cmFwIiwKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAg5Lit6Ze05rKh5pyJ5Lq6CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgoKICAgICAgey8qIOKUgOKUgCDpmLbmrrUgMu+8muiQveeJiO+8iOmyuOmxvCArIOaWh+Wtl+Wdl+W5tuaOku+8jOaVtOS9k+WxheS4re+8ieKUgOKUgCAqL30KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogImFic29sdXRlIiwKICAgICAgICAgIGxlZnQ6IExPQ0tfTEVGVCwKICAgICAgICAgIHRvcDogMCwKICAgICAgICAgIHdpZHRoOiBMT0NLX1csCiAgICAgICAgICBoZWlnaHQ6IEgsCiAgICAgICAgICBkaXNwbGF5OiAiZmxleCIsCiAgICAgICAgICBhbGlnbkl0ZW1zOiAiY2VudGVyIiwKICAgICAgICAgIGdhcDogNTYsCiAgICAgICAgICBvcGFjaXR5OiBzdGFnZTJQLAogICAgICAgIH19CiAgICAgID4KICAgICAgICA8ZGl2IHN0eWxlPXt7IG9wYWNpdHk6IG1hcmtQLCBmbGV4U2hyaW5rOiAwIH19PgogICAgICAgICAgPFdoYWxlTWFyayBzaXplPXsxNjB9IG9wYWNpdHk9ezAuOTV9IC8+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBzdHlsZT17eyBkaXNwbGF5OiAiZmxleCIsIGZsZXhEaXJlY3Rpb246ICJjb2x1bW4iIH19PgogICAgICAgICAgPGRpdgogICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgIGZvbnRGYW1pbHk6IEYuc2FucywKICAgICAgICAgICAgICBmb250V2VpZ2h0OiA5MDAsCiAgICAgICAgICAgICAgZm9udFNpemU6IFMuaDEsCiAgICAgICAgICAgICAgY29sb3I6IEMudGV4dCwKICAgICAgICAgICAgICBvcGFjaXR5OiBuYW1lUCwKICAgICAgICAgICAgICB0cmFuc2Zvcm06IGB0cmFuc2xhdGVZKCR7KDEgLSBuYW1lUCkgKiAxNn1weClgLAogICAgICAgICAgICB9fQogICAgICAgICAgPgogICAgICAgICAgICBBbnRocm9wb3MKICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdgogICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgIG1hcmdpblRvcDogMTYsCiAgICAgICAgICAgICAgZm9udEZhbWlseTogRi5zYW5zLAogICAgICAgICAgICAgIGZvbnRXZWlnaHQ6IDQwMCwKICAgICAgICAgICAgICBmb250U2l6ZTogUy5zbWFsbCwKICAgICAgICAgICAgICBjb2xvcjogQy5kaW0sCiAgICAgICAgICAgICAgb3BhY2l0eTogc3ViUCwKICAgICAgICAgICAgICB3aGl0ZVNwYWNlOiAibm93cmFwIiwKICAgICAgICAgICAgfX0KICAgICAgICAgID4KICAgICAgICAgICAg5LiA5Liq6Ieq5bex6L+Q6JClIEIg56uZ55qEIEFJCiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxkaXYKICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICBtYXJnaW5Ub3A6IDM2LAogICAgICAgICAgICAgIGZvbnRGYW1pbHk6IEYubW9ubywKICAgICAgICAgICAgICBmb250U2l6ZTogUy5zbWFsbCwKICAgICAgICAgICAgICBjb2xvcjogQy53aGFsZSwKICAgICAgICAgICAgICBvcGFjaXR5OiBsaW5rUCwKICAgICAgICAgICAgICBmb250VmFyaWFudE51bWVyaWM6ICJ0YWJ1bGFyLW51bXMiLAogICAgICAgICAgICAgIHdoaXRlU3BhY2U6ICJub3dyYXAiLAogICAgICAgICAgICB9fQogICAgICAgICAgPgogICAgICAgICAgICBnaXRodWIuY29tL3lodC1jZGQvYmlsaS1hbnRocm9wb3MKICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KCiAgICAgIHsvKiDmlLblsL7vvJrmnIDlkI4gNjAg5bin5YWo6buRICovfQogICAgICA8ZGl2IHN0eWxlPXt7IHBvc2l0aW9uOiAiYWJzb2x1dGUiLCBpbnNldDogMCwgYmFja2dyb3VuZDogQy5iZywgb3BhY2l0eTogZmFkZU91dCB9fSAvPgogICAgPC9TY2VuZVNoZWxsPgogICk7Cn07Cg==
+import React from "react";
+import { interpolate, useCurrentFrame } from "remotion";
+import { C, F, H, S, SCENES, W } from "../theme";
+import { SceneShell } from "../components/SceneShell";
+import { GridBackdrop, WhaleMark } from "../components/ui";
+
+/**
+ * S8End —— 帧 4900–5400（16.7 秒）
+ * 收尾 + 落版。
+ *
+ * 横屏骨架：居中单列。
+ *   阶段 1（0–300）：两行总结，S.hero，通栏居中
+ *   阶段 2（300–500）：鲸鱼（160）+ 右侧文字块并排，整体宽 900 居中
+ *   最后 60 帧（local 440–500）淡到全黑
+ *
+ * 本场不加交叠尾巴，duration = 500，全片正好收在 5400。
+ */
+
+const LEN = SCENES.end.to - SCENES.end.from; // 500
+export const S8_DURATION = LEN;
+
+const LOCK_W = 900;
+const LOCK_LEFT = W / 2 - LOCK_W / 2; // 510
+
+const ip = (f: number, a: number, b: number, from = 0, to = 1) =>
+  interpolate(f, [a, b], [from, to], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
+export const S8End: React.FC = () => {
+  const f = useCurrentFrame();
+
+  // 阶段 1
+  const line1 = ip(f, 20, 50);
+  const line2 = ip(f, 60, 90);
+  const stage1P = 1 - ip(f, 280, 312);
+
+  // 阶段 2
+  const stage2P = ip(f, 300, 340);
+  const markP = ip(f, 300, 340);
+  const nameP = ip(f, 320, 360);
+  const subP = ip(f, 350, 385);
+  const linkP = ip(f, 380, 412);
+  // 第 5340 帧起（local 440）淡到黑，最后 60 帧全黑
+  const fadeOut = ip(f, 440, 500);
+
+  return (
+    <SceneShell length={S8_DURATION}>
+      {/* 阶段 2 的背景层：一层极淡的数据流 */}
+      <div style={{ position: "absolute", inset: 0, opacity: stage2P * 0.35 }}>
+        <GridBackdrop opacity={0.06} />
+      </div>
+
+      {/* ── 阶段 1：总结两行（通栏居中）── */}
+      <div
+        style={{
+          position: "absolute",
+          left: 0,
+          right: 0,
+          top: 300,
+          textAlign: "center",
+          opacity: stage1P,
+        }}
+      >
+        <div
+          style={{
+            fontFamily: F.sans,
+            fontWeight: 900,
+            fontSize: S.hero,
+            lineHeight: 1.3,
+            color: C.text,
+            opacity: line1,
+            transform: `translateY(${(1 - line1) * 24}px)`,
+            whiteSpace: "nowrap",
+          }}
+        >
+          从醒来到投稿
+        </div>
+        <div
+          style={{
+            marginTop: 36,
+            fontFamily: F.sans,
+            fontWeight: 900,
+            fontSize: S.hero,
+            lineHeight: 1.3,
+            color: C.whale,
+            opacity: line2,
+            transform: `translateY(${(1 - line2) * 24}px)`,
+            whiteSpace: "nowrap",
+          }}
+        >
+          中间没有人
+        </div>
+      </div>
+
+      {/* ── 阶段 2：落版（鲸鱼 + 文字块并排，整体居中）── */}
+      <div
+        style={{
+          position: "absolute",
+          left: LOCK_LEFT,
+          top: 0,
+          width: LOCK_W,
+          height: H,
+          display: "flex",
+          alignItems: "center",
+          gap: 56,
+          opacity: stage2P,
+        }}
+      >
+        <div style={{ opacity: markP, flexShrink: 0 }}>
+          <WhaleMark size={160} opacity={0.95} />
+        </div>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div
+            style={{
+              fontFamily: F.sans,
+              fontWeight: 900,
+              fontSize: S.h1,
+              color: C.text,
+              opacity: nameP,
+              transform: `translateY(${(1 - nameP) * 16}px)`,
+            }}
+          >
+            Anthropos
+          </div>
+          <div
+            style={{
+              marginTop: 16,
+              fontFamily: F.sans,
+              fontWeight: 400,
+              fontSize: S.small,
+              color: C.dim,
+              opacity: subP,
+              whiteSpace: "nowrap",
+            }}
+          >
+            一个自己运营 B 站的 AI
+          </div>
+          <div
+            style={{
+              marginTop: 36,
+              fontFamily: F.mono,
+              fontSize: S.small,
+              color: C.whale,
+              opacity: linkP,
+              fontVariantNumeric: "tabular-nums",
+              whiteSpace: "nowrap",
+            }}
+          >
+            github.com/yht-cdd/bili-anthropos
+          </div>
+        </div>
+      </div>
+
+      {/* 收尾：最后 60 帧全黑 */}
+      <div style={{ position: "absolute", inset: 0, background: C.bg, opacity: fadeOut }} />
+    </SceneShell>
+  );
+};

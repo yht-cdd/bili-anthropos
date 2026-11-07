@@ -1,1 +1,22 @@
-ewogICJuYW1lIjogIm1vdGlvbi1raXQiLAogICJ2ZXJzaW9uIjogIjEuMC4wIiwKICAiZGVzY3JpcHRpb24iOiAiT3B1czUuNSDmsLTlh4bplZzlpLTliqjmlYjlupMg4oCUIDkg5Liq57uE5Lu2ICsg5ZSv5LiA5ZCI5rOV57yT5Yqo5rqQ77yIU1BFQy5tZCDmmK/mr43mnKzvvIkiLAogICJzY3JpcHRzIjogewogICAgInN0dWRpbyI6ICJyZW1vdGlvbiBzdHVkaW8gZGVtby9pbmRleC50cyIsCiAgICAiYnVuZGxlIjogInJlbW90aW9uIGJ1bmRsZSBkZW1vL2luZGV4LnRzIiwKICAgICJyZW5kZXIiOiAicmVtb3Rpb24gcmVuZGVyIGRlbW8vaW5kZXgudHMgTW90aW9uS2l0RGVtbyBvdXQvZGVtby5tcDQiLAogICAgInR5cGVjaGVjayI6ICJ0c2MgLS1ub0VtaXQiCiAgfSwKICAidHlwZSI6ICJjb21tb25qcyIsCiAgImRlcGVuZGVuY2llcyI6IHsKICAgICJAcmVtb3Rpb24vY2xpIjogIl40LjAuNTM5IiwKICAgICJAdHlwZXMvcmVhY3QiOiAiXjE4LjMuMzEiLAogICAgIkB0eXBlcy9yZWFjdC1kb20iOiAiXjE4LjMuNyIsCiAgICAicmVhY3QiOiAiXjE4LjMuMSIsCiAgICAicmVhY3QtZG9tIjogIl4xOC4zLjEiLAogICAgInJlbW90aW9uIjogIl40LjAuNTM5IiwKICAgICJ0eXBlc2NyaXB0IjogIl41LjkuMyIKICB9LAogICJwcml2YXRlIjogdHJ1ZQp9Cg==
+{
+  "name": "motion-kit",
+  "version": "1.0.0",
+  "description": "Opus5.5 水准镜头动效库 — 9 个组件 + 唯一合法缓动源（SPEC.md 是母本）",
+  "scripts": {
+    "studio": "remotion studio demo/index.ts",
+    "bundle": "remotion bundle demo/index.ts",
+    "render": "remotion render demo/index.ts MotionKitDemo out/demo.mp4",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "@remotion/cli": "^4.0.539",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.539",
+    "typescript": "^5.9.3"
+  },
+  "private": true
+}

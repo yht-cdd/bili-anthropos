@@ -1,1 +1,6 @@
-IyBPcHVzNS41IOawtOWHhumVnOWktOWKqOaViOW6k++8iDkg57uE5Lu2ICsg5ZSv5LiA57yT5Yqo5rqQICsg6IqC5aWP5pat6KiA77yJIMK3IOi/m+W6pgoKIyMg56ysIDEg6L2uIMK3IDIwMjYvMTEvNCAwMTozNTowMQoK56ysMei9ru+8muW6k+WunueOsCtkZW1vIOmqqOaetu+8iGVhc2luZ3MudHMvTW90aW9uLnRzeCDkuZ3nu4Tku7blhajluKYgU1BFQyDpu5jorqTlgLzkuI7nlKjkurror53ms6jph4rjgIFSRUFETUUg6YCJ5Z6L6KGo44CBZGVtbyAzMDDluKfljYHmrrXlkKvnu4TlkIjplZzlpLTvvJtwbGFuU2VnbWVudHMg5oqK5LqU5p2h6IqC5aWP57qq5b6L5YaZ5oiQ5pat6KiA77ybdHNjIC0tbm9FbWl0IOi/h+OAgXJlbW90aW9uIGJ1bmRsZSDov4fvvIkKCg==
+# Opus5.5 水准镜头动效库（9 组件 + 唯一缓动源 + 节奏断言） · 进度
+
+## 第 1 轮 · 2026/11/4 01:35:01
+
+第1轮：库实现+demo 骨架（easings.ts/Motion.tsx 九组件全带 SPEC 默认值与用人话注释、README 选型表、demo 300帧十段含组合镜头；planSegments 把五条节奏纪律写成断言；tsc --noEmit 过、remotion bundle 过）
+

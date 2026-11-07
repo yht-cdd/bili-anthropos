@@ -1,1 +1,329 @@
-aW1wb3J0IFJlYWN0IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgaW50ZXJwb2xhdGUsIFNlcXVlbmNlLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICJyZW1vdGlvbiI7CmltcG9ydCB7IEMsIEYsIEcsIE0sIFMsIFNDRU5FUywgWCB9IGZyb20gIi4uL3RoZW1lIjsKaW1wb3J0IHsgU2NlbmVTaGVsbCB9IGZyb20gIi4uL2NvbXBvbmVudHMvU2NlbmVTaGVsbCI7CmltcG9ydCB7IFN0YXROdW1iZXIsIFdoYWxlTWFyayB9IGZyb20gIi4uL2NvbXBvbmVudHMvdWkiOwoKLyoqCiAqIFMyQWxpdmUg4oCU4oCUIOW4pyAzMzDigJM3ODDvvIgxNSDnp5LvvIkKICog5aW55L2P5Zyo5Yir5aSE44CCCiAqCiAqIOaoquWxj+mqqOaetu+8muW3puaWh+WPs+WbvuOAggogKiAgIOW3puagjyBYLmxlZnTvvIg3MjDvvInvvJrkuInooYzmloflrZcg4oaSIDI0IOWwj+aXtuaXtumXtOi9tCDihpIgNyDDlyAyNCDihpIg6YaS5p2l5qyh5pWwCiAqICAg5Y+z5qCPIFgucmlnaHTvvIg3MjDvvInvvJrmnLrmnrbliarlvbHvvIzpq5ggODgw77yM5Z6C55u05bGF5LitCiAqICAg54K56aKY6YKj5Y+l5pS55oiQ6YCa5qCP5bGF5Lit77yIMTYwMCDlrr3vvIxTLnF1b3Rl77yJ77yM5Y6L5Zyo6YGu572p5LmL5LiKCiAqLwoKY29uc3QgTEVOID0gU0NFTkVTLmFsaXZlLnRvIC0gU0NFTkVTLmFsaXZlLmZyb207IC8vIDQ1MApleHBvcnQgY29uc3QgUzJfRFVSQVRJT04gPSBMRU4gKyBNLm92ZXJsYXA7IC8vIDQ2NQoKY29uc3QgTEVGVF9XID0gRy5zcGxpdC5sZWZ0OyAvLyA3MjAKY29uc3QgUkFDS19IID0gODgwOyAvLyDpobbliLDlronlhajljLrkuIrkuIvmsr/vvIgxMDDigJM5ODDvvInvvIzmr4/kuKrljZXlhYPnuqYgMjczIOmrmO+8jOWhnuW+l+S4iyA2IOadoeehrOebmOanvQpjb25zdCBSQUNLX1RPUCA9IEcuY2VudGVyWSAtIFJBQ0tfSCAvIDI7IC8vIDEwMApjb25zdCBUSUNLUyA9IDI0OwoKY29uc3QgaXAgPSAoZjogbnVtYmVyLCBhOiBudW1iZXIsIGI6IG51bWJlciwgZnJvbSA9IDAsIHRvID0gMSkgPT4KICBpbnRlcnBvbGF0ZShmLCBbYSwgYl0sIFtmcm9tLCB0b10sIHsKICAgIGV4dHJhcG9sYXRlTGVmdDogImNsYW1wIiwKICAgIGV4dHJhcG9sYXRlUmlnaHQ6ICJjbGFtcCIsCiAgfSk7CgovKioKICog5LiJ5Liq5py65p625Y2V5YWD55qE5beu5byCIOKAlOKAlCDnga/oibIgLyDnoaznm5jmp73mlbAgLyDmjIfnpLrnga/kuq7nga3kvY3nva7pg73kuI3lkIzjgIIKICog5LiJ5Liq5LiA5qih5LiA5qC35bCx5oiQ5LqG6KOF6aWw5Zu+5qGI77yM5LiN5YOP6K6+5aSH44CCCiAqLwpjb25zdCBSQUNLX1VOSVRTID0gWwogIHsgaWQ6ICJSQUNLLTAxIiwgY29sb3I6IEMub2ssIHNsb3RzOiA2LCBsZWRzOiBbMSwgMSwgMCwgMSwgMF0sIHBlcmlvZDogNjAgfSwKICB7IGlkOiAiUkFDSy0wMiIsIGNvbG9yOiBDLndoYWxlLCBzbG90czogNSwgbGVkczogWzEsIDAsIDEsIDAsIDFdLCBwZXJpb2Q6IDkwIH0sCiAgeyBpZDogIlJBQ0stMDMiLCBjb2xvcjogQy53YXJtLCBzbG90czogNiwgbGVkczogWzAsIDEsIDEsIDEsIDBdLCBwZXJpb2Q6IDEyMCB9LApdOwoKLyoqIOWPs+agj++8muS4gOWPsOS4gOebtOS6ruedgOeahOacuuWZqO+8iOe6ryBDU1Mg55+p5b2i5aCG5Y+g77yM5Y+q5o+P6L655LiN5aGr6Imy77yJICovCmNvbnN0IFJhY2s6IFJlYWN0LkZDPHsgZnJhbWU6IG51bWJlciB9PiA9ICh7IGZyYW1lIH0pID0+ICgKICA8ZGl2CiAgICBzdHlsZT17ewogICAgICBwb3NpdGlvbjogImFic29sdXRlIiwKICAgICAgbGVmdDogWC5yaWdodCwKICAgICAgdG9wOiBSQUNLX1RPUCwKICAgICAgd2lkdGg6IExFRlRfVywKICAgICAgaGVpZ2h0OiBSQUNLX0gsCiAgICAgIGRpc3BsYXk6ICJmbGV4IiwKICAgICAgZmxleERpcmVjdGlvbjogImNvbHVtbiIsCiAgICAgIGdhcDogMzAsCiAgICB9fQogID4KICAgIHtSQUNLX1VOSVRTLm1hcCgodSwgaSkgPT4gKAogICAgICA8ZGl2CiAgICAgICAga2V5PXt1LmlkfQogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogInJlbGF0aXZlIiwKICAgICAgICAgIGZsZXg6IDEsCiAgICAgICAgICBib3JkZXI6IGAxcHggc29saWQgJHtDLmZhaW50fWAsCiAgICAgICAgICBib3JkZXJSYWRpdXM6IDEwLAogICAgICAgICAgcGFkZGluZzogMjAsCiAgICAgICAgICBkaXNwbGF5OiAiZmxleCIsCiAgICAgICAgICBmbGV4RGlyZWN0aW9uOiAiY29sdW1uIiwKICAgICAgICAgIGdhcDogMTIsCiAgICAgICAgICBvcGFjaXR5OiBpcChmcmFtZSwgaSAqIDEyLCAyNCArIGkgKiAxMiwgMC4yLCAxKSwKICAgICAgICB9fQogICAgICA+CiAgICAgICAgey8qIOmhtumDqO+8mueKtuaAgeeBryArIOS4gOmBk+e7hue8nSAqL30KICAgICAgICA8ZGl2IHN0eWxlPXt7IGRpc3BsYXk6ICJmbGV4IiwgYWxpZ25JdGVtczogImNlbnRlciIsIGdhcDogMTIgfX0+CiAgICAgICAgICA8ZGl2CiAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgd2lkdGg6IDQsCiAgICAgICAgICAgICAgaGVpZ2h0OiA0LAogICAgICAgICAgICAgIGJvcmRlclJhZGl1czogMiwKICAgICAgICAgICAgICBiYWNrZ3JvdW5kOiB1LmNvbG9yLAogICAgICAgICAgICAgIGJveFNoYWRvdzogYDAgMCAxMHB4ICR7dS5jb2xvcn1gLAogICAgICAgICAgICB9fQogICAgICAgICAgLz4KICAgICAgICAgIDxkaXYgc3R5bGU9e3sgd2lkdGg6IDU2LCBoZWlnaHQ6IDEsIGJhY2tncm91bmQ6IEMubGluZSB9fSAvPgogICAgICAgICAgPGRpdiBzdHlsZT17eyBmbGV4OiAxIH19IC8+CiAgICAgICAgICA8ZGl2IHN0eWxlPXt7IHdpZHRoOiAyOCwgaGVpZ2h0OiAxLCBiYWNrZ3JvdW5kOiBDLmxpbmUgfX0gLz4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgey8qIOS4remDqO+8muaoquWQkeehrOebmOanve+8iOW3puerr+S4gOadoeS6rui+ue+8iSAqL30KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBkaXNwbGF5OiAiZmxleCIsCiAgICAgICAgICAgIGZsZXhEaXJlY3Rpb246ICJjb2x1bW4iLAogICAgICAgICAgICBnYXA6IDYsCiAgICAgICAgICAgIGZsZXg6IDEsCiAgICAgICAgICAgIG1hcmdpblJpZ2h0OiAzNCwKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAge0FycmF5LmZyb20oeyBsZW5ndGg6IHUuc2xvdHMgfSkubWFwKChfLCBrKSA9PiAoCiAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICBrZXk9e2t9CiAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgIGhlaWdodDogMjAsCiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kOiBDLmxpbmUsCiAgICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6IDMsCiAgICAgICAgICAgICAgICBkaXNwbGF5OiAiZmxleCIsCiAgICAgICAgICAgICAgICBhbGlnbkl0ZW1zOiAiY2VudGVyIiwKICAgICAgICAgICAgICAgIHBhZGRpbmdMZWZ0OiAzLAogICAgICAgICAgICAgICAgZ2FwOiAxMCwKICAgICAgICAgICAgICB9fQogICAgICAgICAgICA+CiAgICAgICAgICAgICAgPGRpdiBzdHlsZT17eyB3aWR0aDogMywgaGVpZ2h0OiAxNCwgYmFja2dyb3VuZDogdS5jb2xvciwgb3BhY2l0eTogMC43IH19IC8+CiAgICAgICAgICAgICAgPGRpdiBzdHlsZT17eyB3aWR0aDogIjQ2JSIsIGhlaWdodDogMSwgYmFja2dyb3VuZDogQy5mYWludCwgb3BhY2l0eTogMC41IH19IC8+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgKSl9CiAgICAgICAgPC9kaXY+CgogICAgICAgIHsvKiDlj7PkvqfvvJrkuIDmjpLnq5bnnYDnmoTov5DooYzmjIfnpLrnga8gKi99CiAgICAgICAgPGRpdgogICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgcG9zaXRpb246ICJhYnNvbHV0ZSIsCiAgICAgICAgICAgIHJpZ2h0OiAyMCwKICAgICAgICAgICAgdG9wOiA2NCwKICAgICAgICAgICAgZGlzcGxheTogImZsZXgiLAogICAgICAgICAgICBmbGV4RGlyZWN0aW9uOiAiY29sdW1uIiwKICAgICAgICAgICAgZ2FwOiAxMCwKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAge3UubGVkcy5tYXAoKG9uLCBrKSA9PiB7CiAgICAgICAgICAgIGNvbnN0IHAgPSBvbgogICAgICAgICAgICAgID8gMC41NSArIDAuNDUgKiAoMC41ICsgMC41ICogTWF0aC5zaW4oKGZyYW1lIC8gdS5wZXJpb2QpICogTWF0aC5QSSAqIDIgKyBrKSkKICAgICAgICAgICAgICA6IDAuMTI7CiAgICAgICAgICAgIHJldHVybiAoCiAgICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgICAga2V5PXtrfQogICAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgICAgd2lkdGg6IDYsCiAgICAgICAgICAgICAgICAgIGhlaWdodDogNiwKICAgICAgICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiAzLAogICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kOiBvbiA/IHUuY29sb3IgOiBDLmZhaW50LAogICAgICAgICAgICAgICAgICBvcGFjaXR5OiBwLAogICAgICAgICAgICAgICAgICBib3hTaGFkb3c6IG9uID8gYDAgMCA4cHggJHt1LmNvbG9yfWAgOiB1bmRlZmluZWQsCiAgICAgICAgICAgICAgICB9fQogICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICk7CiAgICAgICAgICB9KX0KICAgICAgICA8L2Rpdj4KCiAgICAgICAgey8qIOW6lemDqO+8muacuuaetue8luWPtyAqL30KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBmb250RmFtaWx5OiBGLm1vbm8sCiAgICAgICAgICAgIGZvbnRTaXplOiBTLmxhYmVsLAogICAgICAgICAgICBsaW5lSGVpZ2h0OiAxLAogICAgICAgICAgICBjb2xvcjogQy5mYWludCwKICAgICAgICAgICAgbGV0dGVyU3BhY2luZzogIjAuMDhlbSIsCiAgICAgICAgICB9fQogICAgICAgID4KICAgICAgICAgIHt1LmlkfQogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgICkpfQogIDwvZGl2PgopOwoKZXhwb3J0IGNvbnN0IFMyQWxpdmU6IFJlYWN0LkZDID0gKCkgPT4gewogIGNvbnN0IGYgPSB1c2VDdXJyZW50RnJhbWUoKTsKCiAgLy8g56ys5LqM5ouN77ya5pe26Ze06L205omr5o+PCiAgY29uc3Qgc2NhbiA9IGlwKGYsIDkwLCAyMTApOwogIGNvbnN0IHByb2dyZXNzVyA9IHNjYW4gKiBMRUZUX1c7CiAgY29uc3QgdGlja1N0ZXAgPSBMRUZUX1cgLyAoVElDS1MgLSAxKTsKICBjb25zdCB3YWtlQXQgPSBbNiwgMTIsIDE4LCAyM107CgogIC8vIOesrOS4ieaLje+8iOacrOWcuuebuOWvueW4pyAxOTAg6LW377yMPSDnu53lr7kgNTIw77yJ77ya55yf5q2j55qE6YGu572p5reh5YWlIDEyIOW4pyDihpIg6YGu572p5LmL5LiK5pS+54K56aKY5aSn5a2XCiAgY29uc3QgbWFza1AgPSBpcChmLCAxOTAsIDIwMiwgMCwgMC45KTsKICBjb25zdCBxdW90ZVAgPSBpcChmLCAxOTYsIDIyNCk7CiAgY29uc3QgdW5kZXJsaW5lUCA9IGlwKGYsIDI3MCwgMzEwKTsKCiAgLy8g56ys5LiA5ouN77ya5bem5qCP5LiJ6KGM5a2XCiAgY29uc3QgdDEgPSBpcChmLCAxMCwgMzQpOwogIGNvbnN0IHQyID0gaXAoZiwgMzQsIDU4KTsKICBjb25zdCB0MyA9IGlwKGYsIDU4LCA4Mik7CgogIHJldHVybiAoCiAgICA8U2NlbmVTaGVsbCBsZW5ndGg9e1MyX0RVUkFUSU9OfT4KICAgICAgey8qIOWPs+agj+acuuaetuWJquW9sSAqL30KICAgICAgPFJhY2sgZnJhbWU9e2Z9IC8+CgogICAgICB7Lyog5bem5LiK6KeS77ya5aW55Zyo6L+Z6YeMICovfQogICAgICA8ZGl2IHN0eWxlPXt7IHBvc2l0aW9uOiAiYWJzb2x1dGUiLCBsZWZ0OiBYLmxlZnQsIHRvcDogRy5wYWRZIH19PgogICAgICAgIDxXaGFsZU1hcmsgc2l6ZT17MTEwfSBvcGFjaXR5PXswLjV9IC8+CiAgICAgIDwvZGl2PgoKICAgICAgey8qIOW3puagj++8muS4ieihjOWtl++8iDcyMCDlrr3vvIxTLmgxIOS4gOihjOacgOWkmiA5IOWtl++8jOaJi+WKqOaWreihjO+8iSAqL30KICAgICAgPGRpdiBzdHlsZT17eyBwb3NpdGlvbjogImFic29sdXRlIiwgbGVmdDogWC5sZWZ0LCB0b3A6IDI1MCwgd2lkdGg6IExFRlRfVyB9fT4KICAgICAgICB7WwogICAgICAgICAgeyB0ZXh0OiAi5aW55LiN5L2P5Zyo5L2g55S16ISR6YeMIiwgcDogdDEgfSwKICAgICAgICAgIHsgdGV4dDogIuWlueS9j+WcqOS4gOWPsCIsIHA6IHQyIH0sCiAgICAgICAgICB7IHRleHQ6ICLkuIDnm7TlvIDnnYDnmoTmnLrlmajkuIoiLCBwOiB0MyB9LAogICAgICAgIF0ubWFwKChyb3cpID0+ICgKICAgICAgICAgIDxkaXYKICAgICAgICAgICAga2V5PXtyb3cudGV4dH0KICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICBmb250RmFtaWx5OiBGLnNhbnMsCiAgICAgICAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgICAgICAgIGZvbnRTaXplOiBTLmgxLAogICAgICAgICAgICAgIGxpbmVIZWlnaHQ6IDEuNSwKICAgICAgICAgICAgICBjb2xvcjogQy50ZXh0LAogICAgICAgICAgICAgIG9wYWNpdHk6IHJvdy5wLAogICAgICAgICAgICAgIHRyYW5zZm9ybTogYHRyYW5zbGF0ZVkoJHsoMSAtIHJvdy5wKSAqIDI0fXB4KWAsCiAgICAgICAgICAgIH19CiAgICAgICAgICA+CiAgICAgICAgICAgIHtyb3cudGV4dH0KICAgICAgICAgIDwvZGl2PgogICAgICAgICkpfQogICAgICA8L2Rpdj4KCiAgICAgIHsvKiDlt6bmoI/vvJoyNCDlsI/ml7bml7bpl7TovbTvvIjlrr0gNzIw77yM5Zyo5paH5a2X5LiL5pa55qiq5omr77yJICovfQogICAgICA8ZGl2IHN0eWxlPXt7IHBvc2l0aW9uOiAiYWJzb2x1dGUiLCBsZWZ0OiBYLmxlZnQsIHRvcDogNjIwLCB3aWR0aDogTEVGVF9XLCBoZWlnaHQ6IDI0IH19PgogICAgICAgIDxkaXYgc3R5bGU9e3sgcG9zaXRpb246ICJhYnNvbHV0ZSIsIGxlZnQ6IDAsIHRvcDogMTEsIHdpZHRoOiBMRUZUX1csIGhlaWdodDogMSwgYmFja2dyb3VuZDogQy5saW5lIH19IC8+CiAgICAgICAgPGRpdgogICAgICAgICAgc3R5bGU9e3sgcG9zaXRpb246ICJhYnNvbHV0ZSIsIGxlZnQ6IDAsIHRvcDogMTAsIHdpZHRoOiBwcm9ncmVzc1csIGhlaWdodDogMiwgYmFja2dyb3VuZDogQy53aGFsZSB9fQogICAgICAgIC8+CiAgICAgICAge0FycmF5LmZyb20oeyBsZW5ndGg6IFRJQ0tTIH0pLm1hcCgoXywgaSkgPT4gewogICAgICAgICAgY29uc3QgbGl0ID0gc2NhbiAqIChUSUNLUyAtIDEpID49IGk7CiAgICAgICAgICBjb25zdCBpc1dha2UgPSB3YWtlQXQuaW5kZXhPZihpKSA+PSAwOwogICAgICAgICAgcmV0dXJuICgKICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgIGtleT17aX0KICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgcG9zaXRpb246ICJhYnNvbHV0ZSIsCiAgICAgICAgICAgICAgICBsZWZ0OiBpICogdGlja1N0ZXAgLSAxLAogICAgICAgICAgICAgICAgdG9wOiBpc1dha2UgPyA2IDogOCwKICAgICAgICAgICAgICAgIHdpZHRoOiBpc1dha2UgPyA4IDogMiwKICAgICAgICAgICAgICAgIGhlaWdodDogaXNXYWtlID8gOCA6IDEwLAogICAgICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiBpc1dha2UgPyA0IDogMSwKICAgICAgICAgICAgICAgIGJhY2tncm91bmQ6IGlzV2FrZSA/IChsaXQgPyBDLndoYWxlIDogQy5mYWludCkgOiBsaXQgPyBDLmRpbSA6IEMuZmFpbnQsCiAgICAgICAgICAgICAgICBvcGFjaXR5OiBpc1dha2UgPyAobGl0ID8gMSA6IDAuMzUpIDogMC44LAogICAgICAgICAgICAgICAgYm94U2hhZG93OiBpc1dha2UgJiYgbGl0ID8gYDAgMCAxMHB4ICR7Qy53aGFsZX1gIDogdW5kZWZpbmVkLAogICAgICAgICAgICAgIH19CiAgICAgICAgICAgIC8+CiAgICAgICAgICApOwogICAgICAgIH0pfQogICAgICA8L2Rpdj4KCiAgICAgIHsvKiDlt6bmoI/vvJo3IMOXIDI077yIUy5tZWdh77yM5qiq5ZCR5pKR5ruhIDcyMO+8iSAqL30KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogImFic29sdXRlIiwKICAgICAgICAgIGxlZnQ6IFgubGVmdCwKICAgICAgICAgIHRvcDogNjY1LAogICAgICAgICAgZm9udEZhbWlseTogRi5tb25vLAogICAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgICAgZm9udFNpemU6IFMubWVnYSwKICAgICAgICAgIGxpbmVIZWlnaHQ6IDEsCiAgICAgICAgICBjb2xvcjogQy53aGFsZSwKICAgICAgICAgIGZvbnRWYXJpYW50TnVtZXJpYzogInRhYnVsYXItbnVtcyIsCiAgICAgICAgICBsZXR0ZXJTcGFjaW5nOiAiLTAuMDFlbSIsCiAgICAgICAgICBvcGFjaXR5OiBpcChmLCA5MCwgMTIwKSwKICAgICAgICB9fQogICAgICA+CiAgICAgICAgNyDDlyAyNAogICAgICA8L2Rpdj4KCiAgICAgIHsvKiDlt6bmoI/vvJrku44gMCDlop7plb/liLAgMjQg55qE6K6h5pWwICovfQogICAgICA8U2VxdWVuY2UKICAgICAgICBmcm9tPXs5MH0KICAgICAgICBkdXJhdGlvbkluRnJhbWVzPXsxNTB9CiAgICAgICAgc3R5bGU9e3sgcG9zaXRpb246ICJhYnNvbHV0ZSIsIGxlZnQ6IFgubGVmdCwgdG9wOiA4ODAsIGhlaWdodDogODAgfX0KICAgICAgPgogICAgICAgIDxkaXYgc3R5bGU9e3sgZGlzcGxheTogImZsZXgiLCBhbGlnbkl0ZW1zOiAiYmFzZWxpbmUiLCBnYXA6IDEyIH19PgogICAgICAgICAgPFN0YXROdW1iZXIKICAgICAgICAgICAgdmFsdWU9ezI0fQogICAgICAgICAgICBkdXJhdGlvbkluRnJhbWVzPXsxMjB9CiAgICAgICAgICAgIHN0eWxlPXt7IGZvbnRTaXplOiBTLmgxLCBjb2xvcjogQy50ZXh0LCBmb250VmFyaWFudE51bWVyaWM6ICJ0YWJ1bGFyLW51bXMiIH19CiAgICAgICAgICAvPgogICAgICAgICAgPHNwYW4gc3R5bGU9e3sgZm9udEZhbWlseTogRi5tb25vLCBmb250U2l6ZTogUy5zbWFsbCwgY29sb3I6IEMuZmFpbnQgfX0+5qyh6YaS5p2lPC9zcGFuPgogICAgICAgIDwvZGl2PgogICAgICA8L1NlcXVlbmNlPgoKICAgICAgey8qIOesrOS4ieaLje+8mumBrue9qe+8iOebluS9j+WFqOmDqOWJjeaZr++8ieKGkiDmoIfpopjljovlnKjkuIrpnaIgKi99CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICJhYnNvbHV0ZSIsCiAgICAgICAgICBpbnNldDogMCwKICAgICAgICAgIGJhY2tncm91bmQ6IEMuYmcsCiAgICAgICAgICBvcGFjaXR5OiBtYXNrUCwKICAgICAgICAgIHpJbmRleDogMTAsCiAgICAgICAgfX0KICAgICAgLz4KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogImFic29sdXRlIiwKICAgICAgICAgIGxlZnQ6IEcucGFkWCwKICAgICAgICAgIHRvcDogNDAwLAogICAgICAgICAgd2lkdGg6IEcuY29udGVudFcsCiAgICAgICAgICBkaXNwbGF5OiAiZmxleCIsCiAgICAgICAgICBmbGV4RGlyZWN0aW9uOiAiY29sdW1uIiwKICAgICAgICAgIGFsaWduSXRlbXM6ICJjZW50ZXIiLAogICAgICAgICAgekluZGV4OiAxMSwKICAgICAgICB9fQogICAgICA+CiAgICAgICAgPGRpdgogICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgZm9udEZhbWlseTogRi5zYW5zLAogICAgICAgICAgICBmb250V2VpZ2h0OiA5MDAsCiAgICAgICAgICAgIGZvbnRTaXplOiBTLnF1b3RlLAogICAgICAgICAgICBjb2xvcjogQy50ZXh0LAogICAgICAgICAgICBsZXR0ZXJTcGFjaW5nOiAiMC4wMmVtIiwKICAgICAgICAgICAgdGV4dEFsaWduOiAiY2VudGVyIiwKICAgICAgICAgICAgb3BhY2l0eTogcXVvdGVQLAogICAgICAgICAgICB0cmFuc2Zvcm06IGB0cmFuc2xhdGVZKCR7KDEgLSBxdW90ZVApICogMjR9cHgpYCwKICAgICAgICAgICAgd2hpdGVTcGFjZTogIm5vd3JhcCIsCiAgICAgICAgICB9fQogICAgICAgID4KICAgICAgICAgIOaIkeaDs+e7meWlueS4gOS4quWujOaVtOeahOS4gOeUnwogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYKICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgIG1hcmdpblRvcDogNDgsCiAgICAgICAgICAgIHdpZHRoOiA1NjAsCiAgICAgICAgICAgIGhlaWdodDogMSwKICAgICAgICAgICAgYmFja2dyb3VuZDogQy53aGFsZSwKICAgICAgICAgICAgdHJhbnNmb3JtOiBgc2NhbGVYKCR7dW5kZXJsaW5lUH0pYCwKICAgICAgICAgICAgdHJhbnNmb3JtT3JpZ2luOiAiY2VudGVyIiwKICAgICAgICAgIH19CiAgICAgICAgLz4KICAgICAgPC9kaXY+CiAgICA8L1NjZW5lU2hlbGw+CiAgKTsKfTsK
+import React from "react";
+import { interpolate, Sequence, useCurrentFrame } from "remotion";
+import { C, F, G, M, S, SCENES, X } from "../theme";
+import { SceneShell } from "../components/SceneShell";
+import { StatNumber, WhaleMark } from "../components/ui";
+
+/**
+ * S2Alive —— 帧 330–780（15 秒）
+ * 她住在别处。
+ *
+ * 横屏骨架：左文右图。
+ *   左栏 X.left（720）：三行文字 → 24 小时时间轴 → 7 × 24 → 醒来次数
+ *   右栏 X.right（720）：机架剪影，高 880，垂直居中
+ *   点题那句改成通栏居中（1600 宽，S.quote），压在遮罩之上
+ */
+
+const LEN = SCENES.alive.to - SCENES.alive.from; // 450
+export const S2_DURATION = LEN + M.overlap; // 465
+
+const LEFT_W = G.split.left; // 720
+const RACK_H = 880; // 顶到安全区上下沿（100–980），每个单元约 273 高，塞得下 6 条硬盘槽
+const RACK_TOP = G.centerY - RACK_H / 2; // 100
+const TICKS = 24;
+
+const ip = (f: number, a: number, b: number, from = 0, to = 1) =>
+  interpolate(f, [a, b], [from, to], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
+/**
+ * 三个机架单元的差异 —— 灯色 / 硬盘槽数 / 指示灯亮灭位置都不同。
+ * 三个一模一样就成了装饰图案，不像设备。
+ */
+const RACK_UNITS = [
+  { id: "RACK-01", color: C.ok, slots: 6, leds: [1, 1, 0, 1, 0], period: 60 },
+  { id: "RACK-02", color: C.whale, slots: 5, leds: [1, 0, 1, 0, 1], period: 90 },
+  { id: "RACK-03", color: C.warm, slots: 6, leds: [0, 1, 1, 1, 0], period: 120 },
+];
+
+/** 右栏：一台一直亮着的机器（纯 CSS 矩形堆叠，只描边不填色） */
+const Rack: React.FC<{ frame: number }> = ({ frame }) => (
+  <div
+    style={{
+      position: "absolute",
+      left: X.right,
+      top: RACK_TOP,
+      width: LEFT_W,
+      height: RACK_H,
+      display: "flex",
+      flexDirection: "column",
+      gap: 30,
+    }}
+  >
+    {RACK_UNITS.map((u, i) => (
+      <div
+        key={u.id}
+        style={{
+          position: "relative",
+          flex: 1,
+          border: `1px solid ${C.faint}`,
+          borderRadius: 10,
+          padding: 20,
+          display: "flex",
+          flexDirection: "column",
+          gap: 12,
+          opacity: ip(frame, i * 12, 24 + i * 12, 0.2, 1),
+        }}
+      >
+        {/* 顶部：状态灯 + 一道细缝 */}
+        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          <div
+            style={{
+              width: 4,
+              height: 4,
+              borderRadius: 2,
+              background: u.color,
+              boxShadow: `0 0 10px ${u.color}`,
+            }}
+          />
+          <div style={{ width: 56, height: 1, background: C.line }} />
+          <div style={{ flex: 1 }} />
+          <div style={{ width: 28, height: 1, background: C.line }} />
+        </div>
+
+        {/* 中部：横向硬盘槽（左端一条亮边） */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: 6,
+            flex: 1,
+            marginRight: 34,
+          }}
+        >
+          {Array.from({ length: u.slots }).map((_, k) => (
+            <div
+              key={k}
+              style={{
+                height: 20,
+                background: C.line,
+                borderRadius: 3,
+                display: "flex",
+                alignItems: "center",
+                paddingLeft: 3,
+                gap: 10,
+              }}
+            >
+              <div style={{ width: 3, height: 14, background: u.color, opacity: 0.7 }} />
+              <div style={{ width: "46%", height: 1, background: C.faint, opacity: 0.5 }} />
+            </div>
+          ))}
+        </div>
+
+        {/* 右侧：一排竖着的运行指示灯 */}
+        <div
+          style={{
+            position: "absolute",
+            right: 20,
+            top: 64,
+            display: "flex",
+            flexDirection: "column",
+            gap: 10,
+          }}
+        >
+          {u.leds.map((on, k) => {
+            const p = on
+              ? 0.55 + 0.45 * (0.5 + 0.5 * Math.sin((frame / u.period) * Math.PI * 2 + k))
+              : 0.12;
+            return (
+              <div
+                key={k}
+                style={{
+                  width: 6,
+                  height: 6,
+                  borderRadius: 3,
+                  background: on ? u.color : C.faint,
+                  opacity: p,
+                  boxShadow: on ? `0 0 8px ${u.color}` : undefined,
+                }}
+              />
+            );
+          })}
+        </div>
+
+        {/* 底部：机架编号 */}
+        <div
+          style={{
+            fontFamily: F.mono,
+            fontSize: S.label,
+            lineHeight: 1,
+            color: C.faint,
+            letterSpacing: "0.08em",
+          }}
+        >
+          {u.id}
+        </div>
+      </div>
+    ))}
+  </div>
+);
+
+export const S2Alive: React.FC = () => {
+  const f = useCurrentFrame();
+
+  // 第二拍：时间轴扫描
+  const scan = ip(f, 90, 210);
+  const progressW = scan * LEFT_W;
+  const tickStep = LEFT_W / (TICKS - 1);
+  const wakeAt = [6, 12, 18, 23];
+
+  // 第三拍（本场相对帧 190 起，= 绝对 520）：真正的遮罩淡入 12 帧 → 遮罩之上放点题大字
+  const maskP = ip(f, 190, 202, 0, 0.9);
+  const quoteP = ip(f, 196, 224);
+  const underlineP = ip(f, 270, 310);
+
+  // 第一拍：左栏三行字
+  const t1 = ip(f, 10, 34);
+  const t2 = ip(f, 34, 58);
+  const t3 = ip(f, 58, 82);
+
+  return (
+    <SceneShell length={S2_DURATION}>
+      {/* 右栏机架剪影 */}
+      <Rack frame={f} />
+
+      {/* 左上角：她在这里 */}
+      <div style={{ position: "absolute", left: X.left, top: G.padY }}>
+        <WhaleMark size={110} opacity={0.5} />
+      </div>
+
+      {/* 左栏：三行字（720 宽，S.h1 一行最多 9 字，手动断行） */}
+      <div style={{ position: "absolute", left: X.left, top: 250, width: LEFT_W }}>
+        {[
+          { text: "她不住在你电脑里", p: t1 },
+          { text: "她住在一台", p: t2 },
+          { text: "一直开着的机器上", p: t3 },
+        ].map((row) => (
+          <div
+            key={row.text}
+            style={{
+              fontFamily: F.sans,
+              fontWeight: 700,
+              fontSize: S.h1,
+              lineHeight: 1.5,
+              color: C.text,
+              opacity: row.p,
+              transform: `translateY(${(1 - row.p) * 24}px)`,
+            }}
+          >
+            {row.text}
+          </div>
+        ))}
+      </div>
+
+      {/* 左栏：24 小时时间轴（宽 720，在文字下方横扫） */}
+      <div style={{ position: "absolute", left: X.left, top: 620, width: LEFT_W, height: 24 }}>
+        <div style={{ position: "absolute", left: 0, top: 11, width: LEFT_W, height: 1, background: C.line }} />
+        <div
+          style={{ position: "absolute", left: 0, top: 10, width: progressW, height: 2, background: C.whale }}
+        />
+        {Array.from({ length: TICKS }).map((_, i) => {
+          const lit = scan * (TICKS - 1) >= i;
+          const isWake = wakeAt.indexOf(i) >= 0;
+          return (
+            <div
+              key={i}
+              style={{
+                position: "absolute",
+                left: i * tickStep - 1,
+                top: isWake ? 6 : 8,
+                width: isWake ? 8 : 2,
+                height: isWake ? 8 : 10,
+                borderRadius: isWake ? 4 : 1,
+                background: isWake ? (lit ? C.whale : C.faint) : lit ? C.dim : C.faint,
+                opacity: isWake ? (lit ? 1 : 0.35) : 0.8,
+                boxShadow: isWake && lit ? `0 0 10px ${C.whale}` : undefined,
+              }}
+            />
+          );
+        })}
+      </div>
+
+      {/* 左栏：7 × 24（S.mega，横向撑满 720） */}
+      <div
+        style={{
+          position: "absolute",
+          left: X.left,
+          top: 665,
+          fontFamily: F.mono,
+          fontWeight: 700,
+          fontSize: S.mega,
+          lineHeight: 1,
+          color: C.whale,
+          fontVariantNumeric: "tabular-nums",
+          letterSpacing: "-0.01em",
+          opacity: ip(f, 90, 120),
+        }}
+      >
+        7 × 24
+      </div>
+
+      {/* 左栏：从 0 增长到 24 的计数 */}
+      <Sequence
+        from={90}
+        durationInFrames={150}
+        style={{ position: "absolute", left: X.left, top: 880, height: 80 }}
+      >
+        <div style={{ display: "flex", alignItems: "baseline", gap: 12 }}>
+          <StatNumber
+            value={24}
+            durationInFrames={120}
+            style={{ fontSize: S.h1, color: C.text, fontVariantNumeric: "tabular-nums" }}
+          />
+          <span style={{ fontFamily: F.mono, fontSize: S.small, color: C.faint }}>次醒来</span>
+        </div>
+      </Sequence>
+
+      {/* 第三拍：遮罩（盖住全部前景）→ 标题压在上面 */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background: C.bg,
+          opacity: maskP,
+          zIndex: 10,
+        }}
+      />
+      <div
+        style={{
+          position: "absolute",
+          left: G.padX,
+          top: 400,
+          width: G.contentW,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          zIndex: 11,
+        }}
+      >
+        <div
+          style={{
+            fontFamily: F.sans,
+            fontWeight: 900,
+            fontSize: S.quote,
+            color: C.text,
+            letterSpacing: "0.02em",
+            textAlign: "center",
+            opacity: quoteP,
+            transform: `translateY(${(1 - quoteP) * 24}px)`,
+            whiteSpace: "nowrap",
+          }}
+        >
+          我想给她一个完整的一生
+        </div>
+        <div
+          style={{
+            marginTop: 48,
+            width: 560,
+            height: 1,
+            background: C.whale,
+            transform: `scaleX(${underlineP})`,
+            transformOrigin: "center",
+          }}
+        />
+      </div>
+    </SceneShell>
+  );
+};

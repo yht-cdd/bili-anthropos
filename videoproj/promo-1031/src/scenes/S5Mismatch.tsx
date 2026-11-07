@@ -1,1 +1,235 @@
-aW1wb3J0IFJlYWN0IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgaW50ZXJwb2xhdGUsIHVzZUN1cnJlbnRGcmFtZSB9IGZyb20gInJlbW90aW9uIjsKaW1wb3J0IHsgQywgRiwgRywgTSwgUywgU0NFTkVTLCBYIH0gZnJvbSAiLi4vdGhlbWUiOwppbXBvcnQgeyBTY2VuZVNoZWxsIH0gZnJvbSAiLi4vY29tcG9uZW50cy9TY2VuZVNoZWxsIjsKCi8qKgogKiBTNU1pc21hdGNoIOKAlOKAlCDluKcgMjI4MOKAkzMwMDDvvIgyNCDnp5LvvIkKICog6Z+z55S75a+55LiN5LiK44CCCiAqCiAqIOaoquWxj+mqqOaetu+8muW3puWbvuWPs+mfs+i9qOOAggogKiAgIOW3puagjyBYLmxlZnTvvJrkuZ3lrqvmoLwgNTQww5c1NDDvvIjlnoLnm7TlsYXkuK3vvInvvIznuqLmoYbmoIflh7ogMyDmoLwKICogICDlj7PmoI8gWC5yaWdodO+8muazouW9oiA3MjAg5a6977yM5Lit6YCU56qB54S25Y+Y5bmz77yM5LiL6Z2i6YCQ6KGM57uZ5Yik5patCiAqICAg44CM5a+55LiN5LiK44CC44CN5Y6L5Zyo5YWo5bGP5q2j5Lit77yIUy5tZWdh77yJ77yM5Y6L5pqX5pe25bem5Y+z5LiA6LW35pqXCiAqLwoKY29uc3QgTEVOID0gU0NFTkVTLm1pc21hdGNoLnRvIC0gU0NFTkVTLm1pc21hdGNoLmZyb207IC8vIDcyMApleHBvcnQgY29uc3QgUzVfRFVSQVRJT04gPSBMRU4gKyBNLm92ZXJsYXA7IC8vIDczNQoKY29uc3QgR1JJRF9TSVpFID0gNTQwOwpjb25zdCBHQVAgPSAxMjsKY29uc3QgQ0VMTCA9IChHUklEX1NJWkUgLSBHQVAgKiAyKSAvIDM7IC8vIDE3Mgpjb25zdCBHUklEX1RPUCA9IEcuY2VudGVyWSAtIEdSSURfU0laRSAvIDI7IC8vIDI3MAoKY29uc3QgQ09MX1cgPSBHLnNwbGl0LmxlZnQ7IC8vIDcyMApjb25zdCBCQVJTID0gMjQ7CmNvbnN0IEJBUl9XID0gMTg7CmNvbnN0IEJBUl9HQVAgPSAxMjsKY29uc3QgRkxBVF9BVCA9IDE0OyAvLyDnrKwgMTQg5qC55LmL5ZCO56qB54S25Y+Y5bmzCgpjb25zdCBpcCA9IChmOiBudW1iZXIsIGE6IG51bWJlciwgYjogbnVtYmVyLCBmcm9tID0gMCwgdG8gPSAxKSA9PgogIGludGVycG9sYXRlKGYsIFthLCBiXSwgW2Zyb20sIHRvXSwgewogICAgZXh0cmFwb2xhdGVMZWZ0OiAiY2xhbXAiLAogICAgZXh0cmFwb2xhdGVSaWdodDogImNsYW1wIiwKICB9KTsKCmNvbnN0IFJFRF9DRUxMUyA9IFsxLCA1LCA3XTsKCmV4cG9ydCBjb25zdCBTNU1pc21hdGNoOiBSZWFjdC5GQyA9ICgpID0+IHsKICBjb25zdCBmID0gdXNlQ3VycmVudEZyYW1lKCk7CgogIGNvbnN0IGp1ZGdlMSA9IGlwKGYsIDI0MCwgMjY4KTsKICBjb25zdCBqdWRnZTIgPSBpcChmLCAyNjgsIDI5Nik7CiAgY29uc3QgZGltID0gaXAoZiwgMzYwLCAzOTYpICogKDEgLSBpcChmLCA2MDAsIDY2MCkpOwogIGNvbnN0IHZlcmRpY3RQID0gaXAoZiwgMzcyLCAzOTYpOwogIGNvbnN0IHN1YlAgPSBpcChmLCA0MDAsIDQyNCk7CiAgY29uc3Qgaml0dGVyID0gTWF0aC5zaW4oTWF0aC5mbG9vcihmIC8gOCkgKiAxLjkpICogMjsKCiAgcmV0dXJuICgKICAgIDxTY2VuZVNoZWxsIGxlbmd0aD17UzVfRFVSQVRJT059PgogICAgICB7Lyog5bCP5qCH6aKY77ya5bem55S76Z2iIC8g5Y+z6Z+z6L2oICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAiYWJzb2x1dGUiLAogICAgICAgICAgbGVmdDogWC5sZWZ0LAogICAgICAgICAgdG9wOiAyMDgsCiAgICAgICAgICBmb250RmFtaWx5OiBGLm1vbm8sCiAgICAgICAgICBmb250U2l6ZTogUy5sYWJlbCwKICAgICAgICAgIGNvbG9yOiBDLmZhaW50LAogICAgICAgICAgbGV0dGVyU3BhY2luZzogIjAuMDhlbSIsCiAgICAgICAgICBvcGFjaXR5OiBpcChmLCAwLCAyMCksCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIOeUu+mdogogICAgICA8L2Rpdj4KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogImFic29sdXRlIiwKICAgICAgICAgIGxlZnQ6IFgucmlnaHQsCiAgICAgICAgICB0b3A6IDIwOCwKICAgICAgICAgIGZvbnRGYW1pbHk6IEYubW9ubywKICAgICAgICAgIGZvbnRTaXplOiBTLmxhYmVsLAogICAgICAgICAgY29sb3I6IEMuZmFpbnQsCiAgICAgICAgICBsZXR0ZXJTcGFjaW5nOiAiMC4wOGVtIiwKICAgICAgICAgIG9wYWNpdHk6IGlwKGYsIDAsIDIwKSwKICAgICAgICB9fQogICAgICA+CiAgICAgICAg6Z+z6L2oCiAgICAgIDwvZGl2PgoKICAgICAgey8qIOW3puWPs+S5i+mXtOeahOWIhumalOe6v++8iOiQveWcqOS4pOagj+mXtOi3neeahOato+S4re+8iSAqL30KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogImFic29sdXRlIiwKICAgICAgICAgIGxlZnQ6IFgubGVmdCArIEcuc3BsaXQubGVmdCArIEcuc3BsaXQuZ2FwIC8gMiwKICAgICAgICAgIHRvcDogR1JJRF9UT1AsCiAgICAgICAgICB3aWR0aDogMSwKICAgICAgICAgIGhlaWdodDogR1JJRF9TSVpFLAogICAgICAgICAgYmFja2dyb3VuZDogQy5saW5lLAogICAgICAgICAgb3BhY2l0eTogMC43LAogICAgICAgIH19CiAgICAgIC8+CgogICAgICB7Lyog5bem5qCP77ya5Lmd5a6r5qC8ICovfQogICAgICB7QXJyYXkuZnJvbSh7IGxlbmd0aDogOSB9KS5tYXAoKF8sIGkpID0+IHsKICAgICAgICBjb25zdCByID0gTWF0aC5mbG9vcihpIC8gMyk7CiAgICAgICAgY29uc3QgYyA9IGkgJSAzOwogICAgICAgIGNvbnN0IGxpdCA9IGlwKGYsIDEwICsgaSAqIDYsIDMwICsgaSAqIDYsIDAuMTIsIDEpOwogICAgICAgIGNvbnN0IGJveGVkID0gUkVEX0NFTExTLmluZGV4T2YoaSkgPj0gMCA/IGlwKGYsIDkwICsgaSAqIDYsIDExMCArIGkgKiA2KSA6IDA7CiAgICAgICAgcmV0dXJuICgKICAgICAgICAgIDxkaXYKICAgICAgICAgICAga2V5PXtpfQogICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgIHBvc2l0aW9uOiAiYWJzb2x1dGUiLAogICAgICAgICAgICAgIGxlZnQ6IFgubGVmdCArIGMgKiAoQ0VMTCArIEdBUCksCiAgICAgICAgICAgICAgdG9wOiBHUklEX1RPUCArIHIgKiAoQ0VMTCArIEdBUCksCiAgICAgICAgICAgICAgd2lkdGg6IENFTEwsCiAgICAgICAgICAgICAgaGVpZ2h0OiBDRUxMLAogICAgICAgICAgICAgIGJhY2tncm91bmQ6IEMucGFuZWwsCiAgICAgICAgICAgICAgYm9yZGVyOiBgMXB4IHNvbGlkICR7Qy5saW5lfWAsCiAgICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiAzLAogICAgICAgICAgICAgIG9wYWNpdHk6IGxpdCwKICAgICAgICAgICAgfX0KICAgICAgICAgID4KICAgICAgICAgICAge2JveGVkID4gMCA/ICgKICAgICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgICBwb3NpdGlvbjogImFic29sdXRlIiwKICAgICAgICAgICAgICAgICAgaW5zZXQ6IC0yLAogICAgICAgICAgICAgICAgICBib3JkZXI6IGAycHggc29saWQgJHtDLmJhZH1gLAogICAgICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6IDMsCiAgICAgICAgICAgICAgICAgIG9wYWNpdHk6IGJveGVkLAogICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kOiBgJHtDLmJhZH0xNGAsCiAgICAgICAgICAgICAgICB9fQogICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICkgOiBudWxsfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgKTsKICAgICAgfSl9CgogICAgICB7Lyog5Y+z5qCP77ya5rOi5b2i77yI56ysIDE0IOagueS5i+WQjueqgeeEtuWPmOW5s++8iSAqL30KICAgICAgPGRpdiBzdHlsZT17eyBwb3NpdGlvbjogImFic29sdXRlIiwgbGVmdDogWC5yaWdodCwgdG9wOiAyNDYsIHdpZHRoOiBDT0xfVywgaGVpZ2h0OiAyNDAgfX0+CiAgICAgICAgPGRpdiBzdHlsZT17eyBwb3NpdGlvbjogImFic29sdXRlIiwgbGVmdDogMCwgcmlnaHQ6IDAsIGJvdHRvbTogMCwgaGVpZ2h0OiAxLCBiYWNrZ3JvdW5kOiBDLmxpbmUgfX0gLz4KICAgICAgICA8ZGl2IHN0eWxlPXt7IHBvc2l0aW9uOiAiYWJzb2x1dGUiLCBsZWZ0OiAwLCBib3R0b206IDAsIGRpc3BsYXk6ICJmbGV4IiwgYWxpZ25JdGVtczogImZsZXgtZW5kIiwgZ2FwOiBCQVJfR0FQIH19PgogICAgICAgICAge0FycmF5LmZyb20oeyBsZW5ndGg6IEJBUlMgfSkubWFwKChfLCBpKSA9PiB7CiAgICAgICAgICAgIGNvbnN0IHdhdmUgPSAyNCArIE1hdGguYWJzKE1hdGguc2luKGYgKiAwLjA4ICsgaSkpICogMjAwOwogICAgICAgICAgICBjb25zdCBmbGF0UCA9IGkgPj0gRkxBVF9BVCA/IGlwKGYsIDEyMCwgMTM4KSA6IDA7CiAgICAgICAgICAgIGNvbnN0IGFwcGVhciA9IGlwKGYsIDYwICsgaSAqIDIsIDgwICsgaSAqIDIpOwogICAgICAgICAgICByZXR1cm4gKAogICAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICAgIGtleT17aX0KICAgICAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgICAgIHdpZHRoOiBCQVJfVywKICAgICAgICAgICAgICAgICAgaGVpZ2h0OiBNYXRoLm1heCgyLCB3YXZlICogKDEgLSBmbGF0UCkpICogYXBwZWFyLAogICAgICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6IDIsCiAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQ6IGkgPj0gRkxBVF9BVCAmJiBmbGF0UCA+IDAuNSA/IEMuZmFpbnQgOiBDLmRpbSwKICAgICAgICAgICAgICAgICAgb3BhY2l0eTogaSA+PSBGTEFUX0FUICYmIGZsYXRQID4gMC41ID8gMC41IDogMC44NSwKICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgKTsKICAgICAgICAgIH0pfQogICAgICAgIDwvZGl2PgoKICAgICAgICB7Lyog56uW55u06Jma57q/77ya5aOw6Z+z5pat5o6J55qE5L2N572uICovfQogICAgICAgIDxkaXYKICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgIHBvc2l0aW9uOiAiYWJzb2x1dGUiLAogICAgICAgICAgICBsZWZ0OiBGTEFUX0FUICogKEJBUl9XICsgQkFSX0dBUCkgLSA2LAogICAgICAgICAgICB0b3A6IDAsCiAgICAgICAgICAgIGJvdHRvbTogMCwKICAgICAgICAgICAgd2lkdGg6IDAsCiAgICAgICAgICAgIGJvcmRlckxlZnQ6IGAycHggZGFzaGVkICR7Qy5iYWR9YCwKICAgICAgICAgICAgb3BhY2l0eTogaXAoZiwgMTIwLCAxNDApICogMC45LAogICAgICAgICAgfX0KICAgICAgICAvPgogICAgICA8L2Rpdj4KCiAgICAgIHsvKiDlj7PmoI/vvJrpgJDooYzliKTmlq0gKi99CiAgICAgIDxkaXYgc3R5bGU9e3sgcG9zaXRpb246ICJhYnNvbHV0ZSIsIGxlZnQ6IFgucmlnaHQsIHRvcDogNTYwLCB3aWR0aDogQ09MX1cgfX0+CiAgICAgICAgPGRpdgogICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgZm9udEZhbWlseTogRi5zYW5zLAogICAgICAgICAgICBmb250U2l6ZTogUy5zbWFsbCwKICAgICAgICAgICAgY29sb3I6IEMuZGltLAogICAgICAgICAgICBvcGFjaXR5OiBqdWRnZTEsCiAgICAgICAgICAgIHRyYW5zZm9ybTogYHRyYW5zbGF0ZVkoJHsoMSAtIGp1ZGdlMSkgKiAxNn1weClgLAogICAgICAgICAgfX0KICAgICAgICA+CiAgICAgICAgICDnlLvpnaLvvJo8c3BhbiBzdHlsZT17eyBjb2xvcjogQy50ZXh0IH19PuWtl+W5leWime+8jOavj+S4gOW4p+mDveacieWtlzwvc3Bhbj4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBtYXJnaW5Ub3A6IDI0LAogICAgICAgICAgICBmb250RmFtaWx5OiBGLnNhbnMsCiAgICAgICAgICAgIGZvbnRTaXplOiBTLnNtYWxsLAogICAgICAgICAgICBjb2xvcjogQy5kaW0sCiAgICAgICAgICAgIG9wYWNpdHk6IGp1ZGdlMiwKICAgICAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWSgkeygxIC0ganVkZ2UyKSAqIDE2fXB4KWAsCiAgICAgICAgICB9fQogICAgICAgID4KICAgICAgICAgIOmfs+i9qO+8mjxzcGFuIHN0eWxlPXt7IGNvbG9yOiBDLnRleHQgfX0+5Y+q5pyJ5LiA5aOw44CM5Zev44CNPC9zcGFuPgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KCiAgICAgIHsvKiDljovmmpfvvIjlt6blj7PkuIDotbfmmpfvvIkrIOe7k+iuuuWOi+WcqOWFqOWxj+ato+S4rSAqL30KICAgICAgPGRpdiBzdHlsZT17eyBwb3NpdGlvbjogImFic29sdXRlIiwgaW5zZXQ6IDAsIGJhY2tncm91bmQ6IEMuYmcsIG9wYWNpdHk6IGRpbSAqIDAuNjYgfX0gLz4KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogImFic29sdXRlIiwKICAgICAgICAgIGluc2V0OiAwLAogICAgICAgICAgZGlzcGxheTogImZsZXgiLAogICAgICAgICAgZmxleERpcmVjdGlvbjogImNvbHVtbiIsCiAgICAgICAgICBhbGlnbkl0ZW1zOiAiY2VudGVyIiwKICAgICAgICAgIGp1c3RpZnlDb250ZW50OiAiY2VudGVyIiwKICAgICAgICAgIG9wYWNpdHk6IHZlcmRpY3RQLAogICAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWCgke2ppdHRlcn1weClgLAogICAgICAgIH19CiAgICAgID4KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBmb250RmFtaWx5OiBGLnNhbnMsCiAgICAgICAgICAgIGZvbnRXZWlnaHQ6IDkwMCwKICAgICAgICAgICAgZm9udFNpemU6IFMubWVnYSwKICAgICAgICAgICAgbGluZUhlaWdodDogMS4xLAogICAgICAgICAgICBjb2xvcjogQy5iYWQsCiAgICAgICAgICAgIGxldHRlclNwYWNpbmc6ICIwLjAyZW0iLAogICAgICAgICAgICB3aGl0ZVNwYWNlOiAibm93cmFwIiwKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAg5a+55LiN5LiK44CCCiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdgogICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgbWFyZ2luVG9wOiAzMiwKICAgICAgICAgICAgZm9udEZhbWlseTogRi5zYW5zLAogICAgICAgICAgICBmb250U2l6ZTogUy5ib2R5LAogICAgICAgICAgICBjb2xvcjogQy5kaW0sCiAgICAgICAgICAgIG9wYWNpdHk6IHN1YlAsCiAgICAgICAgICB9fQogICAgICAgID4KICAgICAgICAgIOi/meenjee7k+iuuu+8jOeMnOS4jeWHuuadpQogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvU2NlbmVTaGVsbD4KICApOwp9Owo=
+import React from "react";
+import { interpolate, useCurrentFrame } from "remotion";
+import { C, F, G, M, S, SCENES, X } from "../theme";
+import { SceneShell } from "../components/SceneShell";
+
+/**
+ * S5Mismatch —— 帧 2280–3000（24 秒）
+ * 音画对不上。
+ *
+ * 横屏骨架：左图右音轨。
+ *   左栏 X.left：九宫格 540×540（垂直居中），红框标出 3 格
+ *   右栏 X.right：波形 720 宽，中途突然变平，下面逐行给判断
+ *   「对不上。」压在全屏正中（S.mega），压暗时左右一起暗
+ */
+
+const LEN = SCENES.mismatch.to - SCENES.mismatch.from; // 720
+export const S5_DURATION = LEN + M.overlap; // 735
+
+const GRID_SIZE = 540;
+const GAP = 12;
+const CELL = (GRID_SIZE - GAP * 2) / 3; // 172
+const GRID_TOP = G.centerY - GRID_SIZE / 2; // 270
+
+const COL_W = G.split.left; // 720
+const BARS = 24;
+const BAR_W = 18;
+const BAR_GAP = 12;
+const FLAT_AT = 14; // 第 14 根之后突然变平
+
+const ip = (f: number, a: number, b: number, from = 0, to = 1) =>
+  interpolate(f, [a, b], [from, to], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
+const RED_CELLS = [1, 5, 7];
+
+export const S5Mismatch: React.FC = () => {
+  const f = useCurrentFrame();
+
+  const judge1 = ip(f, 240, 268);
+  const judge2 = ip(f, 268, 296);
+  const dim = ip(f, 360, 396) * (1 - ip(f, 600, 660));
+  const verdictP = ip(f, 372, 396);
+  const subP = ip(f, 400, 424);
+  const jitter = Math.sin(Math.floor(f / 8) * 1.9) * 2;
+
+  return (
+    <SceneShell length={S5_DURATION}>
+      {/* 小标题：左画面 / 右音轨 */}
+      <div
+        style={{
+          position: "absolute",
+          left: X.left,
+          top: 208,
+          fontFamily: F.mono,
+          fontSize: S.label,
+          color: C.faint,
+          letterSpacing: "0.08em",
+          opacity: ip(f, 0, 20),
+        }}
+      >
+        画面
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          left: X.right,
+          top: 208,
+          fontFamily: F.mono,
+          fontSize: S.label,
+          color: C.faint,
+          letterSpacing: "0.08em",
+          opacity: ip(f, 0, 20),
+        }}
+      >
+        音轨
+      </div>
+
+      {/* 左右之间的分隔线（落在两栏间距的正中） */}
+      <div
+        style={{
+          position: "absolute",
+          left: X.left + G.split.left + G.split.gap / 2,
+          top: GRID_TOP,
+          width: 1,
+          height: GRID_SIZE,
+          background: C.line,
+          opacity: 0.7,
+        }}
+      />
+
+      {/* 左栏：九宫格 */}
+      {Array.from({ length: 9 }).map((_, i) => {
+        const r = Math.floor(i / 3);
+        const c = i % 3;
+        const lit = ip(f, 10 + i * 6, 30 + i * 6, 0.12, 1);
+        const boxed = RED_CELLS.indexOf(i) >= 0 ? ip(f, 90 + i * 6, 110 + i * 6) : 0;
+        return (
+          <div
+            key={i}
+            style={{
+              position: "absolute",
+              left: X.left + c * (CELL + GAP),
+              top: GRID_TOP + r * (CELL + GAP),
+              width: CELL,
+              height: CELL,
+              background: C.panel,
+              border: `1px solid ${C.line}`,
+              borderRadius: 3,
+              opacity: lit,
+            }}
+          >
+            {boxed > 0 ? (
+              <div
+                style={{
+                  position: "absolute",
+                  inset: -2,
+                  border: `2px solid ${C.bad}`,
+                  borderRadius: 3,
+                  opacity: boxed,
+                  background: `${C.bad}14`,
+                }}
+              />
+            ) : null}
+          </div>
+        );
+      })}
+
+      {/* 右栏：波形（第 14 根之后突然变平） */}
+      <div style={{ position: "absolute", left: X.right, top: 246, width: COL_W, height: 240 }}>
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 1, background: C.line }} />
+        <div style={{ position: "absolute", left: 0, bottom: 0, display: "flex", alignItems: "flex-end", gap: BAR_GAP }}>
+          {Array.from({ length: BARS }).map((_, i) => {
+            const wave = 24 + Math.abs(Math.sin(f * 0.08 + i)) * 200;
+            const flatP = i >= FLAT_AT ? ip(f, 120, 138) : 0;
+            const appear = ip(f, 60 + i * 2, 80 + i * 2);
+            return (
+              <div
+                key={i}
+                style={{
+                  width: BAR_W,
+                  height: Math.max(2, wave * (1 - flatP)) * appear,
+                  borderRadius: 2,
+                  background: i >= FLAT_AT && flatP > 0.5 ? C.faint : C.dim,
+                  opacity: i >= FLAT_AT && flatP > 0.5 ? 0.5 : 0.85,
+                }}
+              />
+            );
+          })}
+        </div>
+
+        {/* 竖直虚线：声音断掉的位置 */}
+        <div
+          style={{
+            position: "absolute",
+            left: FLAT_AT * (BAR_W + BAR_GAP) - 6,
+            top: 0,
+            bottom: 0,
+            width: 0,
+            borderLeft: `2px dashed ${C.bad}`,
+            opacity: ip(f, 120, 140) * 0.9,
+          }}
+        />
+      </div>
+
+      {/* 右栏：逐行判断 */}
+      <div style={{ position: "absolute", left: X.right, top: 560, width: COL_W }}>
+        <div
+          style={{
+            fontFamily: F.sans,
+            fontSize: S.small,
+            color: C.dim,
+            opacity: judge1,
+            transform: `translateY(${(1 - judge1) * 16}px)`,
+          }}
+        >
+          画面：<span style={{ color: C.text }}>字幕墙，每一帧都有字</span>
+        </div>
+        <div
+          style={{
+            marginTop: 24,
+            fontFamily: F.sans,
+            fontSize: S.small,
+            color: C.dim,
+            opacity: judge2,
+            transform: `translateY(${(1 - judge2) * 16}px)`,
+          }}
+        >
+          音轨：<span style={{ color: C.text }}>只有一声「嗯」</span>
+        </div>
+      </div>
+
+      {/* 压暗（左右一起暗）+ 结论压在全屏正中 */}
+      <div style={{ position: "absolute", inset: 0, background: C.bg, opacity: dim * 0.66 }} />
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          opacity: verdictP,
+          transform: `translateX(${jitter}px)`,
+        }}
+      >
+        <div
+          style={{
+            fontFamily: F.sans,
+            fontWeight: 900,
+            fontSize: S.mega,
+            lineHeight: 1.1,
+            color: C.bad,
+            letterSpacing: "0.02em",
+            whiteSpace: "nowrap",
+          }}
+        >
+          对不上。
+        </div>
+        <div
+          style={{
+            marginTop: 32,
+            fontFamily: F.sans,
+            fontSize: S.body,
+            color: C.dim,
+            opacity: subP,
+          }}
+        >
+          这种结论，猜不出来
+        </div>
+      </div>
+    </SceneShell>
+  );
+};

@@ -1,1 +1,29 @@
-Ly8gZGVtby90aGVtZS50cyDigJQg5ryU56S654mH6KeG6KeJ5bqV55uY77yI5ZKMIGFpLWFnZW50LXByb21vIOWQjOS4gOWll+iJsu+8jOaWueS+v+ebruajgOaXtuS4jeS4suWRs++8iQpleHBvcnQgY29uc3QgVyA9IDE5MjA7CmV4cG9ydCBjb25zdCBIID0gMTA4MDsKZXhwb3J0IGNvbnN0IEZQUyA9IDMwOwpleHBvcnQgY29uc3QgVE9UQUxfRlJBTUVTID0gMzAwOyAvLyAxMCDnp5IKCmV4cG9ydCBjb25zdCBCR19UT1AgPSAnIzA4MEIxMic7CmV4cG9ydCBjb25zdCBCR19CT1RUT00gPSAnIzEyMTgyMic7CmV4cG9ydCBjb25zdCBURVhUID0gJyNFQ0U5RTEnOwpleHBvcnQgY29uc3QgQ09SQUwgPSAnI0Q5Nzc1Nyc7CmV4cG9ydCBjb25zdCBMSU1FID0gJyNENEY0M0UnOwpleHBvcnQgY29uc3QgRVJST1IgPSAnI0U1NDg0RCc7CmV4cG9ydCBjb25zdCBHUkFZID0gJyM4Qjk0OUUnOwoKZXhwb3J0IGNvbnN0IEZPTlRfU0FOUyA9CiAgIidOb3RvIFNhbnMgQ0pLIFNDJywgJ05vdG8gU2FucyBTQycsICdOb3RvIFNhbnMgQ0pLIEpQJywgJ1BpbmdGYW5nIFNDJywgJ01pY3Jvc29mdCBZYUhlaScsIHNhbnMtc2VyaWYiOwpleHBvcnQgY29uc3QgRk9OVF9NT05PID0KICAiJ0pldEJyYWlucyBNb25vJywgdWktbW9ub3NwYWNlLCAnU0YgTW9ubycsIE1lbmxvLCBDb25zb2xhcywgJ05vdG8gU2FucyBNb25vIENKSyBTQycsIG1vbm9zcGFjZSI7CgovLyDmrrXokL3nvJblj7fmnaHvvJrmvJTnpLrniYfkuJPnlKjnmoTpnZnmgIHmoIforrDvvIjkuI3lj4LkuI7liqjmlYjvvIxTUEVDIOe6quW+iyA0IOmHjOWug+S4jeeul+i/kOWKqOWFg+e0oO+8iQpleHBvcnQgY29uc3QgVEFHX1NUWUxFID0gewogIHBvc2l0aW9uOiAnYWJzb2x1dGUnIGFzIGNvbnN0LAogIGxlZnQ6IDY0LAogIHRvcDogNjQsCiAgZm9udEZhbWlseTogRk9OVF9NT05PLAogIGZvbnRTaXplOiAzMCwKICBsZXR0ZXJTcGFjaW5nOiAyLAogIGNvbG9yOiBHUkFZLAp9Owo=
+// demo/theme.ts — 演示片视觉底盘（和 ai-agent-promo 同一套色，方便目检时不串味）
+export const W = 1920;
+export const H = 1080;
+export const FPS = 30;
+export const TOTAL_FRAMES = 300; // 10 秒
+
+export const BG_TOP = '#080B12';
+export const BG_BOTTOM = '#121822';
+export const TEXT = '#ECE9E1';
+export const CORAL = '#D97757';
+export const LIME = '#D4F43E';
+export const ERROR = '#E5484D';
+export const GRAY = '#8B949E';
+
+export const FONT_SANS =
+  "'Noto Sans CJK SC', 'Noto Sans SC', 'Noto Sans CJK JP', 'PingFang SC', 'Microsoft YaHei', sans-serif";
+export const FONT_MONO =
+  "'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, 'Noto Sans Mono CJK SC', monospace";
+
+// 段落编号条：演示片专用的静态标记（不参与动效，SPEC 纪律 4 里它不算运动元素）
+export const TAG_STYLE = {
+  position: 'absolute' as const,
+  left: 64,
+  top: 64,
+  fontFamily: FONT_MONO,
+  fontSize: 30,
+  letterSpacing: 2,
+  color: GRAY,
+};

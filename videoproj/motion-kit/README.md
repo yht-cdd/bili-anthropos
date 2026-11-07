@@ -1,1 +1,62 @@
-IyBtb3Rpb24ta2l0IMK3IE9wdXM1LjUg5rC05YeG6ZWc5aS05Yqo5pWI5bqTCgo+IOe7mee7hOijhemVnOWktOeahOS6uu+8iOWMheaLrOWFjei0ueWwj+aooeWei++8ie+8mioq54Wn6L+Z5byg6KGo6YCJ57uE5Lu244CB54Wn6buY6K6k5YC855So77yM5LiN6KaB6Ieq5Yib5puy57q/44CCKioKPiDmr43mnKzop4TmoLzlnKggYFNQRUMubWRg77yb6L+Z6YeM5Y+q5Zue562U5LiA5Liq6Zeu6aKY4oCU4oCU44CM5oOz6KaB5LuA5LmI5oSf6KeJIOKGkiDnlKjlk6rkuKog4oaSIOWPguaVsOaAjuS5iOe7meOAjeOAggoKIyMg6YCJ5Z6L6KGo77ya5oOz6KaB5LuA5LmI5oSf6KeJIOKGkiDnlKjlk6rkuKoKCnwg5oOz6KaB5LuA5LmI5oSf6KeJIC8g5Zy65pmvIHwg55So5ZOq5LiqIHwg6buY6K6k5Y+C5pWw77yI5LiN5Lyg5bCx5piv5ZCI6KeE5YC877yJIHwg5aSH5rOoIHwKfC0tLXwtLS18LS0tfC0tLXwKfCDkuIDlvKDpnZnlm77mlL4gMiDnp5Lku6XkuIrvvIzliKvlg48gUFBUIHwgYFB1c2hJbmAgfCBgZnJvbT0xIOKGkiB0bz0xLjA2YO+8jGV4cG8tb3V077yMYGR1cmF0aW9uSW5GcmFtZXM9OTBg77yIKirmlLnmiJDkvaDov5nmrrXnmoTmgLvluKfmlbAqKu+8iSB8IOaWnOaOqOabtOacieWRs++8mmBwYW5YPcKxMjBg44CCYHRvYCDliKvotoUgMS4xIHwKfCDph43pn7PokL3kuIsgLyDmiqXplJkgLyDinJMg55uW56ugIHwgYFNoYWtlYCB8IGBhbXBsaXR1ZGU9MTRg44CBYGRhbXBpbmc9MTJg44CB6KGw5YePIDMg5qyh77yMYHBoYXNlPSdraWNrJ2Ag5Zy65pmv55SoIHwgYHN0YXJ0YCDlv4Xpobvlkowgc2Z4IOeahCBkaW5nICoq5ZCM5LiA5binKirvvIjnuqrlvosgM++8iSB8Cnwg5aSn5a2X5bmV44CB6Imy5Z2X44CM5ZSw44CN5Zyw6L+b5Zy6IHwgYE1hc2tXaXBlYCB8IOWFpeWcuiA4LTEyIOW4p++8iOm7mOiupCAxMO+8ie+8jGBkaXJlY3Rpb249J2xlZnQnYO+8jOmAgOWcuiA0LTYg5binIHwg5Y+q6K64IGNsaXAtcGF0aCDmk6bvvIzliKvphY3mt6HlhaUgfAp8IOWIl+ihqCAvIOe7iOerr+i+k+WHuiAvIOS7o+eggeihjOmAkOadoeWHuuadpSB8IGBTdGFnZ2VyYCB8IGBzdGVwSW5GcmFtZXM9M2DvvIjljLrpl7QgMi0077yJ44CB5q+P5p2hIGV4cG8tb3V0IHwg5LiA5qyhIFN0YWdnZXIg566XKirkuIDkuKoqKuWKqOaViO+8jOS4jeaYr+S4gOihjOS4gOS4qiB8Cnwg55S76Z2i6KaB5pyJ5YmN5ZCO5bGC5qyhIHwgYFBhcmFsbGF4YCB8IOWJjeaZryB4KzE4cHjjgIHog4zmma8geOKIkjEwcHjvvIzlkIzluKflkK/liqggfCDlj6rmnInkuKTlsYLvvIjnuqrlvosgNCDkuIrpmZDvvInvvIznrKzkuInlsYLlv4XpobvpnZnmraIgfAp8IOWcuuaZr+WIh+WFpeOAgeWAkuW4puWQjuOAjOWvueS4iueEpuOAjeWumuagvCB8IGBGb2N1c1JhY2tgIHwgYmx1ciAxMOKGkjDvvIw2LTEwIOW4pyBleHBvLW91dO+8iOm7mOiupCA477yJ77yM6YWNIHNjYWxlIDAuOTjihpIxIHwg6L2s5Zy657yT5Yay5L2N55qE5Lik5Liq5ZCI5rOV6YCJ6aG55LmL5LiAIHwKfCDlhajniYfog7bniYfotKjmhJ8gfCBgR3JhaW5gIHwgYG9wYWNpdHk9MC4wNWDvvIgwLjA0LTAuMDfvvInjgIHmr48gMiDluKfmjaIgc2VlZCB8ICoq5YWo54mH5oyC5LiA5qyhKirvvIzliKvmr4/mrrXmjIIgfAp8IOaUtuinhue6v+OAgeWOi+m7kei+uSB8IGBWaWduZXR0ZWAgfCBgc3RyZW5ndGg9MC4zNWAg6L6557yY6buRIHwg5ZCM5LiK77yM5YWo54mH5LiA5qyh77yb5Yir6LaFIDAuNe+8iOmCo+aYr+map+mBk++8iSB8Cnwg55Sp6ZWc5aS0IC8g56Gs5YiH5YmN57yT5YayIHwgYE1vdGlvbkJsdXJgIHwgYGxheWVycz0zYOOAgWBvcGFjaXR5PTAuM2DvvIzkvY3np7sgPjQwcHgv5binIOW/heaMgu+8iGBuZWVkc01vdGlvbkJsdXIoKWAg5biu5L2g5Yik77yJIHwg5Y+q5aSE55CGIHRyYW5zbGF0Ze+8m+S9jeenu+WHveaVsOW/hemhu+e6r+WHveaVsCB8Cnwg5LiN55+l6YGT55So5ZOq5Liq55qE5YWl5Zy6IHwgYEZvY3VzUmFja2Ag5oiWIGBNYXNrV2lwZWAgfCDigJQgfCDliKvnlKjjgIzmlbTlsY/mt6HlhaXjgI3vvIzpgqPmmK/npoHnlKjmuIXljZUgfAoKIyMg5LiJ5p2h56Gs6KeE55+p77yI6L+d5Y+N5Y2z6L+U5bel77yJCgoxLiAqKue8k+WKqOWPquS7jiBgZWFzaW5ncy50c2Ag5ou/KirvvJpgZXhwb091dGAgLyBgZXhwb0luYCAvIGBleHBvSW5PdXRgIC8gYHNwcmluZ1Byb2dyZXNzKClg44CCCiAgIOemgeiHquWGmSBjdWJpYy1iZXppZXLjgIHnpoEgYEVhc2luZy5pbk91dGAg6buY6K6k5YC844CB56aBIGxpbmVhciDlgZrkuLvop5LliqjmlYjvvIjlkbzlkLjnsbvlvq7liqjlj6/ku6XnlKggYGJyZWF0aGVgIOaIliBgcHVsc2UoKWDvvInjgIIKMi4gKiroioLlpY8qKu+8muWFpeWcuiA4LTEyIOW4p+OAgemAgOWcuiA0LTYg5bin5LiU5b+F6aG75q+U5YWl5Zy65b+r77yb5Lik5qyh5Yqo5pWI5LmL6Ze05YGc55WZIOKJpTIwIOW4p++8mwogICDkuIDlsY/lkIzml7bov5DliqjnmoTni6znq4vlhYPntKAg4omkMu+8m+mdnuOAjOWIgOOAjeS9jeeahOi9rOWcuuW/hemhu+aciSDiiaU0IOW4p+e8k+WGsu+8iGBGb2N1c1JhY2tgIC8gYE1vdGlvbkJsdXJgIOS6jOmAieS4gO+8ieOAggozLiAqKuaKiuaXtumXtOi9tOWGmei/myBgcGxhblNlZ21lbnRzKClgKirvvIhgTW90aW9uLnRzeGAg5bqV6YOo77yJ44CC5LiK6Z2i6L+Z5Lqb5pWw5a2X5a6D5LyaKirpgJDmnaHmlq3oqIDvvIwKICAg5LiN5ZCI6KeE55u05o6l5oqb6ZSZKirigJTigJTorqnmnKzlnLDmuLLmn5PngrjmjonvvIzliKvorqnluKbnl4XnmoTniYflrZDmipXnqL/lh7rljrvjgIJkZW1vLyDlsLHmmK/ov5nkuYjlhpnnmoTvvIznhafmioTnu5PmnoTljbPlj6/jgIIKCiMjIOe7hOS7tuS5i+Wklui/mOacieS7gOS5iAoKLSBgcHJvZ3Jlc3MoKWAgLyBgdHdlZW4oKWAg4oCUIOiHquW3seWGmeW6k+WkluWKqOaViOaXtueahOWUr+S4gOWQiOazlei/m+W6puWHveaVsO+8iGVhc2luZyDlj4LmlbDlj6rorqQgYExlZ2FsRWFzaW5nYCDlkI3lrZfvvIzlhpkgYCJsaW5lYXIiYCDnvJbor5HmnJ/miqXplJnvvInjgIIKLSBgYXNzZXJ0Q2FkZW5jZShsYWJlbCwgZW50ZXIsIGV4aXQpYCDigJQg5omL5pCT5Yqo5pWI5pe255qE6IqC5aWP6Ieq5qOA44CCCi0gYENBREVOQ0VgIOKAlCDlkIjop4TljLrpl7TluLjph4/ooajvvIzliKvlnKjlnLrmma/ph4zmlaPlhpnprZTms5XmlbDjgIIKLSBgbmVlZHNNb3Rpb25CbHVyKHB4UGVyRnJhbWUpYCDigJQg6K+l5LiN6K+l5oyC5ouW5b2x55qE5Yik5pat44CCCgojIyDnlKjms5UKCmBgYHRzeAppbXBvcnQgeyBQdXNoSW4sIFN0YWdnZXIsIEdyYWluLCBWaWduZXR0ZSwgcGxhblNlZ21lbnRzIH0gZnJvbSAnLi4vbW90aW9uLWtpdCc7IC8vIOaIliAnLi4vLi4vbW90aW9uLWtpdCcKCi8vIOW6k+WGheaJgOaciee7hOS7tuaMieOAjOacrOWcsOW4p+OAjeiuoeaXtu+8muaUvui/myA8U2VxdWVuY2U+IOWQjuS7jiAwIOaVsO+8jGR1cmF0aW9uSW5GcmFtZXMg6K6w5b6X5Lyg5L2g6L+Z5q6155qE5oC76ZW/CjxTZXF1ZW5jZSBmcm9tPXswfSBkdXJhdGlvbkluRnJhbWVzPXs5MH0+CiAgPFB1c2hJbiBkdXJhdGlvbkluRnJhbWVzPXs5MH0+PGltZyBzcmM9ey4uLn0gLz48L1B1c2hJbj4KICA8R3JhaW4gLz4KICA8VmlnbmV0dGUgLz4KPC9TZXF1ZW5jZT4KYGBgCgojIyBkZW1vCgpgbnB4IHJlbW90aW9uIHN0dWRpbyBkZW1vL2luZGV4LnRzYCDnm7TmjqXnnIvvvJtgbnB4IHJlbW90aW9uIGJ1bmRsZSBkZW1vL2luZGV4LnRzYCDlgZogQ0kg5qCh6aqM44CCCjEwIOenkiAvIDMwMCDluKcgLyAxOTIww5cxMDgwQDMwZnBz77yaOSDkuKrnu4Tku7blkITkuIDmrrUgKyAxIOautee7hOWQiOmVnOWktO+8iFB1c2hJbitTdGFnZ2VyK0dyYWluK1ZpZ25ldHRl77yJ77yMCuaXtumXtOi9tOeUsSBgcGxhblNlZ21lbnRzYCDlhajph4/mlq3oqIDjgIIKCiMjIOemgeeUqOa4heWNle+8iOS4gOecvOWBh++8jFNQRUMg5Y6f5paH77yJCgotIOKdjCBsaW5lYXIgLyBSZW1vdGlvbiDpu5jorqQgYEVhc2luZy5pbk91dGAg5YGa5Li76KeS5Yqo5pWICi0g4p2MIOaVtOWxj+WFg+e0oOWQjOWQkeWPiOe8qeaUvu+8iFBQVCDmhJ/vvIkKLSDinYwgYm91bmNlIOWbnuW8uei2hei/hyAxIOasoe+8iGBTUFJJTkdfUFJFU0VUUy5vbmUvaGFyZGAg5bey5bCB6aG277yJCi0g4p2MIOS4reaWh+Wtl+WPtyA8MjhweCDml6Dmj4/ovrkv6Zi05b2x5Y6L5Zyo5aSN5p2C6IOM5pmv5LiKCi0g4p2MIOeZveW6lee6r+a3oeWFpea3oeWHuui/nue7rei2hei/h+S4pOS4qumVnOWktAo=
+# motion-kit · Opus5.5 水准镜头动效库
+
+> 给组装镜头的人（包括免费小模型）：**照这张表选组件、照默认值用，不要自创曲线。**
+> 母本规格在 `SPEC.md`；这里只回答一个问题——「想要什么感觉 → 用哪个 → 参数怎么给」。
+
+## 选型表：想要什么感觉 → 用哪个
+
+| 想要什么感觉 / 场景 | 用哪个 | 默认参数（不传就是合规值） | 备注 |
+|---|---|---|---|
+| 一张静图放 2 秒以上，别像 PPT | `PushIn` | `from=1 → to=1.06`，expo-out，`durationInFrames=90`（**改成你这段的总帧数**） | 斜推更有味：`panX=±20`。`to` 别超 1.1 |
+| 重音落下 / 报错 / ✓ 盖章 | `Shake` | `amplitude=14`、`damping=12`、衰减 3 次，`phase='kick'` 场景用 | `start` 必须和 sfx 的 ding **同一帧**（纪律 3） |
+| 大字幕、色块「唰」地进场 | `MaskWipe` | 入场 8-12 帧（默认 10），`direction='left'`，退场 4-6 帧 | 只许 clip-path 擦，别配淡入 |
+| 列表 / 终端输出 / 代码行逐条出来 | `Stagger` | `stepInFrames=3`（区间 2-4）、每条 expo-out | 一次 Stagger 算**一个**动效，不是一行一个 |
+| 画面要有前后层次 | `Parallax` | 前景 x+18px、背景 x−10px，同帧启动 | 只有两层（纪律 4 上限），第三层必须静止 |
+| 场景切入、倒带后「对上焦」定格 | `FocusRack` | blur 10→0，6-10 帧 expo-out（默认 8），配 scale 0.98→1 | 转场缓冲位的两个合法选项之一 |
+| 全片胶片质感 | `Grain` | `opacity=0.05`（0.04-0.07）、每 2 帧换 seed | **全片挂一次**，别每段挂 |
+| 收视线、压黑边 | `Vignette` | `strength=0.35` 边缘黑 | 同上，全片一次；别超 0.5（那是隧道） |
+| 甩镜头 / 硬切前缓冲 | `MotionBlur` | `layers=3`、`opacity=0.3`，位移 >40px/帧 必挂（`needsMotionBlur()` 帮你判） | 只处理 translate；位移函数必须纯函数 |
+| 不知道用哪个的入场 | `FocusRack` 或 `MaskWipe` | — | 别用「整屏淡入」，那是禁用清单 |
+
+## 三条硬规矩（违反即返工）
+
+1. **缓动只从 `easings.ts` 拿**：`expoOut` / `expoIn` / `expoInOut` / `springProgress()`。
+   禁自写 cubic-bezier、禁 `Easing.inOut` 默认值、禁 linear 做主角动效（呼吸类微动可以用 `breathe` 或 `pulse()`）。
+2. **节奏**：入场 8-12 帧、退场 4-6 帧且必须比入场快；两次动效之间停留 ≥20 帧；
+   一屏同时运动的独立元素 ≤2；非「刀」位的转场必须有 ≥4 帧缓冲（`FocusRack` / `MotionBlur` 二选一）。
+3. **把时间轴写进 `planSegments()`**（`Motion.tsx` 底部）。上面这些数字它会**逐条断言，
+   不合规直接抛错**——让本地渲染炸掉，别让带病的片子投稿出去。demo/ 就是这么写的，照抄结构即可。
+
+## 组件之外还有什么
+
+- `progress()` / `tween()` — 自己写库外动效时的唯一合法进度函数（easing 参数只认 `LegalEasing` 名字，写 `"linear"` 编译期报错）。
+- `assertCadence(label, enter, exit)` — 手搓动效时的节奏自检。
+- `CADENCE` — 合规区间常量表，别在场景里散写魔法数。
+- `needsMotionBlur(pxPerFrame)` — 该不该挂拖影的判断。
+
+## 用法
+
+```tsx
+import { PushIn, Stagger, Grain, Vignette, planSegments } from '../motion-kit'; // 或 '../../motion-kit'
+
+// 库内所有组件按「本地帧」计时：放进 <Sequence> 后从 0 数，durationInFrames 记得传你这段的总长
+<Sequence from={0} durationInFrames={90}>
+  <PushIn durationInFrames={90}><img src={...} /></PushIn>
+  <Grain />
+  <Vignette />
+</Sequence>
+```
+
+## demo
+
+`npx remotion studio demo/index.ts` 直接看；`npx remotion bundle demo/index.ts` 做 CI 校验。
+10 秒 / 300 帧 / 1920×1080@30fps：9 个组件各一段 + 1 段组合镜头（PushIn+Stagger+Grain+Vignette），
+时间轴由 `planSegments` 全量断言。
+
+## 禁用清单（一眼假，SPEC 原文）
+
+- ❌ linear / Remotion 默认 `Easing.inOut` 做主角动效
+- ❌ 整屏元素同向又缩放（PPT 感）
+- ❌ bounce 回弹超过 1 次（`SPRING_PRESETS.one/hard` 已封顶）
+- ❌ 中文字号 <28px 无描边/阴影压在复杂背景上
+- ❌ 白底纯淡入淡出连续超过两个镜头

@@ -1,1 +1,122 @@
-LyoqCiAqIHRoZW1lLnRzIOKAlOKAlCDlhajniYfllK/kuIDnmoTop4bop4nmnaXmupAKICoKICog55S75biD77yaMTkyMMOXMTA4MO+8iDE2Ojkg5qiq5bGP77yJwrcgMzBmcHMgwrcgNTQwMCDluKcgPSAxODAuMCDnp5IKICoKICog5LiJ5p2h6KeE55+p77yaCiAqICAgMS4g5Lu75L2V5Zy65pmv6YeM5LiN6K645Ye6546w56Gs57yW56CB55qE6aKc6ImyL+Wtl+WPt++8jOWPquiDveeUqOi/memHjOeahOW4uOmHjwogKiAgIDIuIOaJgOacieaoquWQkeWumuS9jeW/hemhu+iQveWcqOagheagvOS4iu+8iOingSBHIOagheagvO+8ie+8jOS4jeiuuOmaj+aJi+WGmSBweAogKiAgIDMuIOWuieWFqOWMuu+8muW3puWPsyAxNjDvvIzkuIrkuIsgOTAg4oCU4oCUIOi2heWHuui/meS4quiMg+WbtOeahOWGheWuueWcqOmDqOWIhuiuvuWkh+S4iuS8muiiq+ijgQogKi8KCmV4cG9ydCBjb25zdCBDID0gewogIGJnOiAiIzA3MDgwQyIsICAgICAgLy8g5bqV6ImyCiAgcGFuZWw6ICIjMEUxMTE4IiwgICAvLyDpnaLmnb/lupUKICBsaW5lOiAiIzFBMUQyNiIsICAgIC8vIOWIhumalOe6vwogIHRleHQ6ICIjRURFRkY1IiwgICAgLy8g5Li75paH5a2XCiAgZGltOiAiIzhBOTBBMiIsICAgICAvLyDmrKHmloflrZcKICBmYWludDogIiM0QTRGNUUiLCAgIC8vIOabtOW8se+8iOihjOWPt+OAgeazqOmHiuOAgeemgeeUqOaAge+8iQogIG9rOiAiIzRCRTNBMiIsICAgICAgLy8g5oiQ5YqfIC8g5Zyo57q/CiAgYmFkOiAiI0ZGNUQ1RCIsICAgICAvLyDlpLHotKUgLyDooqvlkJ4KICB3aGFsZTogIiM1QkE4RkYiLCAgIC8vIOmyuOiTne+8iOW9ouixoeOAgeaVsOaNrua1geOAgeW8uuiwg++8iQogIHdhcm06ICIjRkZCNDU0IiwgICAgLy8g5bCR6YeP5pqW6Imy77yI6K2m56S644CB5b6F56Gu6K6k77yJCiAgcGFwZXI6ICIjRjVGN0ZBIiwgICAvLyBTMSDpgqPkuKrmtY/op4jlmajnqpflj6PnmoTmtYXoibLlupUKfSBhcyBjb25zdDsKCmV4cG9ydCBjb25zdCBGID0gewogIHNhbnM6ICciTm90byBTYW5zIENKSyBTQyIsICJQaW5nRmFuZyBTQyIsICJTb3VyY2UgSGFuIFNhbnMgU0MiLCBzYW5zLXNlcmlmJywKICBtb25vOiAnIkpldEJyYWlucyBNb25vIiwgIlNGIE1vbm8iLCAiTWVubG8iLCBtb25vc3BhY2UnLAp9IGFzIGNvbnN0OwoKLyoqCiAqIOWtl+WPt++8iOaoquWxj+WfuuWHhu+8iQogKiDnq5blsY/mlLnmqKrlsY/kuYvlkI7miYDmnInlrZflj7fpg73kuIrosIPkuobkuIDmoaMg4oCU4oCUIOaoquWxj+eahOmrmOW6puWPquaciSAxMDgw77yMCiAqIOWtl+WPt+WkquWwj+WcqOaJi+acuuerluWxj+ingueci+aXtuS8mueziuaIkOS4gOeJh+OAggogKi8KZXhwb3J0IGNvbnN0IFMgPSB7CiAgaGVybzogMTI4LCAgICAvLyDkuLvmoIfpopggLyDngrnpopjlpKflrZcKICBxdW90ZTogOTYsICAgIC8vIOmVv+WPpeeCuemimO+8iDEyIOWtl+S4gOihjOaUvuS4jeS4iyAxMjjvvIzpmY3kuIDmoaPvvIkKICBtZWdhOiAyMDAsICAgIC8vIOi2heWkp++8iDAwOjAw44CBN8OXMjQg6L+Z56eN77yJCiAgaDE6IDcyLCAgICAgICAvLyDmrrXmoIfpopgKICBib2R5OiA0OCwgICAgIC8vIOato+aWhyAvIOWtl+W5lQogIHNtYWxsOiAzMiwgICAgLy8g5bCP5a2XIC8g6K+05piOCiAgY29kZTogMzIsICAgICAvLyDku6PnoIEgLyDnrYnlrr3mlbDlrZcKICBsYWJlbDogMjYsICAgIC8vIOagh+etviAvIOihjOWPtwp9IGFzIGNvbnN0OwoKLyoqIOS4u+e8k+WKqCAqLwpleHBvcnQgY29uc3QgRUFTRSA9IFswLjE2LCAxLCAwLjMsIDFdIGFzIGNvbnN0OwoKZXhwb3J0IGNvbnN0IE0gPSB7CiAgZW50ZXJGcmFtZXM6IDIwLAogIGV4aXRGcmFtZXM6IDEyLAogIG92ZXJsYXA6IDE1LAogIGN1cnNvckh6OiAyLAogIHNoaWZ0OiA4MCwgICAvLyDlnLrmma/liIfmjaLkvY3np7vph4/vvIhweO+8iQp9IGFzIGNvbnN0OwoKZXhwb3J0IGNvbnN0IFRPVEFMX0ZSQU1FUyA9IDU0MDA7CmV4cG9ydCBjb25zdCBGUFMgPSAzMDsKZXhwb3J0IGNvbnN0IFcgPSAxOTIwOwpleHBvcnQgY29uc3QgSCA9IDEwODA7CgovKioKICog5qiq5bGP5qCF5qC8IOKAlOKAlCDmiYDmnInlrprkvY3pg73ku47ov5nph4zlj5bvvIzkuI3orrjmiYvlhpkgcHjjgIIKICoKICogICDlronlhajljLrlt6blj7PlkIQgMTYw77yM5Y+v55So5a695bqmIDE2MDAKICogICAxMiDliJfvvIzliJflrr0gMTAw77yM5YiX6Ze06LedIDMy77yaICAxMsOXMTAwICsgMTHDlzMyID0gMTU1Mu+8jOW3pui+uei3nSAxNjAgKyAyNCDlvq7osIMKICoKICog5bi455So5YiG5qCP77yaCiAqICAgbGF5b3V0LnNwbGl0ICDlt6blj7PkuKTmoI/vvIjlt6YgNzIwIC8g6Ze0IDE2MCAvIOWPsyA3MjDvvIkKICogICBsYXlvdXQud2lkZSAgIOmAmuagj++8iDE2MDDvvIkKICovCmV4cG9ydCBjb25zdCBHID0gewogIHBhZFg6IDE2MCwKICBwYWRZOiA5MCwKICBjb2xXOiAxMDAsCiAgZ3V0dGVyOiAzMiwKICBjb250ZW50VzogMTYwMCwKICAvKiog5bem5qCP5a6944CB5Y+z5qCP5a6944CB5Lit6Ze06Ze06LedIOKAlOKAlCDlt6blj7PliIbmoI/lnLrmma/nu5/kuIDnlKjov5nkuKogKi8KICBzcGxpdDogeyBsZWZ0OiA3MjAsIHJpZ2h0OiA3MjAsIGdhcDogMTYwIH0sCiAgLyoqIOWbm+agvOW/q+WJqu+8muWbm+WIl++8jOWIl+WuvSAzNzLvvIzpl7Tot50gMzAg4oCU4oCUIDM3MsOXNCArIDMww5czID0gMTU3OCAqLwogIHF1YWQ6IHsgdzogMzcyLCBnYXA6IDMwIH0sCiAgLyoqIOagheagvOeahOW3puS4iuinkui1t+eCuSAqLwogIG9yaWdpblg6IDE2MCwKICBvcmlnaW5ZOiA5MCwKICAvKiog5Z6C55u05Lit5b+D57q/77yI5pS+6LaF5aSn5pWw5a2X5pe255So77yJICovCiAgY2VudGVyWTogNTQwLAp9IGFzIGNvbnN0OwoKLyoqIOWcuuaZr+i+ueeVjO+8iOW4p++8ieKAlOKAlCDkuI4gYnJpZWYg56ysIDIg6IqC5Lil5qC85LiA6Ie0ICovCmV4cG9ydCBjb25zdCBTQ0VORVMgPSB7CiAgZ29uZTogeyBmcm9tOiAwLCB0bzogMzMwIH0sCiAgYWxpdmU6IHsgZnJvbTogMzMwLCB0bzogNzgwIH0sCiAgd2FrZTogeyBmcm9tOiA3ODAsIHRvOiAxMTQwIH0sCiAgZGF5OiB7IGZyb206IDExNDAsIHRvOiAyMjgwIH0sCiAgbWlzbWF0Y2g6IHsgZnJvbTogMjI4MCwgdG86IDMwMDAgfSwKICBhdmFsb246IHsgZnJvbTogMzAwMCwgdG86IDQwNTAgfSwKICByb3VuZHM6IHsgZnJvbTogNDA1MCwgdG86IDQ5MDAgfSwKICBlbmQ6IHsgZnJvbTogNDkwMCwgdG86IDU0MDAgfSwKfSBhcyBjb25zdDsKCi8qKgogKiDlnLrmma/liIfmjaLvvJrov5vkuoblhaUv5Ye656qX5Y+j5bCx5oyJ5Lqk5Y+g5YGa44CM5LiK56e75reh5Ye6ICsg5LiL56e75Y6L5YWl44CN44CCCiAqIOemgeatoue6ryBvcGFjaXR5IOS6pOWPiea6tuinoyDigJTigJQg6YKj5piv5pyA5YG35oeS55qE6L2s5Zy644CCCiAqLwpleHBvcnQgZnVuY3Rpb24gc2NlbmVUcmFuc2l0aW9uKGxvY2FsRnJhbWU6IG51bWJlciwgbGVuZ3RoOiBudW1iZXIpIHsKICBjb25zdCBpblAgPSBNYXRoLm1pbigxLCBsb2NhbEZyYW1lIC8gTS5lbnRlckZyYW1lcyk7CiAgY29uc3Qgb3V0UCA9IE1hdGgubWluKDEsIE1hdGgubWF4KDAsIChsZW5ndGggLSBsb2NhbEZyYW1lKSAvIE0uZXhpdEZyYW1lcykpOwogIGNvbnN0IGZyb21CZWxvdyA9ICgxIC0gaW5QKSAqIE0uc2hpZnQ7CiAgY29uc3QgdG9BYm92ZSA9IC0oMSAtIG91dFApICogTS5zaGlmdDsKICByZXR1cm4gewogICAgb3BhY2l0eTogTWF0aC5taW4oaW5QLCBvdXRQKSwKICAgIHRyYW5zbGF0ZVk6IGxvY2FsRnJhbWUgPCBsZW5ndGggLyAyID8gZnJvbUJlbG93IDogdG9BYm92ZSwKICB9Owp9CgovKiog5bi455So57uE5ZCI77ya5bem5qCP6LW354K544CB5Y+z5qCP6LW354K5ICovCmV4cG9ydCBjb25zdCBYID0gewogIGxlZnQ6IEcub3JpZ2luWCwKICByaWdodDogRy5vcmlnaW5YICsgRy5zcGxpdC5sZWZ0ICsgRy5zcGxpdC5nYXAsICAgLy8gMTYwICsgNzIwICsgMTYwID0gMTA0MAogIGNlbnRlcjogKFcgLSBHLnNwbGl0LmxlZnQpIC8gMiwgICAgICAgICAgICAgICAgICAgLy8g5bGF5Lit5pS+5LiA5LiqIDcyMCDlrr3nmoTlnZcKfSBhcyBjb25zdDsK
+/**
+ * theme.ts —— 全片唯一的视觉来源
+ *
+ * 画布：1920×1080（16:9 横屏）· 30fps · 5400 帧 = 180.0 秒
+ *
+ * 三条规矩：
+ *   1. 任何场景里不许出现硬编码的颜色/字号，只能用这里的常量
+ *   2. 所有横向定位必须落在栅格上（见 G 栅格），不许随手写 px
+ *   3. 安全区：左右 160，上下 90 —— 超出这个范围的内容在部分设备上会被裁
+ */
+
+export const C = {
+  bg: "#07080C",      // 底色
+  panel: "#0E1118",   // 面板底
+  line: "#1A1D26",    // 分隔线
+  text: "#EDEFF5",    // 主文字
+  dim: "#8A90A2",     // 次文字
+  faint: "#4A4F5E",   // 更弱（行号、注释、禁用态）
+  ok: "#4BE3A2",      // 成功 / 在线
+  bad: "#FF5D5D",     // 失败 / 被吞
+  whale: "#5BA8FF",   // 鲸蓝（形象、数据流、强调）
+  warm: "#FFB454",    // 少量暖色（警示、待确认）
+  paper: "#F5F7FA",   // S1 那个浏览器窗口的浅色底
+} as const;
+
+export const F = {
+  sans: '"Noto Sans CJK SC", "PingFang SC", "Source Han Sans SC", sans-serif',
+  mono: '"JetBrains Mono", "SF Mono", "Menlo", monospace',
+} as const;
+
+/**
+ * 字号（横屏基准）
+ * 竖屏改横屏之后所有字号都上调了一档 —— 横屏的高度只有 1080，
+ * 字号太小在手机竖屏观看时会糊成一片。
+ */
+export const S = {
+  hero: 128,    // 主标题 / 点题大字
+  quote: 96,    // 长句点题（12 字一行放不下 128，降一档）
+  mega: 200,    // 超大（00:00、7×24 这种）
+  h1: 72,       // 段标题
+  body: 48,     // 正文 / 字幕
+  small: 32,    // 小字 / 说明
+  code: 32,     // 代码 / 等宽数字
+  label: 26,    // 标签 / 行号
+} as const;
+
+/** 主缓动 */
+export const EASE = [0.16, 1, 0.3, 1] as const;
+
+export const M = {
+  enterFrames: 20,
+  exitFrames: 12,
+  overlap: 15,
+  cursorHz: 2,
+  shift: 80,   // 场景切换位移量（px）
+} as const;
+
+export const TOTAL_FRAMES = 5400;
+export const FPS = 30;
+export const W = 1920;
+export const H = 1080;
+
+/**
+ * 横屏栅格 —— 所有定位都从这里取，不许手写 px。
+ *
+ *   安全区左右各 160，可用宽度 1600
+ *   12 列，列宽 100，列间距 32：  12×100 + 11×32 = 1552，左边距 160 + 24 微调
+ *
+ * 常用分栏：
+ *   layout.split  左右两栏（左 720 / 间 160 / 右 720）
+ *   layout.wide   通栏（1600）
+ */
+export const G = {
+  padX: 160,
+  padY: 90,
+  colW: 100,
+  gutter: 32,
+  contentW: 1600,
+  /** 左栏宽、右栏宽、中间间距 —— 左右分栏场景统一用这个 */
+  split: { left: 720, right: 720, gap: 160 },
+  /** 四格快剪：四列，列宽 372，间距 30 —— 372×4 + 30×3 = 1578 */
+  quad: { w: 372, gap: 30 },
+  /** 栅格的左上角起点 */
+  originX: 160,
+  originY: 90,
+  /** 垂直中心线（放超大数字时用） */
+  centerY: 540,
+} as const;
+
+/** 场景边界（帧）—— 与 brief 第 2 节严格一致 */
+export const SCENES = {
+  gone: { from: 0, to: 330 },
+  alive: { from: 330, to: 780 },
+  wake: { from: 780, to: 1140 },
+  day: { from: 1140, to: 2280 },
+  mismatch: { from: 2280, to: 3000 },
+  avalon: { from: 3000, to: 4050 },
+  rounds: { from: 4050, to: 4900 },
+  end: { from: 4900, to: 5400 },
+} as const;
+
+/**
+ * 场景切换：进了入/出窗口就按交叠做「上移淡出 + 下移压入」。
+ * 禁止纯 opacity 交叉溶解 —— 那是最偷懒的转场。
+ */
+export function sceneTransition(localFrame: number, length: number) {
+  const inP = Math.min(1, localFrame / M.enterFrames);
+  const outP = Math.min(1, Math.max(0, (length - localFrame) / M.exitFrames));
+  const fromBelow = (1 - inP) * M.shift;
+  const toAbove = -(1 - outP) * M.shift;
+  return {
+    opacity: Math.min(inP, outP),
+    translateY: localFrame < length / 2 ? fromBelow : toAbove,
+  };
+}
+
+/** 常用组合：左栏起点、右栏起点 */
+export const X = {
+  left: G.originX,
+  right: G.originX + G.split.left + G.split.gap,   // 160 + 720 + 160 = 1040
+  center: (W - G.split.left) / 2,                   // 居中放一个 720 宽的块
+} as const;

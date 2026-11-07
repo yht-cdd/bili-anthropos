@@ -1,1 +1,149 @@
-aW1wb3J0IFJlYWN0IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgaW50ZXJwb2xhdGUsIHVzZUN1cnJlbnRGcmFtZSB9IGZyb20gInJlbW90aW9uIjsKaW1wb3J0IHsgQywgRiwgRywgTSwgUywgU0NFTkVTLCBYIH0gZnJvbSAiLi4vdGhlbWUiOwppbXBvcnQgeyBTY2VuZVNoZWxsIH0gZnJvbSAiLi4vY29tcG9uZW50cy9TY2VuZVNoZWxsIjsKaW1wb3J0IHsgR3JpZEJhY2tkcm9wLCBUZXJtaW5hbCwgV2hhbGVNYXJrIH0gZnJvbSAiLi4vY29tcG9uZW50cy91aSI7CgovKioKICogUzNXYWtlIOKAlOKAlCDluKcgNzgw4oCTMTE0MO+8iDEyIOenku+8iQogKiDlh4zmmajpm7bngrnvvIzlpbnoh6rlt7HphpLjgIIKICoKICog5qiq5bGP6aqo5p6277ya5bem5pWw5a2X5Y+z57uI56uv44CCCiAqICAg5bem5qCPIFgubGVmdO+8iDcyMO+8ie+8mjAwOjAwIOeUqCBTLm1lZ2Eg5pKR5ruh77yM5LiL5pa544CM5aW56Ieq5bex6YaS5LqG44CNCiAqICAg5Y+z5qCPIFgucmlnaHTvvIg3MjDvvInvvJrnu4jnq6/vvIzlnoLnm7TlsYXkuK3vvIzmnKzlnLrnrKwgMTgwIOW4p+i1t+mAkOihjOi+k+WHugogKiAgIOmyuOmxvOagh+iusOenu+WIsOWPs+S4iuinku+8iOaoquWxj+W3puS4iuinkuS8muaSnuWGheWuue+8iQogKi8KCmNvbnN0IExFTiA9IFNDRU5FUy53YWtlLnRvIC0gU0NFTkVTLndha2UuZnJvbTsgLy8gMzYwCmV4cG9ydCBjb25zdCBTM19EVVJBVElPTiA9IExFTiArIE0ub3ZlcmxhcDsgLy8gMzc1Cgpjb25zdCBDT0xfVyA9IEcuc3BsaXQubGVmdDsgLy8gNzIwCgpjb25zdCBCT09UX0xJTkVTID0gWwogICIkIOaXpeWIh+W8gOWniyIsCiAgIiAg5pS25L+hIOKGkiDlvZLmoaMga25vd2xlZGdlL3Byb2plY3RzLyIsCiAgIiAg5aSN55uY5pio5aSpIOKGkiAzIOadoeS7u+WKoe+8jDIg5p2h5a6M5oiQIiwKICAiICDmjpLku4rlpKkg4oaSIFRPREFZLm1kIOW3suabtOaWsCIsCl07Cgpjb25zdCBpcCA9IChmOiBudW1iZXIsIGE6IG51bWJlciwgYjogbnVtYmVyLCBmcm9tID0gMCwgdG8gPSAxKSA9PgogIGludGVycG9sYXRlKGYsIFthLCBiXSwgW2Zyb20sIHRvXSwgewogICAgZXh0cmFwb2xhdGVMZWZ0OiAiY2xhbXAiLAogICAgZXh0cmFwb2xhdGVSaWdodDogImNsYW1wIiwKICB9KTsKCi8qKiDnu4jnq6/ooYzph4znmoTmlbDlrZfopoHnlKggQy50ZXh0IOaMkeWHuuadpSDigJTigJQg5q2j5paH5pivIEMuZGlt77yM5pWw5a2X5omN5piv6YeN54K5ICovCmNvbnN0IHdpdGhOdW1iZXJzID0gKGxpbmU6IHN0cmluZywgYmFzZTogc3RyaW5nKSA9PgogIGxpbmUuc3BsaXQoLyhcZCspL2cpLm1hcCgocGFydCwgaSkgPT4KICAgIC9eXGQrJC8udGVzdChwYXJ0KSA/ICgKICAgICAgPHNwYW4ga2V5PXtpfSBzdHlsZT17eyBjb2xvcjogQy50ZXh0LCBmb250VmFyaWFudE51bWVyaWM6ICJ0YWJ1bGFyLW51bXMiIH19PgogICAgICAgIHtwYXJ0fQogICAgICA8L3NwYW4+CiAgICApIDogKAogICAgICA8c3BhbiBrZXk9e2l9IHN0eWxlPXt7IGNvbG9yOiBiYXNlIH19PgogICAgICAgIHtwYXJ0fQogICAgICA8L3NwYW4+CiAgICApLAogICk7CgpleHBvcnQgY29uc3QgUzNXYWtlOiBSZWFjdC5GQyA9ICgpID0+IHsKICBjb25zdCBmID0gdXNlQ3VycmVudEZyYW1lKCk7CgogIC8vIOWGkuWPtyAySHrvvJrkuI4gUzEg55qE5YWJ5qCH5ZCM6aKRCiAgY29uc3QgY29sb25PbiA9IE1hdGguZmxvb3IoZiAvICgzMCAvIE0uY3Vyc29ySHopKSAlIDIgPT09IDA7CiAgLy8g5ZyG546vIDMg56eS5LiA5qyh5ZG85ZC477yIOTAg5bin77yJCiAgY29uc3QgcmluZ1NjYWxlID0gMC44NSArIChNYXRoLnNpbigoZiAvIDkwKSAqIE1hdGguUEkgKiAyKSArIDEpICogMC4xOwoKICBjb25zdCBjbG9ja1AgPSBpcChmLCAwLCAyNCk7CiAgY29uc3Qgd2hhbGVQID0gaXAoZiwgMCwgMzAsIDAsIDAuOSk7CgogIHJldHVybiAoCiAgICA8U2NlbmVTaGVsbCBsZW5ndGg9e1MzX0RVUkFUSU9OfT4KICAgICAgPEdyaWRCYWNrZHJvcCBvcGFjaXR5PXswLjA1fSAvPgoKICAgICAgey8qIOWPs+S4iuinku+8mumyuOmxvOagh+iusCArIOaegea3oeWchueOryAqL30KICAgICAgPGRpdiBzdHlsZT17eyBwb3NpdGlvbjogImFic29sdXRlIiwgcmlnaHQ6IEcucGFkWCwgdG9wOiBHLnBhZFkgfX0+CiAgICAgICAgPGRpdgogICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgcG9zaXRpb246ICJhYnNvbHV0ZSIsCiAgICAgICAgICAgIGxlZnQ6IC00MCwKICAgICAgICAgICAgdG9wOiAtNDAsCiAgICAgICAgICAgIHdpZHRoOiAyMDAsCiAgICAgICAgICAgIGhlaWdodDogMjAwLAogICAgICAgICAgICBib3JkZXJSYWRpdXM6IDEwMCwKICAgICAgICAgICAgYm9yZGVyOiBgMXB4IHNvbGlkICR7Qy53aGFsZX0yNmAsCiAgICAgICAgICAgIHRyYW5zZm9ybTogYHNjYWxlKCR7cmluZ1NjYWxlfSlgLAogICAgICAgICAgfX0KICAgICAgICAvPgogICAgICAgIDxXaGFsZU1hcmsgc2l6ZT17MTIwfSBvcGFjaXR5PXt3aGFsZVB9IC8+CiAgICAgIDwvZGl2PgoKICAgICAgey8qIOW3puagj++8muW3qOWkp+aXtumXtOaIsyAqL30KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogImFic29sdXRlIiwKICAgICAgICAgIGxlZnQ6IFgubGVmdCwKICAgICAgICAgIHRvcDogMzQwLAogICAgICAgICAgd2lkdGg6IENPTF9XLAogICAgICAgIH19CiAgICAgID4KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBkaXNwbGF5OiAiZmxleCIsCiAgICAgICAgICAgIGFsaWduSXRlbXM6ICJiYXNlbGluZSIsCiAgICAgICAgICAgIGZvbnRGYW1pbHk6IEYubW9ubywKICAgICAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgICAgICBmb250U2l6ZTogUy5tZWdhLAogICAgICAgICAgICBsaW5lSGVpZ2h0OiAxLAogICAgICAgICAgICBmb250VmFyaWFudE51bWVyaWM6ICJ0YWJ1bGFyLW51bXMiLAogICAgICAgICAgICBsZXR0ZXJTcGFjaW5nOiAiLTAuMDJlbSIsCiAgICAgICAgICAgIG9wYWNpdHk6IGNsb2NrUCwKICAgICAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWSgkeygxIC0gY2xvY2tQKSAqIDIwfXB4KWAsCiAgICAgICAgICB9fQogICAgICAgID4KICAgICAgICAgIDxzcGFuIHN0eWxlPXt7IGNvbG9yOiBDLnRleHQgfX0+MDA8L3NwYW4+CiAgICAgICAgICA8c3BhbiBzdHlsZT17eyBjb2xvcjogY29sb25PbiA/IEMudGV4dCA6IEMuZmFpbnQgfX0+Ojwvc3Bhbj4KICAgICAgICAgIDxzcGFuIHN0eWxlPXt7IGNvbG9yOiBDLnRleHQgfX0+MDA8L3NwYW4+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdgogICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgbWFyZ2luVG9wOiAyOCwKICAgICAgICAgICAgZm9udEZhbWlseTogRi5zYW5zLAogICAgICAgICAgICBmb250U2l6ZTogUy5ib2R5LAogICAgICAgICAgICBjb2xvcjogQy5kaW0sCiAgICAgICAgICAgIG9wYWNpdHk6IGlwKGYsIDI0LCA0OCksCiAgICAgICAgICB9fQogICAgICAgID4KICAgICAgICAgIOWlueiHquW3semGkuS6hgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KCiAgICAgIHsvKiDlj7PmoI/vvJrnu4jnq6/vvIzmnKzlnLrnrKwgMTgwIOW4p+i1t++8jOavj+ihjOmXtOmalCAyNCDluKcgKi99CiAgICAgIDxkaXYgc3R5bGU9e3sgcG9zaXRpb246ICJhYnNvbHV0ZSIsIGxlZnQ6IFgucmlnaHQsIHRvcDogMzAwLCB3aWR0aDogQ09MX1cgfX0+CiAgICAgICAgPFRlcm1pbmFsIHRpdGxlPSJhbnRocm9wb3MiPgogICAgICAgICAge0JPT1RfTElORVMubWFwKChsaW5lLCBpKSA9PiB7CiAgICAgICAgICAgIGNvbnN0IHN0YXJ0ID0gMTgwICsgaSAqIDI0OwogICAgICAgICAgICBjb25zdCBhcHBlYXIgPSBpcChmLCBzdGFydCwgc3RhcnQgKyAyNCk7CiAgICAgICAgICAgIGNvbnN0IGlzQ21kID0gbGluZS5zdGFydHNXaXRoKCIkIik7CiAgICAgICAgICAgIHJldHVybiAoCiAgICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgICAga2V5PXtsaW5lfQogICAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgICAgZm9udEZhbWlseTogRi5tb25vLAogICAgICAgICAgICAgICAgICBmb250U2l6ZTogUy5jb2RlLAogICAgICAgICAgICAgICAgICBsaW5lSGVpZ2h0OiAxLjksCiAgICAgICAgICAgICAgICAgIGNvbG9yOiBpc0NtZCA/IEMub2sgOiBDLmRpbSwKICAgICAgICAgICAgICAgICAgb3BhY2l0eTogYXBwZWFyLAogICAgICAgICAgICAgICAgICB0cmFuc2Zvcm06IGB0cmFuc2xhdGVYKCR7KDEgLSBhcHBlYXIpICogMTJ9cHgpYCwKICAgICAgICAgICAgICAgICAgd2hpdGVTcGFjZTogIm5vd3JhcCIsCiAgICAgICAgICAgICAgICB9fQogICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgIHtpc0NtZCA/IDxzcGFuIHN0eWxlPXt7IGNvbG9yOiBDLm9rIH19PntsaW5lfTwvc3Bhbj4gOiB3aXRoTnVtYmVycyhsaW5lLCBDLmRpbSl9CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICk7CiAgICAgICAgICB9KX0KICAgICAgICA8L1Rlcm1pbmFsPgogICAgICA8L2Rpdj4KICAgIDwvU2NlbmVTaGVsbD4KICApOwp9Owo=
+import React from "react";
+import { interpolate, useCurrentFrame } from "remotion";
+import { C, F, G, M, S, SCENES, X } from "../theme";
+import { SceneShell } from "../components/SceneShell";
+import { GridBackdrop, Terminal, WhaleMark } from "../components/ui";
+
+/**
+ * S3Wake —— 帧 780–1140（12 秒）
+ * 凌晨零点，她自己醒。
+ *
+ * 横屏骨架：左数字右终端。
+ *   左栏 X.left（720）：00:00 用 S.mega 撑满，下方「她自己醒了」
+ *   右栏 X.right（720）：终端，垂直居中，本场第 180 帧起逐行输出
+ *   鲸鱼标记移到右上角（横屏左上角会撞内容）
+ */
+
+const LEN = SCENES.wake.to - SCENES.wake.from; // 360
+export const S3_DURATION = LEN + M.overlap; // 375
+
+const COL_W = G.split.left; // 720
+
+const BOOT_LINES = [
+  "$ 日切开始",
+  "  收信 → 归档 knowledge/projects/",
+  "  复盘昨天 → 3 条任务，2 条完成",
+  "  排今天 → TODAY.md 已更新",
+];
+
+const ip = (f: number, a: number, b: number, from = 0, to = 1) =>
+  interpolate(f, [a, b], [from, to], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
+/** 终端行里的数字要用 C.text 挑出来 —— 正文是 C.dim，数字才是重点 */
+const withNumbers = (line: string, base: string) =>
+  line.split(/(\d+)/g).map((part, i) =>
+    /^\d+$/.test(part) ? (
+      <span key={i} style={{ color: C.text, fontVariantNumeric: "tabular-nums" }}>
+        {part}
+      </span>
+    ) : (
+      <span key={i} style={{ color: base }}>
+        {part}
+      </span>
+    ),
+  );
+
+export const S3Wake: React.FC = () => {
+  const f = useCurrentFrame();
+
+  // 冒号 2Hz：与 S1 的光标同频
+  const colonOn = Math.floor(f / (30 / M.cursorHz)) % 2 === 0;
+  // 圆环 3 秒一次呼吸（90 帧）
+  const ringScale = 0.85 + (Math.sin((f / 90) * Math.PI * 2) + 1) * 0.1;
+
+  const clockP = ip(f, 0, 24);
+  const whaleP = ip(f, 0, 30, 0, 0.9);
+
+  return (
+    <SceneShell length={S3_DURATION}>
+      <GridBackdrop opacity={0.05} />
+
+      {/* 右上角：鲸鱼标记 + 极淡圆环 */}
+      <div style={{ position: "absolute", right: G.padX, top: G.padY }}>
+        <div
+          style={{
+            position: "absolute",
+            left: -40,
+            top: -40,
+            width: 200,
+            height: 200,
+            borderRadius: 100,
+            border: `1px solid ${C.whale}26`,
+            transform: `scale(${ringScale})`,
+          }}
+        />
+        <WhaleMark size={120} opacity={whaleP} />
+      </div>
+
+      {/* 左栏：巨大时间戳 */}
+      <div
+        style={{
+          position: "absolute",
+          left: X.left,
+          top: 340,
+          width: COL_W,
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            alignItems: "baseline",
+            fontFamily: F.mono,
+            fontWeight: 700,
+            fontSize: S.mega,
+            lineHeight: 1,
+            fontVariantNumeric: "tabular-nums",
+            letterSpacing: "-0.02em",
+            opacity: clockP,
+            transform: `translateY(${(1 - clockP) * 20}px)`,
+          }}
+        >
+          <span style={{ color: C.text }}>00</span>
+          <span style={{ color: colonOn ? C.text : C.faint }}>:</span>
+          <span style={{ color: C.text }}>00</span>
+        </div>
+        <div
+          style={{
+            marginTop: 28,
+            fontFamily: F.sans,
+            fontSize: S.body,
+            color: C.dim,
+            opacity: ip(f, 24, 48),
+          }}
+        >
+          她自己醒了
+        </div>
+      </div>
+
+      {/* 右栏：终端，本场第 180 帧起，每行间隔 24 帧 */}
+      <div style={{ position: "absolute", left: X.right, top: 300, width: COL_W }}>
+        <Terminal title="anthropos">
+          {BOOT_LINES.map((line, i) => {
+            const start = 180 + i * 24;
+            const appear = ip(f, start, start + 24);
+            const isCmd = line.startsWith("$");
+            return (
+              <div
+                key={line}
+                style={{
+                  fontFamily: F.mono,
+                  fontSize: S.code,
+                  lineHeight: 1.9,
+                  color: isCmd ? C.ok : C.dim,
+                  opacity: appear,
+                  transform: `translateX(${(1 - appear) * 12}px)`,
+                  whiteSpace: "nowrap",
+                }}
+              >
+                {isCmd ? <span style={{ color: C.ok }}>{line}</span> : withNumbers(line, C.dim)}
+              </div>
+            );
+          })}
+        </Terminal>
+      </div>
+    </SceneShell>
+  );
+};

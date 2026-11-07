@@ -1,1 +1,297 @@
-aW1wb3J0IFJlYWN0IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgaW50ZXJwb2xhdGUsIHVzZUN1cnJlbnRGcmFtZSB9IGZyb20gInJlbW90aW9uIjsKaW1wb3J0IHsgQywgRiwgRywgTSwgUywgU0NFTkVTLCBXIH0gZnJvbSAiLi4vdGhlbWUiOwppbXBvcnQgeyBTY2VuZVNoZWxsIH0gZnJvbSAiLi4vY29tcG9uZW50cy9TY2VuZVNoZWxsIjsKCi8qKgogKiBTNkF2YWxvbiDigJTigJQg5binIDMwMDDigJM0MDUw77yIMzUg56eS77yM5YWo54mH6YeN54K577yJCiAqIOivhOiuuuiiq+WQnuOAggogKgogKiDmqKrlsY/pqqjmnrbvvJrlsYXkuK3nmoTnqoTljaHniYfvvIg5MDAg5a6977yM5pW05L2T5bGF5Lit77yJKyDkuIvmlrnmloflrZfljLrjgIIKICogICAxICAw4oCTMjcwICAgIOato+W4uOWPkemAge+8iOaOpeWPo+ivtOaIkOWKn++8iQogKiAgIDIgIDI3MOKAkzU3MCAg54q25oCB5Y+Y54Gw77yIc3RhdGU9MTfvvIzmuLjlrqLnnIvkuI3op4HvvIzlj7PkuIrop5LnnLznnZvpl63kuIrvvIkKICogICAzICA1NzDigJM4MTAgIOino+mHiu+8iOS4ieihjOWtl++8jOWxheS4reWdl+WGheW3puWvuem9kO+8iQogKiAgIDQgIDgxMOKAkzEwNTAg5aW555qE6YCJ5oup77yI6YCa5qCP5bGF5Lit77yMUy5oZXJv77yJCiAqIOacgOWQjuS4pOWPpeW/hemhu+WBnOWknyA0IOenku+8jOaJgOS7peWPsOivjeS4gOW+i+S4jei2hei/h+esrCA5NjAg5bin44CCCiAqLwoKY29uc3QgTEVOID0gU0NFTkVTLmF2YWxvbi50byAtIFNDRU5FUy5hdmFsb24uZnJvbTsgLy8gMTA1MApleHBvcnQgY29uc3QgUzZfRFVSQVRJT04gPSBMRU4gKyBNLm92ZXJsYXA7IC8vIDEwNjUKCmNvbnN0IENBUkRfVyA9IDkwMDsKY29uc3QgQ0FSRF9MRUZUID0gVyAvIDIgLSBDQVJEX1cgLyAyOyAvLyA1MTDvvIznnJ/mraPlsYXkuK0KCmNvbnN0IFBPU1QgPSAi5YCS5Zue5Y6755yL5LqG5Lik6YGN5omN5Y+R546w77yM5ZCO5Y2K5q6155qE6Z+z6L2o5bey57uP6LeR5Yiw5qWa5rGJ5Y675LqGIjsKY29uc3QgUlBJRCA9ICIzMTg3MjE1MDU1NTMiOwoKY29uc3QgaXAgPSAoZjogbnVtYmVyLCBhOiBudW1iZXIsIGI6IG51bWJlciwgZnJvbSA9IDAsIHRvID0gMSkgPT4KICBpbnRlcnBvbGF0ZShmLCBbYSwgYl0sIFtmcm9tLCB0b10sIHsKICAgIGV4dHJhcG9sYXRlTGVmdDogImNsYW1wIiwKICAgIGV4dHJhcG9sYXRlUmlnaHQ6ICJjbGFtcCIsCiAgfSk7CgovKiog6Zi25q61IDIg6YeM55qE4oCc6YCQ5Liq5Y+Y54Gw4oCd77ya5Yiw54K55bCx5LuOIEMub2sg5o2i5oiQIEMuZGltICovCmNvbnN0IGdyYXllZCA9IChmOiBudW1iZXIsIGF0OiBudW1iZXIpID0+IChpcChmLCBhdCwgYXQgKyAyMCkgPj0gMC41ID8gQy5kaW0gOiBDLm9rKTsKCi8qKiDnnLznnZvvvJrkuKTmnaHlvKfnur/lhYjnnYHlvIDvvIhzdHJva2VEYXNoYXJyYXkg55S75Ye65p2l77yJ77yM5YaN5ZCI5LiK77yI57q15ZCR5Y6L5omB77yJICovCmNvbnN0IEV5ZTogUmVhY3QuRkM8eyBvcGVuOiBudW1iZXI7IGNsb3NlUDogbnVtYmVyIH0+ID0gKHsgb3BlbiwgY2xvc2VQIH0pID0+IHsKICBjb25zdCBkYXNoID0gYCR7b3BlbiAqIDkwfSAyMDBgOwogIGNvbnN0IGxpZCA9IDEgLSBjbG9zZVAgKiAwLjk0OwogIHJldHVybiAoCiAgICA8c3ZnIHdpZHRoPXsxMTB9IGhlaWdodD17NzB9IHZpZXdCb3g9IjAgMCA4OCA1NiI+CiAgICAgIDxnIHRyYW5zZm9ybT17YHRyYW5zbGF0ZSg0NCwyOCkgc2NhbGUoMSwke2xpZH0pIHRyYW5zbGF0ZSgtNDQsLTI4KWB9PgogICAgICAgIDxwYXRoCiAgICAgICAgICBkPSJNNCAyOCBDIDIwIDYsIDY4IDYsIDg0IDI4IgogICAgICAgICAgZmlsbD0ibm9uZSIKICAgICAgICAgIHN0cm9rZT17Qy5kaW19CiAgICAgICAgICBzdHJva2VXaWR0aD17Mi41fQogICAgICAgICAgc3Ryb2tlTGluZWNhcD0icm91bmQiCiAgICAgICAgICBzdHJva2VEYXNoYXJyYXk9e2Rhc2h9CiAgICAgICAgLz4KICAgICAgICA8cGF0aAogICAgICAgICAgZD0iTTQgMjggQyAyMCA1MCwgNjggNTAsIDg0IDI4IgogICAgICAgICAgZmlsbD0ibm9uZSIKICAgICAgICAgIHN0cm9rZT17Qy5kaW19CiAgICAgICAgICBzdHJva2VXaWR0aD17Mi41fQogICAgICAgICAgc3Ryb2tlTGluZWNhcD0icm91bmQiCiAgICAgICAgICBzdHJva2VEYXNoYXJyYXk9e2Rhc2h9CiAgICAgICAgLz4KICAgICAgICA8Y2lyY2xlIGN4PXs0NH0gY3k9ezI4fSByPXs1fSBmaWxsPXtDLmRpbX0gb3BhY2l0eT17b3BlbiAqICgxIC0gY2xvc2VQKX0gLz4KICAgICAgPC9nPgogICAgPC9zdmc+CiAgKTsKfTsKCmV4cG9ydCBjb25zdCBTNkF2YWxvbjogUmVhY3QuRkMgPSAoKSA9PiB7CiAgY29uc3QgZiA9IHVzZUN1cnJlbnRGcmFtZSgpOwoKICAvLyDilIDilIAg6Zi25q61IDTvvJrmuIXlsY8g4pSA4pSACiAgY29uc3QgY2xlYXJQID0gaXAoZiwgNzgwLCA4MTApOwoKICAvLyDilIDilIAg6Zi25q61IDHvvJrmraPluLjlj5HpgIEg4pSA4pSACiAgY29uc3QgY2FyZEluID0gaXAoZiwgMjAsIDUwKTsKICBjb25zdCBjYXJkUCA9IGNhcmRJbiAqICgxIC0gaXAoZiwgMjkwLCAzMzApKTsKICBjb25zdCBwcmVzcyA9IGYgPCAxMjYgPyBpcChmLCAxMjAsIDEyNiwgMSwgMC45NikgOiBpcChmLCAxMjYsIDEzMiwgMC45NiwgMSk7CiAgY29uc3QgZmxhc2ggPSBmID49IDEyNiAmJiBmIDwgMTU2OwogIGNvbnN0IHJlc3VsdFAgPSBpcChmLCAxNTAsIDE3NCk7CiAgY29uc3Qgc2FpZFAgPSBpcChmLCAxOTAsIDIxNCk7CgogIC8vIOKUgOKUgCDpmLbmrrUgMu+8mueKtuaAgeWPmOeBsCDilIDilIAKICBjb25zdCBjb29sUCA9IGlwKGYsIDI3MCwgMzMwKSAqICgxIC0gaXAoZiwgODAwLCA4MzApKTsKICBjb25zdCBzdGF0ZVAgPSBpcChmLCAyOTAsIDMxNCk7CiAgY29uc3QgZ3Vlc3RQID0gaXAoZiwgMzQwLCAzNjQpOwogIGNvbnN0IGV5ZU9wZW4gPSBpcChmLCAyOTAsIDMzMCk7CiAgY29uc3QgZXllQ2xvc2UgPSBpcChmLCA0OTYsIDU0MCk7CgogIC8vIOKUgOKUgCDpmLbmrrUgM++8muino+mHiiDilIDilIAKICBjb25zdCBsMSA9IGlwKGYsIDU3MCwgNTk0KTsKICBjb25zdCBsMiA9IGlwKGYsIDYwMCwgNjI0KTsKICBjb25zdCBsMyA9IGlwKGYsIDYzMCwgNjU0KTsKCiAgLy8g4pSA4pSAIOmYtuautSA077ya5aW555qE6YCJ5oupIOKUgOKUgAogIGNvbnN0IHExID0gaXAoZiwgODE1LCA4NTApOwogIGNvbnN0IHEyID0gaXAoZiwgOTMwLCA5NjApOwoKICByZXR1cm4gKAogICAgPFNjZW5lU2hlbGwgbGVuZ3RoPXtTNl9EVVJBVElPTn0+CiAgICAgIHsvKiDilIDilIAg6Zi25q61IDHvvJrlsYXkuK3nqoTljaHniYcg4pSA4pSAICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAiYWJzb2x1dGUiLAogICAgICAgICAgbGVmdDogQ0FSRF9MRUZULAogICAgICAgICAgdG9wOiAyMDAsCiAgICAgICAgICB3aWR0aDogQ0FSRF9XLAogICAgICAgICAgYmFja2dyb3VuZDogQy5wYW5lbCwKICAgICAgICAgIGJvcmRlcjogYDFweCBzb2xpZCAke2ZsYXNoID8gQy5vayA6IEMubGluZX1gLAogICAgICAgICAgYm9yZGVyUmFkaXVzOiAxNiwKICAgICAgICAgIHBhZGRpbmc6IDM2LAogICAgICAgICAgb3BhY2l0eTogY2FyZFAsCiAgICAgICAgICB0cmFuc2Zvcm06IGB0cmFuc2xhdGVZKCR7KDEgLSBjYXJkSW4pICogMjR9cHgpYCwKICAgICAgICB9fQogICAgICA+CiAgICAgICAgPGRpdgogICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgYm9yZGVyOiBgMXB4IHNvbGlkICR7Qy5saW5lfWAsCiAgICAgICAgICAgIGJvcmRlclJhZGl1czogMTAsCiAgICAgICAgICAgIHBhZGRpbmc6IDI4LAogICAgICAgICAgICBmb250RmFtaWx5OiBGLnNhbnMsCiAgICAgICAgICAgIGZvbnRTaXplOiBTLmJvZHksCiAgICAgICAgICAgIGxpbmVIZWlnaHQ6IDEuNywKICAgICAgICAgICAgY29sb3I6IEMudGV4dCwKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAge1BPU1R9CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBzdHlsZT17eyBkaXNwbGF5OiAiZmxleCIsIGp1c3RpZnlDb250ZW50OiAiZmxleC1lbmQiLCBtYXJnaW5Ub3A6IDI4IH19PgogICAgICAgICAgPGRpdgogICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgIHBhZGRpbmc6ICIxNHB4IDQwcHgiLAogICAgICAgICAgICAgIGJvcmRlclJhZGl1czogOCwKICAgICAgICAgICAgICBiYWNrZ3JvdW5kOiBmbGFzaCA/IGAke0Mub2t9MjJgIDogYCR7Qy53aGFsZX0yMmAsCiAgICAgICAgICAgICAgY29sb3I6IGZsYXNoID8gQy5vayA6IEMud2hhbGUsCiAgICAgICAgICAgICAgZm9udEZhbWlseTogRi5zYW5zLAogICAgICAgICAgICAgIGZvbnRXZWlnaHQ6IDcwMCwKICAgICAgICAgICAgICBmb250U2l6ZTogUy5zbWFsbCwKICAgICAgICAgICAgICB0cmFuc2Zvcm06IGBzY2FsZSgke3ByZXNzfSlgLAogICAgICAgICAgICB9fQogICAgICAgICAgPgogICAgICAgICAgICDlj5HpgIEKICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KCiAgICAgIHsvKiDilIDilIAg6Zi25q61IDEg4oaSIDLvvJrmjqXlj6Pov5Tlm57vvIznhLblkI7lj5jngbAg4pSA4pSAICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAiYWJzb2x1dGUiLAogICAgICAgICAgbGVmdDogQ0FSRF9MRUZULAogICAgICAgICAgdG9wOiA2NjAsCiAgICAgICAgICBvcGFjaXR5OiByZXN1bHRQICogKDEgLSBjbGVhclApLAogICAgICAgICAgZm9udEZhbWlseTogRi5tb25vLAogICAgICAgICAgZm9udFNpemU6IFMuY29kZSwKICAgICAgICAgIGxpbmVIZWlnaHQ6IDEuOSwKICAgICAgICAgIGZvbnRWYXJpYW50TnVtZXJpYzogInRhYnVsYXItbnVtcyIsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIDxkaXYgc3R5bGU9e3sgY29sb3I6IGdyYXllZChmLCAzMDApIH19PmNvZGU9MDwvZGl2PgogICAgICAgIDxkaXYgc3R5bGU9e3sgY29sb3I6IGdyYXllZChmLCAzMjApIH19PnJwaWQ9e1JQSUR9PC9kaXY+CiAgICAgIDwvZGl2PgoKICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogImFic29sdXRlIiwKICAgICAgICAgIGxlZnQ6IENBUkRfTEVGVCwKICAgICAgICAgIHRvcDogODAwLAogICAgICAgICAgb3BhY2l0eTogc2FpZFAgKiAoMSAtIGNsZWFyUCksCiAgICAgICAgICBmb250RmFtaWx5OiBGLnNhbnMsCiAgICAgICAgICBmb250V2VpZ2h0OiA1MDAsCiAgICAgICAgICBmb250U2l6ZTogUy5ib2R5LAogICAgICAgICAgY29sb3I6IGdyYXllZChmLCAzNDApLAogICAgICAgIH19CiAgICAgID4KICAgICAgICDmjqXlj6Por7TvvJrmiJDlip8KICAgICAgPC9kaXY+CgogICAgICB7Lyog4pSA4pSAIOmYtuautSAy77yac3RhdGU9MTfvvIzlsYXkuK0g4pSA4pSAICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAiYWJzb2x1dGUiLAogICAgICAgICAgbGVmdDogMCwKICAgICAgICAgIHJpZ2h0OiAwLAogICAgICAgICAgdG9wOiAzNjAsCiAgICAgICAgICB0ZXh0QWxpZ246ICJjZW50ZXIiLAogICAgICAgICAgb3BhY2l0eTogc3RhdGVQICogKDEgLSBjbGVhclApLAogICAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWSgkeygxIC0gc3RhdGVQKSAqIDI0fXB4KWAsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIDxzcGFuCiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBmb250RmFtaWx5OiBGLm1vbm8sCiAgICAgICAgICAgIGZvbnRXZWlnaHQ6IDcwMCwKICAgICAgICAgICAgZm9udFNpemU6IFMubWVnYSwKICAgICAgICAgICAgbGluZUhlaWdodDogMS4xLAogICAgICAgICAgICBmb250VmFyaWFudE51bWVyaWM6ICJ0YWJ1bGFyLW51bXMiLAogICAgICAgICAgICBjb2xvcjogQy50ZXh0LAogICAgICAgICAgICBsZXR0ZXJTcGFjaW5nOiAiLTAuMDJlbSIsCiAgICAgICAgICAgIHdoaXRlU3BhY2U6ICJub3dyYXAiLAogICAgICAgICAgfX0KICAgICAgICA+CiAgICAgICAgICBzdGF0ZT08c3BhbiBzdHlsZT17eyBjb2xvcjogQy5iYWQgfX0+MTc8L3NwYW4+CiAgICAgICAgPC9zcGFuPgogICAgICAgIDxkaXYKICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgIG1hcmdpblRvcDogMjgsCiAgICAgICAgICAgIGZvbnRGYW1pbHk6IEYuc2FucywKICAgICAgICAgICAgZm9udFNpemU6IFMuc21hbGwsCiAgICAgICAgICAgIGNvbG9yOiBDLmRpbSwKICAgICAgICAgICAgb3BhY2l0eTogZ3Vlc3RQLAogICAgICAgICAgICBmb250VmFyaWFudE51bWVyaWM6ICJ0YWJ1bGFyLW51bXMiLAogICAgICAgICAgfX0KICAgICAgICA+CiAgICAgICAgICDmuLjlrqLop4bop5LvvJoxMjAwNiDmsqHmnInor6Xor4TorroKICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CgogICAgICB7Lyog4pSA4pSAIOmYtuautSAy77ya5Y+z5LiK6KeS55y8552b77yM5LuO552B5byA5Yiw6Zet5LiK77yI5qiq5bGP5Y+z5LiK6KeS5piv56m655qE77yJ4pSA4pSAICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAiYWJzb2x1dGUiLAogICAgICAgICAgcmlnaHQ6IEcucGFkWCwKICAgICAgICAgIHRvcDogRy5wYWRZLAogICAgICAgICAgb3BhY2l0eTogZXllT3BlbiAqICgxIC0gY2xlYXJQKSwKICAgICAgICB9fQogICAgICA+CiAgICAgICAgPEV5ZSBvcGVuPXtleWVPcGVufSBjbG9zZVA9e2V5ZUNsb3NlfSAvPgogICAgICA8L2Rpdj4KCiAgICAgIHsvKiDilIDilIAg6Zi25q61IDPvvJrop6Pph4rkuInooYzvvIjkuI7ljaHniYflkIzlrr3nmoTlnZfvvIzlnZflhoXlt6blr7npvZDvvInilIDilIAgKi99CiAgICAgIDxkaXYgc3R5bGU9e3sgcG9zaXRpb246ICJhYnNvbHV0ZSIsIGxlZnQ6IENBUkRfTEVGVCwgdG9wOiA0MDAsIHdpZHRoOiBDQVJEX1csIG9wYWNpdHk6IDEgLSBjbGVhclAgfX0+CiAgICAgICAge1sKICAgICAgICAgIHsgdGV4dDogIkIg56uZ5pyJ5Liq5Y+N5Z6D5Zy+57O757ufIiwgcDogbDEsIGNvbG9yOiBDLnRleHQgfSwKICAgICAgICAgIHsgdGV4dDogIuaOpeWPo+S7jeeEtui/lOWbnuaIkOWKnyIsIHA6IGwyLCBjb2xvcjogQy50ZXh0IH0sCiAgICAgICAgICB7IHRleHQ6ICLkvYbor4Torrrlj6rmnInkvZzogIXoh6rlt7HnnIvlvpfop4EiLCBwOiBsMywgY29sb3I6IEMuYmFkIH0sCiAgICAgICAgXS5tYXAoKHJvdykgPT4gKAogICAgICAgICAgPGRpdgogICAgICAgICAgICBrZXk9e3Jvdy50ZXh0fQogICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgIGZvbnRGYW1pbHk6IEYuc2FucywKICAgICAgICAgICAgICBmb250V2VpZ2h0OiA1MDAsCiAgICAgICAgICAgICAgZm9udFNpemU6IFMuYm9keSwKICAgICAgICAgICAgICBsaW5lSGVpZ2h0OiAxLjksCiAgICAgICAgICAgICAgY29sb3I6IHJvdy5jb2xvciwKICAgICAgICAgICAgICBvcGFjaXR5OiByb3cucCwKICAgICAgICAgICAgICB0cmFuc2Zvcm06IGB0cmFuc2xhdGVZKCR7KDEgLSByb3cucCkgKiAxOH1weClgLAogICAgICAgICAgICB9fQogICAgICAgICAgPgogICAgICAgICAgICB7cm93LnRleHR9CiAgICAgICAgICA8L2Rpdj4KICAgICAgICApKX0KICAgICAgPC9kaXY+CgogICAgICB7Lyog6Zi25q61IDIg6LW355qE5Ya36Imy6LCDICovfQogICAgICA8ZGl2IHN0eWxlPXt7IHBvc2l0aW9uOiAiYWJzb2x1dGUiLCBpbnNldDogMCwgYmFja2dyb3VuZDogQy53aGFsZSwgb3BhY2l0eTogY29vbFAgKiAwLjA2IH19IC8+CgogICAgICB7Lyog4pSA4pSAIOmYtuautSA077ya5aW555qE6YCJ5oup77yI5Lu35YC85Li75byg77yM6YCa5qCP5bGF5Lit77yJ4pSA4pSAICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAiYWJzb2x1dGUiLAogICAgICAgICAgaW5zZXQ6IDAsCiAgICAgICAgICBkaXNwbGF5OiAiZmxleCIsCiAgICAgICAgICBmbGV4RGlyZWN0aW9uOiAiY29sdW1uIiwKICAgICAgICAgIGFsaWduSXRlbXM6ICJjZW50ZXIiLAogICAgICAgICAganVzdGlmeUNvbnRlbnQ6ICJjZW50ZXIiLAogICAgICAgIH19CiAgICAgID4KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBmb250RmFtaWx5OiBGLnNhbnMsCiAgICAgICAgICAgIGZvbnRXZWlnaHQ6IDkwMCwKICAgICAgICAgICAgZm9udFNpemU6IFMuaGVybywKICAgICAgICAgICAgbGluZUhlaWdodDogMS4yNSwKICAgICAgICAgICAgY29sb3I6IEMudGV4dCwKICAgICAgICAgICAgb3BhY2l0eTogcTEsCiAgICAgICAgICAgIHRyYW5zZm9ybTogYHRyYW5zbGF0ZVkoJHsoMSAtIHExKSAqIDIwfXB4KWAsCiAgICAgICAgICAgIHdoaXRlU3BhY2U6ICJub3dyYXAiLAogICAgICAgICAgfX0KICAgICAgICA+CiAgICAgICAgICDlpbnor7TvvJrjgIzooqvmi6bkuobjgILjgI0KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBtYXJnaW5Ub3A6IDQwLAogICAgICAgICAgICBmb250RmFtaWx5OiBGLnNhbnMsCiAgICAgICAgICAgIGZvbnRXZWlnaHQ6IDcwMCwKICAgICAgICAgICAgZm9udFNpemU6IFMuaGVybywKICAgICAgICAgICAgbGluZUhlaWdodDogMS4yNSwKICAgICAgICAgICAgY29sb3I6IEMuZGltLAogICAgICAgICAgICBvcGFjaXR5OiBxMiwKICAgICAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWSgkeygxIC0gcTIpICogMTZ9cHgpYCwKICAgICAgICAgICAgd2hpdGVTcGFjZTogIm5vd3JhcCIsCiAgICAgICAgICB9fQogICAgICAgID4KICAgICAgICAgIOS4jeaYr+OAjOaIkeWPkeS6huOAjeOAggogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvU2NlbmVTaGVsbD4KICApOwp9Owo=
+import React from "react";
+import { interpolate, useCurrentFrame } from "remotion";
+import { C, F, G, M, S, SCENES, W } from "../theme";
+import { SceneShell } from "../components/SceneShell";
+
+/**
+ * S6Avalon —— 帧 3000–4050（35 秒，全片重点）
+ * 评论被吞。
+ *
+ * 横屏骨架：居中的窄卡片（900 宽，整体居中）+ 下方文字区。
+ *   1  0–270    正常发送（接口说成功）
+ *   2  270–570  状态变灰（state=17，游客看不见，右上角眼睛闭上）
+ *   3  570–810  解释（三行字，居中块内左对齐）
+ *   4  810–1050 她的选择（通栏居中，S.hero）
+ * 最后两句必须停够 4 秒，所以台词一律不超过第 960 帧。
+ */
+
+const LEN = SCENES.avalon.to - SCENES.avalon.from; // 1050
+export const S6_DURATION = LEN + M.overlap; // 1065
+
+const CARD_W = 900;
+const CARD_LEFT = W / 2 - CARD_W / 2; // 510，真正居中
+
+const POST = "倒回去看了两遍才发现，后半段的音轨已经跑到楚汉去了";
+const RPID = "318721505553";
+
+const ip = (f: number, a: number, b: number, from = 0, to = 1) =>
+  interpolate(f, [a, b], [from, to], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
+/** 阶段 2 里的“逐个变灰”：到点就从 C.ok 换成 C.dim */
+const grayed = (f: number, at: number) => (ip(f, at, at + 20) >= 0.5 ? C.dim : C.ok);
+
+/** 眼睛：两条弧线先睁开（strokeDasharray 画出来），再合上（纵向压扁） */
+const Eye: React.FC<{ open: number; closeP: number }> = ({ open, closeP }) => {
+  const dash = `${open * 90} 200`;
+  const lid = 1 - closeP * 0.94;
+  return (
+    <svg width={110} height={70} viewBox="0 0 88 56">
+      <g transform={`translate(44,28) scale(1,${lid}) translate(-44,-28)`}>
+        <path
+          d="M4 28 C 20 6, 68 6, 84 28"
+          fill="none"
+          stroke={C.dim}
+          strokeWidth={2.5}
+          strokeLinecap="round"
+          strokeDasharray={dash}
+        />
+        <path
+          d="M4 28 C 20 50, 68 50, 84 28"
+          fill="none"
+          stroke={C.dim}
+          strokeWidth={2.5}
+          strokeLinecap="round"
+          strokeDasharray={dash}
+        />
+        <circle cx={44} cy={28} r={5} fill={C.dim} opacity={open * (1 - closeP)} />
+      </g>
+    </svg>
+  );
+};
+
+export const S6Avalon: React.FC = () => {
+  const f = useCurrentFrame();
+
+  // ── 阶段 4：清屏 ──
+  const clearP = ip(f, 780, 810);
+
+  // ── 阶段 1：正常发送 ──
+  const cardIn = ip(f, 20, 50);
+  const cardP = cardIn * (1 - ip(f, 290, 330));
+  const press = f < 126 ? ip(f, 120, 126, 1, 0.96) : ip(f, 126, 132, 0.96, 1);
+  const flash = f >= 126 && f < 156;
+  const resultP = ip(f, 150, 174);
+  const saidP = ip(f, 190, 214);
+
+  // ── 阶段 2：状态变灰 ──
+  const coolP = ip(f, 270, 330) * (1 - ip(f, 800, 830));
+  const stateP = ip(f, 290, 314);
+  const guestP = ip(f, 340, 364);
+  const eyeOpen = ip(f, 290, 330);
+  const eyeClose = ip(f, 496, 540);
+
+  // ── 阶段 3：解释 ──
+  const l1 = ip(f, 570, 594);
+  const l2 = ip(f, 600, 624);
+  const l3 = ip(f, 630, 654);
+
+  // ── 阶段 4：她的选择 ──
+  const q1 = ip(f, 815, 850);
+  const q2 = ip(f, 930, 960);
+
+  return (
+    <SceneShell length={S6_DURATION}>
+      {/* ── 阶段 1：居中窄卡片 ── */}
+      <div
+        style={{
+          position: "absolute",
+          left: CARD_LEFT,
+          top: 200,
+          width: CARD_W,
+          background: C.panel,
+          border: `1px solid ${flash ? C.ok : C.line}`,
+          borderRadius: 16,
+          padding: 36,
+          opacity: cardP,
+          transform: `translateY(${(1 - cardIn) * 24}px)`,
+        }}
+      >
+        <div
+          style={{
+            border: `1px solid ${C.line}`,
+            borderRadius: 10,
+            padding: 28,
+            fontFamily: F.sans,
+            fontSize: S.body,
+            lineHeight: 1.7,
+            color: C.text,
+          }}
+        >
+          {POST}
+        </div>
+        <div style={{ display: "flex", justifyContent: "flex-end", marginTop: 28 }}>
+          <div
+            style={{
+              padding: "14px 40px",
+              borderRadius: 8,
+              background: flash ? `${C.ok}22` : `${C.whale}22`,
+              color: flash ? C.ok : C.whale,
+              fontFamily: F.sans,
+              fontWeight: 700,
+              fontSize: S.small,
+              transform: `scale(${press})`,
+            }}
+          >
+            发送
+          </div>
+        </div>
+      </div>
+
+      {/* ── 阶段 1 → 2：接口返回，然后变灰 ── */}
+      <div
+        style={{
+          position: "absolute",
+          left: CARD_LEFT,
+          top: 660,
+          opacity: resultP * (1 - clearP),
+          fontFamily: F.mono,
+          fontSize: S.code,
+          lineHeight: 1.9,
+          fontVariantNumeric: "tabular-nums",
+        }}
+      >
+        <div style={{ color: grayed(f, 300) }}>code=0</div>
+        <div style={{ color: grayed(f, 320) }}>rpid={RPID}</div>
+      </div>
+
+      <div
+        style={{
+          position: "absolute",
+          left: CARD_LEFT,
+          top: 800,
+          opacity: saidP * (1 - clearP),
+          fontFamily: F.sans,
+          fontWeight: 500,
+          fontSize: S.body,
+          color: grayed(f, 340),
+        }}
+      >
+        接口说：成功
+      </div>
+
+      {/* ── 阶段 2：state=17，居中 ── */}
+      <div
+        style={{
+          position: "absolute",
+          left: 0,
+          right: 0,
+          top: 360,
+          textAlign: "center",
+          opacity: stateP * (1 - clearP),
+          transform: `translateY(${(1 - stateP) * 24}px)`,
+        }}
+      >
+        <span
+          style={{
+            fontFamily: F.mono,
+            fontWeight: 700,
+            fontSize: S.mega,
+            lineHeight: 1.1,
+            fontVariantNumeric: "tabular-nums",
+            color: C.text,
+            letterSpacing: "-0.02em",
+            whiteSpace: "nowrap",
+          }}
+        >
+          state=<span style={{ color: C.bad }}>17</span>
+        </span>
+        <div
+          style={{
+            marginTop: 28,
+            fontFamily: F.sans,
+            fontSize: S.small,
+            color: C.dim,
+            opacity: guestP,
+            fontVariantNumeric: "tabular-nums",
+          }}
+        >
+          游客视角：12006 没有该评论
+        </div>
+      </div>
+
+      {/* ── 阶段 2：右上角眼睛，从睁开到闭上（横屏右上角是空的）── */}
+      <div
+        style={{
+          position: "absolute",
+          right: G.padX,
+          top: G.padY,
+          opacity: eyeOpen * (1 - clearP),
+        }}
+      >
+        <Eye open={eyeOpen} closeP={eyeClose} />
+      </div>
+
+      {/* ── 阶段 3：解释三行（与卡片同宽的块，块内左对齐）── */}
+      <div style={{ position: "absolute", left: CARD_LEFT, top: 400, width: CARD_W, opacity: 1 - clearP }}>
+        {[
+          { text: "B 站有个反垃圾系统", p: l1, color: C.text },
+          { text: "接口仍然返回成功", p: l2, color: C.text },
+          { text: "但评论只有作者自己看得见", p: l3, color: C.bad },
+        ].map((row) => (
+          <div
+            key={row.text}
+            style={{
+              fontFamily: F.sans,
+              fontWeight: 500,
+              fontSize: S.body,
+              lineHeight: 1.9,
+              color: row.color,
+              opacity: row.p,
+              transform: `translateY(${(1 - row.p) * 18}px)`,
+            }}
+          >
+            {row.text}
+          </div>
+        ))}
+      </div>
+
+      {/* 阶段 2 起的冷色调 */}
+      <div style={{ position: "absolute", inset: 0, background: C.whale, opacity: coolP * 0.06 }} />
+
+      {/* ── 阶段 4：她的选择（价值主张，通栏居中）── */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <div
+          style={{
+            fontFamily: F.sans,
+            fontWeight: 900,
+            fontSize: S.hero,
+            lineHeight: 1.25,
+            color: C.text,
+            opacity: q1,
+            transform: `translateY(${(1 - q1) * 20}px)`,
+            whiteSpace: "nowrap",
+          }}
+        >
+          她说：「被拦了。」
+        </div>
+        <div
+          style={{
+            marginTop: 40,
+            fontFamily: F.sans,
+            fontWeight: 700,
+            fontSize: S.hero,
+            lineHeight: 1.25,
+            color: C.dim,
+            opacity: q2,
+            transform: `translateY(${(1 - q2) * 16}px)`,
+            whiteSpace: "nowrap",
+          }}
+        >
+          不是「我发了」。
+        </div>
+      </div>
+    </SceneShell>
+  );
+};

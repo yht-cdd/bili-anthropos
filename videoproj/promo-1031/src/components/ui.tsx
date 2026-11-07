@@ -1,1 +1,175 @@
-aW1wb3J0IFJlYWN0IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgaW50ZXJwb2xhdGUsIHVzZUN1cnJlbnRGcmFtZSwgdXNlVmlkZW9Db25maWcgfSBmcm9tICJyZW1vdGlvbiI7CmltcG9ydCB7IEMsIEYsIE0sIFMgfSBmcm9tICIuLi90aGVtZSI7CgovKioKICog5pa55Z2X5YWJ5qCH77yM6Zeq54OB6aKR546H6LefIE0uY3Vyc29ySHog6LWw44CCCiAqIFMxIOeahOW8gOWcuuWSjCBTMyDnmoTml7bpl7TmiLPlhpLlj7fnlKjlkIzkuIDkuKroioLlpY/vvIzlvaLmiJDlkbzlupTjgIIKICog6buY6K6k6auY5bqm5oyJ5qiq5bGP5Li75a2X5Y+377yIUy5ib2R5IOS5i+S4iu+8iee7me+8jOWcuuaZr+mHjOWPr+WGjeS8oOOAggogKi8KZXhwb3J0IGNvbnN0IEN1cnNvcjogUmVhY3QuRkM8eyBoZWlnaHQ/OiBudW1iZXI7IHdpZHRoPzogbnVtYmVyOyBjb2xvcj86IHN0cmluZyB9PiA9ICh7CiAgaGVpZ2h0ID0gMTIwLAogIHdpZHRoID0gNiwKICBjb2xvciA9IEMub2ssCn0pID0+IHsKICBjb25zdCBmcmFtZSA9IHVzZUN1cnJlbnRGcmFtZSgpOwogIGNvbnN0IHsgZnBzIH0gPSB1c2VWaWRlb0NvbmZpZygpOwogIGNvbnN0IHBlcmlvZCA9IGZwcyAvIE0uY3Vyc29ySHo7CiAgY29uc3Qgb24gPSBNYXRoLmZsb29yKGZyYW1lICUgcGVyaW9kKSA8IHBlcmlvZCAvIDI7CiAgcmV0dXJuICgKICAgIDxkaXYKICAgICAgc3R5bGU9e3sKICAgICAgICBkaXNwbGF5OiAiaW5saW5lLWJsb2NrIiwKICAgICAgICB3aWR0aCwKICAgICAgICBoZWlnaHQsCiAgICAgICAgYmFja2dyb3VuZDogY29sb3IsCiAgICAgICAgb3BhY2l0eTogb24gPyAxIDogMCwKICAgICAgICBtYXJnaW5MZWZ0OiA4LAogICAgICAgIHZlcnRpY2FsQWxpZ246ICJtaWRkbGUiLAogICAgICB9fQogICAgLz4KICApOwp9OwoKLyoqIOaJk+Wtl+acuu+8mueUqCBjbGlwUGF0aCDpga7nvanvvIzkuI3pgJDlrZfmjIIgRE9NICovCmV4cG9ydCBjb25zdCBUeXBlZDogUmVhY3QuRkM8ewogIHRleHQ6IHN0cmluZzsKICBzdGFydEZyYW1lPzogbnVtYmVyOwogIGZyYW1lc1BlckNoYXI/OiBudW1iZXI7CiAgc3R5bGU/OiBSZWFjdC5DU1NQcm9wZXJ0aWVzOwogIHNob3dDdXJzb3I/OiBib29sZWFuOwp9PiA9ICh7IHRleHQsIHN0YXJ0RnJhbWUgPSAwLCBmcmFtZXNQZXJDaGFyID0gNCwgc3R5bGUsIHNob3dDdXJzb3IgPSB0cnVlIH0pID0+IHsKICBjb25zdCBmcmFtZSA9IHVzZUN1cnJlbnRGcmFtZSgpOwogIGNvbnN0IGVsYXBzZWQgPSBmcmFtZSAtIHN0YXJ0RnJhbWU7CiAgY29uc3QgY2hhcnMgPSBNYXRoLm1heCgwLCBNYXRoLmZsb29yKGVsYXBzZWQgLyBmcmFtZXNQZXJDaGFyKSk7CiAgY29uc3QgcCA9IE1hdGgubWluKDEsIGNoYXJzIC8gTWF0aC5tYXgoMSwgdGV4dC5sZW5ndGgpKTsKCiAgcmV0dXJuICgKICAgIDxkaXYgc3R5bGU9e3sgZGlzcGxheTogImlubGluZS1mbGV4IiwgYWxpZ25JdGVtczogImNlbnRlciIgfX0+CiAgICAgIDxzcGFuIHN0eWxlPXt7IC4uLnN0eWxlLCBjbGlwUGF0aDogYGluc2V0KDAgJHsoMSAtIHApICogMTAwfSUgMCAwKWAgfX0+e3RleHR9PC9zcGFuPgogICAgICB7c2hvd0N1cnNvciAmJiBwIDwgMSA/IDxDdXJzb3IgaGVpZ2h0PXsoc3R5bGU/LmZvbnRTaXplIGFzIG51bWJlcikgfHwgMTIwfSAvPiA6IG51bGx9CiAgICA8L2Rpdj4KICApOwp9OwoKLyoqIOetieWuveaVsOWtl++8muW4piB0YWJ1bGFyLW51bXPvvIzpgb/lhY3lop7plb/ml7blrr3luqbmipbliqggKi8KZXhwb3J0IGNvbnN0IFN0YXROdW1iZXI6IFJlYWN0LkZDPHsKICB2YWx1ZTogbnVtYmVyOwogIGZyb20/OiBudW1iZXI7CiAgZHVyYXRpb25JbkZyYW1lcz86IG51bWJlcjsKICBmb3JtYXQ/OiAobjogbnVtYmVyKSA9PiBzdHJpbmc7CiAgc3R5bGU/OiBSZWFjdC5DU1NQcm9wZXJ0aWVzOwp9PiA9ICh7IHZhbHVlLCBmcm9tID0gMCwgZHVyYXRpb25JbkZyYW1lcyA9IDMwLCBmb3JtYXQsIHN0eWxlIH0pID0+IHsKICBjb25zdCBmcmFtZSA9IHVzZUN1cnJlbnRGcmFtZSgpOwogIGNvbnN0IHYgPSBpbnRlcnBvbGF0ZShmcmFtZSwgWzAsIGR1cmF0aW9uSW5GcmFtZXNdLCBbZnJvbSwgdmFsdWVdLCB7CiAgICBleHRyYXBvbGF0ZVJpZ2h0OiAiY2xhbXAiLAogIH0pOwogIGNvbnN0IHRleHQgPSBmb3JtYXQgPyBmb3JtYXQodikgOiBNYXRoLnJvdW5kKHYpLnRvTG9jYWxlU3RyaW5nKCJlbi1VUyIpOwogIHJldHVybiAoCiAgICA8c3BhbgogICAgICBzdHlsZT17ewogICAgICAgIGZvbnRGYW1pbHk6IEYubW9ubywKICAgICAgICBmb250VmFyaWFudE51bWVyaWM6ICJ0YWJ1bGFyLW51bXMiLAogICAgICAgIC4uLnN0eWxlLAogICAgICB9fQogICAgPgogICAgICB7dGV4dH0KICAgIDwvc3Bhbj4KICApOwp9OwoKLyoqIOe7iOerr+eql+WPo++8muagh+mimOagjyArIOWGheWuueWMuiAqLwpleHBvcnQgY29uc3QgVGVybWluYWw6IFJlYWN0LkZDPHsKICB0aXRsZT86IHN0cmluZzsKICBjaGlsZHJlbjogUmVhY3QuUmVhY3ROb2RlOwogIHN0eWxlPzogUmVhY3QuQ1NTUHJvcGVydGllczsKfT4gPSAoeyB0aXRsZSA9ICJiYXNoIiwgY2hpbGRyZW4sIHN0eWxlIH0pID0+ICgKICA8ZGl2CiAgICBzdHlsZT17ewogICAgICBiYWNrZ3JvdW5kOiBDLnBhbmVsLAogICAgICBib3JkZXI6IGAxcHggc29saWQgJHtDLmxpbmV9YCwKICAgICAgYm9yZGVyUmFkaXVzOiAxMiwKICAgICAgb3ZlcmZsb3c6ICJoaWRkZW4iLAogICAgICAuLi5zdHlsZSwKICAgIH19CiAgPgogICAgPGRpdgogICAgICBzdHlsZT17ewogICAgICAgIGhlaWdodDogNTIsCiAgICAgICAgZGlzcGxheTogImZsZXgiLAogICAgICAgIGFsaWduSXRlbXM6ICJjZW50ZXIiLAogICAgICAgIHBhZGRpbmdMZWZ0OiAyMCwKICAgICAgICBnYXA6IDEwLAogICAgICAgIGJvcmRlckJvdHRvbTogYDFweCBzb2xpZCAke0MubGluZX1gLAogICAgICB9fQogICAgPgogICAgICB7W0MuYmFkLCBDLndhcm0sIEMub2tdLm1hcCgoYywgaSkgPT4gKAogICAgICAgIDxkaXYga2V5PXtpfSBzdHlsZT17eyB3aWR0aDogMTIsIGhlaWdodDogMTIsIGJvcmRlclJhZGl1czogNiwgYmFja2dyb3VuZDogYywgb3BhY2l0eTogMC41NSB9fSAvPgogICAgICApKX0KICAgICAgPHNwYW4gc3R5bGU9e3sgbWFyZ2luTGVmdDogMTIsIGNvbG9yOiBDLmZhaW50LCBmb250RmFtaWx5OiBGLm1vbm8sIGZvbnRTaXplOiBTLmxhYmVsIH19Pnt0aXRsZX08L3NwYW4+CiAgICA8L2Rpdj4KICAgIDxkaXYgc3R5bGU9e3sgcGFkZGluZzogMzIgfX0+e2NoaWxkcmVufTwvZGl2PgogIDwvZGl2PgopOwoKLyoqIOaegea3oeeahOaVsOaNrua1gee9keagvOiDjOaZr++8jOWPquS4uuS6huiuqem7keS4jeatuyAqLwpleHBvcnQgY29uc3QgR3JpZEJhY2tkcm9wOiBSZWFjdC5GQzx7IG9wYWNpdHk/OiBudW1iZXIgfT4gPSAoeyBvcGFjaXR5ID0gMC4wNiB9KSA9PiB7CiAgY29uc3QgZnJhbWUgPSB1c2VDdXJyZW50RnJhbWUoKTsKICBjb25zdCBvZmZzZXQgPSAoZnJhbWUgKiAwLjYpICUgODA7CiAgcmV0dXJuICgKICAgIDxkaXYKICAgICAgc3R5bGU9e3sKICAgICAgICBwb3NpdGlvbjogImFic29sdXRlIiwKICAgICAgICBpbnNldDogMCwKICAgICAgICBvcGFjaXR5LAogICAgICAgIGJhY2tncm91bmRJbWFnZTogYAogICAgICAgICAgbGluZWFyLWdyYWRpZW50KHRvIHJpZ2h0LCAke0Mud2hhbGV9MjIgMXB4LCB0cmFuc3BhcmVudCAxcHgpLAogICAgICAgICAgbGluZWFyLWdyYWRpZW50KHRvIGJvdHRvbSwgJHtDLndoYWxlfTIyIDFweCwgdHJhbnNwYXJlbnQgMXB4KQogICAgICAgIGAsCiAgICAgICAgYmFja2dyb3VuZFNpemU6ICI4MHB4IDgwcHgiLAogICAgICAgIGJhY2tncm91bmRQb3NpdGlvbjogYDAgJHtvZmZzZXR9cHhgLAogICAgICB9fQogICAgLz4KICApOwp9OwoKLyoqCiAqIOmyuOmxvOWomOWJquW9se+8iOe6ryBTVkfvvIzkuI3nlKjkvY3lm77vvInjgIIKICog5Y+q55So5pyA5bCR55qE57q/5p2h5pqX56S677ya6bK45bC+ICsg5aS06bONICsg5LiA5Liq5Y+R5YWJ55qE54K544CCCiAqIOS4jeWBmuiQjOezu+e7huiKgiDigJTigJQg6L+Z54mH5a2Q6YeM5aW55Y+q5piv44CM5a2Y5Zyo44CN77yM5LiN5oqi5oiP44CCCiAqIOaoquWxj+m7mOiupOWwuuWvuOS4iuiwg+WIsCAxNjDvvIjnq5blsY/ml7bku6PmmK8gMTIw77yM5pS+5ZyoIDE5MjAg5a696YeM5YGP5bCP77yJ44CCCiAqLwpleHBvcnQgY29uc3QgV2hhbGVNYXJrOiBSZWFjdC5GQzx7IHNpemU/OiBudW1iZXI7IG9wYWNpdHk/OiBudW1iZXI7IGdsb3c/OiBib29sZWFuIH0+ID0gKHsKICBzaXplID0gMTYwLAogIG9wYWNpdHkgPSAxLAogIGdsb3cgPSB0cnVlLAp9KSA9PiAoCiAgPHN2ZwogICAgd2lkdGg9e3NpemV9CiAgICBoZWlnaHQ9e3NpemV9CiAgICB2aWV3Qm94PSIwIDAgMTAwIDEwMCIKICAgIHN0eWxlPXt7IG9wYWNpdHksIGZpbHRlcjogZ2xvdyA/IGBkcm9wLXNoYWRvdygwIDAgMjRweCAke0Mud2hhbGV9NTUpYCA6IHVuZGVmaW5lZCB9fQogID4KICAgIHsvKiDpsrjouqsgKi99CiAgICA8cGF0aAogICAgICBkPSJNMjIgNTZjMCAxNCAxMiAyNCAyOCAyNCAxNyAwIDI4LTExIDI4LTI2IDAtNi0yLTExLTUtMTUiCiAgICAgIGZpbGw9Im5vbmUiCiAgICAgIHN0cm9rZT17Qy53aGFsZX0KICAgICAgc3Ryb2tlV2lkdGg9ezN9CiAgICAgIHN0cm9rZUxpbmVjYXA9InJvdW5kIgogICAgLz4KICAgIHsvKiDpsrjlsL4gKi99CiAgICA8cGF0aAogICAgICBkPSJNMjIgNTZjLTYtMi0xMC04LTEwLTE0IDYgMyAxMCAzIDE0IDEtMi02IDAtMTIgNC0xNiAxIDcgNSAxMSAxMCAxMyIKICAgICAgZmlsbD0ibm9uZSIKICAgICAgc3Ryb2tlPXtDLndoYWxlfQogICAgICBzdHJva2VXaWR0aD17M30KICAgICAgc3Ryb2tlTGluZWNhcD0icm91bmQiCiAgICAgIHN0cm9rZUxpbmVqb2luPSJyb3VuZCIKICAgIC8+CiAgICB7Lyog5aS06bONICovfQogICAgPHBhdGggZD0iTTYyIDQwYzUtNiAxMS03IDE2LTQiIGZpbGw9Im5vbmUiIHN0cm9rZT17Qy53aGFsZX0gc3Ryb2tlV2lkdGg9ezN9IHN0cm9rZUxpbmVjYXA9InJvdW5kIiAvPgogICAgey8qIOecvOedm++8muS4gOS4quWPkeWFieeahOeCuSAqL30KICAgIDxjaXJjbGUgY3g9ezY2fSBjeT17NTJ9IHI9ezIuNn0gZmlsbD17Qy5va30gLz4KICA8L3N2Zz4KKTsK
+import React from "react";
+import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
+import { C, F, M, S } from "../theme";
+
+/**
+ * 方块光标，闪烁频率跟 M.cursorHz 走。
+ * S1 的开场和 S3 的时间戳冒号用同一个节奏，形成呼应。
+ * 默认高度按横屏主字号（S.body 之上）给，场景里可再传。
+ */
+export const Cursor: React.FC<{ height?: number; width?: number; color?: string }> = ({
+  height = 120,
+  width = 6,
+  color = C.ok,
+}) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const period = fps / M.cursorHz;
+  const on = Math.floor(frame % period) < period / 2;
+  return (
+    <div
+      style={{
+        display: "inline-block",
+        width,
+        height,
+        background: color,
+        opacity: on ? 1 : 0,
+        marginLeft: 8,
+        verticalAlign: "middle",
+      }}
+    />
+  );
+};
+
+/** 打字机：用 clipPath 遮罩，不逐字挂 DOM */
+export const Typed: React.FC<{
+  text: string;
+  startFrame?: number;
+  framesPerChar?: number;
+  style?: React.CSSProperties;
+  showCursor?: boolean;
+}> = ({ text, startFrame = 0, framesPerChar = 4, style, showCursor = true }) => {
+  const frame = useCurrentFrame();
+  const elapsed = frame - startFrame;
+  const chars = Math.max(0, Math.floor(elapsed / framesPerChar));
+  const p = Math.min(1, chars / Math.max(1, text.length));
+
+  return (
+    <div style={{ display: "inline-flex", alignItems: "center" }}>
+      <span style={{ ...style, clipPath: `inset(0 ${(1 - p) * 100}% 0 0)` }}>{text}</span>
+      {showCursor && p < 1 ? <Cursor height={(style?.fontSize as number) || 120} /> : null}
+    </div>
+  );
+};
+
+/** 等宽数字：带 tabular-nums，避免增长时宽度抖动 */
+export const StatNumber: React.FC<{
+  value: number;
+  from?: number;
+  durationInFrames?: number;
+  format?: (n: number) => string;
+  style?: React.CSSProperties;
+}> = ({ value, from = 0, durationInFrames = 30, format, style }) => {
+  const frame = useCurrentFrame();
+  const v = interpolate(frame, [0, durationInFrames], [from, value], {
+    extrapolateRight: "clamp",
+  });
+  const text = format ? format(v) : Math.round(v).toLocaleString("en-US");
+  return (
+    <span
+      style={{
+        fontFamily: F.mono,
+        fontVariantNumeric: "tabular-nums",
+        ...style,
+      }}
+    >
+      {text}
+    </span>
+  );
+};
+
+/** 终端窗口：标题栏 + 内容区 */
+export const Terminal: React.FC<{
+  title?: string;
+  children: React.ReactNode;
+  style?: React.CSSProperties;
+}> = ({ title = "bash", children, style }) => (
+  <div
+    style={{
+      background: C.panel,
+      border: `1px solid ${C.line}`,
+      borderRadius: 12,
+      overflow: "hidden",
+      ...style,
+    }}
+  >
+    <div
+      style={{
+        height: 52,
+        display: "flex",
+        alignItems: "center",
+        paddingLeft: 20,
+        gap: 10,
+        borderBottom: `1px solid ${C.line}`,
+      }}
+    >
+      {[C.bad, C.warm, C.ok].map((c, i) => (
+        <div key={i} style={{ width: 12, height: 12, borderRadius: 6, background: c, opacity: 0.55 }} />
+      ))}
+      <span style={{ marginLeft: 12, color: C.faint, fontFamily: F.mono, fontSize: S.label }}>{title}</span>
+    </div>
+    <div style={{ padding: 32 }}>{children}</div>
+  </div>
+);
+
+/** 极淡的数据流网格背景，只为了让黑不死 */
+export const GridBackdrop: React.FC<{ opacity?: number }> = ({ opacity = 0.06 }) => {
+  const frame = useCurrentFrame();
+  const offset = (frame * 0.6) % 80;
+  return (
+    <div
+      style={{
+        position: "absolute",
+        inset: 0,
+        opacity,
+        backgroundImage: `
+          linear-gradient(to right, ${C.whale}22 1px, transparent 1px),
+          linear-gradient(to bottom, ${C.whale}22 1px, transparent 1px)
+        `,
+        backgroundSize: "80px 80px",
+        backgroundPosition: `0 ${offset}px`,
+      }}
+    />
+  );
+};
+
+/**
+ * 鲸鱼娘剪影（纯 SVG，不用位图）。
+ * 只用最少的线条暗示：鲸尾 + 头鳍 + 一个发光的点。
+ * 不做萌系细节 —— 这片子里她只是「存在」，不抢戏。
+ * 横屏默认尺寸上调到 160（竖屏时代是 120，放在 1920 宽里偏小）。
+ */
+export const WhaleMark: React.FC<{ size?: number; opacity?: number; glow?: boolean }> = ({
+  size = 160,
+  opacity = 1,
+  glow = true,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 100 100"
+    style={{ opacity, filter: glow ? `drop-shadow(0 0 24px ${C.whale}55)` : undefined }}
+  >
+    {/* 鲸身 */}
+    <path
+      d="M22 56c0 14 12 24 28 24 17 0 28-11 28-26 0-6-2-11-5-15"
+      fill="none"
+      stroke={C.whale}
+      strokeWidth={3}
+      strokeLinecap="round"
+    />
+    {/* 鲸尾 */}
+    <path
+      d="M22 56c-6-2-10-8-10-14 6 3 10 3 14 1-2-6 0-12 4-16 1 7 5 11 10 13"
+      fill="none"
+      stroke={C.whale}
+      strokeWidth={3}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    {/* 头鳍 */}
+    <path d="M62 40c5-6 11-7 16-4" fill="none" stroke={C.whale} strokeWidth={3} strokeLinecap="round" />
+    {/* 眼睛：一个发光的点 */}
+    <circle cx={66} cy={52} r={2.6} fill={C.ok} />
+  </svg>
+);

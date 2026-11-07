@@ -1,1 +1,10 @@
-LyoqCiAqIG1vdGlvbi1raXQg55qE57uf5LiA5YWl5Y+j44CCCiAqCiAqIOWIq+eahOW3peeoi+mHjOi/meagt+eUqO+8iOebuOWvuei3r+W+hO+8jOacrOS7k+W6k+WGheS4jemcgOimgeijheWMhe+8ie+8mgogKiAgIGltcG9ydCB7IFB1c2hJbiwgU3RhZ2dlciwgR3JhaW4gfSBmcm9tICcuLi8uLi9tb3Rpb24ta2l0JzsKICog5puy57q/6KaB6Ieq5bex5YaZ5Yqo5pWI5pe277yaCiAqICAgaW1wb3J0IHsgcHJvZ3Jlc3MsIGV4cG9PdXQgfSBmcm9tICcuLi8uLi9tb3Rpb24ta2l0L2Vhc2luZ3MnOwogKi8KZXhwb3J0ICogZnJvbSAnLi9lYXNpbmdzJzsKZXhwb3J0ICogZnJvbSAnLi9Nb3Rpb24nOwo=
+/**
+ * motion-kit 的统一入口。
+ *
+ * 别的工程里这样用（相对路径，本仓库内不需要装包）：
+ *   import { PushIn, Stagger, Grain } from '../../motion-kit';
+ * 曲线要自己写动效时：
+ *   import { progress, expoOut } from '../../motion-kit/easings';
+ */
+export * from './easings';
+export * from './Motion';
