@@ -1,1 +1,46 @@
-Ly8g5YWo5bGA6KeG6KeJ57O757ufIOKAlCBicmllZiB2Mi4xIMKn5LiJ44CM5LiJ6Imy5YC86KGo44CN77yM5Zy65pmv6YeM5LiN6K645Y+m6YCg6aKc6ImyCmV4cG9ydCBjb25zdCBXID0gMTkyMDsKZXhwb3J0IGNvbnN0IEggPSAxMDgwOwpleHBvcnQgY29uc3QgRlBTID0gMzA7CmV4cG9ydCBjb25zdCBUT1RBTF9GUkFNRVMgPSAxODAwOyAvLyA2MC4wcwoKLy8g6IOM5pmv77ya57q15ZCR5riQ5Y+YICsg5Lit5aSu6JOd6Imy5p+U5YWJ5qSt5ZyG77yI5qih57OKIDE4MHB477yJCmV4cG9ydCBjb25zdCBCR19UT1AgPSAnIzA4MEIxMic7CmV4cG9ydCBjb25zdCBCR19CT1RUT00gPSAnIzEyMTgyMic7CmV4cG9ydCBjb25zdCBHTE9XID0gJ3JnYmEoNTYsMTM5LDI1MywwLjA3KSc7CmV4cG9ydCBjb25zdCBHTE9XX0JMVVJfUFggPSAxODA7CgovLyDkuInoibLkvZPns7sKZXhwb3J0IGNvbnN0IFRFWFQgPSAnI0VDRTlFMSc7IC8vIOS4u+aWh+WtlwpleHBvcnQgY29uc3QgQ09SQUwgPSAnI0Q5Nzc1Nyc7IC8vIOW8uuiwgzHvvJrjgIzmiJEv6K+06K+d44CN5L6nCmV4cG9ydCBjb25zdCBMSU1FID0gJyNENEY0M0UnOyAvLyDlvLrosIMy77ya44CM57uT5p6cL+mAmui/h+OAjeS+pwpleHBvcnQgY29uc3QgRVJST1IgPSAnI0U1NDg0RCc7IC8vIOmUmeivr+e6ogpleHBvcnQgY29uc3QgRVJST1JfR0xPVyA9ICdyZ2JhKDIyOSw3Miw3NywwLjE4KSc7IC8vIFMxIOW6leWFiQoKLy8g57uI56uvCmV4cG9ydCBjb25zdCBURVJNX0ZHID0gJyMzRkI5NTAnOyAvLyDnu4jnq6/liY3mma/vvIjnu7/vvIkKZXhwb3J0IGNvbnN0IFRFUk1fVEVYVCA9ICcjQzlEMUQ5JzsgLy8g57uI56uv5paH5pysCmV4cG9ydCBjb25zdCBURVJNX0JPUkRFUiA9ICcjMzAzNjNEJzsgLy8g6L655qGGIDJweApleHBvcnQgY29uc3QgVEVSTV9XID0gMTI4MDsgLy8g5qiq54mI56qX5Y+j5a69CmV4cG9ydCBjb25zdCBURVJNX1JBRElVUyA9IDI0OwoKLy8g5pe26Ze05oiz6KeS5qCHCmV4cG9ydCBjb25zdCBUU19HUkFZID0gJyM4Qjk0OUUnOwpleHBvcnQgY29uc3QgVFNfUFggPSA0MjsKZXhwb3J0IGNvbnN0IFRTX1ggPSA2NDsKZXhwb3J0IGNvbnN0IFRTX1kgPSA5NjsKCi8vIOWtl+W5leWuieWFqOWMuu+8mui3neW6lSDiiaUxMjBweO+8iOaoqueJiO+8iQpleHBvcnQgY29uc3QgU1VCX1NBRkVfQk9UVE9NID0gMTIwOwoKLy8g5a2X5L2T77ya5pys5py66KOF5LqGIE5vdG9TYW5zQ0pLLUJvbGQudHRj77ybSmV0QnJhaW5zIE1vbm8g5pyq6KOF5YiZ5oyJ5YWc5bqV6ZO+6LWwCmV4cG9ydCBjb25zdCBGT05UX1NBTlMgPQogICInTm90byBTYW5zIENKSyBTQycsICdOb3RvIFNhbnMgU0MnLCAnTm90byBTYW5zIENKSyBKUCcsICdQaW5nRmFuZyBTQycsICdNaWNyb3NvZnQgWWFIZWknLCBzYW5zLXNlcmlmIjsKZXhwb3J0IGNvbnN0IEZPTlRfTU9OTyA9CiAgIidKZXRCcmFpbnMgTW9ubycsIHVpLW1vbm9zcGFjZSwgJ1NGIE1vbm8nLCBNZW5sbywgQ29uc29sYXMsICdOb3RvIFNhbnMgTW9ubyBDSksgU0MnLCBtb25vc3BhY2UiOwoKLy8g6IqC5aWP5Luk77yI5Li75Lq6IDIyOjMw77yJ77ya6L2s5Zy6IGNyb3NzZmFkZSA4IOW4pyAvIOehrOWIhyA0IOW4pyAvIOWFpeWcuue7n+S4gCAxMCDluKcgZWFzZS1vdXQtY3ViaWMgLyDmiZPlrZcgMzIg5a2XL3MKZXhwb3J0IGNvbnN0IENST1NTRkFERSA9IDg7CmV4cG9ydCBjb25zdCBIQVJEQ1VUID0gNDsKZXhwb3J0IGNvbnN0IEVOVEVSX0ZSQU1FUyA9IDEwOwpleHBvcnQgY29uc3QgVFlQRV9DUFMgPSAzMjsgLy8g5a2XL+enkgo=
+// 全局视觉系统 — brief v2.1 §三「三色值表」，场景里不许另造颜色
+export const W = 1920;
+export const H = 1080;
+export const FPS = 30;
+export const TOTAL_FRAMES = 1800; // 60.0s
+
+// 背景：纵向渐变 + 中央蓝色柔光椭圆（模糊 180px）
+export const BG_TOP = '#080B12';
+export const BG_BOTTOM = '#121822';
+export const GLOW = 'rgba(56,139,253,0.07)';
+export const GLOW_BLUR_PX = 180;
+
+// 三色体系
+export const TEXT = '#ECE9E1'; // 主文字
+export const CORAL = '#D97757'; // 强调1：「我/说话」侧
+export const LIME = '#D4F43E'; // 强调2：「结果/通过」侧
+export const ERROR = '#E5484D'; // 错误红
+export const ERROR_GLOW = 'rgba(229,72,77,0.18)'; // S1 底光
+
+// 终端
+export const TERM_FG = '#3FB950'; // 终端前景（绿）
+export const TERM_TEXT = '#C9D1D9'; // 终端文本
+export const TERM_BORDER = '#30363D'; // 边框 2px
+export const TERM_W = 1280; // 横版窗口宽
+export const TERM_RADIUS = 24;
+
+// 时间戳角标
+export const TS_GRAY = '#8B949E';
+export const TS_PX = 42;
+export const TS_X = 64;
+export const TS_Y = 96;
+
+// 字幕安全区：距底 ≥120px（横版）
+export const SUB_SAFE_BOTTOM = 120;
+
+// 字体：本机装了 NotoSansCJK-Bold.ttc；JetBrains Mono 未装则按兜底链走
+export const FONT_SANS =
+  "'Noto Sans CJK SC', 'Noto Sans SC', 'Noto Sans CJK JP', 'PingFang SC', 'Microsoft YaHei', sans-serif";
+export const FONT_MONO =
+  "'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, 'Noto Sans Mono CJK SC', monospace";
+
+// 节奏令（主人 22:30）：转场 crossfade 8 帧 / 硬切 4 帧 / 入场统一 10 帧 ease-out-cubic / 打字 32 字/s
+export const CROSSFADE = 8;
+export const HARDCUT = 4;
+export const ENTER_FRAMES = 10;
+export const TYPE_CPS = 32; // 字/秒

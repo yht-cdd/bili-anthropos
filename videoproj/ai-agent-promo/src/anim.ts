@@ -1,1 +1,52 @@
-aW1wb3J0IHR5cGUgeyBDU1NQcm9wZXJ0aWVzIH0gZnJvbSAncmVhY3QnOwppbXBvcnQgeyBpbnRlcnBvbGF0ZSB9IGZyb20gJ3JlbW90aW9uJzsKaW1wb3J0IHsgRU5URVJfRlJBTUVTLCBGUFMsIFRZUEVfQ1BTIH0gZnJvbSAnLi90aGVtZSc7CgpleHBvcnQgY29uc3QgY2xhbXAwMSA9ICh2OiBudW1iZXIpOiBudW1iZXIgPT4gTWF0aC5tYXgoMCwgTWF0aC5taW4oMSwgdikpOwpleHBvcnQgY29uc3QgZWFzZU91dEN1YmljID0gKHA6IG51bWJlcik6IG51bWJlciA9PiAxIC0gTWF0aC5wb3coMSAtIGNsYW1wMDEocCksIDMpOwoKLy8gMOKGkjHvvIxkZWxheSDotbfnu48gZHVyIOW4p++8iOWFqOeJh+e7n+S4gOe8k+WKqO+8iQpleHBvcnQgY29uc3QgcHJvZyA9IChmcmFtZTogbnVtYmVyLCBkZWxheTogbnVtYmVyLCBkdXI6IG51bWJlcik6IG51bWJlciA9PgogIGVhc2VPdXRDdWJpYygoZnJhbWUgLSBkZWxheSkgLyBkdXIpOwoKLy8g5YWl5Zy677yaMTAg5binIGVhc2Utb3V0LWN1YmljIOa3oeWFpSArIOS4iuenu++8iGJyaWVmIMKn5LiJIOWKqOaViOWFpeWcuue7n+S4gO+8iQpleHBvcnQgY29uc3QgZW50ZXIgPSAoZnJhbWU6IG51bWJlciwgZGVsYXkgPSAwLCBkdXIgPSBFTlRFUl9GUkFNRVMsIHJpc2UgPSAzMCk6IENTU1Byb3BlcnRpZXMgPT4gewogIGNvbnN0IHAgPSBwcm9nKGZyYW1lLCBkZWxheSwgZHVyKTsKICByZXR1cm4geyBvcGFjaXR5OiBwLCB0cmFuc2Zvcm06IGB0cmFuc2xhdGVZKCR7KDEgLSBwKSAqIHJpc2V9cHgpYCB9Owp9OwoKLy8g6YCA5Zy65reh5Ye6CmV4cG9ydCBjb25zdCBleGl0RmFkZSA9IChmcmFtZTogbnVtYmVyLCBzdGFydDogbnVtYmVyLCBkdXIgPSA4KTogQ1NTUHJvcGVydGllcyA9PiAoewogIG9wYWNpdHk6IDEgLSBwcm9nKGZyYW1lLCBzdGFydCwgZHVyKSwKfSk7CgovLyBjbGFtcCDov4fnmoTnur/mgKfmj5LlgLzvvIjluKcg4oaSIOS7u+aEj+WAvO+8iQpleHBvcnQgY29uc3QgbGVycEYgPSAoCiAgZnJhbWU6IG51bWJlciwKICBmcm9tOiBbbnVtYmVyLCBudW1iZXJdLAogIHRvOiBbbnVtYmVyLCBudW1iZXJdLAopOiBudW1iZXIgPT4KICBpbnRlcnBvbGF0ZShmcmFtZSwgW2Zyb21bMF0sIGZyb21bMV1dLCBbdG9bMF0sIHRvWzFdXSwgewogICAgZXh0cmFwb2xhdGVMZWZ0OiAnY2xhbXAnLAogICAgZXh0cmFwb2xhdGVSaWdodDogJ2NsYW1wJywKICB9KTsKCi8vIOaJk+Wtl+acuu+8mum7mOiupCAzMiDlrZcvc++8iOiKguWlj+S7pO+8ieOAgui/lOWbnuW3suaJk+WHuueahOWtl+espuaVsApleHBvcnQgY29uc3QgdHlwZWQgPSAoCiAgZnJhbWU6IG51bWJlciwKICBzdGFydDogbnVtYmVyLAogIHRleHRMZW46IG51bWJlciwKICBjcHM6IG51bWJlciA9IFRZUEVfQ1BTLAopOiBudW1iZXIgPT4gTWF0aC5taW4odGV4dExlbiwgTWF0aC5tYXgoMCwgTWF0aC5mbG9vcigoKGZyYW1lIC0gc3RhcnQpICogY3BzKSAvIEZQUykpKTsKCi8vIOaJk+Wtl+acuu+8iOWbuuWumuW4p+aVsOaJk+WujO+8ie+8mm4g5bin5omT5a6MIHRleHRMZW4g5Liq5a2XCmV4cG9ydCBjb25zdCB0eXBlZEluRnJhbWVzID0gKAogIGZyYW1lOiBudW1iZXIsCiAgc3RhcnQ6IG51bWJlciwKICB0ZXh0TGVuOiBudW1iZXIsCiAgZnJhbWVzOiBudW1iZXIsCik6IG51bWJlciA9PiBNYXRoLm1pbih0ZXh0TGVuLCBNYXRoLm1heCgwLCBNYXRoLmZsb29yKCgoZnJhbWUgLSBzdGFydCkgKiB0ZXh0TGVuKSAvIGZyYW1lcykpKTsKCi8vIOWFieagh+mXqueDge+8muWNiuWRqOacnyBoYWxmIOW4p++8m+i/lOWbniAx77yI5Lqu77yJ5oiWIDDvvIjnga3vvIkKZXhwb3J0IGNvbnN0IGJsaW5rID0gKGZyYW1lOiBudW1iZXIsIHN0YXJ0OiBudW1iZXIsIGhhbGYgPSAzKTogbnVtYmVyID0+CiAgZnJhbWUgPj0gc3RhcnQgPyAoTWF0aC5mbG9vcigoZnJhbWUgLSBzdGFydCkgLyBoYWxmKSAlIDIgPT09IDAgPyAxIDogMCkgOiAwOwo=
+import type { CSSProperties } from 'react';
+import { interpolate } from 'remotion';
+import { ENTER_FRAMES, FPS, TYPE_CPS } from './theme';
+
+export const clamp01 = (v: number): number => Math.max(0, Math.min(1, v));
+export const easeOutCubic = (p: number): number => 1 - Math.pow(1 - clamp01(p), 3);
+
+// 0→1，delay 起经 dur 帧（全片统一缓动）
+export const prog = (frame: number, delay: number, dur: number): number =>
+  easeOutCubic((frame - delay) / dur);
+
+// 入场：10 帧 ease-out-cubic 淡入 + 上移（brief §三 动效入场统一）
+export const enter = (frame: number, delay = 0, dur = ENTER_FRAMES, rise = 30): CSSProperties => {
+  const p = prog(frame, delay, dur);
+  return { opacity: p, transform: `translateY(${(1 - p) * rise}px)` };
+};
+
+// 退场淡出
+export const exitFade = (frame: number, start: number, dur = 8): CSSProperties => ({
+  opacity: 1 - prog(frame, start, dur),
+});
+
+// clamp 过的线性插值（帧 → 任意值）
+export const lerpF = (
+  frame: number,
+  from: [number, number],
+  to: [number, number],
+): number =>
+  interpolate(frame, [from[0], from[1]], [to[0], to[1]], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+
+// 打字机：默认 32 字/s（节奏令）。返回已打出的字符数
+export const typed = (
+  frame: number,
+  start: number,
+  textLen: number,
+  cps: number = TYPE_CPS,
+): number => Math.min(textLen, Math.max(0, Math.floor(((frame - start) * cps) / FPS)));
+
+// 打字机（固定帧数打完）：n 帧打完 textLen 个字
+export const typedInFrames = (
+  frame: number,
+  start: number,
+  textLen: number,
+  frames: number,
+): number => Math.min(textLen, Math.max(0, Math.floor(((frame - start) * textLen) / frames)));
+
+// 光标闪烁：半周期 half 帧；返回 1（亮）或 0（灭）
+export const blink = (frame: number, start: number, half = 3): number =>
+  frame >= start ? (Math.floor((frame - start) / half) % 2 === 0 ? 1 : 0) : 0;

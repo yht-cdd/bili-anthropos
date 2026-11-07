@@ -1,1 +1,75 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCBTZXF1ZW5jZSB9IGZyb20gJ3JlbW90aW9uJzsKaW1wb3J0IHsKICBCR19CT1RUT00sCiAgQkdfVE9QLAogIEZPTlRfU0FOUywKICBHTE9XLAogIEdMT1dfQkxVUl9QWCwKICBUT1RBTF9GUkFNRVMsCn0gZnJvbSAnLi90aGVtZSc7CmltcG9ydCB7IFMxIH0gZnJvbSAnLi9zY2VuZXMvUzEnOwppbXBvcnQgeyBTMiB9IGZyb20gJy4vc2NlbmVzL1MyJzsKaW1wb3J0IHsgUzMgfSBmcm9tICcuL3NjZW5lcy9TMyc7CmltcG9ydCB7IFM0IH0gZnJvbSAnLi9zY2VuZXMvUzQnOwppbXBvcnQgeyBTNSB9IGZyb20gJy4vc2NlbmVzL1M1JzsKaW1wb3J0IHsgUzYgfSBmcm9tICcuL3NjZW5lcy9TNic7CmltcG9ydCB7IFM3IH0gZnJvbSAnLi9zY2VuZXMvUzcnOwoKLy8g5YiG6ZWc5bin6KGoIOKAlCBicmllZiB2Mi4xIMKn5Zub77yM5LiO5pe26Ze06L205LiA5LiA5a+55bqU77yI5oC7IDE4MDAg5binIEAzMGZwc++8iQpleHBvcnQgY29uc3QgU0VHOiBBcnJheTx7IGlkOiBzdHJpbmc7IGZyb206IG51bWJlcjsgZHVyYXRpb246IG51bWJlciB9PiA9IFsKICB7IGlkOiAnUzEnLCBmcm9tOiAwLCBkdXJhdGlvbjogMTIwIH0sIC8vIDDigJM0cyDpkqnlrZDCt+e/u+i9pgogIHsgaWQ6ICdTMicsIGZyb206IDEyMCwgZHVyYXRpb246IDE4MCB9LCAvLyA04oCTMTBzIOWumuS5ie+8iHYyLjEg5bin5Y+C5pWw77yJCiAgeyBpZDogJ1MzJywgZnJvbTogMzAwLCBkdXJhdGlvbjogNTQwIH0sIC8vIDEw4oCTMjhzIOS7u+WKoeiSmeWkquWlh++8iFIy77yJCiAgeyBpZDogJ1M0JywgZnJvbTogODQwLCBkdXJhdGlvbjogMTIwIH0sIC8vIDI44oCTMzJzIOWbnuWIsOe/u+i9pu+8iFIz77yJCiAgeyBpZDogJ1M1JywgZnJvbTogOTYwLCBkdXJhdGlvbjogMjQwIH0sIC8vIDMy4oCTNDBzIOeIrOi1t+adpe+8iFIz77yJCiAgeyBpZDogJ1M2JywgZnJvbTogMTIwMCwgZHVyYXRpb246IDMzMCB9LCAvLyA0MOKAkzUxcyDlpJznj63nuqrlrp7vvIhSM++8iQogIHsgaWQ6ICdTNycsIGZyb206IDE1MzAsIGR1cmF0aW9uOiAyNzAgfSwgLy8gNTHigJM2MHMg5bC+5Y2hCl07CgovLyDml7bpl7TovbTlrozmlbTmgKfoh6rmo4DvvJrmrrXkuI7mrrXlv4Xpobvml6DnvJ3nm7jmjqXkuJTmgLvplb8gMTgwMApsZXQgY3Vyc29yID0gMDsKZm9yIChjb25zdCBzIG9mIFNFRykgewogIGlmIChzLmZyb20gIT09IGN1cnNvcikgewogICAgdGhyb3cgbmV3IEVycm9yKGDml7bpl7TovbTmlq3oo4LvvJoke3MuaWR9IOW6lOS7jiAke2N1cnNvcn0g5byA5aeLYCk7CiAgfQogIGN1cnNvciArPSBzLmR1cmF0aW9uOwp9CmlmIChjdXJzb3IgIT09IFRPVEFMX0ZSQU1FUykgewogIHRocm93IG5ldyBFcnJvcihg5pe26Ze06L205oC76ZW/ICR7Y3Vyc29yfSDiiaAgJHtUT1RBTF9GUkFNRVN9YCk7Cn0KCi8vIOWFqOWxgOiDjOaZr++8iGJyaWVmIMKn5LiJ77yJ77ya57q15ZCR5riQ5Y+YICsg5Lit5aSu6JOd6Imy5p+U5YWJ5qSt5ZyGCmNvbnN0IEJhY2tncm91bmQ6IFJlYWN0LkZDID0gKCkgPT4gKAogIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sgYmFja2dyb3VuZDogYGxpbmVhci1ncmFkaWVudCgxODBkZWcsICR7QkdfVE9QfSwgJHtCR19CT1RUT019KWAgfX0+CiAgICA8ZGl2CiAgICAgIHN0eWxlPXt7CiAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgbGVmdDogJzUwJScsCiAgICAgICAgdG9wOiAnNTAlJywKICAgICAgICB3aWR0aDogMTIwMCwKICAgICAgICBoZWlnaHQ6IDcwMCwKICAgICAgICB0cmFuc2Zvcm06ICd0cmFuc2xhdGUoLTUwJSwgLTUwJSknLAogICAgICAgIGJvcmRlclJhZGl1czogJzUwJScsCiAgICAgICAgYmFja2dyb3VuZENvbG9yOiBHTE9XLAogICAgICAgIGZpbHRlcjogYGJsdXIoJHtHTE9XX0JMVVJfUFh9cHgpYCwKICAgICAgfX0KICAgIC8+CiAgPC9BYnNvbHV0ZUZpbGw+Cik7CgpleHBvcnQgY29uc3QgQWdlbnRQcm9tbzogUmVhY3QuRkMgPSAoKSA9PiB7CiAgcmV0dXJuICgKICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sgZm9udEZhbWlseTogRk9OVF9TQU5TIH19PgogICAgICA8QmFja2dyb3VuZCAvPgogICAgICB7U0VHLm1hcCgocykgPT4gewogICAgICAgIGNvbnN0IFNjZW5lID0gW1MxLCBTMiwgUzMsIFM0LCBTNSwgUzYsIFM3XVtOdW1iZXIocy5pZC5zbGljZSgxKSkgLSAxXTsKICAgICAgICByZXR1cm4gKAogICAgICAgICAgPFNlcXVlbmNlIGtleT17cy5pZH0gZnJvbT17cy5mcm9tfSBkdXJhdGlvbkluRnJhbWVzPXtzLmR1cmF0aW9ufT4KICAgICAgICAgICAgPFNjZW5lIC8+CiAgICAgICAgICA8L1NlcXVlbmNlPgogICAgICAgICk7CiAgICAgIH0pfQogICAgPC9BYnNvbHV0ZUZpbGw+CiAgKTsKfTsK
+import React from 'react';
+import { AbsoluteFill, Sequence } from 'remotion';
+import {
+  BG_BOTTOM,
+  BG_TOP,
+  FONT_SANS,
+  GLOW,
+  GLOW_BLUR_PX,
+  TOTAL_FRAMES,
+} from './theme';
+import { S1 } from './scenes/S1';
+import { S2 } from './scenes/S2';
+import { S3 } from './scenes/S3';
+import { S4 } from './scenes/S4';
+import { S5 } from './scenes/S5';
+import { S6 } from './scenes/S6';
+import { S7 } from './scenes/S7';
+
+// 分镜帧表 — brief v2.1 §四，与时间轴一一对应（总 1800 帧 @30fps）
+export const SEG: Array<{ id: string; from: number; duration: number }> = [
+  { id: 'S1', from: 0, duration: 120 }, // 0–4s 钩子·翻车
+  { id: 'S2', from: 120, duration: 180 }, // 4–10s 定义（v2.1 帧参数）
+  { id: 'S3', from: 300, duration: 540 }, // 10–28s 任务蒙太奇（R2）
+  { id: 'S4', from: 840, duration: 120 }, // 28–32s 回到翻车（R3）
+  { id: 'S5', from: 960, duration: 240 }, // 32–40s 爬起来（R3）
+  { id: 'S6', from: 1200, duration: 330 }, // 40–51s 夜班纪实（R3）
+  { id: 'S7', from: 1530, duration: 270 }, // 51–60s 尾卡
+];
+
+// 时间轴完整性自检：段与段必须无缝相接且总长 1800
+let cursor = 0;
+for (const s of SEG) {
+  if (s.from !== cursor) {
+    throw new Error(`时间轴断裂：${s.id} 应从 ${cursor} 开始`);
+  }
+  cursor += s.duration;
+}
+if (cursor !== TOTAL_FRAMES) {
+  throw new Error(`时间轴总长 ${cursor} ≠ ${TOTAL_FRAMES}`);
+}
+
+// 全局背景（brief §三）：纵向渐变 + 中央蓝色柔光椭圆
+const Background: React.FC = () => (
+  <AbsoluteFill style={{ background: `linear-gradient(180deg, ${BG_TOP}, ${BG_BOTTOM})` }}>
+    <div
+      style={{
+        position: 'absolute',
+        left: '50%',
+        top: '50%',
+        width: 1200,
+        height: 700,
+        transform: 'translate(-50%, -50%)',
+        borderRadius: '50%',
+        backgroundColor: GLOW,
+        filter: `blur(${GLOW_BLUR_PX}px)`,
+      }}
+    />
+  </AbsoluteFill>
+);
+
+export const AgentPromo: React.FC = () => {
+  return (
+    <AbsoluteFill style={{ fontFamily: FONT_SANS }}>
+      <Background />
+      {SEG.map((s) => {
+        const Scene = [S1, S2, S3, S4, S5, S6, S7][Number(s.id.slice(1)) - 1];
+        return (
+          <Sequence key={s.id} from={s.from} durationInFrames={s.duration}>
+            <Scene />
+          </Sequence>
+        );
+      })}
+    </AbsoluteFill>
+  );
+};

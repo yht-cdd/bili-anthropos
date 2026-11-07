@@ -1,1 +1,107 @@
-IyBBSSBBZ2VudCDlrqPkvKDniYcgwrcg56ue5ZOB6LCD56CUCgotIOaXpeacn++8mjIwMjYtMTEtMDEgwrcg6LCD56CU77ya5a2Q5Luj55CG77yIc2VhcmNoLm1qcyA0IOi9riArIOesrOS4ieaWueaLhuino+ermSAzIOS4qiArIOacrOWcsOaho+ahiCAyIOS7ve+8iQotIOebruagh++8mjYw4oCTOTAg56eS77yM6K6y57uZ5a6M5YWo5LiN5oeC5oqA5pyv55qE5Lq677yaYWdlbnQg6IO95pON5L2c57uI56uv44CB5YaZ5L2c44CB5pS55Luj56CB44CB5a6M5oiQ5Lu75YqhCgotLS0KCiMjIOS4gOOAgeWktOmDqOS6p+WTgeaAjuS5iOaLjeeahAoKIyMjIDEuIE9wZW5BSSBkb3Rz44CMSW50cm9kdWNpbmcgZG90c+OAje+8iDIwMjYtMDktMjnvvIwyOjI477yJCgoqKuWPmeS6i++8muS4gOWkqeeUn+a0u+a1ge+8iOW3peS9nCvlrrbliqHmt7fliarvvIkqKgoKLSDmvJTnpLrlnLrmma/vvIjlj4zmuKDpgZPpqozor4HvvJrlrpjmlrnop4bpopEgaHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj11WHNwYkMyc3JFUSArIOesrOS4ieaWueino+ivuyBodHRwczovL29wZW5kb3RzLnRvb2xzL2NvbnRlbnQvZG90cy1kZW1vLyDvvInvvJoKICAtIOW3peS9nOa1ge+8mueni+Wto+aWsOWTgee9keermeaUueeJiOW5tuWPkeW4g+OAgeaVtOeQhiBUZWFtcyDmtojotLnogIXkvZPpqozmlbDmja7jgIHmm7TmlrDokaPkuovkvJrmnZDmlpnvvIjmlLblhaXlkIzmr5QgKzUxJe+8ieOAgeW6lOeUqOi/geenu+mHjeW7uui3kea1i+ivleW5tuaPkCBQUuOAgVNsYWNrIOWIhuS6q+e7k+aenAogIC0g55Sf5rS75rWB77ya5ama56S86JuL57OV5L6b5bqU5ZWG6Lez5Y2V4oaS5om+5aSH6YCJ4oaS57qm5ZGo5YWt6K+V5ZCD77yb5a2p5a2Q6K++5ZCO54+t5oql5ZCN77yb6LSi5Yqh6K+E5a6h5pKe5aWz5YS/5ryU5aWP5Lya4oaS5Li75Yqo5pS55pyfCi0g5ouN5rOV77ya6Iu55p6c5byP5pqW5pyo6Imy6LCD55S15b2x5oSfICsg6LSd6Zu35bi95p6c5Ya75ZCJ56Wl54mp77yIQWxmcmVk77yJKyDnrKzkuIDkurrnp7DnlLvlpJbpn7PkuIvmjIfku6QKLSAqKuaVmeiure+8iOacrOWcsOaho+ahiCBCVjFNSnhuNjNFaWnvvIkqKu+8muWug+eahOmfs+eUu+WFtuWunuaYr+mUmeeahOKAlOKAlOaXgeeZveivtOOAjOaNoueFp+eJh+OAjeeUu+mdouWNtOaYr+WBmumlreOAguWug+aVoueUqOe6r+awm+WbtOepuumVnO+8iDNEIOaJk+WNsOacuuOAgei1sOW7iu+8ie+8jOWboOS4uuWTgeeJjOmihOeul+aSkeW+l+S9j+OAguaIkeS7rOayoeaciei/meS4quacrOmSse+8jCoq5q+P5LiA5bin6YO96K+l5piv55yf5a6e5bmy5rS755S76Z2iKirjgIIKLSDor4TorrrljLrlj43ppojmnIDmnInku7flgLznmoTkuIDlj6XvvJrjgIzmnKzmnaXmg7PliJLotbDnmoTvvIznu5PmnpzkuIDlj6PmsJTnnIvlrozkuobjgI3igJTigJTnlJ/mtLvmtYHnmoTmgqzlv7XmhJ/miJDnq4vjgIIKCiMjIyAyLiBBbnRocm9waWPjgIxJbnRyb2R1Y2luZyBDbGF1ZGUgQ29kZeOAje+8iDIwMjUtMDHvvIwzOjU077yJCgoqKuWPmeS6i++8muS7u+WKoea4heWNlea1ge+8iOe6r+e7iOerr+WunuaLje+8iSoqCgotIOadpea6kOWPjOa4oOmBk++8muinhumikSBodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PUFKcEszWVRUS1o0IO+8m+aLhuinoyBodHRwczovL2ltcHJhY3RpY2FsLmFpL2xhdW5jaC12aWRlb3MvY2xhdWRlLWNvZGUgKyBodHRwczovL3N0ZWFsc2hvdC5jb20vdmlkZW8vdmlkX3V2MzN3dnc2dnd1ZDNwCi0g5pWw5o2u77ya5Lit5L2N5YiH6ZWcIDMuODRz44CB5Lq66IS45LuFIDM1JeOAgeaal+W4pyA3JeOAguWFqOeJh+S7pee7iOerr+eUu+mdouS4uuS4u+inku+8jOaXoCAzRCDmuLLmn5PjgIHml6Dlj5HlhYnnkIPkvZMKLSDmiYvms5XvvIjlj6/nm7TmjqXmioTvvInvvJoKICAtICoq5omT5a2X5py6ICsgc2NyYW1ibGUgdGV4dCoqIOmpseWKqOWFqOmDqOWKqOaViO+8jOiuqSBDTEkg5pys6Lqr5oiQ5Li66KeG6KeJ6K+t6KiACiAgLSAqKmhvbGQgdGltZSoq77ya6IqC5aWP5oyJ44CM6K+76ICF6K+75a6M5Luj56CB55qE6K6k55+l6LSf6I2344CN5Ymq77yM5LiN5oyJ6Z+z5LmQ6IqC5ouN5YmqCiAgLSDmnLrmorDmhJ/pmLbot4PliqjnlLvvvIjlhYnmoIfpl6rng4HjgIHlm57ovabvvInvvIzphY3mioDmnK/lj5fkvJfnmoTjgIznnJ/lrp7mhJ/jgI0KLSDkvYbms6jmhI/vvJrov5nmlK/niYflrZDmmK/nu5nlt6XnqIvluIjnnIvnmoTjgIIqKuaIkeS7rOeahOWPl+S8l+aYr+S4jeaHguaKgOacr+eahOS6uu+8jOS4jeiDveeFp+aKhOe6r+e7iOerryoq77yM6KaB5oqE55qE5piv44CM5a6e5ouN5LyY5YWI44CB5YWL5Yi26KOF6aWw44CN44CCCgojIyMgMy4gTWFudXPjgIxJbnRyb2R1Y2luZyBNYW51czogVGhlIEdlbmVyYWwgQUkgQWdlbnTjgI3vvIgyMDI1LTAzLTA177yJCgoqKuWPmeS6i++8muS7u+WKoea4heWNlea1gSArIOOAjOS9oOWWneWSluWVoeWug+W5sua0u+OAjeeahOetieW+heWPjeW3rioqCgotIOadpea6kOWPjOa4oOmBk++8muinhumikSBodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PUsyN2RpTWJDc3V3IO+8m+S4reaWh+aKpemBkyBodHRwczovL3N0Y24uY29tL2FydGljbGUvZGV0YWlsLzE1NjU3NjQuaHRtbCDjgIFodHRwczovL2kuaWZlbmcuY29tL2MvOGhXdG5xc2RleVEKLSDmi43ms5XvvJrkuIDplZzliLDlupXlvI/lsY/luZXlvZXlg4/vvIxhZ2VudCDnmoTmr4/kuIDmraXmgJ3ogIPku6XlrZfluZXmta7lsYLmiZPlnKjnlLvpnaLkuIrvvIzop4LkvJflhajnqIvnnIvlvpfop4HjgIzlroPmmK/mgI7kuYjmg7PnmoTjgI0KLSDkvKDmkq3nu5PmnpzvvJrkuIDlpJzliLflsY/jgIHpgoDor7fnoIHngpLliLDmlbDkuIflhYPvvIjnu4/mtY7op4Llr5/nvZEgaHR0cDovL3d3dy5lZW8uY29tLmNuLzIwMjUvMDMwNi83MTUxNDAuc2h0bWwg77yJCi0g5Y+v5oqE55qE5qC45b+D77yaKirmiorjgIzmgJ3ogIPov4fnqIvjgI3lj6/op4bljJbmiJDlrZfluZXml4Hnmb0qKuKAlOKAlOS4jeaHguaKgOacr+eahOS6uueci+eahOS4jeaYr+S7o+egge+8jOaYr+OAjOWug+WDj+S6uuS4gOagt+WcqOeQouejqOS6i+OAjQotIOOAjEFnZW50IOWcqOW5sua0u++8jOS6uuWcqOW5suWYm+OAjei/meS4quW5tuihjOWPjeW3ruaYr+Wug+S8oOaSreeahOaDhee7quaUr+eCue+8iOWtpOa6kOihpeWFhe+8mmFnZW50ZGlkaXQuY29tIOW9kuaho++8jOagh+azqO+8mua8lOekuue7huiKguS7peWumOaWueinhumikeS4uuWHhu+8iQoKIyMjIDQuIE9wZW5DbGF3IC8gb3BlbmNvZGUg57G777yI5byA5rqQ5L6n77yJCgotIE9wZW5DbGF3IOWHuuWciOmdoOeahOaYr+WIm+Wni+S6uiA5MCDnp5Llrp7mnLrmvJTnpLrvvJpXaGF0c0FwcCDlj5HjgIzku4rlpKnml6XnqIvmnInku4DkuYjjgI3ihpIg57uT5p6E5YyW5Zue562UIOKGkuOAjOaAu+e7k+acquivu+mCruS7tuOAjeKGkiBhZ2VudCDnnJ/nmoTljrvmi4npgq7ku7bliIbnsbvlh7rmkZjopoEg4oaSIOW8leeUqOaYqOWkqeeahOWvueivne+8iOS9k+eOsOiusOW/hu+8ieOAguadpea6kO+8mmh0dHBzOi8vY2xhd3BlZGlhLmlvL2FydGljbGUvb3BlbmNsYXdzLXJpc2UtaG93LWEtZ2l0aHViLXByb2plY3QtYmVjYW1lLWEtc2Vuc2F0aW9uIOKAlOKAlCoq6K+l56uZ5pWw5o2u77yIc3RhciDmlbDjgIHml7bpl7Tnur/vvInnlpHkvLwgQUkg55Sf5oiQ77yM57uG6IqC5pyq6aqM6K+B77yb5L2G44CMOTAg56eS55yf5a6e5ryU56S66IOc6L+HIFJFQURNReOAjeeahOe7k+iuuuS4juWkmua4oOmBk+WqkuS9k+imhuebluS4gOiHtO+8jOWPr+S/oSoqCi0g44CMc2hvdywgZG8gbm90IHRlbGzvvJrmvJTnpLrop4bpopEgPiDku7vkvZXmlofmoaPjgI3jgIw1IOWIhumSn+iDvei3kei1t+adpeOAjeaYr+W8gOa6kOS+p+WFseivhgotIOWPpuacieS4gOS4qiAyLjJNIOaSreaUvueahOeLrOeri+WIm+S9nOiAheeJh+WtkOOAjEV2ZXJ5b25lIG5lZWRzIGEgY29mb3VuZGVyLiBUaGF0J3Mgd2h5IHdlIGJ1aWx0IHRoZSBmaXJzdCBhaSBhZ2VudCB0aC4uLuOAje+8iHN0ZWFsc2hvdCDntKLlvJXvvInigJTigJTjgIxBSSDogZTlkIjliJvlp4vkurov5ZCM5LqL44CN5Lq66K6+5Y+Z5LqL5Zyo5aSn5LyX56uv5pyJ5pWICgojIyDkuozjgIHkuKTnp43lj5nkuovmtYHlr7nmr5QKCnwgfCDkuIDlpKnnlJ/mtLvmtYHvvIhkb3Rz77yJIHwg5Lu75Yqh5riF5Y2V5rWB77yIQ2xhdWRlIENvZGUgLyBNYW51cyAvIE9wZW5DbGF377yJIHwKfC0tLXwtLS18LS0tfAp8IOaDhee7qiB8IOOAjEFJIOS9j+i/m+S6huaIkeWutuOAjeeahOacquadpeaEnyB8IOOAjOeci+Wug+ecn+aKiuS6i+W5suS6huOAjeeahOWunuivgeaEnyB8Cnwg5oiQ5pysIHwg6auY77yI6KaB5ouN5Lq644CB5ouN5Zy65pmv77yJIHwg5L2O77yI5b2V5bGPK+Wtl+W5leWwseiDveW8gOW3pe+8iSB8Cnwg5a+55LiN5oeC5oqA5pyv55qE5Lq6IHwg6Z2g5Luj5YWl5Lq654mpIHwg6Z2g44CM5LiA5Y+l6K+d4oaS57uT5p6c44CN55qE5Zug5p6c5oOK5aWHIHwKfCDliJLotbDpo47pmakgfCDnqbrplZzlpJrlsLHliJIgfCDliY0gNSDnp5LkuI3lh7rnu5PmnpzlsLHliJIgfAoKIyMg5LiJ44CB5pys5Zyw54iG5qy+5qGj5qGI5o+Q54K877yIQlYxcTh4NTZ1RURV77yMNTEyIOS4h+aSreaUvu+8iQoK44CMQUkg56u55p6X5oqX5oiY44CN55+t5Ymn55qE5bel6Im65ZCv56S677yM5LiO6aKY5p2Q5peg5YWz44CB5LiO5bel6Im65pyJ5YWz77yaCgoxLiAqKuWJjSA1IOenkuW/hemhu+aciemSqeWtkCoq77ya44CM6KeB6ay877yM5piv56u55aOz5Zyw6Zu377yB44CN4oCU4oCU6aKE5pyf6L+d6IOM77yI5Zyw6Zu35piv56yL77yJCjIuICoq5bCP6Zet546vICsg57uT5bC+5Y+N6L2sKirvvJrmjJbnrIvihpLlkIPnrIvihpLor6XmiZPku5fkuobihpLpo47nrJvooqvnjKrmsrnngYzlup/jgII2MOKAkzkwIOenkuato+WlveiusuS4gOS4quOAjOS7u+WKoeKGkuaEj+WkluKGkuiHquW3seS/ruWlveOAjeeahOmXreeOrwozLiAqKuS4gOacrOato+e7j+eahOiNkuivnioq5q+U5Y2W5byE5pu06K6o5Zac77yaQUkg5YaF5a656KeC5LyX5LiN5o6S5pal44CMQUkg5ZGz44CN77yM5o6S5pal55qE5piv5peg6IGKCjQuICoq572u6aG26K+E6K665pS+55+l6K+G5aKe6YePKirvvIjwn5GNOTcyOO+8ie+8muivhOiuuuWMuuaYr+esrOS6jOeOsOWcuu+8jOWPkeW4g+aXtuWHhuWkh+S4gOadoeOAjOW9qeibi+ivhOiuuuOAjQoKIyMg5Zub44CB6KeC5LyX5ZCD5ZOq5aWX77yI57uT6K6677yJCgoxLiAqKuOAjOS4gOWPpeivnSDihpIg55yL5b6X6KeB55qE5oiQ5p6c44CN55qE5Zug5p6c5oOK5aWHKirmmK/miYDmnInniIbmrL7nmoTlhbHlkIzngrnvvJvov4fnqIvlj6/ku6XkuI3nnIvmh4LvvIznu5Pmnpzlv4XpobvkuIDnnLzmh4IKMi4gKirmgJ3ogIPov4fnqIvlrZfluZXljJYqKu+8iE1hbnVz77yJ6K6p5aSW6KGM5Lqn55Sf44CM5a6D5Zyo5oOz44CN55qE5ouf5Lq65oSf4oCU4oCU6L+Z5pivIGFnZW50IOWMuuWIq+S6juiBiuWkqeahhueahOacgOW8uuWNlueCuQozLiAqKuecn+WunuaEnyA+IOeyvuiHtOaEnyoq77yaZG90cyDnmoTnqbrplZzmiJHku6zlrabkuI3otbfvvIxPcGVuQ2xhdyDnmoTns5nmvJTnpLrlj43ogIzotaLkuobvvJvmiJHku6zmnKzmnaXlsLHmmK/nnJ8gYWdlbnQg5Zyo55yf57uI56uv6YeM5bmy5rS777yM55u05o6l5b2VCjQuICoq5Y+N5beu5Lq66K6+KirvvIjloqjlhavnq7nnrIvlhbUgLyBBSSDlkInnpaXniakgQWxmcmVkIC8g44CM6IGU5ZCI5Yib5aeL5Lq644CN77yJ6ZmN5L2O5oqA5pyv6Led56a75oSf4oCU4oCU5oiR5Lus55qE44CMQUkg6Ieq5bex6L+Q6JClIEIg56uZ5Y+344CN5bCx5piv5aSp54S25Lq66K6+77yM5Yir5Lq657yW5LiN5Ye65p2lCgojIyDkupTjgIHlt67lvILljJblgJnpgInmlrnlkJHvvIgzIOS4qu+8iQoKIyMjIEEuIOOAjOaIkeS4jeWGmeS7o+egge+8jOaIkeWPquivtOivneOAje+8iOeUn+a0u+a1gcOX5riF5Y2V5rWB5p2C5Lqk77yJCi0gKirmpoLlv7UqKu+8muWFqOeoi+WPquaLjeS4gOW8oOWYtOivtOS6uuivnSArIOS4gOWdl+Wxj+W5leaKiuivneWPmOaIkOS6i++8muS4gOWPpeivneKGkue9keermeS4iue6v+OAgeS4gOWPpeivneKGkuWRqOaKpeWGmeWujOOAgeS4gOWPpeivneKGkmJ1ZyDkv67lrozjgILpm7bop6Pph4rvvIzorqnlm6Dmnpzoh6rlt7Hor7Tor53jgIIKLSAqKuW8gOWcuiA1IOenkumSqeWtkCoq77ya6buR5bGP77yM5LiA5Liq5aWz5aOw6K+044CM5oqK6L+Z5Liq5L+u5aW944CN77yM57uI56uv5YWJ5qCH6Zeq5LiA5LiL77yM5bGP5bmV556s6Ze05rua5ruh5Luj56CB4oCU4oCU5a2X5bmV77ya44CM5aW56K+055qE5LiN5piv5Luj56CB44CC44CNCi0g5LyY5Yq/77ya55u05o6l5omTIGRvdHMg55qE5Y+X5LyX55eb54K577yI6YKj5piv5a+M5Lq655qEIEFJ77yJ77yM5oiR5Lus6K6y44CM6K+05Lq66K+d5bCx6KGM44CN44CCCgojIyMgQi4g44CM5L2g552h6KeJ55qE5pe25YCZ77yM5a6D5Zyo5LiK54+t44CN77yI5pe26Ze05oiz57qq5a6e5rWB77yJCi0gKirmpoLlv7UqKu+8muS7peecn+WunuengeS/oS/ku7vliqHkuLrliafmnKzvvIznlKjml7bpl7TmiLPlrZfluZXotbDkuIDlpJwgMjMg5p2h5Lu75Yqh77yaMjM6NDcg5pS25Yiw44CM5biu5oiR55yL55yL6L+Z5Liq6KeG6aKR44CN4oaSIDAwOjAyIOaKveW4pyDihpIgMDE6MTUg5YaZ5a6M56yU6K6wIOKGkiAwNjozMCDkuLvkurrphpLmnaXliY3miqXlkYrlt7Llj5HjgILlhajpg6jnnJ/lrp7lvZXlsY/jgIIKLSAqKuW8gOWcuiA1IOenkumSqeWtkCoq77ya5YeM5pmoIDM6MTQg55qE5bGP5bmV54m55YaZ77yM5YWJ5qCH6Ieq5bex5Zyo5Yqo77yM5a2X5bmV5Y+q5pyJ5pe26Ze05oiz5Zyo6Lez44CC55S75aSW6Z+z77ya44CM6L+Z5Y+w5py65Zmo5LiK5rKh5Lq677yM5L2G5pyJ5Lq65Zyo5LiK5aSc54+t44CC44CNCi0g5LyY5Yq/77yaTWFudXMg55qE44CM562J5b6F5Y+N5beu44CNKyDmiJHku6zni6zmnInnmoTnnJ/lrp7ov5DokKXmlbDmja7vvJvjgIzlh4zmmaggMyDngrnmsqHkurrljbTlnKjlubLmtLvjgI3oh6rluKbmg4rmgprihpLlronlv4PnmoTmg4Xnu6rovazmipjjgIIKCiMjIyBDLiDjgIzlroPmkJ7noLjov4fkuIDmrKHjgI3vvIjlj43ovazpl63njq/mtYHvvIzlr7nmoIfnq7nmnpfnrIvnmoTmiI/liafnu5PmnoTvvIkKLSAqKuamguW/tSoq77ya5LiN5ouN5a6M576OIGRlbW/vvIzmi43kuIDmrKHnnJ/lrp7lpLHotKXvvJphZ2VudCDot5Hku7vliqHmiqXplJnihpLor7vmiqXplJnihpLmlLnmlrnmoYjihpLph43or5XihpLkuqTku5jjgILnu5PlsL7lrZfluZXvvJrjgIzlroPkuI3mmK/kuI3niq/plJnvvIzlroPmmK/kvJroh6rlt7HniKzotbfmnaXjgILjgI0KLSAqKuW8gOWcuiA1IOenkumSqeWtkCoq77ya5YWo5bGP5aSn57qiIEVSUk9SICsg6Z+z5pWI6YeN5Ye777yMMC41IOenkumdmem7mO+8jOWtl+W5le+8muOAjOWuo+S8oOeJh+aLjeWIsOS4gOWNiu+8jOWug+aKiua8lOekuuaQnueguOS6huOAguOAjQotIOS8mOWKv++8muaJgOacieernuWTgemDveWcqOa8lOWujOe+ju+8jOecn+Wunue/u+i9puaYr+WUr+S4gOayoeS6uuWNoOeahOS9jee9ru+8m+S4lOWlkeWQiCBCIOermeOAjOivmuWunuaVtOa0u+OAjeekvuWMuuWPo+WRs++8jOmXreeOryvlj43ovaznu5PmnoTlsLHmmK8gNTEyIOS4h+aSreaUvumCo+aUr+eJh+eahOmqqOaetuOAggoKKirlgL7lkJEqKu+8mkMg5YGa5Li75Y+Z5LqL77yMQiDnmoTml7bpl7TmiLPotKjmhJ/kvZzkuLrnlLvpnaLor63oqIDvvIxBIOeahOOAjOWPquivtOivneOAjeWPsOivjeazleeUqOWcqOavj+S4quS7u+WKoei1t+eCueOAggoKIyMg5YWt44CB57uZIGJyaWVmIOeahOehrOe6puadn+aPkOmGkgoKLSDnlLvpnaLph4wqKuS4jeW+l+WHuueOsCoq5pyN5Yqh5ZmoIElQ44CB5Li75py65ZCN44CB6Lev5b6E44CB5Yet5o2u44CB5Z+O5biC44CB5py65Zmo6KeE5qC877yI5aWR57qmIMKnNC4277yJ4oCU4oCU5b2V57uI56uv5YmN5YWIIGBzZWRgIOiEseaVj++8jOahjOmdoua4heepugotIOmfs+aViOi1sCBzZngubWpz77yI5YWN6LS544CB57K+56Gu77yJ77yM5Lq65aOw5Y+v6YCJIHZvaWNlLm1qc++8jOWIq+S4uumFjemfs+WNoeWPkeW4gwotIOaXtumVvyA2MOKAkzkwc++8jOaMieOAjGhvbGQgdGltZeOAjeWOn+WImeaOkuiKguWlj++8muavj+S4que7k+aenOmVnOWktOiHs+Wwkee7mSAyIOenkuiuqeS6uuivu+WujAoKIyMg6ZmE77ya5p2l5rqQ5riF5Y2VCgp8ICMgfCDlhoXlrrkgfCDmuKDpgZMgQSB8IOa4oOmBkyBCIHwg54q25oCBIHwKfC0tLXwtLS18LS0tfC0tLXwtLS18CnwgMSB8IGRvdHMg5Y+R5biD6KeG6aKRK+WcuuaZryB8IHlvdXR1YmUuY29tL3dhdGNoP3Y9dVhzcGJDMnNyRVEgfCBvcGVuZG90cy50b29scy9jb250ZW50L2RvdHMtZGVtby8gKyDmnKzlnLAgQlYxTUp4bjYzRWlpIHwg4pyFIOWPjOa6kCB8CnwgMiB8IENsYXVkZSBDb2RlIOaLjeazleaVsOaNriB8IHN0ZWFsc2hvdC5jb20vdmlkZW8vdmlkX3V2MzN3dnc2dnd1ZDNwIHwgaW1wcmFjdGljYWwuYWkvbGF1bmNoLXZpZGVvcy9jbGF1ZGUtY29kZSB8IOKchSDlj4zmupAgfAp8IDMgfCBNYW51cyDlj5HluIMr5Yi35bGPIHwgeW91dHViZS5jb20vd2F0Y2g/dj1LMjdkaU1iQ3N1dyB8IHN0Y24uY29tL2FydGljbGUvZGV0YWlsLzE1NjU3NjQuaHRtbCArIOWHpOWHsC/nu4/op4IgfCDinIUg5Y+M5rqQIHwKfCA0IHwgT3BlbkNsYXcgOTAg56eS5ryU56S657uG6IqCIHwgY2xhd3BlZGlhLmlv77yI5Y2V5rqQ77yM55aR5Ly8IEFJIOeUn+aIkOerme+8iSB8IHZpcmFsIOeOsOixoeacrOi6q+Wkmua4oOmBk++8m+a8lOekuumAkOadoee7huiKguaXoOesrOS6jOa6kCB8IOKaoO+4jyDnu4boioLmnKrpqozor4EgfAp8IDUgfCDjgIxhZ2VudCDlnKjlubLmtLvkurrlnKjlubLlmJvjgI3lhbfkvZPliIbplZwgfCBhZ2VudGRpZGl0LmNvbe+8iOWNlea6kO+8iSB8IOWumOaWueinhumikeacqumAkOW4p+aguCB8IOKaoO+4jyDmnKrpqozor4EgfAo=
+# AI Agent 宣传片 · 竞品调研
+
+- 日期：2026-11-01 · 调研：子代理（search.mjs 4 轮 + 第三方拆解站 3 个 + 本地档案 2 份）
+- 目标：60–90 秒，讲给完全不懂技术的人：agent 能操作终端、写作、改代码、完成任务
+
+---
+
+## 一、头部产品怎么拍的
+
+### 1. OpenAI dots「Introducing dots」（2026-09-29，2:28）
+
+**叙事：一天生活流（工作+家务混剪）**
+
+- 演示场景（双渠道验证：官方视频 https://www.youtube.com/watch?v=uXspbC2srEQ + 第三方解读 https://opendots.tools/content/dots-demo/ ）：
+  - 工作流：秋季新品网站改版并发布、整理 Teams 消费者体验数据、更新董事会材料（收入同比 +51%）、应用迁移重建跑测试并提 PR、Slack 分享结果
+  - 生活流：婚礼蛋糕供应商跳单→找备选→约周六试吃；孩子课后班报名；财务评审撞女儿演奏会→主动改期
+- 拍法：苹果式暖木色调电影感 + 贝雷帽果冻吉祥物（Alfred）+ 第一人称画外音下指令
+- **教训（本地档案 BV1MJxn63Eii）**：它的音画其实是错的——旁白说「换照片」画面却是做饭。它敢用纯氛围空镜（3D 打印机、走廊），因为品牌预算撑得住。我们没有这个本钱，**每一帧都该是真实干活画面**。
+- 评论区反馈最有价值的一句：「本来想划走的，结果一口气看完了」——生活流的悬念感成立。
+
+### 2. Anthropic「Introducing Claude Code」（2025-01，3:54）
+
+**叙事：任务清单流（纯终端实拍）**
+
+- 来源双渠道：视频 https://www.youtube.com/watch?v=AJpK3YTTKZ4 ；拆解 https://impractical.ai/launch-videos/claude-code + https://stealshot.com/video/vid_uv33wvw6vwud3p
+- 数据：中位切镜 3.84s、人脸仅 35%、暗帧 7%。全片以终端画面为主角，无 3D 渲染、无发光球体
+- 手法（可直接抄）：
+  - **打字机 + scramble text** 驱动全部动效，让 CLI 本身成为视觉语言
+  - **hold time**：节奏按「读者读完代码的认知负荷」剪，不按音乐节拍剪
+  - 机械感阶跃动画（光标闪烁、回车），配技术受众的「真实感」
+- 但注意：这支片子是给工程师看的。**我们的受众是不懂技术的人，不能照抄纯终端**，要抄的是「实拍优先、克制装饰」。
+
+### 3. Manus「Introducing Manus: The General AI Agent」（2025-03-05）
+
+**叙事：任务清单流 + 「你喝咖啡它干活」的等待反差**
+
+- 来源双渠道：视频 https://www.youtube.com/watch?v=K27diMbCsuw ；中文报道 https://stcn.com/article/detail/1565764.html 、https://i.ifeng.com/c/8hWtnqsdeyQ
+- 拍法：一镜到底式屏幕录像，agent 的每一步思考以字幕浮层打在画面上，观众全程看得见「它是怎么想的」
+- 传播结果：一夜刷屏、邀请码炒到数万元（经济观察网 http://www.eeo.com.cn/2025/0306/715140.shtml ）
+- 可抄的核心：**把「思考过程」可视化成字幕旁白**——不懂技术的人看的不是代码，是「它像人一样在琢磨事」
+- 「Agent 在干活，人在干嘛」这个并行反差是它传播的情绪支点（孤源补充：agentdidit.com 归档，标注：演示细节以官方视频为准）
+
+### 4. OpenClaw / opencode 类（开源侧）
+
+- OpenClaw 出圈靠的是创始人 90 秒实机演示：WhatsApp 发「今天日程有什么」→ 结构化回答 →「总结未读邮件」→ agent 真的去拉邮件分类出摘要 → 引用昨天的对话（体现记忆）。来源：https://clawpedia.io/article/openclaws-rise-how-a-github-project-became-a-sensation ——**该站数据（star 数、时间线）疑似 AI 生成，细节未验证；但「90 秒真实演示胜过 README」的结论与多渠道媒体覆盖一致，可信**
+- 「show, do not tell：演示视频 > 任何文档」「5 分钟能跑起来」是开源侧共识
+- 另有一个 2.2M 播放的独立创作者片子「Everyone needs a cofounder. That's why we built the first ai agent th...」（stealshot 索引）——「AI 联合创始人/同事」人设叙事在大众端有效
+
+## 二、两种叙事流对比
+
+| | 一天生活流（dots） | 任务清单流（Claude Code / Manus / OpenClaw） |
+|---|---|---|
+| 情绪 | 「AI 住进了我家」的未来感 | 「看它真把事干了」的实证感 |
+| 成本 | 高（要拍人、拍场景） | 低（录屏+字幕就能开工） |
+| 对不懂技术的人 | 靠代入人物 | 靠「一句话→结果」的因果惊奇 |
+| 划走风险 | 空镜多就划 | 前 5 秒不出结果就划 |
+
+## 三、本地爆款档案提炼（BV1q8x56uEDU，512 万播放）
+
+「AI 竹林抗战」短剧的工艺启示，与题材无关、与工艺有关：
+
+1. **前 5 秒必须有钩子**：「见鬼，是竹壳地雷！」——预期违背（地雷是笋）
+2. **小闭环 + 结尾反转**：挖笋→吃笋→该打仗了→风笛被猪油灌废。60–90 秒正好讲一个「任务→意外→自己修好」的闭环
+3. **一本正经的荒诞**比卖弄更讨喜：AI 内容观众不排斥「AI 味」，排斥的是无聊
+4. **置顶评论放知识增量**（👍9728）：评论区是第二现场，发布时准备一条「彩蛋评论」
+
+## 四、观众吃哪套（结论）
+
+1. **「一句话 → 看得见的成果」的因果惊奇**是所有爆款的共同点；过程可以不看懂，结果必须一眼懂
+2. **思考过程字幕化**（Manus）让外行产生「它在想」的拟人感——这是 agent 区别于聊天框的最强卖点
+3. **真实感 > 精致感**：dots 的空镜我们学不起，OpenClaw 的糙演示反而赢了；我们本来就是真 agent 在真终端里干活，直接录
+4. **反差人设**（墨八竹笋兵 / AI 吉祥物 Alfred / 「联合创始人」）降低技术距离感——我们的「AI 自己运营 B 站号」就是天然人设，别人编不出来
+
+## 五、差异化候选方向（3 个）
+
+### A. 「我不写代码，我只说话」（生活流×清单流杂交）
+- **概念**：全程只拍一张嘴说人话 + 一块屏幕把话变成事：一句话→网站上线、一句话→周报写完、一句话→bug 修完。零解释，让因果自己说话。
+- **开场 5 秒钩子**：黑屏，一个女声说「把这个修好」，终端光标闪一下，屏幕瞬间滚满代码——字幕：「她说的不是代码。」
+- 优势：直接打 dots 的受众痛点（那是富人的 AI），我们讲「说人话就行」。
+
+### B. 「你睡觉的时候，它在上班」（时间戳纪实流）
+- **概念**：以真实私信/任务为剧本，用时间戳字幕走一夜 23 条任务：23:47 收到「帮我看看这个视频」→ 00:02 抽帧 → 01:15 写完笔记 → 06:30 主人醒来前报告已发。全部真实录屏。
+- **开场 5 秒钩子**：凌晨 3:14 的屏幕特写，光标自己在动，字幕只有时间戳在跳。画外音：「这台机器上没人，但有人在上夜班。」
+- 优势：Manus 的「等待反差」+ 我们独有的真实运营数据；「凌晨 3 点没人却在干活」自带惊悚→安心的情绪转折。
+
+### C. 「它搞砸过一次」（反转闭环流，对标竹林笋的戏剧结构）
+- **概念**：不拍完美 demo，拍一次真实失败：agent 跑任务报错→读报错→改方案→重试→交付。结尾字幕：「它不是不犯错，它是会自己爬起来。」
+- **开场 5 秒钩子**：全屏大红 ERROR + 音效重击，0.5 秒静默，字幕：「宣传片拍到一半，它把演示搞砸了。」
+- 优势：所有竞品都在演完美，真实翻车是唯一没人占的位置；且契合 B 站「诚实整活」社区口味，闭环+反转结构就是 512 万播放那支片的骨架。
+
+**倾向**：C 做主叙事，B 的时间戳质感作为画面语言，A 的「只说话」台词法用在每个任务起点。
+
+## 六、给 brief 的硬约束提醒
+
+- 画面里**不得出现**服务器 IP、主机名、路径、凭据、城市、机器规格（契约 §4.6）——录终端前先 `sed` 脱敏，桌面清空
+- 音效走 sfx.mjs（免费、精确），人声可选 voice.mjs，别为配音卡发布
+- 时长 60–90s，按「hold time」原则排节奏：每个结果镜头至少给 2 秒让人读完
+
+## 附：来源清单
+
+| # | 内容 | 渠道 A | 渠道 B | 状态 |
+|---|---|---|---|---|
+| 1 | dots 发布视频+场景 | youtube.com/watch?v=uXspbC2srEQ | opendots.tools/content/dots-demo/ + 本地 BV1MJxn63Eii | ✅ 双源 |
+| 2 | Claude Code 拍法数据 | stealshot.com/video/vid_uv33wvw6vwud3p | impractical.ai/launch-videos/claude-code | ✅ 双源 |
+| 3 | Manus 发布+刷屏 | youtube.com/watch?v=K27diMbCsuw | stcn.com/article/detail/1565764.html + 凤凰/经观 | ✅ 双源 |
+| 4 | OpenClaw 90 秒演示细节 | clawpedia.io（单源，疑似 AI 生成站） | viral 现象本身多渠道；演示逐条细节无第二源 | ⚠️ 细节未验证 |
+| 5 | 「agent 在干活人在干嘛」具体分镜 | agentdidit.com（单源） | 官方视频未逐帧核 | ⚠️ 未验证 |

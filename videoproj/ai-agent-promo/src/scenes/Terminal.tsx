@@ -1,1 +1,76 @@
-aW1wb3J0IHR5cGUgeyBDU1NQcm9wZXJ0aWVzLCBSZWFjdE5vZGUgfSBmcm9tICdyZWFjdCc7CmltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7CmltcG9ydCB7CiAgRk9OVF9NT05PLAogIFRFUk1fQk9SREVSLAogIFRFUk1fRkcsCiAgVEVSTV9SQURJVVMsCiAgVEVSTV9URVhULAogIFRFUk1fVywKICBUU19HUkFZLAp9IGZyb20gJy4uL3RoZW1lJzsKCi8vIOe7iOerr+eql+WPoyDigJQgYnJpZWYgwqfkuInvvJrlrr0gMTI4MHB444CB5ZyG6KeSIDI0cHjjgIHovrnmoYYgIzMwMzYzRCAycHjjgIHmoIfpopjmoI/ku4UgYW50aHJvcG9zQGxvY2Fs44CB5bGF5LitCi8vIFMxL1MyIOWFseeUqO+8jOS/neivgeOAjOWQjOS4gOS4que7iOerr+OAjeeahOi/nue7reaEnwpleHBvcnQgY29uc3QgVGVybWluYWw6IFJlYWN0LkZDPHsKICBjaGlsZHJlbj86IFJlYWN0Tm9kZTsKICBzdHlsZT86IENTU1Byb3BlcnRpZXM7Cn0+ID0gKHsgY2hpbGRyZW4sIHN0eWxlIH0pID0+IHsKICByZXR1cm4gKAogICAgPGRpdgogICAgICBzdHlsZT17ewogICAgICAgIHdpZHRoOiBURVJNX1csCiAgICAgICAgYm9yZGVyUmFkaXVzOiBURVJNX1JBRElVUywKICAgICAgICBib3JkZXI6IGAycHggc29saWQgJHtURVJNX0JPUkRFUn1gLAogICAgICAgIGJhY2tncm91bmRDb2xvcjogJ3JnYmEoOCwxMSwxOCwwLjkyKScsCiAgICAgICAgb3ZlcmZsb3c6ICdoaWRkZW4nLAogICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfTU9OTywKICAgICAgICBjb2xvcjogVEVSTV9URVhULAogICAgICAgIGJveFNoYWRvdzogJzAgMjRweCA4MHB4IHJnYmEoMCwwLDAsMC41KScsCiAgICAgICAgLi4uc3R5bGUsCiAgICAgIH19CiAgICA+CiAgICAgIHsvKiDmoIfpopjmoI8gKi99CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgZGlzcGxheTogJ2ZsZXgnLAogICAgICAgICAgYWxpZ25JdGVtczogJ2NlbnRlcicsCiAgICAgICAgICBoZWlnaHQ6IDU2LAogICAgICAgICAgcGFkZGluZzogJzAgMjhweCcsCiAgICAgICAgICBib3JkZXJCb3R0b206IGAycHggc29saWQgJHtURVJNX0JPUkRFUn1gLAogICAgICAgICAgYmFja2dyb3VuZENvbG9yOiAncmdiYSgxOCwyNCwzNCwwLjkpJywKICAgICAgICB9fQogICAgICA+CiAgICAgICAgey8qIOS4ieaemueql+eCue+8iOe6r+ijhemlsO+8jOeBsOiJsuS9juiwg++8iSAqL30KICAgICAgICB7WycjMzAzNjNEJywgJyMzMDM2M0QnLCAnIzMwMzYzRCddLm1hcCgoYywgaSkgPT4gKAogICAgICAgICAgPHNwYW4KICAgICAgICAgICAga2V5PXtpfQogICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgIHdpZHRoOiAxOCwKICAgICAgICAgICAgICBoZWlnaHQ6IDE4LAogICAgICAgICAgICAgIGJvcmRlclJhZGl1czogJzUwJScsCiAgICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiBjLAogICAgICAgICAgICAgIG1hcmdpblJpZ2h0OiAxMiwKICAgICAgICAgICAgfX0KICAgICAgICAgIC8+CiAgICAgICAgKSl9CiAgICAgICAgPHNwYW4gc3R5bGU9e3sgbWFyZ2luTGVmdDogMjAsIGZvbnRTaXplOiAyNiwgY29sb3I6IFRTX0dSQVkgfX0+YW50aHJvcG9zQGxvY2FsPC9zcGFuPgogICAgICA8L2Rpdj4KICAgICAgey8qIOato+aWh+WMuiAqL30KICAgICAgPGRpdiBzdHlsZT17eyBwYWRkaW5nOiAnMzZweCA0MHB4JywgbWluSGVpZ2h0OiAzMDAsIGZvbnRTaXplOiA0MCwgbGluZUhlaWdodDogMS42IH19PgogICAgICAgIHtjaGlsZHJlbn0KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICApOwp9OwoKLy8g5ZG95Luk6KGM77yaYW50aHJvcG9zQGxvY2FsIOaPkOekuuespu+8iOe7v++8iSsg5paH5pysCmV4cG9ydCBjb25zdCBUZXJtTGluZTogUmVhY3QuRkM8eyBjaGlsZHJlbjogUmVhY3ROb2RlOyBwcm9tcHQ/OiBib29sZWFuIH0+ID0gKHsKICBjaGlsZHJlbiwKICBwcm9tcHQgPSB0cnVlLAp9KSA9PiAoCiAgPGRpdj4KICAgIHtwcm9tcHQgPyA8c3BhbiBzdHlsZT17eyBjb2xvcjogVEVSTV9GRyB9fT4kIDwvc3Bhbj4gOiBudWxsfQogICAgPHNwYW4+e2NoaWxkcmVufTwvc3Bhbj4KICA8L2Rpdj4KKTsK
+import type { CSSProperties, ReactNode } from 'react';
+import React from 'react';
+import {
+  FONT_MONO,
+  TERM_BORDER,
+  TERM_FG,
+  TERM_RADIUS,
+  TERM_TEXT,
+  TERM_W,
+  TS_GRAY,
+} from '../theme';
+
+// 终端窗口 — brief §三：宽 1280px、圆角 24px、边框 #30363D 2px、标题栏仅 anthropos@local、居中
+// S1/S2 共用，保证「同一个终端」的连续感
+export const Terminal: React.FC<{
+  children?: ReactNode;
+  style?: CSSProperties;
+}> = ({ children, style }) => {
+  return (
+    <div
+      style={{
+        width: TERM_W,
+        borderRadius: TERM_RADIUS,
+        border: `2px solid ${TERM_BORDER}`,
+        backgroundColor: 'rgba(8,11,18,0.92)',
+        overflow: 'hidden',
+        fontFamily: FONT_MONO,
+        color: TERM_TEXT,
+        boxShadow: '0 24px 80px rgba(0,0,0,0.5)',
+        ...style,
+      }}
+    >
+      {/* 标题栏 */}
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          height: 56,
+          padding: '0 28px',
+          borderBottom: `2px solid ${TERM_BORDER}`,
+          backgroundColor: 'rgba(18,24,34,0.9)',
+        }}
+      >
+        {/* 三枚窗点（纯装饰，灰色低调） */}
+        {['#30363D', '#30363D', '#30363D'].map((c, i) => (
+          <span
+            key={i}
+            style={{
+              width: 18,
+              height: 18,
+              borderRadius: '50%',
+              backgroundColor: c,
+              marginRight: 12,
+            }}
+          />
+        ))}
+        <span style={{ marginLeft: 20, fontSize: 26, color: TS_GRAY }}>anthropos@local</span>
+      </div>
+      {/* 正文区 */}
+      <div style={{ padding: '36px 40px', minHeight: 300, fontSize: 40, lineHeight: 1.6 }}>
+        {children}
+      </div>
+    </div>
+  );
+};
+
+// 命令行：anthropos@local 提示符（绿）+ 文本
+export const TermLine: React.FC<{ children: ReactNode; prompt?: boolean }> = ({
+  children,
+  prompt = true,
+}) => (
+  <div>
+    {prompt ? <span style={{ color: TERM_FG }}>$ </span> : null}
+    <span>{children}</span>
+  </div>
+);

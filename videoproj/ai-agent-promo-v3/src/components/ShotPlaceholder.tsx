@@ -1,1 +1,18 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsIH0gZnJvbSAncmVtb3Rpb24nOwppbXBvcnQgeyBCRywgRk9OVF9NT05PLCBHUkFZLCBURVhUX0RJTSB9IGZyb20gJy4uL3RoZW1lJzsKCi8vIOWNoOS9jemVnO+8iOmVnDnigJMxOO+8jFIxYyDmlr3lt6XvvInigJQg6buR5bqVICsg6ZWc5Y+3ICsg5YWo5bGA5bin5Yy66Ze077yM5L6b57KX5Ymq55yL6IqC5aWP44CCCi8vIOW4p+WPt+S4gOW+i+WPliBicmllZi12MyDCp+S4gOaAu+ihqCAzMGZwcyDmoLjnrpflgLzjgIIKZXhwb3J0IGNvbnN0IFNob3RQbGFjZWhvbGRlcjogUmVhY3QuRkM8ewogIGxhYmVsOiBzdHJpbmc7CiAgZnJvbTogbnVtYmVyOwogIHRvOiBudW1iZXI7Cn0+ID0gKHsgbGFiZWwsIGZyb20sIHRvIH0pID0+ICgKICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGJhY2tncm91bmRDb2xvcjogQkcsIGFsaWduSXRlbXM6ICdjZW50ZXInLCBqdXN0aWZ5Q29udGVudDogJ2NlbnRlcicgfX0+CiAgICA8ZGl2IHN0eWxlPXt7IGZvbnRGYW1pbHk6IEZPTlRfTU9OTywgZm9udFNpemU6IDk2LCBjb2xvcjogVEVYVF9ESU0sIGZvbnRXZWlnaHQ6IDcwMCB9fT57bGFiZWx9PC9kaXY+CiAgICA8ZGl2IHN0eWxlPXt7IGZvbnRGYW1pbHk6IEZPTlRfTU9OTywgZm9udFNpemU6IDI4LCBjb2xvcjogR1JBWSwgbWFyZ2luVG9wOiAyNCB9fT4KICAgICAgZnJhbWVzIHtmcm9tfeKAk3t0b30gwrcgcGxhY2Vob2xkZXIKICAgIDwvZGl2PgogIDwvQWJzb2x1dGVGaWxsPgopOwo=
+import React from 'react';
+import { AbsoluteFill } from 'remotion';
+import { BG, FONT_MONO, GRAY, TEXT_DIM } from '../theme';
+
+// 占位镜（镜9–18，R1c 施工）— 黑底 + 镜号 + 全局帧区间，供粗剪看节奏。
+// 帧号一律取 brief-v3 §一总表 30fps 核算值。
+export const ShotPlaceholder: React.FC<{
+  label: string;
+  from: number;
+  to: number;
+}> = ({ label, from, to }) => (
+  <AbsoluteFill style={{ backgroundColor: BG, alignItems: 'center', justifyContent: 'center' }}>
+    <div style={{ fontFamily: FONT_MONO, fontSize: 96, color: TEXT_DIM, fontWeight: 700 }}>{label}</div>
+    <div style={{ fontFamily: FONT_MONO, fontSize: 28, color: GRAY, marginTop: 24 }}>
+      frames {from}–{to} · placeholder
+    </div>
+  </AbsoluteFill>
+);

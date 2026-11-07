@@ -1,1 +1,79 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCBTZXF1ZW5jZSB9IGZyb20gJ3JlbW90aW9uJzsKaW1wb3J0IHsgU2hvdFBsYWNlaG9sZGVyIH0gZnJvbSAnLi9jb21wb25lbnRzL1Nob3RQbGFjZWhvbGRlcic7CmltcG9ydCB7IFMxIH0gZnJvbSAnLi9zaG90cy9TMSc7CmltcG9ydCB7IFMyIH0gZnJvbSAnLi9zaG90cy9TMic7CmltcG9ydCB7IFMzIH0gZnJvbSAnLi9zaG90cy9TMyc7CmltcG9ydCB7IFM0IH0gZnJvbSAnLi9zaG90cy9TNCc7CmltcG9ydCB7IFM1IH0gZnJvbSAnLi9zaG90cy9TNSc7CmltcG9ydCB7IFM2IH0gZnJvbSAnLi9zaG90cy9TNic7CmltcG9ydCB7IFM3IH0gZnJvbSAnLi9zaG90cy9TNyc7CmltcG9ydCB7IFM4IH0gZnJvbSAnLi9zaG90cy9TOCc7CmltcG9ydCB7IFM5IH0gZnJvbSAnLi9zaG90cy9TOSc7CmltcG9ydCB7IFMxMCB9IGZyb20gJy4vc2hvdHMvUzEwJzsKaW1wb3J0IHsgUzExIH0gZnJvbSAnLi9zaG90cy9TMTEnOwppbXBvcnQgeyBTMTIgfSBmcm9tICcuL3Nob3RzL1MxMic7CmltcG9ydCB7IFMxMyB9IGZyb20gJy4vc2hvdHMvUzEzJzsKaW1wb3J0IHsgUzE0IH0gZnJvbSAnLi9zaG90cy9TMTQnOwppbXBvcnQgeyBTMTUgfSBmcm9tICcuL3Nob3RzL1MxNSc7CmltcG9ydCB7IFMxNiB9IGZyb20gJy4vc2hvdHMvUzE2JzsKaW1wb3J0IHsgUzE3IH0gZnJvbSAnLi9zaG90cy9TMTcnOwppbXBvcnQgeyBTMTggfSBmcm9tICcuL3Nob3RzL1MxOCc7CmltcG9ydCB7IEZPTlRfU0FOUywgVE9UQUxfRlJBTUVTIH0gZnJvbSAnLi90aGVtZSc7CgovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ci8vIOS4u+aXtumXtOi9tCDigJQgYnJpZWYtdjMgwqfkuIDmgLvooajvvIgxOCDplZwgwrcgMzBmcHMgwrcgMTg2MCDluKfvvInjgIIKLy8g6ZWcMeKAkzE4IOWFqOWunuijhe+8iFIxYiArIFIyYiArIFIz77yJ44CC6ZWcOCDlm5vmrrXlnKggUzgg5YaF6YOo5YiG5q6177yMCi8vIOaXtumXtOi9tOS4iuS7jeaYr+S4gOagvCAxNTAg5bin77yb6ZWcMTUvMTYvMTcg5ZCI5bm25q615oyJIMKn5LiD5ouG5LiJ5qC8IDEwIOW4p+OAggovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Cgp0eXBlIFNsb3QgPSB7CiAgaWQ6IHN0cmluZzsKICBmcm9tOiBudW1iZXI7CiAgZHVyYXRpb246IG51bWJlcjsKICBjb21wPzogUmVhY3QuRkM7Cn07CgpleHBvcnQgY29uc3QgU0VHOiBTbG90W10gPSBbCiAgeyBpZDogJ+mVnDEnLCBmcm9tOiAwLCBkdXJhdGlvbjogOTAsIGNvbXA6IFMxIH0sCiAgeyBpZDogJ+mVnDInLCBmcm9tOiA5MCwgZHVyYXRpb246IDEyMCwgY29tcDogUzIgfSwKICB7IGlkOiAn6ZWcMycsIGZyb206IDIxMCwgZHVyYXRpb246IDE4MCwgY29tcDogUzMgfSwKICB7IGlkOiAn6ZWcNCcsIGZyb206IDM5MCwgZHVyYXRpb246IDE4MCwgY29tcDogUzQgfSwKICB7IGlkOiAn6ZWcNScsIGZyb206IDU3MCwgZHVyYXRpb246IDE4MCwgY29tcDogUzUgfSwKICB7IGlkOiAn6ZWcNicsIGZyb206IDc1MCwgZHVyYXRpb246IDYwLCBjb21wOiBTNiB9LAogIHsgaWQ6ICfplZw3JywgZnJvbTogODEwLCBkdXJhdGlvbjogMjQwLCBjb21wOiBTNyB9LAogIHsgaWQ6ICfplZw4JywgZnJvbTogMTA1MCwgZHVyYXRpb246IDE1MCwgY29tcDogUzggfSwKICB7IGlkOiAn6ZWcOScsIGZyb206IDEyMDAsIGR1cmF0aW9uOiA2MCwgY29tcDogUzkgfSwKICB7IGlkOiAn6ZWcMTAnLCBmcm9tOiAxMjYwLCBkdXJhdGlvbjogMjQwLCBjb21wOiBTMTAgfSwKICB7IGlkOiAn6ZWcMTEnLCBmcm9tOiAxNTAwLCBkdXJhdGlvbjogOTAsIGNvbXA6IFMxMSB9LAogIHsgaWQ6ICfplZwxMicsIGZyb206IDE1OTAsIGR1cmF0aW9uOiA5MCwgY29tcDogUzEyIH0sCiAgeyBpZDogJ+mVnDEzJywgZnJvbTogMTY4MCwgZHVyYXRpb246IDYwLCBjb21wOiBTMTMgfSwKICB7IGlkOiAn6ZWcMTQnLCBmcm9tOiAxNzQwLCBkdXJhdGlvbjogNjAsIGNvbXA6IFMxNCB9LAogIC8vIOmVnDE1LzE2LzE377ya6K6+6K6h56i/5ZCI5bm25q6177yM5oyJIMKn5LiD44CMQ29tcG9zaXRpb24g5oyJ6ZWc5ouGIFNlcXVlbmNl44CN5ouG5LiJ5qC8IDEwIOW4pwogIHsgaWQ6ICfplZwxNScsIGZyb206IDE4MDAsIGR1cmF0aW9uOiAxMCwgY29tcDogUzE1IH0sCiAgeyBpZDogJ+mVnDE2JywgZnJvbTogMTgxMCwgZHVyYXRpb246IDEwLCBjb21wOiBTMTYgfSwKICB7IGlkOiAn6ZWcMTcnLCBmcm9tOiAxODIwLCBkdXJhdGlvbjogMTAsIGNvbXA6IFMxNyB9LAogIHsgaWQ6ICfplZwxOCcsIGZyb206IDE4MzAsIGR1cmF0aW9uOiAzMCwgY29tcDogUzE4IH0sCl07CgovLyDml7bpl7TovbTlrozmlbTmgKfoh6rmo4DvvJrml6DnvJ3nm7jmjqXkuJTmgLvplb8gMTg2MO+8iOWQjCB2MiBNYWluIOeahOaWreiogO+8iQpsZXQgY3Vyc29yID0gMDsKZm9yIChjb25zdCBzIG9mIFNFRykgewogIGlmIChzLmZyb20gIT09IGN1cnNvcikgdGhyb3cgbmV3IEVycm9yKGDml7bpl7TovbTmlq3oo4LvvJoke3MuaWR9IOW6lOS7jiAke2N1cnNvcn0g5byA5aeLYCk7CiAgY3Vyc29yICs9IHMuZHVyYXRpb247Cn0KaWYgKGN1cnNvciAhPT0gVE9UQUxfRlJBTUVTKSB0aHJvdyBuZXcgRXJyb3IoYOaXtumXtOi9tOaAu+mVvyAke2N1cnNvcn0g4omgICR7VE9UQUxfRlJBTUVTfWApOwoKZXhwb3J0IGNvbnN0IFYzRmlsbTogUmVhY3QuRkMgPSAoKSA9PiAoCiAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBiYWNrZ3JvdW5kQ29sb3I6ICcjMDAwJywgZm9udEZhbWlseTogRk9OVF9TQU5TIH19PgogICAge1NFRy5tYXAoKHMpID0+ICgKICAgICAgPFNlcXVlbmNlIGtleT17cy5pZH0gZnJvbT17cy5mcm9tfSBkdXJhdGlvbkluRnJhbWVzPXtzLmR1cmF0aW9ufSBuYW1lPXtzLmlkfT4KICAgICAgICB7cy5jb21wID8gKAogICAgICAgICAgPHMuY29tcCAvPgogICAgICAgICkgOiAoCiAgICAgICAgICA8U2hvdFBsYWNlaG9sZGVyIGxhYmVsPXtzLmlkfSBmcm9tPXtzLmZyb219IHRvPXtzLmZyb20gKyBzLmR1cmF0aW9ufSAvPgogICAgICAgICl9CiAgICAgIDwvU2VxdWVuY2U+CiAgICApKX0KICA8L0Fic29sdXRlRmlsbD4KKTsK
+import React from 'react';
+import { AbsoluteFill, Sequence } from 'remotion';
+import { ShotPlaceholder } from './components/ShotPlaceholder';
+import { S1 } from './shots/S1';
+import { S2 } from './shots/S2';
+import { S3 } from './shots/S3';
+import { S4 } from './shots/S4';
+import { S5 } from './shots/S5';
+import { S6 } from './shots/S6';
+import { S7 } from './shots/S7';
+import { S8 } from './shots/S8';
+import { S9 } from './shots/S9';
+import { S10 } from './shots/S10';
+import { S11 } from './shots/S11';
+import { S12 } from './shots/S12';
+import { S13 } from './shots/S13';
+import { S14 } from './shots/S14';
+import { S15 } from './shots/S15';
+import { S16 } from './shots/S16';
+import { S17 } from './shots/S17';
+import { S18 } from './shots/S18';
+import { FONT_SANS, TOTAL_FRAMES } from './theme';
+
+// ============================================================================
+// 主时间轴 — brief-v3 §一总表（18 镜 · 30fps · 1860 帧）。
+// 镜1–18 全实装（R1b + R2b + R3）。镜8 四段在 S8 内部分段，
+// 时间轴上仍是一格 150 帧；镜15/16/17 合并段按 §七拆三格 10 帧。
+// ============================================================================
+
+type Slot = {
+  id: string;
+  from: number;
+  duration: number;
+  comp?: React.FC;
+};
+
+export const SEG: Slot[] = [
+  { id: '镜1', from: 0, duration: 90, comp: S1 },
+  { id: '镜2', from: 90, duration: 120, comp: S2 },
+  { id: '镜3', from: 210, duration: 180, comp: S3 },
+  { id: '镜4', from: 390, duration: 180, comp: S4 },
+  { id: '镜5', from: 570, duration: 180, comp: S5 },
+  { id: '镜6', from: 750, duration: 60, comp: S6 },
+  { id: '镜7', from: 810, duration: 240, comp: S7 },
+  { id: '镜8', from: 1050, duration: 150, comp: S8 },
+  { id: '镜9', from: 1200, duration: 60, comp: S9 },
+  { id: '镜10', from: 1260, duration: 240, comp: S10 },
+  { id: '镜11', from: 1500, duration: 90, comp: S11 },
+  { id: '镜12', from: 1590, duration: 90, comp: S12 },
+  { id: '镜13', from: 1680, duration: 60, comp: S13 },
+  { id: '镜14', from: 1740, duration: 60, comp: S14 },
+  // 镜15/16/17：设计稿合并段，按 §七「Composition 按镜拆 Sequence」拆三格 10 帧
+  { id: '镜15', from: 1800, duration: 10, comp: S15 },
+  { id: '镜16', from: 1810, duration: 10, comp: S16 },
+  { id: '镜17', from: 1820, duration: 10, comp: S17 },
+  { id: '镜18', from: 1830, duration: 30, comp: S18 },
+];
+
+// 时间轴完整性自检：无缝相接且总长 1860（同 v2 Main 的断言）
+let cursor = 0;
+for (const s of SEG) {
+  if (s.from !== cursor) throw new Error(`时间轴断裂：${s.id} 应从 ${cursor} 开始`);
+  cursor += s.duration;
+}
+if (cursor !== TOTAL_FRAMES) throw new Error(`时间轴总长 ${cursor} ≠ ${TOTAL_FRAMES}`);
+
+export const V3Film: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: '#000', fontFamily: FONT_SANS }}>
+    {SEG.map((s) => (
+      <Sequence key={s.id} from={s.from} durationInFrames={s.duration} name={s.id}>
+        {s.comp ? (
+          <s.comp />
+        ) : (
+          <ShotPlaceholder label={s.id} from={s.from} to={s.from + s.duration} />
+        )}
+      </Sequence>
+    ))}
+  </AbsoluteFill>
+);

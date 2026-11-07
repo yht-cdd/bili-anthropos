@@ -1,1 +1,129 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCBpbnRlcnBvbGF0ZSwgdXNlQ3VycmVudEZyYW1lIH0gZnJvbSAncmVtb3Rpb24nOwppbXBvcnQgeyBCT0RZX1BYLCBDQVJELCBDWUFOLCBESU0sIExJTkUsIE1BR0VOVEEsIE5PVEVfUFgsIFRFWFQsIFRJVExFX1BYIH0gZnJvbSAnLi4vdGhlbWUnOwppbXBvcnQgeyBlbnRlciwgZXhpdEZhZGUgfSBmcm9tICcuLi9hbmltJzsKCi8vIFMyIDA2LjAwMC0xNi4wMDAg5qGI5Lu26YeN546wCi8vIOivhOiuuuWNoe+8iOekuuaEj+mHjeaOku+8jOS4jeaYr+aIquWbvu+8jOWPs+S4i+inkuagh+OAjOekuuaEj+WbvuOAje+8iQovLyDmraPmloc644CM6L+Z5p2h6ZO+6Lev6K6y5b6X5q+U5paH5qGj55u055m94oCm6LCi6LCi5oqK6L+Z5aWX5YWo6Ieq5Yqo5rWB56iL6LWw6YCa6L+Y5ouN5LiL5p2l44CNCi8vIOi0puWPt+WQjeaJk+eggSB3YioqKiozOe+8m+S4i+aWueS4iei/nuaVsOaNruS9jTog57KJ5LidMCAvIOaKleeovzAgLyDlh4zmmagwNjoxMuWPkQovLyDlk4HnuqLmj4/ovrnpl6rkuIDkuIvjgIzlh4zmmagwNjoxMuOAjQpjb25zdCBCT0RZID0gJ+i/meadoemTvui3r+iusuW+l+avlOaWh+aho+ebtOeZveKApuiwouiwouaKiui/meWll+WFqOiHquWKqOa1geeoi+i1sOmAmui/mOaLjeS4i+adpSc7CmNvbnN0IEFDQ09VTlQgPSAnd2IqKioqMzknOyAvLyDmiZPnoIHmmLXnp7DvvIjpqozmlLYzOiDkuI3lh7rnjrDlrozmlbTpmYznlJ/kurrmmLXnp7DvvIkKCmNvbnN0IFN0YXQ6IFJlYWN0LkZDPHsgdGV4dDogc3RyaW5nOyBmcmFtZTogbnVtYmVyOyBkZWxheTogbnVtYmVyOyBmbGFzaD86IGJvb2xlYW4gfT4gPSAoewogIHRleHQsCiAgZnJhbWUsCiAgZGVsYXksCiAgZmxhc2gsCn0pID0+IHsKICAvLyDlk4HnuqLmj4/ovrnpl6rkuIDkuIs6IOS4iemhueWFqOWFpeWcuuWQjumXquS4gOi9rgogIGNvbnN0IGZsYXNoT24gPSBmbGFzaCA/IGludGVycG9sYXRlKGZyYW1lLCBbOTYsIDEwOCwgMTMyXSwgWzAsIDEsIDBdKSA6IDA7CiAgcmV0dXJuICgKICAgIDxkaXYKICAgICAgc3R5bGU9e3sKICAgICAgICBmbGV4OiAxLAogICAgICAgIGJvcmRlclJhZGl1czogMTgsCiAgICAgICAgYm9yZGVyOiBgMnB4IHNvbGlkICR7Zmxhc2hPbiA+IDAuMDUgPyBNQUdFTlRBIDogTElORX1gLAogICAgICAgIGJveFNoYWRvdzogZmxhc2hPbiA+IDAuMDUgPyBgMCAwICR7MjQgKiBmbGFzaE9ufXB4ICR7TUFHRU5UQX1gIDogJ25vbmUnLAogICAgICAgIGJhY2tncm91bmRDb2xvcjogJyMwRDEzMjInLAogICAgICAgIHBhZGRpbmc6ICczMHB4IDEycHgnLAogICAgICAgIHRleHRBbGlnbjogJ2NlbnRlcicsCiAgICAgICAgZm9udFNpemU6IEJPRFlfUFggKiAwLjgyLAogICAgICAgIGNvbG9yOiBmbGFzaCA/IE1BR0VOVEEgOiBURVhULAogICAgICAgIC4uLmVudGVyKGZyYW1lLCBkZWxheSksCiAgICAgIH19CiAgICA+CiAgICAgIHt0ZXh0fQogICAgPC9kaXY+CiAgKTsKfTsKCmV4cG9ydCBjb25zdCBTMjogUmVhY3QuRkMgPSAoKSA9PiB7CiAgY29uc3QgZnJhbWUgPSB1c2VDdXJyZW50RnJhbWUoKTsKICBjb25zdCBjYXJkRXhpdCA9IGZyYW1lID4gMjgwID8gZXhpdEZhZGUoZnJhbWUsIDI4MCkgOiB7fTsKCiAgcmV0dXJuICgKICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sganVzdGlmeUNvbnRlbnQ6ICdjZW50ZXInLCBhbGlnbkl0ZW1zOiAnY2VudGVyJyB9fT4KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBmb250U2l6ZTogVElUTEVfUFggKiAwLjYyLAogICAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgICAgY29sb3I6IERJTSwKICAgICAgICAgIGxldHRlclNwYWNpbmc6IDgsCiAgICAgICAgICBtYXJnaW5Cb3R0b206IDQ4LAogICAgICAgICAgLi4uZW50ZXIoZnJhbWUsIDYpLAogICAgICAgICAgLi4uY2FyZEV4aXQsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIOahiOS7tumHjeeOsAogICAgICA8L2Rpdj4KCiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgd2lkdGg6IDkyMCwKICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogQ0FSRCwKICAgICAgICAgIGJvcmRlclJhZGl1czogMjgsCiAgICAgICAgICBib3JkZXI6IGAycHggc29saWQgJHtMSU5FfWAsCiAgICAgICAgICBwYWRkaW5nOiAnNTJweCA1NnB4IDEyMHB4JywKICAgICAgICAgIHBvc2l0aW9uOiAncmVsYXRpdmUnLAogICAgICAgICAgLi4uZW50ZXIoZnJhbWUsIDE4KSwKICAgICAgICAgIC4uLmNhcmRFeGl0LAogICAgICAgIH19CiAgICAgID4KICAgICAgICB7Lyog6LSm5Y+36KGM77yI5omT56CB77yJICovfQogICAgICAgIDxkaXYgc3R5bGU9e3sgZGlzcGxheTogJ2ZsZXgnLCBhbGlnbkl0ZW1zOiAnY2VudGVyJywgZ2FwOiAyNCB9fT4KICAgICAgICAgIDxkaXYKICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICB3aWR0aDogOTIsCiAgICAgICAgICAgICAgaGVpZ2h0OiA5MiwKICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6ICc1MCUnLAogICAgICAgICAgICAgIGJhY2tncm91bmQ6IGBsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCAke0NZQU59NDQsICR7TUFHRU5UQX00NClgLAogICAgICAgICAgICAgIGJvcmRlcjogYDJweCBzb2xpZCAke0xJTkV9YCwKICAgICAgICAgICAgfX0KICAgICAgICAgIC8+CiAgICAgICAgICA8ZGl2PgogICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGZvbnRTaXplOiBCT0RZX1BYICogMC44MiwgY29sb3I6IENZQU4sIGZvbnRXZWlnaHQ6IDcwMCB9fT57QUNDT1VOVH08L2Rpdj4KICAgICAgICAgICAgPGRpdiBzdHlsZT17eyBmb250U2l6ZTogTk9URV9QWCAqIDAuOSwgY29sb3I6IERJTSwgbWFyZ2luVG9wOiA2IH19PkLnq5notKblj7c8L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgoKICAgICAgICB7Lyog6K+E6K665q2j5paHICovfQogICAgICAgIDxkaXYKICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgIGZvbnRTaXplOiBCT0RZX1BYLAogICAgICAgICAgICBjb2xvcjogVEVYVCwKICAgICAgICAgICAgbGluZUhlaWdodDogMS42NSwKICAgICAgICAgICAgbWFyZ2luVG9wOiA0MCwKICAgICAgICAgICAgLi4uZW50ZXIoZnJhbWUsIDQyKSwKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAge0JPRFl9CiAgICAgICAgPC9kaXY+CgogICAgICAgIHsvKiDlj7PkuIvop5LjgIznpLrmhI/lm77jgI3moIfms6jvvIjpqozmlLY6IOS4jeaYr+aIquWbvuW/hemhu+agh+aYju+8iSAqL30KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgICAgcmlnaHQ6IDI4LAogICAgICAgICAgICBib3R0b206IDIyLAogICAgICAgICAgICBmb250U2l6ZTogTk9URV9QWCwKICAgICAgICAgICAgY29sb3I6IERJTSwKICAgICAgICAgICAgYm9yZGVyOiBgMXB4IHNvbGlkICR7TElORX1gLAogICAgICAgICAgICBib3JkZXJSYWRpdXM6IDgsCiAgICAgICAgICAgIHBhZGRpbmc6ICc0cHggMTRweCcsCiAgICAgICAgICB9fQogICAgICAgID4KICAgICAgICAgIOekuuaEj+WbvgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KCiAgICAgIHsvKiDkuInov57mlbDmja7kvY06IOeyieS4nTAgLyDmipXnqL8wIC8g5YeM5pmoMDY6MTLlj5EgKi99CiAgICAgIDxkaXYgc3R5bGU9e3sgZGlzcGxheTogJ2ZsZXgnLCBnYXA6IDI0LCB3aWR0aDogOTIwLCBtYXJnaW5Ub3A6IDQ0LCAuLi5jYXJkRXhpdCB9fT4KICAgICAgICA8U3RhdCB0ZXh0PSLnsonkuJ0wIiBmcmFtZT17ZnJhbWV9IGRlbGF5PXsxMDJ9IC8+CiAgICAgICAgPFN0YXQgdGV4dD0i5oqV56i/MCIgZnJhbWU9e2ZyYW1lfSBkZWxheT17MTE0fSAvPgogICAgICAgIDxTdGF0IHRleHQ9IuWHjOaZqDA2OjEy5Y+RIiBmcmFtZT17ZnJhbWV9IGRlbGF5PXsxMjZ9IGZsYXNoIC8+CiAgICAgIDwvZGl2PgogICAgPC9BYnNvbHV0ZUZpbGw+CiAgKTsKfTsK
+import React from 'react';
+import { AbsoluteFill, interpolate, useCurrentFrame } from 'remotion';
+import { BODY_PX, CARD, CYAN, DIM, LINE, MAGENTA, NOTE_PX, TEXT, TITLE_PX } from '../theme';
+import { enter, exitFade } from '../anim';
+
+// S2 06.000-16.000 案件重现
+// 评论卡（示意重排，不是截图，右下角标「示意图」）
+// 正文:「这条链路讲得比文档直白…谢谢把这套全自动流程走通还拍下来」
+// 账号名打码 wb****39；下方三连数据位: 粉丝0 / 投稿0 / 凌晨06:12发
+// 品红描边闪一下「凌晨06:12」
+const BODY = '这条链路讲得比文档直白…谢谢把这套全自动流程走通还拍下来';
+const ACCOUNT = 'wb****39'; // 打码昵称（验收3: 不出现完整陌生人昵称）
+
+const Stat: React.FC<{ text: string; frame: number; delay: number; flash?: boolean }> = ({
+  text,
+  frame,
+  delay,
+  flash,
+}) => {
+  // 品红描边闪一下: 三项全入场后闪一轮
+  const flashOn = flash ? interpolate(frame, [96, 108, 132], [0, 1, 0]) : 0;
+  return (
+    <div
+      style={{
+        flex: 1,
+        borderRadius: 18,
+        border: `2px solid ${flashOn > 0.05 ? MAGENTA : LINE}`,
+        boxShadow: flashOn > 0.05 ? `0 0 ${24 * flashOn}px ${MAGENTA}` : 'none',
+        backgroundColor: '#0D1322',
+        padding: '30px 12px',
+        textAlign: 'center',
+        fontSize: BODY_PX * 0.82,
+        color: flash ? MAGENTA : TEXT,
+        ...enter(frame, delay),
+      }}
+    >
+      {text}
+    </div>
+  );
+};
+
+export const S2: React.FC = () => {
+  const frame = useCurrentFrame();
+  const cardExit = frame > 280 ? exitFade(frame, 280) : {};
+
+  return (
+    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <div
+        style={{
+          fontSize: TITLE_PX * 0.62,
+          fontWeight: 700,
+          color: DIM,
+          letterSpacing: 8,
+          marginBottom: 48,
+          ...enter(frame, 6),
+          ...cardExit,
+        }}
+      >
+        案件重现
+      </div>
+
+      <div
+        style={{
+          width: 920,
+          backgroundColor: CARD,
+          borderRadius: 28,
+          border: `2px solid ${LINE}`,
+          padding: '52px 56px 120px',
+          position: 'relative',
+          ...enter(frame, 18),
+          ...cardExit,
+        }}
+      >
+        {/* 账号行（打码） */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
+          <div
+            style={{
+              width: 92,
+              height: 92,
+              borderRadius: '50%',
+              background: `linear-gradient(135deg, ${CYAN}44, ${MAGENTA}44)`,
+              border: `2px solid ${LINE}`,
+            }}
+          />
+          <div>
+            <div style={{ fontSize: BODY_PX * 0.82, color: CYAN, fontWeight: 700 }}>{ACCOUNT}</div>
+            <div style={{ fontSize: NOTE_PX * 0.9, color: DIM, marginTop: 6 }}>B站账号</div>
+          </div>
+        </div>
+
+        {/* 评论正文 */}
+        <div
+          style={{
+            fontSize: BODY_PX,
+            color: TEXT,
+            lineHeight: 1.65,
+            marginTop: 40,
+            ...enter(frame, 42),
+          }}
+        >
+          {BODY}
+        </div>
+
+        {/* 右下角「示意图」标注（验收: 不是截图必须标明） */}
+        <div
+          style={{
+            position: 'absolute',
+            right: 28,
+            bottom: 22,
+            fontSize: NOTE_PX,
+            color: DIM,
+            border: `1px solid ${LINE}`,
+            borderRadius: 8,
+            padding: '4px 14px',
+          }}
+        >
+          示意图
+        </div>
+      </div>
+
+      {/* 三连数据位: 粉丝0 / 投稿0 / 凌晨06:12发 */}
+      <div style={{ display: 'flex', gap: 24, width: 920, marginTop: 44, ...cardExit }}>
+        <Stat text="粉丝0" frame={frame} delay={102} />
+        <Stat text="投稿0" frame={frame} delay={114} />
+        <Stat text="凌晨06:12发" frame={frame} delay={126} flash />
+      </div>
+    </AbsoluteFill>
+  );
+};

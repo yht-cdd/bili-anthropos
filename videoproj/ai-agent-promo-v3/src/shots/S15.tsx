@@ -1,1 +1,32 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEJHX0dSQURfQk9UVE9NLCBCR19HUkFEX1RPUCB9IGZyb20gJy4uL3RoZW1lJzsKaW1wb3J0IHsgQWdlbnRSb3csIEFpTG9ja3VwIH0gZnJvbSAnLi4vY29tcG9uZW50cy9FbmRDYXJkJzsKCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8g6ZWcMTXigJMxNyDCtyAxODAw4oCTMTgzMCDluKfvvIg2MC4wc+KAkzYxLjBz77yJ44CMQUdFTlTjgI3kupTlrZfmr43pgJDkuKogcG9wIOaLvOWtlyDigJQgwqfkuInjgJDplZzlpLQgMTUtMTfjgJEKLy8g5pys5Zyw5bin77yI5YWo5bGALTE4MDDvvIk9IOWtl+avjei1t+eCue+8mkEgMCAvIEcgNSAvIEUgMTAgLyBOIDE1IC8gVCAyMOOAggovLyDoo4HlhrPvvIjCpzguNC0xIOWQjOa6kOmXrumimOeahOW4p+ihqOeJiO+8ie+8mueUu+mdouiKguOAjOavj+S4qiA0IOW4p+OAjeS4jumAkOWtl+iKguW+iyAxODAwLzE4MDUvMTgxMC8xODE1LzE4MjAKLy8gICDvvIg9NTgvNjAvNjIvNjQvNjYuNjdz77yM5q+P5a2X5q+NIDUg5bin77yJ5LiN56ym77yb5Lul5bin6KGo6LW354K5ICsgNCDluKfliqjmlYjnqpflj6PkuLrlh4bvvIwKLy8gICBzcHJpbmcoMSwxMDAsMTApIOiHqueEtuaUtuaVm++8iOKJiDI0IOW4p++8ieS8mui9u+W+rui2iui/h+S4i+S4gOWtl+avjei1t+eCueKAlOKAlHBvcCDmiYvmhJ/mnKzlsLHplJnls7DvvIzmiJDnq4vjgIIKLy8gMjXigJMzMCDlha3lrZfmr43lgZznlZkgKyDlvq7lppnlkbzlkLjvvIhzY2FsZSAxLjDihpIxLjAyIDYw5binIHNpbmUg5Y6f5qC35a6e6KOF77yM5bmF5bqmIOKJpDAuMDEy77yJ44CCCi8vIOOAjEFJ44CNK+aYn+iKkumdmeatouauteeUsSBBaUxvY2t1cCDot6jplZzmjqXlipvlpI3liLbku7bmib/mi4XvvIjlkIwgUzEx4oaSUzEyIE9mZmxpbmVTY2VuZSDmiYvms5XvvInjgIIKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKZXhwb3J0IGNvbnN0IFMxNTogUmVhY3QuRkMgPSAoKSA9PiB7CiAgY29uc3QgZiA9IHVzZUN1cnJlbnRGcmFtZSgpOwogIHJldHVybiAoCiAgICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGJhY2tncm91bmRDb2xvcjogQkdfR1JBRF9CT1RUT00gfX0+CiAgICAgIHsvKiDplZwxNCDnu4jmgIHmuJDlj5jlupXvvIhCRyDpobbihpLlupXlkIzlgLzooZTmjqXvvIzlkIzplZw5LzEwIOaJq+Wcuue7iOaAgeijgeWGs+WPo+W+hO+8iSAqL30KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGluc2V0OiAwLAogICAgICAgICAgYmFja2dyb3VuZDogYGxpbmVhci1ncmFkaWVudCgxODBkZWcsICR7QkdfR1JBRF9UT1B9IDAlLCAke0JHX0dSQURfQk9UVE9NfSAxMDAlKWAsCiAgICAgICAgfX0KICAgICAgLz4KICAgICAgPEFpTG9ja3VwIC8+CiAgICAgIDxBZ2VudFJvdyBmPXtmfSBicmVhdGhlIC8+CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9Owo=
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { BG_GRAD_BOTTOM, BG_GRAD_TOP } from '../theme';
+import { AgentRow, AiLockup } from '../components/EndCard';
+
+// ============================================================================
+// 镜15–17 · 1800–1830 帧（60.0s–61.0s）「AGENT」五字母逐个 pop 拼字 — §三【镜头 15-17】
+// 本地帧（全局-1800）= 字母起点：A 0 / G 5 / E 10 / N 15 / T 20。
+// 裁决（§8.4-1 同源问题的帧表版）：画面节「每个 4 帧」与逐字节律 1800/1805/1810/1815/1820
+//   （=58/60/62/64/66.67s，每字母 5 帧）不符；以帧表起点 + 4 帧动效窗口为准，
+//   spring(1,100,10) 自然收敛（≈24 帧）会轻微越过下一字母起点——pop 手感本就错峰，成立。
+// 25–30 六字母停留 + 微妙呼吸（scale 1.0→1.02 60帧 sine 原样实装，幅度 ≤0.012）。
+// 「AI」+星芒静止段由 AiLockup 跨镜接力复制件承担（同 S11→S12 OfflineScene 手法）。
+// ============================================================================
+
+export const S15: React.FC = () => {
+  const f = useCurrentFrame();
+  return (
+    <AbsoluteFill style={{ backgroundColor: BG_GRAD_BOTTOM }}>
+      {/* 镜14 终态渐变底（BG 顶→底同值衔接，同镜9/10 扫场终态裁决口径） */}
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background: `linear-gradient(180deg, ${BG_GRAD_TOP} 0%, ${BG_GRAD_BOTTOM} 100%)`,
+        }}
+      />
+      <AiLockup />
+      <AgentRow f={f} breathe />
+    </AbsoluteFill>
+  );
+};

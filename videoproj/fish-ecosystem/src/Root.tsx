@@ -1,1 +1,19 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQ29tcG9zaXRpb24gfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEZpc2hFY29zeXN0ZW0gfSBmcm9tICcuL01haW4nOwoKLy8gODBzICogMzBmcHMgPSAyNDAwIOW4pyAoYnJpZWY6IOebruagh+aAu+mVvyA3OC04MnMpCmV4cG9ydCBjb25zdCBSZW1vdGlvblJvb3Q6IFJlYWN0LkZDID0gKCkgPT4gewogIHJldHVybiAoCiAgICA8PgogICAgICA8Q29tcG9zaXRpb24KICAgICAgICBpZD0iQW50aHJvcG9zVmlkZW8iCiAgICAgICAgY29tcG9uZW50PXtGaXNoRWNvc3lzdGVtfQogICAgICAgIGR1cmF0aW9uSW5GcmFtZXM9ezI0MDB9CiAgICAgICAgZnBzPXszMH0KICAgICAgICB3aWR0aD17MTA4MH0KICAgICAgICBoZWlnaHQ9ezE5MjB9CiAgICAgIC8+CiAgICA8Lz4KICApOwp9Owo=
+import React from 'react';
+import { Composition } from 'remotion';
+import { FishEcosystem } from './Main';
+
+// 80s * 30fps = 2400 帧 (brief: 目标总长 78-82s)
+export const RemotionRoot: React.FC = () => {
+  return (
+    <>
+      <Composition
+        id="AnthroposVideo"
+        component={FishEcosystem}
+        durationInFrames={2400}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+    </>
+  );
+};

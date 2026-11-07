@@ -1,1 +1,81 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCBpbnRlcnBvbGF0ZSwgc3ByaW5nLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEJPRFlfUFgsIENBUkQsIENZQU4sIERJTSwgTElORSwgTUFHRU5UQSwgTk9URV9QWCwgVEVYVCwgVElUTEVfUFggfSBmcm9tICcuLi90aGVtZSc7CmltcG9ydCB7IGVudGVyLCBleGl0RmFkZSB9IGZyb20gJy4uL2FuaW0nOwoKLy8gUzUgNDAuMDAwLTU0LjAwMCDmtYHmsLTnur/op6PliZbvvIg0MjAg5bin77yJCi8vIOW5lTE6IOS6lOiKgueCueerluaOkui/nue6v+mAkOS4queCueS6rjog5a6a5pe25Zmo5Y+r6YaS4oaS5pCc5YWz6ZSu6K+N4oaS6K+75YaF5a654oaS5YaZ5oql5ZGK4oaS6Ieq5Yqo6K+E6K66LCDop5LmoIfjgIzliLcxOOaMkTPjgI0KLy8g5bmVMjog5Lik5Liq5rGJ5a2X5LiA57uE566X55u45Ly85bqmIOKGkiAwLjgwIHZzIOaLpuaIque6vzAuNTUg4oaSIOe6ouiJsuOAjOaLpuS4i+OAjeeblueroCAo5pys5Zyw5binMzAwID0g5YWo54mHNTBzIOmfs+aViGRpbmcpCi8vIOaVsOWtl+WHuuWkhDogdmlkZW9zL0JWMVlteGo2dkVUSy8gKOWItzE45oyRMywgSmFjY2FyZD4wLjU15oum5oiqKQpjb25zdCBOT0RFUyA9IFsn5a6a5pe25Zmo5Y+r6YaSJywgJ+aQnOWFs+mUruivjScsICfor7vlhoXlrrknLCAn5YaZ5oql5ZGKJywgJ+iHquWKqOivhOiuuiddOwpjb25zdCBBQ1QyID0gMjE2OwoKZXhwb3J0IGNvbnN0IFM1OiBSZWFjdC5GQyA9ICgpID0+IHsKICBjb25zdCBmcmFtZSA9IHVzZUN1cnJlbnRGcmFtZSgpOwogIGNvbnN0IGFjdDFPdXQgPSBmcmFtZSA+IEFDVDIgLSA2ID8gZXhpdEZhZGUoZnJhbWUsIEFDVDIgLSA2KSA6IHt9OwogIGNvbnN0IGFjdDJPdXQgPSBmcmFtZSA+IDQwOCA/IGV4aXRGYWRlKGZyYW1lLCA0MDgpIDoge307CgogIHJldHVybiAoCiAgICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGFsaWduSXRlbXM6ICdjZW50ZXInIH19PgogICAgICB7Lyog4pSA4pSAIOW5lTE6IOS6lOiKgueCuea1geawtOe6vyDilIDilIAgKi99CiAgICAgIDxkaXYgc3R5bGU9e3sgcG9zaXRpb246ICdhYnNvbHV0ZScsIGluc2V0OiAwLCBkaXNwbGF5OiAnZmxleCcsIGZsZXhEaXJlY3Rpb246ICdjb2x1bW4nLCBhbGlnbkl0ZW1zOiAnY2VudGVyJywgLi4uYWN0MU91dCB9fT4KICAgICAgICA8ZGl2IHN0eWxlPXt7IGZvbnRTaXplOiBUSVRMRV9QWCAqIDAuOCwgZm9udFdlaWdodDogNzAwLCBjb2xvcjogVEVYVCwgbWFyZ2luVG9wOiAyNTAsIC4uLmVudGVyKGZyYW1lLCA2KSB9fT4KICAgICAgICAgIOa1geawtOe6v+ino+WJlgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgc3R5bGU9e3sgcG9zaXRpb246ICdhYnNvbHV0ZScsIHRvcDogMTk1LCByaWdodDogNzAsIGJvcmRlcjogYDJweCBzb2xpZCAke0NZQU59YCwgY29sb3I6IENZQU4sIGJvcmRlclJhZGl1czogMTQsIHBhZGRpbmc6ICcxMnB4IDI2cHgnLCBmb250U2l6ZTogTk9URV9QWCwgZm9udFdlaWdodDogNzAwLCAuLi5lbnRlcihmcmFtZSwgOTApIH19PgogICAgICAgICAg5Yi3MTjmjJEzCiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBzdHlsZT17eyB3aWR0aDogNjQwLCBtYXJnaW5Ub3A6IDE1MCwgZGlzcGxheTogJ2ZsZXgnLCBmbGV4RGlyZWN0aW9uOiAnY29sdW1uJywgYWxpZ25JdGVtczogJ2NlbnRlcicgfX0+CiAgICAgICAgICB7Tk9ERVMubWFwKChuLCBpKSA9PiB7CiAgICAgICAgICAgIGNvbnN0IGRlbGF5ID0gMzYgKyBpICogMzA7CiAgICAgICAgICAgIGNvbnN0IGxpdCA9IGZyYW1lID49IGRlbGF5ICsgMTQ7CiAgICAgICAgICAgIGNvbnN0IGxpbmVIID0gaW50ZXJwb2xhdGUoZnJhbWUgLSAoZGVsYXkgLSAxNCksIFswLCAxMl0sIFswLCA0MF0sIHsgZXh0cmFwb2xhdGVMZWZ0OiAnY2xhbXAnLCBleHRyYXBvbGF0ZVJpZ2h0OiAnY2xhbXAnIH0pOwogICAgICAgICAgICByZXR1cm4gKAogICAgICAgICAgICAgIDxSZWFjdC5GcmFnbWVudCBrZXk9e259PgogICAgICAgICAgICAgICAge2kgPiAwID8gPGRpdiBzdHlsZT17eyB3aWR0aDogNCwgaGVpZ2h0OiBsaW5lSCwgYmFja2dyb3VuZENvbG9yOiBsaXQgPyBDWUFOIDogTElORSB9fSAvPiA6IG51bGx9CiAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IHdpZHRoOiA2NDAsIGJveFNpemluZzogJ2JvcmRlci1ib3gnLCBiYWNrZ3JvdW5kQ29sb3I6IENBUkQsIGJvcmRlcjogYDJweCBzb2xpZCAke2xpdCA/IENZQU4gOiBMSU5FfWAsIGJveFNoYWRvdzogbGl0ID8gYDAgMCAyMnB4ICR7Q1lBTn01NWAgOiAnbm9uZScsIGJvcmRlclJhZGl1czogMTgsIHBhZGRpbmc6ICcyNnB4IDM2cHgnLCBmb250U2l6ZTogQk9EWV9QWCAqIDAuOTUsIGNvbG9yOiBsaXQgPyBURVhUIDogRElNLCBkaXNwbGF5OiAnZmxleCcsIGdhcDogMjQsIGFsaWduSXRlbXM6ICdjZW50ZXInLCAuLi5lbnRlcihmcmFtZSwgZGVsYXkpIH19PgogICAgICAgICAgICAgICAgICA8c3BhbiBzdHlsZT17eyBjb2xvcjogbGl0ID8gQ1lBTiA6IERJTSwgZm9udFNpemU6IE5PVEVfUFgsIGZvbnRWYXJpYW50TnVtZXJpYzogJ3RhYnVsYXItbnVtcycgfX0+MHtpICsgMX08L3NwYW4+CiAgICAgICAgICAgICAgICAgIHtufQogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPC9SZWFjdC5GcmFnbWVudD4KICAgICAgICAgICAgKTsKICAgICAgICAgIH0pfQogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KCiAgICAgIHsvKiDilIDilIAg5bmVMjogSmFjY2FyZCDmn6Xph40gKyDnuqLnq6Ag4pSA4pSAICovfQogICAgICB7ZnJhbWUgPj0gQUNUMiA/ICgKICAgICAgICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGp1c3RpZnlDb250ZW50OiAnY2VudGVyJywgYWxpZ25JdGVtczogJ2NlbnRlcicsIC4uLmFjdDJPdXQgfX0+CiAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGZvbnRTaXplOiBCT0RZX1BYICogMC45NSwgY29sb3I6IERJTSwgLi4uZW50ZXIoZnJhbWUsIEFDVDIgKyAxMCkgfX0+CiAgICAgICAgICAgIOS4pOS4quaxieWtl+S4gOe7hCDCtyDnrpfnm7jkvLzluqYKICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBzdHlsZT17eyBkaXNwbGF5OiAnZmxleCcsIGFsaWduSXRlbXM6ICdiYXNlbGluZScsIGdhcDogNDQsIG1hcmdpblRvcDogODAsIC4uLmVudGVyKGZyYW1lLCBBQ1QyICsgMzApIH19PgogICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IHRleHRBbGlnbjogJ2NlbnRlcicgfX0+CiAgICAgICAgICAgICAgPGRpdiBzdHlsZT17eyBmb250U2l6ZTogVElUTEVfUFggKiAxLjM1LCBmb250V2VpZ2h0OiA3MDAsIGNvbG9yOiBNQUdFTlRBLCBmb250VmFyaWFudE51bWVyaWM6ICd0YWJ1bGFyLW51bXMnIH19PjAuODA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGZvbnRTaXplOiBOT1RFX1BYLCBjb2xvcjogRElNLCBtYXJnaW5Ub3A6IDEwIH19PkphY2NhcmQg55u45Ly85bqmPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGZvbnRTaXplOiBCT0RZX1BYLCBjb2xvcjogRElNIH19PnZzPC9kaXY+CiAgICAgICAgICAgIDxkaXYgc3R5bGU9e3sgdGV4dEFsaWduOiAnY2VudGVyJyB9fT4KICAgICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGZvbnRTaXplOiBUSVRMRV9QWCAqIDEuMzUsIGZvbnRXZWlnaHQ6IDcwMCwgY29sb3I6IENZQU4sIGZvbnRWYXJpYW50TnVtZXJpYzogJ3RhYnVsYXItbnVtcycgfX0+MC41NTwvZGl2PgogICAgICAgICAgICAgIDxkaXYgc3R5bGU9e3sgZm9udFNpemU6IE5PVEVfUFgsIGNvbG9yOiBESU0sIG1hcmdpblRvcDogMTAgfX0+5oum5oiq57q/PC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICB7ZnJhbWUgPj0gMzAwID8gPFN0YW1wIGZyYW1lPXtmcmFtZX0gLz4gOiBudWxsfQogICAgICAgIDwvQWJzb2x1dGVGaWxsPgogICAgICApIDogbnVsbH0KICAgIDwvQWJzb2x1dGVGaWxsPgogICk7Cn07CgovLyDnuqLoibLjgIzmi6bkuIvjgI3nm5bnq6A6IOacrOWcsOW4pzMwMOi1tywgc2NhbGUgMi424oaSMSDljovkuIvmnaUKLy8g56ysNei9ruS/ruWkjTogdG9wIDYyJeKGkjY2LjUl77yI5LiL56e757qmODZweO+8ieOAguWOn+S9jee9ruaXi+i9rOWQjuW3puS4iuinkih54omIMTA3OSnljovkvY8KLy8g44CMSmFjY2FyZCDnm7jkvLzluqYgLyDmi6bmiKrnur/jgI3ms6jph4rooYwoeeKJiDExMDAtMTE0NSnljYrooYzvvJvkuIvnp7vlkI7nq6Dpobbop5LiiYgxMTY377yM5rOo6YeK6KGM6K6p5byA44CCCmNvbnN0IFN0YW1wOiBSZWFjdC5GQzx7IGZyYW1lOiBudW1iZXIgfT4gPSAoeyBmcmFtZSB9KSA9PiB7CiAgY29uc3Qgc3AgPSBzcHJpbmcoeyBmcmFtZTogZnJhbWUgLSAzMDAsIGZwczogMzAsIGNvbmZpZzogeyBkYW1waW5nOiAxNiwgbWFzczogMC43LCBvdmVyc2hvb3RDbGFtcGluZzogdHJ1ZSB9IH0pOwogIGNvbnN0IHNjYWxlID0gaW50ZXJwb2xhdGUoc3AsIFswLCAxXSwgWzIuNiwgMV0pOwogIHJldHVybiAoCiAgICA8ZGl2IHN0eWxlPXt7IHBvc2l0aW9uOiAnYWJzb2x1dGUnLCB0b3A6ICc2Ni41JScsIGxlZnQ6ICc1MCUnLCB0cmFuc2Zvcm06IGB0cmFuc2xhdGUoLTUwJSwtNTAlKSByb3RhdGUoLTEwZGVnKSBzY2FsZSgke3NjYWxlfSlgLCBvcGFjaXR5OiBzcCwgYm9yZGVyOiBgMTBweCBzb2xpZCAke01BR0VOVEF9YCwgYm9yZGVyUmFkaXVzOiAyMiwgcGFkZGluZzogJzE0cHggNDZweCcsIGNvbG9yOiBNQUdFTlRBLCBmb250U2l6ZTogVElUTEVfUFgsIGZvbnRXZWlnaHQ6IDcwMCwgbGV0dGVyU3BhY2luZzogMTIsIGJveFNoYWRvdzogYDAgMCA0MHB4ICR7TUFHRU5UQX02NiwgaW5zZXQgMCAwIDI0cHggJHtNQUdFTlRBfTQ0YCB9fT4KICAgICAg5oum5LiLCiAgICA8L2Rpdj4KICApOwp9Owo=
+import React from 'react';
+import { AbsoluteFill, interpolate, spring, useCurrentFrame } from 'remotion';
+import { BODY_PX, CARD, CYAN, DIM, LINE, MAGENTA, NOTE_PX, TEXT, TITLE_PX } from '../theme';
+import { enter, exitFade } from '../anim';
+
+// S5 40.000-54.000 流水线解剖（420 帧）
+// 幕1: 五节点竖排连线逐个点亮: 定时器叫醒→搜关键词→读内容→写报告→自动评论, 角标「刷18挑3」
+// 幕2: 两个汉字一组算相似度 → 0.80 vs 拦截线0.55 → 红色「拦下」盖章 (本地帧300 = 全片50s 音效ding)
+// 数字出处: videos/BV1Ymxj6vETK/ (刷18挑3, Jaccard>0.55拦截)
+const NODES = ['定时器叫醒', '搜关键词', '读内容', '写报告', '自动评论'];
+const ACT2 = 216;
+
+export const S5: React.FC = () => {
+  const frame = useCurrentFrame();
+  const act1Out = frame > ACT2 - 6 ? exitFade(frame, ACT2 - 6) : {};
+  const act2Out = frame > 408 ? exitFade(frame, 408) : {};
+
+  return (
+    <AbsoluteFill style={{ alignItems: 'center' }}>
+      {/* ── 幕1: 五节点流水线 ── */}
+      <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', ...act1Out }}>
+        <div style={{ fontSize: TITLE_PX * 0.8, fontWeight: 700, color: TEXT, marginTop: 250, ...enter(frame, 6) }}>
+          流水线解剖
+        </div>
+        <div style={{ position: 'absolute', top: 195, right: 70, border: `2px solid ${CYAN}`, color: CYAN, borderRadius: 14, padding: '12px 26px', fontSize: NOTE_PX, fontWeight: 700, ...enter(frame, 90) }}>
+          刷18挑3
+        </div>
+        <div style={{ width: 640, marginTop: 150, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          {NODES.map((n, i) => {
+            const delay = 36 + i * 30;
+            const lit = frame >= delay + 14;
+            const lineH = interpolate(frame - (delay - 14), [0, 12], [0, 40], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+            return (
+              <React.Fragment key={n}>
+                {i > 0 ? <div style={{ width: 4, height: lineH, backgroundColor: lit ? CYAN : LINE }} /> : null}
+                <div style={{ width: 640, boxSizing: 'border-box', backgroundColor: CARD, border: `2px solid ${lit ? CYAN : LINE}`, boxShadow: lit ? `0 0 22px ${CYAN}55` : 'none', borderRadius: 18, padding: '26px 36px', fontSize: BODY_PX * 0.95, color: lit ? TEXT : DIM, display: 'flex', gap: 24, alignItems: 'center', ...enter(frame, delay) }}>
+                  <span style={{ color: lit ? CYAN : DIM, fontSize: NOTE_PX, fontVariantNumeric: 'tabular-nums' }}>0{i + 1}</span>
+                  {n}
+                </div>
+              </React.Fragment>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* ── 幕2: Jaccard 查重 + 红章 ── */}
+      {frame >= ACT2 ? (
+        <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', ...act2Out }}>
+          <div style={{ fontSize: BODY_PX * 0.95, color: DIM, ...enter(frame, ACT2 + 10) }}>
+            两个汉字一组 · 算相似度
+          </div>
+          <div style={{ display: 'flex', alignItems: 'baseline', gap: 44, marginTop: 80, ...enter(frame, ACT2 + 30) }}>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: TITLE_PX * 1.35, fontWeight: 700, color: MAGENTA, fontVariantNumeric: 'tabular-nums' }}>0.80</div>
+              <div style={{ fontSize: NOTE_PX, color: DIM, marginTop: 10 }}>Jaccard 相似度</div>
+            </div>
+            <div style={{ fontSize: BODY_PX, color: DIM }}>vs</div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: TITLE_PX * 1.35, fontWeight: 700, color: CYAN, fontVariantNumeric: 'tabular-nums' }}>0.55</div>
+              <div style={{ fontSize: NOTE_PX, color: DIM, marginTop: 10 }}>拦截线</div>
+            </div>
+          </div>
+          {frame >= 300 ? <Stamp frame={frame} /> : null}
+        </AbsoluteFill>
+      ) : null}
+    </AbsoluteFill>
+  );
+};
+
+// 红色「拦下」盖章: 本地帧300起, scale 2.6→1 压下来
+// 第5轮修复: top 62%→66.5%（下移约86px）。原位置旋转后左上角(y≈1079)压住
+// 「Jaccard 相似度 / 拦截线」注释行(y≈1100-1145)半行；下移后章顶角≈1167，注释行让开。
+const Stamp: React.FC<{ frame: number }> = ({ frame }) => {
+  const sp = spring({ frame: frame - 300, fps: 30, config: { damping: 16, mass: 0.7, overshootClamping: true } });
+  const scale = interpolate(sp, [0, 1], [2.6, 1]);
+  return (
+    <div style={{ position: 'absolute', top: '66.5%', left: '50%', transform: `translate(-50%,-50%) rotate(-10deg) scale(${scale})`, opacity: sp, border: `10px solid ${MAGENTA}`, borderRadius: 22, padding: '14px 46px', color: MAGENTA, fontSize: TITLE_PX, fontWeight: 700, letterSpacing: 12, boxShadow: `0 0 40px ${MAGENTA}66, inset 0 0 24px ${MAGENTA}44` }}>
+      拦下
+    </div>
+  );
+};

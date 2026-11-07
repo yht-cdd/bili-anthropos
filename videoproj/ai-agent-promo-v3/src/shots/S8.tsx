@@ -1,1 +1,224 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IGNsYW1wMDEsIEVBU0VfRVhQT19PVVQsIEVBU0VfSU5PVVQsIGxlcnBGLCBwcm9nIH0gZnJvbSAnLi4vYW5pbSc7CmltcG9ydCB7CiAgQkcsCiAgQkdfOEFfRlJPTSwKICBCR184QV9UTywKICBCR19EQVJLLAogIEJMVUUsCiAgRk9OVF9NT05PLAogIEZPTlRfU0FOUywKICBHUkVFTiwKICBHUkFZLAogIFNVUkZBQ0UsCiAgU1VSRkFDRV9DQVJELAogIFNVUkZBQ0VfQ0FSRDIsCiAgVEVYVCwKICBURVhUX0RJTSwKfSBmcm9tICcuLi90aGVtZSc7CgovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ci8vIOmVnDggwrcgMTA1MOKAkzEyMDAg5bin77yIMzUuMHPigJM0MC4wc++8ieWbm+i/nuW/q+WIhyDigJQgYnJpZWYtdjMgwqfkuInjgJDplZzlpLQgOOOAkSsgwqfkuIDms6gKLy8gMzBmcHMg5Zub5q615YiH54K577yIMC41IOi/m+S9je+8ie+8mjM4LzM3LzM4LzM3IOKGkiDmnKzlnLDluKfnlYwgMCAvIDM4IC8gNzUgLyAxMTMgLyAxNTDjgIIKLy8g57uf5LiA5YWl5Zy677yac2NhbGUoMS4x4oaSMS4wKSBibHVyKDbihpIwKSBvcGFjaXR5KDDihpIxKe+8jOavj+auteWJjSA2IOW4pyBleHBvLW91dOOAggovLyA4QyDov5vluqbmnaHkuI4gOEQg57u/5Yu+57uY5Yi26LW354K55oyJIMKn5LiJ5Yqo5pWI5puy57q/6IqC55qEIDMwZnBzIOaNoueul+WAvOiQveW4p++8mgovLyDov5vluqbmnaEgMTEzM+KAkzExNDXvvIjljLrpl7TmoIcgMTEzM+KAkzExNDjvvIzliqjnlLsgMTIg5bin5rK/55So5Y6f5bin5pWw77yM5L2Z6YePIGhvbGTvvIzCp+OAhy0z77yJ77ybCi8vIOe7v+WLvue7mOWItiAxMTcw4oCTMTE4Mu+8iOWQjOS4iu+8ieOAggovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Cgpjb25zdCBDRU5URVIgPSAodzogbnVtYmVyLCBoOiBudW1iZXIpOiBSZWFjdC5DU1NQcm9wZXJ0aWVzID0+ICh7CiAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgbGVmdDogKDE5MjAgLSB3KSAvIDIsCiAgdG9wOiAoMTA4MCAtIGgpIC8gMiwKICB3aWR0aDogdywKICBoZWlnaHQ6IGgsCn0pOwoKLy8g57uf5LiA5YWl5Zy65YyF5aOz77yac2VnU3RhcnQg5ZCOIDYg5bin54yb5YiH6L+bCmNvbnN0IFNsYW06IFJlYWN0LkZDPHsgc3RhcnQ6IG51bWJlcjsgY2hpbGRyZW46IFJlYWN0LlJlYWN0Tm9kZTsgc3R5bGU/OiBSZWFjdC5DU1NQcm9wZXJ0aWVzIH0+ID0gKHsKICBzdGFydCwKICBjaGlsZHJlbiwKICBzdHlsZSwKfSkgPT4gewogIGNvbnN0IGYgPSB1c2VDdXJyZW50RnJhbWUoKTsKICBjb25zdCBsZiA9IGYgLSBzdGFydDsKICBpZiAobGYgPCAwKSByZXR1cm4gbnVsbDsKICBjb25zdCBwID0gcHJvZyhsZiwgMCwgNiwgRUFTRV9FWFBPX09VVCk7CiAgcmV0dXJuICgKICAgIDxkaXYKICAgICAgc3R5bGU9e3sKICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICBpbnNldDogMCwKICAgICAgICB0cmFuc2Zvcm06IGBzY2FsZSgkezEuMSAtIDAuMSAqIHB9KWAsCiAgICAgICAgZmlsdGVyOiBgYmx1cigkeyg2ICogKDEgLSBwKSkudG9GaXhlZCgyKX1weClgLAogICAgICAgIG9wYWNpdHk6IHAsCiAgICAgICAgLi4uc3R5bGUsCiAgICAgIH19CiAgICA+CiAgICAgIHtjaGlsZHJlbn0KICAgIDwvZGl2PgogICk7Cn07Cgpjb25zdCBHUkVFTl9DSEVDS19QQVRIID0gJ00zMCAxMDUgTDgyIDE1NSBMMTcyIDUyJzsKCmV4cG9ydCBjb25zdCBTODogUmVhY3QuRkMgPSAoKSA9PiB7CiAgY29uc3QgZiA9IHVzZUN1cnJlbnRGcmFtZSgpOwogIGNvbnN0IGJhclAgPSBsZXJwRihmLCBbODMsIDk1XSwgWzAsIDFdKTsgLy8gOEMg6L+b5bqm5p2h77ya6LW354K55Y+WIMKn5LiJ5o2i566X5YC8IDExMzPvvIjmnKzlnLAgODPvvInvvIwxMiDluKcgbGluZWFy77yM5L2Z6YePIGhvbGQKICBjb25zdCBkcmF3UCA9IHByb2coZiwgMTIwLCAxMiwgRUFTRV9JTk9VVCk7IC8vIDhEIOe7v+WLviBzdHJva2XvvJrotbfngrkgMTE3MO+8iOacrOWcsCAxMjDvvInvvIwxMiDluKcgZWFzZS1pbi1vdXQKICBjb25zdCBzdGVwT24gPSAoaTogbnVtYmVyKSA9PiBmID49IDk5ICsgaSAqIDQ7IC8vIOS4ieS4que7v+WLvuavjyA0IOW4p+S4gOS4qgoKICByZXR1cm4gKAogICAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBiYWNrZ3JvdW5kQ29sb3I6IEJHIH19PgogICAgICB7Lyog4pSA4pSAIDhBIDDigJMzOO+8mmNvbmZpZyBkaWZmIOWNoSDilIDilIAgKi99CiAgICAgIHtmIDwgMzggPyAoCiAgICAgICAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBiYWNrZ3JvdW5kOiBgbGluZWFyLWdyYWRpZW50KDE4MGRlZywgJHtCR184QV9GUk9NfSwgJHtCR184QV9UT30pYCB9fT4KICAgICAgICAgIDxTbGFtIHN0YXJ0PXswfT4KICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgICAuLi5DRU5URVIoNjAwLCAyMDApLAogICAgICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiBTVVJGQUNFX0NBUkQsCiAgICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6IDEyLAogICAgICAgICAgICAgICAgYm9yZGVyTGVmdDogYDRweCBzb2xpZCAke0dSRUVOfWAsCiAgICAgICAgICAgICAgICBwYWRkaW5nOiAnMzBweCAzNnB4JywKICAgICAgICAgICAgICAgIGJveFNpemluZzogJ2JvcmRlci1ib3gnLAogICAgICAgICAgICAgIH19CiAgICAgICAgICAgID4KICAgICAgICAgICAgICB7LyogwqdDIOWOn+aWh++8muS4pOihjOWdhyAjOUNBM0FG77yM5Yig6ZmkL+aWsOWinuivreS5ieeUseW3pue8mOe7v+erluadoeaJv+aLhe+8jOS4jeiHqumAoOe6oue7vyAqL30KICAgICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGZvbnRGYW1pbHk6IEZPTlRfTU9OTywgZm9udFNpemU6IDE4LCBsaW5lSGVpZ2h0OiAyLCBjb2xvcjogVEVYVF9ESU0sIHdoaXRlU3BhY2U6ICdwcmUnIH19PgogICAgICAgICAgICAgICAgPGRpdj4tICAtLWNvbmN1cnJlbmN5IDg8L2Rpdj4KICAgICAgICAgICAgICAgIDxkaXY+KyAgLS1jb25jdXJyZW5jeSA0PC9kaXY+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPGRpdiBzdHlsZT17eyBwb3NpdGlvbjogJ2Fic29sdXRlJywgbGVmdDogMzYsIGJvdHRvbTogMTgsIGZvbnRGYW1pbHk6IEZPTlRfTU9OTywgZm9udFNpemU6IDE0LCBjb2xvcjogR1JBWSB9fT4KICAgICAgICAgICAgICAgIGNvbmZpZy9yZW5kZXIueW1sCiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9TbGFtPgogICAgICAgIDwvQWJzb2x1dGVGaWxsPgogICAgICApIDogbnVsbH0KCiAgICAgIHsvKiDilIDilIAgOEIgMzjigJM3Ne+8mlB1c2hlZCB0byBtYWluIOKUgOKUgCAqL30KICAgICAge2YgPj0gMzggJiYgZiA8IDc1ID8gKAogICAgICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sgYmFja2dyb3VuZENvbG9yOiBCR19EQVJLIH19PgogICAgICAgICAgPFNsYW0gc3RhcnQ9ezM4fT4KICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgICAuLi5DRU5URVIoNzAwLCAxODApLAogICAgICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiBTVVJGQUNFLAogICAgICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiAxNCwKICAgICAgICAgICAgICAgIGRpc3BsYXk6ICdmbGV4JywKICAgICAgICAgICAgICAgIGFsaWduSXRlbXM6ICdjZW50ZXInLAogICAgICAgICAgICAgICAgZ2FwOiAyNiwKICAgICAgICAgICAgICAgIHBhZGRpbmc6ICcwIDQ0cHgnLAogICAgICAgICAgICAgICAgYm94U2l6aW5nOiAnYm9yZGVyLWJveCcsCiAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgICAgIHdpZHRoOiA1NiwKICAgICAgICAgICAgICAgICAgaGVpZ2h0OiA1NiwKICAgICAgICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiAnNTAlJywKICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiAncmdiYSg0NiwxMDcsMjQwLDAuMTQpJywKICAgICAgICAgICAgICAgICAgZGlzcGxheTogJ2ZsZXgnLAogICAgICAgICAgICAgICAgICBhbGlnbkl0ZW1zOiAnY2VudGVyJywKICAgICAgICAgICAgICAgICAganVzdGlmeUNvbnRlbnQ6ICdjZW50ZXInLAogICAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPXszMn0gaGVpZ2h0PXszMn0gdmlld0JveD0iMCAwIDMyIDMyIj4KICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTE2IDI3IEwxNiA2IE03IDE1IEwxNiA2IEwyNSAxNSIgc3Ryb2tlPXtCTFVFfSBzdHJva2VXaWR0aD17My41fSBmaWxsPSJub25lIiBzdHJva2VMaW5lY2FwPSJyb3VuZCIgc3Ryb2tlTGluZWpvaW49InJvdW5kIiAvPgogICAgICAgICAgICAgICAgPC9zdmc+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9e3sgZm9udEZhbWlseTogRk9OVF9TQU5TLCBmb250V2VpZ2h0OiA1MDAsIGZvbnRTaXplOiAyNCwgY29sb3I6IFRFWFQgfX0+UHVzaGVkIHRvIG1haW48L2Rpdj4KICAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9e3sgZm9udEZhbWlseTogRk9OVF9NT05PLCBmb250U2l6ZTogMTYsIGNvbG9yOiBHUkFZLCBtYXJnaW5Ub3A6IDggfX0+MGE0Y2I0MzwvZGl2PgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvU2xhbT4KICAgICAgICA8L0Fic29sdXRlRmlsbD4KICAgICAgKSA6IG51bGx9CgogICAgICB7Lyog4pSA4pSAIDhDIDc14oCTMTEz77yaR2l0SHViIEFjdGlvbnMg6L+b5bqmIOKUgOKUgCAqL30KICAgICAge2YgPj0gNzUgJiYgZiA8IDExMyA/ICgKICAgICAgICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGJhY2tncm91bmRDb2xvcjogQkdfREFSSyB9fT4KICAgICAgICAgIDxTbGFtIHN0YXJ0PXs3NX0+CiAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgLi4uQ0VOVEVSKDgwMCwgMjQwKSwKICAgICAgICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogU1VSRkFDRV9DQVJEMiwKICAgICAgICAgICAgICAgIGJvcmRlclJhZGl1czogMTQsCiAgICAgICAgICAgICAgICBwYWRkaW5nOiAnMjhweCA0MHB4JywKICAgICAgICAgICAgICAgIGJveFNpemluZzogJ2JvcmRlci1ib3gnLAogICAgICAgICAgICAgIH19CiAgICAgICAgICAgID4KICAgICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGRpc3BsYXk6ICdmbGV4JywgYWxpZ25JdGVtczogJ2NlbnRlcicsIGdhcDogMTIgfX0+CiAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPXsxNn0gaGVpZ2h0PXsxNn0gdmlld0JveD0iMCAwIDE2IDE2IiBmaWxsPSIjQzlEMUQ5Ij4KICAgICAgICAgICAgICAgICAgey8qIG1hcmstZ2l0aHVi77yIb2N0aWNvbnPvvInot6/lvoTvvIzmlbDlrZfpl7Tlhajpg6jnqbrmoLzliIbpmpTvvJpTVkcg5ZCI5rOV5YaZ5rOV77yMCiAgICAgICAgICAgICAgICAgICAgICDntKflh5Hov57lhpnkvJrooqsgwqflha0gSVAg57qi57q/IGdyZXAg6K+v5Lyk77yI5bCP5pWw6L+e5o6S5b2i5aaCIElQ77yJ77yM5pWF5ouG5byAICovfQogICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNOCAwIEMzLjU4IDAgMCAzLjU4IDAgOCBjMCAzLjU0IDIuMjkgNi41MyA1LjQ3IDcuNTkgLjQgLjA3IC41NSAtLjE3IC41NSAtLjM4IDAgLS4xOSAtLjAxIC0uODIgLS4wMSAtMS40OSAtMi4wMSAuMzcgLTIuNTMgLS40OSAtMi42OSAtLjk0IC0uMDkgLS4yMyAtLjQ4IC0uOTQgLS44MiAtMS4xMyAtLjI4IC0uMTUgLS42OCAtLjUyIC0uMDEgLS41MyAuNjMgLS4wMSAxLjA4IC41OCAxLjIzIC44MiAuNzIgMS4yMSAxLjg3IC44NyAyLjMzIC42NiAuMDcgLS41MiAuMjggLS44NyAuNTEgLTEuMDcgLTEuNzggLS4yIC0zLjY0IC0uODkgLTMuNjQgLTMuOTUgMCAtLjg3IC4zMSAtMS41OSAuODIgLTIuMTUgLS4wOCAtLjIgLS4zNiAtMS4wMiAuMDggLTIuMTIgMCAwIC42NyAtLjIxIDIuMiAuODIgLjY0IC0uMTggMS4zMiAtLjI3IDIgLS4yNyBzMS4zNiAuMDkgMiAuMjcgYzEuNTMgLTEuMDQgMi4yIC0uODIgMi4yIC0uODIgLjQ0IDEuMSAuMTYgMS45MiAuMDggMi4xMiAuNTEgLjU2IC44MiAxLjI3IC44MiAyLjE1IDAgMy4wNyAtMS44NyAzLjc1IC0zLjY1IDMuOTUgLjI5IC4yNSAuNTQgLjczIC41NCAxLjQ4IDAgMS4wNyAtLjAxIDEuOTMgLS4wMSAyLjIgMCAuMjEgLjE1IC40NiAuNTUgLjM4IEE4LjAxIDguMDEgMCAwIDAgMTYgOCBjMCAtNC40MiAtMy41OCAtOCAtOCAtOCB6IiAvPgogICAgICAgICAgICAgICAgPC9zdmc+CiAgICAgICAgICAgICAgICA8c3BhbiBzdHlsZT17eyBmb250RmFtaWx5OiBGT05UX1NBTlMsIGZvbnRXZWlnaHQ6IDQwMCwgZm9udFNpemU6IDE4LCBjb2xvcjogVEVYVF9ESU0gfX0+CiAgICAgICAgICAgICAgICAgIEdpdEh1YiBBY3Rpb25zIMK3IFJ1biAjNDEyMDg4NTk0ODQKICAgICAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IG1hcmdpblRvcDogMzAsIHdpZHRoOiA2MDAsIGhlaWdodDogOCwgYm9yZGVyUmFkaXVzOiA0LCBiYWNrZ3JvdW5kQ29sb3I6ICdyZ2JhKDI1NSwyNTUsMjU1LDAuMDgpJyB9fT4KICAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9e3sgd2lkdGg6IDYwMCAqIGJhclAsIGhlaWdodDogOCwgYm9yZGVyUmFkaXVzOiA0LCBiYWNrZ3JvdW5kQ29sb3I6IEJMVUUgfX0gLz4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IG1hcmdpblRvcDogMzAsIGRpc3BsYXk6ICdmbGV4JywgZ2FwOiA0NCB9fT4KICAgICAgICAgICAgICAgIHtbJ0J1aWxkJywgJ1Rlc3QnLCAnRGVwbG95J10ubWFwKChzLCBpKSA9PiAoCiAgICAgICAgICAgICAgICAgIDxkaXYga2V5PXtzfSBzdHlsZT17eyBkaXNwbGF5OiAnZmxleCcsIGFsaWduSXRlbXM6ICdjZW50ZXInLCBnYXA6IDgsIGZvbnRGYW1pbHk6IEZPTlRfU0FOUywgZm9udFNpemU6IDE4LCBjb2xvcjogVEVYVF9ESU0gfX0+CiAgICAgICAgICAgICAgICAgICAgPHN2ZyB3aWR0aD17MTZ9IGhlaWdodD17MTZ9IHZpZXdCb3g9IjAgMCAxNiAxNiIgc3R5bGU9e3sgb3BhY2l0eTogc3RlcE9uKGkpID8gMSA6IDAuMTUgfX0+CiAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMiA4LjUgTDYgMTIuNSBMMTQgMy41IiBzdHJva2U9e0dSRUVOfSBzdHJva2VXaWR0aD17Mi41fSBmaWxsPSJub25lIiBzdHJva2VMaW5lY2FwPSJyb3VuZCIgLz4KICAgICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgICAgICB7c30KICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICApKX0KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L1NsYW0+CiAgICAgICAgPC9BYnNvbHV0ZUZpbGw+CiAgICAgICkgOiBudWxsfQoKICAgICAgey8qIOKUgOKUgCA4RCAxMTPigJMxNTDvvJpBbGwgY2hlY2tzIHBhc3NlZCDilIDilIAgKi99CiAgICAgIHtmID49IDExMyA/ICgKICAgICAgICA8QWJzb2x1dGVGaWxsCiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBgcmFkaWFsLWdyYWRpZW50KGNpcmNsZSBhdCA1MCUgNDUlLCByZ2JhKDMwLDYzLDQ2LDAuNCkgMCUsICR7QkdfREFSS30gNjglKWAsCiAgICAgICAgICB9fQogICAgICAgID4KICAgICAgICAgIDxTbGFtIHN0YXJ0PXsxMTN9PgogICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IHBvc2l0aW9uOiAnYWJzb2x1dGUnLCBsZWZ0OiAwLCByaWdodDogMCwgdG9wOiAzMjAsIGRpc3BsYXk6ICdmbGV4JywganVzdGlmeUNvbnRlbnQ6ICdjZW50ZXInIH19PgogICAgICAgICAgICAgIDxzdmcgd2lkdGg9ezIwMH0gaGVpZ2h0PXsyMDB9IHZpZXdCb3g9IjAgMCAyMDAgMjAwIj4KICAgICAgICAgICAgICAgIDxwYXRoCiAgICAgICAgICAgICAgICAgIGQ9e0dSRUVOX0NIRUNLX1BBVEh9CiAgICAgICAgICAgICAgICAgIHN0cm9rZT17R1JFRU59CiAgICAgICAgICAgICAgICAgIHN0cm9rZVdpZHRoPXsxOH0KICAgICAgICAgICAgICAgICAgZmlsbD0ibm9uZSIKICAgICAgICAgICAgICAgICAgc3Ryb2tlTGluZWNhcD0icm91bmQiCiAgICAgICAgICAgICAgICAgIHN0cm9rZUxpbmVqb2luPSJyb3VuZCIKICAgICAgICAgICAgICAgICAgc3Ryb2tlRGFzaGFycmF5PXsyMTB9CiAgICAgICAgICAgICAgICAgIHN0cm9rZURhc2hvZmZzZXQ9ezIxMCAqICgxIC0gY2xhbXAwMShkcmF3UCkpfQogICAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICAgICAgICBsZWZ0OiAwLAogICAgICAgICAgICAgICAgcmlnaHQ6IDAsCiAgICAgICAgICAgICAgICB0b3A6IDU4MCwKICAgICAgICAgICAgICAgIHRleHRBbGlnbjogJ2NlbnRlcicsCiAgICAgICAgICAgICAgICBmb250RmFtaWx5OiBGT05UX1NBTlMsCiAgICAgICAgICAgICAgICBmb250V2VpZ2h0OiA3MDAsCiAgICAgICAgICAgICAgICBmb250U2l6ZTogMzIsCiAgICAgICAgICAgICAgICBjb2xvcjogVEVYVCwKICAgICAgICAgICAgICB9fQogICAgICAgICAgICA+CiAgICAgICAgICAgICAgQWxsIGNoZWNrcyBwYXNzZWQKICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L1NsYW0+CiAgICAgICAgPC9BYnNvbHV0ZUZpbGw+CiAgICAgICkgOiBudWxsfQogICAgPC9BYnNvbHV0ZUZpbGw+CiAgKTsKfTsK
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { clamp01, EASE_EXPO_OUT, EASE_INOUT, lerpF, prog } from '../anim';
+import {
+  BG,
+  BG_8A_FROM,
+  BG_8A_TO,
+  BG_DARK,
+  BLUE,
+  FONT_MONO,
+  FONT_SANS,
+  GREEN,
+  GRAY,
+  SURFACE,
+  SURFACE_CARD,
+  SURFACE_CARD2,
+  TEXT,
+  TEXT_DIM,
+} from '../theme';
+
+// ============================================================================
+// 镜8 · 1050–1200 帧（35.0s–40.0s）四连快切 — brief-v3 §三【镜头 8】+ §一注
+// 30fps 四段切点（0.5 进位）：38/37/38/37 → 本地帧界 0 / 38 / 75 / 113 / 150。
+// 统一入场：scale(1.1→1.0) blur(6→0) opacity(0→1)，每段前 6 帧 expo-out。
+// 8C 进度条与 8D 绿勾绘制起点按 §三动效曲线节的 30fps 换算值落帧：
+// 进度条 1133–1145（区间标 1133–1148，动画 12 帧沿用原帧数，余量 hold，§〇-3）；
+// 绿勾绘制 1170–1182（同上）。
+// ============================================================================
+
+const CENTER = (w: number, h: number): React.CSSProperties => ({
+  position: 'absolute',
+  left: (1920 - w) / 2,
+  top: (1080 - h) / 2,
+  width: w,
+  height: h,
+});
+
+// 统一入场包壳：segStart 后 6 帧猛切进
+const Slam: React.FC<{ start: number; children: React.ReactNode; style?: React.CSSProperties }> = ({
+  start,
+  children,
+  style,
+}) => {
+  const f = useCurrentFrame();
+  const lf = f - start;
+  if (lf < 0) return null;
+  const p = prog(lf, 0, 6, EASE_EXPO_OUT);
+  return (
+    <div
+      style={{
+        position: 'absolute',
+        inset: 0,
+        transform: `scale(${1.1 - 0.1 * p})`,
+        filter: `blur(${(6 * (1 - p)).toFixed(2)}px)`,
+        opacity: p,
+        ...style,
+      }}
+    >
+      {children}
+    </div>
+  );
+};
+
+const GREEN_CHECK_PATH = 'M30 105 L82 155 L172 52';
+
+export const S8: React.FC = () => {
+  const f = useCurrentFrame();
+  const barP = lerpF(f, [83, 95], [0, 1]); // 8C 进度条：起点取 §三换算值 1133（本地 83），12 帧 linear，余量 hold
+  const drawP = prog(f, 120, 12, EASE_INOUT); // 8D 绿勾 stroke：起点 1170（本地 120），12 帧 ease-in-out
+  const stepOn = (i: number) => f >= 99 + i * 4; // 三个绿勾每 4 帧一个
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: BG }}>
+      {/* ── 8A 0–38：config diff 卡 ── */}
+      {f < 38 ? (
+        <AbsoluteFill style={{ background: `linear-gradient(180deg, ${BG_8A_FROM}, ${BG_8A_TO})` }}>
+          <Slam start={0}>
+            <div
+              style={{
+                ...CENTER(600, 200),
+                backgroundColor: SURFACE_CARD,
+                borderRadius: 12,
+                borderLeft: `4px solid ${GREEN}`,
+                padding: '30px 36px',
+                boxSizing: 'border-box',
+              }}
+            >
+              {/* §C 原文：两行均 #9CA3AF，删除/新增语义由左缘绿竖条承担，不自造红绿 */}
+              <div style={{ fontFamily: FONT_MONO, fontSize: 18, lineHeight: 2, color: TEXT_DIM, whiteSpace: 'pre' }}>
+                <div>-  --concurrency 8</div>
+                <div>+  --concurrency 4</div>
+              </div>
+              <div style={{ position: 'absolute', left: 36, bottom: 18, fontFamily: FONT_MONO, fontSize: 14, color: GRAY }}>
+                config/render.yml
+              </div>
+            </div>
+          </Slam>
+        </AbsoluteFill>
+      ) : null}
+
+      {/* ── 8B 38–75：Pushed to main ── */}
+      {f >= 38 && f < 75 ? (
+        <AbsoluteFill style={{ backgroundColor: BG_DARK }}>
+          <Slam start={38}>
+            <div
+              style={{
+                ...CENTER(700, 180),
+                backgroundColor: SURFACE,
+                borderRadius: 14,
+                display: 'flex',
+                alignItems: 'center',
+                gap: 26,
+                padding: '0 44px',
+                boxSizing: 'border-box',
+              }}
+            >
+              <div
+                style={{
+                  width: 56,
+                  height: 56,
+                  borderRadius: '50%',
+                  backgroundColor: 'rgba(46,107,240,0.14)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                <svg width={32} height={32} viewBox="0 0 32 32">
+                  <path d="M16 27 L16 6 M7 15 L16 6 L25 15" stroke={BLUE} strokeWidth={3.5} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+              <div>
+                <div style={{ fontFamily: FONT_SANS, fontWeight: 500, fontSize: 24, color: TEXT }}>Pushed to main</div>
+                <div style={{ fontFamily: FONT_MONO, fontSize: 16, color: GRAY, marginTop: 8 }}>0a4cb43</div>
+              </div>
+            </div>
+          </Slam>
+        </AbsoluteFill>
+      ) : null}
+
+      {/* ── 8C 75–113：GitHub Actions 进度 ── */}
+      {f >= 75 && f < 113 ? (
+        <AbsoluteFill style={{ backgroundColor: BG_DARK }}>
+          <Slam start={75}>
+            <div
+              style={{
+                ...CENTER(800, 240),
+                backgroundColor: SURFACE_CARD2,
+                borderRadius: 14,
+                padding: '28px 40px',
+                boxSizing: 'border-box',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                <svg width={16} height={16} viewBox="0 0 16 16" fill="#C9D1D9">
+                  {/* mark-github（octicons）路径，数字间全部空格分隔：SVG 合法写法，
+                      紧凑连写会被 §六 IP 红线 grep 误伤（小数连排形如 IP），故拆开 */}
+                  <path d="M8 0 C3.58 0 0 3.58 0 8 c0 3.54 2.29 6.53 5.47 7.59 .4 .07 .55 -.17 .55 -.38 0 -.19 -.01 -.82 -.01 -1.49 -2.01 .37 -2.53 -.49 -2.69 -.94 -.09 -.23 -.48 -.94 -.82 -1.13 -.28 -.15 -.68 -.52 -.01 -.53 .63 -.01 1.08 .58 1.23 .82 .72 1.21 1.87 .87 2.33 .66 .07 -.52 .28 -.87 .51 -1.07 -1.78 -.2 -3.64 -.89 -3.64 -3.95 0 -.87 .31 -1.59 .82 -2.15 -.08 -.2 -.36 -1.02 .08 -2.12 0 0 .67 -.21 2.2 .82 .64 -.18 1.32 -.27 2 -.27 s1.36 .09 2 .27 c1.53 -1.04 2.2 -.82 2.2 -.82 .44 1.1 .16 1.92 .08 2.12 .51 .56 .82 1.27 .82 2.15 0 3.07 -1.87 3.75 -3.65 3.95 .29 .25 .54 .73 .54 1.48 0 1.07 -.01 1.93 -.01 2.2 0 .21 .15 .46 .55 .38 A8.01 8.01 0 0 0 16 8 c0 -4.42 -3.58 -8 -8 -8 z" />
+                </svg>
+                <span style={{ fontFamily: FONT_SANS, fontWeight: 400, fontSize: 18, color: TEXT_DIM }}>
+                  GitHub Actions · Run #41208859484
+                </span>
+              </div>
+              <div style={{ marginTop: 30, width: 600, height: 8, borderRadius: 4, backgroundColor: 'rgba(255,255,255,0.08)' }}>
+                <div style={{ width: 600 * barP, height: 8, borderRadius: 4, backgroundColor: BLUE }} />
+              </div>
+              <div style={{ marginTop: 30, display: 'flex', gap: 44 }}>
+                {['Build', 'Test', 'Deploy'].map((s, i) => (
+                  <div key={s} style={{ display: 'flex', alignItems: 'center', gap: 8, fontFamily: FONT_SANS, fontSize: 18, color: TEXT_DIM }}>
+                    <svg width={16} height={16} viewBox="0 0 16 16" style={{ opacity: stepOn(i) ? 1 : 0.15 }}>
+                      <path d="M2 8.5 L6 12.5 L14 3.5" stroke={GREEN} strokeWidth={2.5} fill="none" strokeLinecap="round" />
+                    </svg>
+                    {s}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Slam>
+        </AbsoluteFill>
+      ) : null}
+
+      {/* ── 8D 113–150：All checks passed ── */}
+      {f >= 113 ? (
+        <AbsoluteFill
+          style={{
+            background: `radial-gradient(circle at 50% 45%, rgba(30,63,46,0.4) 0%, ${BG_DARK} 68%)`,
+          }}
+        >
+          <Slam start={113}>
+            <div style={{ position: 'absolute', left: 0, right: 0, top: 320, display: 'flex', justifyContent: 'center' }}>
+              <svg width={200} height={200} viewBox="0 0 200 200">
+                <path
+                  d={GREEN_CHECK_PATH}
+                  stroke={GREEN}
+                  strokeWidth={18}
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeDasharray={210}
+                  strokeDashoffset={210 * (1 - clamp01(drawP))}
+                />
+              </svg>
+            </div>
+            <div
+              style={{
+                position: 'absolute',
+                left: 0,
+                right: 0,
+                top: 580,
+                textAlign: 'center',
+                fontFamily: FONT_SANS,
+                fontWeight: 700,
+                fontSize: 32,
+                color: TEXT,
+              }}
+            >
+              All checks passed
+            </div>
+          </Slam>
+        </AbsoluteFill>
+      ) : null}
+    </AbsoluteFill>
+  );
+};

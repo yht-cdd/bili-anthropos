@@ -1,1 +1,141 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IGJsaW5rLCBleGl0RmFkZSwgcHJvZywgbGVycEYgfSBmcm9tICcuLi9hbmltJzsKaW1wb3J0IHsKICBDT1JBTCwKICBFUlJPUiwKICBGT05UX1NBTlMsCiAgU1VCX1NBRkVfQk9UVE9NLAogIFRFWFQsCn0gZnJvbSAnLi4vdGhlbWUnOwppbXBvcnQgeyBUZXJtaW5hbCB9IGZyb20gJy4vVGVybWluYWwnOwoKLy8gUzIg5a6a5LmJ77yI5YWo5bGA5binIDEyMOKAkzI5Oe+8jOacrOWcsOW4pyA9IOWFqOWxgCAtIDEyMO+8icK3IGJyaWVmIHYyLjEg5Li75Lq65bin57qn5L+u6K6iCi8vIDDigJM2ICAgICDlgJLluKbmqKHns4ogYmx1ciAxMOKGkjDvvIhzZnggcmV3aW5kIEAg5YWo5bGAIDEyMO+8jFIzIOiQvemfs+mike+8iQovLyA24oCTMTA4ICAg5LiJ6KGM5aSn5a2XIDEyMHB477yIdjIg55qEIDI0MHB4IOWcqCAxOTIwIOWuveaUvuS4jeS4i+WNleihjO+8ieOAggovLyAgICAgICAgIOi1t+eCuSDlhajlsYAgMTI2LzE2MC8xOTQgPSDmnKzlnLAgNi80MC83NO+8jOavj+ihjCA4IOWFpeWcuiArIDI0IOWBnOeVmSArIDIg6Ze06ZqUID0gMzQg5bin44CCCi8vICAgICAgICAg6KGM5YaF57Sv56ev5L+d55WZ77ya5YWl5Zy65ZCO5LiN5raI5aSx77yM6YCQ6KGM5Y+g5Yqg77yI5YWo5bGAIDIyOOKAkzI0MCDmlbTnu4TpgIDlnLrvvIzooZTmjqXkuIvkuIDmi43vvIkKLy8g44CM5Zuw5Zyo44CN5Yig6Zmk57q/77ya56ysIDIg6KGM5YWl5Zy65binICsxOO+8iOWFqOWxgCAxNzggPSDmnKzlnLAgNTjvvInotbfvvIw4IOW4p+WIkuWHuu+8jCNFNTQ4NEQgNnB4Ci8vIDEyMOKAkzE4MCDlubLlh4Dnu4jnq6/ph43njrDvvIzlhYnmoIcgMiDpl6rvvJvlupXpg6jlrZfluZUgMTAg5bin5LiK5rWu44CM5oiR5Y+q6ZyA6KaB6K+05Lq66K+d44CNCmNvbnN0IExJTkVTID0gWyflroPkuI3mmK/ogYrlpKnmoYbjgIInLCAn6IGK5aSp5qGG6KKr5Zuw5Zyo572R6aG16YeM44CCJywgJ+Wug+S9j+WcqOaIkeiHquW3seeahOiuvuWkh+S4iuOAgiddOwpjb25zdCBMSU5FX1NUQVJUID0gWzYsIDQwLCA3NF07IC8vIOacrOWcsOW4p++8iOWFqOWxgCAxMjYvMTYwLzE5NO+8iQpjb25zdCBMSU5FX1BYID0gMTIwOyAvLyB2Mi4x77ya5a2X6auYIDEyMHB4CmNvbnN0IExJTkVfRU5URVIgPSA4OyAvLyB2Mi4x77ya5q+P6KGMIDgg5bin5YWl5Zy6CmNvbnN0IFNUUklLRV9TVEFSVCA9IDU4OyAvLyDmnKzlnLDvvJrooYwyIOi1t+eCuSA0MCArIDE4CmNvbnN0IFNUUklLRV9EVVIgPSA4OwoKZXhwb3J0IGNvbnN0IFMyOiBSZWFjdC5GQyA9ICgpID0+IHsKICBjb25zdCBmcmFtZSA9IHVzZUN1cnJlbnRGcmFtZSgpOwoKICAvLyDlgJLluKbmqKHns4rvvJrmlbTnu4TlrrnlmaggMOKAkzYg5binIGJsdXIgMTDihpIwCiAgY29uc3QgYmx1ciA9IGxlcnBGKGZyYW1lLCBbMCwgNl0sIFsxMCwgMF0pOwogIGNvbnN0IGxpbmVzT3V0ID0gZnJhbWUgPj0gMTA4ID8gZXhpdEZhZGUoZnJhbWUsIDEwOCwgMTIpIDoge307IC8vIDIyOOKGkjI0MCDpgIDlnLoKICBjb25zdCB0ZXJtSW4gPSBmcmFtZSA+PSAxMjA7CiAgY29uc3QgcHVzaCA9IHByb2coZnJhbWUsIDEyMCwgOCk7CiAgY29uc3QgY3VyQmxpbmsgPSBibGluayhmcmFtZSwgMTMyLCAzKTsgLy8g5YWJ5qCHIDIg6ZeqCiAgY29uc3Qgc3ViU3R5bGUgPSBwcm9nKGZyYW1lLCAxNDAsIDEwKTsgLy8g5bqV6YOo5a2X5bmVIDEwIOW4p+S4iua1rgoKICAvLyDjgIzlm7DlnKjjgI3liKDpmaTnur/lrr3luqYgMOKGkjEwMCUKICBjb25zdCBzdHJpa2UgPSBwcm9nKGZyYW1lLCBTVFJJS0VfU1RBUlQsIFNUUklLRV9EVVIpOwoKICByZXR1cm4gKAogICAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBiYWNrZ3JvdW5kQ29sb3I6ICcjMDAwJywgZm9udEZhbWlseTogRk9OVF9TQU5TIH19PgogICAgICB7LyogNuKAkzI0MO+8muS4ieihjOWkp+Wtl++8iOe0r+enr+S/neeVme+8iSAqL30KICAgICAge2ZyYW1lIDwgMjQwID8gKAogICAgICAgIDxBYnNvbHV0ZUZpbGwKICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgIGp1c3RpZnlDb250ZW50OiAnY2VudGVyJywKICAgICAgICAgICAgYWxpZ25JdGVtczogJ2NlbnRlcicsCiAgICAgICAgICAgIGZpbHRlcjogYGJsdXIoJHtNYXRoLm1heCgwLCBibHVyKX1weClgLAogICAgICAgICAgICAuLi5saW5lc091dCwKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAgPGRpdiBzdHlsZT17eyB0ZXh0QWxpZ246ICdsZWZ0JyB9fT4KICAgICAgICAgICAge0xJTkVTLm1hcCgobGluZSwgaSkgPT4gewogICAgICAgICAgICAgIGNvbnN0IHAgPSBwcm9nKGZyYW1lLCBMSU5FX1NUQVJUW2ldLCBMSU5FX0VOVEVSKTsKICAgICAgICAgICAgICBjb25zdCB2aXNpYmxlID0gZnJhbWUgPj0gTElORV9TVEFSVFtpXTsKICAgICAgICAgICAgICByZXR1cm4gKAogICAgICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgICAgICBrZXk9e2xpbmV9CiAgICAgICAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgICAgICAgZm9udFNpemU6IExJTkVfUFgsCiAgICAgICAgICAgICAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgICAgICAgICAgICAgIGxpbmVIZWlnaHQ6IDEuMzUsCiAgICAgICAgICAgICAgICAgICAgY29sb3I6IFRFWFQsCiAgICAgICAgICAgICAgICAgICAgb3BhY2l0eTogcCwKICAgICAgICAgICAgICAgICAgICB0cmFuc2Zvcm06IGB0cmFuc2xhdGVZKCR7KDEgLSBwKSAqIDQwfXB4KWAsCiAgICAgICAgICAgICAgICAgICAgdmlzaWJpbGl0eTogdmlzaWJsZSA/ICd2aXNpYmxlJyA6ICdoaWRkZW4nLAogICAgICAgICAgICAgICAgICAgIHdoaXRlU3BhY2U6ICdub3dyYXAnLAogICAgICAgICAgICAgICAgICB9fQogICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICB7aSA9PT0gMSA/ICgKICAgICAgICAgICAgICAgICAgICA8PgogICAgICAgICAgICAgICAgICAgICAgeyfogYrlpKnmoYbooqsnfQogICAgICAgICAgICAgICAgICAgICAgPHNwYW4gc3R5bGU9e3sgcG9zaXRpb246ICdyZWxhdGl2ZScgfX0+CiAgICAgICAgICAgICAgICAgICAgICAgIHsn5Zuw5ZyoJ30KICAgICAgICAgICAgICAgICAgICAgICAgey8qIOWIoOmZpOe6v++8miNFNTQ4NEQgNnB477yMOCDluKfku47lt6bliJLliLDlj7MgKi99CiAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuCiAgICAgICAgICAgICAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgbGVmdDogJy0yJScsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICB0b3A6ICc1NCUnLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiA2LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgd2lkdGg6IGAke3N0cmlrZSAqIDEwNH0lYCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogRVJST1IsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6IDMsCiAgICAgICAgICAgICAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgICAgICAgICAgIHsn572R6aG16YeM44CCJ30KICAgICAgICAgICAgICAgICAgICA8Lz4KICAgICAgICAgICAgICAgICAgKSA6ICgKICAgICAgICAgICAgICAgICAgICBsaW5lCiAgICAgICAgICAgICAgICAgICl9CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICApOwogICAgICAgICAgICB9KX0KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvQWJzb2x1dGVGaWxsPgogICAgICApIDogbnVsbH0KCiAgICAgIHsvKiAyNDDigJMyOTnvvJrlubLlh4Dnu4jnq6/ph43njrAgKyDlupXpg6jlrZfluZUgKi99CiAgICAgIHt0ZXJtSW4gPyAoCiAgICAgICAgPD4KICAgICAgICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sganVzdGlmeUNvbnRlbnQ6ICdjZW50ZXInLCBhbGlnbkl0ZW1zOiAnY2VudGVyJyB9fT4KICAgICAgICAgICAgPFRlcm1pbmFsIHN0eWxlPXt7IG9wYWNpdHk6IHB1c2gsIHRyYW5zZm9ybTogYHRyYW5zbGF0ZVkoJHsoMSAtIHB1c2gpICogLTQwfXB4KWAgfX0+CiAgICAgICAgICAgICAgey8qIOepuuWRveS7pOihjO+8muaPkOekuuespiArIOmXqueDgeWFieaghyAqL30KICAgICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGRpc3BsYXk6ICdmbGV4JywgYWxpZ25JdGVtczogJ2NlbnRlcicgfX0+CiAgICAgICAgICAgICAgICA8c3BhbiBzdHlsZT17eyBjb2xvcjogQ09SQUwgfX0+YW50aHJvcG9zQGxvY2FsPC9zcGFuPgogICAgICAgICAgICAgICAgPHNwYW4gc3R5bGU9e3sgY29sb3I6IFRFWFR9fT57JyAkICd9PC9zcGFuPgogICAgICAgICAgICAgICAgPHNwYW4KICAgICAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiAnaW5saW5lLWJsb2NrJywKICAgICAgICAgICAgICAgICAgICB3aWR0aDogMjIsCiAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiA0NCwKICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6IGN1ckJsaW5rICYmIGZyYW1lIDwgMTUwID8gVEVYVCA6ICd0cmFuc3BhcmVudCcsCiAgICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L1Rlcm1pbmFsPgogICAgICAgICAgPC9BYnNvbHV0ZUZpbGw+CiAgICAgICAgICA8ZGl2CiAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICAgICAgbGVmdDogMCwKICAgICAgICAgICAgICByaWdodDogMCwKICAgICAgICAgICAgICBib3R0b206IFNVQl9TQUZFX0JPVFRPTSwKICAgICAgICAgICAgICB0ZXh0QWxpZ246ICdjZW50ZXInLAogICAgICAgICAgICAgIGZvbnRTaXplOiA1NiwKICAgICAgICAgICAgICBmb250V2VpZ2h0OiA3MDAsCiAgICAgICAgICAgICAgY29sb3I6IFRFWFQsCiAgICAgICAgICAgICAgb3BhY2l0eTogc3ViU3R5bGUsCiAgICAgICAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWSgkeygxIC0gc3ViU3R5bGUpICogMzB9cHgpYCwKICAgICAgICAgICAgfX0KICAgICAgICAgID4KICAgICAgICAgICAg5oiR5Y+q6ZyA6KaB6K+05Lq66K+dCiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8Lz4KICAgICAgKSA6IG51bGx9CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9Owo=
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { blink, exitFade, prog, lerpF } from '../anim';
+import {
+  CORAL,
+  ERROR,
+  FONT_SANS,
+  SUB_SAFE_BOTTOM,
+  TEXT,
+} from '../theme';
+import { Terminal } from './Terminal';
+
+// S2 定义（全局帧 120–299，本地帧 = 全局 - 120）· brief v2.1 主人帧级修订
+// 0–6     倒带模糊 blur 10→0（sfx rewind @ 全局 120，R3 落音频）
+// 6–108   三行大字 120px（v2 的 240px 在 1920 宽放不下单行）。
+//         起点 全局 126/160/194 = 本地 6/40/74，每行 8 入场 + 24 停留 + 2 间隔 = 34 帧。
+//         行内累积保留：入场后不消失，逐行叠加（全局 228–240 整组退场，衔接下一拍）
+// 「困在」删除线：第 2 行入场帧 +18（全局 178 = 本地 58）起，8 帧划出，#E5484D 6px
+// 120–180 干净终端重现，光标 2 闪；底部字幕 10 帧上浮「我只需要说人话」
+const LINES = ['它不是聊天框。', '聊天框被困在网页里。', '它住在我自己的设备上。'];
+const LINE_START = [6, 40, 74]; // 本地帧（全局 126/160/194）
+const LINE_PX = 120; // v2.1：字高 120px
+const LINE_ENTER = 8; // v2.1：每行 8 帧入场
+const STRIKE_START = 58; // 本地：行2 起点 40 + 18
+const STRIKE_DUR = 8;
+
+export const S2: React.FC = () => {
+  const frame = useCurrentFrame();
+
+  // 倒带模糊：整组容器 0–6 帧 blur 10→0
+  const blur = lerpF(frame, [0, 6], [10, 0]);
+  const linesOut = frame >= 108 ? exitFade(frame, 108, 12) : {}; // 228→240 退场
+  const termIn = frame >= 120;
+  const push = prog(frame, 120, 8);
+  const curBlink = blink(frame, 132, 3); // 光标 2 闪
+  const subStyle = prog(frame, 140, 10); // 底部字幕 10 帧上浮
+
+  // 「困在」删除线宽度 0→100%
+  const strike = prog(frame, STRIKE_START, STRIKE_DUR);
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: '#000', fontFamily: FONT_SANS }}>
+      {/* 6–240：三行大字（累积保留） */}
+      {frame < 240 ? (
+        <AbsoluteFill
+          style={{
+            justifyContent: 'center',
+            alignItems: 'center',
+            filter: `blur(${Math.max(0, blur)}px)`,
+            ...linesOut,
+          }}
+        >
+          <div style={{ textAlign: 'left' }}>
+            {LINES.map((line, i) => {
+              const p = prog(frame, LINE_START[i], LINE_ENTER);
+              const visible = frame >= LINE_START[i];
+              return (
+                <div
+                  key={line}
+                  style={{
+                    fontSize: LINE_PX,
+                    fontWeight: 700,
+                    lineHeight: 1.35,
+                    color: TEXT,
+                    opacity: p,
+                    transform: `translateY(${(1 - p) * 40}px)`,
+                    visibility: visible ? 'visible' : 'hidden',
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  {i === 1 ? (
+                    <>
+                      {'聊天框被'}
+                      <span style={{ position: 'relative' }}>
+                        {'困在'}
+                        {/* 删除线：#E5484D 6px，8 帧从左划到右 */}
+                        <span
+                          style={{
+                            position: 'absolute',
+                            left: '-2%',
+                            top: '54%',
+                            height: 6,
+                            width: `${strike * 104}%`,
+                            backgroundColor: ERROR,
+                            borderRadius: 3,
+                          }}
+                        />
+                      </span>
+                      {'网页里。'}
+                    </>
+                  ) : (
+                    line
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </AbsoluteFill>
+      ) : null}
+
+      {/* 240–299：干净终端重现 + 底部字幕 */}
+      {termIn ? (
+        <>
+          <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+            <Terminal style={{ opacity: push, transform: `translateY(${(1 - push) * -40}px)` }}>
+              {/* 空命令行：提示符 + 闪烁光标 */}
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <span style={{ color: CORAL }}>anthropos@local</span>
+                <span style={{ color: TEXT}}>{' $ '}</span>
+                <span
+                  style={{
+                    display: 'inline-block',
+                    width: 22,
+                    height: 44,
+                    backgroundColor: curBlink && frame < 150 ? TEXT : 'transparent',
+                  }}
+                />
+              </div>
+            </Terminal>
+          </AbsoluteFill>
+          <div
+            style={{
+              position: 'absolute',
+              left: 0,
+              right: 0,
+              bottom: SUB_SAFE_BOTTOM,
+              textAlign: 'center',
+              fontSize: 56,
+              fontWeight: 700,
+              color: TEXT,
+              opacity: subStyle,
+              transform: `translateY(${(1 - subStyle) * 30}px)`,
+            }}
+          >
+            我只需要说人话
+          </div>
+        </>
+      ) : null}
+    </AbsoluteFill>
+  );
+};

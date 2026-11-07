@@ -1,1 +1,23 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgRk9OVF9NT05PLCBHUkFZIH0gZnJvbSAnLi4vdGhlbWUnOwoKLy8g5Y+z5LiL6KeS5pe26Ze05oizIOKAlCBicmllZi12MyDplZwzLzQvNSDnu5PlsL7mi43vvIhbMjI6MTRdIC8gWzIxOjQ3XSAvIFsyMzowOF3vvInjgIIKLy8gSmV0QnJhaW5zIE1vbm8gMThweCAjNkI3Mjgw77yM5Y+z5LiL6KeS77yMb3BhY2l0eSDnlLHplZzmlofku7bpqbHliqjjgIIKZXhwb3J0IGNvbnN0IFRpbWVzdGFtcDogUmVhY3QuRkM8ewogIHRleHQ6IHN0cmluZzsKICBvcGFjaXR5OiBudW1iZXI7Cn0+ID0gKHsgdGV4dCwgb3BhY2l0eSB9KSA9PiAoCiAgPGRpdgogICAgc3R5bGU9e3sKICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgIHJpZ2h0OiAxMjAsCiAgICAgIGJvdHRvbTogOTYsCiAgICAgIGZvbnRGYW1pbHk6IEZPTlRfTU9OTywKICAgICAgZm9udFNpemU6IDE4LAogICAgICBjb2xvcjogR1JBWSwKICAgICAgb3BhY2l0eSwKICAgIH19CiAgPgogICAge3RleHR9CiAgPC9kaXY+Cik7Cg==
+import React from 'react';
+import { FONT_MONO, GRAY } from '../theme';
+
+// 右下角时间戳 — brief-v3 镜3/4/5 结尾拍（[22:14] / [21:47] / [23:08]）。
+// JetBrains Mono 18px #6B7280，右下角，opacity 由镜文件驱动。
+export const Timestamp: React.FC<{
+  text: string;
+  opacity: number;
+}> = ({ text, opacity }) => (
+  <div
+    style={{
+      position: 'absolute',
+      right: 120,
+      bottom: 96,
+      fontFamily: FONT_MONO,
+      fontSize: 18,
+      color: GRAY,
+      opacity,
+    }}
+  >
+    {text}
+  </div>
+);

@@ -1,1 +1,116 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IGJsaW5rLCBwcm9nLCB0eXBlZCB9IGZyb20gJy4uL2FuaW0nOwppbXBvcnQgeyBGT05UX1NBTlMsIFNVQl9TQUZFX0JPVFRPTSwgVEVYVCwgVFlQRV9DUFMgfSBmcm9tICcuLi90aGVtZSc7CmltcG9ydCB7IEVycm9yQmxvY2sgfSBmcm9tICcuL0Vycm9yQmxvY2snOwppbXBvcnQgeyBUZXJtaW5hbCwgVGVybUxpbmUgfSBmcm9tICcuL1Rlcm1pbmFsJzsKCi8vIFMxIOmSqeWtkMK357+76L2m77yI5YWo5bGA5binIDDigJMxMTnvvIzmnKzlnLDluKfku44gMCDotbfvvIkKLy8gMOKAkzMwICAg5YWo6buR77yIc2Z4IGVycm9yIOmHjeWHuyBAOSDigJTigJQg6Z+z6aKR5ZyoIFIzIOeahCBhdWRpbyBwbGFuIOmHjOiQve+8iQovLyAzMOKAkzYwICDnu4jnq68gOCDluKfmjqjlhaXvvIh5IC00MOKGkjAgKyBvcGFjaXR5IDDihpIx77yJ77yM5ZG95Luk6KGMIDI0IOW4p+aJk+Wtl++8jOWFieaghyAyIOmXquWQjuWbnui9pgovLyA2MOKAkzkwICDmlbTlsY/nuqIg4pyWIEVSUk9S77yMc2NhbGUgMS4w4oaSMS4wNu+8iDYg5bin5ZCOIGhvbGTvvInvvIzlupXlhYnlkbzlkLjkuIDmrKEKLy8gOTDigJMxMjAg55S76Z2i5Y6L5pqX6IezIDMwJe+8jOS4reWkruaJk+Wtl+acuuWtl+W5le+8iDMyIOWtly9z77yJCmNvbnN0IENNRCA9ICducG0gcnVuIHJlbmRlciAtLXNjZW5lIFM0JzsKY29uc3QgU1VCID0gJ+Wuo+S8oOeJh+aLjeWIsOS4gOWNiu+8jOWug+aKiua8lOekuuaQnueguOS6huOAgic7CgpleHBvcnQgY29uc3QgUzE6IFJlYWN0LkZDID0gKCkgPT4gewogIGNvbnN0IGZyYW1lID0gdXNlQ3VycmVudEZyYW1lKCk7CgogIC8vIOKAlOKAlCDnu4jnq6/pmLbmrrUgMzDigJM2MCDigJTigJQKICAvLyDmjqjlhaUgOCDluKfvvIgzMOKAkzM477yJ77yb5omT5a2XIDI0IOW4p+S7jiAzMiDotbfvvIjkuI7mjqjlhaXlsL7ph43lj6DvvIzlkKbliJkgOCsyNCDmlL7kuI3kuIsgMzAg5bin55qE56qX5Y+j77yJCiAgY29uc3QgcHVzaCA9IHByb2coZnJhbWUsIDMwLCA4KTsgLy8gMOKGkjHvvIwzMCDluKfliY3kuLogMAogIGNvbnN0IHR5cGluZyA9IGZyYW1lID49IDMyICYmIGZyYW1lIDwgNjA7CiAgY29uc3QgbkNoYXJzID0gdHlwZWRJbkNtZChmcmFtZSk7CiAgLy8gNTbigJM2MCDlhYnmoIcgMiDpl6rvvIjljYrlkajmnJ8gMiDluKfvvJrkuq7nga3kuq7nga3vvInvvIw2MCDliIcgRVJST1IgPSDjgIzlm57ovabjgI0KICBjb25zdCBjdXJCbGluayA9IGZyYW1lID49IDU2ID8gYmxpbmsoZnJhbWUsIDU2LCAyKSA6IGJsaW5rKGZyYW1lLCAzMiwgNSk7CgogIC8vIOKAlOKAlCBFUlJPUiDpmLbmrrUgNjDigJM5MO+8iOW6leWFieWRvOWQuOW7tue7reWIsOWOi+aal+WxguS5i+S4i++8ieKAlOKAlAogIGNvbnN0IGVyck9uID0gZnJhbWUgPj0gNjA7CiAgY29uc3QgZXJyU2NhbGUgPSAxICsgMC4wNiAqIHByb2coZnJhbWUsIDYwLCA2KTsgLy8gNiDluKfliLAgMS4wNiDlkI4gaG9sZAogIGNvbnN0IGJyZWF0aGUgPSBmcmFtZSA+PSA2MCAmJiBmcmFtZSA8IDkwID8gTWF0aC5zaW4oTWF0aC5QSSAqICgoZnJhbWUgLSA2MCkgLyAzMCkpIDogMDsKCiAgLy8g4oCU4oCUIOWOi+aal+mYtuautSA5MOKAkzEyMO+8muS6ruW6puWOi+iHsyAzMCUg4oeSIOm7kee9qSA3MCUg4oCU4oCUCiAgY29uc3QgZGltID0gZnJhbWUgPj0gOTAgPyBwcm9nKGZyYW1lLCA5MCwgOCkgKiAwLjcgOiAwOwogIGNvbnN0IHN1YkNoYXJzID0gZnJhbWUgPj0gOTIgPyB0eXBlZChmcmFtZSwgOTIsIFNVQi5sZW5ndGgsIFRZUEVfQ1BTKSA6IDA7CgogIHJldHVybiAoCiAgICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGJhY2tncm91bmRDb2xvcjogJyMwMDAnLCBmb250RmFtaWx5OiBGT05UX1NBTlMgfX0+CiAgICAgIHtmcmFtZSA+PSAzMCAmJiBmcmFtZSA8IDYwID8gKAogICAgICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sganVzdGlmeUNvbnRlbnQ6ICdjZW50ZXInLCBhbGlnbkl0ZW1zOiAnY2VudGVyJyB9fT4KICAgICAgICAgIDxUZXJtaW5hbAogICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgIG9wYWNpdHk6IHB1c2gsCiAgICAgICAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWSgkeygxIC0gcHVzaCkgKiAtNDB9cHgpYCwKICAgICAgICAgICAgfX0KICAgICAgICAgID4KICAgICAgICAgICAgPFRlcm1MaW5lPgogICAgICAgICAgICAgIHt0eXBpbmcgPyBDTUQuc2xpY2UoMCwgbkNoYXJzKSA6ICdcdTAwQTAnfQogICAgICAgICAgICAgIDxzcGFuCiAgICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgICBkaXNwbGF5OiAnaW5saW5lLWJsb2NrJywKICAgICAgICAgICAgICAgICAgd2lkdGg6IDIyLAogICAgICAgICAgICAgICAgICBoZWlnaHQ6IDQ0LAogICAgICAgICAgICAgICAgICBtYXJnaW5MZWZ0OiA2LAogICAgICAgICAgICAgICAgICB2ZXJ0aWNhbEFsaWduOiAnbWlkZGxlJywKICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiBjdXJCbGluayA/IFRFWFQgOiAndHJhbnNwYXJlbnQnLAogICAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgICAvPgogICAgICAgICAgICA8L1Rlcm1MaW5lPgogICAgICAgICAgPC9UZXJtaW5hbD4KICAgICAgICA8L0Fic29sdXRlRmlsbD4KICAgICAgKSA6IG51bGx9CgogICAgICB7ZXJyT24gPyAoCiAgICAgICAgPEVycm9yQmxvY2sKICAgICAgICAgIHNjYWxlPXtlcnJTY2FsZX0KICAgICAgICAgIGdsb3c9e2ZyYW1lIDwgOTAgPyBicmVhdGhlIDogMC4zNX0KICAgICAgICAvPgogICAgICApIDogbnVsbH0KCiAgICAgIHtmcmFtZSA+PSA5MCA/ICgKICAgICAgICA8PgogICAgICAgICAgey8qIOWOi+aal+iHsyAzMCUgKi99CiAgICAgICAgICA8ZGl2IHN0eWxlPXt7IHBvc2l0aW9uOiAnYWJzb2x1dGUnLCBpbnNldDogMCwgYmFja2dyb3VuZENvbG9yOiBgcmdiYSgwLDAsMCwke2RpbX0pYCB9fSAvPgogICAgICAgICAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBqdXN0aWZ5Q29udGVudDogJ2NlbnRlcicsIGFsaWduSXRlbXM6ICdjZW50ZXInIH19PgogICAgICAgICAgICB7Lyog5omT5a2X5py65a2X5bmV77yaUjYg5LuO44CM55S76Z2i5q2j5Lit44CN5LiL56e75Yiw5a2X5bmV5a6J5YWo5Yy65bqV6YOo44CCCiAgICAgICAgICAgICAgICDljp/kvY3nva7vvIhqdXN0aWZ5Q29udGVudDpjZW50ZXLvvInmraPlpb3ljovlnKggRVJST1Ig6YKj6KGM57qi5a2X5LiK4oCU4oCU5Lit5paH55m95a2X5Y+g5ZyoCiAgICAgICAgICAgICAgICDjgIx0YXNrIGZhaWxlZCBhZnRlciAzIHJldHJpZXPjgI3kuK3pl7TvvIzkuIDnnLzlsLHmmK8gYnVn77yI5binIDEwMCDlrp7mtYvvvInjgIIKICAgICAgICAgICAgICAgIGJyaWVmIOWGmeOAjOS4reWkruOAje+8jOS9hui/memHjOS4reWkriA9IOWPoOWtl++8jOWKqOaViOacjeS7juWPr+ivu+aAp++8mgogICAgICAgICAgICAgICAg5a2X5bmV5bqV6L65IFNVQl9TQUZFX0JPVFRPTT0xMjDvvIw1NnB4IOWtlyDihpIg6aG26L65IDEwODAtMTIwLTcy4omIODg477yMCiAgICAgICAgICAgICAgICBFUlJPUiDooYwgODRweCDlsYXkuK0g4oaSIOW6lei+uSA1NDArNDI9NTgy77yM6Ze06LedIOKJiDMwNnB477yI6L+c6LaFIDI0cHgg5LiL6ZmQ77yJ44CCICovfQogICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgICAgICAgbGVmdDogMCwKICAgICAgICAgICAgICAgIHJpZ2h0OiAwLAogICAgICAgICAgICAgICAgYm90dG9tOiBTVUJfU0FGRV9CT1RUT00sCiAgICAgICAgICAgICAgICB0ZXh0QWxpZ246ICdjZW50ZXInLAogICAgICAgICAgICAgICAgZm9udFNpemU6IDU2LAogICAgICAgICAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgICAgICAgICAgY29sb3I6IFRFWFQsCiAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIHtTVUIuc2xpY2UoMCwgc3ViQ2hhcnMpfQogICAgICAgICAgICAgIHtzdWJDaGFycyA8IFNVQi5sZW5ndGggPyAoCiAgICAgICAgICAgICAgICA8c3BhbgogICAgICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgICAgIG9wYWNpdHk6IGJsaW5rKGZyYW1lLCA5MiwgNCksCiAgICAgICAgICAgICAgICAgICAgYm9yZGVyTGVmdDogYDVweCBzb2xpZCAke1RFWFR9YCwKICAgICAgICAgICAgICAgICAgICBtYXJnaW5MZWZ0OiA2LAogICAgICAgICAgICAgICAgICB9fQogICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICB7J1x1MDBBMCd9CiAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgKSA6IG51bGx9CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9BYnNvbHV0ZUZpbGw+CiAgICAgICAgPC8+CiAgICAgICkgOiBudWxsfQogICAgPC9BYnNvbHV0ZUZpbGw+CiAgKTsKfTsKCi8vIOaJk+WtlyAyNCDluKfmiZPlrowgQ01E77yI4omIMzIuNSDlrZcvc++8jOS4juiKguWlj+S7pCAzMiDlrZcvcyDkuIDoh7TvvIkKZnVuY3Rpb24gdHlwZWRJbkNtZChmcmFtZTogbnVtYmVyKTogbnVtYmVyIHsKICByZXR1cm4gTWF0aC5taW4oQ01ELmxlbmd0aCwgTWF0aC5tYXgoMCwgTWF0aC5mbG9vcigoKGZyYW1lIC0gMzIpICogQ01ELmxlbmd0aCkgLyAyNCkpKTsKfQo=
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { blink, prog, typed } from '../anim';
+import { FONT_SANS, SUB_SAFE_BOTTOM, TEXT, TYPE_CPS } from '../theme';
+import { ErrorBlock } from './ErrorBlock';
+import { Terminal, TermLine } from './Terminal';
+
+// S1 钩子·翻车（全局帧 0–119，本地帧从 0 起）
+// 0–30   全黑（sfx error 重击 @9 —— 音频在 R3 的 audio plan 里落）
+// 30–60  终端 8 帧推入（y -40→0 + opacity 0→1），命令行 24 帧打字，光标 2 闪后回车
+// 60–90  整屏红 ✖ ERROR，scale 1.0→1.06（6 帧后 hold），底光呼吸一次
+// 90–120 画面压暗至 30%，中央打字机字幕（32 字/s）
+const CMD = 'npm run render --scene S4';
+const SUB = '宣传片拍到一半，它把演示搞砸了。';
+
+export const S1: React.FC = () => {
+  const frame = useCurrentFrame();
+
+  // —— 终端阶段 30–60 ——
+  // 推入 8 帧（30–38）；打字 24 帧从 32 起（与推入尾重叠，否则 8+24 放不下 30 帧的窗口）
+  const push = prog(frame, 30, 8); // 0→1，30 帧前为 0
+  const typing = frame >= 32 && frame < 60;
+  const nChars = typedInCmd(frame);
+  // 56–60 光标 2 闪（半周期 2 帧：亮灭亮灭），60 切 ERROR = 「回车」
+  const curBlink = frame >= 56 ? blink(frame, 56, 2) : blink(frame, 32, 5);
+
+  // —— ERROR 阶段 60–90（底光呼吸延续到压暗层之下）——
+  const errOn = frame >= 60;
+  const errScale = 1 + 0.06 * prog(frame, 60, 6); // 6 帧到 1.06 后 hold
+  const breathe = frame >= 60 && frame < 90 ? Math.sin(Math.PI * ((frame - 60) / 30)) : 0;
+
+  // —— 压暗阶段 90–120：亮度压至 30% ⇒ 黑罩 70% ——
+  const dim = frame >= 90 ? prog(frame, 90, 8) * 0.7 : 0;
+  const subChars = frame >= 92 ? typed(frame, 92, SUB.length, TYPE_CPS) : 0;
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: '#000', fontFamily: FONT_SANS }}>
+      {frame >= 30 && frame < 60 ? (
+        <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+          <Terminal
+            style={{
+              opacity: push,
+              transform: `translateY(${(1 - push) * -40}px)`,
+            }}
+          >
+            <TermLine>
+              {typing ? CMD.slice(0, nChars) : '\u00A0'}
+              <span
+                style={{
+                  display: 'inline-block',
+                  width: 22,
+                  height: 44,
+                  marginLeft: 6,
+                  verticalAlign: 'middle',
+                  backgroundColor: curBlink ? TEXT : 'transparent',
+                }}
+              />
+            </TermLine>
+          </Terminal>
+        </AbsoluteFill>
+      ) : null}
+
+      {errOn ? (
+        <ErrorBlock
+          scale={errScale}
+          glow={frame < 90 ? breathe : 0.35}
+        />
+      ) : null}
+
+      {frame >= 90 ? (
+        <>
+          {/* 压暗至 30% */}
+          <div style={{ position: 'absolute', inset: 0, backgroundColor: `rgba(0,0,0,${dim})` }} />
+          <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+            {/* 打字机字幕：R6 从「画面正中」下移到字幕安全区底部。
+                原位置（justifyContent:center）正好压在 ERROR 那行红字上——中文白字叠在
+                「task failed after 3 retries」中间，一眼就是 bug（帧 100 实测）。
+                brief 写「中央」，但这里中央 = 叠字，动效服从可读性：
+                字幕底边 SUB_SAFE_BOTTOM=120，56px 字 → 顶边 1080-120-72≈888，
+                ERROR 行 84px 居中 → 底边 540+42=582，间距 ≈306px（远超 24px 下限）。 */}
+            <div
+              style={{
+                position: 'absolute',
+                left: 0,
+                right: 0,
+                bottom: SUB_SAFE_BOTTOM,
+                textAlign: 'center',
+                fontSize: 56,
+                fontWeight: 700,
+                color: TEXT,
+              }}
+            >
+              {SUB.slice(0, subChars)}
+              {subChars < SUB.length ? (
+                <span
+                  style={{
+                    opacity: blink(frame, 92, 4),
+                    borderLeft: `5px solid ${TEXT}`,
+                    marginLeft: 6,
+                  }}
+                >
+                  {'\u00A0'}
+                </span>
+              ) : null}
+            </div>
+          </AbsoluteFill>
+        </>
+      ) : null}
+    </AbsoluteFill>
+  );
+};
+
+// 打字 24 帧打完 CMD（≈32.5 字/s，与节奏令 32 字/s 一致）
+function typedInCmd(frame: number): number {
+  return Math.min(CMD.length, Math.max(0, Math.floor(((frame - 32) * CMD.length) / 24)));
+}

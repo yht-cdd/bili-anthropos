@@ -1,1 +1,115 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEVBU0VfRVhQT19PVVQsIGxlcnBGLCBwcm9nIH0gZnJvbSAnLi4vYW5pbSc7CmltcG9ydCB7IEFnZW50Um93LCBBaUxvY2t1cCwgUk9XX1RPUCB9IGZyb20gJy4uL2NvbXBvbmVudHMvRW5kQ2FyZCc7CmltcG9ydCB7IEJMVUUsIENPUkFMLCBGT05UX1NBTlMsIEdSQVksIFRFWFQgfSBmcm9tICcuLi90aGVtZSc7CgovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ci8vIOmVnDE4IMK3IDE4MzDigJMxODYwIOW4p++8iDYxLjBz4oCTNjIuMHPvvInlsL7ljaHnu4jmgIEg4oCUIMKn5LiJ44CQ6ZWc5aS0IDE444CRCi8vIOacrOWcsOW4p++8iOWFqOWxgC0xODMw77yJ77yaCi8vIDDigJMxNSAg44CMQUdFTlTjgI3mlbTkvZPkuIrnp7vnvKnlsI/vvJrCp0Mg5YaZIHRyYW5zbGF0ZVkoLTEyMCkr44CM56e76IezIHk9MjIw44CN5LqS55u455+b55u+Ci8vICAg77yINjQwLTEyMD01MjDiiaAyMjDvvInjgILCpzguMiDmo4Dmn6XngrkxMEAxODU1IOaYjuWumuOAjOWumuagvOS4iuaWuSB5PTIyMO+8iDgwcHgg6auY77yJ44CNCi8vICAg4oaSIOijgee7iOaAgeS9jeenuyAtNDIwcHjjgIFzY2FsZSAxLjDihpIwLjY2N++8iDEyMOKGkjgwcHgg4pyTIOS4jiAtMTIwIOeahOe8qeaUvuaEj+WbvuS4gOiHtO+8ie+8jAovLyAgIHRyYW5zZm9ybS1vcmlnaW46IHRvcCBjZW50ZXLvvIzpobbovrkgNjQw4oaSMjIwIOeyvuehruiQveS9je+8jEVBU0VfRVhQT19PVVTjgIIKLy8gMTDigJMyMCDog4zmma8gNDBweCDnvZHmoLznurnnkIbvvIgxcHggIzJFNkJGMCBAMC4x77yJ57q/5oCn5rWu546w77yIwqdDIOacque7meaXtumXtOeql++8jOijgemaj+S4u+mimOWPpeaute+8ieOAggovLyAxNeKAkzIzIOW3puS+p+erluadoSA0eDE2MHB4ICNEOTc3NTfvvIh4PTY0MCB5PTgyMO+8iWhlaWdodCAw4oaSMTYwIGV4cG8tb3V0IDgg5bin77ybCi8vICAg5Li76aKY5Y+l44CM5oqK5a6D5Lus5o6l6L+b5L2g55qE6K6+5aSH44CNNDhweCBCb2xkICNFQ0U5RTEgeT04NDAg5bGF5Lit77yMc2NhbGUoMC45OOKGkjEuMCkKLy8gICBvcGFjaXR5KDDihpIxKSA4IOW4p++8iGRpbmdfdGhlbWVAMTg0NSDlkIzluKfvvIzCpzguNC0zIOKck++8ieOAggovLyAyMOKAkzI2IHYyIOW8j+m7keW6leWwj+Wtl+S9je+8iHYyIFM3IOacqyAwLjhzIOiHqui/sOWQjOasvuWBmuazle+8ie+8mjIwcHggIzZCNzI4MCDlsYXkuK0geT05OTLvvIjpgb/lvIDnq5bmnaHlupUgOTgw77yJ44CCCi8vIOOAjEFJ44CN6KGs57q/5a2X5L+d5oyB6Z2Z5q2i77yIwqdDIOacquWuieaOkumAgOWcuu+8jDE4NTUg5qOA5p+l54K55LiN5Yay56qB77yJ44CCCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCmNvbnN0IFRIRU1FID0gJ+aKiuWug+S7rOaOpei/m+S9oOeahOiuvuWkhyc7CmNvbnN0IFNNQUxMID0gJ0FudGhyb3Bvc19BSSDCtyDkuIDmnaHkvY/lnKjmnI3liqHlmajkuIrnmoQgQUnvvIzov5nkuKrlj7fmmK/miJHoh6rlt7HlnKjov5DokKXnmoTjgIInOwoKZXhwb3J0IGNvbnN0IFMxODogUmVhY3QuRkMgPSAoKSA9PiB7CiAgY29uc3QgZiA9IHVzZUN1cnJlbnRGcmFtZSgpOwogIGNvbnN0IHAgPSBwcm9nKGYsIDAsIDE1LCBFQVNFX0VYUE9fT1VUKTsKICBjb25zdCBncmlkUCA9IHByb2coZiwgMTAsIDEwLCAoeCkgPT4geCk7CiAgY29uc3QgYmFyUCA9IHByb2coZiwgMTUsIDgsIEVBU0VfRVhQT19PVVQpOwogIGNvbnN0IHRoZW1lUCA9IHByb2coZiwgMTUsIDgsIEVBU0VfRVhQT19PVVQpOwogIGNvbnN0IHNtYWxsUCA9IHByb2coZiwgMjAsIDYsIEVBU0VfRVhQT19PVVQpOwoKICByZXR1cm4gKAogICAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBmb250RmFtaWx5OiBGT05UX1NBTlMgfX0+CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICBpbnNldDogMCwKICAgICAgICAgIGJhY2tncm91bmQ6ICdsaW5lYXItZ3JhZGllbnQoMTgwZGVnLCAjMDgwQjEyIDAlLCAjMTIxODIyIDEwMCUpJywKICAgICAgICB9fQogICAgICAvPgogICAgICB7Lyog572R5qC857q555CG77yI5bqV6YOo5rWu546w4oCU4oCU5oyJ5a2X6Z2i5riQ5pi+77yM5LiN5YGa5L2N56e75Yqo55S777yJICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgaW5zZXQ6IDAsCiAgICAgICAgICBvcGFjaXR5OiAwLjEgKiBncmlkUCwKICAgICAgICAgIGJhY2tncm91bmRJbWFnZTogYGxpbmVhci1ncmFkaWVudCgke0JMVUV9IDFweCwgdHJhbnNwYXJlbnQgMXB4KSwgbGluZWFyLWdyYWRpZW50KDkwZGVnLCAke0JMVUV9IDFweCwgdHJhbnNwYXJlbnQgMXB4KWAsCiAgICAgICAgICBiYWNrZ3JvdW5kU2l6ZTogJzQwcHggNDBweCcsCiAgICAgICAgfX0KICAgICAgLz4KICAgICAgPEFpTG9ja3VwIC8+CiAgICAgIHsvKiBBR0VOVCDooYzvvJrpnZnmraLlhoXlrrnvvIhmPTYwIOWFqOiQveWumu+8iSsg5aSW6KO55LiK56e757yp5bCP5Y+Y5o2iICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgbGVmdDogMCwKICAgICAgICAgIHJpZ2h0OiAwLAogICAgICAgICAgdG9wOiBST1dfVE9QLAogICAgICAgICAgaGVpZ2h0OiAxMjAsCiAgICAgICAgICB0cmFuc2Zvcm06IGB0cmFuc2xhdGVZKCR7bGVycEYoZiwgWzAsIDE1XSwgWzAsIC00MjBdKS50b0ZpeGVkKDIpfXB4KSBzY2FsZSgkeygxIC0gMC4zMzMgKiBwKS50b0ZpeGVkKDQpfSlgLAogICAgICAgICAgdHJhbnNmb3JtT3JpZ2luOiAndG9wIGNlbnRlcicsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIDxBZ2VudFJvd1N0YXRpYyAvPgogICAgICA8L2Rpdj4KICAgICAgey8qIOerluadoSAqL30KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGxlZnQ6IDY0MCwKICAgICAgICAgIHRvcDogODIwLAogICAgICAgICAgd2lkdGg6IDQsCiAgICAgICAgICBoZWlnaHQ6IDE2MCAqIGJhclAsCiAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6IENPUkFMLAogICAgICAgIH19CiAgICAgIC8+CiAgICAgIHsvKiDkuLvpopjlj6UgKi99CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICBsZWZ0OiAwLAogICAgICAgICAgcmlnaHQ6IDAsCiAgICAgICAgICB0b3A6IDg0MCwKICAgICAgICAgIHRleHRBbGlnbjogJ2NlbnRlcicsCiAgICAgICAgICBmb250U2l6ZTogNDgsCiAgICAgICAgICBmb250V2VpZ2h0OiA3MDAsCiAgICAgICAgICBjb2xvcjogVEVYVCwKICAgICAgICAgIG9wYWNpdHk6IHRoZW1lUCwKICAgICAgICAgIHRyYW5zZm9ybTogYHNjYWxlKCR7KDAuOTggKyAwLjAyICogdGhlbWVQKS50b0ZpeGVkKDQpfSlgLAogICAgICAgIH19CiAgICAgID4KICAgICAgICB7VEhFTUV9CiAgICAgIDwvZGl2PgogICAgICB7LyogdjIg5byP5bCP5a2X5L2NICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgbGVmdDogMCwKICAgICAgICAgIHJpZ2h0OiAwLAogICAgICAgICAgdG9wOiA5OTIsCiAgICAgICAgICB0ZXh0QWxpZ246ICdjZW50ZXInLAogICAgICAgICAgZm9udFNpemU6IDIwLAogICAgICAgICAgY29sb3I6IEdSQVksCiAgICAgICAgICBvcGFjaXR5OiBzbWFsbFAsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIHtTTUFMTH0KICAgICAgPC9kaXY+CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9OwoKLy8g5YWo5a2X5q+N6JC95a6a5oCB77yI5L6bIFMxOCDlpJboo7nlj5jmjaLvvJvotbfngrnmsr/nlKggMC81LzEwLzE1LzIw77yMZj02MCDml7Ygc3ByaW5nIOWdh+W3suaUtuaVm++8iQpjb25zdCBBZ2VudFJvd1N0YXRpYzogUmVhY3QuRkMgPSAoKSA9PiA8QWdlbnRSb3cgZj17NjB9IGJyZWF0aGU9e2ZhbHNlfSB0b3A9ezB9IC8+Owo=
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { EASE_EXPO_OUT, lerpF, prog } from '../anim';
+import { AgentRow, AiLockup, ROW_TOP } from '../components/EndCard';
+import { BLUE, CORAL, FONT_SANS, GRAY, TEXT } from '../theme';
+
+// ============================================================================
+// 镜18 · 1830–1860 帧（61.0s–62.0s）尾卡终态 — §三【镜头 18】
+// 本地帧（全局-1830）：
+// 0–15  「AGENT」整体上移缩小：§C 写 translateY(-120)+「移至 y=220」互相矛盾
+//   （640-120=520≠220）。§8.2 检查点10@1855 明定「定格上方 y=220（80px 高）」
+//   → 裁终态位移 -420px、scale 1.0→0.667（120→80px ✓ 与 -120 的缩放意图一致），
+//   transform-origin: top center，顶边 640→220 精确落位，EASE_EXPO_OUT。
+// 10–20 背景 40px 网格纹理（1px #2E6BF0 @0.1）线性浮现（§C 未给时间窗，裁随主题句段）。
+// 15–23 左侧竖条 4x160px #D97757（x=640 y=820）height 0→160 expo-out 8 帧；
+//   主题句「把它们接进你的设备」48px Bold #ECE9E1 y=840 居中，scale(0.98→1.0)
+//   opacity(0→1) 8 帧（ding_theme@1845 同帧，§8.4-3 ✓）。
+// 20–26 v2 式黑底小字位（v2 S7 末 0.8s 自述同款做法）：20px #6B7280 居中 y=992（避开竖条底 980）。
+// 「AI」衬线字保持静止（§C 未安排退场，1855 检查点不冲突）。
+// ============================================================================
+
+const THEME = '把它们接进你的设备';
+const SMALL = 'Anthropos_AI · 一条住在服务器上的 AI，这个号是我自己在运营的。';
+
+export const S18: React.FC = () => {
+  const f = useCurrentFrame();
+  const p = prog(f, 0, 15, EASE_EXPO_OUT);
+  const gridP = prog(f, 10, 10, (x) => x);
+  const barP = prog(f, 15, 8, EASE_EXPO_OUT);
+  const themeP = prog(f, 15, 8, EASE_EXPO_OUT);
+  const smallP = prog(f, 20, 6, EASE_EXPO_OUT);
+
+  return (
+    <AbsoluteFill style={{ fontFamily: FONT_SANS }}>
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'linear-gradient(180deg, #080B12 0%, #121822 100%)',
+        }}
+      />
+      {/* 网格纹理（底部浮现——按字面渐显，不做位移动画） */}
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          opacity: 0.1 * gridP,
+          backgroundImage: `linear-gradient(${BLUE} 1px, transparent 1px), linear-gradient(90deg, ${BLUE} 1px, transparent 1px)`,
+          backgroundSize: '40px 40px',
+        }}
+      />
+      <AiLockup />
+      {/* AGENT 行：静止内容（f=60 全落定）+ 外裹上移缩小变换 */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          top: ROW_TOP,
+          height: 120,
+          transform: `translateY(${lerpF(f, [0, 15], [0, -420]).toFixed(2)}px) scale(${(1 - 0.333 * p).toFixed(4)})`,
+          transformOrigin: 'top center',
+        }}
+      >
+        <AgentRowStatic />
+      </div>
+      {/* 竖条 */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 640,
+          top: 820,
+          width: 4,
+          height: 160 * barP,
+          backgroundColor: CORAL,
+        }}
+      />
+      {/* 主题句 */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          top: 840,
+          textAlign: 'center',
+          fontSize: 48,
+          fontWeight: 700,
+          color: TEXT,
+          opacity: themeP,
+          transform: `scale(${(0.98 + 0.02 * themeP).toFixed(4)})`,
+        }}
+      >
+        {THEME}
+      </div>
+      {/* v2 式小字位 */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          top: 992,
+          textAlign: 'center',
+          fontSize: 20,
+          color: GRAY,
+          opacity: smallP,
+        }}
+      >
+        {SMALL}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// 全字母落定态（供 S18 外裹变换；起点沿用 0/5/10/15/20，f=60 时 spring 均已收敛）
+const AgentRowStatic: React.FC = () => <AgentRow f={60} breathe={false} top={0} />;

@@ -1,1 +1,113 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IHByb2cgfSBmcm9tICcuLi9hbmltJzsKaW1wb3J0IHsKICBDT1JBTCwKICBFUlJPUiwKICBGT05UX01PTk8sCiAgRk9OVF9TQU5TLAogIExJTUUsCiAgU1VCX1NBRkVfQk9UVE9NLAogIFRFWFQsCiAgVFNfR1JBWSwKfSBmcm9tICcuLi90aGVtZSc7CgovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ci8vIFM2IOWknOePree6quWunu+8iOWFqOWxgOW4pyAxMjAw4oCTMTUyOSA9IOacrOWcsCAw4oCTMzI577yMNDAuMHPigJM1MS4wc++8icK3IGJyaWVmIHYyLjEgwqflm5sgUzYKLy8gMOKAkzI0MCAgIEpldEJyYWlucyBNb25vIDYg6KGM6YCQ6KGM5by55Ye677ya5q+P6KGMIDgg5bin5YWl5Zy6ICsgMTYg5bin5YGc55WZ77yI6KGM6LedIDI0IOW4p++8ie+8jAovLyAgICAgICAgIOacq+ihjOOAjDA2OjMwIOaKpeWRiuW3suaUvuWcqOS4u+S6uuahjOS4iuOAjeWBnOeVmSA2MCDluKfku6XkuIrvvIzjgIzkuLvkurrmoYzkuIrjgI3nj4rnkZroibLjgIIKLy8gICAgICAgICDml7bliLvovbTkuI4gUzUg5ZKs5ZCI77yaMDM6MTQg5ryU56S65aSx6LSlIC8gMDM6NDAg5L+u5aW96YeN5riy6YCa6L+H44CCCi8vICAgICAgICAg5q+P6KGM5YWl5Zy65a+55bqUIHNmeCB0aWNrIOi9uyBANDAuMC80MC44LzQxLjYvNDIuNC80My4yLzQ0LjDvvIhhdWRpby5qc29u77yJ44CCCi8vIDE4MOKAkzI0MCDlha3ooYzmlbTkvZPkuIrnp7vorqnkvY3vvIhicmllZiDnmoQgMTQ0MCDluKfvvInvvJvlupXpg6jlrZfluZXjgIzov5nlj7DmnLrlmajkuIrmsqHkurrjgIIKLy8gICAgICAgICDkvYbmnInkurrlnKjkuIrlpJznj63jgILjgI0xODAg5bin6LW35oyB57ut5Yiw5q615pyrID0g5oGw5aW9IDEyMCDluKcgPSA0LjBzCi8vICAgICAgICAg77yIYnJpZWYg5qCHIDRzIOS9huWMuumXtOWPquaciSA5MCDluKfvvIzmjIkgNHMg56Gs5oyH5qCH6JC977yM6K6p5L2N5o+Q5YmN5Yiw5pys5ZywIDE4MO+8ieOAggovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ci8vIOavj+mhue+8muaWh+acrOautSArIOmFjeiJsu+8iOaXtumXtOaIs+eBsCAvIOato+aWh+S6riAvIOWFs+mUruivjeW8uuiwg+iJsu+8iQpjb25zdCBST1dTOiBSZWFkb25seUFycmF5PFJlYWRvbmx5QXJyYXk8cmVhZG9ubHkgW3N0cmluZywgc3RyaW5nXT4+ID0gWwogIFtbJzIzOjQ3JywgVFNfR1JBWV0sIFsnICDmlLbliLDku7vliqEnLCBURVhUXV0sCiAgW1snMDA6MDInLCBUU19HUkFZXSwgWycgIOaKveW4p+eci+WujOS4gOadoeinhumikScsIFRFWFRdXSwKICBbWycwMToxNScsIFRTX0dSQVldLCBbJyAg5YaZ5a6M56CU56m256yU6K6wJywgVEVYVF1dLAogIFtbJzAzOjE0JywgVFNfR1JBWV0sIFsnICDmvJTnpLrlpLHotKUnLCBFUlJPUl1dLAogIFtbJzAzOjQwJywgVFNfR1JBWV0sIFsnICDkv67lpb3vvIzph43muLLpgJrov4cnLCBMSU1FXV0sCiAgWwogICAgWycwNjozMCcsIFRTX0dSQVldLAogICAgWycgIOaKpeWRiuW3suaUvuWcqCcsIFRFWFRdLAogICAgWyfkuLvkurrmoYzkuIonLCBDT1JBTF0sCiAgXSwKXTsKY29uc3QgUk9XX1NURVAgPSAyNDsgLy8gOCDlhaXlnLogKyAxNiDlgZznlZkKY29uc3QgUk9XX0VOVEVSID0gODsKY29uc3QgU1VCX0FUID0gMTgwOyAvLyDorqnkvY0gKyDlupXpg6jlrZfluZXvvIg0LjBzID0gMTIwIOW4p+WIsOauteacqyAzMDDvvIkKY29uc3QgU1VCID0gWyfov5nlj7DmnLrlmajkuIrmsqHkurrjgIInLCAn5L2G5pyJ5Lq65Zyo5LiK5aSc54+t44CCJ107CgpleHBvcnQgY29uc3QgUzY6IFJlYWN0LkZDID0gKCkgPT4gewogIGNvbnN0IGZyYW1lID0gdXNlQ3VycmVudEZyYW1lKCk7CgogIC8vIOWFreihjOiuqeS9jeS4iuenu++8iDEwIOW4p++8jOiQveWIsOS4iuWNiuWMuu+8jOW6lemDqOeVmee7meWtl+W5le+8iQogIGNvbnN0IHNoaWZ0ID0gcHJvZyhmcmFtZSwgU1VCX0FULCAxMCkgKiAyNjA7CiAgY29uc3Qgc3ViUCA9IHByb2coZnJhbWUsIFNVQl9BVCwgMTApOwogIGNvbnN0IGRpbSA9IDEgLSBwcm9nKGZyYW1lLCBTVUJfQVQsIDEwKSAqIDAuMjU7IC8vIOWFreihjOeojeWOi+aal++8jOWtl+W5leS4uuS4u+inkgoKICByZXR1cm4gKAogICAgPEFic29sdXRlRmlsbAogICAgICBzdHlsZT17ewogICAgICAgIGJhY2tncm91bmRDb2xvcjogJyMwMDAnLAogICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfU0FOUywKICAgICAgICBqdXN0aWZ5Q29udGVudDogJ2NlbnRlcicsCiAgICAgICAgYWxpZ25JdGVtczogJ2NlbnRlcicsCiAgICAgIH19CiAgICA+CiAgICAgIHsvKiDlpJznj63orrDlvZXlha3ooYwgKi99CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWSgkey1zaGlmdH1weClgLAogICAgICAgICAgb3BhY2l0eTogZGltLAogICAgICAgIH19CiAgICAgID4KICAgICAgICB7Uk9XUy5tYXAoKHJvdywgaSkgPT4gewogICAgICAgICAgY29uc3QgYXQgPSBpICogUk9XX1NURVA7CiAgICAgICAgICBjb25zdCBwID0gcHJvZyhmcmFtZSwgYXQsIFJPV19FTlRFUik7CiAgICAgICAgICByZXR1cm4gKAogICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAga2V5PXthdH0KICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgZm9udEZhbWlseTogRk9OVF9NT05PLAogICAgICAgICAgICAgICAgZm9udFNpemU6IDQ2LAogICAgICAgICAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgICAgICAgICAgbGluZUhlaWdodDogMS43LAogICAgICAgICAgICAgICAgd2hpdGVTcGFjZTogJ25vd3JhcCcsCiAgICAgICAgICAgICAgICBvcGFjaXR5OiBwLAogICAgICAgICAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWCgkeygxIC0gcCkgKiAyNn1weClgLAogICAgICAgICAgICAgIH19CiAgICAgICAgICAgID4KICAgICAgICAgICAgICB7cm93Lm1hcCgoW3RleHQsIGNvbG9yXSkgPT4gKAogICAgICAgICAgICAgICAgPHNwYW4ga2V5PXt0ZXh0fSBzdHlsZT17eyBjb2xvciB9fT4KICAgICAgICAgICAgICAgICAge3RleHR9CiAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgKSl9CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgKTsKICAgICAgICB9KX0KICAgICAgPC9kaXY+CgogICAgICB7Lyog5bqV6YOo5a2X5bmV77yINC4wc++8iSAqL30KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGxlZnQ6IDAsCiAgICAgICAgICByaWdodDogMCwKICAgICAgICAgIGJvdHRvbTogU1VCX1NBRkVfQk9UVE9NLAogICAgICAgICAgdGV4dEFsaWduOiAnY2VudGVyJywKICAgICAgICAgIGZvbnRTaXplOiA1OCwKICAgICAgICAgIGZvbnRXZWlnaHQ6IDcwMCwKICAgICAgICAgIGNvbG9yOiBURVhULAogICAgICAgICAgb3BhY2l0eTogc3ViUCwKICAgICAgICAgIHRyYW5zZm9ybTogYHRyYW5zbGF0ZVkoJHsoMSAtIHN1YlApICogMzB9cHgpYCwKICAgICAgICB9fQogICAgICA+CiAgICAgICAge1NVQlswXX0KICAgICAgICB7U1VCWzFdfQogICAgICA8L2Rpdj4KICAgIDwvQWJzb2x1dGVGaWxsPgogICk7Cn07Cg==
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { prog } from '../anim';
+import {
+  CORAL,
+  ERROR,
+  FONT_MONO,
+  FONT_SANS,
+  LIME,
+  SUB_SAFE_BOTTOM,
+  TEXT,
+  TS_GRAY,
+} from '../theme';
+
+// ============================================================================
+// S6 夜班纪实（全局帧 1200–1529 = 本地 0–329，40.0s–51.0s）· brief v2.1 §四 S6
+// 0–240   JetBrains Mono 6 行逐行弹出：每行 8 帧入场 + 16 帧停留（行距 24 帧），
+//         末行「06:30 报告已放在主人桌上」停留 60 帧以上，「主人桌上」珊瑚色。
+//         时刻轴与 S5 咬合：03:14 演示失败 / 03:40 修好重渲通过。
+//         每行入场对应 sfx tick 轻 @40.0/40.8/41.6/42.4/43.2/44.0（audio.json）。
+// 180–240 六行整体上移让位（brief 的 1440 帧）；底部字幕「这台机器上没人。
+//         但有人在上夜班。」180 帧起持续到段末 = 恰好 120 帧 = 4.0s
+//         （brief 标 4s 但区间只有 90 帧，按 4s 硬指标落，让位提前到本地 180）。
+// ============================================================================
+// 每项：文本段 + 配色（时间戳灰 / 正文亮 / 关键词强调色）
+const ROWS: ReadonlyArray<ReadonlyArray<readonly [string, string]>> = [
+  [['23:47', TS_GRAY], ['  收到任务', TEXT]],
+  [['00:02', TS_GRAY], ['  抽帧看完一条视频', TEXT]],
+  [['01:15', TS_GRAY], ['  写完研究笔记', TEXT]],
+  [['03:14', TS_GRAY], ['  演示失败', ERROR]],
+  [['03:40', TS_GRAY], ['  修好，重渲通过', LIME]],
+  [
+    ['06:30', TS_GRAY],
+    ['  报告已放在', TEXT],
+    ['主人桌上', CORAL],
+  ],
+];
+const ROW_STEP = 24; // 8 入场 + 16 停留
+const ROW_ENTER = 8;
+const SUB_AT = 180; // 让位 + 底部字幕（4.0s = 120 帧到段末 300）
+const SUB = ['这台机器上没人。', '但有人在上夜班。'];
+
+export const S6: React.FC = () => {
+  const frame = useCurrentFrame();
+
+  // 六行让位上移（10 帧，落到上半区，底部留给字幕）
+  const shift = prog(frame, SUB_AT, 10) * 260;
+  const subP = prog(frame, SUB_AT, 10);
+  const dim = 1 - prog(frame, SUB_AT, 10) * 0.25; // 六行稍压暗，字幕为主角
+
+  return (
+    <AbsoluteFill
+      style={{
+        backgroundColor: '#000',
+        fontFamily: FONT_SANS,
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      {/* 夜班记录六行 */}
+      <div
+        style={{
+          transform: `translateY(${-shift}px)`,
+          opacity: dim,
+        }}
+      >
+        {ROWS.map((row, i) => {
+          const at = i * ROW_STEP;
+          const p = prog(frame, at, ROW_ENTER);
+          return (
+            <div
+              key={at}
+              style={{
+                fontFamily: FONT_MONO,
+                fontSize: 46,
+                fontWeight: 700,
+                lineHeight: 1.7,
+                whiteSpace: 'nowrap',
+                opacity: p,
+                transform: `translateX(${(1 - p) * 26}px)`,
+              }}
+            >
+              {row.map(([text, color]) => (
+                <span key={text} style={{ color }}>
+                  {text}
+                </span>
+              ))}
+            </div>
+          );
+        })}
+      </div>
+
+      {/* 底部字幕（4.0s） */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          bottom: SUB_SAFE_BOTTOM,
+          textAlign: 'center',
+          fontSize: 58,
+          fontWeight: 700,
+          color: TEXT,
+          opacity: subP,
+          transform: `translateY(${(1 - subP) * 30}px)`,
+        }}
+      >
+        {SUB[0]}
+        {SUB[1]}
+      </div>
+    </AbsoluteFill>
+  );
+};

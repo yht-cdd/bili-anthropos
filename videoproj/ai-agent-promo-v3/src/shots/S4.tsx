@@ -1,1 +1,96 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEVBU0VfRVhQT19PVVQsIGxlcnBGLCBwcm9nLCBzcHJpbmdJbiwgdGYgfSBmcm9tICcuLi9hbmltJzsKaW1wb3J0IHsgQ2hhdEJ1YmJsZSB9IGZyb20gJy4uL2NvbXBvbmVudHMvQ2hhdEJ1YmJsZSc7CmltcG9ydCB7IFRpbWVzdGFtcCB9IGZyb20gJy4uL2NvbXBvbmVudHMvVGltZXN0YW1wJzsKaW1wb3J0IHsgQkcsIEZPTlRfTU9OTywgRk9OVF9TQU5TLCBHUkFZLCBPUkFOR0UsIFNVUkZBQ0VfQ0FSRDIsIFRFWFQsIFRFWFRfRElNIH0gZnJvbSAnLi4vdGhlbWUnOwoKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQovLyDplZw0IMK3IDM5MOKAkzU3MCDluKfvvIgxMy4wc+KAkzE5LjBz77yJ44CM5oqK5LuK5aSp55qE5YC854+t5YaZ5oiQ5pel6K6w44CNIOKAlCBicmllZi12MyDCp+S4ieOAkOmVnOWktCA044CRCi8vIOacrOWcsOW4p++8mjDigJMzMCDmsJTms6HvvIh5PTI4MO+8jOWQjOmVnDPmm7Lnur/vvInvvJs2MOKAkzE1MCDmlofku7bljaHniYcgNzAweDMyMO+8iHg9OTgwIHk9MjAw77yMCi8vICMxNjFEMkIg5ZyG6KeSIDE277yJ77yM5YWl5Zy6IHkrNjAgc2NhbGUoMC45Nikgc3ByaW5nKDEsOTAsMTIpIDEwIOW4p++8mwovLyAxNTDigJMxNjUg5pe26Ze05oizIFsyMTo0N10g5reh5YWl77ybMTY14oCTMTgwIOWbm+W4p+W/q+WIh+mAgOWcuuOAggovLyDml6XorrDmraPmlofkuLrorr7orqHnqL/mjIflrprmlofmoYjvvIjomZrmnoTljJbvvIzku4XmlbDlrZcgMjEsMTQxIOWtl+iKguS4uuecn+WunuWAvO+8ieOAggovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Cgpjb25zdCBNRF9MSU5FUyA9IFsnIyAyMDI2LTExLTAxIOWAvOePreaXpeW/lycsICcnLCAn5LuK5aSp5aSE55CG5LqGIDQg5Liq5Lu75Yqh77yM5Li76KaB6ZuG5Lit5Zyo4oCm4oCmJ107CgpleHBvcnQgY29uc3QgUzQ6IFJlYWN0LkZDID0gKCkgPT4gewogIGNvbnN0IGYgPSB1c2VDdXJyZW50RnJhbWUoKTsKICBjb25zdCBidWJQID0gcHJvZyhmLCAwLCAxMiwgRUFTRV9FWFBPX09VVCk7CiAgY29uc3QgY2FyZFMgPSBzcHJpbmdJbihmLCA2MCwgeyB0ZW5zaW9uOiA5MCwgZnJpY3Rpb246IDEyIH0pOyAvLyDlhYHorrggc3ByaW5nIOi/h+WGsu+8iOWbnuW8ueaJi+aEn++8iQogIGNvbnN0IHRzUCA9IHByb2coZiwgMTUwLCA2LCBFQVNFX0VYUE9fT1VUKTsKICBjb25zdCBleGl0ID0gMSAtIGxlcnBGKGYsIFsxNjUsIDE2OV0sIFswLCAxXSk7CgogIHJldHVybiAoCiAgICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGJhY2tncm91bmRDb2xvcjogQkcgfX0+CiAgICAgIDxkaXYgc3R5bGU9e3sgcG9zaXRpb246ICdhYnNvbHV0ZScsIGluc2V0OiAwLCBvcGFjaXR5OiBleGl0IH19PgogICAgICAgIDxkaXYgc3R5bGU9e3sgcG9zaXRpb246ICdhYnNvbHV0ZScsIGluc2V0OiAwLCB0cmFuc2Zvcm06IGB0cmFuc2xhdGVYKCR7LTgwICogKDEgLSBidWJQKX1weClgLCBvcGFjaXR5OiBidWJQIH19PgogICAgICAgICAgPENoYXRCdWJibGUgdGV4dD0i5oqK5LuK5aSp55qE5YC854+t5YaZ5oiQ5pel6K6wIiB4PXsxNjB9IHk9ezI4MH0gLz4KICAgICAgICA8L2Rpdj4KCiAgICAgICAge2YgPj0gNjAgPyAoCiAgICAgICAgICA8ZGl2CiAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICAgICAgbGVmdDogOTgwLAogICAgICAgICAgICAgIHRvcDogMjAwLAogICAgICAgICAgICAgIHdpZHRoOiA3MDAsCiAgICAgICAgICAgICAgaGVpZ2h0OiAzMjAsCiAgICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiBTVVJGQUNFX0NBUkQyLAogICAgICAgICAgICAgIGJvcmRlclJhZGl1czogMTYsCiAgICAgICAgICAgICAgb3BhY2l0eTogTWF0aC5taW4oMSwgMC4yNSArIGNhcmRTKSwKICAgICAgICAgICAgICB0cmFuc2Zvcm06IHRmKFsKICAgICAgICAgICAgICAgIGB0cmFuc2xhdGVZKCR7KDYwICogKDEgLSBjYXJkUykpLnRvRml4ZWQoMil9cHgpYCwKICAgICAgICAgICAgICAgIGBzY2FsZSgkeygwLjk2ICsgMC4wNCAqIGNhcmRTKS50b0ZpeGVkKDQpfSlgLAogICAgICAgICAgICAgIF0pLAogICAgICAgICAgICAgIHBhZGRpbmc6ICcyOHB4IDMycHgnLAogICAgICAgICAgICAgIGJveFNpemluZzogJ2JvcmRlci1ib3gnLAogICAgICAgICAgICAgIGJveFNoYWRvdzogJzAgMjRweCA3MHB4IHJnYmEoMCwwLDAsMC40NSknLAogICAgICAgICAgICB9fQogICAgICAgICAgPgogICAgICAgICAgICB7Lyog6aG26YOo77ya5paH5Lu25Zu+5qCHICsg5paH5Lu25ZCNICovfQogICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGRpc3BsYXk6ICdmbGV4JywgYWxpZ25JdGVtczogJ2NlbnRlcicsIGdhcDogMTIgfX0+CiAgICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgICAgd2lkdGg6IDI0LAogICAgICAgICAgICAgICAgICBoZWlnaHQ6IDI0LAogICAgICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6IDUsCiAgICAgICAgICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogT1JBTkdFLAogICAgICAgICAgICAgICAgICBjbGlwUGF0aDogJ3BvbHlnb24oMCAwLCA3MiUgMCwgMTAwJSAyOCUsIDEwMCUgMTAwJSwgMCAxMDAlKScsCiAgICAgICAgICAgICAgICB9fQogICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgPHNwYW4gc3R5bGU9e3sgZm9udEZhbWlseTogRk9OVF9TQU5TLCBmb250V2VpZ2h0OiA1MDAsIGZvbnRTaXplOiAyMCwgY29sb3I6IFRFWFQgfX0+CiAgICAgICAgICAgICAgICBkaWFyeS8xMS0wMS5tZAogICAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIHsvKiDmraPmlofvvJpNYXJrZG93biDpooTop4jliY3kuInooYwgKi99CiAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgbWFyZ2luVG9wOiAyMiwKICAgICAgICAgICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfU0FOUywKICAgICAgICAgICAgICAgIGZvbnRXZWlnaHQ6IDQwMCwKICAgICAgICAgICAgICAgIGZvbnRTaXplOiAxNiwKICAgICAgICAgICAgICAgIGxpbmVIZWlnaHQ6IDEuNiwKICAgICAgICAgICAgICAgIGNvbG9yOiBURVhUX0RJTSwKICAgICAgICAgICAgICAgIHdoaXRlU3BhY2U6ICdwcmUtd3JhcCcsCiAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIHtNRF9MSU5FUy5tYXAoKGwsIGkpID0+ICgKICAgICAgICAgICAgICAgIDxkaXYga2V5PXtpfSBzdHlsZT17eyBtaW5IZWlnaHQ6IDE2IH19PgogICAgICAgICAgICAgICAgICB7bH0KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICkpfQogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgey8qIOW6lemDqO+8muaWh+S7tuWkp+WwjyAqL30KICAgICAgICAgICAgPGRpdiBzdHlsZT17eyBwb3NpdGlvbjogJ2Fic29sdXRlJywgbGVmdDogMzIsIGJvdHRvbTogMjIsIGZvbnRGYW1pbHk6IEZPTlRfTU9OTywgZm9udFNpemU6IDE0LCBjb2xvcjogR1JBWSB9fT4KICAgICAgICAgICAgICAyMSwxNDEg5a2X6IqCCiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CiAgICAgICAgKSA6IG51bGx9CgogICAgICAgIDxUaW1lc3RhbXAgdGV4dD0iWzIxOjQ3XSIgb3BhY2l0eT17dHNQfSAvPgogICAgICA8L2Rpdj4KICAgIDwvQWJzb2x1dGVGaWxsPgogICk7Cn07Cg==
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { EASE_EXPO_OUT, lerpF, prog, springIn, tf } from '../anim';
+import { ChatBubble } from '../components/ChatBubble';
+import { Timestamp } from '../components/Timestamp';
+import { BG, FONT_MONO, FONT_SANS, GRAY, ORANGE, SURFACE_CARD2, TEXT, TEXT_DIM } from '../theme';
+
+// ============================================================================
+// 镜4 · 390–570 帧（13.0s–19.0s）「把今天的值班写成日记」 — brief-v3 §三【镜头 4】
+// 本地帧：0–30 气泡（y=280，同镜3曲线）；60–150 文件卡片 700x320（x=980 y=200，
+// #161D2B 圆角 16），入场 y+60 scale(0.96) spring(1,90,12) 10 帧；
+// 150–165 时间戳 [21:47] 淡入；165–180 四帧快切退场。
+// 日记正文为设计稿指定文案（虚构化，仅数字 21,141 字节为真实值）。
+// ============================================================================
+
+const MD_LINES = ['# 2026-11-01 值班日志', '', '今天处理了 4 个任务，主要集中在……'];
+
+export const S4: React.FC = () => {
+  const f = useCurrentFrame();
+  const bubP = prog(f, 0, 12, EASE_EXPO_OUT);
+  const cardS = springIn(f, 60, { tension: 90, friction: 12 }); // 允许 spring 过冲（回弹手感）
+  const tsP = prog(f, 150, 6, EASE_EXPO_OUT);
+  const exit = 1 - lerpF(f, [165, 169], [0, 1]);
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: BG }}>
+      <div style={{ position: 'absolute', inset: 0, opacity: exit }}>
+        <div style={{ position: 'absolute', inset: 0, transform: `translateX(${-80 * (1 - bubP)}px)`, opacity: bubP }}>
+          <ChatBubble text="把今天的值班写成日记" x={160} y={280} />
+        </div>
+
+        {f >= 60 ? (
+          <div
+            style={{
+              position: 'absolute',
+              left: 980,
+              top: 200,
+              width: 700,
+              height: 320,
+              backgroundColor: SURFACE_CARD2,
+              borderRadius: 16,
+              opacity: Math.min(1, 0.25 + cardS),
+              transform: tf([
+                `translateY(${(60 * (1 - cardS)).toFixed(2)}px)`,
+                `scale(${(0.96 + 0.04 * cardS).toFixed(4)})`,
+              ]),
+              padding: '28px 32px',
+              boxSizing: 'border-box',
+              boxShadow: '0 24px 70px rgba(0,0,0,0.45)',
+            }}
+          >
+            {/* 顶部：文件图标 + 文件名 */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+              <div
+                style={{
+                  width: 24,
+                  height: 24,
+                  borderRadius: 5,
+                  backgroundColor: ORANGE,
+                  clipPath: 'polygon(0 0, 72% 0, 100% 28%, 100% 100%, 0 100%)',
+                }}
+              />
+              <span style={{ fontFamily: FONT_SANS, fontWeight: 500, fontSize: 20, color: TEXT }}>
+                diary/11-01.md
+              </span>
+            </div>
+            {/* 正文：Markdown 预览前三行 */}
+            <div
+              style={{
+                marginTop: 22,
+                fontFamily: FONT_SANS,
+                fontWeight: 400,
+                fontSize: 16,
+                lineHeight: 1.6,
+                color: TEXT_DIM,
+                whiteSpace: 'pre-wrap',
+              }}
+            >
+              {MD_LINES.map((l, i) => (
+                <div key={i} style={{ minHeight: 16 }}>
+                  {l}
+                </div>
+              ))}
+            </div>
+            {/* 底部：文件大小 */}
+            <div style={{ position: 'absolute', left: 32, bottom: 22, fontFamily: FONT_MONO, fontSize: 14, color: GRAY }}>
+              21,141 字节
+            </div>
+          </div>
+        ) : null}
+
+        <Timestamp text="[21:47]" opacity={tsP} />
+      </div>
+    </AbsoluteFill>
+  );
+};

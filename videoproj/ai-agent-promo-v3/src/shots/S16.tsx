@@ -1,1 +1,27 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEJHX0dSQURfQk9UVE9NLCBCR19HUkFEX1RPUCB9IGZyb20gJy4uL3RoZW1lJzsKaW1wb3J0IHsgQWdlbnRSb3csIEFpTG9ja3VwIH0gZnJvbSAnLi4vY29tcG9uZW50cy9FbmRDYXJkJzsKCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8g6ZWcMTYgwrcgMTgxMOKAkzE4MjAg5binIOKAlCDplZwxNeKAkzE3IOWQiOW5tuauteeahOS4remXtCAxMCDluKfvvIjCp+S4g++8muWQiOW5tuauteWunueOsOOAgUNvbXBvc2l0aW9uIOaLhumVnO+8iQovLyDmnKzlnLDluKcgMOKAkzEwID0g5YWo5bGAIDE4MTDigJMxODIw77yaRe+8iOi1t+eCuTEw77yJ5YWl5Zy644CBTu+8iOi1t+eCuTE177yJ5Zyo5pys5ZywIDUg6LW35q2l77ybCi8vIEEvRyDkv53mjIHokL3lrprvvIjot6jplZzmjqXlipvpnaAgQWdlbnRSb3cg55qE57qv5Ye95pWw5bin5pig5bCE77yM5ZCMIFMxNSDlrozlhajlkIzmupDvvInjgIIKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKZXhwb3J0IGNvbnN0IFMxNjogUmVhY3QuRkMgPSAoKSA9PiB7CiAgY29uc3QgZiA9IHVzZUN1cnJlbnRGcmFtZSgpOwogIHJldHVybiAoCiAgICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGJhY2tncm91bmRDb2xvcjogQkdfR1JBRF9CT1RUT00gfX0+CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICBpbnNldDogMCwKICAgICAgICAgIGJhY2tncm91bmQ6IGBsaW5lYXItZ3JhZGllbnQoMTgwZGVnLCAke0JHX0dSQURfVE9QfSAwJSwgJHtCR19HUkFEX0JPVFRPTX0gMTAwJSlgLAogICAgICAgIH19CiAgICAgIC8+CiAgICAgIDxBaUxvY2t1cCAvPgogICAgICA8QWdlbnRSb3cgZj17ZiArIDEwfSBicmVhdGhlIC8+CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9Owo=
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { BG_GRAD_BOTTOM, BG_GRAD_TOP } from '../theme';
+import { AgentRow, AiLockup } from '../components/EndCard';
+
+// ============================================================================
+// 镜16 · 1810–1820 帧 — 镜15–17 合并段的中间 10 帧（§七：合并段实现、Composition 拆镜）
+// 本地帧 0–10 = 全局 1810–1820：E（起点10）入场、N（起点15）在本地 5 起步；
+// A/G 保持落定（跨镜接力靠 AgentRow 的纯函数帧映射，同 S15 完全同源）。
+// ============================================================================
+
+export const S16: React.FC = () => {
+  const f = useCurrentFrame();
+  return (
+    <AbsoluteFill style={{ backgroundColor: BG_GRAD_BOTTOM }}>
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background: `linear-gradient(180deg, ${BG_GRAD_TOP} 0%, ${BG_GRAD_BOTTOM} 100%)`,
+        }}
+      />
+      <AiLockup />
+      <AgentRow f={f + 10} breathe />
+    </AbsoluteFill>
+  );
+};

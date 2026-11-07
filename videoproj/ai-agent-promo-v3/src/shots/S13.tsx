@@ -1,1 +1,30 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEVBU0VfRVhQT19PVVQsIHByb2cgfSBmcm9tICcuLi9hbmltJzsKaW1wb3J0IHsgQkcsIFdISVRFIH0gZnJvbSAnLi4vdGhlbWUnOwoKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQovLyDplZwxMyDCtyAxNjgw4oCTMTc0MCDluKfvvIg1Ni4wc+KAkzU4LjBz77yJ56ys5LqM5qyh55m96ZeqICsg6Z2Z6buY55WZ55m9IOKAlCBicmllZi12MyDCp+S4ieOAkOmVnOWktCAxM+OAkQovLyDmnKzlnLDluKfvvJow4oCTNiDnmb3pl6rljYfvvIgxNjgw4oaSMTY4Nu+8iS8gNuKAkzEyIOmZje+8iDE2ODbihpIxNjky77yJ77yMY3ViaWMoLjE5LDEsLjIyLDEp77yMCi8vICAg5puy57q/5LiO6ZWcNiDlrozlhajlkIzmrL7vvIjnlLvpnaLoioLmmI7ms6jjgIzlkIzplZzlpLQgNiDmm7Lnur/jgI3vvIzlrp7njrDlkIwgUzbvvInjgIIKLy8gMTLigJM2MCDnuq/pu5Hml6DlhYPntKDvvIgxNjky4oCTMTc0MCDpnZnpu5jnlZnnmb3mrrXvvJvCp0Mg5YaZ44CMMTY5NSDotbflhajlnLrpnZnpn7PjgI3lsZ4KLy8gICDpn7PpopHlsYIgMTY5NeKAkzE3NDDvvIznlLEgwqfkupQgY3VlIOihqOi0n+i0o++8jFIyIOS4jeaOpe+8ieOAggovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CgpleHBvcnQgY29uc3QgUzEzOiBSZWFjdC5GQyA9ICgpID0+IHsKICBjb25zdCBmID0gdXNlQ3VycmVudEZyYW1lKCk7CiAgY29uc3QgZmxhc2ggPSBmIDw9IDYgPyBwcm9nKGYsIDAsIDYsIEVBU0VfRVhQT19PVVQpIDogMSAtIHByb2coZiwgNiwgNiwgRUFTRV9FWFBPX09VVCk7CgogIHJldHVybiAoCiAgICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGJhY2tncm91bmRDb2xvcjogQkcgfX0+CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICBpbnNldDogMCwKICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogV0hJVEUsCiAgICAgICAgICBvcGFjaXR5OiBNYXRoLm1heCgwLCBmbGFzaCksCiAgICAgICAgfX0KICAgICAgLz4KICAgIDwvQWJzb2x1dGVGaWxsPgogICk7Cn07Cg==
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { EASE_EXPO_OUT, prog } from '../anim';
+import { BG, WHITE } from '../theme';
+
+// ============================================================================
+// 镜13 · 1680–1740 帧（56.0s–58.0s）第二次白闪 + 静默留白 — brief-v3 §三【镜头 13】
+// 本地帧：0–6 白闪升（1680→1686）/ 6–12 降（1686→1692），cubic(.19,1,.22,1)，
+//   曲线与镜6 完全同款（画面节明注「同镜头 6 曲线」，实现同 S6）。
+// 12–60 纯黑无元素（1692–1740 静默留白段；§C 写「1695 起全场静音」属
+//   音频层 1695–1740，由 §五 cue 表负责，R2 不接）。
+// ============================================================================
+
+export const S13: React.FC = () => {
+  const f = useCurrentFrame();
+  const flash = f <= 6 ? prog(f, 0, 6, EASE_EXPO_OUT) : 1 - prog(f, 6, 6, EASE_EXPO_OUT);
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: BG }}>
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          backgroundColor: WHITE,
+          opacity: Math.max(0, flash),
+        }}
+      />
+    </AbsoluteFill>
+  );
+};

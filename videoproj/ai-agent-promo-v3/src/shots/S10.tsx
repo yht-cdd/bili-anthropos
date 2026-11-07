@@ -1,1 +1,227 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEVBU0VfRVhQT19PVVQsIEVBU0VfTElORUFSLCBwcm9nLCBzcHJpbmdJbiB9IGZyb20gJy4uL2FuaW0nOwppbXBvcnQgewogIEJHX0RBUkssCiAgQkxVRSwKICBDT1JBTCwKICBGT05UX1NBTlMsCiAgR1JFRU4sCiAgTElNRSwKICBPUkFOR0UsCiAgU1VSRkFDRSwKICBTVVJGQUNFX0NBUkQsCiAgVEVYVCwKICBURVhUX0RJTSwKfSBmcm9tICcuLi90aGVtZSc7CgovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ci8vIOmVnDEwIMK3IDEyNjDigJMxNTAwIOW4p++8iDQyLjBz4oCTNTAuMHPvvInlpJznj63ml7bpl7TovbQg4oCUIGJyaWVmLXYzIMKn5LiJ44CQ6ZWc5aS0IDEw44CRCi8vIOacrOWcsOW4p++8mjDigJMzMCDjgIzogIzov5nlj6rmmK/ml6XluLjjgILjgI3lkJHkuIrnvKnoh7Ppobbpg6jmoIfnrb7vvIgzNnB4ID0gc2NhbGUgMC41NjI177yMb3BhY2l0eSAwLjbvvInvvIwKLy8gICDmnLrliLblkIzplZw377yI6LW354K56ZSaIHRvcCA0NzYvaGVpZ2h0IDEyOCBmbGV4IOWxheS4rSA9IOihjOS4reW/gyB5PTU0MO+8jOS4jumVnDkg5paH5a2X5ZCM54K577yJ44CCCi8vIDMw4oCTNDIg5pe26Ze06L2077yaeD05NjAgeT0xODAg6LW3IDRweCDlrr0gIzJFNkJGMO+8jGhlaWdodCAw4oaSNjAw77yMMTIg5binIGV4cG8tb3V0Ci8vICAg77yI55S76Z2i6IqCIDEyOTDigJMxMzA1IOeql+WPoyB2cyDmm7Lnur/oioIgMTIg5binIOKGkiDCp+OAhy0zIOWPliAxMiDluKcgKyDkvZnph48gaG9sZO+8ieOAggovLyA2MC85MC8xMjAvMTUwLzE4MO+8iOWFqOWxgCAxMzIwLzEzNTAvMTM4MC8xNDEwLzE0NDDvvIzpl7TpmpQgMzAg5bin77yJ6YCQ5Liq6IqC54K577yaCi8vICAg5ZyG54K5IDEycHggI0Q5Nzc1NyDliY0gNCDluKcgc3ByaW5nKDEsMTIwLDEwKSBzY2FsZSAw4oaSMS4y4oaSMe+8iHN0aWZmbmVzczEyMC9kYW1waW5nMTAKLy8gICDmrKDpmLvlsLwgzrbiiYgwLjQ1NiDov4flhrLiiYgyMCXvvIzlpKnnhLbokL3lnKggMS4y77yJ44CC44CM5YmNIDQg5bin44CN6KOB5Li65by557Cn6Ieq54S25pe26ZW/77yI5ZCMIFIxYgovLyAgIOWvuSBkdXJhdGlvbkluRnJhbWVzIOeahOS/ruWkjeazqOiusOS4juatp+S5iea4heWNlSA577ya5by66KGM5Y6L6L+bIDQg5bin5Lya5q+B5o6JIDEuMiDov4flhrLvvIwKLy8gICDmo4Dmn6Xngrk4IEAxNDkwIOimgeaxgumdmeatouKAlOKAlOiHqueEtuaXtumVvyDiiaQyNSDluKfvvIzov5zml6nkuo7oioLngrkgNSDlrozmiJDngrnvvIzmiJDnq4vvvInjgIIKLy8gICDljaHniYcgNTAweDgwICMxRTI2MzYg5ZyG6KeSIDgg5YmNIDgg5binIHRyYW5zbGF0ZVgoNjDihpIwKSBvcGFjaXR5KDDihpIxKSBleHBvLW91dOOAggovLyAgIOWbvuaghyAxNngxNiDpopzoibLnhacgwqdD77ybwqdDIOacque7meWbvuagh+S4jgovLyAgIOaWh+acrOeahOebuOWvueS9jee9riDihpIg6KOB5Zu+5qCH5Zyo5paH5pys5bem5L6nIGdhcCAxNO+8jOiusOatp+S5ieOAggovLyAyMTDigJMyMzAg5bqV6YOo5Lik6KGM77yIMjhweCBNZWRpdW0gIzlDQTNBRu+8jOS4reW/gyB4PTk2MCB5PTgyMO+8ie+8mueUu+mdouiKguOAjOavj+ihjCA4IOW4p+mXtOmalOOAjQovLyAgIHZzIOabsue6v+iKgumAkOihjCAxNDcw4oCTMTQ4MCAvIDE0ODDigJMxNDkwIOKGkiDoo4Hmm7Lnur/oioLnq6/ngrnvvIjlkIQgMTAg5binIGxpbmVhcu+8jOW3riDiiaQzIOW4p++8ieOAggovLyAgIOajgOafpeeCuTggQOWFqOWxgDE0OTDvvIjmnKzlnLAyMzDvvInvvJrkupToioLngrnpnZnmraIgKyDkuKTooYzlrozmlbTmmL7npLog4pyT44CCCi8vIFNjZW5lIOaKveWHuuS4uiAoZik9PuKApiDnuq/lh73mlbDnu4Tku7blubblr7zlh7rvvJrplZwxMSDpnIDopoHjgIzmlbTkvZPlt6bnp7vmt6Hlh7rjgI3nmoTpnZnluKflpI3liLbku7bvvIwKLy8gICDkvKDnu4jmgIEgZj0yNDAg5Y2z5YWo6YeP5a6a5qC877yI5rK/55So6ZWcOSDlpI3liLbplZw4IOeahOi3qOmVnOaOpeWKm+WBmuazle+8ieOAggovLyDCpzguMy1RMTHvvIgyOHB4IOS9juS6juWtl+W5lee6v++8ie+8muacrOi9ruaMieS7u+WKoeS7pOmAkOWtl+S/nSDCp0Mg5Y6f5YC877yM5o+Q5qGj5LiO5ZCm55WZ57uZ5riy5p+T55uu5qOA6L2u44CCCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCmV4cG9ydCB0eXBlIEljb25LaW5kID0gJ3dyZW5jaCcgfCAncGxheScgfCAnbm90ZScgfCAnY2hlY2snIHwgJ2RvYyc7CgpleHBvcnQgdHlwZSBUTm9kZSA9IHsKICBzdGFydDogbnVtYmVyOwogIGRvdFk6IG51bWJlcjsKICBjYXJkWTogbnVtYmVyOwogIHRleHQ6IHN0cmluZzsKICBpY29uOiBJY29uS2luZDsKICBpY29uQ29sb3I6IHN0cmluZzsKfTsKCmV4cG9ydCBjb25zdCBOT0RFUzogVE5vZGVbXSA9IFsKICB7IHN0YXJ0OiA2MCwgZG90WTogMjAwLCBjYXJkWTogMTgwLCB0ZXh0OiAnMjM6NDcg5L+u5aSNIGJ1ZycsIGljb246ICd3cmVuY2gnLCBpY29uQ29sb3I6IE9SQU5HRSB9LAogIHsgc3RhcnQ6IDkwLCBkb3RZOiAzMDAsIGNhcmRZOiAyODAsIHRleHQ6ICcwMToxMCDnnIvop4bpopEnLCBpY29uOiAncGxheScsIGljb25Db2xvcjogQkxVRSB9LAogIHsgc3RhcnQ6IDEyMCwgZG90WTogNDAwLCBjYXJkWTogMzgwLCB0ZXh0OiAnMDI6NDAg5YaZ5pel6K6wJywgaWNvbjogJ25vdGUnLCBpY29uQ29sb3I6IExJTUUgfSwKICB7IHN0YXJ0OiAxNTAsIGRvdFk6IDUwMCwgY2FyZFk6IDQ4MCwgdGV4dDogJzAzOjQwIENJIOmAmui/hycsIGljb246ICdjaGVjaycsIGljb25Db2xvcjogR1JFRU4gfSwKICB7IHN0YXJ0OiAxODAsIGRvdFk6IDYwMCwgY2FyZFk6IDU4MCwgdGV4dDogJzA2OjMwIOaKpeWRiuWujOaIkCcsIGljb246ICdkb2MnLCBpY29uQ29sb3I6IFRFWFQgfSwKXTsKCi8vIDE2eDE2IOe6v+aAp+Wbvuagh++8iOmAmueUqCBmZWF0aGVyIOmjjuagvOeslOeUu++8jOaXoOesrOS4ieaWuei1hOS6p++8iQpleHBvcnQgY29uc3QgTm9kZUdseXBoOiBSZWFjdC5GQzx7IGljb246IEljb25LaW5kOyBjb2xvcjogc3RyaW5nIH0+ID0gKHsgaWNvbiwgY29sb3IgfSkgPT4gewogIGNvbnN0IHN2Z1N0eWxlID0geyB3aWR0aDogMTYsIGhlaWdodDogMTYsIGRpc3BsYXk6ICdibG9jaycsIGZsZXhTaHJpbms6IDAgfSBhcyBjb25zdDsKICBjb25zdCBzdHJva2UgPSB7CiAgICBzdHJva2U6IGNvbG9yLAogICAgc3Ryb2tlV2lkdGg6IDIsCiAgICBmaWxsOiAnbm9uZScsCiAgICBzdHJva2VMaW5lY2FwOiAncm91bmQnIGFzIGNvbnN0LAogICAgc3Ryb2tlTGluZWpvaW46ICdyb3VuZCcgYXMgY29uc3QsCiAgfTsKICBzd2l0Y2ggKGljb24pIHsKICAgIGNhc2UgJ3dyZW5jaCc6CiAgICAgIHJldHVybiAoCiAgICAgICAgPHN2ZyBzdHlsZT17c3ZnU3R5bGV9IHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgICAgICAgICA8cGF0aAogICAgICAgICAgICBkPSJNMTQuNyA2LjMgYTEgMSAwIDAgMCAwIDEuNCBsMS42IDEuNiBhMSAxIDAgMCAwIDEuNCAwIGwzLjc3IC0zLjc3IGE2IDYgMCAwIDEgLTcuOTQgNy45NCBsLTYuOTEgNi45MSBhMi4xMiAyLjEyIDAgMCAxIC0zIC0zIGw2LjkxIC02LjkxIGE2IDYgMCAwIDEgNy45NCAtNy45NCB6IgogICAgICAgICAgICB7Li4uc3Ryb2tlfQogICAgICAgICAgLz4KICAgICAgICA8L3N2Zz4KICAgICAgKTsKICAgIGNhc2UgJ3BsYXknOgogICAgICByZXR1cm4gKAogICAgICAgIDxzdmcgc3R5bGU9e3N2Z1N0eWxlfSB2aWV3Qm94PSIwIDAgMjQgMjQiPgogICAgICAgICAgPHBvbHlnb24gcG9pbnRzPSI2LDQgMjAsMTIgNiwyMCIgZmlsbD17Y29sb3J9IC8+CiAgICAgICAgPC9zdmc+CiAgICAgICk7CiAgICBjYXNlICdub3RlJzoKICAgICAgcmV0dXJuICgKICAgICAgICA8c3ZnIHN0eWxlPXtzdmdTdHlsZX0gdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgICAgICAgIDxwYXRoIGQ9Ik00IDE5LjUgQTIuNSAyLjUgMCAwIDEgNi41IDE3IEgyMCIgey4uLnN0cm9rZX0gLz4KICAgICAgICAgIDxwYXRoIGQ9Ik02LjUgMiBIMjAgdjIwIEg2LjUgQTIuNSAyLjUgMCAwIDEgNCAxOS41IHYtMTUgQTIuNSAyLjUgMCAwIDEgNi41IDIgeiIgey4uLnN0cm9rZX0gLz4KICAgICAgICA8L3N2Zz4KICAgICAgKTsKICAgIGNhc2UgJ2NoZWNrJzoKICAgICAgcmV0dXJuICgKICAgICAgICA8c3ZnIHN0eWxlPXtzdmdTdHlsZX0gdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgICAgICAgIDxwb2x5bGluZSBwb2ludHM9IjIwIDYgOSAxNyA0IDEyIiB7Li4uc3Ryb2tlfSAvPgogICAgICAgIDwvc3ZnPgogICAgICApOwogICAgY2FzZSAnZG9jJzoKICAgICAgcmV0dXJuICgKICAgICAgICA8c3ZnIHN0eWxlPXtzdmdTdHlsZX0gdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgICAgICAgIDxwYXRoIGQ9Ik0xMyAyIEg2IGEyIDIgMCAwIDAgLTIgMiB2MTYgYTIgMiAwIDAgMCAyIDIgaDEyIGEyIDIgMCAwIDAgMiAtMiBWOSB6IiB7Li4uc3Ryb2tlfSAvPgogICAgICAgICAgPHBvbHlsaW5lIHBvaW50cz0iMTMgMiAxMyA5IDIwIDkiIHsuLi5zdHJva2V9IC8+CiAgICAgICAgPC9zdmc+CiAgICAgICk7CiAgfQp9OwoKLy8g5Y2V5Liq6IqC54K577yI5ZyG54K5ICsg5Y2h54mH77yJ77yM5YWl5Zy655SxIChmIOKIkiBzdGFydCkg6amx5YqoCmNvbnN0IE5vZGVSb3c6IFJlYWN0LkZDPHsgbjogVE5vZGU7IGY6IG51bWJlciB9PiA9ICh7IG4sIGYgfSkgPT4gewogIGlmIChmIDwgbi5zdGFydCkgcmV0dXJuIG51bGw7CiAgY29uc3Qgc2NhbGUgPSBNYXRoLm1heCgwLCBzcHJpbmdJbihmLCBuLnN0YXJ0LCB7IHRlbnNpb246IDEyMCwgZnJpY3Rpb246IDEwIH0pKTsKICBjb25zdCBwID0gcHJvZyhmLCBuLnN0YXJ0LCA4LCBFQVNFX0VYUE9fT1VUKTsKICByZXR1cm4gKAogICAgPD4KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGxlZnQ6IDk2MCAtIDYsCiAgICAgICAgICB0b3A6IG4uZG90WSAtIDYsCiAgICAgICAgICB3aWR0aDogMTIsCiAgICAgICAgICBoZWlnaHQ6IDEyLAogICAgICAgICAgYm9yZGVyUmFkaXVzOiAnNTAlJywKICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogQ09SQUwsCiAgICAgICAgICB0cmFuc2Zvcm06IGBzY2FsZSgke3NjYWxlLnRvRml4ZWQoMyl9KWAsCiAgICAgICAgfX0KICAgICAgLz4KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGxlZnQ6IDEwNDAsCiAgICAgICAgICB0b3A6IG4uY2FyZFksCiAgICAgICAgICB3aWR0aDogNTAwLAogICAgICAgICAgaGVpZ2h0OiA4MCwKICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogU1VSRkFDRV9DQVJELAogICAgICAgICAgYm9yZGVyUmFkaXVzOiA4LAogICAgICAgICAgZGlzcGxheTogJ2ZsZXgnLAogICAgICAgICAgYWxpZ25JdGVtczogJ2NlbnRlcicsCiAgICAgICAgICBnYXA6IDE0LAogICAgICAgICAgcGFkZGluZzogJzAgMjRweCcsCiAgICAgICAgICBib3hTaXppbmc6ICdib3JkZXItYm94JywKICAgICAgICAgIHRyYW5zZm9ybTogYHRyYW5zbGF0ZVgoJHsoNjAgKiAoMSAtIHApKS50b0ZpeGVkKDIpfXB4KWAsCiAgICAgICAgICBvcGFjaXR5OiBwLAogICAgICAgIH19CiAgICAgID4KICAgICAgICA8Tm9kZUdseXBoIGljb249e24uaWNvbn0gY29sb3I9e24uaWNvbkNvbG9yfSAvPgogICAgICAgIDxzcGFuIHN0eWxlPXt7IGZvbnRGYW1pbHk6IEZPTlRfU0FOUywgZm9udFdlaWdodDogNDAwLCBmb250U2l6ZTogMjAsIGNvbG9yOiBURVhULCB3aGl0ZVNwYWNlOiAncHJlJyB9fT4KICAgICAgICAgIHtuLnRleHR9CiAgICAgICAgPC9zcGFuPgogICAgICA8L2Rpdj4KICAgIDwvPgogICk7Cn07CgovLyDml7bpl7TovbTmlbTlnLrvvIjplZwxMSDpgIDlnLrlpI3liLbku7bkvKDnu4jmgIEgZiDlrprmoLznlKjvvInvvJvog4zmma/nlZnnu5nosIPnlKjmlrkKZXhwb3J0IGNvbnN0IFNjZW5lOiBSZWFjdC5GQzx7IGY6IG51bWJlciB9PiA9ICh7IGYgfSkgPT4gewogIGNvbnN0IGxhYmVsUCA9IHByb2coZiwgMCwgMzAsIEVBU0VfRVhQT19PVVQpOwogIGNvbnN0IGxpbmVQID0gcHJvZyhmLCAzMCwgMTIsIEVBU0VfRVhQT19PVVQpOwogIGNvbnN0IGIxID0gcHJvZyhmLCAyMTAsIDEwLCBFQVNFX0xJTkVBUik7CiAgY29uc3QgYjIgPSBwcm9nKGYsIDIyMCwgMTAsIEVBU0VfTElORUFSKTsKICByZXR1cm4gKAogICAgPD4KICAgICAgey8qIOmhtumDqOagh+etviAqL30KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGxlZnQ6IDAsCiAgICAgICAgICByaWdodDogMCwKICAgICAgICAgIHRvcDogODAgKyAoNDc2IC0gODApICogKDEgLSBsYWJlbFApLAogICAgICAgICAgaGVpZ2h0OiAxMjgsCiAgICAgICAgICBkaXNwbGF5OiAnZmxleCcsCiAgICAgICAgICBhbGlnbkl0ZW1zOiAnY2VudGVyJywKICAgICAgICAgIGp1c3RpZnlDb250ZW50OiAnY2VudGVyJywKICAgICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfU0FOUywKICAgICAgICAgIGZvbnRXZWlnaHQ6IDcwMCwKICAgICAgICAgIGZvbnRTaXplOiA2NCwKICAgICAgICAgIGNvbG9yOiBMSU1FLAogICAgICAgICAgdHJhbnNmb3JtOiBgc2NhbGUoJHsoMSAtIDAuNDM3NSAqIGxhYmVsUCkudG9GaXhlZCg0KX0pYCwKICAgICAgICAgIG9wYWNpdHk6IDEgLSAwLjQgKiBsYWJlbFAsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIOiAjOi/meWPquaYr+aXpeW4uOOAggogICAgICA8L2Rpdj4KICAgICAgey8qIOaXtumXtOi9tOS4u+e6v++8mnk9MTgwIOi1t+WQkeS4i+mVv+WIsCA2MDAgKi99CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICBsZWZ0OiA5NTgsCiAgICAgICAgICB0b3A6IDE4MCwKICAgICAgICAgIHdpZHRoOiA0LAogICAgICAgICAgaGVpZ2h0OiA2MDAgKiBsaW5lUCwKICAgICAgICAgIGJvcmRlclJhZGl1czogMiwKICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogQkxVRSwKICAgICAgICB9fQogICAgICAvPgogICAgICB7Tk9ERVMubWFwKChuKSA9PiAoCiAgICAgICAgPE5vZGVSb3cga2V5PXtuLnRleHR9IG49e259IGY9e2Z9IC8+CiAgICAgICkpfQogICAgICB7Lyog5bqV6YOo5Lik6KGMICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgbGVmdDogMCwKICAgICAgICAgIHJpZ2h0OiAwLAogICAgICAgICAgdG9wOiA4MjAsCiAgICAgICAgICB0ZXh0QWxpZ246ICdjZW50ZXInLAogICAgICAgICAgZm9udEZhbWlseTogRk9OVF9TQU5TLAogICAgICAgICAgZm9udFdlaWdodDogNTAwLAogICAgICAgICAgZm9udFNpemU6IDI4LAogICAgICAgICAgbGluZUhlaWdodDogMS41LAogICAgICAgICAgY29sb3I6IFRFWFRfRElNLAogICAgICAgIH19CiAgICAgID4KICAgICAgICA8ZGl2IHN0eWxlPXt7IG9wYWNpdHk6IGIxIH19Pui/meWPsOacuuWZqOS4iuayoeS6uuOAgjwvZGl2PgogICAgICAgIDxkaXYgc3R5bGU9e3sgb3BhY2l0eTogYjIgfX0+5L2G5pyJ5Lq65Zyo5LiK5aSc54+t44CCPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC8+CiAgKTsKfTsKCmV4cG9ydCBjb25zdCBTMTA6IFJlYWN0LkZDID0gKCkgPT4gewogIGNvbnN0IGYgPSB1c2VDdXJyZW50RnJhbWUoKTsKICByZXR1cm4gKAogICAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBiYWNrZ3JvdW5kOiBgbGluZWFyLWdyYWRpZW50KDE4MGRlZywgJHtCR19EQVJLfSwgJHtTVVJGQUNFfSlgIH19PgogICAgICA8U2NlbmUgZj17Zn0gLz4KICAgIDwvQWJzb2x1dGVGaWxsPgogICk7Cn07Cg==
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { EASE_EXPO_OUT, EASE_LINEAR, prog, springIn } from '../anim';
+import {
+  BG_DARK,
+  BLUE,
+  CORAL,
+  FONT_SANS,
+  GREEN,
+  LIME,
+  ORANGE,
+  SURFACE,
+  SURFACE_CARD,
+  TEXT,
+  TEXT_DIM,
+} from '../theme';
+
+// ============================================================================
+// 镜10 · 1260–1500 帧（42.0s–50.0s）夜班时间轴 — brief-v3 §三【镜头 10】
+// 本地帧：0–30 「而这只是日常。」向上缩至顶部标签（36px = scale 0.5625，opacity 0.6），
+//   机制同镜7（起点锚 top 476/height 128 flex 居中 = 行中心 y=540，与镜9 文字同点）。
+// 30–42 时间轴：x=960 y=180 起 4px 宽 #2E6BF0，height 0→600，12 帧 expo-out
+//   （画面节 1290–1305 窗口 vs 曲线节 12 帧 → §〇-3 取 12 帧 + 余量 hold）。
+// 60/90/120/150/180（全局 1320/1350/1380/1410/1440，间隔 30 帧）逐个节点：
+//   圆点 12px #D97757 前 4 帧 spring(1,120,10) scale 0→1.2→1（stiffness120/damping10
+//   欠阻尼 ζ≈0.456 过冲≈20%，天然落在 1.2）。「前 4 帧」裁为弹簧自然时长（同 R1b
+//   对 durationInFrames 的修复注记与歧义清单 9：强行压进 4 帧会毁掉 1.2 过冲，
+//   检查点8 @1490 要求静止——自然时长 ≤25 帧，远早于节点 5 完成点，成立）。
+//   卡片 500x80 #1E2636 圆角 8 前 8 帧 translateX(60→0) opacity(0→1) expo-out。
+//   图标 16x16 颜色照 §C；§C 未给图标与
+//   文本的相对位置 → 裁图标在文本左侧 gap 14，记歧义。
+// 210–230 底部两行（28px Medium #9CA3AF，中心 x=960 y=820）：画面节「每行 8 帧间隔」
+//   vs 曲线节逐行 1470–1480 / 1480–1490 → 裁曲线节端点（各 10 帧 linear，差 ≤3 帧）。
+//   检查点8 @全局1490（本地230）：五节点静止 + 两行完整显示 ✓。
+// Scene 抽出为 (f)=>… 纯函数组件并导出：镜11 需要「整体左移淡出」的静帧复制件，
+//   传终态 f=240 即全量定格（沿用镜9 复制镜8 的跨镜接力做法）。
+// §8.3-Q11（28px 低于字幕线）：本轮按任务令逐字保 §C 原值，提档与否留给渲染目检轮。
+// ============================================================================
+
+export type IconKind = 'wrench' | 'play' | 'note' | 'check' | 'doc';
+
+export type TNode = {
+  start: number;
+  dotY: number;
+  cardY: number;
+  text: string;
+  icon: IconKind;
+  iconColor: string;
+};
+
+export const NODES: TNode[] = [
+  { start: 60, dotY: 200, cardY: 180, text: '23:47 修复 bug', icon: 'wrench', iconColor: ORANGE },
+  { start: 90, dotY: 300, cardY: 280, text: '01:10 看视频', icon: 'play', iconColor: BLUE },
+  { start: 120, dotY: 400, cardY: 380, text: '02:40 写日记', icon: 'note', iconColor: LIME },
+  { start: 150, dotY: 500, cardY: 480, text: '03:40 CI 通过', icon: 'check', iconColor: GREEN },
+  { start: 180, dotY: 600, cardY: 580, text: '06:30 报告完成', icon: 'doc', iconColor: TEXT },
+];
+
+// 16x16 线性图标（通用 feather 风格笔画，无第三方资产）
+export const NodeGlyph: React.FC<{ icon: IconKind; color: string }> = ({ icon, color }) => {
+  const svgStyle = { width: 16, height: 16, display: 'block', flexShrink: 0 } as const;
+  const stroke = {
+    stroke: color,
+    strokeWidth: 2,
+    fill: 'none',
+    strokeLinecap: 'round' as const,
+    strokeLinejoin: 'round' as const,
+  };
+  switch (icon) {
+    case 'wrench':
+      return (
+        <svg style={svgStyle} viewBox="0 0 24 24">
+          <path
+            d="M14.7 6.3 a1 1 0 0 0 0 1.4 l1.6 1.6 a1 1 0 0 0 1.4 0 l3.77 -3.77 a6 6 0 0 1 -7.94 7.94 l-6.91 6.91 a2.12 2.12 0 0 1 -3 -3 l6.91 -6.91 a6 6 0 0 1 7.94 -7.94 z"
+            {...stroke}
+          />
+        </svg>
+      );
+    case 'play':
+      return (
+        <svg style={svgStyle} viewBox="0 0 24 24">
+          <polygon points="6,4 20,12 6,20" fill={color} />
+        </svg>
+      );
+    case 'note':
+      return (
+        <svg style={svgStyle} viewBox="0 0 24 24">
+          <path d="M4 19.5 A2.5 2.5 0 0 1 6.5 17 H20" {...stroke} />
+          <path d="M6.5 2 H20 v20 H6.5 A2.5 2.5 0 0 1 4 19.5 v-15 A2.5 2.5 0 0 1 6.5 2 z" {...stroke} />
+        </svg>
+      );
+    case 'check':
+      return (
+        <svg style={svgStyle} viewBox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12" {...stroke} />
+        </svg>
+      );
+    case 'doc':
+      return (
+        <svg style={svgStyle} viewBox="0 0 24 24">
+          <path d="M13 2 H6 a2 2 0 0 0 -2 2 v16 a2 2 0 0 0 2 2 h12 a2 2 0 0 0 2 -2 V9 z" {...stroke} />
+          <polyline points="13 2 13 9 20 9" {...stroke} />
+        </svg>
+      );
+  }
+};
+
+// 单个节点（圆点 + 卡片），入场由 (f − start) 驱动
+const NodeRow: React.FC<{ n: TNode; f: number }> = ({ n, f }) => {
+  if (f < n.start) return null;
+  const scale = Math.max(0, springIn(f, n.start, { tension: 120, friction: 10 }));
+  const p = prog(f, n.start, 8, EASE_EXPO_OUT);
+  return (
+    <>
+      <div
+        style={{
+          position: 'absolute',
+          left: 960 - 6,
+          top: n.dotY - 6,
+          width: 12,
+          height: 12,
+          borderRadius: '50%',
+          backgroundColor: CORAL,
+          transform: `scale(${scale.toFixed(3)})`,
+        }}
+      />
+      <div
+        style={{
+          position: 'absolute',
+          left: 1040,
+          top: n.cardY,
+          width: 500,
+          height: 80,
+          backgroundColor: SURFACE_CARD,
+          borderRadius: 8,
+          display: 'flex',
+          alignItems: 'center',
+          gap: 14,
+          padding: '0 24px',
+          boxSizing: 'border-box',
+          transform: `translateX(${(60 * (1 - p)).toFixed(2)}px)`,
+          opacity: p,
+        }}
+      >
+        <NodeGlyph icon={n.icon} color={n.iconColor} />
+        <span style={{ fontFamily: FONT_SANS, fontWeight: 400, fontSize: 20, color: TEXT, whiteSpace: 'pre' }}>
+          {n.text}
+        </span>
+      </div>
+    </>
+  );
+};
+
+// 时间轴整场（镜11 退场复制件传终态 f 定格用）；背景留给调用方
+export const Scene: React.FC<{ f: number }> = ({ f }) => {
+  const labelP = prog(f, 0, 30, EASE_EXPO_OUT);
+  const lineP = prog(f, 30, 12, EASE_EXPO_OUT);
+  const b1 = prog(f, 210, 10, EASE_LINEAR);
+  const b2 = prog(f, 220, 10, EASE_LINEAR);
+  return (
+    <>
+      {/* 顶部标签 */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          top: 80 + (476 - 80) * (1 - labelP),
+          height: 128,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          fontFamily: FONT_SANS,
+          fontWeight: 700,
+          fontSize: 64,
+          color: LIME,
+          transform: `scale(${(1 - 0.4375 * labelP).toFixed(4)})`,
+          opacity: 1 - 0.4 * labelP,
+        }}
+      >
+        而这只是日常。
+      </div>
+      {/* 时间轴主线：y=180 起向下长到 600 */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 958,
+          top: 180,
+          width: 4,
+          height: 600 * lineP,
+          borderRadius: 2,
+          backgroundColor: BLUE,
+        }}
+      />
+      {NODES.map((n) => (
+        <NodeRow key={n.text} n={n} f={f} />
+      ))}
+      {/* 底部两行 */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          top: 820,
+          textAlign: 'center',
+          fontFamily: FONT_SANS,
+          fontWeight: 500,
+          fontSize: 28,
+          lineHeight: 1.5,
+          color: TEXT_DIM,
+        }}
+      >
+        <div style={{ opacity: b1 }}>这台机器上没人。</div>
+        <div style={{ opacity: b2 }}>但有人在上夜班。</div>
+      </div>
+    </>
+  );
+};
+
+export const S10: React.FC = () => {
+  const f = useCurrentFrame();
+  return (
+    <AbsoluteFill style={{ background: `linear-gradient(180deg, ${BG_DARK}, ${SURFACE})` }}>
+      <Scene f={f} />
+    </AbsoluteFill>
+  );
+};

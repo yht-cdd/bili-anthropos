@@ -1,1 +1,177 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IGJsaW5rLCBFQVNFX0VYUE9fT1VULCBsZXJwRiwgcHJvZywgc2luZVB1bHNlLCB0eXBlZExpbmUgfSBmcm9tICcuLi9hbmltJzsKaW1wb3J0IHsKICBBTUJFUiwKICBCRywKICBDT1JBTCwKICBDWUFOLAogIEZPTlRfTU9OTywKICBGT05UX1NBTlMsCiAgR1JBWSwKICBITF9CRywKICBTVVJGQUNFLAogIFRFWFRfRElNLAp9IGZyb20gJy4uL3RoZW1lJzsKCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8g6ZWcNyDCtyA4MTDigJMxMDUwIOW4p++8iDI3LjBz4oCTMzUuMHPvvIlSZXRyeSA0L+KIniDnu4jnq68g4oCUIGJyaWVmLXYzIMKn5LiJ44CQ6ZWc5aS0IDfjgJEKLy8g5pys5Zyw5bin77yaMOKAkzMwIOS4u+aWh+Wtl+e8qeS4uumhtumDqOagh+etvuOAguiuvuiuoeeov+iHquebuOefm+ebvu+8iOabsue6v+iKgiB0cmFuc2xhdGVZIOWPqiAtODDvvIwKLy8gICDnlLvpnaLoioLopoHmsYLjgIzmiJDkuLrpobbpg6jmoIfnrb7jgI3vvInihpIg5Y+W5Y+Z5LqL5oSP5Zu+77ya5LuO6ZWcNiDkuK3lv4PkvY3vvIh54omINDkw77yJ5LiK56e76IezCi8vICAgeT04MOOAgXNjYWxlIDAuNe+8iDcy4oaSMzZweO+8ieOAgW9wYWNpdHkgMC4344CC6K6w5q2n5LmJ5riF5Y2V44CCCi8vIDMw4oCTNjAg57uI56uvIDEwMDB4NTYwIOWxheS4re+8jDMw4oCTNDIgcGVyc3BlY3RpdmUoODAwcHgpIHJvdGF0ZVgoLTjihpIwKQovLyAgIHRyYW5zbGF0ZVooLTIwMOKGkjApIGV4cG8tb3V0IDEyIOW4p++8m+aJk+Wtl+acrOWcsCA2MCDotbfot5HvvIjlhajlsYAgODcwPeaJk+Wtl+mfs+mHjeWQr++8ie+8jAovLyAgIOavj+ihjOW7tui/nyAxMiDluKcgLyDmr4/lrZfnrKYgMS41IOW4p+OAggovLyAxMjDigJMxMjbvvIjlhajlsYAgOTMw77yJ44CMQW5hbHlzaXM6IGxpbmUgNDfjgI3ooYzpu4ToibLpq5jkuq4gMOKGkjAuOCBzaW5lIHB1bHNpbmfvvJsKLy8gMTUw4oCTMTYy77yI5YWo5bGAIDk2MO+8iemdkuiJsuaJq+aPj+e6vyAw4oaSMjIwIGxpbmVhciAxMiDluKfvvIzokL3lrprlkI7nlZkgNHB4IOmdkuiJsuaPj+i+ueahhu+8mwovLyAxODDvvIjlhajlsYAgOTkw77yJ6LW3IFBhdGNoaW5nIOihjOWPs+S+p+ePiueRmiBzcGlubmVyIDQg5binL+WciO+8mwovLyAyMTDigJMyNDAg5YGc55WZICsg5YWJ5qCH6Zeq54OB44CC5YWo5bGAIDEwMDXigJMxMDEzIOmdmemfs+e8uuWPo+Wxnumfs+mikeWxgu+8iFIy77yJ44CCCi8vIOato+aWhyAyMHB477ya6K6+6K6h56i/5pyq57uZ6ZWcN+Wtl+WPt++8jOS7i+S6jumVnDEoMTRweCkv6ZWcNSgxNnB4KSDkuYvkuIrlj5blj6/or7vlgLzvvIzorrDmrafkuYnmuIXljZXjgIIKLy8g5Yeg5L2V77yaaGVhZGVyIDQwICsg5q2j5paHIHBhZGRpbmdUb3AgNDQgKyDooYzpq5ggNDQg4oaSIOesrCA0IOihjO+8iFJvb3QgY2F1c2XvvInlupXnvJgKLy8gICDmgbDlnKggeT0yMjDvvIzkuI7miavmj4/nur/nu4jngrnlkLvlkIjjgIIKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKY29uc3QgTElORVMgPSBbCiAgJ1swMzozODoxNF0gUmV0cnkgNC/iiJ4nLAogICdbMDM6Mzg6MTVdIFJlYWRpbmcgZXJyb3IgbG9nLi4uJywKICAnWzAzOjM4OjQ3XSBBbmFseXNpczogbGluZSA0NycsCiAgJ1swMzozODo0OF0gUm9vdCBjYXVzZTogLS1jb25jdXJyZW5jeSA4IGV4Y2VlZHMgbGltaXQnLAogICdbMDM6Mzg6NDldIFBhdGNoaW5nIGNvbmZpZy4uLicsCl07CmNvbnN0IEhMX1JPVyA9IDI7IC8vIOm7hOiJsumrmOS6ruihjApjb25zdCBTQ0FOX1JPVyA9IDM7IC8vIOaJq+aPj+e6v+ahhuWumuihjO+8iOihjOW6lSB5PTIyMO+8iQpjb25zdCBTUElOX1JPVyA9IDQ7IC8vIHNwaW5uZXIg6KGMCmNvbnN0IFRZUEVfQVQgPSA2MDsKY29uc3QgTElORV9HQVAgPSAxMjsKY29uc3QgQ0hBUl9EVVIgPSAxLjU7CmNvbnN0IEhFQURFUl9IID0gNDA7CmNvbnN0IEJPRFlfUEFEX1RPUCA9IDQ0Owpjb25zdCBST1dfSCA9IDQ0OwoKZXhwb3J0IGNvbnN0IFM3OiBSZWFjdC5GQyA9ICgpID0+IHsKICBjb25zdCBmID0gdXNlQ3VycmVudEZyYW1lKCk7CiAgY29uc3QgbGFiZWxQID0gcHJvZyhmLCAwLCAzMCwgRUFTRV9FWFBPX09VVCk7CiAgY29uc3QgdGVybVAgPSBwcm9nKGYsIDMwLCAxMiwgRUFTRV9FWFBPX09VVCk7CiAgLy8g6auY5Lqu77yaNiDluKcgc2luZSDljYrms6IgMOKGkjAuOO+8jDEyNiDluKflkI7kv53mjIEgMC44CiAgY29uc3QgaGxPcGFjaXR5ID0gZiA8IDEyMCA/IDAgOiBmIDwgMTI2ID8gMC44ICogc2luZVB1bHNlKGYsIDEyMCwgNikgOiAwLjg7CiAgLy8g5omr5o+P57q/77yaMTUw4oCTMTYyIHkgMOKGkjIyMCBsaW5lYXLvvJsxNjIg5ZCO57q/5raI5aSx44CB5o+P6L655qGG55WZ5LiLCiAgY29uc3Qgc2NhblkgPSAyMjAgKiBsZXJwRihmLCBbMTUwLCAxNjJdLCBbMCwgMV0pOwogIGNvbnN0IHNjYW5Eb25lID0gZiA+PSAxNjI7CiAgY29uc3Qgc3BpbkRlZyA9IGYgPj0gMTgwID8gKCgoZiAtIDE4MCkgJSA0KSAvIDQpICogMzYwIDogMDsKICBjb25zdCBjdXJzb3JPbiA9IGJsaW5rKGYsIFRZUEVfQVQsIDEyKTsKCiAgcmV0dXJuICgKICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sgYmFja2dyb3VuZENvbG9yOiBCRyB9fT4KICAgICAgey8qIOmhtumDqOagh+etvu+8iOmVnDYg5Li75paH5a2X57yp5YWl77yb6LW354K5IHk9NDkwIOS4jumVnDYg5Lit5b+D5L2N5a+56b2Q5L+d6K+B6Leo6ZWc6L+e57ut77yJICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgbGVmdDogMCwKICAgICAgICAgIHJpZ2h0OiAwLAogICAgICAgICAgdG9wOiA4MCArICg0OTAgLSA4MCkgKiAoMSAtIGxhYmVsUCksCiAgICAgICAgICB0ZXh0QWxpZ246ICdjZW50ZXInLAogICAgICAgICAgZm9udEZhbWlseTogRk9OVF9TQU5TLAogICAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgICAgZm9udFNpemU6IDcyLAogICAgICAgICAgY29sb3I6IENPUkFMLAogICAgICAgICAgdHJhbnNmb3JtOiBgc2NhbGUoJHsxIC0gMC41ICogbGFiZWxQfSlgLAogICAgICAgICAgb3BhY2l0eTogMSAtIDAuMyAqIGxhYmVsUCwKICAgICAgICB9fQogICAgICA+CiAgICAgICAg5L2G5a6D5rKh5pS+5byD44CCCiAgICAgIDwvZGl2PgoKICAgICAgey8qIOe7iOerr++8mjNEIOWFpeWcuiAqL30KICAgICAgPGRpdiBzdHlsZT17eyBwZXJzcGVjdGl2ZTogODAwIH19PgogICAgICAgIDxkaXYKICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgICBsZWZ0OiAoMTkyMCAtIDEwMDApIC8gMiwKICAgICAgICAgICAgdG9wOiAoMTA4MCAtIDU2MCkgLyAyLAogICAgICAgICAgICB3aWR0aDogMTAwMCwKICAgICAgICAgICAgaGVpZ2h0OiA1NjAsCiAgICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogU1VSRkFDRSwKICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiAxNiwKICAgICAgICAgICAgZm9udEZhbWlseTogRk9OVF9NT05PLAogICAgICAgICAgICBvcGFjaXR5OiB0ZXJtUCwKICAgICAgICAgICAgdHJhbnNmb3JtOiBgcm90YXRlWCgkeygtOCAqICgxIC0gdGVybVApKS50b0ZpeGVkKDMpfWRlZykgdHJhbnNsYXRlWigkeygtMjAwICogKDEgLSB0ZXJtUCkpLnRvRml4ZWQoMil9cHgpYCwKICAgICAgICAgICAgYm94U2hhZG93OiAnMCAzMHB4IDkwcHggcmdiYSgwLDAsMCwwLjU1KScsCiAgICAgICAgICAgIG92ZXJmbG93OiAnaGlkZGVuJywKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAgPGRpdiBzdHlsZT17eyBoZWlnaHQ6IEhFQURFUl9ILCBkaXNwbGF5OiAnZmxleCcsIGFsaWduSXRlbXM6ICdjZW50ZXInLCBwYWRkaW5nOiAnMCAxOHB4JywgZm9udFNpemU6IDE0LCBjb2xvcjogR1JBWSB9fT4KICAgICAgICAgICAgYW50aHJvcG9zQGxvY2FsIH4gWzAzOjM4XQogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2IHN0eWxlPXt7IHBhZGRpbmdUb3A6IEJPRFlfUEFEX1RPUCwgcGFkZGluZ0xlZnQ6IDM2LCBwYWRkaW5nUmlnaHQ6IDM2LCBmb250U2l6ZTogMjAsIGNvbG9yOiBURVhUX0RJTSB9fT4KICAgICAgICAgICAge0xJTkVTLm1hcCgobGluZSwgaSkgPT4gewogICAgICAgICAgICAgIGNvbnN0IG4gPSB0eXBlZExpbmUoZiwgVFlQRV9BVCwgaSwgTElORV9HQVAsIGxpbmUubGVuZ3RoLCBDSEFSX0RVUik7CiAgICAgICAgICAgICAgY29uc3QgaXNIbCA9IGkgPT09IEhMX1JPVzsKICAgICAgICAgICAgICBjb25zdCBpc1NjYW4gPSBpID09PSBTQ0FOX1JPVzsKICAgICAgICAgICAgICBjb25zdCBpc1NwaW4gPSBpID09PSBTUElOX1JPVzsKICAgICAgICAgICAgICByZXR1cm4gKAogICAgICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgICAgICBrZXk9e2l9CiAgICAgICAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiBST1dfSCwKICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiAnZmxleCcsCiAgICAgICAgICAgICAgICAgICAgYWxpZ25JdGVtczogJ2NlbnRlcicsCiAgICAgICAgICAgICAgICAgICAgd2hpdGVTcGFjZTogJ3ByZScsCiAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZDogaXNIbCAmJiBobE9wYWNpdHkgPiAwID8gSExfQkcgOiAndHJhbnNwYXJlbnQnLAogICAgICAgICAgICAgICAgICAgIGNvbG9yOiBpc0hsICYmIGhsT3BhY2l0eSA+IDAuMyA/IEFNQkVSIDogVEVYVF9ESU0sCiAgICAgICAgICAgICAgICAgICAgYm94U2hhZG93OiBpc1NjYW4gJiYgc2NhbkRvbmUgPyBgMCAwIDAgNHB4ICR7Q1lBTn1gIDogJ25vbmUnLAogICAgICAgICAgICAgICAgICAgIGJvcmRlclJhZGl1czogaXNTY2FuICYmIHNjYW5Eb25lID8gNCA6IDAsCiAgICAgICAgICAgICAgICAgICAgcGFkZGluZ0xlZnQ6IDEwLAogICAgICAgICAgICAgICAgICAgIG1hcmdpbkxlZnQ6IC0xMCwKICAgICAgICAgICAgICAgICAgICBwYWRkaW5nUmlnaHQ6IDEwLAogICAgICAgICAgICAgICAgICB9fQogICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICB7bGluZS5zbGljZSgwLCBuKX0KICAgICAgICAgICAgICAgICAge2lzU3BpbiAmJiBmID49IDE4MCA/ICgKICAgICAgICAgICAgICAgICAgICA8c3BhbgogICAgICAgICAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgICAgICAgICAgbWFyZ2luTGVmdDogMTYsCiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiAxNiwKICAgICAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiAxNiwKICAgICAgICAgICAgICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiAnNTAlJywKICAgICAgICAgICAgICAgICAgICAgICAgYm9yZGVyOiBgMi41cHggc29saWQgJHtDT1JBTH1gLAogICAgICAgICAgICAgICAgICAgICAgICBib3JkZXJUb3BDb2xvcjogJ3RyYW5zcGFyZW50JywKICAgICAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogJ2lubGluZS1ibG9jaycsCiAgICAgICAgICAgICAgICAgICAgICAgIHRyYW5zZm9ybTogYHJvdGF0ZSgke3NwaW5EZWd9ZGVnKWAsCiAgICAgICAgICAgICAgICAgICAgICAgIGZsZXhTaHJpbms6IDAsCiAgICAgICAgICAgICAgICAgICAgICB9fQogICAgICAgICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgICAgICkgOiBudWxsfQogICAgICAgICAgICAgICAgICB7aSA9PT0gTElORVMubGVuZ3RoIC0gMSAmJiBuID49IGxpbmUubGVuZ3RoICYmIGN1cnNvck9uID09PSAxID8gKAogICAgICAgICAgICAgICAgICAgIDxzcGFuCiAgICAgICAgICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiAnaW5saW5lLWJsb2NrJywKICAgICAgICAgICAgICAgICAgICAgICAgd2lkdGg6IDgsCiAgICAgICAgICAgICAgICAgICAgICAgIGhlaWdodDogMTgsCiAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogQ09SQUwsCiAgICAgICAgICAgICAgICAgICAgICAgIG1hcmdpbkxlZnQ6IDMsCiAgICAgICAgICAgICAgICAgICAgICB9fQogICAgICAgICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgICAgICkgOiBudWxsfQogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgKTsKICAgICAgICAgICAgfSl9CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIHsvKiDmiavmj4/nur/vvJrku47nqpflj6PpobYgeT0wIOaJq+WIsOihjOW6lSB5PTIyMO+8jDEyIOW4pyBsaW5lYXIgKi99CiAgICAgICAgICB7ZiA+PSAxNTAgJiYgIXNjYW5Eb25lID8gKAogICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgICAgICAgbGVmdDogMjgsCiAgICAgICAgICAgICAgICByaWdodDogMjgsCiAgICAgICAgICAgICAgICB0b3A6IHNjYW5ZLAogICAgICAgICAgICAgICAgaGVpZ2h0OiAyLAogICAgICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiBDWUFOLAogICAgICAgICAgICAgICAgYm94U2hhZG93OiBgMCAwIDEycHggJHtDWUFOfWAsCiAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgLz4KICAgICAgICAgICkgOiBudWxsfQogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvQWJzb2x1dGVGaWxsPgogICk7Cn07Cg==
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { blink, EASE_EXPO_OUT, lerpF, prog, sinePulse, typedLine } from '../anim';
+import {
+  AMBER,
+  BG,
+  CORAL,
+  CYAN,
+  FONT_MONO,
+  FONT_SANS,
+  GRAY,
+  HL_BG,
+  SURFACE,
+  TEXT_DIM,
+} from '../theme';
+
+// ============================================================================
+// 镜7 · 810–1050 帧（27.0s–35.0s）Retry 4/∞ 终端 — brief-v3 §三【镜头 7】
+// 本地帧：0–30 主文字缩为顶部标签。设计稿自相矛盾（曲线节 translateY 只 -80，
+//   画面节要求「成为顶部标签」）→ 取叙事意图：从镜6 中心位（y≈490）上移至
+//   y=80、scale 0.5（72→36px）、opacity 0.7。记歧义清单。
+// 30–60 终端 1000x560 居中，30–42 perspective(800px) rotateX(-8→0)
+//   translateZ(-200→0) expo-out 12 帧；打字本地 60 起跑（全局 870=打字音重启），
+//   每行延迟 12 帧 / 每字符 1.5 帧。
+// 120–126（全局 930）「Analysis: line 47」行黄色高亮 0→0.8 sine pulsing；
+// 150–162（全局 960）青色扫描线 0→220 linear 12 帧，落定后留 4px 青色描边框；
+// 180（全局 990）起 Patching 行右侧珊瑚 spinner 4 帧/圈；
+// 210–240 停留 + 光标闪烁。全局 1005–1013 静音缺口属音频层（R2）。
+// 正文 20px：设计稿未给镜7字号，介于镜1(14px)/镜5(16px) 之上取可读值，记歧义清单。
+// 几何：header 40 + 正文 paddingTop 44 + 行高 44 → 第 4 行（Root cause）底缘
+//   恰在 y=220，与扫描线终点吻合。
+// ============================================================================
+
+const LINES = [
+  '[03:38:14] Retry 4/∞',
+  '[03:38:15] Reading error log...',
+  '[03:38:47] Analysis: line 47',
+  '[03:38:48] Root cause: --concurrency 8 exceeds limit',
+  '[03:38:49] Patching config...',
+];
+const HL_ROW = 2; // 黄色高亮行
+const SCAN_ROW = 3; // 扫描线框定行（行底 y=220）
+const SPIN_ROW = 4; // spinner 行
+const TYPE_AT = 60;
+const LINE_GAP = 12;
+const CHAR_DUR = 1.5;
+const HEADER_H = 40;
+const BODY_PAD_TOP = 44;
+const ROW_H = 44;
+
+export const S7: React.FC = () => {
+  const f = useCurrentFrame();
+  const labelP = prog(f, 0, 30, EASE_EXPO_OUT);
+  const termP = prog(f, 30, 12, EASE_EXPO_OUT);
+  // 高亮：6 帧 sine 半波 0→0.8，126 帧后保持 0.8
+  const hlOpacity = f < 120 ? 0 : f < 126 ? 0.8 * sinePulse(f, 120, 6) : 0.8;
+  // 扫描线：150–162 y 0→220 linear；162 后线消失、描边框留下
+  const scanY = 220 * lerpF(f, [150, 162], [0, 1]);
+  const scanDone = f >= 162;
+  const spinDeg = f >= 180 ? (((f - 180) % 4) / 4) * 360 : 0;
+  const cursorOn = blink(f, TYPE_AT, 12);
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: BG }}>
+      {/* 顶部标签（镜6 主文字缩入；起点 y=490 与镜6 中心位对齐保证跨镜连续） */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          top: 80 + (490 - 80) * (1 - labelP),
+          textAlign: 'center',
+          fontFamily: FONT_SANS,
+          fontWeight: 700,
+          fontSize: 72,
+          color: CORAL,
+          transform: `scale(${1 - 0.5 * labelP})`,
+          opacity: 1 - 0.3 * labelP,
+        }}
+      >
+        但它没放弃。
+      </div>
+
+      {/* 终端：3D 入场 */}
+      <div style={{ perspective: 800 }}>
+        <div
+          style={{
+            position: 'absolute',
+            left: (1920 - 1000) / 2,
+            top: (1080 - 560) / 2,
+            width: 1000,
+            height: 560,
+            backgroundColor: SURFACE,
+            borderRadius: 16,
+            fontFamily: FONT_MONO,
+            opacity: termP,
+            transform: `rotateX(${(-8 * (1 - termP)).toFixed(3)}deg) translateZ(${(-200 * (1 - termP)).toFixed(2)}px)`,
+            boxShadow: '0 30px 90px rgba(0,0,0,0.55)',
+            overflow: 'hidden',
+          }}
+        >
+          <div style={{ height: HEADER_H, display: 'flex', alignItems: 'center', padding: '0 18px', fontSize: 14, color: GRAY }}>
+            anthropos@local ~ [03:38]
+          </div>
+          <div style={{ paddingTop: BODY_PAD_TOP, paddingLeft: 36, paddingRight: 36, fontSize: 20, color: TEXT_DIM }}>
+            {LINES.map((line, i) => {
+              const n = typedLine(f, TYPE_AT, i, LINE_GAP, line.length, CHAR_DUR);
+              const isHl = i === HL_ROW;
+              const isScan = i === SCAN_ROW;
+              const isSpin = i === SPIN_ROW;
+              return (
+                <div
+                  key={i}
+                  style={{
+                    height: ROW_H,
+                    display: 'flex',
+                    alignItems: 'center',
+                    whiteSpace: 'pre',
+                    background: isHl && hlOpacity > 0 ? HL_BG : 'transparent',
+                    color: isHl && hlOpacity > 0.3 ? AMBER : TEXT_DIM,
+                    boxShadow: isScan && scanDone ? `0 0 0 4px ${CYAN}` : 'none',
+                    borderRadius: isScan && scanDone ? 4 : 0,
+                    paddingLeft: 10,
+                    marginLeft: -10,
+                    paddingRight: 10,
+                  }}
+                >
+                  {line.slice(0, n)}
+                  {isSpin && f >= 180 ? (
+                    <span
+                      style={{
+                        marginLeft: 16,
+                        width: 16,
+                        height: 16,
+                        borderRadius: '50%',
+                        border: `2.5px solid ${CORAL}`,
+                        borderTopColor: 'transparent',
+                        display: 'inline-block',
+                        transform: `rotate(${spinDeg}deg)`,
+                        flexShrink: 0,
+                      }}
+                    />
+                  ) : null}
+                  {i === LINES.length - 1 && n >= line.length && cursorOn === 1 ? (
+                    <span
+                      style={{
+                        display: 'inline-block',
+                        width: 8,
+                        height: 18,
+                        backgroundColor: CORAL,
+                        marginLeft: 3,
+                      }}
+                    />
+                  ) : null}
+                </div>
+              );
+            })}
+          </div>
+          {/* 扫描线：从窗口顶 y=0 扫到行底 y=220，12 帧 linear */}
+          {f >= 150 && !scanDone ? (
+            <div
+              style={{
+                position: 'absolute',
+                left: 28,
+                right: 28,
+                top: scanY,
+                height: 2,
+                backgroundColor: CYAN,
+                boxShadow: `0 0 12px ${CYAN}`,
+              }}
+            />
+          ) : null}
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};

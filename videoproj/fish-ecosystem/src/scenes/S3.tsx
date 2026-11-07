@@ -1,1 +1,76 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEJPRFlfUFgsIENBUkQsIENZQU4sIERJTSwgTElORSwgTk9URV9QWCwgVEVYVCwgVElUTEVfUFgsIGZtdCB9IGZyb20gJy4uL3RoZW1lJzsKaW1wb3J0IHsgY291bnRVcCwgZW50ZXIsIGV4aXRGYWRlIH0gZnJvbSAnLi4vYW5pbSc7CgovLyBTMyAxNi4wMDAtMjguMDAwIOaPreW6lQovLyDlpKflrZfjgIzlpKfogqXpsbwgPSBBc3RyQm9044CNCi8vIOS4ieS4quimgeeCueadoeS+neasoeWFpTog6KOF5Lik5Liq6ZW/6K6w5b+G5o+S5Lu2IC8gOTAwK+mFjee9rumhuSAvIOaYvuWNoUdUWCA3NTAgMkflsLHog73ot5EKLy8g5Y+z5LiK6K6h5pWw5ZmoOiDpg6jnvbLmlZnnqIvmkq3mlL4gLT4gOTgsNjQzICAg77yI5pWw5a2X5Ye65aSEOiB2aWRlb3MvQlYxekx4NzZqRXluL++8iQpjb25zdCBQT0lOVFMgPSBbJ+ijheS4pOS4qumVv+iusOW/huaPkuS7ticsICc5MDAr6YWN572u6aG5JywgJ+aYvuWNoUdUWCA3NTAgMkflsLHog73ot5EnXTsKY29uc3QgVklFV1MgPSA5ODY0MzsgLy8g57Sg5p2Q5p2l5rqQOiDpg6jnvbLmlZnnqIsg5pKt5pS+OTgsNjQzCgpleHBvcnQgY29uc3QgUzM6IFJlYWN0LkZDID0gKCkgPT4gewogIGNvbnN0IGZyYW1lID0gdXNlQ3VycmVudEZyYW1lKCk7CiAgY29uc3Qgdmlld3MgPSBjb3VudFVwKGZyYW1lLCBWSUVXUywgMzApOyAvLyAxcyDlkI7otbfot7MsIGVhc2Utb3V0IDgwMG1zCiAgY29uc3Qgb3V0ID0gZnJhbWUgPiAzNDAgPyBleGl0RmFkZShmcmFtZSwgMzQwKSA6IHt9OwoKICByZXR1cm4gKAogICAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBqdXN0aWZ5Q29udGVudDogJ2NlbnRlcicsIGFsaWduSXRlbXM6ICdjZW50ZXInLCAuLi5vdXQgfX0+CiAgICAgIHsvKiDlj7PkuIrorqHmlbDlmaggKi99CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICB0b3A6IDIxMCwKICAgICAgICAgIHJpZ2h0OiA3MCwKICAgICAgICAgIHRleHRBbGlnbjogJ3JpZ2h0JywKICAgICAgICAgIC4uLmVudGVyKGZyYW1lLCAzMCksCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIDxkaXYgc3R5bGU9e3sgZm9udFNpemU6IE5PVEVfUFgsIGNvbG9yOiBESU0gfX0+6YOo572y5pWZ56iL5pKt5pS+PC9kaXY+CiAgICAgICAgPGRpdgogICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgZm9udFNpemU6IEJPRFlfUFggKiAxLjI1LAogICAgICAgICAgICBmb250V2VpZ2h0OiA3MDAsCiAgICAgICAgICAgIGNvbG9yOiBDWUFOLAogICAgICAgICAgICBmb250VmFyaWFudE51bWVyaWM6ICd0YWJ1bGFyLW51bXMnLAogICAgICAgICAgICBtYXJnaW5Ub3A6IDgsCiAgICAgICAgICB9fQogICAgICAgID4KICAgICAgICAgIHtmbXQodmlld3MpfQogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KCiAgICAgIHsvKiDlpKflrZfmj63lupUgKi99CiAgICAgIDxkaXYgc3R5bGU9e3sgZm9udFNpemU6IFRJVExFX1BYLCBmb250V2VpZ2h0OiA3MDAsIGNvbG9yOiBURVhULCAuLi5lbnRlcihmcmFtZSwgOCkgfX0+CiAgICAgICAg5aSn6IKl6bG8IDxzcGFuIHN0eWxlPXt7IGNvbG9yOiBESU0gfX0+PTwvc3Bhbj57JyAnfQogICAgICAgIDxzcGFuIHN0eWxlPXt7IGNvbG9yOiBDWUFOIH19PkFzdHJCb3Q8L3NwYW4+CiAgICAgIDwvZGl2PgoKICAgICAgey8qIOS4ieS4quimgeeCueadoeS+neasoeWFpSAqL30KICAgICAgPGRpdiBzdHlsZT17eyB3aWR0aDogODYwLCBtYXJnaW5Ub3A6IDk2LCBkaXNwbGF5OiAnZmxleCcsIGZsZXhEaXJlY3Rpb246ICdjb2x1bW4nLCBnYXA6IDMwIH19PgogICAgICAgIHtQT0lOVFMubWFwKChwLCBpKSA9PiAoCiAgICAgICAgICA8ZGl2CiAgICAgICAgICAgIGtleT17cH0KICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICBkaXNwbGF5OiAnZmxleCcsCiAgICAgICAgICAgICAgYWxpZ25JdGVtczogJ2NlbnRlcicsCiAgICAgICAgICAgICAgZ2FwOiAyOCwKICAgICAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6IENBUkQsCiAgICAgICAgICAgICAgYm9yZGVyOiBgMnB4IHNvbGlkICR7TElORX1gLAogICAgICAgICAgICAgIGJvcmRlckxlZnQ6IGA4cHggc29saWQgJHtDWUFOfWAsCiAgICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiAyMCwKICAgICAgICAgICAgICBwYWRkaW5nOiAnMzRweCA0MHB4JywKICAgICAgICAgICAgICAuLi5lbnRlcihmcmFtZSwgNzggKyBpICogNDIpLAogICAgICAgICAgICB9fQogICAgICAgICAgPgogICAgICAgICAgICA8c3BhbiBzdHlsZT17eyBmb250U2l6ZTogTk9URV9QWCwgY29sb3I6IERJTSwgZm9udFZhcmlhbnROdW1lcmljOiAndGFidWxhci1udW1zJyB9fT4KICAgICAgICAgICAgICAwe2kgKyAxfQogICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgIDxzcGFuIHN0eWxlPXt7IGZvbnRTaXplOiBCT0RZX1BYICogMC45MiwgY29sb3I6IFRFWFQgfX0+e3B9PC9zcGFuPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgKSl9CiAgICAgIDwvZGl2PgogICAgPC9BYnNvbHV0ZUZpbGw+CiAgKTsKfTsK
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { BODY_PX, CARD, CYAN, DIM, LINE, NOTE_PX, TEXT, TITLE_PX, fmt } from '../theme';
+import { countUp, enter, exitFade } from '../anim';
+
+// S3 16.000-28.000 揭底
+// 大字「大肥鱼 = AstrBot」
+// 三个要点条依次入: 装两个长记忆插件 / 900+配置项 / 显卡GTX 750 2G就能跑
+// 右上计数器: 部署教程播放 -> 98,643   （数字出处: videos/BV1zLx76jEyn/）
+const POINTS = ['装两个长记忆插件', '900+配置项', '显卡GTX 750 2G就能跑'];
+const VIEWS = 98643; // 素材来源: 部署教程 播放98,643
+
+export const S3: React.FC = () => {
+  const frame = useCurrentFrame();
+  const views = countUp(frame, VIEWS, 30); // 1s 后起跳, ease-out 800ms
+  const out = frame > 340 ? exitFade(frame, 340) : {};
+
+  return (
+    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', ...out }}>
+      {/* 右上计数器 */}
+      <div
+        style={{
+          position: 'absolute',
+          top: 210,
+          right: 70,
+          textAlign: 'right',
+          ...enter(frame, 30),
+        }}
+      >
+        <div style={{ fontSize: NOTE_PX, color: DIM }}>部署教程播放</div>
+        <div
+          style={{
+            fontSize: BODY_PX * 1.25,
+            fontWeight: 700,
+            color: CYAN,
+            fontVariantNumeric: 'tabular-nums',
+            marginTop: 8,
+          }}
+        >
+          {fmt(views)}
+        </div>
+      </div>
+
+      {/* 大字揭底 */}
+      <div style={{ fontSize: TITLE_PX, fontWeight: 700, color: TEXT, ...enter(frame, 8) }}>
+        大肥鱼 <span style={{ color: DIM }}>=</span>{' '}
+        <span style={{ color: CYAN }}>AstrBot</span>
+      </div>
+
+      {/* 三个要点条依次入 */}
+      <div style={{ width: 860, marginTop: 96, display: 'flex', flexDirection: 'column', gap: 30 }}>
+        {POINTS.map((p, i) => (
+          <div
+            key={p}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 28,
+              backgroundColor: CARD,
+              border: `2px solid ${LINE}`,
+              borderLeft: `8px solid ${CYAN}`,
+              borderRadius: 20,
+              padding: '34px 40px',
+              ...enter(frame, 78 + i * 42),
+            }}
+          >
+            <span style={{ fontSize: NOTE_PX, color: DIM, fontVariantNumeric: 'tabular-nums' }}>
+              0{i + 1}
+            </span>
+            <span style={{ fontSize: BODY_PX * 0.92, color: TEXT }}>{p}</span>
+          </div>
+        ))}
+      </div>
+    </AbsoluteFill>
+  );
+};

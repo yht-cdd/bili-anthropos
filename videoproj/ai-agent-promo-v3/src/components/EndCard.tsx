@@ -1,1 +1,175 @@
-Ly8gdjMtUjPvvJrlsL7ljaHlhbHkuqvku7Yg4oCU4oCUIOmVnDE044CMQUnjgI0r5pif6IqS44CB6ZWcMTXigJMxN+OAjEFHRU5U44CN5ou85a2X6KGM44CB6ZWcMTgg5LiK56e757uI5oCB44CCCi8vIMKnQyDntKDmnZDlj6PlvoTvvJrkuIDlvovnlKggYXNzZXRzL2xvZ29zLyDnnJ/lrp7mlofku7bnmoQgZGF0YSBVUknvvIhsb2dvc0RhdGEudHPvvIx2MiBjb3ZlckRhdGEudHMg5YGa5rOV77yMCi8vICAgQ0kg5Y+q5bimIHNyYy/vvIxwdWJsaWMvIOS4jei3n++8ieOAgueUu+W5hS/ln7rnur/mjIkgwqfkuInjgJDplZzlpLQgMTUtMTfjgJHnu5/kuIDlpITnkIbop4TojIPjgIIKaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgSW1nIH0gZnJvbSAncmVtb3Rpb24nOwppbXBvcnQgeyBFQVNFX0VYUE9fT1VULCBwcm9nLCBzcHJpbmdJbiB9IGZyb20gJy4uL2FuaW0nOwppbXBvcnQgeyBBR05FU19VUkksIEFOVEhST1BJQ19VUkksIEdPT0dMRV9VUkksIE5FQklVU19VUkksIFRFTkNFTlRfRE9DU19VUkksIFhJQU9NSV9VUkkgfSBmcm9tICcuLi9sb2dvc0RhdGEnOwppbXBvcnQgeyBCR19HUkFEX0JPVFRPTSwgQkdfR1JBRF9UT1AsIEJMVUUsIExJTUUsIE9SQU5HRSwgVEVYVCB9IGZyb20gJy4uL3RoZW1lJzsKCi8vIE5vdG8gU2VyaWYgU0Mg5pyq6KOF44CBTm90byBTZXJpZiBDSksgU0Mg5bey6KOF77yIZmMtbGlzdCDlrp7mtYvvvInigJTigJTlrZfkvZPml4/lkI3orrDoo4HlhrMKZXhwb3J0IGNvbnN0IEZPTlRfU0VSSUYgPQogICInTm90byBTZXJpZiBTQycsICdOb3RvIFNlcmlmIENKSyBTQycsICdTb25ndGkgU0MnLCAnU2ltU3VuJywgc2VyaWYiOwoKLy8g5ou85a2X6KGM5Yeg5L2V77yIwqfkuIkg6ZWcMTUtMTfvvInvvJpiYW5kIHRvcD02NDDjgIHpq5ggMTIw77yI55S76Z2i6IqC44CMeT02NDDjgIHlrZfmr43pq5ggMTIw44CN5Li65YeG77ybCi8vIOWQjOiKguOAjGJhc2VsaW5lIHk9NzAw44CN5LiO5LmL5Yeg5L2V55+b55u+4oCU4oCUNjQwKzEyMD03NjDvvIzoo4EgYmFuZCDlupXmsr8gNzYwIOS4uuinhuinieWfuue6v++8jOiusOijgeWGs++8iQpleHBvcnQgY29uc3QgUk9XX1RPUCA9IDY0MDsKZXhwb3J0IGNvbnN0IFJPV19IID0gMTIwOwoKLy8g44CMQUnjgI0xODBweCDnsbPnmb3ooaznur8gKyDlj7PkuIogNjRweCDnj4rnkZrmmJ/oipLvvIjmmJ/oipI9YW50aHJvcGljLnN2Z++8jFIyIOW3suaUuSBmaWxsICNEOTc3NTfvvInjgIIKLy8g6Z2Z5q2i54mI5L6b6ZWcMTXigJMxNy8xOCDnm7TmjqXlj6DnlKjvvIjot6jplZzmjqXlipvlkIwgUzExIE9mZmxpbmVTY2VuZSDmiYvms5XvvInjgIIKZXhwb3J0IGNvbnN0IEFpTG9ja3VwOiBSZWFjdC5GQyA9ICgpID0+ICgKICA8ZGl2CiAgICBzdHlsZT17ewogICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgbGVmdDogMCwKICAgICAgcmlnaHQ6IDAsCiAgICAgIHRvcDogMzgwLAogICAgICBoZWlnaHQ6IDI2MCwKICAgICAgZGlzcGxheTogJ2ZsZXgnLAogICAgICBhbGlnbkl0ZW1zOiAnY2VudGVyJywKICAgICAganVzdGlmeUNvbnRlbnQ6ICdjZW50ZXInLAogICAgfX0KICA+CiAgICA8ZGl2IHN0eWxlPXt7IHBvc2l0aW9uOiAncmVsYXRpdmUnIH19PgogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfU0VSSUYsCiAgICAgICAgICBmb250V2VpZ2h0OiA3MDAsCiAgICAgICAgICBmb250U2l6ZTogMTgwLAogICAgICAgICAgbGluZUhlaWdodDogMS4xLAogICAgICAgICAgbGV0dGVyU3BhY2luZzogNDgsCiAgICAgICAgICBjb2xvcjogVEVYVCwKICAgICAgICAgIC8vIGxldHRlci1zcGFjaW5nIOaKiuepuumameWKoOWcqOOAjEnjgI3lj7PkvqfvvIxtYXJnaW5SaWdodCDotJ/ooaXlgb/lm57op4bop4nlsYXkuK0KICAgICAgICAgIG1hcmdpblJpZ2h0OiAtNDgsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIEFJCiAgICAgIDwvZGl2PgogICAgICA8SW1nCiAgICAgICAgc3JjPXtBTlRIUk9QSUNfVVJJfQogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIHRvcDogNCwKICAgICAgICAgIHJpZ2h0OiAtODQsCiAgICAgICAgICB3aWR0aDogNjQsCiAgICAgICAgICBoZWlnaHQ6IDY0LAogICAgICAgICAgb2JqZWN0Rml0OiAnY29udGFpbicsCiAgICAgICAgfX0KICAgICAgLz4KICAgIDwvZGl2PgogIDwvZGl2PgopOwoKdHlwZSBMZXR0ZXIgPSB7CiAga2V5OiBzdHJpbmc7CiAgdXJpOiBzdHJpbmc7CiAgYnJhbmQ6IHN0cmluZzsgLy8g5ZOB54mM6Imy77yI5YaF5Y+R5YWJ55So77yJCiAgZ2xvdzogc3RyaW5nOyAvLyBkcm9wLXNoYWRvdyDlj5HlhYnljYrlvoQKICBzdGFydDogbnVtYmVyOyAvLyDlhaXlnLrluKfvvIjplZwxNS0xNyDmnKzlnLAgPSDlhajlsYAtMTgwMO+8iQogIGNsaXA/OiBib29sZWFuOyAvLyBuZWJpdXMg5Li6IDEzMcOXMzYgd29yZG1hcmvvvIzlj5bpppblrZfmr43nqpfvvIjoo4HvvJrnnJ/lrp7ntKDmnZDnuqLnur/kvJjlhYjvvIzkuI3ph43nu5jnn6Lph4/vvIkKfTsKCmNvbnN0IExFVFRFUlM6IExldHRlcltdID0gWwogIHsga2V5OiAnQScsIHVyaTogQUdORVNfVVJJLCBicmFuZDogJyM1QjhERUYnLCBnbG93OiAnMnB4Jywgc3RhcnQ6IDAgfSwKICB7IGtleTogJ0cnLCB1cmk6IEdPT0dMRV9VUkksIGJyYW5kOiBCTFVFLCBnbG93OiAnMnB4Jywgc3RhcnQ6IDUgfSwKICB7IGtleTogJ0UnLCB1cmk6IFhJQU9NSV9VUkksIGJyYW5kOiBPUkFOR0UsIGdsb3c6ICcycHgnLCBzdGFydDogMTAgfSwKICB7IGtleTogJ04nLCB1cmk6IE5FQklVU19VUkksIGJyYW5kOiBMSU1FLCBnbG93OiAnMnB4Jywgc3RhcnQ6IDE1LCBjbGlwOiB0cnVlIH0sCiAgeyBrZXk6ICdUJywgdXJpOiBURU5DRU5UX0RPQ1NfVVJJLCBicmFuZDogQkxVRSwgZ2xvdzogJzJweCcsIHN0YXJ0OiAyMCB9LApdOwoKLy8gwqdDIOe7n+S4gOWkhOeQhuinhOiMg++8mumrmCAxMjAgLyDlupXlr7npvZAgLyDmipXlvbEgYmx1cjgg6buRMC40IHkrNCAvIOi+uee8mCAxcHgg5ZOB54mM6Imy5YaF5Y+R5YWJ77yIb3BhY2l0eSAwLjbvvIkvCi8vIOavj+Wtl+avjeW7tui/nyA0IOW4p++8iOW4p+ihqCA1IOW4p+etiei3neS4uuWHhu+8jOingSBTMTUg5rOo77yJ5YWl5Zy6IHNwcmluZygxLDEwMCwxMCnjgIIKY29uc3QgTG9nb0NlbGw6IFJlYWN0LkZDPHsgbDogTGV0dGVyOyBmOiBudW1iZXI7IGJyZWF0aGU6IGJvb2xlYW4gfT4gPSAoeyBsLCBmLCBicmVhdGhlIH0pID0+IHsKICAvLyDmnKrliLDotbfngrnnmoTlrZfmr43vvJpzcHJpbmcg5LiN5ZCv5Yqo77yI6LSfIGZyYW1lIOmYsuW+oe+8jOi3qOmVnOaOpeWKm+aXtuWQjue7reWtl+avjeS/neaMgSAw77yJCiAgY29uc3QgcyA9IGYgPCBsLnN0YXJ0ID8gMCA6IHNwcmluZ0luKGYsIGwuc3RhcnQsIHsgdGVuc2lvbjogMTAwLCBmcmljdGlvbjogMTAgfSk7CiAgY29uc3Qgb3AgPSBNYXRoLm1heCgwLCBNYXRoLm1pbigxLCBzICogMikpOwogIC8vIOWRvOWQuO+8iMKnQ++8mjE4MjUg6LW3IDEuMOKGkjEuMDIgNjDluKcgc2luZe+8m+acrOauteWPquWJqSA1IOW4p++8jOW5heW6piDiiaQwLjAxMu+8jOaMieWOn+agt+Wunuijhe+8iQogIGNvbnN0IGJyID0KICAgIGJyZWF0aGUgJiYgZiA+PSAyNSA/IDEgKyAwLjAyICogTWF0aC5zaW4oKE1hdGguUEkgKiAoZiAtIDI1KSkgLyA2MCkgOiAxOwogIGNvbnN0IHNjYWxlID0gKDAuOCArIDAuMiAqIHMpICogYnI7CiAgY29uc3QgaW1nID0gKAogICAgPEltZwogICAgICBzcmM9e2wudXJpfQogICAgICBzdHlsZT17ewogICAgICAgIHdpZHRoOiBsLmNsaXAgPyAxMzEgOiAxMTAsCiAgICAgICAgaGVpZ2h0OiBsLmNsaXAgPyAzNiA6IFJPV19ILAogICAgICAgIG9iamVjdEZpdDogJ2NvbnRhaW4nLAogICAgICAgIGRpc3BsYXk6ICdibG9jaycsCiAgICAgIH19CiAgICAvPgogICk7CiAgcmV0dXJuICgKICAgIDxkaXYKICAgICAgc3R5bGU9e3sKICAgICAgICB3aWR0aDogMTEwLAogICAgICAgIGhlaWdodDogUk9XX0gsCiAgICAgICAgZGlzcGxheTogJ2ZsZXgnLAogICAgICAgIGFsaWduSXRlbXM6ICdmbGV4LWVuZCcsIC8vIOW6leWvuem9kD3op4bop4nln7rnur8KICAgICAgICBqdXN0aWZ5Q29udGVudDogJ2NlbnRlcicsCiAgICAgICAgb3BhY2l0eTogb3AsCiAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWSgkeygoMSAtIHMpICogODApLnRvRml4ZWQoMil9cHgpIHNjYWxlKCR7c2NhbGUudG9GaXhlZCg0KX0pYCwKICAgICAgICB0cmFuc2Zvcm1PcmlnaW46ICdib3R0b20gY2VudGVyJywKICAgICAgICAvLyDmipXlvbEgMCB5KzQgYmx1cjgg6buRMC4077yb6L6557yY5YaF5Y+R5YWJPTAg5YGP56e7IDFweCDlk4HniYzoibLvvIgwLjbiiYhoZXggOTnvvIkKICAgICAgICBmaWx0ZXI6IGBkcm9wLXNoYWRvdygwIDRweCA4cHggcmdiYSgwLDAsMCwwLjQpKSBkcm9wLXNoYWRvdygwIDAgMXB4ICR7bC5icmFuZH05OSlgLAogICAgICB9fQogICAgPgogICAgICB7bC5jbGlwID8gKAogICAgICAgIC8qIG5lYml1cy5zdmcgPSAxMzHDlzM2IOmdkuafoOWchuinkuW6leadvyvmt7HoibLlrZfjgILoo4Hnqpflj5bpppblrZfmr43jgIxu44CNdGlsZe+8mgogICAgICAgICAgIOWtl+W9oiBuYXRpdmUgeOKJiDEwLjHigJMyNi4477yM5Y+WIDjigJMyOS42IOinhueql++8iOatouS6juOAjGXjgI3otbfnrJQgMzAuNSDliY3vvInihpIgc2NhbGUgMy4zMzMg5ZCO5bem56e7IDI2LjdweCAqLwogICAgICAgIDxkaXYgc3R5bGU9e3sgd2lkdGg6IDcyLCBoZWlnaHQ6IFJPV19ILCBvdmVyZmxvdzogJ2hpZGRlbicsIGRpc3BsYXk6ICdmbGV4JywgYWxpZ25JdGVtczogJ2ZsZXgtZW5kJyB9fT4KICAgICAgICAgIDxkaXYgc3R5bGU9e3sgdHJhbnNmb3JtOiAndHJhbnNsYXRlWCgtMjYuN3B4KSBzY2FsZSgzLjMzMyknLCB0cmFuc2Zvcm1PcmlnaW46ICcwIDEwMCUnLCBmbGV4OiAnbm9uZScgfX0+e2ltZ308L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgICAgKSA6ICgKICAgICAgICBpbWcKICAgICAgKX0KICAgIDwvZGl2PgogICk7Cn07CgovLyDjgIxBR0VOVOOAjeaLvOWtl+ihjO+8iGZsZXgg5bGF5Lit77yMMTEwIOWuveWNleWFgyArIDEyMCDpl7TpmpnvvJvCp0Mg5qe95b+DIDI0MHB4IOezu+aXp+aOkuW4g+aui+eVme+8jAovLyDkuI7jgIzlsYXkuK0v6Ze06LedMTIw44CN5Y+WIGZsZXgg6Ieq5rS96Kej77yM6K6w6KOB5Yaz77yJ44CCdG9wIOWPr+eUseiwg+eUqOaWueimhueblu+8iOmVnDE4IOWkluijueWPmOaNoueUqO+8iQpleHBvcnQgY29uc3QgQWdlbnRSb3c6IFJlYWN0LkZDPHsgZjogbnVtYmVyOyBicmVhdGhlPzogYm9vbGVhbjsgdG9wPzogbnVtYmVyIH0+ID0gKHsKICBmLAogIGJyZWF0aGUsCiAgdG9wID0gUk9XX1RPUCwKfSkgPT4gKAogIDxkaXYKICAgIHN0eWxlPXt7CiAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICBsZWZ0OiAwLAogICAgICByaWdodDogMCwKICAgICAgdG9wLAogICAgICBoZWlnaHQ6IFJPV19ILAogICAgICBkaXNwbGF5OiAnZmxleCcsCiAgICAgIGp1c3RpZnlDb250ZW50OiAnY2VudGVyJywKICAgICAgZ2FwOiAxMjAsCiAgICAgIGFsaWduSXRlbXM6ICdmbGV4LWVuZCcsCiAgICB9fQogID4KICAgIHtMRVRURVJTLm1hcCgobCkgPT4gKAogICAgICA8TG9nb0NlbGwga2V5PXtsLmtleX0gbD17bH0gZj17Zn0gYnJlYXRoZT17ISFicmVhdGhlfSAvPgogICAgKSl9CiAgPC9kaXY+Cik7CgovLyDplZwxNCDog4zmma/vvJrmt7Hok53pu5HmuJDlj5joh6rkuIrogIzkuIvpk7rlvIDvvIjCp0Mg5puy57q/6IqCIDE3NDDigJMxNzU1PTE1IOW4p+S4uuWHhu+8jOeUu+mdouiKgiAzMCDluKfns7vlhbblrZDpm4bvvIkKZXhwb3J0IGNvbnN0IEdyYWRpZW50UmV2ZWFsOiBSZWFjdC5GQzx7IGY6IG51bWJlciB9PiA9ICh7IGYgfSkgPT4gewogIGNvbnN0IHAgPSBwcm9nKGYsIDAsIDE1LCBFQVNFX0VYUE9fT1VUKTsKICByZXR1cm4gKAogICAgPD4KICAgICAgPGRpdiBzdHlsZT17eyBwb3NpdGlvbjogJ2Fic29sdXRlJywgaW5zZXQ6IDAsIGJhY2tncm91bmRDb2xvcjogQkdfR1JBRF9UT1AgfX0gLz4KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGxlZnQ6IDAsCiAgICAgICAgICByaWdodDogMCwKICAgICAgICAgIHRvcDogLTEwODAsCiAgICAgICAgICBoZWlnaHQ6IDEwODAsCiAgICAgICAgICB0cmFuc2Zvcm06IGB0cmFuc2xhdGVZKCR7KHAgKiAxMDgwKS50b0ZpeGVkKDIpfXB4KWAsCiAgICAgICAgICBiYWNrZ3JvdW5kOiBgbGluZWFyLWdyYWRpZW50KDE4MGRlZywgJHtCR19HUkFEX1RPUH0gMCUsICR7QkdfR1JBRF9CT1RUT019IDEwMCUpYCwKICAgICAgICB9fQogICAgICAvPgogICAgPC8+CiAgKTsKfTsK
+// v3-R3：尾卡共享件 —— 镜14「AI」+星芒、镜15–17「AGENT」拼字行、镜18 上移终态。
+// §C 素材口径：一律用 assets/logos/ 真实文件的 data URI（logosData.ts，v2 coverData.ts 做法，
+//   CI 只带 src/，public/ 不跟）。画幅/基线按 §三【镜头 15-17】统一处理规范。
+import React from 'react';
+import { Img } from 'remotion';
+import { EASE_EXPO_OUT, prog, springIn } from '../anim';
+import { AGNES_URI, ANTHROPIC_URI, GOOGLE_URI, NEBIUS_URI, TENCENT_DOCS_URI, XIAOMI_URI } from '../logosData';
+import { BG_GRAD_BOTTOM, BG_GRAD_TOP, BLUE, LIME, ORANGE, TEXT } from '../theme';
+
+// Noto Serif SC 未装、Noto Serif CJK SC 已装（fc-list 实测）——字体族名记裁决
+export const FONT_SERIF =
+  "'Noto Serif SC', 'Noto Serif CJK SC', 'Songti SC', 'SimSun', serif";
+
+// 拼字行几何（§三 镜15-17）：band top=640、高 120（画面节「y=640、字母高 120」为准；
+// 同节「baseline y=700」与之几何矛盾——640+120=760，裁 band 底沿 760 为视觉基线，记裁决）
+export const ROW_TOP = 640;
+export const ROW_H = 120;
+
+// 「AI」180px 米白衬线 + 右上 64px 珊瑚星芒（星芒=anthropic.svg，R2 已改 fill #D97757）。
+// 静止版供镜15–17/18 直接叠用（跨镜接力同 S11 OfflineScene 手法）。
+export const AiLockup: React.FC = () => (
+  <div
+    style={{
+      position: 'absolute',
+      left: 0,
+      right: 0,
+      top: 380,
+      height: 260,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}
+  >
+    <div style={{ position: 'relative' }}>
+      <div
+        style={{
+          fontFamily: FONT_SERIF,
+          fontWeight: 700,
+          fontSize: 180,
+          lineHeight: 1.1,
+          letterSpacing: 48,
+          color: TEXT,
+          // letter-spacing 把空隙加在「I」右侧，marginRight 负补偿回视觉居中
+          marginRight: -48,
+        }}
+      >
+        AI
+      </div>
+      <Img
+        src={ANTHROPIC_URI}
+        style={{
+          position: 'absolute',
+          top: 4,
+          right: -84,
+          width: 64,
+          height: 64,
+          objectFit: 'contain',
+        }}
+      />
+    </div>
+  </div>
+);
+
+type Letter = {
+  key: string;
+  uri: string;
+  brand: string; // 品牌色（内发光用）
+  glow: string; // drop-shadow 发光半径
+  start: number; // 入场帧（镜15-17 本地 = 全局-1800）
+  clip?: boolean; // nebius 为 131×36 wordmark，取首字母窗（裁：真实素材红线优先，不重绘矢量）
+};
+
+const LETTERS: Letter[] = [
+  { key: 'A', uri: AGNES_URI, brand: '#5B8DEF', glow: '2px', start: 0 },
+  { key: 'G', uri: GOOGLE_URI, brand: BLUE, glow: '2px', start: 5 },
+  { key: 'E', uri: XIAOMI_URI, brand: ORANGE, glow: '2px', start: 10 },
+  { key: 'N', uri: NEBIUS_URI, brand: LIME, glow: '2px', start: 15, clip: true },
+  { key: 'T', uri: TENCENT_DOCS_URI, brand: BLUE, glow: '2px', start: 20 },
+];
+
+// §C 统一处理规范：高 120 / 底对齐 / 投影 blur8 黑0.4 y+4 / 边缘 1px 品牌色内发光（opacity 0.6）/
+// 每字母延迟 4 帧（帧表 5 帧等距为准，见 S15 注）入场 spring(1,100,10)。
+const LogoCell: React.FC<{ l: Letter; f: number; breathe: boolean }> = ({ l, f, breathe }) => {
+  // 未到起点的字母：spring 不启动（负 frame 防御，跨镜接力时后续字母保持 0）
+  const s = f < l.start ? 0 : springIn(f, l.start, { tension: 100, friction: 10 });
+  const op = Math.max(0, Math.min(1, s * 2));
+  // 呼吸（§C：1825 起 1.0→1.02 60帧 sine；本段只剩 5 帧，幅度 ≤0.012，按原样实装）
+  const br =
+    breathe && f >= 25 ? 1 + 0.02 * Math.sin((Math.PI * (f - 25)) / 60) : 1;
+  const scale = (0.8 + 0.2 * s) * br;
+  const img = (
+    <Img
+      src={l.uri}
+      style={{
+        width: l.clip ? 131 : 110,
+        height: l.clip ? 36 : ROW_H,
+        objectFit: 'contain',
+        display: 'block',
+      }}
+    />
+  );
+  return (
+    <div
+      style={{
+        width: 110,
+        height: ROW_H,
+        display: 'flex',
+        alignItems: 'flex-end', // 底对齐=视觉基线
+        justifyContent: 'center',
+        opacity: op,
+        transform: `translateY(${((1 - s) * 80).toFixed(2)}px) scale(${scale.toFixed(4)})`,
+        transformOrigin: 'bottom center',
+        // 投影 0 y+4 blur8 黑0.4；边缘内发光=0 偏移 1px 品牌色（0.6≈hex 99）
+        filter: `drop-shadow(0 4px 8px rgba(0,0,0,0.4)) drop-shadow(0 0 1px ${l.brand}99)`,
+      }}
+    >
+      {l.clip ? (
+        /* nebius.svg = 131×36 青柠圆角底板+深色字。裁窗取首字母「n」tile：
+           字形 native x≈10.1–26.8，取 8–29.6 视窗（止于「e」起笔 30.5 前）→ scale 3.333 后左移 26.7px */
+        <div style={{ width: 72, height: ROW_H, overflow: 'hidden', display: 'flex', alignItems: 'flex-end' }}>
+          <div style={{ transform: 'translateX(-26.7px) scale(3.333)', transformOrigin: '0 100%', flex: 'none' }}>{img}</div>
+        </div>
+      ) : (
+        img
+      )}
+    </div>
+  );
+};
+
+// 「AGENT」拼字行（flex 居中，110 宽单元 + 120 间隙；§C 槽心 240px 系旧排布残留，
+// 与「居中/间距120」取 flex 自洽解，记裁决）。top 可由调用方覆盖（镜18 外裹变换用）
+export const AgentRow: React.FC<{ f: number; breathe?: boolean; top?: number }> = ({
+  f,
+  breathe,
+  top = ROW_TOP,
+}) => (
+  <div
+    style={{
+      position: 'absolute',
+      left: 0,
+      right: 0,
+      top,
+      height: ROW_H,
+      display: 'flex',
+      justifyContent: 'center',
+      gap: 120,
+      alignItems: 'flex-end',
+    }}
+  >
+    {LETTERS.map((l) => (
+      <LogoCell key={l.key} l={l} f={f} breathe={!!breathe} />
+    ))}
+  </div>
+);
+
+// 镜14 背景：深蓝黑渐变自上而下铺开（§C 曲线节 1740–1755=15 帧为准，画面节 30 帧系其子集）
+export const GradientReveal: React.FC<{ f: number }> = ({ f }) => {
+  const p = prog(f, 0, 15, EASE_EXPO_OUT);
+  return (
+    <>
+      <div style={{ position: 'absolute', inset: 0, backgroundColor: BG_GRAD_TOP }} />
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          top: -1080,
+          height: 1080,
+          transform: `translateY(${(p * 1080).toFixed(2)}px)`,
+          background: `linear-gradient(180deg, ${BG_GRAD_TOP} 0%, ${BG_GRAD_BOTTOM} 100%)`,
+        }}
+      />
+    </>
+  );
+};

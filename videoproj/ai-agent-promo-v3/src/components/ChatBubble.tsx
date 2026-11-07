@@ -1,1 +1,33 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQkxVRSwgRk9OVF9TQU5TLCBTVVJGQUNFX0NBUkQsIFRFWFQgfSBmcm9tICcuLi90aGVtZSc7CgovLyDlr7nor53msJTms6Eg4oCUIGJyaWVmLXYzIOmVnDMgwqdD77ya5ZyG6KeS55+p5b2iIDYwMHg4MO+8jOiDjOaZryAjMUUyNjM277yM5o+P6L65IDFweCDohb7orq/ok53jgIIKLy8g6ZWcNC81IOWQjOasvuW8j++8jOWPquaNouaWh+ahiOS4jiB544CC5YWl5Zy65Y+Y5o2i55Sx6ZWc5paH5Lu25YyF5LiA5bGCIGRpdiDotJ/otKPjgIIKZXhwb3J0IGNvbnN0IENoYXRCdWJibGU6IFJlYWN0LkZDPHsKICB0ZXh0OiBzdHJpbmc7CiAgeDogbnVtYmVyOwogIHk6IG51bWJlcjsKfT4gPSAoeyB0ZXh0LCB4LCB5IH0pID0+ICgKICA8ZGl2CiAgICBzdHlsZT17ewogICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgbGVmdDogeCwKICAgICAgdG9wOiB5LAogICAgICB3aWR0aDogNjAwLAogICAgICBoZWlnaHQ6IDgwLAogICAgICBiYWNrZ3JvdW5kQ29sb3I6IFNVUkZBQ0VfQ0FSRCwKICAgICAgYm9yZGVyOiBgMXB4IHNvbGlkICR7QkxVRX1gLAogICAgICBib3JkZXJSYWRpdXM6IDE2LAogICAgICBkaXNwbGF5OiAnZmxleCcsCiAgICAgIGFsaWduSXRlbXM6ICdjZW50ZXInLAogICAgICBwYWRkaW5nOiAnMCAyOHB4JywKICAgICAgZm9udEZhbWlseTogRk9OVF9TQU5TLAogICAgICBmb250V2VpZ2h0OiA0MDAsCiAgICAgIGZvbnRTaXplOiAzMiwKICAgICAgY29sb3I6IFRFWFQsCiAgICAgIGJveFNpemluZzogJ2JvcmRlci1ib3gnLAogICAgfX0KICA+CiAgICB7dGV4dH0KICA8L2Rpdj4KKTsK
+import React from 'react';
+import { BLUE, FONT_SANS, SURFACE_CARD, TEXT } from '../theme';
+
+// 对话气泡 — brief-v3 镜3 §C：圆角矩形 600x80，背景 #1E2636，描边 1px 腾讯蓝。
+// 镜4/5 同款式，只换文案与 y。入场变换由镜文件包一层 div 负责。
+export const ChatBubble: React.FC<{
+  text: string;
+  x: number;
+  y: number;
+}> = ({ text, x, y }) => (
+  <div
+    style={{
+      position: 'absolute',
+      left: x,
+      top: y,
+      width: 600,
+      height: 80,
+      backgroundColor: SURFACE_CARD,
+      border: `1px solid ${BLUE}`,
+      borderRadius: 16,
+      display: 'flex',
+      alignItems: 'center',
+      padding: '0 28px',
+      fontFamily: FONT_SANS,
+      fontWeight: 400,
+      fontSize: 32,
+      color: TEXT,
+      boxSizing: 'border-box',
+    }}
+  >
+    {text}
+  </div>
+);

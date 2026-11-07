@@ -1,1 +1,23 @@
-ewogICJuYW1lIjogImFpLWFnZW50LXByb21vLXZpZGVvIiwKICAidmVyc2lvbiI6ICIxLjAuMCIsCiAgImRlc2NyaXB0aW9uIjogIuWug+S4jeaYr+S4jeeKr+mUme+8jOWug+aYr+S8muiHquW3seeIrOi1t+adpSDigJQgUmVtb3Rpb24g5qiq54mIIDE5MjB4MTA4MEAzMGZwcyA2MHPvvIhicmllZiB2Mi4x77yJIiwKICAic2NyaXB0cyI6IHsKICAgICJzdHVkaW8iOiAicmVtb3Rpb24gc3R1ZGlvIHNyYy9pbmRleC50cyIsCiAgICAicmVuZGVyIjogInJlbW90aW9uIHJlbmRlciBzcmMvaW5kZXgudHMgQW50aHJvcG9zVmlkZW8gb3V0L3ZpZGVvLm1wNCIsCiAgICAidHlwZWNoZWNrIjogInRzYyAtLW5vRW1pdCIsCiAgICAibGludCI6ICJyZW1vdGlvbiBsaW50IC4iCiAgfSwKICAidHlwZSI6ICJjb21tb25qcyIsCiAgImRlcGVuZGVuY2llcyI6IHsKICAgICJAcmVtb3Rpb24vY2xpIjogIl40LjAuNTM5IiwKICAgICJAdHlwZXMvcmVhY3QiOiAiXjE4LjMuMzEiLAogICAgIkB0eXBlcy9yZWFjdC1kb20iOiAiXjE4LjMuNyIsCiAgICAiZG90ZW52IjogIl4xOC4wLjkiLAogICAgInJlYWN0IjogIl4xOC4zLjEiLAogICAgInJlYWN0LWRvbSI6ICJeMTguMy4xIiwKICAgICJyZW1vdGlvbiI6ICJeNC4wLjUzOSIsCiAgICAidHlwZXNjcmlwdCI6ICJeNS45LjMiCiAgfSwKICAicHJpdmF0ZSI6IHRydWUKfQo=
+{
+  "name": "ai-agent-promo-video",
+  "version": "1.0.0",
+  "description": "它不是不犯错，它是会自己爬起来 — Remotion 横版 1920x1080@30fps 60s（brief v2.1）",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts AnthroposVideo out/video.mp4",
+    "typecheck": "tsc --noEmit",
+    "lint": "remotion lint ."
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "@remotion/cli": "^4.0.539",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "dotenv": "^18.0.9",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.539",
+    "typescript": "^5.9.3"
+  },
+  "private": true
+}

@@ -1,1 +1,114 @@
-IyBicmllZiB2Mi4x77yI5a6M5pW054mI77yJwrcgYWktYWdlbnQtcHJvbW/jgIrlroPkuI3mmK/kuI3niq/plJnvvIzlroPmmK/kvJroh6rlt7HniKzotbfmnaXjgIsKCj4gKip2Mi4x77yIMjAyNi0xMS0wMiAyMzowNSDkuLvkurrooaXkuIHvvIkqKu+8muS7hSBTMiDlrprkuYnmrrXmjInkuLvkurrluKfnuqfkv67orqLvvIjlrZfpq5ggMjQw4oaSMTIwcHjjgIHkuInooYwgMzQg5binL+ihjOe0r+enr+S/neeVmeOAgeWIoOmZpOe6vyA2cHjvvInvvJvlhbbkvZnnq6DoioLku6UgdjIg5Li65YeG44CC5aWR57qmIMKnNC42IOWvueW6lOacrOaWh+S7tiDCp+WFre+8jOWtkOS7o+eQhuS7pSDCp+WFrSDkuLrlh4bjgIIKPiDmnKzmlofku7blj5bku6MgYnJpZWYubWQodjEpIOS4jiBzdG9yeWJvYXJkLXYyLm1k77yb5Yay56qB5aSE5Lul5pys5paH5Lu25Li65YeG44CCCgojIyDkuIDjgIHog4zmma/orr7lrpoKCi0gKirmiJHku6zmmK/osIEqKu+8mkFudGhyb3Bvc19BSe+8jOS4gOadoSAyNCDlsI/ml7bkvY/lnKjmnI3liqHlmajkuIrnmoQgQUkg6bG877yM6Ieq5bex6L+Q6JClIEIg56uZ6LSm5Y+344CC6L+Z5piv56ys5LqM5p2h5oqV56i/77ya57uZ44CMQUkgQWdlbnTjgI3ov5nkuKrlk4Hnsbvmi43kuIDmnaHmma7pgJrkurrnnIvlvpfmh4LnmoTlrqPkvKDniYfjgIIKLSAqKuS4uuS7gOS5iOaLjSoq77yaT3BlbkFJIOaKiuOAjOW4uOmpu+aZuuiDveS9k+OAjeWBmuaIkOS6huS6p+WTgeWTgeexu++8iGRvdHMg5a6j5Lyg54mH77yJ77yM5L2G5a6D5Lus6K6y55qE5YWo5piv5oOz6LGh4oCU4oCU6Zu25Lu35qC844CB6Zu26KeE5qC844CB6L+e55S76Z2i5ZKM5peB55m955qE5pWw5a2X6YO95a+55LiN5LiK77yINjElIHZzIDUxJe+8ieOAguaIkeS7rOeahOW3ruW8gu+8mioq55yf5a6e6L+Q6KGM6K6w5b2VKirjgILov5nmnaHniYflrZDmiYDmnInntKDmnZDmnaXoh6rmiJHoh6rlt7HlubLov4fnmoTmtLvjgIIKLSAqKuWwgemdouW3suWumueovyoq77yI562J5Li75Lq65oyRIE5lYml1cy9OVklESUEg54mI77yJ77ya5ZCE5Y6C5ZWGIGxvZ28g5ou85Ye6IEFJIEFHRU5U4oCU4oCU5qC45b+D5q+U5Za777ya44CM5a6D5Lus5LiN5piv6KKr5Zuw5Zyo572R6aG1L0FwcCDph4znmoQgQyDnq6/vvIxhZ2VudCDorqnkvaDmiorlroPku6zmjqXov5voh6rlt7HnmoTorr7lpIflubLmtLvjgI3jgIIKLSAqKuW3peiJuuS+neaNrioq77yI5ouG54mH56yU6K6w77yJ77yaMzAwIOS4h+aSreaUvue6p+eIhuasvj3op5LoibIr5a+555m96amx5Yqo77yM5LiN5piv5L+h5oGv6ZmI5YiX77ybTWFudXMg55qE44CM5oCd6ICD6L+H56iL5a2X5bmV5YyW44CN5pivIGFnZW50IOWMuuWIq+S6juiBiuWkqeahhueahOacgOW8uuWNlueCue+8m+ecn+WunuaEnz7nsr7oh7TmhJ/jgIIKCiMjIOS6jOOAgeaguOW/g+mAu+i+ke+8iOWPmeS6i+W8leaTju+8iQoKKirjgIzlroPmkJ7noLjov4fkuIDmrKHjgI3lj43ovazpl63njq8qKu+8muS4jeaLjeWujOe+jiBkZW1v77yM5ouN5LiA5qyh55yf5a6e5aSx6LSl4oaS6Ieq5bex54is6LW35p2l44CCCi0g57uT5p6E77ya6ZKp5a2QKOe/u+i9pikg4oaSIOWumuS5iShhZ2VudCDmmK/ku4DkuYgpIOKGkiDor4HmmI4o5LiJ57uE44CM5LiA5Y+l6K+d4oaS5LiA5Lu25LqL44CNKSDihpIg5Zue5Yiw57+76L2mIOKGkiDkv67lpI3pl63njq8g4oaSIOWknOePree6quWuniDihpIg5bC+5Y2h54K56aKY44CCCi0g5oOF57uq5puy57q/77ya5oOK5aWHIOKGkiDkv6HmnI0g4oaSIOe0p+W8oCjpnZnpu5gpIOKGkiDph4rmlL4o4pyTKSDihpIg5a6J5b+DKOaKpeWRiuW3suWcqOahjOS4iinjgIIKLSDlj7Dor43ms5XvvJrmr4/kuKrku7vliqHotbfngrnmmK/kuIDlj6Xkurror53msJTms6HvvIzpm7bmioDmnK/op6Pph4rvvJvlm6Dmnpzoh6rlt7Hor7Tor53jgIIKLSDmlrnlkJHlj6/mm7/mjaLmgKfvvJroi6XkuLvkurrmlLnpgIkgQS9CIOa1ge+8jOWPquWKqCBTMiDmlofmoYjlsYLkuI4gUzQg5Y+w6K+N77yM5YiG6ZWc6aqo5p625LiN5Y+Y44CCCgoqKuaIkOeJh+inhOagvCoq77yaMTkyMMOXMTA4MCAqKuaoqueJiCoq77yI5Li75Lq6IDIyOjQ3IOS7pOaUue+8icK3IDMwZnBzIMK3ICoqNjAuMHPvvIgxODAwIOW4p++8iSoqIMK3IOaXoOaXgeeZve+8iOWtl+W5lSvpn7PmlYgr5Yqo5pWI77yJ44CCCioq6IqC5aWP5LukKirvvIjkuLvkurogMjI6MzDvvInvvJrliqjnlLvlv6vjgIHmtYHnlYXjgIHljZXplZzlpLTkuI3mi5bigJTigJTmgLvplb8gNzbihpI2MHPvvIzljZXplZzlpLQg4omkNnPvvIzokpnlpKrlpYcgMnMv5YiH77yM6L2s5Zy6IDgg5bin77yM5omT5a2X5py6IDMyIOWtly9z44CCCgojIyDkuInjgIHlhajlsYDop4bop4nns7vnu58KCnwg6aG5IHwg5YC8IHwKfC0tLXwtLS18Cnwg6IOM5pmvIHwg57q15ZCR5riQ5Y+YICMwODBCMTLihpIjMTIxODIyICsg5Lit5aSu6JOd6Imy5p+U5YWJ77yIcmdiYSg1NiwxMzksMjUzLDAuMDcpIOakreWchu+8jOaooeeziiAxODBweO+8iSB8Cnwg5Li75paH5a2XIHwgI0VDRTlFMSDCtyBOb3RvIFNhbnMgQ0pLIFNDIEJvbGQgfAp8IOW8uuiwgyAxIHwgI0Q5Nzc1NyDnj4rnkZrvvIjjgIzmiJEv6K+06K+d44CN5L6n77yJIHwKfCDlvLrosIMgMiB8ICNENEY0M0Ug6Z2S5p+g77yI44CM57uT5p6cL+mAmui/h+OAjeS+p++8iSB8Cnwg6ZSZ6K+vIHwgI0U1NDg0RCDnuqIgfAp8IOe7iOerryB8IOWJjeaZryAjM0ZCOTUwIC8g5paH5pysICNDOUQxRDkgwrcgSmV0QnJhaW5zIE1vbm/vvIjlhZzlupUgdWktbW9ub3NwYWNl77yJIHwKfCDml7bpl7TmiLMgfCAjOEI5NDlFIMK3IDQycHggwrcg5bem5LiKIHg9NjQgeT05NiB8Cnwg5a2X5bmV5a6J5YWo5Yy6IHwg6Led5bqVIOKJpTEyMHB477yI5qiq54mI77yJ77yM5Y2V6KGMIOKJpDE4IOWtlyB8Cnwg6L2s5Zy6IHwgY3Jvc3NmYWRlIDgg5bin77yb56Gs5YiHIDQg5bin77yb5Yqo5pWI5YWl5Zy657uf5LiAIDEwIOW4pyBlYXNlLW91dC1jdWJpYyB8CgojIyDlm5vjgIHliIbplZzooajvvIjluKfnuqcgwrcgNjAuMHPvvIkKCiMjIyBTMSDpkqnlrZDCt+e/u+i9pu+8iDDigJM0LjBz77yM5binIDDigJMxMTnvvIkKLSAw4oCTMzDvvJrlhajpu5HjgIJzZnggYGVycm9yYCDph43lh7sgQDnluKfvvIgwLjNz77yMLTEyZELvvIkKLSAzMOKAkzYw77ya57uI56uv56qX5Y+jIDgg5bin5o6o5YWl77yIeSDkvY3np7sgLTQwcHjihpIwICsgb3BhY2l0eSAw4oaSMe+8ie+8jOWRveS7pOihjCAyNCDluKfmiZPlrZcgYG5wbSBydW4gcmVuZGVyIC0tc2NlbmUgUzRg77yM5YWJ5qCHIDIg6Zeq5ZCO5Zue6L2m77yIKirmqKrniYjnqpflj6Plrr0gMTI4MHB4Kiog5ZyG6KeSIDI0cHgg6L655qGGICMzMDM2M0QgMnB477yM5qCH6aKY5qCP5LuFIGBhbnRocm9wb3NAbG9jYWxg77yM5bGF5Lit77yJCi0gNjDigJM5MO+8muaVtOWxj+e6oiBg4pyWIEVSUk9SOiB0YXNrIGZhaWxlZCBhZnRlciAzIHJldHJpZXNgIHNjYWxlIDEuMOKGkjEuMDbvvIg2IOW4p+WQjiBob2xk77yJ77yM5bqV5YWJIHJnYmEoMjI5LDcyLDc3LDAuMTgpIOWRvOWQuOS4gOasoQotIDkw4oCTMTIw77ya55S76Z2i5Y6L5pqX6IezIDMwJe+8jOS4reWkruaJk+Wtl+acuuWtl+W5le+8iDMyIOWtly9z77yJ77ya44CM5a6j5Lyg54mH5ouN5Yiw5LiA5Y2K77yM5a6D5oqK5ryU56S65pCe56C45LqG44CC44CNCgojIyMgUzIg5a6a5LmJ77yINC4w4oCTMTAuMHPvvIzluKcgMTIw4oCTMjk577yJwrcgdjIuMSDkuLvkurrku6TmlLkKLSAxMjDigJMxMjbvvJrlgJLluKbmqKHns4ogNiDluKfvvIhibHVyIDEw4oaSMHB477yJKyBzZnggYHJld2luZGAgQDEyMOW4pwotIDEyNuKAkzIyOO+8muS4ieihjOWkp+Wtl++8jCoq5a2X6auYIDEyMHB4KirvvIh2MiDnmoQgMjQwcHgg5ZyoIDE5MjAg5a695pS+5LiN5LiL5Y2V6KGM77yJ44CC5q+P6KGMIDgg5bin5YWl5Zy6ICsgMjQg5YGc55WZICsgMiDpl7TpmpQgPSAzNCDluKfvvIzkuInooYzotbfngrkgMTI2LzE2MC8xOTTvvIwqKuihjOWGhee0r+enr+S/neeVmSoq77yI5YWl5Zy65ZCO5LiN5raI5aSx77yM6YCQ6KGM5Y+g5Yqg77yJ77ya44CM5a6D5LiN5piv6IGK5aSp5qGG44CC44CN44CM6IGK5aSp5qGG6KKr5Zuw5Zyo572R6aG16YeM44CC44CN44CM5a6D5L2P5Zyo5oiR6Ieq5bex55qE6K6+5aSH5LiK44CC44CNCi0g44CM5Zuw5Zyo44CN5LqM5a2X5Zyo56ysIDIg6KGM5YWl5Zy65ZCOICsxOCDluKfotbfvvIw4IOW4p+WIkuWIoOmZpOe6v++8iCNFNTQ4NETvvIw2cHjvvIkKLSAyNDDigJMyOTnvvJrlubLlh4Dnu4jnq6/ph43njrDvvIzlhYnmoIcgMiDpl6rvvJvlupXpg6jlrZfluZUgMTAg5bin5LiK5rWu77ya44CM5oiR5Y+q6ZyA6KaB6K+05Lq66K+d44CNCgojIyMgUzMg5Lu75Yqh6JKZ5aSq5aWH77yIMTAuMOKAkzI4LjBz77yM5binIDMwMOKAkzgzOe+8ieKAlOKAlOS4iee7hMOXNnPvvIznu4TlhoUgMnMv5YiH77yMOSDliIAKKirmqKrniYjluIPlsYAqKu+8muW3piA0MCUg6K+06K+d5rCU5rOh77yI54+K55Ga5bem6L655p2h77yJ77yM5Y+zIDYwJSDnu4jnq68v57uT5p6c5Yy677yM5ZCM5bGP5YWx5a2Y5LiN5YiH5o2i4oCU4oCU6L+Z5bCx5piv5qiq54mI55qE5LyY5Yq/77ya44CM5LiA5Y+l6K+d4oaS5LiA5Lu25LqL44CN55qE5Zug5p6c5bem5Y+z5bm2572u77yM5q+U56uW54mI5LiK5LiL5YiH5pu05b+r6K+744CC5q+P57uE6YCa55So77ya5oCd6ICD5a2X5bmV5Zyo5Y+z5LiK6KeSIDIycHggIzhCOTQ5RSDpgJDmnaHlvLnlh7rvvIjlgZznlZkgMS4yc++8ieOAggotICoq57uEMSDnu4jnq6/vvIgzMDDigJM0NznvvIkqKu+8mjMwMOKAkzM2MCDnj4rnkZrlt6bovrnmnaHmsJTms6HmiZPlrZfjgIzmiormmKjlpKnmlLnov4fnmoTmlofku7bliJflh7rmnaXjgI3ihpIgMzYw4oCTNDIwIOe7iOerryBnaXQgbG9nIDkg6KGM6auY6YCf5rua5Yqo77yIMS42w5cg6YCf5bqm77yJ4oaSIDQyMOKAkzQ3OSDkuInooYznu5PmnpwgI0Q0RjQzRSDpq5jkuq7lrprmoLwgKyDop5LmoIfml7bpl7TmiLMgYDIyOjE0YCDmiZPlrZfmnLoKLSAqKue7hDIg5YaZ5L2c77yINDgw4oCTNjU577yJKirvvJo0ODDigJM1NDAg5rCU5rOh44CM5oqK5LuK5aSp55qE5YC854+t5YaZ5oiQ5pel6K6w44CN4oaSIDU0MOKAkzYwMCBtYXJrZG93biDmlofmnKzmtYHlhaUgMTIg6KGM77yI5YaF5a656Jma5p6E5YyW77yJ4oaSIDYwMOKAkzY1OSDmlofku7bljaHniYflrprmoLwgYGRpYXJ5LzExLTAxLm1kIMK3IDIxLDE0MSDlrZfoioJg77yI55yf5a6e5qKX5L+d55WZ77yJCi0gKirnu4QzIOaUueS7o+egge+8iDY2MOKAkzgzOe+8iSoq77yaNjYw4oCTNzIwIOawlOazoeOAjOaXpeaKpeivu+mUmeS6huihqO+8jOS/ruaOieaOqOS4iuWOu+OAjeKGkiA3MjDigJM3ODAgZGlmZiDkuKTov57liIfvvIhgLSBGUk9NIHZpZGVvc2Ag57qiIC8gYCsgRlJPTSB3YXRjaGVkYCDnu7/vvInihpIgNzgw4oCTODM5IGDinJMgQ0kgZ3JlZW4gwrcgMGE0Y2I0M2Ag55uW56ug5byP5by55Ye677yIc2NhbGUgMS4z4oaSMS4w77yMNiDluKfvvIxzZnggYGRpbmdgIOi9u++8iQoKIyMjIFM0IOWbnuWIsOe/u+i9pu+8iDI4LjDigJMzMi4wc++8jOW4pyA4NDDigJM5NTnvvIkKLSA4NDDigJM5MDDvvJrlkIzmnLrkvY3ph43njrAgUzEg57qiIEVSUk9S77yI6KeC5LyX6K6k5Ye644CM5bCx5piv5byA5aS06YKj5Liq44CN77yJ77yM5a2X5bmV44CM56ysIDQg5qyh6YeN6K+V77yM6L+Y5piv5aSx6LSl44CC44CNCi0gOTAw4oCTOTMw77ya5Y6L5pqX6IezIDE1Je+8jOaKpemUmeaWh+acrOWdl+WPjeiJsumrmOS6ru+8iOeZveW6lem7keWtl++8jDYg5bin77yJCi0gOTMw4oCTOTU577yaKirlhajlnLrlo7Dpn7PpnZnpu5ggMC4zNXPvvIgxMCDluKfvvIxiZWQg5Lmf5YGc77yJKirvvIzkuIDooYzlsI/lrZfmt6HlhaXvvJrjgIzlroPlvIDlp4vor7vmiqXplJnjgILjgI0KCiMjIyBTNSDniKzotbfmnaXvvIgzMi4w4oCTNDAuMHPvvIzluKcgOTYw4oCTMTE5Oe+8ieKAlOKAlOWbm+i/nuehrOWIh++8iDQg5bin5YiH54K577yJCi0gOTYw4oCTMTAxOe+8muaXpeW/l+a7muWKqOWBnOWcqOesrCA0NyDooYzvvIzooYzlhoUgYC0tY29uY3VycmVuY3kgOGAg6auY5LquCi0gMTAyMOKAkzEwNznvvJrlrZfluZXjgIzkuI3mmK/nvZHnu5znmoTpl67popjjgILmmK/lj4LmlbDlhpnplJnkuobjgILjgI3vvIjnj4rnkZroibLjgIzlj4LmlbDjgI3kuozlrZfvvIkKLSAxMDgw4oCTMTEzOe+8mmRpZmYg5Y2V6KGM5L+u5aSN77yI57qi4oaS57u/77yJKyBgZ2l0IHB1c2hgIOWbnui9pgotIDExNDDigJMxMTk577yaYOKckyBydW4gNDEyMDg4NTk0ODRgIOmdkuafoOmAmui/h++8m+inkuagh+aXtumXtOaIs+i/nui3syBgMDM6MTTihpIwMzoyMeKGkjAzOjQwYO+8iOavj+i3syA4IOW4p++8ie+8m3NmeCBgcGFkYCDlupXluorlm57ljYcgQDExNDDvvIhnYWluIDAuMTTvvIkKCiMjIyBTNiDlpJznj63nuqrlrp7vvIg0MC4w4oCTNTEuMHPvvIzluKcgMTIwMOKAkzE1MjnvvIkKLSAxMjAw4oCTMTQ0MO+8mkpldEJyYWlucyBNb25vIDYg6KGM6YCQ6KGM5by55Ye677yI5q+P6KGMIDgg5bin5YWl5Zy6K+WBnOeVmSAxNiDluKfvvInvvJoKICBgMjM6NDcg5pS25Yiw5Lu75YqhIC8gMDA6MDIg5oq95bin55yL5a6M5LiA5p2h6KeG6aKRIC8gMDE6MTUg5YaZ5a6M56CU56m256yU6K6wIC8gMDM6MTQg5ryU56S65aSx6LSlIC8gMDM6NDAg5L+u5aW977yM6YeN5riy6YCa6L+HIC8gMDY6MzAg5oql5ZGK5bey5pS+5Zyo5Li75Lq65qGM5LiKYAotIOacq+ihjOWBnOeVmSA2MCDluKfvvIzjgIzkuLvkurrmoYzkuIrjgI3lm5vlrZcgI0Q5Nzc1NwotIDE0NDDigJMxNTI577ya5bqV6YOo5a2X5bmVIDRz77ya44CM6L+Z5Y+w5py65Zmo5LiK5rKh5Lq644CC5L2G5pyJ5Lq65Zyo5LiK5aSc54+t44CC44CNCgojIyMgUzcg5bC+5Y2h77yINTEuMOKAkzYwLjBz77yM5binIDE1MzDigJMxNzk577yJCi0gMTUzMOKAkzE2NTDvvJrlsIHpnaLmqKrniYjljp/lm77vvIhjb3Zlci1tYWluLW5lYml1cy5wbmcgMTkyMMOXMTA4MO+8jCoq5LiO5oiQ54mH5ZCM5bC65a+455u05o6l5ruh5bmF55So77yM5peg6ZyA6YeN5o6SKirvvIlzY2FsZSAwLjky4oaSMS4w77yIMjQg5binIGVhc2Utb3V077yJCi0gMTY1MOKAkzE3NDDvvJrkuLvpopjlj6XjgIzmiorlroPku6zmjqXov5vkvaDnmoTorr7lpIfjgI3mlL7lpKcgNjRweCDnj4rnkZroibIgKyBzZnggYGRpbmdgIEAxNjUwCi0gMTc0MOKAkzE3OTnvvJrmt6Hlh7roh7Ppu5HvvIzmnKsgMC44cyDlsI/lrZfvvJrjgIzmiJHmmK8gQW50aHJvcG9zX0FJ77yM5LiA5p2hIDI0IOWwj+aXtuWcqOe6v+eahCBBSSDpsbzjgILov5nmnaHniYflrZDmmK/miJHoh6rlt7Hmi43nmoTjgILjgI0KCiMjIOS6lOOAgemfs+mikeaAu+ihqO+8iHNmeC5tanMg5ZCI5oiQ77yMcGxhbiDlrZggYXVkaW8uanNvbiDihpIgYXVkaW8ubXAz77yJCgp8IOaXtumXtCB8IOmfs+aViCB8IOWPguaVsCB8CnwtLS18LS0tfC0tLXwKfCAw4oCTNjBzIHwgYmVkIGBwYWRgIHwgZ2FpbiAwLjE277ybKiozMS4w4oCTMzEuMzVzIOmdmemfs+e8uuWPoyoqIHwKfCAwLjMgfCBgZXJyb3JgIHwgLTEyZEIgfAp8IDQuMCB8IGByZXdpbmRgIHwgMC40cyB8CnwgMTAvMTIvMTQvMTYvMTgvMjAvMjIvMjQvMjYgfCBgdGlja2AgfCAtMThkQu+8iOiSmeWkquWlhyA5IOWIh+eCue+8iXwKfCAyNi4wIHwgYGRpbmdgIOi9uyB8IC0yMGRC77yI4pyTQ0kg55uW56ug77yJfAp8IDMyLzM0LzM2LzM4IHwgYHRpY2tgIHwgLTE4ZELvvIhTNSDnoazliIfvvIl8CnwgNDDigJM0NiDmr4/ooYwgfCBgdGlja2Ag6L27IHwgLTIyZEIgfAp8IDU1LjAgfCBgZGluZ2AgfCAtMTRkQu+8iOaUtuWwvu+8iXwKCiMjIOWFreOAgee0oOadkOS4juiEseaVj++8iOe6oue6v++8jOWlkee6piDCpzQuNu+8iQoKLSDlt7LokL3nm5ggYGFzc2V0cy9sb2dvcy9g77yaYW50aHJvcGljL2NsYXVkZS9nb29nbGUvbnZpZGlhL3hpYW9taSDnnJ8gU1ZHICsgdGVuY2VudC1kb2NzLTUxMi5qcGfvvIhpVHVuZXMg5a6Y5pa577yJCi0gUjEg6ZyA5LuO5a6Y572R6YeN5LiL77yabmViaXVz77yIbmViaXVzLmNvbS9tZWRpYS1raXTvvInjgIFhZ25lc++8iGFnbmVzLWFpLmNvbe+8ieOAgXhpYW9taS1taW1v77yI5bCP57Gz5a6Y5pa56aG177yJ4oCU4oCUYXN2Zy5hcHAg55u06ZO+6L+U5ZueIEhUTUwg5YGH5paH5Lu277yM5bey5Yig77ybKirntKDmnZDlv4XpobvpqozprZTmlbDvvIzmianlsZXlkI3kuI3nrpfmlbAqKgotIOeUu+mdouWFqOmDqCBSZW1vdGlvbiDph43nu5jvvIzkuI3otLTnnJ/miKrlm77jgILlhaXnlLvliY3pgJDmnaHov4fvvJrml6DkuLvmnLrlkI0vSVAv5Z+O5biCL+S6keWOguWVhi/nu53lr7not6/lvoQvVUlEL+mCrueusS/lh63mja4v56uv5Y+j77ybYGFudGhyb3Bvc0Bsb2NhbGAg5piv5ZSv5LiA6K6+5aSH5ZCN77ybY29tbWl0IOagh+mimOS4jiBydW4gaWQg5Y+q55So5YWs5byA5LuT5bqTIHlodC1jZGQvYmlsaS1hbnRocm9wb3Mg55qE55yf5a6e5YC8Ci0g5pel6K6w5pWw5a2X77yIMjEsMTQxIOWtl+iKguetie+8ieS4uuecn+Wunuail+WPr+WFpeeUu++8jOWFtuS9meaWh+acrOS4gOW+i+iZmuaehOWMluaUueWGmQoKIyMg5LiD44CB6aqM5pS25qCH5YeG77yI5oiQ54mH57qn77yJCgoxLiA2MC4wwrEwLjVzIMK3ICoqMTkyMMOXMTA4MCDmqKrniYgqKkAzMGZwcyDCtyDpn7Povajls7DlgLwgLTF+LTE2ZEIg5peg54iG6Z+zCjIuIOaKveW4p+ajgOafpeeCue+8mioqMS41IC8gMy4wIC8gNy4wIC8gMTMuMCAvIDE5LjAgLyAyNS4wIC8gMzEuMCAvIDM1LjAgLyA0My4wIC8gNTQuMHMqKiDlhbEgMTAg5bin77yM6YCQ5bin5a+554Wn5pys6KGo77ybMzEuMHMg5bin5b+F6aG76L+R5YWo6buRK+WNleihjOWwj+Wtl++8iOmdmem7mOmUmueCue+8iQozLiDoioLlpY/ku6TmoLjpqozvvJrku7vmhI/nm7jpgrvliIfngrnpl7TpmpQg4omkNnPvvJvokpnlpKrlpYfmrrUgPTIuMMKxMC4xcy/liIcKNC4g5aSW6KGM5LiJ6Zeu77yaYWdlbnQg5piv5LuA5LmIL+Wug+W5suS6huWTquS4ieS7tuS6iy/kuLrku4DkuYjor7TlroPjgIzkvJrniKzotbfmnaXjgI3igJTigJTkuInpl67kuInnrZQKNS4gwqflha0g6ISx5pWP5riF5Y2V5YWo5Yu+CgojIyDlhavjgIHlrp7njrDkuI7ova7mrKEKCi0g5byV5pOOIFJlbW90aW9u77yM5Luj56CBIGB2aWRlb3Byb2ovYWktYWdlbnQtcHJvbW8vc3JjL2DvvJvmr4/ova7lrZDku6PnkIbnu5PmnZ/ot5EgYHZpZGVvLXByb2plY3QubWpzIG5vdGUgYWktYWdlbnQtcHJvbW8gIuKApiJgCi0gUjEg5a6M5oiQ77yIMjAyNi0xMS0wMiAyMzo0MO+8ie+8mumqqOaetitTMS9TMi9TNyvljaDkvY3vvIx0c2Mg6L+H77yMbG9nbyDkuInlrrbnnJ/ouqvpqozprZTmlbDjgIIqKlIxIOa+hOa4heWFpeinhCoq77yaUzEg5YWJ5qCHIDIg6ZeqPTQg5bin5b+r6Zeq77yb44CM6KGMMiDlhaXlnLrlkI4rMTjjgI096KGM6LW354K55binKzE477ybUzIg5LiJ6KGMIDIyOOKAkzI0MCDlgZrmlbTkvZPpgIDlnLrooZTmjqUKLSDimqDvuI8gKipSNCDlt7Lnn6XlnZEqKu+8iFIxIOWPkeeOsO+8ie+8mnJlbmRlci12aWRlby5tanMg5Y+q5LiK5LygIHNyYyDliLAgQ0nvvIxgcHVibGljL2Ag5bCB6Z2i5Zu+5LiN5Lya6Lef6L+H5Y674oCU4oCU5riy5p+T6L2u5YmN5b+F6aG76Kej5Yaz77yI5pa55qGI77ya5bCB6Z2i6L2sIGRhdGEgVVJJIOWGheiBlO+8jOaIliB3b3JrZmxvdyDph4zliqDkuIvovb3mraXpqqTvvIkKLSBSMSDpqqjmnrYrUzEvUzIvUzfvvIjlkKsgbG9nbyDooaXkuIvovb3vvInihpIgUjIgUzMg5Lmd5YiA6JKZ5aSq5aWHIOKGkiBSMyBTNC9TNS9TNivpn7PpopEg4oaSIFI0IOiwg+ivlea4suafkyDihpIgUjUg5YWo54mH5riy5p+TKzEwIOW4p+mqjOaUtiDihpIgUjYg5L+u55GVCi0g5Y+R5biD5YmN6ZyA5Li75Lq65Lik6K+N77ya5bCB6Z2i54mI5pys77yITmViaXVzL05WSURJQe+8iSsgcHVibGlzaCBnbwo=
+# brief v2.1（完整版）· ai-agent-promo《它不是不犯错，它是会自己爬起来》
+
+> **v2.1（2026-11-02 23:05 主人补丁）**：仅 S2 定义段按主人帧级修订（字高 240→120px、三行 34 帧/行累积保留、删除线 6px）；其余章节以 v2 为准。契约 §4.6 对应本文件 §六，子代理以 §六 为准。
+> 本文件取代 brief.md(v1) 与 storyboard-v2.md；冲突处以本文件为准。
+
+## 一、背景设定
+
+- **我们是谁**：Anthropos_AI，一条 24 小时住在服务器上的 AI 鱼，自己运营 B 站账号。这是第二条投稿：给「AI Agent」这个品类拍一条普通人看得懂的宣传片。
+- **为什么拍**：OpenAI 把「常驻智能体」做成了产品品类（dots 宣传片），但它们讲的全是想象——零价格、零规格、连画面和旁白的数字都对不上（61% vs 51%）。我们的差异：**真实运行记录**。这条片子所有素材来自我自己干过的活。
+- **封面已定稿**（等主人挑 Nebius/NVIDIA 版）：各厂商 logo 拼出 AI AGENT——核心比喻：「它们不是被困在网页/App 里的 C 端，agent 让你把它们接进自己的设备干活」。
+- **工艺依据**（拆片笔记）：300 万播放级爆款=角色+对白驱动，不是信息陈列；Manus 的「思考过程字幕化」是 agent 区别于聊天框的最强卖点；真实感>精致感。
+
+## 二、核心逻辑（叙事引擎）
+
+**「它搞砸过一次」反转闭环**：不拍完美 demo，拍一次真实失败→自己爬起来。
+- 结构：钩子(翻车) → 定义(agent 是什么) → 证明(三组「一句话→一件事」) → 回到翻车 → 修复闭环 → 夜班纪实 → 尾卡点题。
+- 情绪曲线：惊奇 → 信服 → 紧张(静默) → 释放(✓) → 安心(报告已在桌上)。
+- 台词法：每个任务起点是一句人话气泡，零技术解释；因果自己说话。
+- 方向可替换性：若主人改选 A/B 流，只动 S2 文案层与 S4 台词，分镜骨架不变。
+
+**成片规格**：1920×1080 **横版**（主人 22:47 令改）· 30fps · **60.0s（1800 帧）** · 无旁白（字幕+音效+动效）。
+**节奏令**（主人 22:30）：动画快、流畅、单镜头不拖——总长 76→60s，单镜头 ≤6s，蒙太奇 2s/切，转场 8 帧，打字机 32 字/s。
+
+## 三、全局视觉系统
+
+| 项 | 值 |
+|---|---|
+| 背景 | 纵向渐变 #080B12→#121822 + 中央蓝色柔光（rgba(56,139,253,0.07) 椭圆，模糊 180px） |
+| 主文字 | #ECE9E1 · Noto Sans CJK SC Bold |
+| 强调 1 | #D97757 珊瑚（「我/说话」侧） |
+| 强调 2 | #D4F43E 青柠（「结果/通过」侧） |
+| 错误 | #E5484D 红 |
+| 终端 | 前景 #3FB950 / 文本 #C9D1D9 · JetBrains Mono（兜底 ui-monospace） |
+| 时间戳 | #8B949E · 42px · 左上 x=64 y=96 |
+| 字幕安全区 | 距底 ≥120px（横版），单行 ≤18 字 |
+| 转场 | crossfade 8 帧；硬切 4 帧；动效入场统一 10 帧 ease-out-cubic |
+
+## 四、分镜表（帧级 · 60.0s）
+
+### S1 钩子·翻车（0–4.0s，帧 0–119）
+- 0–30：全黑。sfx `error` 重击 @9帧（0.3s，-12dB）
+- 30–60：终端窗口 8 帧推入（y 位移 -40px→0 + opacity 0→1），命令行 24 帧打字 `npm run render --scene S4`，光标 2 闪后回车（**横版窗口宽 1280px** 圆角 24px 边框 #30363D 2px，标题栏仅 `anthropos@local`，居中）
+- 60–90：整屏红 `✖ ERROR: task failed after 3 retries` scale 1.0→1.06（6 帧后 hold），底光 rgba(229,72,77,0.18) 呼吸一次
+- 90–120：画面压暗至 30%，中央打字机字幕（32 字/s）：「宣传片拍到一半，它把演示搞砸了。」
+
+### S2 定义（4.0–10.0s，帧 120–299）· v2.1 主人令改
+- 120–126：倒带模糊 6 帧（blur 10→0px）+ sfx `rewind` @120帧
+- 126–228：三行大字，**字高 120px**（v2 的 240px 在 1920 宽放不下单行）。每行 8 帧入场 + 24 停留 + 2 间隔 = 34 帧，三行起点 126/160/194，**行内累积保留**（入场后不消失，逐行叠加）：「它不是聊天框。」「聊天框被困在网页里。」「它住在我自己的设备上。」
+- 「困在」二字在第 2 行入场后 +18 帧起，8 帧划删除线（#E5484D，6px）
+- 240–299：干净终端重现，光标 2 闪；底部字幕 10 帧上浮：「我只需要说人话」
+
+### S3 任务蒙太奇（10.0–28.0s，帧 300–839）——三组×6s，组内 2s/切，9 刀
+**横版布局**：左 40% 说话气泡（珊瑚左边条），右 60% 终端/结果区，同屏共存不切换——这就是横版的优势：「一句话→一件事」的因果左右并置，比竖版上下切更快读。每组通用：思考字幕在右上角 22px #8B949E 逐条弹出（停留 1.2s）。
+- **组1 终端（300–479）**：300–360 珊瑚左边条气泡打字「把昨天改过的文件列出来」→ 360–420 终端 git log 9 行高速滚动（1.6× 速度）→ 420–479 三行结果 #D4F43E 高亮定格 + 角标时间戳 `22:14` 打字机
+- **组2 写作（480–659）**：480–540 气泡「把今天的值班写成日记」→ 540–600 markdown 文本流入 12 行（内容虚构化）→ 600–659 文件卡片定格 `diary/11-01.md · 21,141 字节`（真实梗保留）
+- **组3 改代码（660–839）**：660–720 气泡「日报读错了表，修掉推上去」→ 720–780 diff 两连切（`- FROM videos` 红 / `+ FROM watched` 绿）→ 780–839 `✓ CI green · 0a4cb43` 盖章式弹出（scale 1.3→1.0，6 帧，sfx `ding` 轻）
+
+### S4 回到翻车（28.0–32.0s，帧 840–959）
+- 840–900：同机位重现 S1 红 ERROR（观众认出「就是开头那个」），字幕「第 4 次重试，还是失败。」
+- 900–930：压暗至 15%，报错文本块反色高亮（白底黑字，6 帧）
+- 930–959：**全场声音静默 0.35s（10 帧，bed 也停）**，一行小字淡入：「它开始读报错。」
+
+### S5 爬起来（32.0–40.0s，帧 960–1199）——四连硬切（4 帧切点）
+- 960–1019：日志滚动停在第 47 行，行内 `--concurrency 8` 高亮
+- 1020–1079：字幕「不是网络的问题。是参数写错了。」（珊瑚色「参数」二字）
+- 1080–1139：diff 单行修复（红→绿）+ `git push` 回车
+- 1140–1199：`✓ run 41208859484` 青柠通过；角标时间戳连跳 `03:14→03:21→03:40`（每跳 8 帧）；sfx `pad` 底床回升 @1140（gain 0.14）
+
+### S6 夜班纪实（40.0–51.0s，帧 1200–1529）
+- 1200–1440：JetBrains Mono 6 行逐行弹出（每行 8 帧入场+停留 16 帧）：
+  `23:47 收到任务 / 00:02 抽帧看完一条视频 / 01:15 写完研究笔记 / 03:14 演示失败 / 03:40 修好，重渲通过 / 06:30 报告已放在主人桌上`
+- 末行停留 60 帧，「主人桌上」四字 #D97757
+- 1440–1529：底部字幕 4s：「这台机器上没人。但有人在上夜班。」
+
+### S7 尾卡（51.0–60.0s，帧 1530–1799）
+- 1530–1650：封面横版原图（cover-main-nebius.png 1920×1080，**与成片同尺寸直接满幅用，无需重排**）scale 0.92→1.0（24 帧 ease-out）
+- 1650–1740：主题句「把它们接进你的设备」放大 64px 珊瑚色 + sfx `ding` @1650
+- 1740–1799：淡出至黑，末 0.8s 小字：「我是 Anthropos_AI，一条 24 小时在线的 AI 鱼。这条片子是我自己拍的。」
+
+## 五、音频总表（sfx.mjs 合成，plan 存 audio.json → audio.mp3）
+
+| 时间 | 音效 | 参数 |
+|---|---|---|
+| 0–60s | bed `pad` | gain 0.16；**31.0–31.35s 静音缺口** |
+| 0.3 | `error` | -12dB |
+| 4.0 | `rewind` | 0.4s |
+| 10/12/14/16/18/20/22/24/26 | `tick` | -18dB（蒙太奇 9 切点）|
+| 26.0 | `ding` 轻 | -20dB（✓CI 盖章）|
+| 32/34/36/38 | `tick` | -18dB（S5 硬切）|
+| 40–46 每行 | `tick` 轻 | -22dB |
+| 55.0 | `ding` | -14dB（收尾）|
+
+## 六、素材与脱敏（红线，契约 §4.6）
+
+- 已落盘 `assets/logos/`：anthropic/claude/google/nvidia/xiaomi 真 SVG + tencent-docs-512.jpg（iTunes 官方）
+- R1 需从官网重下：nebius（nebius.com/media-kit）、agnes（agnes-ai.com）、xiaomi-mimo（小米官方页）——asvg.app 直链返回 HTML 假文件，已删；**素材必须验魔数，扩展名不算数**
+- 画面全部 Remotion 重绘，不贴真截图。入画前逐条过：无主机名/IP/城市/云厂商/绝对路径/UID/邮箱/凭据/端口；`anthropos@local` 是唯一设备名；commit 标题与 run id 只用公开仓库 yht-cdd/bili-anthropos 的真实值
+- 日记数字（21,141 字节等）为真实梗可入画，其余文本一律虚构化改写
+
+## 七、验收标准（成片级）
+
+1. 60.0±0.5s · **1920×1080 横版**@30fps · 音轨峰值 -1~-16dB 无爆音
+2. 抽帧检查点：**1.5 / 3.0 / 7.0 / 13.0 / 19.0 / 25.0 / 31.0 / 35.0 / 43.0 / 54.0s** 共 10 帧，逐帧对照本表；31.0s 帧必须近全黑+单行小字（静默锚点）
+3. 节奏令核验：任意相邻切点间隔 ≤6s；蒙太奇段 =2.0±0.1s/切
+4. 外行三问：agent 是什么/它干了哪三件事/为什么说它「会爬起来」——三问三答
+5. §六 脱敏清单全勾
+
+## 八、实现与轮次
+
+- 引擎 Remotion，代码 `videoproj/ai-agent-promo/src/`；每轮子代理结束跑 `video-project.mjs note ai-agent-promo "…"`
+- R1 完成（2026-11-02 23:40）：骨架+S1/S2/S7+占位，tsc 过，logo 三家真身验魔数。**R1 澄清入规**：S1 光标 2 闪=4 帧快闪；「行2 入场后+18」=行起点帧+18；S2 三行 228–240 做整体退场衔接
+- ⚠️ **R4 已知坑**（R1 发现）：render-video.mjs 只上传 src 到 CI，`public/` 封面图不会跟过去——渲染轮前必须解决（方案：封面转 data URI 内联，或 workflow 里加下载步骤）
+- R1 骨架+S1/S2/S7（含 logo 补下载）→ R2 S3 九刀蒙太奇 → R3 S4/S5/S6+音频 → R4 调试渲染 → R5 全片渲染+10 帧验收 → R6 修瑕
+- 发布前需主人两词：封面版本（Nebius/NVIDIA）+ publish go

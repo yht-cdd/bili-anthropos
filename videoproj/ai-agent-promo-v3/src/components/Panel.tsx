@@ -1,1 +1,93 @@
-aW1wb3J0IHR5cGUgeyBDU1NQcm9wZXJ0aWVzLCBSZWFjdE5vZGUgfSBmcm9tICdyZWFjdCc7CmltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7CmltcG9ydCB7IEZPTlRfTU9OTywgR1JBWSwgU1VSRkFDRSB9IGZyb20gJy4uL3RoZW1lJzsKCi8vIHYzIOmAmueUqOmdouadv++8iOe7iOerry/nqpflj6PnsbvvvInigJQg5bC65a+444CB5ZyG6KeS44CB6aG25qCP5YWo6YOo5oyJIMKnQyDlkITplZznu5nlrprlgLzkvKDlhaXjgIIKLy8g5LiOIHYyIFRlcm1pbmFsIOeahOWMuuWIq++8mnYzIOavj+mVnOeql+WPo+WwuuWvuOS4jeWQjO+8iDcyMHg0MjAgLyA4MDB4MjgwIC8gMTAwMHg1NjDigKbvvInvvIwKLy8g5omA5Lul5oq95oiQ5Y+C5pWw5YyWIFBhbmVs77yM5LiN5YGa5Zu65a6a5a695bqm57uE5Lu244CCCmV4cG9ydCBjb25zdCBQYW5lbDogUmVhY3QuRkM8ewogIHdpZHRoOiBudW1iZXI7CiAgaGVpZ2h0PzogbnVtYmVyOwogIHJhZGl1cz86IG51bWJlcjsKICBiZz86IHN0cmluZzsKICB0aXRsZT86IHN0cmluZzsgLy8g6aG25qCP5paH5pys77yI5aaCIGFudGhyb3Bvc0Bsb2NhbCB+77yJCiAgdGl0bGVTaXplPzogbnVtYmVyOyAvLyDpu5jorqQgMTZweO+8iMKnQyDplZwxIOmhtuagjyAxNnB477yJCiAgY2hpbGRyZW4/OiBSZWFjdE5vZGU7CiAgc3R5bGU/OiBDU1NQcm9wZXJ0aWVzOyAvLyDlpJbpg6jkvKDlhaXnmoTlhaXlnLogdHJhbnNmb3JtL29wYWNpdHkKICBnbG93Pzogc3RyaW5nOyAvLyDovrnmoYblpJblj5HlhYnvvIjplZwxIEVSUk9SIOe6ouWFieiEieWGsu+8iQp9PiA9ICh7IHdpZHRoLCBoZWlnaHQsIHJhZGl1cyA9IDEyLCBiZyA9IFNVUkZBQ0UsIHRpdGxlLCB0aXRsZVNpemUgPSAxNiwgY2hpbGRyZW4sIHN0eWxlLCBnbG93IH0pID0+ICgKICA8ZGl2CiAgICBzdHlsZT17ewogICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgd2lkdGgsCiAgICAgIGhlaWdodCwKICAgICAgYm9yZGVyUmFkaXVzOiByYWRpdXMsCiAgICAgIGJhY2tncm91bmRDb2xvcjogYmcsCiAgICAgIGZvbnRGYW1pbHk6IEZPTlRfTU9OTywKICAgICAgb3ZlcmZsb3c6ICdoaWRkZW4nLAogICAgICBib3hTaGFkb3c6IGdsb3cgPz8gJzAgMjRweCA4MHB4IHJnYmEoMCwwLDAsMC41KScsCiAgICAgIC4uLnN0eWxlLAogICAgfX0KICA+CiAgICB7dGl0bGUgPyAoCiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgZGlzcGxheTogJ2ZsZXgnLAogICAgICAgICAgYWxpZ25JdGVtczogJ2NlbnRlcicsCiAgICAgICAgICBoZWlnaHQ6IDM2LAogICAgICAgICAgcGFkZGluZzogJzAgMTZweCcsCiAgICAgICAgICBjb2xvcjogR1JBWSwKICAgICAgICAgIGZvbnRTaXplOiB0aXRsZVNpemUsCiAgICAgICAgICBib3JkZXJCb3R0b206ICcxcHggc29saWQgcmdiYSgyNTUsMjU1LDI1NSwwLjA2KScsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIHt0aXRsZX0KICAgICAgPC9kaXY+CiAgICApIDogbnVsbH0KICAgIHtjaGlsZHJlbn0KICA8L2Rpdj4KKTsKCi8vIOWdl+eKtuWFieagh++8iMKnQyDplZwz77yaYmxvY2sgOHgxNnB4ICNEOTc3NTfvvIkKZXhwb3J0IGNvbnN0IEJsb2NrQ3Vyc29yOiBSZWFjdC5GQzx7IG9uOiBudW1iZXI7IHNpemU/OiBudW1iZXI7IGNvbG9yPzogc3RyaW5nIH0+ID0gKHsKICBvbiwKICBzaXplID0gMTYsCiAgY29sb3IgPSAnI0Q5Nzc1NycsCn0pID0+ICgKICA8c3BhbgogICAgc3R5bGU9e3sKICAgICAgZGlzcGxheTogJ2lubGluZS1ibG9jaycsCiAgICAgIHdpZHRoOiBNYXRoLnJvdW5kKHNpemUgLyAyKSwKICAgICAgaGVpZ2h0OiBzaXplLAogICAgICBtYXJnaW5MZWZ0OiAyLAogICAgICBiYWNrZ3JvdW5kQ29sb3I6IGNvbG9yLAogICAgICBvcGFjaXR5OiBvbiwKICAgICAgdmVydGljYWxBbGlnbjogJy0zcHgnLAogICAgfX0KICAvPgopOwoKLy8g5omT5a2X6KGM77ya5bey5omT5Ye66YOo5YiGICsg5Y+v6YCJ5YWJ5qCHCmV4cG9ydCBjb25zdCBUeXBlZExpbmU6IFJlYWN0LkZDPHsKICB0ZXh0OiBzdHJpbmc7CiAgbjogbnVtYmVyOyAvLyDlt7LmiZPlrZfnrKbmlbAKICBjb2xvcj86IHN0cmluZzsKICBzaXplPzogbnVtYmVyOwogIGN1cnNvcj86IG51bWJlcjsgLy8g5YWJ5qCH5Lqu5bqmIDAvMe+8iOS7heacrOihjOaJk+WujOWQjue7me+8iQogIG1vbm8/OiBib29sZWFuOwogIHN0eWxlPzogQ1NTUHJvcGVydGllczsKfT4gPSAoeyB0ZXh0LCBuLCBjb2xvciA9ICcjOUNBM0FGJywgc2l6ZSA9IDE0LCBjdXJzb3IsIG1vbm8gPSB0cnVlLCBzdHlsZSB9KSA9PiAoCiAgPGRpdgogICAgc3R5bGU9e3sKICAgICAgZm9udEZhbWlseTogbW9ubyA/IEZPTlRfTU9OTyA6IHVuZGVmaW5lZCwKICAgICAgZm9udFNpemU6IHNpemUsCiAgICAgIGNvbG9yLAogICAgICB3aGl0ZVNwYWNlOiAncHJlJywKICAgICAgbGluZUhlaWdodDogMS42NSwKICAgICAgLi4uc3R5bGUsCiAgICB9fQogID4KICAgIHt0ZXh0LnNsaWNlKDAsIG4pfQogICAge2N1cnNvciAhPT0gdW5kZWZpbmVkID8gPEJsb2NrQ3Vyc29yIG9uPXtjdXJzb3J9IHNpemU9e01hdGgucm91bmQoc2l6ZSAqIDEuMSl9IC8+IDogbnVsbH0KICA8L2Rpdj4KKTsK
+import type { CSSProperties, ReactNode } from 'react';
+import React from 'react';
+import { FONT_MONO, GRAY, SURFACE } from '../theme';
+
+// v3 通用面板（终端/窗口类）— 尺寸、圆角、顶栏全部按 §C 各镜给定值传入。
+// 与 v2 Terminal 的区别：v3 每镜窗口尺寸不同（720x420 / 800x280 / 1000x560…），
+// 所以抽成参数化 Panel，不做固定宽度组件。
+export const Panel: React.FC<{
+  width: number;
+  height?: number;
+  radius?: number;
+  bg?: string;
+  title?: string; // 顶栏文本（如 anthropos@local ~）
+  titleSize?: number; // 默认 16px（§C 镜1 顶栏 16px）
+  children?: ReactNode;
+  style?: CSSProperties; // 外部传入的入场 transform/opacity
+  glow?: string; // 边框外发光（镜1 ERROR 红光脉冲）
+}> = ({ width, height, radius = 12, bg = SURFACE, title, titleSize = 16, children, style, glow }) => (
+  <div
+    style={{
+      position: 'absolute',
+      width,
+      height,
+      borderRadius: radius,
+      backgroundColor: bg,
+      fontFamily: FONT_MONO,
+      overflow: 'hidden',
+      boxShadow: glow ?? '0 24px 80px rgba(0,0,0,0.5)',
+      ...style,
+    }}
+  >
+    {title ? (
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          height: 36,
+          padding: '0 16px',
+          color: GRAY,
+          fontSize: titleSize,
+          borderBottom: '1px solid rgba(255,255,255,0.06)',
+        }}
+      >
+        {title}
+      </div>
+    ) : null}
+    {children}
+  </div>
+);
+
+// 块状光标（§C 镜3：block 8x16px #D97757）
+export const BlockCursor: React.FC<{ on: number; size?: number; color?: string }> = ({
+  on,
+  size = 16,
+  color = '#D97757',
+}) => (
+  <span
+    style={{
+      display: 'inline-block',
+      width: Math.round(size / 2),
+      height: size,
+      marginLeft: 2,
+      backgroundColor: color,
+      opacity: on,
+      verticalAlign: '-3px',
+    }}
+  />
+);
+
+// 打字行：已打出部分 + 可选光标
+export const TypedLine: React.FC<{
+  text: string;
+  n: number; // 已打字符数
+  color?: string;
+  size?: number;
+  cursor?: number; // 光标亮度 0/1（仅本行打完后给）
+  mono?: boolean;
+  style?: CSSProperties;
+}> = ({ text, n, color = '#9CA3AF', size = 14, cursor, mono = true, style }) => (
+  <div
+    style={{
+      fontFamily: mono ? FONT_MONO : undefined,
+      fontSize: size,
+      color,
+      whiteSpace: 'pre',
+      lineHeight: 1.65,
+      ...style,
+    }}
+  >
+    {text.slice(0, n)}
+    {cursor !== undefined ? <BlockCursor on={cursor} size={Math.round(size * 1.1)} /> : null}
+  </div>
+);

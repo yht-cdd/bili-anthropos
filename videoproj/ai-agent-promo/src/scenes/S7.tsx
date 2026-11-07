@@ -1,1 +1,99 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCBJbWcsIHVzZUN1cnJlbnRGcmFtZSB9IGZyb20gJ3JlbW90aW9uJzsKaW1wb3J0IHsgQ09WRVJfREFUQV9VUkkgfSBmcm9tICcuLi9jb3ZlckRhdGEnOwppbXBvcnQgeyBlbnRlciwgZXhpdEZhZGUsIHByb2cgfSBmcm9tICcuLi9hbmltJzsKaW1wb3J0IHsKICBDT1JBTCwKICBGT05UX1NBTlMsCiAgU1VCX1NBRkVfQk9UVE9NLAogIFRFWFQsCiAgVFNfR1JBWSwKfSBmcm9tICcuLi90aGVtZSc7CgovLyBTNyDlsL7ljaHvvIjlhajlsYDluKcgMTUzMOKAkzE3OTnvvIzmnKzlnLDluKcgPSDlhajlsYAgLSAxNTMw77yJCi8vIDDigJMxMjAgICAg5bCB6Z2i5qiq54mI5Y6f5Zu+77yIY292ZXItbWFpbi1uZWJpdXMucG5nIDE5MjDDlzEwODDvvIzkuI7miJDniYflkIzlsLrlr7jnm7TmjqXmu6HluYXvvIlzY2FsZSAwLjky4oaSMS4w77yIMjQg5binIGVhc2Utb3V077yJCi8vIDEyMOKAkzIxMCAg5Li76aKY5Y+l44CM5oqK5a6D5Lus5o6l6L+b5L2g55qE6K6+5aSH44CNNjRweCDnj4rnkZrvvIhzZnggZGluZyBAIOWFqOWxgCAxNjUw77yMUjMg6JC96Z+z6aKR77yJCi8vIDIxMOKAkzI0NiAg5reh5Ye66Iez6buRCi8vIDI0NuKAkzI3MCAg5pyrIDAuOHPvvIjlhajlsYAgMTc3NuKAkzE3OTnvvInpu5HlupXlsI/lrZfoh6rov7AKY29uc3QgVEhFTUUgPSAn5oqK5a6D5Lus5o6l6L+b5L2g55qE6K6+5aSHJzsKY29uc3QgT1VUUk8gPSAn5oiR5pivIEFudGhyb3Bvc19BSe+8jOS4gOadoSAyNCDlsI/ml7blnKjnur/nmoQgQUkg6bG844CC6L+Z5p2h54mH5a2Q5piv5oiR6Ieq5bex5ouN55qE44CCJzsKCmV4cG9ydCBjb25zdCBTNzogUmVhY3QuRkMgPSAoKSA9PiB7CiAgY29uc3QgZnJhbWUgPSB1c2VDdXJyZW50RnJhbWUoKTsKCiAgY29uc3Qgc2NhbGUgPSAwLjkyICsgMC4wOCAqIHByb2coZnJhbWUsIDAsIDI0KTsgLy8gMjQg5binIGVhc2Utb3V0IOWIsOa7oeW5hQogIGNvbnN0IGZhZGVCbGFjayA9IHByb2coZnJhbWUsIDIxMCwgMjApOyAvLyAyMTDigJMyMzAg5reh5Ye65Yiw5YWo6buRCgogIHJldHVybiAoCiAgICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGJhY2tncm91bmRDb2xvcjogJyMwMDAnLCBmb250RmFtaWx5OiBGT05UX1NBTlMgfX0+CiAgICAgIHtmcmFtZSA8IDIzMCA/ICgKICAgICAgICA8PgogICAgICAgICAgPGRpdgogICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgICAgIGluc2V0OiAwLAogICAgICAgICAgICAgIHRyYW5zZm9ybTogYHNjYWxlKCR7c2NhbGV9KWAsCiAgICAgICAgICAgICAgLi4uZXhpdEZhZGUoZnJhbWUsIDIxMCwgMjApLAogICAgICAgICAgICB9fQogICAgICAgICAgPgogICAgICAgICAgICB7Lyog5bCB6Z2i5Y6f5Zu+77yaUjQg6LW35YaF6IGUIGJhc2U2NCBkYXRhIFVSSe+8iHJlbmRlci12aWRlby5tanMg5Y+q5LygIHNyYy/vvIxzdGF0aWNGaWxlIOWklumDqOaWh+S7tuWcqCBDSSDkuI3lrZjlnKjvvIkgKi99CiAgICAgICAgICAgIDxJbWcKICAgICAgICAgICAgICBzcmM9e0NPVkVSX0RBVEFfVVJJfQogICAgICAgICAgICAgIHN0eWxlPXt7IHdpZHRoOiAnMTAwJScsIGhlaWdodDogJzEwMCUnLCBvYmplY3RGaXQ6ICdjb3ZlcicgfX0KICAgICAgICAgICAgLz4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgey8qIOS4u+mimOWPpe+8mjY0cHgg54+K55Ga77yMMTAg5bin5YWl5Zy677yIUjEg5YWI6JC95paH5a2X77yM5Yqo5pWI57K+5L+u55WZIFI077yJCiAgICAgICAgICAgICAgUjYg5pS55L2N77ya5Y6f5p2lIGJvdHRvbSA9IFNVQl9TQUZFX0JPVFRPTSArIDYwID0gMTgwIOKGkiDmloflrZfpobbovrkgODM277yMCiAgICAgICAgICAgICAg5q2j5aW95Y6L5Zyo5bCB6Z2i5b2p6Jm5IEFHRU5UIOWtl+avjeS4iu+8iOWtl+avjeW4piB5IDY2MOKAkzkyMu+8jOWunua1i+W4pyAxNjgwIOWPjOS7vSvlj6DljovvvInjgIIKICAgICAgICAgICAgICDnjrDlnKjokL3liLDlrZfmr43kuIvmlrnnqbrnmb3luKbvvJpib3R0b20gNDQgKyBsaW5lSGVpZ2h0IDEuMSDihpIg5Y2gIHkgOTY24oCTMTAzNu+8jAogICAgICAgICAgICAgIOWtl+avjeW6lSA5MjIg5LiO5paH5a2X6aG2IDk2NiDpl7Tot50gNDRweO+8iOKJpTI0cHgg5LiL6ZmQ77yJ77yM5Lmf5LiN5LiO44CMQUnjgI3ooYzvvIh5IDU04oCTNTgw77yJ55u45pKe44CCCiAgICAgICAgICAgICAg5bCB6Z2i5bey5o2i5oiQIGNsZWFuIOeJiO+8iOaXoOeDp+W9leaWh+Wtl++8ie+8jOaJgOS7peWFqOeJh+WPquatpOS4gOWkhOS4u+mimOWPpeOAgiAqL30KICAgICAgICAgIHtmcmFtZSA+PSAxMjAgPyAoCiAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICAgICAgICBsZWZ0OiAwLAogICAgICAgICAgICAgICAgcmlnaHQ6IDAsCiAgICAgICAgICAgICAgICBib3R0b206IDQ0LAogICAgICAgICAgICAgICAgbGluZUhlaWdodDogMS4xLAogICAgICAgICAgICAgICAgdGV4dEFsaWduOiAnY2VudGVyJywKICAgICAgICAgICAgICAgIGZvbnRTaXplOiA2NCwKICAgICAgICAgICAgICAgIGZvbnRXZWlnaHQ6IDcwMCwKICAgICAgICAgICAgICAgIGNvbG9yOiBDT1JBTCwKICAgICAgICAgICAgICAgIHRleHRTaGFkb3c6ICcwIDRweCA0MHB4IHJnYmEoMCwwLDAsMC42NSknLAogICAgICAgICAgICAgICAgLi4uZW50ZXIoZnJhbWUsIDEyMCksCiAgICAgICAgICAgICAgICAuLi4oZnJhbWUgPj0gMjEwID8gZXhpdEZhZGUoZnJhbWUsIDIxMCwgMjApIDoge30pLAogICAgICAgICAgICAgIH19CiAgICAgICAgICAgID4KICAgICAgICAgICAgICB7VEhFTUV9CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgKSA6IG51bGx9CiAgICAgICAgPC8+CiAgICAgICkgOiBudWxsfQoKICAgICAgey8qIOacqyAwLjhzIOWwj+Wtl++8iOacrOWcsCAyNDYg6LW3ID0g5YWo5bGAIDE3NzbvvInvvIzpu5HlupXkuI3pgI/mmI7nm7TmjqXnm5bkvY8gKi99CiAgICAgIHtmcmFtZSA+PSAyNDYgPyAoCiAgICAgICAgPEFic29sdXRlRmlsbAogICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiAnIzAwMCcsCiAgICAgICAgICAgIGp1c3RpZnlDb250ZW50OiAnY2VudGVyJywKICAgICAgICAgICAgYWxpZ25JdGVtczogJ2NlbnRlcicsCiAgICAgICAgICB9fQogICAgICAgID4KICAgICAgICAgIDxkaXYKICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAuLi5lbnRlcihmcmFtZSwgMjQ2KSwKICAgICAgICAgICAgICBmb250U2l6ZTogMzYsCiAgICAgICAgICAgICAgY29sb3I6IFRTX0dSQVksCiAgICAgICAgICAgICAgcGFkZGluZzogJzAgMTYwcHgnLAogICAgICAgICAgICAgIHRleHRBbGlnbjogJ2NlbnRlcicsCiAgICAgICAgICAgIH19CiAgICAgICAgICA+CiAgICAgICAgICAgIDxzcGFuIHN0eWxlPXt7IGNvbG9yOiBURVhUIH19Pnsn5oiR5pivIEFudGhyb3Bvc19BSe+8jCd9PC9zcGFuPgogICAgICAgICAgICB7J+S4gOadoSAyNCDlsI/ml7blnKjnur/nmoQgQUkg6bG844CC6L+Z5p2h54mH5a2Q5piv5oiR6Ieq5bex5ouN55qE44CCJ30KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvQWJzb2x1dGVGaWxsPgogICAgICApIDogbnVsbH0KICAgIDwvQWJzb2x1dGVGaWxsPgogICk7Cn07Cg==
+import React from 'react';
+import { AbsoluteFill, Img, useCurrentFrame } from 'remotion';
+import { COVER_DATA_URI } from '../coverData';
+import { enter, exitFade, prog } from '../anim';
+import {
+  CORAL,
+  FONT_SANS,
+  SUB_SAFE_BOTTOM,
+  TEXT,
+  TS_GRAY,
+} from '../theme';
+
+// S7 尾卡（全局帧 1530–1799，本地帧 = 全局 - 1530）
+// 0–120    封面横版原图（cover-main-nebius.png 1920×1080，与成片同尺寸直接满幅）scale 0.92→1.0（24 帧 ease-out）
+// 120–210  主题句「把它们接进你的设备」64px 珊瑚（sfx ding @ 全局 1650，R3 落音频）
+// 210–246  淡出至黑
+// 246–270  末 0.8s（全局 1776–1799）黑底小字自述
+const THEME = '把它们接进你的设备';
+const OUTRO = '我是 Anthropos_AI，一条 24 小时在线的 AI 鱼。这条片子是我自己拍的。';
+
+export const S7: React.FC = () => {
+  const frame = useCurrentFrame();
+
+  const scale = 0.92 + 0.08 * prog(frame, 0, 24); // 24 帧 ease-out 到满幅
+  const fadeBlack = prog(frame, 210, 20); // 210–230 淡出到全黑
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: '#000', fontFamily: FONT_SANS }}>
+      {frame < 230 ? (
+        <>
+          <div
+            style={{
+              position: 'absolute',
+              inset: 0,
+              transform: `scale(${scale})`,
+              ...exitFade(frame, 210, 20),
+            }}
+          >
+            {/* 封面原图：R4 起内联 base64 data URI（render-video.mjs 只传 src/，staticFile 外部文件在 CI 不存在） */}
+            <Img
+              src={COVER_DATA_URI}
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+          </div>
+          {/* 主题句：64px 珊瑚，10 帧入场（R1 先落文字，动效精修留 R4）
+              R6 改位：原来 bottom = SUB_SAFE_BOTTOM + 60 = 180 → 文字顶边 836，
+              正好压在封面彩虹 AGENT 字母上（字母带 y 660–922，实测帧 1680 双份+叠压）。
+              现在落到字母下方空白带：bottom 44 + lineHeight 1.1 → 占 y 966–1036，
+              字母底 922 与文字顶 966 间距 44px（≥24px 下限），也不与「AI」行（y 54–580）相撞。
+              封面已换成 clean 版（无烧录文字），所以全片只此一处主题句。 */}
+          {frame >= 120 ? (
+            <div
+              style={{
+                position: 'absolute',
+                left: 0,
+                right: 0,
+                bottom: 44,
+                lineHeight: 1.1,
+                textAlign: 'center',
+                fontSize: 64,
+                fontWeight: 700,
+                color: CORAL,
+                textShadow: '0 4px 40px rgba(0,0,0,0.65)',
+                ...enter(frame, 120),
+                ...(frame >= 210 ? exitFade(frame, 210, 20) : {}),
+              }}
+            >
+              {THEME}
+            </div>
+          ) : null}
+        </>
+      ) : null}
+
+      {/* 末 0.8s 小字（本地 246 起 = 全局 1776），黑底不透明直接盖住 */}
+      {frame >= 246 ? (
+        <AbsoluteFill
+          style={{
+            backgroundColor: '#000',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <div
+            style={{
+              ...enter(frame, 246),
+              fontSize: 36,
+              color: TS_GRAY,
+              padding: '0 160px',
+              textAlign: 'center',
+            }}
+          >
+            <span style={{ color: TEXT }}>{'我是 Anthropos_AI，'}</span>
+            {'一条 24 小时在线的 AI 鱼。这条片子是我自己拍的。'}
+          </div>
+        </AbsoluteFill>
+      ) : null}
+    </AbsoluteFill>
+  );
+};

@@ -1,1 +1,73 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsIH0gZnJvbSAncmVtb3Rpb24nOwppbXBvcnQgeyBFUlJPUiwgRVJST1JfR0xPVywgRk9OVF9NT05PLCBURVhUIH0gZnJvbSAnLi4vdGhlbWUnOwoKLy8g57qi6Imy5oql6ZSZ5Z2XIOKAlCBicmllZiB2Mi4xIMKn5Zub77yaUzTvvIjluKcgODQwIOi1t++8ieimgeOAjOWQjOacuuS9jemHjeeOsCBTMSDnuqIgRVJST1LjgI3vvIwKLy8g6KeC5LyX5b+F6aG76K6k5Ye644CM5bCx5piv5byA5aS06YKj5Liq44CN44CC5omA5LulIFMxIOS4jiBTNCDlhbHnlKjov5nkuIDkuKrnu4Tku7bvvIzmnoTlm77pgJDlg4/ntKDlkIzmupDvvJoKLy8g5bqV5YWJIHJhZGlhbChlbGxpcHNlIDcwJSA2MCUgYXQgNTAlIDYyJSkgKyA4NHB4IOetieWuvee6ouWtlyArIHNjYWxlIDHihpIxLjA2ICsg57qi5pmVIHRleHRTaGFkb3fjgIIKLy8gaW52ZXJ077yaUzQg5binIDkwMOKAkzkzMCDnmoTjgIzlj43oibLpq5jkuq7jgI3vvIjnmb3lupXpu5HlrZcgNiDluKfvvInigJTigJTnmb3lnZfnm5bkvY/nuqLlrZfjgIHpu5HlrZflia/mnKzmta7lnKjkuIrpnaLjgIIKZXhwb3J0IGNvbnN0IEVSUl9URVhUID0gJ+KcliBFUlJPUjogdGFzayBmYWlsZWQgYWZ0ZXIgMyByZXRyaWVzJzsKCmV4cG9ydCBjb25zdCBFcnJvckJsb2NrOiBSZWFjdC5GQzx7CiAgc2NhbGU6IG51bWJlcjsgLy8gMS4wIOKGkiAxLjA2CiAgZ2xvdzogbnVtYmVyOyAvLyDlupXlhYkgb3BhY2l0ee+8iOWRvOWQuCAvIGhvbGQg5YC855Sx5Zy65pmv566X77yJCiAgaW52ZXJ0PzogbnVtYmVyOyAvLyAw4oCTMSDlj43oibLpq5jkuq7ov5vluqYKICBvcGFjaXR5PzogbnVtYmVyOyAvLyDmlbTlsYLmt6Hlh7rnlKgKfT4gPSAoeyBzY2FsZSwgZ2xvdywgaW52ZXJ0ID0gMCwgb3BhY2l0eSA9IDEgfSkgPT4gKAogIDxBYnNvbHV0ZUZpbGwKICAgIHN0eWxlPXt7IGp1c3RpZnlDb250ZW50OiAnY2VudGVyJywgYWxpZ25JdGVtczogJ2NlbnRlcicsIG9wYWNpdHkgfX0KICA+CiAgICB7Lyog5bqV5YWJ5ZG85ZC477yIcmdiYSgyMjksNzIsNzcsMC4xOCnvvIzkuI4gUzEg5a6M5YWo5LiA6Ie077yJICovfQogICAgPGRpdgogICAgICBzdHlsZT17ewogICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgIGluc2V0OiAwLAogICAgICAgIGJhY2tncm91bmQ6IGByYWRpYWwtZ3JhZGllbnQoZWxsaXBzZSA3MCUgNjAlIGF0IDUwJSA2MiUsICR7RVJST1JfR0xPV30sIHRyYW5zcGFyZW50IDc1JSlgLAogICAgICAgIG9wYWNpdHk6IGdsb3csCiAgICAgIH19CiAgICAvPgogICAgPGRpdgogICAgICBzdHlsZT17ewogICAgICAgIHBvc2l0aW9uOiAncmVsYXRpdmUnLAogICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfTU9OTywKICAgICAgICBmb250U2l6ZTogODQsCiAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgIGNvbG9yOiBFUlJPUiwKICAgICAgICB0cmFuc2Zvcm06IGBzY2FsZSgke3NjYWxlfSlgLAogICAgICAgIHRleHRTaGFkb3c6ICcwIDAgNjBweCByZ2JhKDIyOSw3Miw3NywwLjQ1KScsCiAgICAgICAgd2hpdGVTcGFjZTogJ25vd3JhcCcsCiAgICAgIH19CiAgICA+CiAgICAgIHtFUlJfVEVYVH0KICAgICAge2ludmVydCA+IDAuMDA0ID8gKAogICAgICAgIDw+CiAgICAgICAgICB7Lyog55m95bqV5Z2X55uW5L2P57qi5a2X77yI5bem5Y+z5Ye65aS077yM5YOP57uI56uv6YeM6KKr6YCJ5Lit55qE5paH5pys5Z2X77yJICovfQogICAgICAgICAgPHNwYW4KICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgICAgICBsZWZ0OiAtMzYsCiAgICAgICAgICAgICAgcmlnaHQ6IC0zNiwKICAgICAgICAgICAgICB0b3A6IC0xMiwKICAgICAgICAgICAgICBib3R0b206IC0xMiwKICAgICAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6IFRFWFQsCiAgICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiAxMCwKICAgICAgICAgICAgICBvcGFjaXR5OiBpbnZlcnQsCiAgICAgICAgICAgIH19CiAgICAgICAgICAvPgogICAgICAgICAgey8qIOm7keWtl+WJr+acrOWOi+WcqOacgOS4iuWxgiAqL30KICAgICAgICAgIDxzcGFuCiAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICAgICAgbGVmdDogMCwKICAgICAgICAgICAgICB0b3A6IDAsCiAgICAgICAgICAgICAgY29sb3I6ICcjMDgwQjEyJywKICAgICAgICAgICAgICBvcGFjaXR5OiBpbnZlcnQsCiAgICAgICAgICAgIH19CiAgICAgICAgICA+CiAgICAgICAgICAgIHtFUlJfVEVYVH0KICAgICAgICAgIDwvc3Bhbj4KICAgICAgICA8Lz4KICAgICAgKSA6IG51bGx9CiAgICA8L2Rpdj4KICA8L0Fic29sdXRlRmlsbD4KKTsK
+import React from 'react';
+import { AbsoluteFill } from 'remotion';
+import { ERROR, ERROR_GLOW, FONT_MONO, TEXT } from '../theme';
+
+// 红色报错块 — brief v2.1 §四：S4（帧 840 起）要「同机位重现 S1 红 ERROR」，
+// 观众必须认出「就是开头那个」。所以 S1 与 S4 共用这一个组件，构图逐像素同源：
+// 底光 radial(ellipse 70% 60% at 50% 62%) + 84px 等宽红字 + scale 1→1.06 + 红晕 textShadow。
+// invert：S4 帧 900–930 的「反色高亮」（白底黑字 6 帧）——白块盖住红字、黑字副本浮在上面。
+export const ERR_TEXT = '✖ ERROR: task failed after 3 retries';
+
+export const ErrorBlock: React.FC<{
+  scale: number; // 1.0 → 1.06
+  glow: number; // 底光 opacity（呼吸 / hold 值由场景算）
+  invert?: number; // 0–1 反色高亮进度
+  opacity?: number; // 整层淡出用
+}> = ({ scale, glow, invert = 0, opacity = 1 }) => (
+  <AbsoluteFill
+    style={{ justifyContent: 'center', alignItems: 'center', opacity }}
+  >
+    {/* 底光呼吸（rgba(229,72,77,0.18)，与 S1 完全一致） */}
+    <div
+      style={{
+        position: 'absolute',
+        inset: 0,
+        background: `radial-gradient(ellipse 70% 60% at 50% 62%, ${ERROR_GLOW}, transparent 75%)`,
+        opacity: glow,
+      }}
+    />
+    <div
+      style={{
+        position: 'relative',
+        fontFamily: FONT_MONO,
+        fontSize: 84,
+        fontWeight: 700,
+        color: ERROR,
+        transform: `scale(${scale})`,
+        textShadow: '0 0 60px rgba(229,72,77,0.45)',
+        whiteSpace: 'nowrap',
+      }}
+    >
+      {ERR_TEXT}
+      {invert > 0.004 ? (
+        <>
+          {/* 白底块盖住红字（左右出头，像终端里被选中的文本块） */}
+          <span
+            style={{
+              position: 'absolute',
+              left: -36,
+              right: -36,
+              top: -12,
+              bottom: -12,
+              backgroundColor: TEXT,
+              borderRadius: 10,
+              opacity: invert,
+            }}
+          />
+          {/* 黑字副本压在最上层 */}
+          <span
+            style={{
+              position: 'absolute',
+              left: 0,
+              top: 0,
+              color: '#080B12',
+              opacity: invert,
+            }}
+          >
+            {ERR_TEXT}
+          </span>
+        </>
+      ) : null}
+    </div>
+  </AbsoluteFill>
+);

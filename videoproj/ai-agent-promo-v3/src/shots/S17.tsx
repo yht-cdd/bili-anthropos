@@ -1,1 +1,26 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEJHX0dSQURfQk9UVE9NLCBCR19HUkFEX1RPUCB9IGZyb20gJy4uL3RoZW1lJzsKaW1wb3J0IHsgQWdlbnRSb3csIEFpTG9ja3VwIH0gZnJvbSAnLi4vY29tcG9uZW50cy9FbmRDYXJkJzsKCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8g6ZWcMTcgwrcgMTgyMOKAkzE4MzAg5binIOKAlCDlkIjlubbmrrXlsL4gMTAg5bin77yaVO+8iOi1t+eCuTIw77yJ5Zyo5pys5ZywIDAg5YWl5Zy677yI5aOw6Lef55S7IHBvcF90QDE4MjDvvIwKLy8gwqc4LjQtMu+8ie+8jOacrOWcsCA14oCTMTDvvIjlhajlsYAxODI14oCTMTgzMO+8ieS6lOWtl+avjeWBnOeVmSArIOW+ruWmmeWRvOWQuOOAgjE4MzAg5Lqk6ZWcMTgg5LiK56e744CCCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCmV4cG9ydCBjb25zdCBTMTc6IFJlYWN0LkZDID0gKCkgPT4gewogIGNvbnN0IGYgPSB1c2VDdXJyZW50RnJhbWUoKTsKICByZXR1cm4gKAogICAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBiYWNrZ3JvdW5kQ29sb3I6IEJHX0dSQURfQk9UVE9NIH19PgogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgaW5zZXQ6IDAsCiAgICAgICAgICBiYWNrZ3JvdW5kOiBgbGluZWFyLWdyYWRpZW50KDE4MGRlZywgJHtCR19HUkFEX1RPUH0gMCUsICR7QkdfR1JBRF9CT1RUT019IDEwMCUpYCwKICAgICAgICB9fQogICAgICAvPgogICAgICA8QWlMb2NrdXAgLz4KICAgICAgPEFnZW50Um93IGY9e2YgKyAyMH0gYnJlYXRoZSAvPgogICAgPC9BYnNvbHV0ZUZpbGw+CiAgKTsKfTsK
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { BG_GRAD_BOTTOM, BG_GRAD_TOP } from '../theme';
+import { AgentRow, AiLockup } from '../components/EndCard';
+
+// ============================================================================
+// 镜17 · 1820–1830 帧 — 合并段尾 10 帧：T（起点20）在本地 0 入场（声跟画 pop_t@1820，
+// §8.4-2），本地 5–10（全局1825–1830）五字母停留 + 微妙呼吸。1830 交镜18 上移。
+// ============================================================================
+
+export const S17: React.FC = () => {
+  const f = useCurrentFrame();
+  return (
+    <AbsoluteFill style={{ backgroundColor: BG_GRAD_BOTTOM }}>
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background: `linear-gradient(180deg, ${BG_GRAD_TOP} 0%, ${BG_GRAD_BOTTOM} 100%)`,
+        }}
+      />
+      <AiLockup />
+      <AgentRow f={f + 20} breathe />
+    </AbsoluteFill>
+  );
+};

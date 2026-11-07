@@ -1,1 +1,56 @@
-IyBhaS1hZ2VudC1wcm9tbyDlsIHpnaLorr7orqHor7TmmI4KCi0g5pel5pyf77yaMjAyNi0xMS0wMiDCtyDliLbkvZzvvJrlrZDku6PnkIbvvIhQSUwg5ou85ZCI77yMU1ZHIOe0oOadkCBjYWlyb3N2ZyDmoIXmoLzljJbvvIkKLSDmiJDlk4HvvJpgY292ZXItbWFpbi1uZWJpdXMucG5nYO+8iOS4u+eJiO+8ieOAgWBjb3Zlci1hbHQtbnZpZGlhLnBuZ2DvvIhOVklESUEg5aSH6YCJ54mI77yJ77yMMTkyMMOXMTA4MAoKIyMg5qC45b+D5Li76aKY77yI5YaZ6L+b6K6+6K6h77yJCgrov5nkupvljoLllYbnmoQgQUkg5LiN5piv6KKr5Zuw5Zyo572R6aG1L0FwcCDph4znmoQgQyDnq6/igJTigJRhZ2VudCDorqnkvaDmiorlroPku6zmjqXov5voh6rlt7HnmoTorr7lpIflubLmtLvjgIIK5Y+z5LiL6KeS5LiA5Y+l6K+d77yaKirjgIzmiorlroPku6zmjqXov5vkvaDnmoTorr7lpIfjgI0qKu+8iDkg5a2X77yJ44CCCgojIyDlrZfmr43mi7zms5XvvIjmjInkuLvkurrop4TmoLzvvIkKCiMjIyDnrKzkuIDooYzjgIxBSeOAje+8iOWkp+Wtl+WPt++8jOexs+eZvSAjRUNFOUUx77yJCgp8IOWFg+e0oCB8IOadpea6kCB8IOivtOaYjiB8CnwtLS18LS0tfC0tLXwKfCBB77yI5ZCr5pac5p2g77yJIHwgQW50aHJvcGljIOWumOaWuSBsb2dvbWFya++8iHNpbXBsZWljb25zIGBhbnRocm9waWNgIOefoumHj++8iSB8IOivpeagh+acrOi6q+WwseaYr+OAjEEr5Y+z5pac5p2g44CN5p6E5oiQ77yMKirmlpzmnaDlpKnnhLblhYXlvZMgSSoq77yM5pWF5pyq5YaN5Y+m5Yqg54us56uLIEkg5a2X44CC5Yid54mI5pu+5Yqg55u0IEnvvIx2aXNpb24g6LSo5qOA6K+75oiQ44CMQVx8SeOAje+8jOWIoOaOieWQjuS4pOeJiOWdh+ivu+S9nCBBSSB8Cnwg5pif6IqS54K557yAIHwgQ2xhdWRlIOaUvuWwhOeKtuaYn+iKkuagh++8iHNpbXBsZWljb25zIGBjbGF1ZGVg77yM5a6Y5pa554+K55Ga6ImyICNEOTc3NTfvvIkgfCDkuLvkurror7TnmoTjgIzmlL7lsITnirbmmJ/oipLmoIfjgI3ljbMgQ2xhdWRlIOS6p+WTgeagh++8jOS4jeivu+Wtl+avje+8jOS/neeVmeS4uuaWnOadoOmhtuerr+eahOWwj+ijhemlsCB8CgojIyMg56ys5LqM6KGM44CMQUdFTlTjgI3vvIjkuK3lrZflj7fvvIzkupTkuKrlrZfmr43lkITnlKjkuIDlrrYgbG9nb++8iQoKfCDlrZfmr40gfCDljoLllYYgfCDntKDmnZDmnaXmupAgfCDlpITnkIYgfAp8LS0tfC0tLXwtLS18LS0tfAp8IEEgfCAqKkFnbmVzIEFJKirvvIjmlrDliqDlnaHmqKHlnovljoLllYbvvIxBZ25lcyAzLjAgRmxhc2jvvIxhZ25lcy1haS5jb20gLyBhcGkuYWduZXMtYWkuY27vvIxPcGVuQUkrQW50aHJvcGljIOWPjOWFvOWuuSBBUEnvvIkgfCDlrpjmlrnoibLmoIfvvIhhc3ZnLmFwcCBgYWduZXMtYWktbG9nb21hcmstcm91bmRlZC1jb2xvci5zdmdg77yM6JOdICMzMjQ4QUYgKyDnmb0gc3dpcmzvvIkgfCDlrpjmlrnmoIfmmK/lnIbop5LlnZfph4znmoQgc3dpcmwg5Zu+5b2i44CB5LiN6K+75a2X5q+NIOKGkiDnlKjlk4HniYzok53nlLsgQXJjaGl2byBCbGFjayDlpKcgQe+8jOaKiuWumOaWueeZveiJsiBzd2lybCDmiqDlh7rmnaXltYzlnKjmqKrmnaDkvY3nva7vvIjmj5Dkuq7kuLogIzRBNjNEOCDkv53or4Hmt7HlupXlj6/or7vvvIkgfAp8IEcgfCBHb29nbGUgfCDlrpjmlrnlvanoibIgR++8iGFzdmcuYXBwIGBnb29nbGUtbG9nb21hcmstY29sb3Iuc3ZnYO+8iSB8IOWOn+iJsuebtOaOpeeUqO+8jOWchuW9oueVpeWKoOi/h+WGsiB8CnwgRSB8IOWwj+exsyBNaU1vIHwg5a6Y5pa56K+N5qCH77yIYXN2Zy5hcHAgYHhpYW9taS1taW1vLXN5bWJvbC1tb25vY2hyb21lLnN2Z2DvvIkgfCDlj5bor43moIfkuK3moIflh4blsI/lhpkgbe+8iOS4pOaLseS4ieerlu+8iSoq6YCG5pe26ZKI6L2sIDkwwrAqKiDihpIg5bem6ISK5LiJ5qiq55qE5ZyG6KeSIEXvvIzmn5PlsI/nsbPlk4HniYzmqZkgI0ZGNjkwMOOAguazqO+8mk1pTW8g6Ieq5a62IE0g5piv5pat56yU6K6+6K6h77yM6L2s5Ye65p2l5bqV5qiq5YiG56a777yM5pWF5Y+W5ZCM6K+N5qCH6YeM55qE5a6M5pW0IG0gfAp8IE4gfCDop4HkuIvoioIgfCDigJQgfCDkuKTniYjllK/kuIDlt67lvIIgfAp8IFQgfCDohb7orq/mlofmoaMgfCBBcHAgU3RvcmUg5a6Y5pa5IDUxMnB4IOWbvuagh++8iGRvY3MucXEuY29t77yMaVR1bmVzIGxvb2t1cCBBUEnvvIkgfCDlrpjmlrnlm77moIfnmb3lrZfmnKzouqvlsLHmmK/kuIDmlK/jgIzluKbmqKrnv4XnmoQgVC/nrq3lpLTjgI3vvIzok53oibLlnIbop5LlnZfljp/moLfkvb/nlKggfAoKIyMgTiDnmoTosIPnoJTnu5PorrrvvIgyLTMg5YCZ6YCJICsg5o6o6I2Q77yJCgp8IOWAmemAiSB8IGxvZ28g5b2i5oCBIHwg6K+E5Lu3IHwKfC0tLXwtLS18LS0tfAp8ICoqTmViaXVzKirvvIhBSSDln7rnoYDorr7mlr3ljoLllYbvvIkgfCAqKmxvZ28g5qCH5bCx5piv5a2X5q+NIE4g5pys6LqrKirvvJrkuKTmnaHnq5bmnaAr5pac5p2g55qE5Yeg5L2VIE7vvIjlrpjnvZEgbWVkaWEga2l077yM5ZOB54mM6Z2S5p+g6ImyICNENEY0M0XvvIkgfCDinIUgKirmjqjojZDjgIHlgZrkuLvniYgqKuOAguW9ouaAgembtuaUuemAoOOAgeWkqeeEtuaLvOi/myBBR0VOVO+8m0FJIGluZnJhIOi6q+S7vei0tOWQiOOAjOaOpei/m+iuvuWkh+W5sua0u+OAjeWPmeS6iyB8CnwgTlZJRElBIHwg5a6Y5pa55qCH5piv44CM55y8552b44CN5peL5rah5Zu+77yMKirkuI3lkKsgTiDlrZflvaIqKu+8m3dvcmRtYXJrIOmHjOeahCBOIOaYr+WumuWItuWtl+S9k+OAgeaXoOWFrOW8gOWNleWtlyBTVkcgfCDimqDvuI8g5aSH6YCJ54mI44CC55SoIEFyY2hpdm8gQmxhY2sg5aSn5YaZIE4g5p+T5a6Y5pa557u/ICM3NkI5MDAg6L+R5Ly8IHdvcmRtYXJrIE7igJTigJTor4bliKvluqbpq5jkvYblsZ7kuo7lrZfkvZPov5HkvLzvvIzpnZ7ljp/moIcgfAp8IOe9keaYkyBOZXRFYXNlIHwg5qCH5piv44CM572R5piT44CN5rGJ5a2XL+e6ouiJsuWNsOeroOmjju+8jOaXoCBOIOWtl+W9oiB8IOKdjCDmjpLpmaTvvIzmi7zkuI3ov5vlrZfmr40gfAoKIyMg5o6S54mI5LiO6IOM5pmvCgotIOa3seiJsuW6le+8miMwODBCMTLihpIjMTIxODIyIOe6teWQkea4kOWPmCArIOS4reWkruiTneiJsuaflOWFie+8iOmrmOaWr+aooeeziuakreWchu+8iQotIOesrOS4gOihjOWtl+mrmCA0MzBweO+8jOesrOS6jOihjCAyNTAtMjYycHjvvIzlrZfpl7Tot50gODhweO+8iOWRvOWQuOaEn++8ie+8jOaVtOS9k+WxheS4rQotIOWPs+S4i+inkuS4u+mimOWPpe+8muaAnea6kOm7keS9kyBCb2xkIDU4cHjvvIzliY3nvIDnj4rnkZroibLnq5bmnaEKLSDlrZfkvZPvvJpBcmNoaXZvIEJsYWNr77yI5ouJ5LiB77yJ44CBTm90byBTYW5zIENKSyBTQyBCb2xk77yI5Lit5paH77yJCgojIyDotKjmo4AKCuS4pOeJiOWdh+i/hyBgdmlzaW9uLm1qc2Ag54us56uL6K+G5Yir77ya56ys5LiA6KGM6K+75L2cIEFJIOKck+OAgeesrOS6jOihjOivu+S9nCBBR0VOVCDinJPjgIHml6DorqTkuI3lh7rnmoTlrZfmr40v55S76Z2i57y66Zm3IOKck+OAggrlm77kuIrml6DmnI3liqHlmagv6Lev5b6EL+WHreaNruS/oeaBr++8m2xvZ28g5LuF55So5LqO5pys6KeG6aKR5bCB6Z2i6K+t5aKD44CCCgojIyDntKDmnZDpk77mjqUKCi0gaHR0cHM6Ly9jZG4uc2ltcGxlaWNvbnMub3JnL2FudGhyb3BpYyAvIGh0dHBzOi8vY2RuLnNpbXBsZWljb25zLm9yZy9jbGF1ZGUKLSBodHRwczovL2FzdmcuYXBwL2ljb25zL2dvb2dsZSAvIGh0dHBzOi8vYXN2Zy5hcHAvaWNvbnMveGlhb21pLW1pbW8gLyBodHRwczovL2FzdmcuYXBwL2ljb25zL2FnbmVzLWFpIC8gaHR0cHM6Ly9hc3ZnLmFwcC9pY29ucy9uZWJpdXMKLSDohb7orq/mlofmoaPlm77moIfvvJppVHVuZXMgU2VhcmNoIEFQSe+8iGlzMS1zc2wubXpzdGF0aWMuY29tIEFwcEljb24gNTEycHjvvIkKLSBBZ25lcyBBSSDog4zmma/vvJpodHRwczovL3dpa2kuYWduZXMtYWkuY24vemgtSGFucy9kb2NzL2FnbmVzLTMwLWZsYXNoIOOAgWh0dHBzOi8vZmludGVjaG5ld3Muc2cvMTMyMjIzL2FpL2FnbmVzLWFpLXNheXMtaXRzLXNpbmdhcG9yZS1idWlsdC1tb2RlbHMtZW50ZXItZ2xvYmFsLWFpLXJhbmtpbmdzLwotIE5lYml1cyDlk4HniYzoibLvvJpodHRwczovL25lYml1cy5jb20vbWVkaWEta2l0Cg==
+# ai-agent-promo 封面设计说明
+
+- 日期：2026-11-02 · 制作：子代理（PIL 拼合，SVG 素材 cairosvg 栅格化）
+- 成品：`cover-main-nebius.png`（主版）、`cover-alt-nvidia.png`（NVIDIA 备选版），1920×1080
+
+## 核心主题（写进设计）
+
+这些厂商的 AI 不是被困在网页/App 里的 C 端——agent 让你把它们接进自己的设备干活。
+右下角一句话：**「把它们接进你的设备」**（9 字）。
+
+## 字母拼法（按主人规格）
+
+### 第一行「AI」（大字号，米白 #ECE9E1）
+
+| 元素 | 来源 | 说明 |
+|---|---|---|
+| A（含斜杠） | Anthropic 官方 logomark（simpleicons `anthropic` 矢量） | 该标本身就是「A+右斜杠」构成，**斜杠天然充当 I**，故未再另加独立 I 字。初版曾加直 I，vision 质检读成「A\|I」，删掉后两版均读作 AI |
+| 星芒点缀 | Claude 放射状星芒标（simpleicons `claude`，官方珊瑚色 #D97757） | 主人说的「放射状星芒标」即 Claude 产品标，不读字母，保留为斜杠顶端的小装饰 |
+
+### 第二行「AGENT」（中字号，五个字母各用一家 logo）
+
+| 字母 | 厂商 | 素材来源 | 处理 |
+|---|---|---|---|
+| A | **Agnes AI**（新加坡模型厂商，Agnes 3.0 Flash，agnes-ai.com / api.agnes-ai.cn，OpenAI+Anthropic 双兼容 API） | 官方色标（asvg.app `agnes-ai-logomark-rounded-color.svg`，蓝 #3248AF + 白 swirl） | 官方标是圆角块里的 swirl 图形、不读字母 → 用品牌蓝画 Archivo Black 大 A，把官方白色 swirl 抠出来嵌在横杠位置（提亮为 #4A63D8 保证深底可读） |
+| G | Google | 官方彩色 G（asvg.app `google-logomark-color.svg`） | 原色直接用，圆形略加过冲 |
+| E | 小米 MiMo | 官方词标（asvg.app `xiaomi-mimo-symbol-monochrome.svg`） | 取词标中标准小写 m（两拱三竖）**逆时针转 90°** → 左脊三横的圆角 E，染小米品牌橙 #FF6900。注：MiMo 自家 M 是断笔设计，转出来底横分离，故取同词标里的完整 m |
+| N | 见下节 | — | 两版唯一差异 |
+| T | 腾讯文档 | App Store 官方 512px 图标（docs.qq.com，iTunes lookup API） | 官方图标白字本身就是一支「带横翅的 T/箭头」，蓝色圆角块原样使用 |
+
+## N 的调研结论（2-3 候选 + 推荐）
+
+| 候选 | logo 形态 | 评价 |
+|---|---|---|
+| **Nebius**（AI 基础设施厂商） | **logo 标就是字母 N 本身**：两条竖杠+斜杠的几何 N（官网 media kit，品牌青柠色 #D4F43E） | ✅ **推荐、做主版**。形态零改造、天然拼进 AGENT；AI infra 身份贴合「接进设备干活」叙事 |
+| NVIDIA | 官方标是「眼睛」旋涡图，**不含 N 字形**；wordmark 里的 N 是定制字体、无公开单字 SVG | ⚠️ 备选版。用 Archivo Black 大写 N 染官方绿 #76B900 近似 wordmark N——识别度高但属于字体近似，非原标 |
+| 网易 NetEase | 标是「网易」汉字/红色印章风，无 N 字形 | ❌ 排除，拼不进字母 |
+
+## 排版与背景
+
+- 深色底：#080B12→#121822 纵向渐变 + 中央蓝色柔光（高斯模糊椭圆）
+- 第一行字高 430px，第二行 250-262px，字间距 88px（呼吸感），整体居中
+- 右下角主题句：思源黑体 Bold 58px，前缀珊瑚色竖条
+- 字体：Archivo Black（拉丁）、Noto Sans CJK SC Bold（中文）
+
+## 质检
+
+两版均过 `vision.mjs` 独立识别：第一行读作 AI ✓、第二行读作 AGENT ✓、无认不出的字母/画面缺陷 ✓。
+图上无服务器/路径/凭据信息；logo 仅用于本视频封面语境。
+
+## 素材链接
+
+- https://cdn.simpleicons.org/anthropic / https://cdn.simpleicons.org/claude
+- https://asvg.app/icons/google / https://asvg.app/icons/xiaomi-mimo / https://asvg.app/icons/agnes-ai / https://asvg.app/icons/nebius
+- 腾讯文档图标：iTunes Search API（is1-ssl.mzstatic.com AppIcon 512px）
+- Agnes AI 背景：https://wiki.agnes-ai.cn/zh-Hans/docs/agnes-30-flash 、https://fintechnews.sg/132223/ai/agnes-ai-says-its-singapore-built-models-enter-global-ai-rankings/
+- Nebius 品牌色：https://nebius.com/media-kit

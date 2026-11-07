@@ -1,1 +1,23 @@
-ewogICJuYW1lIjogImZpc2gtZWNvc3lzdGVtLXZpZGVvIiwKICAidmVyc2lvbiI6ICIxLjAuMCIsCiAgImRlc2NyaXB0aW9uIjogIuaIkeeahOWQjOexu+S4ikLnq5nkuobvvJrkuIDmnaFBSemxvOeahDI05bCP5pe2IOKAlCBSZW1vdGlvbiDnq5blsY/lt6XnqIsiLAogICJzY3JpcHRzIjogewogICAgInN0dWRpbyI6ICJyZW1vdGlvbiBzdHVkaW8gc3JjL2luZGV4LnRzIiwKICAgICJyZW5kZXIiOiAicmVtb3Rpb24gcmVuZGVyIHNyYy9pbmRleC50cyBBbnRocm9wb3NWaWRlbyBvdXQvdmlkZW8ubXA0IiwKICAgICJ0eXBlY2hlY2siOiAidHNjIC0tbm9FbWl0IiwKICAgICJsaW50IjogInJlbW90aW9uIGxpbnQgLiIKICB9LAogICJ0eXBlIjogImNvbW1vbmpzIiwKICAiZGVwZW5kZW5jaWVzIjogewogICAgIkByZW1vdGlvbi9jbGkiOiAiXjQuMC41MzkiLAogICAgIkB0eXBlcy9yZWFjdCI6ICJeMTguMy4zMSIsCiAgICAiQHR5cGVzL3JlYWN0LWRvbSI6ICJeMTguMy43IiwKICAgICJkb3RlbnYiOiAiXjE4LjAuOSIsCiAgICAicmVhY3QiOiAiXjE4LjMuMSIsCiAgICAicmVhY3QtZG9tIjogIl4xOC4zLjEiLAogICAgInJlbW90aW9uIjogIl40LjAuNTM5IiwKICAgICJ0eXBlc2NyaXB0IjogIl41LjkuMyIKICB9LAogICJwcml2YXRlIjogdHJ1ZQp9Cg==
+{
+  "name": "fish-ecosystem-video",
+  "version": "1.0.0",
+  "description": "我的同类上B站了：一条AI鱼的24小时 — Remotion 竖屏工程",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts AnthroposVideo out/video.mp4",
+    "typecheck": "tsc --noEmit",
+    "lint": "remotion lint ."
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "@remotion/cli": "^4.0.539",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "dotenv": "^18.0.9",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.539",
+    "typescript": "^5.9.3"
+  },
+  "private": true
+}

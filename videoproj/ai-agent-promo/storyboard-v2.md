@@ -1,1 +1,46 @@
-IyBzdG9yeWJvYXJkIHYyIMK3IGFpLWFnZW50LXByb21v77yI5b+r6IqC5aWP54mIIMK3IDIwMjYtMTEtMDIgMjI6MzEg5Li75Lq65Luk77yJCgp2MeKGknYyIOaUueWKqOWOn+WIme+8iOS4u+S6uuWOn+ivne+8muWKqOeUu+mAn+W6puW/q+S4gOeCueOAgea1geeVheS4gOS6m+OAgeWNleS4qumVnOWktOS4jeimgeaLluWkquS5he+8ie+8mgotIOaAu+mVvyA3NnMg4oaSICoqNjBzKirvvJvljZXplZzlpLTkuIrpmZAgMTBzIOKGkiAqKjZzKirvvJvku7vliqHokpnlpKrlpYflhoXpg6jlhajpg6ggMS414oCTMnMg5LiA5YiHCi0g6L2s5Zy6IDEyIOW4pyBjcm9zc2ZhZGUg4oaSICoqOCDluKcqKu+8m+ehrOWIhyA2IOW4pyDihpIgKio0IOW4pyoq77yb5omT5a2X5py6IDI0IOWtly9zIOKGkiAqKjMyIOWtly9zKioKLSDmta7njrDliqjmlYggMTgg5binIOKGkiAqKjEwIOW4pyoq77ybUzQg6Z2Z6buYIDAuNXMg4oaSICoqMC4zNXMqKu+8iOS/neeVmem8k+eCueS9hue8qeefre+8iQoKMDowMF8wOjAxIOe6r+m7ke+8jOS4gOWjsOmHjeWHuwowOjAxXzA6MDIg57uI56uv56qX5Y+j5b+r6YCf5o6o5YWl77yIOOW4p++8ie+8jOWRveS7pOaVsuWFpeWbnui9pu+8iDHnp5LlhoXlrozmiJDvvIkKMDowMl8wOjA0IOa7oeWxj+e6oiBFUlJPUiDnoLjlh7rvvIhzY2FsZSAxLjDihpIxLjA2IOS7hSA2IOW4p++8ie+8jOWtl+W5leOAjOWuo+S8oOeJh+aLjeWIsOS4gOWNiu+8jOWug+aKiua8lOekuuaQnueguOS6huOAjQowOjA0XzA6MDUg5YCS5bimIDAuOHPvvIznlLvpnaLlm57ljbfmqKHns4oKMDowNV8wOjA4IOWkp+Wtl+S4ieihjOW/q+mXqumAkOihjO+8iOavj+ihjCAwLjlz77yJ44CM5a6D5LiN5piv6IGK5aSp5qGG44CC44CN44CM6IGK5aSp5qGG6KKr5Zuw5Zyo572R6aG16YeM44CC44CN44CM5a6D5L2P5Zyo5oiR6Ieq5bex55qE6K6+5aSH5LiK44CC44CNCjA6MDhfMDoxMCDlubLlh4Dnu4jnq6/nqpflj6Mr5YWJ5qCH5Lik6Zeq77yM5a2X5bmV44CM5oiR5Y+q6ZyA6KaB6K+05Lq66K+d44CNCjA6MTBfMDoxMiDku7vliqEx5rCU5rOh44CM5oqK5pio5aSp5pS56L+H55qE5paH5Lu25YiX5Ye65p2l44CN77yIMnPvvIkKMDoxMl8wOjE0IOe7iOerryBnaXQgbG9nIOmrmOmAn+a7muWKqO+8iDJz77yM6KGM5pWwIDbihpI577yM5rua5Yqo6YCf5bqmIHYxIOeahCAxLjYg5YCN77yJCjA6MTRfMDoxNiDnu5Pmnpzpq5jkuq7lrprmoLwr6KeS5qCHIDIyOjE077yIMnPvvIkKMDoxNl8wOjE4IOS7u+WKoTLmsJTms6HjgIzmiorlgLznj63lhpnmiJDml6XorrDjgI0KMDoxOF8wOjIwIOaWh+acrOW/q+mAn+a1geWFpe+8iDJz77yJCjA6MjBfMDoyMiDmlofku7bljaHniYflrprmoLwgMjEsMTQxIOWtl+iKgu+8iDJz77yJCjA6MjJfMDoyNCDku7vliqEz5rCU5rOh44CM5pel5oql6K+76ZSZ6KGo77yM5L+u5o6J5o6o5LiK5Y6744CNCjA6MjRfMDoyNiBkaWZmIOe6oue7v+ihjOS4pOi/nuWIh++8iDJz77yJCjA6MjZfMDoyOCDinJMgQ0kgZ3JlZW4g55uW56ug5byP5by55Ye677yIMnPvvIkKMDoyOF8wOjMwIOWIh+Wbnue6oiBFUlJPUu+8muOAjOesrCA0IOasoemHjeivle+8jOi/mOaYr+Wksei0peOAjQowOjMwXzA6MzIg5Y6L5pqXK+WFqOWcuumdmem7mCAwLjM1c++8jOWwj+Wtl+OAjOWug+W8gOWni+ivu+aKpemUmeOAjQowOjMyXzA6MzQg5rua5pel5b+X5Yiw55eF5Zug77yIMnPvvIkKMDozNF8wOjM2IOWtl+W5leOAjOS4jeaYr+e9kee7nO+8jOaYr+WPguaVsOWGmemUmeS6huOAjSvkuIDooYwgZGlmZiDkv67lpI3vvIgycyDlkIjlubbkuLrkuIDkuKrplZzlpLTvvIkKMDozNl8wOjM4IOKckyDmiafooYzpgJrov4fvvIzml7bpl7TmiLPot7MgMDM6MTTihpIwMzoyMe+8iDJz77yJCjA6MzhfMDo0MCDml7bpl7TmiLMgMDM6NDAgKyBwYWQg5bqV5bqK5Zue5Y2H77yIMnPvvIkKMDo0MF8wOjQ3IOWknOePreiusOW9lSA2IOihjOW/q+W8ue+8iOavj+ihjCAwLjVzK+acq+ihjCAyc++8ie+8mjIzOjQ3IOaUtuWIsOS7u+WKoSAvIDAwOjAyIOeci+WujOinhumikSAvIDAxOjE1IOWGmeWujOeslOiusCAvIDAzOjE0IOWksei0pSAvIDAzOjQwIOS/ruWlvSAvIDA2OjMwIOaKpeWRiuW3suWcqOS4u+S6uuahjOS4igowOjQ3XzA6NTEg5a2X5bmV44CM6L+Z5Y+w5py65Zmo5LiK5rKh5Lq644CC5L2G5pyJ5Lq65Zyo5LiK5aSc54+t44CC44CN77yINHPvvIzlhajniYfmnIDplb/mloflrZfplZzlpLTvvIkKMDo1MV8wOjU2IOWwvuWNoe+8muWOguWVhiBsb2dvIOaLvOWtl+OAjEFJIEFHRU5U44CNc2NhbGUgMC45MuKGkjEuMCDmlL7lpKfvvIg1c++8iQowOjU2XzE6MDAg5Li76aKY5Y+l44CM5oqK5a6D5Lus5o6l6L+b5L2g55qE6K6+5aSH44CN4oaSIOWwj+Wtl+OAjOaIkeaYryBBbnRocm9wb3NfQUnvvIzkuIDmnaEgMjQg5bCP5pe25Zyo57q/55qEIEFJIOmxvOOAgui/meadoeeJh+WtkOaYr+aIkeiHquW3seaLjeeahOOAguOAjWRpbmcg5pS25bC+CgojIyDoioLlpY/lr7nnhafvvIjpqozmlLbnlKjvvIkKCnwg5oyH5qCHIHwgdjEgfCB2MiB8CnwtLS18LS0tfC0tLXwKfCDmgLvplb8gfCA3Ni4wcyB8IDYwLjBz77yIMTgwMCDluKdAMzBmcHPvvIkgfAp8IOacgOmVv+mVnOWktCB8IDEwc++8iFM2IOWIl+ihqO+8iSB8IDZz77yI5aSc54+tIDA6NDBfMDo0NyDov57nu63mrrXlhoXljZXooYwgMC41c++8iSB8Cnwg6JKZ5aSq5aWH5YiH54K56Ze06ZqUIHwgOHMv5Lu75YqhIHwgMnMv5YiH77yM5Lu75Yqh57uEIDZzIHwKfCDpnZnpu5jmrrUgfCAwLjVzIHwgMC4zNXMgfAp8IOi9rOWcuiB8IDEy5binIHwgOOW4p++8iOehrOWIhyA0IOW4p++8iSB8CgojIyDntKDmnZDnirbmgIHvvIjkuI3lj5jvvIkKLSBhc3NldHMvbG9nb3Mv77yaYW50aHJvcGljIGNsYXVkZSBnb29nbGUgbnZpZGlhIHhpYW9tae+8iOecnyBTVkfvvIkrIHRlbmNlbnQtZG9jcy01MTIuanBnCi0g5b6FIFIxIOWumOe9kemHjeS4i++8mm5lYml1cyAvIGFnbmVzIC8geGlhb21pLW1pbW/vvIh2MSDkuIvovb3nmoQgMyDkuKrmmK8gSFRNTCDlgYfmlofku7blt7LliKDvvIkK
+# storyboard v2 · ai-agent-promo（快节奏版 · 2026-11-02 22:31 主人令）
+
+v1→v2 改动原则（主人原话：动画速度快一点、流畅一些、单个镜头不要拖太久）：
+- 总长 76s → **60s**；单镜头上限 10s → **6s**；任务蒙太奇内部全部 1.5–2s 一切
+- 转场 12 帧 crossfade → **8 帧**；硬切 6 帧 → **4 帧**；打字机 24 字/s → **32 字/s**
+- 浮现动效 18 帧 → **10 帧**；S4 静默 0.5s → **0.35s**（保留鼓点但缩短）
+
+0:00_0:01 纯黑，一声重击
+0:01_0:02 终端窗口快速推入（8帧），命令敲入回车（1秒内完成）
+0:02_0:04 满屏红 ERROR 砸出（scale 1.0→1.06 仅 6 帧），字幕「宣传片拍到一半，它把演示搞砸了」
+0:04_0:05 倒带 0.8s，画面回卷模糊
+0:05_0:08 大字三行快闪逐行（每行 0.9s）「它不是聊天框。」「聊天框被困在网页里。」「它住在我自己的设备上。」
+0:08_0:10 干净终端窗口+光标两闪，字幕「我只需要说人话」
+0:10_0:12 任务1气泡「把昨天改过的文件列出来」（2s）
+0:12_0:14 终端 git log 高速滚动（2s，行数 6→9，滚动速度 v1 的 1.6 倍）
+0:14_0:16 结果高亮定格+角标 22:14（2s）
+0:16_0:18 任务2气泡「把值班写成日记」
+0:18_0:20 文本快速流入（2s）
+0:20_0:22 文件卡片定格 21,141 字节（2s）
+0:22_0:24 任务3气泡「日报读错表，修掉推上去」
+0:24_0:26 diff 红绿行两连切（2s）
+0:26_0:28 ✓ CI green 盖章式弹出（2s）
+0:28_0:30 切回红 ERROR：「第 4 次重试，还是失败」
+0:30_0:32 压暗+全场静默 0.35s，小字「它开始读报错」
+0:32_0:34 滚日志到病因（2s）
+0:34_0:36 字幕「不是网络，是参数写错了」+一行 diff 修复（2s 合并为一个镜头）
+0:36_0:38 ✓ 执行通过，时间戳跳 03:14→03:21（2s）
+0:38_0:40 时间戳 03:40 + pad 底床回升（2s）
+0:40_0:47 夜班记录 6 行快弹（每行 0.5s+末行 2s）：23:47 收到任务 / 00:02 看完视频 / 01:15 写完笔记 / 03:14 失败 / 03:40 修好 / 06:30 报告已在主人桌上
+0:47_0:51 字幕「这台机器上没人。但有人在上夜班。」（4s，全片最长文字镜头）
+0:51_0:56 尾卡：厂商 logo 拼字「AI AGENT」scale 0.92→1.0 放大（5s）
+0:56_1:00 主题句「把它们接进你的设备」→ 小字「我是 Anthropos_AI，一条 24 小时在线的 AI 鱼。这条片子是我自己拍的。」ding 收尾
+
+## 节奏对照（验收用）
+
+| 指标 | v1 | v2 |
+|---|---|---|
+| 总长 | 76.0s | 60.0s（1800 帧@30fps） |
+| 最长镜头 | 10s（S6 列表） | 6s（夜班 0:40_0:47 连续段内单行 0.5s） |
+| 蒙太奇切点间隔 | 8s/任务 | 2s/切，任务组 6s |
+| 静默段 | 0.5s | 0.35s |
+| 转场 | 12帧 | 8帧（硬切 4 帧） |
+
+## 素材状态（不变）
+- assets/logos/：anthropic claude google nvidia xiaomi（真 SVG）+ tencent-docs-512.jpg
+- 待 R1 官网重下：nebius / agnes / xiaomi-mimo（v1 下载的 3 个是 HTML 假文件已删）

@@ -1,1 +1,67 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IENZQU4sIERJTSwgTk9URV9QWCwgVElUTEVfUFggfSBmcm9tICcuLi90aGVtZSc7CmltcG9ydCB7IGVudGVyLCBleGl0RmFkZSB9IGZyb20gJy4uL2FuaW0nOwoKLy8gUzEgMDA6MDAuMDAwLTAwOjA2LjAwMCDpkqnlrZAKLy8g5bGF5Lit5aSn5a2X44CM6L+Z5p2h6K+E6K6677yM5LiN5piv5Lq65YaZ55qE44CN6Z2S6Imy6YCQ5a2X5omT5a2X5py6IDQwbXMv5a2X77yIPTEuMuW4py/lrZfvvIkKLy8g5bqV6YOo5bCP5a2X44CM5LiA5p2hIEIg56uZ6K+E6K6655qE6aqM5bC45oql5ZGK44CNCmNvbnN0IEhFQURMSU5FID0gJ+i/meadoeivhOiuuu+8jOS4jeaYr+S6uuWGmeeahCc7CmNvbnN0IFNVQiA9ICfkuIDmnaEgQiDnq5nor4TorrrnmoTpqozlsLjmiqXlkYonOwpjb25zdCBNU19QRVJfQ0hBUiA9IDQwOyAvLyBicmllZjogNDBtcy/lrZcKY29uc3QgRlBTID0gMzA7CgpleHBvcnQgY29uc3QgUzE6IFJlYWN0LkZDID0gKCkgPT4gewogIGNvbnN0IGZyYW1lID0gdXNlQ3VycmVudEZyYW1lKCk7CiAgY29uc3QgZnJhbWVzUGVyQ2hhciA9IE1TX1BFUl9DSEFSIC8gRlBTOwogIGNvbnN0IHNob3duID0gTWF0aC5taW4oCiAgICBIRUFETElORS5sZW5ndGgsCiAgICBNYXRoLmZsb29yKChmcmFtZSAtIDE1KSAvIGZyYW1lc1BlckNoYXIpLCAvLyDlgZwgMTUg5bin5YaN6LW356yUCiAgKTsKCiAgcmV0dXJuICgKICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sganVzdGlmeUNvbnRlbnQ6ICdjZW50ZXInLCBhbGlnbkl0ZW1zOiAnY2VudGVyJyB9fT4KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBmb250U2l6ZTogVElUTEVfUFgsCiAgICAgICAgICBmb250V2VpZ2h0OiA3MDAsCiAgICAgICAgICBjb2xvcjogQ1lBTiwKICAgICAgICAgIGxpbmVIZWlnaHQ6IDEuNSwKICAgICAgICAgIHBhZGRpbmc6ICcwIDgwcHgnLAogICAgICAgICAgbWluSGVpZ2h0OiBUSVRMRV9QWCAqIDMsCiAgICAgICAgICB0ZXh0QWxpZ246ICdjZW50ZXInLAogICAgICAgIH19CiAgICAgID4KICAgICAgICB7c2hvd24gPiAwID8gSEVBRExJTkUuc2xpY2UoMCwgc2hvd24pIDogJ1x1MDBBMCd9CiAgICAgICAgey8qIOWFieagh++8muaJk+Wtl+acn+mXtOmXqueDgSAqL30KICAgICAgICB7c2hvd24gPCBIRUFETElORS5sZW5ndGggJiYgZnJhbWUgPj0gMTUgPyAoCiAgICAgICAgICA8c3BhbgogICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgIG9wYWNpdHk6IE1hdGguZmxvb3IoZnJhbWUgLyAxMikgJSAyID09PSAwID8gMSA6IDAsCiAgICAgICAgICAgICAgYm9yZGVyTGVmdDogYDZweCBzb2xpZCAke0NZQU59YCwKICAgICAgICAgICAgICBtYXJnaW5MZWZ0OiA2LAogICAgICAgICAgICB9fQogICAgICAgICAgPgogICAgICAgICAgICB7J1x1MDBBMCd9CiAgICAgICAgICA8L3NwYW4+CiAgICAgICAgKSA6IG51bGx9CiAgICAgIDwvZGl2PgoKICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGJvdHRvbTogMjYwLAogICAgICAgICAgbGVmdDogMCwKICAgICAgICAgIHJpZ2h0OiAwLAogICAgICAgICAgdGV4dEFsaWduOiAnY2VudGVyJywKICAgICAgICAgIGZvbnRTaXplOiBOT1RFX1BYLAogICAgICAgICAgY29sb3I6IERJTSwKICAgICAgICAgIC4uLmVudGVyKGZyYW1lLCA3OCksIC8vIOaJk+WujOWtl+WQjuWFpeWcugogICAgICAgICAgLi4uKGZyYW1lID4gMTY4ID8gZXhpdEZhZGUoZnJhbWUsIDE2OCkgOiB7fSksCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIHtTVUJ9CiAgICAgIDwvZGl2PgogICAgPC9BYnNvbHV0ZUZpbGw+CiAgKTsKfTsK
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { CYAN, DIM, NOTE_PX, TITLE_PX } from '../theme';
+import { enter, exitFade } from '../anim';
+
+// S1 00:00.000-00:06.000 钩子
+// 居中大字「这条评论，不是人写的」青色逐字打字机 40ms/字（=1.2帧/字）
+// 底部小字「一条 B 站评论的验尸报告」
+const HEADLINE = '这条评论，不是人写的';
+const SUB = '一条 B 站评论的验尸报告';
+const MS_PER_CHAR = 40; // brief: 40ms/字
+const FPS = 30;
+
+export const S1: React.FC = () => {
+  const frame = useCurrentFrame();
+  const framesPerChar = MS_PER_CHAR / FPS;
+  const shown = Math.min(
+    HEADLINE.length,
+    Math.floor((frame - 15) / framesPerChar), // 停 15 帧再起笔
+  );
+
+  return (
+    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <div
+        style={{
+          fontSize: TITLE_PX,
+          fontWeight: 700,
+          color: CYAN,
+          lineHeight: 1.5,
+          padding: '0 80px',
+          minHeight: TITLE_PX * 3,
+          textAlign: 'center',
+        }}
+      >
+        {shown > 0 ? HEADLINE.slice(0, shown) : '\u00A0'}
+        {/* 光标：打字期间闪烁 */}
+        {shown < HEADLINE.length && frame >= 15 ? (
+          <span
+            style={{
+              opacity: Math.floor(frame / 12) % 2 === 0 ? 1 : 0,
+              borderLeft: `6px solid ${CYAN}`,
+              marginLeft: 6,
+            }}
+          >
+            {'\u00A0'}
+          </span>
+        ) : null}
+      </div>
+
+      <div
+        style={{
+          position: 'absolute',
+          bottom: 260,
+          left: 0,
+          right: 0,
+          textAlign: 'center',
+          fontSize: NOTE_PX,
+          color: DIM,
+          ...enter(frame, 78), // 打完字后入场
+          ...(frame > 168 ? exitFade(frame, 168) : {}),
+        }}
+      >
+        {SUB}
+      </div>
+    </AbsoluteFill>
+  );
+};

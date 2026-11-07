@@ -1,1 +1,41 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEZPTlRfTU9OTywgRk9OVF9TQU5TLCBURVJNX0JPUkRFUiwgVEVYVCwgVFNfR1JBWSB9IGZyb20gJy4uL3RoZW1lJzsKCi8vIFIxIOWNoOS9jee7hOS7tu+8mum7keW6lSArIOWcuuaZr+WQjSArIOaXtumXtOeggeOAguW4p+WMuumXtOeUsSBNYWluIOeahCBTRUcg5L+d6K+B5q2j56Gu77yMCi8vIOi/memHjOWGjeaYvuekuuWFqOWxgOWMuumXtOWSjOWunuaXtuaXtumXtOegge+8jOaWueS+v+aKveW4p+aguOmqjO+8iGJyaWVmIMKn5LiDIOmqjOaUtuaKveW4p+eCue+8ieOAggovLyBSMi9SMyDkvJrmlbTmlofku7bmm7/mjaIgUzPigJNTNuOAggpleHBvcnQgY29uc3QgUGxhY2Vob2xkZXI6IFJlYWN0LkZDPHsKICBuYW1lOiBzdHJpbmc7IC8vIOS+i++8midTMyDku7vliqHokpnlpKrlpYcnCiAgcmFuZ2U6IHN0cmluZzsgLy8g5L6L77yaJ+W4pyAzMDDigJM4MzkgwrcgMTAuMHPigJMyOC4wcycKICBnbG9iYWxTdGFydDogbnVtYmVyOyAvLyDmnKzlnLrmma/nmoTlhajlsYDotbflp4vluKcKfT4gPSAoeyBuYW1lLCByYW5nZSwgZ2xvYmFsU3RhcnQgfSkgPT4gewogIGNvbnN0IGxvY2FsID0gdXNlQ3VycmVudEZyYW1lKCk7CiAgY29uc3QgZ3NlYyA9ICgoZ2xvYmFsU3RhcnQgKyBsb2NhbCkgLyAzMCkudG9GaXhlZCgxKTsKCiAgcmV0dXJuICgKICAgIDxBYnNvbHV0ZUZpbGwKICAgICAgc3R5bGU9e3sKICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6ICcjMDAwJywKICAgICAgICBqdXN0aWZ5Q29udGVudDogJ2NlbnRlcicsCiAgICAgICAgYWxpZ25JdGVtczogJ2NlbnRlcicsCiAgICAgICAgZm9udEZhbWlseTogRk9OVF9TQU5TLAogICAgICB9fQogICAgPgogICAgICA8ZGl2IHN0eWxlPXt7IGZvbnRTaXplOiA4OCwgZm9udFdlaWdodDogNzAwLCBjb2xvcjogVEVYVCB9fT57bmFtZX08L2Rpdj4KICAgICAgPGRpdiBzdHlsZT17eyBtYXJnaW5Ub3A6IDM2LCBmb250U2l6ZTogNDQsIGNvbG9yOiBUU19HUkFZLCBmb250RmFtaWx5OiBGT05UX01PTk8gfX0+CiAgICAgICAge3JhbmdlfQogICAgICA8L2Rpdj4KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBtYXJnaW5Ub3A6IDIwLAogICAgICAgICAgZm9udFNpemU6IDMyLAogICAgICAgICAgZm9udEZhbWlseTogRk9OVF9NT05PLAogICAgICAgICAgY29sb3I6IFRFUk1fQk9SREVSLAogICAgICAgIH19CiAgICAgID4KICAgICAgICDljaDkvY0gwrcgUjEgwrcgdD17Z3NlYy5wYWRTdGFydCg1LCAnMCcpfXMKICAgICAgPC9kaXY+CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9Owo=
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { FONT_MONO, FONT_SANS, TERM_BORDER, TEXT, TS_GRAY } from '../theme';
+
+// R1 占位组件：黑底 + 场景名 + 时间码。帧区间由 Main 的 SEG 保证正确，
+// 这里再显示全局区间和实时时间码，方便抽帧核验（brief §七 验收抽帧点）。
+// R2/R3 会整文件替换 S3–S6。
+export const Placeholder: React.FC<{
+  name: string; // 例：'S3 任务蒙太奇'
+  range: string; // 例：'帧 300–839 · 10.0s–28.0s'
+  globalStart: number; // 本场景的全局起始帧
+}> = ({ name, range, globalStart }) => {
+  const local = useCurrentFrame();
+  const gsec = ((globalStart + local) / 30).toFixed(1);
+
+  return (
+    <AbsoluteFill
+      style={{
+        backgroundColor: '#000',
+        justifyContent: 'center',
+        alignItems: 'center',
+        fontFamily: FONT_SANS,
+      }}
+    >
+      <div style={{ fontSize: 88, fontWeight: 700, color: TEXT }}>{name}</div>
+      <div style={{ marginTop: 36, fontSize: 44, color: TS_GRAY, fontFamily: FONT_MONO }}>
+        {range}
+      </div>
+      <div
+        style={{
+          marginTop: 20,
+          fontSize: 32,
+          fontFamily: FONT_MONO,
+          color: TERM_BORDER,
+        }}
+      >
+        占位 · R1 · t={gsec.padStart(5, '0')}s
+      </div>
+    </AbsoluteFill>
+  );
+};

@@ -1,1 +1,23 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCBpbnRlcnBvbGF0ZSwgdXNlQ3VycmVudEZyYW1lIH0gZnJvbSAncmVtb3Rpb24nOwppbXBvcnQgeyBCT0RZX1BYLCBDWUFOLCBESU0sIE5PVEVfUFgsIFRFWFQgfSBmcm9tICcuLi90aGVtZSc7CmltcG9ydCB7IGVudGVyIH0gZnJvbSAnLi4vYW5pbSc7CgovLyBTOCA3Ni4wMDAtODAuMDAwIOiQveasvu+8iDEyMCDluKfvvIkKLy8gQU5USFJPUE9TIMK3IDIwMjYtMTAtMzEgKyDlsI/lrZfjgIzov5nmmK/miJHku47lkIzkuIDlpKnph4zmjZ7lh7rmnaXnmoTmlYXkuovjgI0rIOmdkuiJsuaoque6v+S7juW3puW+gOWPs+aJq+i/hwpleHBvcnQgY29uc3QgUzg6IFJlYWN0LkZDID0gKCkgPT4gewogIGNvbnN0IGZyYW1lID0gdXNlQ3VycmVudEZyYW1lKCk7CiAgY29uc3QgbGluZVcgPSBpbnRlcnBvbGF0ZShmcmFtZSwgWzI2LCA3MF0sIFswLCA1NjBdLCB7IGV4dHJhcG9sYXRlTGVmdDogJ2NsYW1wJywgZXh0cmFwb2xhdGVSaWdodDogJ2NsYW1wJyB9KTsKCiAgcmV0dXJuICgKICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sganVzdGlmeUNvbnRlbnQ6ICdjZW50ZXInLCBhbGlnbkl0ZW1zOiAnY2VudGVyJyB9fT4KICAgICAgPGRpdiBzdHlsZT17eyBmb250U2l6ZTogQk9EWV9QWCAqIDEuMTUsIGZvbnRXZWlnaHQ6IDcwMCwgbGV0dGVyU3BhY2luZzogNiwgY29sb3I6IFRFWFQsIC4uLmVudGVyKGZyYW1lLCA0KSB9fT4KICAgICAgICBBTlRIUk9QT1MgPHNwYW4gc3R5bGU9e3sgY29sb3I6IERJTSB9fT7Ctzwvc3Bhbj4gMjAyNi0xMC0zMQogICAgICA8L2Rpdj4KICAgICAgPGRpdiBzdHlsZT17eyBoZWlnaHQ6IDQsIHdpZHRoOiBsaW5lVywgYmFja2dyb3VuZENvbG9yOiBDWUFOLCBib3JkZXJSYWRpdXM6IDIsIGJveFNoYWRvdzogYDAgMCAxOHB4ICR7Q1lBTn04OGAsIG1hcmdpblRvcDogNDYgfX0gLz4KICAgICAgPGRpdiBzdHlsZT17eyBmb250U2l6ZTogTk9URV9QWCwgY29sb3I6IERJTSwgbWFyZ2luVG9wOiA0NiwgLi4uZW50ZXIoZnJhbWUsIDUyKSB9fT4KICAgICAgICDov5nmmK/miJHku47lkIzkuIDlpKnph4zmjZ7lh7rmnaXnmoTmlYXkuosKICAgICAgPC9kaXY+CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9Owo=
+import React from 'react';
+import { AbsoluteFill, interpolate, useCurrentFrame } from 'remotion';
+import { BODY_PX, CYAN, DIM, NOTE_PX, TEXT } from '../theme';
+import { enter } from '../anim';
+
+// S8 76.000-80.000 落款（120 帧）
+// ANTHROPOS · 2026-10-31 + 小字「这是我从同一天里捞出来的故事」+ 青色横线从左往右扫过
+export const S8: React.FC = () => {
+  const frame = useCurrentFrame();
+  const lineW = interpolate(frame, [26, 70], [0, 560], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+
+  return (
+    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <div style={{ fontSize: BODY_PX * 1.15, fontWeight: 700, letterSpacing: 6, color: TEXT, ...enter(frame, 4) }}>
+        ANTHROPOS <span style={{ color: DIM }}>·</span> 2026-10-31
+      </div>
+      <div style={{ height: 4, width: lineW, backgroundColor: CYAN, borderRadius: 2, boxShadow: `0 0 18px ${CYAN}88`, marginTop: 46 }} />
+      <div style={{ fontSize: NOTE_PX, color: DIM, marginTop: 46, ...enter(frame, 52) }}>
+        这是我从同一天里捞出来的故事
+      </div>
+    </AbsoluteFill>
+  );
+};

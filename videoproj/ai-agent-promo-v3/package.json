@@ -1,1 +1,22 @@
-ewogICJuYW1lIjogImFpLWFnZW50LXByb21vLXYzIiwKICAidmVyc2lvbiI6ICIxLjAuMCIsCiAgImRlc2NyaXB0aW9uIjogIui/me+8jOaYr+S9oOiupOivhueahEFJIEFHRU5U5ZCX77yfIOKAlCBSZW1vdGlvbiAxOTIweDEwODBAMzBmcHMgNjIuMHMvMTg2MOW4p++8iGJyaWVmLXYzIOWUr+S4gOS+neaNru+8iSIsCiAgInNjcmlwdHMiOiB7CiAgICAic3R1ZGlvIjogInJlbW90aW9uIHN0dWRpbyBzcmMvaW5kZXgudHMiLAogICAgInJlbmRlciI6ICJyZW1vdGlvbiByZW5kZXIgc3JjL2luZGV4LnRzIEFudGhyb3Bvc1ZpZGVvIG91dC92aWRlby5tcDQgLS1jb25jdXJyZW5jeT00IiwKICAgICJ0eXBlY2hlY2siOiAidHNjIC0tbm9FbWl0IgogIH0sCiAgInR5cGUiOiAiY29tbW9uanMiLAogICJkZXBlbmRlbmNpZXMiOiB7CiAgICAiQHJlbW90aW9uL2NsaSI6ICJeNC4wLjUzOSIsCiAgICAiQHR5cGVzL3JlYWN0IjogIl4xOC4zLjMxIiwKICAgICJAdHlwZXMvcmVhY3QtZG9tIjogIl4xOC4zLjciLAogICAgImRvdGVudiI6ICJeMTguMC45IiwKICAgICJyZWFjdCI6ICJeMTguMy4xIiwKICAgICJyZWFjdC1kb20iOiAiXjE4LjMuMSIsCiAgICAicmVtb3Rpb24iOiAiXjQuMC41MzkiLAogICAgInR5cGVzY3JpcHQiOiAiXjUuOS4zIgogIH0sCiAgInByaXZhdGUiOiB0cnVlCn0K
+{
+  "name": "ai-agent-promo-v3",
+  "version": "1.0.0",
+  "description": "这，是你认识的AI AGENT吗？ — Remotion 1920x1080@30fps 62.0s/1860帧（brief-v3 唯一依据）",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts AnthroposVideo out/video.mp4 --concurrency=4",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "@remotion/cli": "^4.0.539",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "dotenv": "^18.0.9",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.539",
+    "typescript": "^5.9.3"
+  },
+  "private": true
+}

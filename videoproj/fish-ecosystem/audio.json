@@ -1,1 +1,15 @@
-ewogICJ0b3RhbCI6IDgwLAogICJiZWQiOiB7ICJjdWUiOiAicGFkIiwgImdhaW4iOiAwLjE1IH0sCiAgImN1ZXMiOiBbCiAgICB7ICJhdCI6IDAsICAiY3VlIjogImRpbmciIH0sCiAgICB7ICJhdCI6IDYsICAiY3VlIjogIndob29zaCIsICJzZWNvbmRzIjogMS4yIH0sCiAgICB7ICJhdCI6IDE2LCAiY3VlIjogIndob29zaCIsICJzZWNvbmRzIjogMS4wIH0sCiAgICB7ICJhdCI6IDI4LCAiY3VlIjogInJpc2VyIiB9LAogICAgeyAiYXQiOiA0MCwgImN1ZSI6ICJ0eXBpbmciLCAic2Vjb25kcyI6IDIuMCB9LAogICAgeyAiYXQiOiA1MCwgImN1ZSI6ICJkaW5nIiB9LAogICAgeyAiYXQiOiA1NCwgImN1ZSI6ICJ0eXBpbmciLCAic2Vjb25kcyI6IDEuNSB9LAogICAgeyAiYXQiOiA2NiwgImN1ZSI6ICJyaXNlciIgfSwKICAgIHsgImF0IjogNzYsICJjdWUiOiAiZGluZyIgfQogIF0KfQo=
+{
+  "total": 80,
+  "bed": { "cue": "pad", "gain": 0.15 },
+  "cues": [
+    { "at": 0,  "cue": "ding" },
+    { "at": 6,  "cue": "whoosh", "seconds": 1.2 },
+    { "at": 16, "cue": "whoosh", "seconds": 1.0 },
+    { "at": 28, "cue": "riser" },
+    { "at": 40, "cue": "typing", "seconds": 2.0 },
+    { "at": 50, "cue": "ding" },
+    { "at": 54, "cue": "typing", "seconds": 1.5 },
+    { "at": 66, "cue": "riser" },
+    { "at": 76, "cue": "ding" }
+  ]
+}

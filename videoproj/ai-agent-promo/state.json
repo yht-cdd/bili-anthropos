@@ -1,1 +1,59 @@
-ewogICJzbHVnIjogImFpLWFnZW50LXByb21vIiwKICAidGl0bGUiOiAiQUkgQWdlbnQg6IO95bmy5LuA5LmI77ya5LiA5LiqIEFJIOiHquW3seeahOWuo+S8oOeJhyIsCiAgInN0YWdlIjogImRvbmUiLAogICJjcmVhdGVkQXQiOiAiMjAyNi0xMS0wMVQxNTowMTowOS44NTZaIiwKICAidXBkYXRlZEF0IjogIjIwMjYtMTEtMDNUMDA6NTI6MjcuODc1WiIsCiAgImhpc3RvcnkiOiBbCiAgICB7CiAgICAgICJhdCI6ICIyMDI2LTExLTAxVDE1OjAxOjA5Ljg1NloiLAogICAgICAiZXZlbnQiOiAiY3JlYXRlZCIKICAgIH0sCiAgICB7CiAgICAgICJhdCI6ICIyMDI2LTExLTAyVDEyOjI4OjAyLjk5M1oiLAogICAgICAiZXZlbnQiOiAic3RhZ2Ug4oaSIGJyaWVmIgogICAgfSwKICAgIHsKICAgICAgImF0IjogIjIwMjYtMTEtMDJUMTU6MjE6MzkuNjA3WiIsCiAgICAgICJldmVudCI6ICJzdGFnZSDihpIgY29kZSIKICAgIH0sCiAgICB7CiAgICAgICJhdCI6ICIyMDI2LTExLTAyVDE1OjIxOjM5LjYzOVoiLAogICAgICAiZXZlbnQiOiAicm91bmQgMTog56ysMei9ru+8mlIx6aqo5p62K1MxL1MyL1M3K+WNoOS9jStsb2dv6KGl5paZ77yIbmViaXVz55yfU1ZHL2FnbmVz55yfUE5HL3hpYW9taS1taW1v55yfUE5H77ybdHNj6L+H77ybYnVuZGxl6L+H77yb5rOo5oSP77yacmVuZGVyLXZpZGVv5Y+q5Lygc3Jj77yMcHVibGljL2NvdmVy55qE5Zu+UjTpnIDlj6booYzlpITnkIYiCiAgICB9LAogICAgewogICAgICAiYXQiOiAiMjAyNi0xMS0wMlQxNToyMzoyMy43OTNaIiwKICAgICAgImV2ZW50IjogInJvdW5kIDI6IFIxIOmqjOaUtu+8mlMy5bin5Y+C5a+5djIuMeOAgWxvZ2/kuInlrrbnnJ/ouqvjgIF0c2Pov4fvvJtSNOWdkT3lsIHpnaLlm77kuI3ov5tDSeW3suWFpWJyaWVmwqflhavvvJtSMuW3sua0viIKICAgIH0sCiAgICB7CiAgICAgICJhdCI6ICIyMDI2LTExLTAyVDE1OjU0OjE0LjQxNVoiLAogICAgICAiZXZlbnQiOiAicm91bmQgMzogUjIg5a6M5oiQ77yIc2hlbGzotoXml7bkvYbkuqfnianlt7LmoLjvvInvvJpTMy50c3ggNjQ46KGM5Lmd5YiA57uE5YaFMC8xODAvMzYw44CB5rCU5rOh5LiJ5Y+l5Y6f5paH5Zyo44CB5YWz6ZSu5pWw5a2X5Zyo44CBdHNjIHJjPTAiCiAgICB9LAogICAgewogICAgICAiYXQiOiAiMjAyNi0xMS0wMlQxNjowODowMS44OTdaIiwKICAgICAgImV2ZW50IjogInJvdW5kIDQ6IOesrDLova7vvJpTM+iSmeWkquWlh+S5neWIgOWunuijhe+8iOe7hOWGhTJzL+WIh0DmnKzlnLAwLzYwLzEyMC8xODAvMjQwLzMwMC8zNjAvNDIwLzQ4MO+8jOacq+WIgDgzOe+8m+S4iee7hOW3puWPs+W5tue9rivmgJ3ogIPlrZfluZUr5a6a5qC85Y2hL+eblueroO+8m+S/ruWkjee7hDLkuablhpnlhYnmoIfooqvoo4Hpl67popjmlLnkuLrooYzlhoXot5/pmo/vvJt0c2Pov4cvYnVuZGxl6L+HLzEw5binc3RpbCIKICAgIH0sCiAgICB7CiAgICAgICJhdCI6ICIyMDI2LTExLTAyVDE3OjAxOjEzLjc2OVoiLAogICAgICAiZXZlbnQiOiAicm91bmQgNTog56ysNOi9ru+8mlM0L1M1L1M2K1M26Z+z6aKR5a6e6KOFIgogICAgfSwKICAgIHsKICAgICAgImF0IjogIjIwMjYtMTEtMDJUMTc6MzA6MzEuMTg3WiIsCiAgICAgICJldmVudCI6ICJyb3VuZCA2OiDnrKw06L2u77yaUzQvUzUvUzYrUzbpn7PpopHlrp7oo4XvvIhTMS9TNOWFseeUqEVycm9yQmxvY2vlkIzmnoTlm75FUlJPUu+8m1M15Zub6L+e56Gs5YiHMC82MC8xMjAvMTgw5pys5Zyw5binK+aXtumXtOaIszAzOjE04oaSMDM6MjHihpIwMzo0MOi/nui3s++8m1M25YWt6KGM6YCQ6KGMMjTluKfmraUr5pyr6KGM5YGcPjYw5binK+S4u+S6uuahjOS4iuePiueRmivlupXpg6jlrZciCiAgICB9LAogICAgewogICAgICAiYXQiOiAiMjAyNi0xMS0wMlQyMzoxNjoyMi4zOTdaIiwKICAgICAgImV2ZW50IjogInJvdW5kIDc6IOesrDXova7vvJpSNOWwgemdomRhdGFVUkkr6LCD6K+V5riy5p+TM+aute+8iGNvdmVyRGF0YS50c+aJk+i/m2J1bmRsZei/h++8m0NJIGNvbXBvc2l0aW9u5ZCN5pS5QW50aHJvcG9zVmlkZW/vvJvkv65TMuOAjOWcqOOAjemHjeWkjeWtl++8m+iwg+ivlea4snJ1biA0MTU0MTcyNzI0MeS4ieauteW4p+eUu+mdouWdh+Wvue+8m1My5L+u5aSN5aSN6aqMcnUiCiAgICB9LAogICAgewogICAgICAiYXQiOiAiMjAyNi0xMS0wM1QwMDo1MTozNS44ODhaIiwKICAgICAgImV2ZW50IjogInJvdW5kIDg6IOesrDbova4oUjZiKe+8muS4pOWkhOS/rueRlSvlhajniYd2MuOAguKRoFM35Y+M5a2X77ya55yf5Ye25LiN5piv44CM5bCB6Z2i6Ieq5bimK+WPoOWtl+OAjeKAlOKAlGNvdmVyRGF0YSDml6nlt7LmjaLmiJAgY2xlYW4g54mIKOaXoOeDp+W9leWtlynvvIzlj4zlrZfmmK/lj6DlrZcgNjRweCDnj4rnkZrljovkvY/lvanombkgQUdFTlQg5a2X5q+NKHk2NjAtOTIyKemAoOaIkOeahOmHjeW9seOAguS/ruazlT3kv53nlZnlj6DlrZcoYiIKICAgIH0sCiAgICB7CiAgICAgICJhdCI6ICIyMDI2LTExLTAzVDAwOjUyOjI3Ljg3NVoiLAogICAgICAiZXZlbnQiOiAicm91bmQgOTogUjZiIOivpue7huaJi+i0pu+8mmpvdXJuYWwvMjAyNi0xMS0wMy1yNmIubWTvvIjkuKTlpITkv67nkZXlvZLlm6DjgIFkZXNjL3RhZyDmoLnlm6DjgIHor53popjlrZfmrrXmn6Xor4HooajjgIFnaXQgUFIgIzHjgIFydW4gNDE1NTQwODE3MzjvvIkiCiAgICB9CiAgXSwKICAicm91bmRzIjogOSwKICAibm90ZSI6ICJ2MiDooqsgdjMg5Y+W5Luj77yIQlYxQW14UzYxRXZNIDExLTA0IOS4iue6v++8iSIKfQ==
+{
+  "slug": "ai-agent-promo",
+  "title": "AI Agent 能干什么：一个 AI 自己的宣传片",
+  "stage": "done",
+  "createdAt": "2026-11-01T15:01:09.856Z",
+  "updatedAt": "2026-11-03T00:52:27.875Z",
+  "history": [
+    {
+      "at": "2026-11-01T15:01:09.856Z",
+      "event": "created"
+    },
+    {
+      "at": "2026-11-02T12:28:02.993Z",
+      "event": "stage → brief"
+    },
+    {
+      "at": "2026-11-02T15:21:39.607Z",
+      "event": "stage → code"
+    },
+    {
+      "at": "2026-11-02T15:21:39.639Z",
+      "event": "round 1: 第1轮：R1骨架+S1/S2/S7+占位+logo补料（nebius真SVG/agnes真PNG/xiaomi-mimo真PNG；tsc过；bundle过；注意：render-video只传src，public/cover的图R4需另行处理"
+    },
+    {
+      "at": "2026-11-02T15:23:23.793Z",
+      "event": "round 2: R1 验收：S2帧参对v2.1、logo三家真身、tsc过；R4坑=封面图不进CI已入brief§八；R2已派"
+    },
+    {
+      "at": "2026-11-02T15:54:14.415Z",
+      "event": "round 3: R2 完成（shell超时但产物已核）：S3.tsx 648行九刀组内0/180/360、气泡三句原文在、关键数字在、tsc rc=0"
+    },
+    {
+      "at": "2026-11-02T16:08:01.897Z",
+      "event": "round 4: 第2轮：S3蒙太奇九刀实装（组内2s/切@本地0/60/120/180/240/300/360/420/480，末刀839；三组左右并置+思考字幕+定格卡/盖章；修复组2书写光标被裁问题改为行内跟随；tsc过/bundle过/10帧stil"
+    },
+    {
+      "at": "2026-11-02T17:01:13.769Z",
+      "event": "round 5: 第4轮：S4/S5/S6+S6音频实装"
+    },
+    {
+      "at": "2026-11-02T17:30:31.187Z",
+      "event": "round 6: 第4轮：S4/S5/S6+S6音频实装（S1/S4共用ErrorBlock同构图ERROR；S5四连硬切0/60/120/180本地帧+时间戳03:14→03:21→03:40连跳；S6六行逐行24帧步+末行停>60帧+主人桌上珊瑚+底部字"
+    },
+    {
+      "at": "2026-11-02T23:16:22.397Z",
+      "event": "round 7: 第5轮：R4封面dataURI+调试渲染3段（coverData.ts打进bundle过；CI composition名改AnthroposVideo；修S2「在」重复字；调试渲run 41541727241三段帧画面均对；S2修复复验ru"
+    },
+    {
+      "at": "2026-11-03T00:51:35.888Z",
+      "event": "round 8: 第6轮(R6b)：两处修瑕+全片v2。①S7双字：真凶不是「封面自带+叠字」——coverData 早已换成 clean 版(无烧录字)，双字是叠字 64px 珊瑚压住彩虹 AGENT 字母(y660-922)造成的重影。修法=保留叠字(b"
+    },
+    {
+      "at": "2026-11-03T00:52:27.875Z",
+      "event": "round 9: R6b 详细手账：journal/2026-11-03-r6b.md（两处修瑕归因、desc/tag 根因、话题字段查证表、git PR #1、run 41554081738）"
+    }
+  ],
+  "rounds": 9,
+  "note": "v2 被 v3 取代（BV1AmxS61EvM 11-04 上线）"
+}

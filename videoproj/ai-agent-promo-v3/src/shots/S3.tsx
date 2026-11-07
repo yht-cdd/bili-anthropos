@@ -1,1 +1,96 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IGJsaW5rLCBFQVNFX0VYUE9fT1VULCBsZXJwRiwgcHJvZywgdHlwZWRMaW5lIH0gZnJvbSAnLi4vYW5pbSc7CmltcG9ydCB7IENoYXRCdWJibGUgfSBmcm9tICcuLi9jb21wb25lbnRzL0NoYXRCdWJibGUnOwppbXBvcnQgeyBUaW1lc3RhbXAgfSBmcm9tICcuLi9jb21wb25lbnRzL1RpbWVzdGFtcCc7CmltcG9ydCB7IEJHLCBDT1JBTCwgRk9OVF9NT05PLCBHUkFZLCBTVVJGQUNFLCBURVhUX0RJTSB9IGZyb20gJy4uL3RoZW1lJzsKCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8g6ZWcMyDCtyAyMTDigJMzOTAg5bin77yINy4wc+KAkzEzLjBz77yJ44CM5oqK5pio5aSp5pS56L+H55qE5paH5Lu25YiX5Ye65p2l44CNIOKAlCBicmllZi12MyDCp+S4ieOAkOmVnOWktCAz44CRCi8vIOacrOWcsOW4p++8mjDigJMzMCDmsJTms6Hlt6bmu5HlhaXvvIh4LTgw4oaSMO+8jGV4cG8tb3V0IDEyIOW4p++8jOanveS9memHjyBob2xk77yJ77ybCi8vIDYw4oCTMTUwIOe7iOerryA4MDB4Mjgw77yIeD0xMDAwIHk9MjQw77yJ77yM5YWl5Zy6IHNjYWxlKDAuOTTihpIxKSAxMCDluKfvvIwKLy8g5omT5a2X5q+P6KGM5bu26L+fIDgg5binIC8g5q+P5a2X56ymIDEuNSDluKfvvIzlhYnmoIcgYmxvY2sgOHgxNiDnj4rnkZogMTIg5bin5ZGo5pyf6Zeq77ybCi8vIDE1MOKAkzE2NSDml7bpl7TmiLMgWzIyOjE0XSDmt6HlhaUgNiDluKfvvJsxNjXigJMxODAg5YWo5Zy6IDQg5bin5b+r5YiH6YCA5Zy644CCCi8vIFIxYiDms6jvvJrnu4jnq6/lo7PlhoXogZTvvIzkuI3nlKggY29tcG9uZW50cy9QYW5lbCDigJTigJQg6K+l5paH5Lu25Zyo5Lik6L2u5a2Q5Luj55CG6Ze06KKr5bm26KGMCi8vIOi/m+eoi+aUuei/hyBBUEnvvIh0aXRsZVNpemUvYmfvvInvvIzkuLrpgb/lhY3nq57mgIHkuI3lho3kvp3otZblhbHkuqvnu4Tku7bjgIIKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKY29uc3QgR0lUX0xJTkVTID0gWwogICckIGdpdCBsb2cgLS1zaW5jZT0ieWVzdGVyZGF5IiAtLW5hbWUtb25seSAtLW9uZWxpbmUnLAogICcwYTRjYjQzIEZpeCBkYWlseSByZXBvcnQgcXVlcnknLAogICdyZXBvcnRzL2RhaWx5LnNxbCcsCiAgJ2EzZjJlMTAgVXBkYXRlIGRpYXJ5IHRlbXBsYXRlJywKICAnZGlhcnkvdGVtcGxhdGUubWQnLApdOwpjb25zdCBUWVBFX0FUID0gNjU7IC8vIOe7iOerr+WFpeWcuu+8iDYw77yJKzUg5binIOKJiCDlhajlsYAgMjc1ID0gwqdDIOaJk+Wtl+mfs+W8gOWni+W4pwpjb25zdCBMSU5FX0dBUCA9IDg7IC8vIOWOn+eov+iKguWlj+W4p+aVsOayv+eUqApjb25zdCBDSEFSX0RVUiA9IDEuNTsKY29uc3QgVEVSTV9XID0gODAwOwpjb25zdCBURVJNX0ggPSAyODA7CgpleHBvcnQgY29uc3QgUzM6IFJlYWN0LkZDID0gKCkgPT4gewogIGNvbnN0IGYgPSB1c2VDdXJyZW50RnJhbWUoKTsKICBjb25zdCBidWJQID0gcHJvZyhmLCAwLCAxMiwgRUFTRV9FWFBPX09VVCk7CiAgY29uc3QgdGVybVAgPSBwcm9nKGYsIDYwLCAxMCwgRUFTRV9FWFBPX09VVCk7CiAgY29uc3QgdHNQID0gcHJvZyhmLCAxNTAsIDYsIEVBU0VfRVhQT19PVVQpOwogIGNvbnN0IGV4aXQgPSAxIC0gbGVycEYoZiwgWzE2NSwgMTY5XSwgWzAsIDFdKTsgLy8gNCDluKflv6vliIcKICBjb25zdCBjdXJzb3JPbiA9IGJsaW5rKGYsIFRZUEVfQVQsIDEyKTsKICBjb25zdCB0eXBpbmcgPSBmID49IFRZUEVfQVQgJiYgZiA8IDE2NTsKCiAgcmV0dXJuICgKICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sgYmFja2dyb3VuZENvbG9yOiBCRyB9fT4KICAgICAgPGRpdiBzdHlsZT17eyBwb3NpdGlvbjogJ2Fic29sdXRlJywgaW5zZXQ6IDAsIG9wYWNpdHk6IGV4aXQgfX0+CiAgICAgICAgPGRpdiBzdHlsZT17eyBwb3NpdGlvbjogJ2Fic29sdXRlJywgaW5zZXQ6IDAsIHRyYW5zZm9ybTogYHRyYW5zbGF0ZVgoJHstODAgKiAoMSAtIGJ1YlApfXB4KWAsIG9wYWNpdHk6IGJ1YlAgfX0+CiAgICAgICAgICA8Q2hhdEJ1YmJsZSB0ZXh0PSLmiormmKjlpKnmlLnov4fnmoTmlofku7bliJflh7rmnaUiIHg9ezE2MH0geT17MzAwfSAvPgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgICAgbGVmdDogMTAwMCwKICAgICAgICAgICAgdG9wOiAyNDAsCiAgICAgICAgICAgIHdpZHRoOiBURVJNX1csCiAgICAgICAgICAgIGhlaWdodDogVEVSTV9ILAogICAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6IFNVUkZBQ0UsCiAgICAgICAgICAgIGJvcmRlclJhZGl1czogMTIsCiAgICAgICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfTU9OTywKICAgICAgICAgICAgb3BhY2l0eTogdGVybVAsCiAgICAgICAgICAgIHRyYW5zZm9ybTogYHNjYWxlKCR7MC45NCArIDAuMDYgKiB0ZXJtUH0pYCwKICAgICAgICAgICAgb3ZlcmZsb3c6ICdoaWRkZW4nLAogICAgICAgICAgICBib3hTaGFkb3c6ICcwIDI0cHggNzBweCByZ2JhKDAsMCwwLDAuNDUpJywKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAgPGRpdiBzdHlsZT17eyBoZWlnaHQ6IDM2LCBkaXNwbGF5OiAnZmxleCcsIGFsaWduSXRlbXM6ICdjZW50ZXInLCBwYWRkaW5nOiAnMCAxNnB4JywgZm9udFNpemU6IDE0LCBjb2xvcjogR1JBWSB9fT4KICAgICAgICAgICAgYW50aHJvcG9zQGxvY2FsCiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxkaXYgc3R5bGU9e3sgcGFkZGluZzogJzE2cHggMjBweCcsIGZvbnRTaXplOiAxNCwgbGluZUhlaWdodDogMS44NSwgY29sb3I6IFRFWFRfRElNIH19PgogICAgICAgICAgICB7R0lUX0xJTkVTLm1hcCgobGluZSwgaSkgPT4gewogICAgICAgICAgICAgIGNvbnN0IG4gPSB0eXBlZExpbmUoZiwgVFlQRV9BVCwgaSwgTElORV9HQVAsIGxpbmUubGVuZ3RoLCBDSEFSX0RVUik7CiAgICAgICAgICAgICAgY29uc3QgaXNMYXN0ID0gaSA9PT0gR0lUX0xJTkVTLmxlbmd0aCAtIDE7CiAgICAgICAgICAgICAgY29uc3QgbGluZURvbmUgPSBuID49IGxpbmUubGVuZ3RoOwogICAgICAgICAgICAgIHJldHVybiAoCiAgICAgICAgICAgICAgICA8ZGl2IGtleT17aX0gc3R5bGU9e3sgd2hpdGVTcGFjZTogJ3ByZScgfX0+CiAgICAgICAgICAgICAgICAgIHtsaW5lLnNsaWNlKDAsIG4pfQogICAgICAgICAgICAgICAgICB7dHlwaW5nICYmIGlzTGFzdCAmJiBsaW5lRG9uZSAmJiBjdXJzb3JPbiA9PT0gMSA/ICgKICAgICAgICAgICAgICAgICAgICA8c3BhbgogICAgICAgICAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogJ2lubGluZS1ibG9jaycsCiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiA4LAogICAgICAgICAgICAgICAgICAgICAgICBoZWlnaHQ6IDE2LAogICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6IENPUkFMLAogICAgICAgICAgICAgICAgICAgICAgICBtYXJnaW5MZWZ0OiAyLAogICAgICAgICAgICAgICAgICAgICAgICB2ZXJ0aWNhbEFsaWduOiAnbWlkZGxlJywKICAgICAgICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICAgICAgKSA6IG51bGx9CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICApOwogICAgICAgICAgICB9KX0KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgoKICAgICAgICA8VGltZXN0YW1wIHRleHQ9IlsyMjoxNF0iIG9wYWNpdHk9e3RzUH0gLz4KICAgICAgPC9kaXY+CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9Owo=
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { blink, EASE_EXPO_OUT, lerpF, prog, typedLine } from '../anim';
+import { ChatBubble } from '../components/ChatBubble';
+import { Timestamp } from '../components/Timestamp';
+import { BG, CORAL, FONT_MONO, GRAY, SURFACE, TEXT_DIM } from '../theme';
+
+// ============================================================================
+// 镜3 · 210–390 帧（7.0s–13.0s）「把昨天改过的文件列出来」 — brief-v3 §三【镜头 3】
+// 本地帧：0–30 气泡左滑入（x-80→0，expo-out 12 帧，槽余量 hold）；
+// 60–150 终端 800x280（x=1000 y=240），入场 scale(0.94→1) 10 帧，
+// 打字每行延迟 8 帧 / 每字符 1.5 帧，光标 block 8x16 珊瑚 12 帧周期闪；
+// 150–165 时间戳 [22:14] 淡入 6 帧；165–180 全场 4 帧快切退场。
+// R1b 注：终端壳内联，不用 components/Panel —— 该文件在两轮子代理间被并行
+// 进程改过 API（titleSize/bg），为避免竞态不再依赖共享组件。
+// ============================================================================
+
+const GIT_LINES = [
+  '$ git log --since="yesterday" --name-only --oneline',
+  '0a4cb43 Fix daily report query',
+  'reports/daily.sql',
+  'a3f2e10 Update diary template',
+  'diary/template.md',
+];
+const TYPE_AT = 65; // 终端入场（60）+5 帧 ≈ 全局 275 = §C 打字音开始帧
+const LINE_GAP = 8; // 原稿节奏帧数沿用
+const CHAR_DUR = 1.5;
+const TERM_W = 800;
+const TERM_H = 280;
+
+export const S3: React.FC = () => {
+  const f = useCurrentFrame();
+  const bubP = prog(f, 0, 12, EASE_EXPO_OUT);
+  const termP = prog(f, 60, 10, EASE_EXPO_OUT);
+  const tsP = prog(f, 150, 6, EASE_EXPO_OUT);
+  const exit = 1 - lerpF(f, [165, 169], [0, 1]); // 4 帧快切
+  const cursorOn = blink(f, TYPE_AT, 12);
+  const typing = f >= TYPE_AT && f < 165;
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: BG }}>
+      <div style={{ position: 'absolute', inset: 0, opacity: exit }}>
+        <div style={{ position: 'absolute', inset: 0, transform: `translateX(${-80 * (1 - bubP)}px)`, opacity: bubP }}>
+          <ChatBubble text="把昨天改过的文件列出来" x={160} y={300} />
+        </div>
+
+        <div
+          style={{
+            position: 'absolute',
+            left: 1000,
+            top: 240,
+            width: TERM_W,
+            height: TERM_H,
+            backgroundColor: SURFACE,
+            borderRadius: 12,
+            fontFamily: FONT_MONO,
+            opacity: termP,
+            transform: `scale(${0.94 + 0.06 * termP})`,
+            overflow: 'hidden',
+            boxShadow: '0 24px 70px rgba(0,0,0,0.45)',
+          }}
+        >
+          <div style={{ height: 36, display: 'flex', alignItems: 'center', padding: '0 16px', fontSize: 14, color: GRAY }}>
+            anthropos@local
+          </div>
+          <div style={{ padding: '16px 20px', fontSize: 14, lineHeight: 1.85, color: TEXT_DIM }}>
+            {GIT_LINES.map((line, i) => {
+              const n = typedLine(f, TYPE_AT, i, LINE_GAP, line.length, CHAR_DUR);
+              const isLast = i === GIT_LINES.length - 1;
+              const lineDone = n >= line.length;
+              return (
+                <div key={i} style={{ whiteSpace: 'pre' }}>
+                  {line.slice(0, n)}
+                  {typing && isLast && lineDone && cursorOn === 1 ? (
+                    <span
+                      style={{
+                        display: 'inline-block',
+                        width: 8,
+                        height: 16,
+                        backgroundColor: CORAL,
+                        marginLeft: 2,
+                        verticalAlign: 'middle',
+                      }}
+                    />
+                  ) : null}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        <Timestamp text="[22:14]" opacity={tsP} />
+      </div>
+    </AbsoluteFill>
+  );
+};

@@ -1,1 +1,35 @@
-aW1wb3J0IHR5cGUgeyBDU1NQcm9wZXJ0aWVzIH0gZnJvbSAncmVhY3QnOwppbXBvcnQgeyBpbnRlcnBvbGF0ZSwgc3ByaW5nLCB1c2VWaWRlb0NvbmZpZyB9IGZyb20gJ3JlbW90aW9uJzsKCi8vIOWFpeWcujogZmFkZSArIOS4iuenuyAzMHB4IC8gMzAwbXMgKGJyaWVmIOWKqOaViOWfuue6vykKLy8gZnJhbWUg55So5Zy65pmv5YaF55qE5pys5Zyw5binLCBkZWxheSDmmK/lhaXlnLrotbflp4vnmoTmnKzlnLDluKcKZXhwb3J0IGNvbnN0IGVudGVyID0gKGZyYW1lOiBudW1iZXIsIGRlbGF5ID0gMCk6IENTU1Byb3BlcnRpZXMgPT4gewogIGNvbnN0IHAgPSBzcHJpbmcoewogICAgZnJhbWU6IGZyYW1lIC0gZGVsYXksCiAgICBmcHM6IDMwLAogICAgY29uZmlnOiB7IGRhbXBpbmc6IDIwMCwgb3ZlcnNob290Q2xhbXBpbmc6IHRydWUgfSwKICB9KTsKICByZXR1cm4gewogICAgb3BhY2l0eTogTWF0aC5tYXgoMCwgTWF0aC5taW4oMSwgcCkpLAogICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWSgkeygxIC0gTWF0aC5tYXgoMCwgTWF0aC5taW4oMSwgcCkpKSAqIDMwfXB4KWAsCiAgfTsKfTsKCi8vIOmAgOWcujogMjAwbXMgZmFkZSAoc3RhcnRGcmFtZSDkuLrlnLrmma/mnKzlnLDluKcpCmV4cG9ydCBjb25zdCBleGl0RmFkZSA9IChmcmFtZTogbnVtYmVyLCBzdGFydEZyYW1lOiBudW1iZXIpOiBDU1NQcm9wZXJ0aWVzID0+ICh7CiAgb3BhY2l0eTogaW50ZXJwb2xhdGUoZnJhbWUsIFtzdGFydEZyYW1lLCBzdGFydEZyYW1lICsgNl0sIFsxLCAwXSwgewogICAgZXh0cmFwb2xhdGVMZWZ0OiAnY2xhbXAnLAogICAgZXh0cmFwb2xhdGVSaWdodDogJ2NsYW1wJywKICB9KSwKfSk7CgovLyDmlbDlrZfmu5rliqjorqHmlbDlmag6IGVhc2Utb3V0IDgwMG1zID0gMjQg5binIEAzMGZwcwpleHBvcnQgY29uc3QgY291bnRVcCA9IChmcmFtZTogbnVtYmVyLCB0YXJnZXQ6IG51bWJlciwgZGVsYXkgPSAwKTogbnVtYmVyID0+IHsKICBjb25zdCBwID0gaW50ZXJwb2xhdGUoZnJhbWUgLSBkZWxheSwgWzAsIDI0XSwgWzAsIDFdLCB7CiAgICBleHRyYXBvbGF0ZUxlZnQ6ICdjbGFtcCcsCiAgICBleHRyYXBvbGF0ZVJpZ2h0OiAnY2xhbXAnLAogIH0pOwogIHJldHVybiBNYXRoLnJvdW5kKHRhcmdldCAqICgxIC0gTWF0aC5wb3coMSAtIHAsIDMpKSk7IC8vIGVhc2Utb3V0IGN1YmljCn07CgpleHBvcnQgY29uc3QgdXNlRnBzID0gKCk6IG51bWJlciA9PiB1c2VWaWRlb0NvbmZpZygpLmZwczsK
+import type { CSSProperties } from 'react';
+import { interpolate, spring, useVideoConfig } from 'remotion';
+
+// 入场: fade + 上移 30px / 300ms (brief 动效基线)
+// frame 用场景内的本地帧, delay 是入场起始的本地帧
+export const enter = (frame: number, delay = 0): CSSProperties => {
+  const p = spring({
+    frame: frame - delay,
+    fps: 30,
+    config: { damping: 200, overshootClamping: true },
+  });
+  return {
+    opacity: Math.max(0, Math.min(1, p)),
+    transform: `translateY(${(1 - Math.max(0, Math.min(1, p))) * 30}px)`,
+  };
+};
+
+// 退场: 200ms fade (startFrame 为场景本地帧)
+export const exitFade = (frame: number, startFrame: number): CSSProperties => ({
+  opacity: interpolate(frame, [startFrame, startFrame + 6], [1, 0], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  }),
+});
+
+// 数字滚动计数器: ease-out 800ms = 24 帧 @30fps
+export const countUp = (frame: number, target: number, delay = 0): number => {
+  const p = interpolate(frame - delay, [0, 24], [0, 1], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+  return Math.round(target * (1 - Math.pow(1 - p, 3))); // ease-out cubic
+};
+
+export const useFps = (): number => useVideoConfig().fps;

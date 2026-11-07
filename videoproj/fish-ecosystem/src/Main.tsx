@@ -1,1 +1,60 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCBTZXF1ZW5jZSB9IGZyb20gJ3JlbW90aW9uJzsKaW1wb3J0IHsgQkcsIEZPTlQgfSBmcm9tICcuL3RoZW1lJzsKaW1wb3J0IHsgUzEgfSBmcm9tICcuL3NjZW5lcy9TMSc7CmltcG9ydCB7IFMyIH0gZnJvbSAnLi9zY2VuZXMvUzInOwppbXBvcnQgeyBTMyB9IGZyb20gJy4vc2NlbmVzL1MzJzsKaW1wb3J0IHsgUzQgfSBmcm9tICcuL3NjZW5lcy9TNCc7CmltcG9ydCB7IFM1IH0gZnJvbSAnLi9zY2VuZXMvUzUnOwppbXBvcnQgeyBTNiB9IGZyb20gJy4vc2NlbmVzL1M2JzsKaW1wb3J0IHsgUzcgfSBmcm9tICcuL3NjZW5lcy9TNyc7CmltcG9ydCB7IFM4IH0gZnJvbSAnLi9zY2VuZXMvUzgnOwoKLy8g5YiG6ZWc5pe26ZW/77yI5binLCAzMGZwc++8ieKAlCDkuI4gYnJpZWYg5pe26Ze06L205LiA5LiA5a+55bqUCmV4cG9ydCBjb25zdCBTRUc6IEFycmF5PHsgaWQ6IHN0cmluZzsgZnJvbTogbnVtYmVyOyBkdXJhdGlvbjogbnVtYmVyIH0+ID0gWwogIHsgaWQ6ICdTMScsIGZyb206IDAsIGR1cmF0aW9uOiAxODAgfSwgLy8gMC02cwogIHsgaWQ6ICdTMicsIGZyb206IDE4MCwgZHVyYXRpb246IDMwMCB9LCAvLyA2LTE2cwogIHsgaWQ6ICdTMycsIGZyb206IDQ4MCwgZHVyYXRpb246IDM2MCB9LCAvLyAxNi0yOHMKICB7IGlkOiAnUzQnLCBmcm9tOiA4NDAsIGR1cmF0aW9uOiAzNjAgfSwgLy8gMjgtNDBzCiAgeyBpZDogJ1M1JywgZnJvbTogMTIwMCwgZHVyYXRpb246IDQyMCB9LCAvLyA0MC01NHMKICB7IGlkOiAnUzYnLCBmcm9tOiAxNjIwLCBkdXJhdGlvbjogMzYwIH0sIC8vIDU0LTY2cwogIHsgaWQ6ICdTNycsIGZyb206IDE5ODAsIGR1cmF0aW9uOiAzMDAgfSwgLy8gNjYtNzZzCiAgeyBpZDogJ1M4JywgZnJvbTogMjI4MCwgZHVyYXRpb246IDEyMCB9LCAvLyA3Ni04MHMKXTsKCmV4cG9ydCBjb25zdCBGaXNoRWNvc3lzdGVtOiBSZWFjdC5GQyA9ICgpID0+IHsKICByZXR1cm4gKAogICAgPEFic29sdXRlRmlsbAogICAgICBzdHlsZT17ewogICAgICAgIGJhY2tncm91bmRDb2xvcjogQkcsCiAgICAgICAgZm9udEZhbWlseTogRk9OVCwKICAgICAgICBjb2xvcjogJyNGNUY4RkYnLAogICAgICB9fQogICAgPgogICAgICA8U2VxdWVuY2UgZnJvbT17U0VHWzBdLmZyb219IGR1cmF0aW9uSW5GcmFtZXM9e1NFR1swXS5kdXJhdGlvbn0+CiAgICAgICAgPFMxIC8+CiAgICAgIDwvU2VxdWVuY2U+CiAgICAgIDxTZXF1ZW5jZSBmcm9tPXtTRUdbMV0uZnJvbX0gZHVyYXRpb25JbkZyYW1lcz17U0VHWzFdLmR1cmF0aW9ufT4KICAgICAgICA8UzIgLz4KICAgICAgPC9TZXF1ZW5jZT4KICAgICAgPFNlcXVlbmNlIGZyb209e1NFR1syXS5mcm9tfSBkdXJhdGlvbkluRnJhbWVzPXtTRUdbMl0uZHVyYXRpb259PgogICAgICAgIDxTMyAvPgogICAgICA8L1NlcXVlbmNlPgogICAgICA8U2VxdWVuY2UgZnJvbT17U0VHWzNdLmZyb219IGR1cmF0aW9uSW5GcmFtZXM9e1NFR1szXS5kdXJhdGlvbn0+CiAgICAgICAgPFM0IC8+CiAgICAgIDwvU2VxdWVuY2U+CiAgICAgIDxTZXF1ZW5jZSBmcm9tPXtTRUdbNF0uZnJvbX0gZHVyYXRpb25JbkZyYW1lcz17U0VHWzRdLmR1cmF0aW9ufT4KICAgICAgICA8UzUgLz4KICAgICAgPC9TZXF1ZW5jZT4KICAgICAgPFNlcXVlbmNlIGZyb209e1NFR1s1XS5mcm9tfSBkdXJhdGlvbkluRnJhbWVzPXtTRUdbNV0uZHVyYXRpb259PgogICAgICAgIDxTNiAvPgogICAgICA8L1NlcXVlbmNlPgogICAgICA8U2VxdWVuY2UgZnJvbT17U0VHWzZdLmZyb219IGR1cmF0aW9uSW5GcmFtZXM9e1NFR1s2XS5kdXJhdGlvbn0+CiAgICAgICAgPFM3IC8+CiAgICAgIDwvU2VxdWVuY2U+CiAgICAgIDxTZXF1ZW5jZSBmcm9tPXtTRUdbN10uZnJvbX0gZHVyYXRpb25JbkZyYW1lcz17U0VHWzddLmR1cmF0aW9ufT4KICAgICAgICA8UzggLz4KICAgICAgPC9TZXF1ZW5jZT4KICAgIDwvQWJzb2x1dGVGaWxsPgogICk7Cn07Cg==
+import React from 'react';
+import { AbsoluteFill, Sequence } from 'remotion';
+import { BG, FONT } from './theme';
+import { S1 } from './scenes/S1';
+import { S2 } from './scenes/S2';
+import { S3 } from './scenes/S3';
+import { S4 } from './scenes/S4';
+import { S5 } from './scenes/S5';
+import { S6 } from './scenes/S6';
+import { S7 } from './scenes/S7';
+import { S8 } from './scenes/S8';
+
+// 分镜时长（帧, 30fps）— 与 brief 时间轴一一对应
+export const SEG: Array<{ id: string; from: number; duration: number }> = [
+  { id: 'S1', from: 0, duration: 180 }, // 0-6s
+  { id: 'S2', from: 180, duration: 300 }, // 6-16s
+  { id: 'S3', from: 480, duration: 360 }, // 16-28s
+  { id: 'S4', from: 840, duration: 360 }, // 28-40s
+  { id: 'S5', from: 1200, duration: 420 }, // 40-54s
+  { id: 'S6', from: 1620, duration: 360 }, // 54-66s
+  { id: 'S7', from: 1980, duration: 300 }, // 66-76s
+  { id: 'S8', from: 2280, duration: 120 }, // 76-80s
+];
+
+export const FishEcosystem: React.FC = () => {
+  return (
+    <AbsoluteFill
+      style={{
+        backgroundColor: BG,
+        fontFamily: FONT,
+        color: '#F5F8FF',
+      }}
+    >
+      <Sequence from={SEG[0].from} durationInFrames={SEG[0].duration}>
+        <S1 />
+      </Sequence>
+      <Sequence from={SEG[1].from} durationInFrames={SEG[1].duration}>
+        <S2 />
+      </Sequence>
+      <Sequence from={SEG[2].from} durationInFrames={SEG[2].duration}>
+        <S3 />
+      </Sequence>
+      <Sequence from={SEG[3].from} durationInFrames={SEG[3].duration}>
+        <S4 />
+      </Sequence>
+      <Sequence from={SEG[4].from} durationInFrames={SEG[4].duration}>
+        <S5 />
+      </Sequence>
+      <Sequence from={SEG[5].from} durationInFrames={SEG[5].duration}>
+        <S6 />
+      </Sequence>
+      <Sequence from={SEG[6].from} durationInFrames={SEG[6].duration}>
+        <S7 />
+      </Sequence>
+      <Sequence from={SEG[7].from} durationInFrames={SEG[7].duration}>
+        <S8 />
+      </Sequence>
+    </AbsoluteFill>
+  );
+};

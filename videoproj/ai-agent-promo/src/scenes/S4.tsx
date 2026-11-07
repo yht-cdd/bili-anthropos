@@ -1,1 +1,68 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IGVudGVyLCBwcm9nLCB0eXBlZCB9IGZyb20gJy4uL2FuaW0nOwppbXBvcnQgeyBGT05UX1NBTlMsIFNVQl9TQUZFX0JPVFRPTSwgVEVYVCwgVFlQRV9DUFMgfSBmcm9tICcuLi90aGVtZSc7CmltcG9ydCB7IEVycm9yQmxvY2sgfSBmcm9tICcuL0Vycm9yQmxvY2snOwoKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQovLyBTNCDlm57liLDnv7vovabvvIjlhajlsYDluKcgODQw4oCTOTU5ID0g5pys5ZywIDDigJMxMTnvvIwyOC4wc+KAkzMyLjBz77yJwrcgYnJpZWYgdjIuMSDCp+WbmyBTNAovLyAw4oCTNjAgICAg77yI5YWo5bGAIDg0MOKAkzkwMO+8ieWQjOacuuS9jemHjeeOsCBTMSDnuqIgRVJST1Ig4oCU4oCUIOWFseeUqCBFcnJvckJsb2NrIOe7hOS7tu+8jAovLyAgICAgICAgIOaehOWbvuS4jiBTMSDluKcgNjDigJM5MCDpgJDlg4/ntKDlkIzmupDvvIjop4LkvJforqTlh7rjgIzlsLHmmK/lvIDlpLTpgqPkuKrjgI3vvInvvJsKLy8gICAgICAgICDlupXpg6jlrZfluZXjgIznrKwgNCDmrKHph43or5XvvIzov5jmmK/lpLHotKXjgILjgI3vvIjmiZPlrZfmnLogMzIg5a2XL3PvvIzmnKzlnLAgOCDotbfvvIkKLy8gNjDigJM5MCAgIO+8iOWFqOWxgCA5MDDigJM5MzDvvInljovmmpfoh7MgMTUl77yI6buR572pIDAuODXvvIw2IOW4p++8iSsg5oql6ZSZ5Z2X5Y+N6Imy6auY5LquCi8vICAgICAgICAg77yI55m95bqV6buR5a2X77yMNiDluKfnv7vovazvvIkKLy8gOTDigJMxMTkgIO+8iOWFqOWxgCA5MzDigJM5NTnvvInpn7PpopHlhajlnLrpnZnpu5ggMC4zNXPvvIhiZWQg57y65Y+jIDMxLjDigJMzMS4zNXPvvIzop4EgYXVkaW8uanNvbu+8ie+8mwovLyAgICAgICAgIOeUu+mdoui/keWFqOm7ke+8jOS4gOihjOWwj+Wtl+OAjOWug+W8gOWni+ivu+aKpemUmeOAguOAjea3oeWFpe+8iOacrOWcsCA4OCDotbcgMTIg5bin77yMCi8vICAgICAgICAg5L+d6K+B6aqM5pS25oq95bin54K5IDMxLjBzPeacrOWcsCA5MCDkuIrjgIzov5Hlhajpu5Er5Y2V6KGM5bCP5a2X44CN5bey5oiQ56uL77yJCi8vIOWtl+W5leWcqOacrOWcsCA2MCDotbcgOCDluKfpgIDlnLog4oCU4oCUIDMxLjBzIOW4p+S4iuWPquWFgeiuuOmCo+S4gOihjOWwj+Wtl+OAggovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CmNvbnN0IFNVQiA9ICfnrKwgNCDmrKHph43or5XvvIzov5jmmK/lpLHotKXjgIInOwpjb25zdCBXSElTUEVSID0gJ+Wug+W8gOWni+ivu+aKpemUmeOAgic7CgpleHBvcnQgY29uc3QgUzQ6IFJlYWN0LkZDID0gKCkgPT4gewogIGNvbnN0IGZyYW1lID0gdXNlQ3VycmVudEZyYW1lKCk7CgogIC8vIEVSUk9SIOmHjeeOsO+8mnNjYWxlIDYg5bin5YiwIDEuMDYg5ZCOIGhvbGTvvIjlkIwgUzHvvInvvIzlupXlhYnkuIDmrKHlrozmlbTlkbzlkLjvvIg2MCDluKfmraPlvKbljZXls7DvvIkKICBjb25zdCBlcnJTY2FsZSA9IDEgKyAwLjA2ICogcHJvZyhmcmFtZSwgMCwgNik7CiAgY29uc3QgZ2xvdyA9IGZyYW1lIDwgNjAgPyBNYXRoLnNpbihNYXRoLlBJICogKGZyYW1lIC8gNjApKSA6IDAuMzU7CgogIC8vIOWPjeiJsuaute+8muWOi+aalyA2IOW4pyDihpIg55m95bqV6buR5a2X5YaNIDYg5binCiAgY29uc3QgZGltID0gcHJvZyhmcmFtZSwgNjAsIDYpICogMC44NTsgLy8g5Y6L5pqX6IezIDE1JQogIGNvbnN0IGludmVydCA9IHByb2coZnJhbWUsIDY2LCA2KTsKCiAgLy8g5pS25bC+77ya5oql6ZSZ5bGC5reh5Ye677yIODbigJM5MiDlhbEgNiDluKfvvIwzMS4wcz3mnKzlnLAgOTAg5pe25bey6L+R5YWo6buR77yJ77yM5Y+q55WZ5bCP5a2XCiAgY29uc3QgYmxvY2tPdXQgPSAxIC0gcHJvZyhmcmFtZSwgODYsIDYpOwogIGNvbnN0IHN1Yk91dCA9IDEgLSBwcm9nKGZyYW1lLCA2MCwgOCk7CgogIGNvbnN0IG5DaGFycyA9IHR5cGVkKGZyYW1lLCA4LCBTVUIubGVuZ3RoLCBUWVBFX0NQUyk7CgogIHJldHVybiAoCiAgICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGJhY2tncm91bmRDb2xvcjogJyMwMDAnLCBmb250RmFtaWx5OiBGT05UX1NBTlMgfX0+CiAgICAgIDxFcnJvckJsb2NrIHNjYWxlPXtlcnJTY2FsZX0gZ2xvdz17Z2xvd30gaW52ZXJ0PXtpbnZlcnR9IG9wYWNpdHk9e2Jsb2NrT3V0fSAvPgoKICAgICAgey8qIOW6lemDqOWtl+W5le+8iOacrOWcsCA44oCTNjjvvIw2MCDotbfpgIDlnLrvvIwzMS4wcyDluKfkuI3mrovnlZnvvIkgKi99CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICBsZWZ0OiAwLAogICAgICAgICAgcmlnaHQ6IDAsCiAgICAgICAgICBib3R0b206IFNVQl9TQUZFX0JPVFRPTSwKICAgICAgICAgIHRleHRBbGlnbjogJ2NlbnRlcicsCiAgICAgICAgICBmb250U2l6ZTogNTYsCiAgICAgICAgICBmb250V2VpZ2h0OiA3MDAsCiAgICAgICAgICBjb2xvcjogVEVYVCwKICAgICAgICAgIG9wYWNpdHk6IHN1Yk91dCwKICAgICAgICB9fQogICAgICA+CiAgICAgICAge1NVQi5zbGljZSgwLCBuQ2hhcnMpfQogICAgICA8L2Rpdj4KCiAgICAgIHsvKiDpnZnpu5jlpITnmoTlsI/lrZfvvIjmnKzlnLAgODYg6LW3IDgg5bin5reh5YWl77ybMzEuMHM95pys5ZywIDkwIOaXtuW3sua4heaZsOWPr+ivu++8iSAqL30KICAgICAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBqdXN0aWZ5Q29udGVudDogJ2NlbnRlcicsIGFsaWduSXRlbXM6ICdjZW50ZXInIH19PgogICAgICAgIDxkaXYgc3R5bGU9e3sgLi4uZW50ZXIoZnJhbWUsIDg2LCA4LCAxNiksIGZvbnRTaXplOiAzNiwgY29sb3I6IFRFWFQgfX0+CiAgICAgICAgICB7V0hJU1BFUn0KICAgICAgICA8L2Rpdj4KICAgICAgPC9BYnNvbHV0ZUZpbGw+CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9Owo=
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { enter, prog, typed } from '../anim';
+import { FONT_SANS, SUB_SAFE_BOTTOM, TEXT, TYPE_CPS } from '../theme';
+import { ErrorBlock } from './ErrorBlock';
+
+// ============================================================================
+// S4 回到翻车（全局帧 840–959 = 本地 0–119，28.0s–32.0s）· brief v2.1 §四 S4
+// 0–60    （全局 840–900）同机位重现 S1 红 ERROR —— 共用 ErrorBlock 组件，
+//         构图与 S1 帧 60–90 逐像素同源（观众认出「就是开头那个」）；
+//         底部字幕「第 4 次重试，还是失败。」（打字机 32 字/s，本地 8 起）
+// 60–90   （全局 900–930）压暗至 15%（黑罩 0.85，6 帧）+ 报错块反色高亮
+//         （白底黑字，6 帧翻转）
+// 90–119  （全局 930–959）音频全场静默 0.35s（bed 缺口 31.0–31.35s，见 audio.json）；
+//         画面近全黑，一行小字「它开始读报错。」淡入（本地 88 起 12 帧，
+//         保证验收抽帧点 31.0s=本地 90 上「近全黑+单行小字」已成立）
+// 字幕在本地 60 起 8 帧退场 —— 31.0s 帧上只允许那一行小字。
+// ============================================================================
+const SUB = '第 4 次重试，还是失败。';
+const WHISPER = '它开始读报错。';
+
+export const S4: React.FC = () => {
+  const frame = useCurrentFrame();
+
+  // ERROR 重现：scale 6 帧到 1.06 后 hold（同 S1），底光一次完整呼吸（60 帧正弦单峰）
+  const errScale = 1 + 0.06 * prog(frame, 0, 6);
+  const glow = frame < 60 ? Math.sin(Math.PI * (frame / 60)) : 0.35;
+
+  // 反色段：压暗 6 帧 → 白底黑字再 6 帧
+  const dim = prog(frame, 60, 6) * 0.85; // 压暗至 15%
+  const invert = prog(frame, 66, 6);
+
+  // 收尾：报错层淡出（86–92 共 6 帧，31.0s=本地 90 时已近全黑），只留小字
+  const blockOut = 1 - prog(frame, 86, 6);
+  const subOut = 1 - prog(frame, 60, 8);
+
+  const nChars = typed(frame, 8, SUB.length, TYPE_CPS);
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: '#000', fontFamily: FONT_SANS }}>
+      <ErrorBlock scale={errScale} glow={glow} invert={invert} opacity={blockOut} />
+
+      {/* 底部字幕（本地 8–68，60 起退场，31.0s 帧不残留） */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          bottom: SUB_SAFE_BOTTOM,
+          textAlign: 'center',
+          fontSize: 56,
+          fontWeight: 700,
+          color: TEXT,
+          opacity: subOut,
+        }}
+      >
+        {SUB.slice(0, nChars)}
+      </div>
+
+      {/* 静默处的小字（本地 86 起 8 帧淡入；31.0s=本地 90 时已清晰可读） */}
+      <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+        <div style={{ ...enter(frame, 86, 8, 16), fontSize: 36, color: TEXT }}>
+          {WHISPER}
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};

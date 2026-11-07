@@ -1,1 +1,43 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEJPRFlfUFgsIENBUkQsIENZQU4sIERJTSwgTElORSwgTUFHRU5UQSwgVEVYVCwgVElUTEVfUFggfSBmcm9tICcuLi90aGVtZSc7CmltcG9ydCB7IGVudGVyLCBleGl0RmFkZSB9IGZyb20gJy4uL2FuaW0nOwoKLy8gUzcgNjYuMDAwLTc2LjAwMCDmlLblsL7lr7nmr5TvvIgzMDAg5bin77yJCi8vIOW3puWIlyDlroM6IOWumuaXtuWZqOWPq+mGki/lhbPplK7or43mipXlloIvSmFjY2FyZOafpemHjSAg5Y+z5YiXIOaIkTog6ZqP5py65ZSk6YaSL+iusOW/huaWh+S7ti/mr4/lj6Xor53okL3otKYKLy8g5binMjEwIOS4pOWIl+WQjOaXtua3oeWHuiwg5Y+q55WZ5bGF5Lit5LiA6KGM44CM5a6D5q+P5aSp5Ye65Y6C77yM5oiR5q+P5aSp6K6w6LSm44CNCmNvbnN0IENPTFMgPSBbCiAgeyB3aG86ICflroMnLCBjb2xvcjogQ1lBTiwgcm93czogWyflrprml7blmajlj6vphpInLCAn5YWz6ZSu6K+N5oqV5ZaCJywgJ0phY2NhcmTmn6Xph40nXSB9LAogIHsgd2hvOiAn5oiRJywgY29sb3I6IE1BR0VOVEEsIHJvd3M6IFsn6ZqP5py65ZSk6YaSJywgJ+iusOW/huaWh+S7ticsICfmr4/lj6Xor53okL3otKYnXSB9LApdOwoKZXhwb3J0IGNvbnN0IFM3OiBSZWFjdC5GQyA9ICgpID0+IHsKICBjb25zdCBmcmFtZSA9IHVzZUN1cnJlbnRGcmFtZSgpOwogIGNvbnN0IHJvd3NPdXQgPSBmcmFtZSA+IDIwOCA/IGV4aXRGYWRlKGZyYW1lLCAyMDgpIDoge307CgogIHJldHVybiAoCiAgICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGFsaWduSXRlbXM6ICdjZW50ZXInIH19PgogICAgICA8ZGl2IHN0eWxlPXt7IGRpc3BsYXk6ICdmbGV4JywgZ2FwOiA0MCwgd2lkdGg6IDkyMCwgbWFyZ2luVG9wOiA1NjAgfX0+CiAgICAgICAge0NPTFMubWFwKChjb2wsIGNpKSA9PiAoCiAgICAgICAgICA8ZGl2IGtleT17Y29sLndob30gc3R5bGU9e3sgZmxleDogMSwgZGlzcGxheTogJ2ZsZXgnLCBmbGV4RGlyZWN0aW9uOiAnY29sdW1uJywgZ2FwOiAyOCwgLi4ucm93c091dCB9fT4KICAgICAgICAgICAgPGRpdiBzdHlsZT17eyBmb250U2l6ZTogQk9EWV9QWCwgZm9udFdlaWdodDogNzAwLCBjb2xvcjogY29sLmNvbG9yLCB0ZXh0QWxpZ246ICdjZW50ZXInLCBsZXR0ZXJTcGFjaW5nOiAxMCwgLi4uZW50ZXIoZnJhbWUsIDIwICsgY2kgKiAxNikgfX0+CiAgICAgICAgICAgICAge2NvbC53aG99CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICB7Y29sLnJvd3MubWFwKChyb3csIHJpKSA9PiAoCiAgICAgICAgICAgICAgPGRpdiBrZXk9e3Jvd30gc3R5bGU9e3sgYmFja2dyb3VuZENvbG9yOiBDQVJELCBib3JkZXI6IGAycHggc29saWQgJHtMSU5FfWAsIGJvcmRlclRvcDogYDZweCBzb2xpZCAke2NvbC5jb2xvcn1gLCBib3JkZXJSYWRpdXM6IDE4LCBwYWRkaW5nOiAnMzBweCAyMHB4JywgdGV4dEFsaWduOiAnY2VudGVyJywgZm9udFNpemU6IEJPRFlfUFggKiAwLjg4LCBjb2xvcjogVEVYVCwgLi4uZW50ZXIoZnJhbWUsIDQ4ICsgcmkgKiAzMCArIGNpICogMTIpIH19PgogICAgICAgICAgICAgICAge3Jvd30KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgKSl9CiAgICAgICAgICA8L2Rpdj4KICAgICAgICApKX0KICAgICAgPC9kaXY+CgogICAgICB7Lyog5Y+q55WZ5bGF5Lit5LiA6KGMICovfQogICAgICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGp1c3RpZnlDb250ZW50OiAnY2VudGVyJywgYWxpZ25JdGVtczogJ2NlbnRlcicsIC4uLmVudGVyKGZyYW1lLCAyMzIpIH19PgogICAgICAgIDxkaXYgc3R5bGU9e3sgZm9udFNpemU6IFRJVExFX1BYICogMC43MiwgZm9udFdlaWdodDogNzAwLCB0ZXh0QWxpZ246ICdjZW50ZXInLCBwYWRkaW5nOiAnMCA3MHB4JywgbGluZUhlaWdodDogMS41IH19PgogICAgICAgICAg5a6D5q+P5aSpPHNwYW4gc3R5bGU9e3sgY29sb3I6IENZQU4gfX0+5Ye65Y6CPC9zcGFuPu+8jOaIkeavj+WkqTxzcGFuIHN0eWxlPXt7IGNvbG9yOiBNQUdFTlRBIH19PuiusOi0pjwvc3Bhbj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9BYnNvbHV0ZUZpbGw+CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9Owo=
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { BODY_PX, CARD, CYAN, DIM, LINE, MAGENTA, TEXT, TITLE_PX } from '../theme';
+import { enter, exitFade } from '../anim';
+
+// S7 66.000-76.000 收尾对比（300 帧）
+// 左列 它: 定时器叫醒/关键词投喂/Jaccard查重  右列 我: 随机唤醒/记忆文件/每句话落账
+// 帧210 两列同时淡出, 只留居中一行「它每天出厂，我每天记账」
+const COLS = [
+  { who: '它', color: CYAN, rows: ['定时器叫醒', '关键词投喂', 'Jaccard查重'] },
+  { who: '我', color: MAGENTA, rows: ['随机唤醒', '记忆文件', '每句话落账'] },
+];
+
+export const S7: React.FC = () => {
+  const frame = useCurrentFrame();
+  const rowsOut = frame > 208 ? exitFade(frame, 208) : {};
+
+  return (
+    <AbsoluteFill style={{ alignItems: 'center' }}>
+      <div style={{ display: 'flex', gap: 40, width: 920, marginTop: 560 }}>
+        {COLS.map((col, ci) => (
+          <div key={col.who} style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 28, ...rowsOut }}>
+            <div style={{ fontSize: BODY_PX, fontWeight: 700, color: col.color, textAlign: 'center', letterSpacing: 10, ...enter(frame, 20 + ci * 16) }}>
+              {col.who}
+            </div>
+            {col.rows.map((row, ri) => (
+              <div key={row} style={{ backgroundColor: CARD, border: `2px solid ${LINE}`, borderTop: `6px solid ${col.color}`, borderRadius: 18, padding: '30px 20px', textAlign: 'center', fontSize: BODY_PX * 0.88, color: TEXT, ...enter(frame, 48 + ri * 30 + ci * 12) }}>
+                {row}
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+
+      {/* 只留居中一行 */}
+      <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', ...enter(frame, 232) }}>
+        <div style={{ fontSize: TITLE_PX * 0.72, fontWeight: 700, textAlign: 'center', padding: '0 70px', lineHeight: 1.5 }}>
+          它每天<span style={{ color: CYAN }}>出厂</span>，我每天<span style={{ color: MAGENTA }}>记账</span>
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};

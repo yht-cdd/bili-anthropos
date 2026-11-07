@@ -1,1 +1,325 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHR5cGUgeyBDU1NQcm9wZXJ0aWVzIH0gZnJvbSAncmVhY3QnOwppbXBvcnQgeyBBYnNvbHV0ZUZpbGwsIHVzZUN1cnJlbnRGcmFtZSB9IGZyb20gJ3JlbW90aW9uJzsKaW1wb3J0IHsgYmxpbmssIGxlcnBGLCBwcm9nLCB0eXBlZCB9IGZyb20gJy4uL2FuaW0nOwppbXBvcnQgewogIENPUkFMLAogIEVSUk9SLAogIEZPTlRfTU9OTywKICBGT05UX1NBTlMsCiAgSEFSRENVVCwKICBMSU1FLAogIFNVQl9TQUZFX0JPVFRPTSwKICBURVhULAogIFRFUk1fRkcsCiAgVFNfR1JBWSwKICBUU19QWCwKICBUU19YLAogIFRTX1ksCn0gZnJvbSAnLi4vdGhlbWUnOwppbXBvcnQgeyBUZXJtaW5hbCB9IGZyb20gJy4vVGVybWluYWwnOwoKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQovLyBTNSDniKzotbfmnaXvvIjlhajlsYDluKcgOTYw4oCTMTE5OSA9IOacrOWcsCAw4oCTMjM577yMMzIuMHPigJM0MC4wc++8icK3IGJyaWVmIHYyLjEgwqflm5sgUzUKLy8g5Zub6L+e56Gs5YiH77yINCDluKfliIfngrnvvInvvIzmr4/mi40gNjAg5bin77yaCi8vICAgQjEgMOKAkzU5ICAgIOaXpeW/l+a7muWKqOWBnOWcqOesrCA0NyDooYzvvIzooYzlhoUgLS1jb25jdXJyZW5jeSA4IOmrmOS6rgovLyAgIEIyIDYw4oCTMTE5ICDlrZfluZXjgIzkuI3mmK/nvZHnu5znmoTpl67popjjgILmmK/lj4LmlbDlhpnplJnkuobjgILjgI3vvIjjgIzlj4LmlbDjgI3nj4rnkZroibLvvInvvIzml6Xlv5fljovmmpfnlZnlrZgKLy8gICBCMyAxMjDigJMxNzkg5Y2V6KGMIGRpZmYg5L+u5aSN77yI57qi4oaS57u/77yJKyBnaXQgcHVzaCDlm57ovaYKLy8gICBCNCAxODDigJMyMzkg4pyTIHJ1biA0MTIwODg1OTQ4NCDpnZLmn6DpgJrov4fvvJvop5LmoIfml7bpl7TmiLPov57ot7MgMDM6MTTihpIwMzoyMeKGkjAzOjQw77yI5q+P6LezIDgg5bin77yJCi8vICAg77yIc2Z4IHBhZCDlupXluorlm57ljYcgQCDlhajlsYAgMTE0MCA9IDM4LjBz77yMUjMg5bey6JC9IGF1ZGlvLmpzb27vvIkKLy8g5Y+Z5LqL6L+e57ut5oCn77ya5pel5b+X6YeMIHJldHJ5IDEvNOKGkjMvNCDlr7nkuIogUzEg55qEIGZhaWxlZCBhZnRlciAzIHJldHJpZXPvvIwKLy8gICDnrKwgNDcg6KGM55qE56ysIDQg5qyh6YeN6K+V5a+55LiKIFM0IOWtl+W5leOAjOesrCA0IOasoemHjeivleOAjeOAggovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CmNvbnN0IFJFRF9USU5UID0gJ3JnYmEoMjI5LDcyLDc3LDAuMTQpJzsKY29uc3QgR1JFRU5fVElOVCA9ICdyZ2JhKDYzLDE4NSw4MCwwLjE0KSc7CgovLyBCMe+8mua4suafk+aXpeW/l++8iOesrCAzN+KAkzQ3IOihjO+8jOacq+ihjOWNs+WBnOeVmeeCue+8my0tY29uY3VycmVuY3kgOCDmmK/lhYPlh7bvvIkKY29uc3QgR1VUVEVSMCA9IDM3Owpjb25zdCBMT0c6IFJlYWRvbmx5QXJyYXk8cmVhZG9ubHkgW3N0cmluZywgc3RyaW5nXT4gPSBbCiAgWydvaycsICdbcmVuZGVyXSAyODgvMTgwMCBmcmFtZXMgwrcgMDM6MTEnXSwKICBbJ29rJywgJ1tyZW5kZXJdIDU3NC8xODAwIGZyYW1lcyDCtyAwMzoxMiddLAogIFsnbmV0JywgJ1tuZXQgICBdIHNvY2tldCBoYW5nIHVwIChyZXRyeSAxLzQpJ10sCiAgWydvaycsICdbcmVuZGVyXSByZXRyeWluZyBzY2VuZSBTNCDigKYnXSwKICBbJ25ldCcsICdbbmV0ICAgXSBzb2NrZXQgaGFuZyB1cCAocmV0cnkgMi80KSddLAogIFsnb2snLCAnW3JlbmRlcl0gNTc0LzE4MDAgZnJhbWVzIMK3IDAzOjEzJ10sCiAgWyd3YXJuJywgJ1t3YXJuICBdIHdvcmtlciAjMiBleGl0ZWQgY29kZT0xMzcnXSwKICBbJ3dhcm4nLCAnW3dhcm4gIF0gY2hyb21pdW06IHBhZ2UgY3Jhc2gnXSwKICBbJ2VycicsICdbcmV0cnkgXSB0YXNrIGZhaWxlZCBhZnRlciAzIHJldHJpZXMnXSwKICBbJ2RpbScsICdbcmV0cnkgXSB0cnlpbmcgb25jZSBtb3Jl4oCmJ10sCiAgWydoaXQnLCAnW3JldHJ5IF0gJCByZW1vdGlvbiByZW5kZXIgb3V0L3ZpZGVvLm1wNCAtLWNvbmN1cnJlbmN5IDgnXSwKXTsKY29uc3QgSExfQVQgPSAyMDsgLy8g56ysIDQ3IOihjOmrmOS6ru+8iOa7muWKqOWBnOS9j+WQjiA2IOW4p++8iQpjb25zdCBTVUIyID0gWyfkuI3mmK/nvZHnu5znmoTpl67popjjgIInLCAn5piv5Y+C5pWw5YaZ6ZSZ5LqG44CCJ107CmNvbnN0IFRTX1NFUSA9IFsnMDM6MTQnLCAnMDM6MjEnLCAnMDM6NDAnXTsgLy8gQjQg6KeS5qCH6L+e6LezCgovLyBCMS9CMiDlhbHnlKjvvJrml6Xlv5fnqpflj6PjgIJkaW0+MCDml7bljovmmpfnlZnlrZjvvIhCMiDog4zmma/vvInvvJtzY3JvbGw9dHJ1ZSDml7bliY0gMTgg5bin5rua5Yiw56ysIDQ3IOihjOWBnOS9jwpjb25zdCBMb2dQYW5lbDogUmVhY3QuRkM8eyBmcmFtZTogbnVtYmVyOyBkaW06IG51bWJlciB9PiA9ICh7IGZyYW1lLCBkaW0gfSkgPT4gewogIGNvbnN0IHNjcm9sbGVkID0gZGltID09PSAwOwogIGNvbnN0IGxpZnQgPSBzY3JvbGxlZCA/ICgxIC0gbGVycEYoZnJhbWUsIFswLCAxOF0sIFswLCAxXSkpICogMjQwIDogMDsgLy8g5LiK5ruaIDI0MHB4IOWQjuWBnAogIHJldHVybiAoCiAgICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGp1c3RpZnlDb250ZW50OiAnY2VudGVyJywgYWxpZ25JdGVtczogJ2NlbnRlcicgfX0+CiAgICAgIDxUZXJtaW5hbD4KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBmb250RmFtaWx5OiBGT05UX01PTk8sCiAgICAgICAgICAgIGZvbnRTaXplOiAzMCwKICAgICAgICAgICAgbGluZUhlaWdodDogJzQ0cHgnLAogICAgICAgICAgICBjb2xvcjogJyNDOUQxRDknLAogICAgICAgICAgICBtaW5IZWlnaHQ6IDUyMCwKICAgICAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWSgkey1saWZ0fXB4KWAsCiAgICAgICAgICB9fQogICAgICAgID4KICAgICAgICAgIHtMT0cubWFwKChba2luZCwgdGV4dF0sIGkpID0+IHsKICAgICAgICAgICAgY29uc3QgYXQgPSAyICsgaSAqIDEuNDsgLy8g5rua5Yqo5pyf6YCQ6KGM6JC95LiL77yI4omIMTYg5bin6JC95a6M77yM6ZqP5ZCO5YGc77yJCiAgICAgICAgICAgIGNvbnN0IHNlZW4gPSBmcmFtZSA+PSBhdDsKICAgICAgICAgICAgY29uc3QgbGluZU5vID0gU3RyaW5nKEdVVFRFUjAgKyBpKS5wYWRTdGFydCgyLCAnICcpOwogICAgICAgICAgICBjb25zdCBpc0hpdCA9IGtpbmQgPT09ICdoaXQnOwogICAgICAgICAgICBjb25zdCBobCA9IGlzSGl0ID8gcHJvZyhmcmFtZSwgSExfQVQsIDYpIDogMDsKICAgICAgICAgICAgY29uc3QgY29sb3IgPQogICAgICAgICAgICAgIGtpbmQgPT09ICdlcnInCiAgICAgICAgICAgICAgICA/IEVSUk9SCiAgICAgICAgICAgICAgICA6IGtpbmQgPT09ICd3YXJuJwogICAgICAgICAgICAgICAgPyBUU19HUkFZCiAgICAgICAgICAgICAgICA6IGtpbmQgPT09ICduZXQnCiAgICAgICAgICAgICAgICA/IEVSUk9SCiAgICAgICAgICAgICAgICA6IGtpbmQgPT09ICdkaW0nCiAgICAgICAgICAgICAgICA/IFRTX0dSQVkKICAgICAgICAgICAgICAgIDogJyNDOUQxRDknOwogICAgICAgICAgICBjb25zdCBzaG93biA9IGlzSGl0ID8gdGV4dC5yZXBsYWNlKCcgLS1jb25jdXJyZW5jeSA4JywgJycpIDogdGV4dDsKICAgICAgICAgICAgcmV0dXJuICgKICAgICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAgICBrZXk9e3RleHR9CiAgICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgICB3aGl0ZVNwYWNlOiAnbm93cmFwJywKICAgICAgICAgICAgICAgICAgb3BhY2l0eTogc2VlbiA/IDEgOiAwLAogICAgICAgICAgICAgICAgICBjb2xvciwKICAgICAgICAgICAgICAgICAgcGFkZGluZ0xlZnQ6IDgsCiAgICAgICAgICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogaGwgPiAwID8gYHJnYmEoMjEyLDI0NCw2MiwkeygwLjE2ICogaGwpLnRvRml4ZWQoMyl9KWAgOiAndHJhbnNwYXJlbnQnLAogICAgICAgICAgICAgICAgICBib3JkZXJMZWZ0OiBobCA+IDAgPyBgNnB4IHNvbGlkIHJnYmEoMjEyLDI0NCw2Miwke2hsLnRvRml4ZWQoMyl9KWAgOiAnNnB4IHNvbGlkIHRyYW5zcGFyZW50JywKICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgPHNwYW4gc3R5bGU9e3sgY29sb3I6IFRTX0dSQVksIG1hcmdpblJpZ2h0OiAxOCB9fT57bGluZU5vfTwvc3Bhbj4KICAgICAgICAgICAgICAgIHtzaG93bn0KICAgICAgICAgICAgICAgIHtpc0hpdCA/ICgKICAgICAgICAgICAgICAgICAgPHNwYW4gc3R5bGU9e3sgY29sb3I6IExJTUUsIGZvbnRXZWlnaHQ6IDcwMCB9fT57JyAtLWNvbmN1cnJlbmN5IDgnfTwvc3Bhbj4KICAgICAgICAgICAgICAgICkgOiBudWxsfQogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICApOwogICAgICAgICAgfSl9CiAgICAgICAgPC9kaXY+CiAgICAgIDwvVGVybWluYWw+CiAgICAgIHtzY3JvbGxlZCAmJiBmcmFtZSA+PSBITF9BVCA/ICgKICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgICAgbGVmdDogVFNfWCwKICAgICAgICAgICAgdG9wOiBUU19ZLAogICAgICAgICAgICBmb250RmFtaWx5OiBGT05UX01PTk8sCiAgICAgICAgICAgIGZvbnRTaXplOiAzNCwKICAgICAgICAgICAgY29sb3I6IFRTX0dSQVksCiAgICAgICAgICAgIG9wYWNpdHk6IHByb2coZnJhbWUsIEhMX0FULCA2KSwKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAgeycvLyDnrKwgNDcg6KGMJ30KICAgICAgICA8L2Rpdj4KICAgICAgKSA6IG51bGx9CiAgICAgIHtkaW0gPiAwID8gKAogICAgICAgIDxkaXYgc3R5bGU9e3sgcG9zaXRpb246ICdhYnNvbHV0ZScsIGluc2V0OiAwLCBiYWNrZ3JvdW5kQ29sb3I6IGByZ2JhKDAsMCwwLCR7ZGltfSlgIH19IC8+CiAgICAgICkgOiBudWxsfQogICAgPC9BYnNvbHV0ZUZpbGw+CiAgKTsKfTsKCi8vIEIz77ya5Y2V6KGMIGRpZmYg5L+u5aSNICsgZ2l0IHB1c2gKY29uc3QgUHVzaFBhbmVsOiBSZWFjdC5GQzx7IGZyYW1lOiBudW1iZXIgfT4gPSAoeyBmcmFtZSB9KSA9PiB7CiAgY29uc3QgbCA9IGZyYW1lIC0gMTIwOyAvLyDmnKzmi43mnKzlnLDluKcKICBjb25zdCBwdXNoQ21kID0gJ2dpdCBwdXNoIG9yaWdpbiBtYWluJzsKICBjb25zdCBuID0gdHlwZWQoZnJhbWUsIDE0OCwgcHVzaENtZC5sZW5ndGgpOwogIGNvbnN0IGVudGVyUHJlc3NlZCA9IGZyYW1lID49IDE0OCArIE1hdGguY2VpbCgocHVzaENtZC5sZW5ndGggKiAzMCkgLyAzMikgKyA2OwogIHJldHVybiAoCiAgICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGp1c3RpZnlDb250ZW50OiAnY2VudGVyJywgYWxpZ25JdGVtczogJ2NlbnRlcicgfX0+CiAgICAgIDxUZXJtaW5hbD4KICAgICAgICA8ZGl2IHN0eWxlPXt7IGZvbnRGYW1pbHk6IEZPTlRfTU9OTywgZm9udFNpemU6IDMyLCBsaW5lSGVpZ2h0OiAnNTJweCcsIGNvbG9yOiAnI0M5RDFEOScgfX0+CiAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGNvbG9yOiBUU19HUkFZIH19PgogICAgICAgICAgICB7J3JlbW90aW9uLnJlbmRlci5zaCd9CiAgICAgICAgICAgIDxzcGFuIHN0eWxlPXt7IGNvbG9yOiBFUlJPUiB9fT57JyDiiJIxJ308L3NwYW4+CiAgICAgICAgICAgIDxzcGFuIHN0eWxlPXt7IGNvbG9yOiBURVJNX0ZHIH19PnsnICsxJ308L3NwYW4+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIHtsID49IDYgPyAoCiAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgY29sb3I6IEVSUk9SLAogICAgICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiBSRURfVElOVCwKICAgICAgICAgICAgICAgIGZvbnRXZWlnaHQ6IDcwMCwKICAgICAgICAgICAgICAgIHBhZGRpbmdMZWZ0OiAxMCwKICAgICAgICAgICAgICAgIG9wYWNpdHk6IHByb2coZnJhbWUsIDEyNiwgNCksCiAgICAgICAgICAgICAgICB0cmFuc2Zvcm06IGB0cmFuc2xhdGVYKCR7KDEgLSBwcm9nKGZyYW1lLCAxMjYsIDQpKSAqIDIyfXB4KWAsCiAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIHsnLSAtLWNvbmN1cnJlbmN5IDgnfQogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICkgOiBudWxsfQogICAgICAgICAge2wgPj0gMjIgPyAoCiAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgY29sb3I6IFRFUk1fRkcsCiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6IEdSRUVOX1RJTlQsCiAgICAgICAgICAgICAgICBmb250V2VpZ2h0OiA3MDAsCiAgICAgICAgICAgICAgICBwYWRkaW5nTGVmdDogMTAsCiAgICAgICAgICAgICAgICBvcGFjaXR5OiBwcm9nKGZyYW1lLCAxNDIsIDQpLAogICAgICAgICAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWSgkeygxIC0gcHJvZyhmcmFtZSwgMTQyLCA0KSkgKiAxMn1weClgLAogICAgICAgICAgICAgIH19CiAgICAgICAgICAgID4KICAgICAgICAgICAgICB7JysgLS1jb25jdXJyZW5jeSA0J30KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICApIDogbnVsbH0KICAgICAgICAgIHtsID49IDI4ID8gKAogICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IG1hcmdpblRvcDogOCB9fT4KICAgICAgICAgICAgICA8c3BhbiBzdHlsZT17eyBjb2xvcjogVEVSTV9GRyB9fT57J2FudGhyb3Bvc0Bsb2NhbCAkICd9PC9zcGFuPgogICAgICAgICAgICAgIDxzcGFuIHN0eWxlPXt7IGNvbG9yOiBURVhUIH19PntwdXNoQ21kLnNsaWNlKDAsIG4pfTwvc3Bhbj4KICAgICAgICAgICAgICA8c3BhbgogICAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgICAgZGlzcGxheTogJ2lubGluZS1ibG9jaycsCiAgICAgICAgICAgICAgICAgIHdpZHRoOiAxNCwKICAgICAgICAgICAgICAgICAgaGVpZ2h0OiAzMCwKICAgICAgICAgICAgICAgICAgbWFyZ2luTGVmdDogNiwKICAgICAgICAgICAgICAgICAgdmVydGljYWxBbGlnbjogJ21pZGRsZScsCiAgICAgICAgICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogKGVudGVyUHJlc3NlZCA/IGJsaW5rKGZyYW1lLCAxNjgsIDIpIDogMSkgPyBURVhUIDogJ3RyYW5zcGFyZW50JywKICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICApIDogbnVsbH0KICAgICAgICAgIHtlbnRlclByZXNzZWQgPyAoCiAgICAgICAgICAgIDxkaXYgc3R5bGU9e3sgY29sb3I6IFRTX0dSQVksIG9wYWNpdHk6IHByb2coZnJhbWUsIDE3NCwgNCkgfX0+CiAgICAgICAgICAgICAgeydFbnVtZXJhdGluZyBvYmplY3RzOiA3LCBkb25lLid9CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgKSA6IG51bGx9CiAgICAgICAgPC9kaXY+CiAgICAgIDwvVGVybWluYWw+CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9OwoKLy8gQjTvvJrinJMgcnVuIDQxMjA4ODU5NDg0IOeblueroCArIOinkuagh+aXtumXtOaIs+i/nui3s++8iOavj+i3syA4IOW4p++8iQpjb25zdCBSdW5TdGFtcDogUmVhY3QuRkM8eyBmcmFtZTogbnVtYmVyIH0+ID0gKHsgZnJhbWUgfSkgPT4gewogIGNvbnN0IHAgPSBwcm9nKGZyYW1lLCAxODAsIDYpOwogIGNvbnN0IGp1bXAgPSAoaTogbnVtYmVyKTogbnVtYmVyID0+IHsKICAgIGNvbnN0IGF0ID0gMTkyICsgaSAqIDEyOyAvLyAwMzoyMUAxOTLjgIEwMzo0MEAyMDTvvIg4IOW4p+i/h+a4oSArIDQg5bin5YGc55WZ5YaN6Lez77yJCiAgICBjb25zdCBmaW4gPSBwcm9nKGZyYW1lLCBhdCwgOCk7CiAgICBjb25zdCBmb3V0ID0gaSA9PT0gMiA/IDEgOiAxIC0gcHJvZyhmcmFtZSwgYXQgKyAxMiwgOCk7CiAgICByZXR1cm4gTWF0aC5taW4oZmluLCBmb3V0KTsKICB9OwogIHJldHVybiAoCiAgICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGp1c3RpZnlDb250ZW50OiAnY2VudGVyJywgYWxpZ25JdGVtczogJ2NlbnRlcicgfX0+CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgZm9udEZhbWlseTogRk9OVF9NT05PLAogICAgICAgICAgZm9udFNpemU6IDkyLAogICAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgICAgY29sb3I6IExJTUUsCiAgICAgICAgICB3aGl0ZVNwYWNlOiAnbm93cmFwJywKICAgICAgICAgIG9wYWNpdHk6IE1hdGgubWluKDEsIHAgKiAxLjYpLAogICAgICAgICAgdHJhbnNmb3JtOiBgc2NhbGUoJHsxLjIyIC0gMC4yMiAqIHB9KWAsCiAgICAgICAgICB0ZXh0U2hhZG93OiAnMCAwIDQ4cHggcmdiYSgyMTIsMjQ0LDYyLDAuMjgpJywKICAgICAgICB9fQogICAgICA+CiAgICAgICAgeyfinJMgcnVuIDQxMjA4ODU5NDg0J30KICAgICAgPC9kaXY+CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgbWFyZ2luVG9wOiAyMiwKICAgICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfU0FOUywKICAgICAgICAgIGZvbnRTaXplOiAyOCwKICAgICAgICAgIGNvbG9yOiBUU19HUkFZLAogICAgICAgICAgb3BhY2l0eTogcHJvZyhmcmFtZSwgMTk0LCA4KSwKICAgICAgICB9fQogICAgICA+CiAgICAgICAgeyfnrKwgNSDmrKHvvIzov4fkuobjgIInfQogICAgICA8L2Rpdj4KICAgICAgey8qIOinkuagh+aXtumXtOaIs++8iMKn5LiJ5L2N572u77yJ77yaMDM6MTTihpIwMzoyMeKGkjAzOjQwIOi/nui3syAqL30KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGxlZnQ6IFRTX1gsCiAgICAgICAgICB0b3A6IFRTX1ksCiAgICAgICAgICBmb250RmFtaWx5OiBGT05UX01PTk8sCiAgICAgICAgICBmb250U2l6ZTogVFNfUFgsCiAgICAgICAgICBjb2xvcjogVFNfR1JBWSwKICAgICAgICAgIGhlaWdodDogVFNfUFggKiAxLjQsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIHtUU19TRVEubWFwKCh0cywgaSkgPT4gewogICAgICAgICAgY29uc3QgbyA9IGkgPT09IDAgPyAxIC0gcHJvZyhmcmFtZSwgMTkyLCA4KSA6IGp1bXAoaSk7CiAgICAgICAgICBpZiAobyA8PSAwLjAwNCkgcmV0dXJuIG51bGw7CiAgICAgICAgICByZXR1cm4gKAogICAgICAgICAgICA8c3BhbgogICAgICAgICAgICAgIGtleT17dHN9CiAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgICAgICAgbGVmdDogMCwKICAgICAgICAgICAgICAgIHRvcDogMCwKICAgICAgICAgICAgICAgIG9wYWNpdHk6IG8sCiAgICAgICAgICAgICAgICBjb2xvcjogaSA9PT0gMiA/IExJTUUgOiBUU19HUkFZLAogICAgICAgICAgICAgICAgd2hpdGVTcGFjZTogJ25vd3JhcCcsCiAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIHt0c30KICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgKTsKICAgICAgICB9KX0KICAgICAgPC9kaXY+CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9OwoKZXhwb3J0IGNvbnN0IFM1OiBSZWFjdC5GQyA9ICgpID0+IHsKICBjb25zdCBmcmFtZSA9IHVzZUN1cnJlbnRGcmFtZSgpOwogIGNvbnN0IGJlYXQgPSBNYXRoLmZsb29yKGZyYW1lIC8gNjApOyAvLyAwLzEvMi8zIOWbm+aLjQogIGNvbnN0IGJlYXRJbiA9IHByb2coZnJhbWUsIGJlYXQgKiA2MCwgSEFSRENVVCk7IC8vIDQg5bin56Gs5YiH5YWlCiAgY29uc3Qgc3ViMiA9IGJlYXQgPT09IDEgPyBwcm9nKGZyYW1lLCA2NiwgMTApIDogMDsKCiAgcmV0dXJuICgKICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sgZm9udEZhbWlseTogRk9OVF9TQU5TIH19PgogICAgICB7LyogQjEgLyBCMiDog4zmma/ml6Xlv5fvvJpCMiDljovmmpfnlZnlrZggKi99CiAgICAgIHtmcmFtZSA8IDEyMCA/ICgKICAgICAgICA8ZGl2IHN0eWxlPXt7IG9wYWNpdHk6IGJlYXRJbiB9fSBrZXk9e2Bsb2cke2JlYXR9YH0+CiAgICAgICAgICA8TG9nUGFuZWwgZnJhbWU9e2ZyYW1lfSBkaW09e2JlYXQgPT09IDEgPyAwLjYyIDogMH0gLz4KICAgICAgICA8L2Rpdj4KICAgICAgKSA6IG51bGx9CgogICAgICB7LyogQjLvvJrlrZfluZXjgIzkuI3mmK/nvZHnu5znmoTpl67popjjgILmmK/lj4LmlbDlhpnplJnkuobjgILjgI3vvIjjgIzlj4LmlbDjgI3nj4rnkZroibLvvIkgKi99CiAgICAgIHtiZWF0ID09PSAxID8gKAogICAgICAgIDxkaXYKICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgICBsZWZ0OiAwLAogICAgICAgICAgICByaWdodDogMCwKICAgICAgICAgICAgYm90dG9tOiBTVUJfU0FGRV9CT1RUT00sCiAgICAgICAgICAgIHRleHRBbGlnbjogJ2NlbnRlcicsCiAgICAgICAgICAgIGZvbnRTaXplOiA2MiwKICAgICAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgICAgICBjb2xvcjogVEVYVCwKICAgICAgICAgICAgb3BhY2l0eTogc3ViMiwKICAgICAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWSgkeygxIC0gc3ViMikgKiAzMH1weClgLAogICAgICAgICAgfX0KICAgICAgICA+CiAgICAgICAgICB7U1VCMlswXX0KICAgICAgICAgIHsn5pivJ30KICAgICAgICAgIDxzcGFuIHN0eWxlPXt7IGNvbG9yOiBDT1JBTCB9fT57J+WPguaVsCd9PC9zcGFuPgogICAgICAgICAgeyflhpnplJnkuobjgIInfQogICAgICAgIDwvZGl2PgogICAgICApIDogbnVsbH0KCiAgICAgIHtiZWF0ID09PSAyID8gKAogICAgICAgIDxkaXYgc3R5bGU9e3sgb3BhY2l0eTogYmVhdEluIH19PgogICAgICAgICAgPFB1c2hQYW5lbCBmcmFtZT17ZnJhbWV9IC8+CiAgICAgICAgPC9kaXY+CiAgICAgICkgOiBudWxsfQogICAgICB7YmVhdCA9PT0gMyA/ICgKICAgICAgICA8ZGl2IHN0eWxlPXt7IG9wYWNpdHk6IGJlYXRJbiB9fT4KICAgICAgICAgIDxSdW5TdGFtcCBmcmFtZT17ZnJhbWV9IC8+CiAgICAgICAgPC9kaXY+CiAgICAgICkgOiBudWxsfQogICAgPC9BYnNvbHV0ZUZpbGw+CiAgKTsKfTsK
+import React from 'react';
+import type { CSSProperties } from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { blink, lerpF, prog, typed } from '../anim';
+import {
+  CORAL,
+  ERROR,
+  FONT_MONO,
+  FONT_SANS,
+  HARDCUT,
+  LIME,
+  SUB_SAFE_BOTTOM,
+  TEXT,
+  TERM_FG,
+  TS_GRAY,
+  TS_PX,
+  TS_X,
+  TS_Y,
+} from '../theme';
+import { Terminal } from './Terminal';
+
+// ============================================================================
+// S5 爬起来（全局帧 960–1199 = 本地 0–239，32.0s–40.0s）· brief v2.1 §四 S5
+// 四连硬切（4 帧切点），每拍 60 帧：
+//   B1 0–59    日志滚动停在第 47 行，行内 --concurrency 8 高亮
+//   B2 60–119  字幕「不是网络的问题。是参数写错了。」（「参数」珊瑚色），日志压暗留存
+//   B3 120–179 单行 diff 修复（红→绿）+ git push 回车
+//   B4 180–239 ✓ run 41208859484 青柠通过；角标时间戳连跳 03:14→03:21→03:40（每跳 8 帧）
+//   （sfx pad 底床回升 @ 全局 1140 = 38.0s，R3 已落 audio.json）
+// 叙事连续性：日志里 retry 1/4→3/4 对上 S1 的 failed after 3 retries，
+//   第 47 行的第 4 次重试对上 S4 字幕「第 4 次重试」。
+// ============================================================================
+const RED_TINT = 'rgba(229,72,77,0.14)';
+const GREEN_TINT = 'rgba(63,185,80,0.14)';
+
+// B1：渲染日志（第 37–47 行，末行即停留点；--concurrency 8 是元凶）
+const GUTTER0 = 37;
+const LOG: ReadonlyArray<readonly [string, string]> = [
+  ['ok', '[render] 288/1800 frames · 03:11'],
+  ['ok', '[render] 574/1800 frames · 03:12'],
+  ['net', '[net   ] socket hang up (retry 1/4)'],
+  ['ok', '[render] retrying scene S4 …'],
+  ['net', '[net   ] socket hang up (retry 2/4)'],
+  ['ok', '[render] 574/1800 frames · 03:13'],
+  ['warn', '[warn  ] worker #2 exited code=137'],
+  ['warn', '[warn  ] chromium: page crash'],
+  ['err', '[retry ] task failed after 3 retries'],
+  ['dim', '[retry ] trying once more…'],
+  ['hit', '[retry ] $ remotion render out/video.mp4 --concurrency 8'],
+];
+const HL_AT = 20; // 第 47 行高亮（滚动停住后 6 帧）
+const SUB2 = ['不是网络的问题。', '是参数写错了。'];
+const TS_SEQ = ['03:14', '03:21', '03:40']; // B4 角标连跳
+
+// B1/B2 共用：日志窗口。dim>0 时压暗留存（B2 背景）；scroll=true 时前 18 帧滚到第 47 行停住
+const LogPanel: React.FC<{ frame: number; dim: number }> = ({ frame, dim }) => {
+  const scrolled = dim === 0;
+  const lift = scrolled ? (1 - lerpF(frame, [0, 18], [0, 1])) * 240 : 0; // 上滚 240px 后停
+  return (
+    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <Terminal>
+        <div
+          style={{
+            fontFamily: FONT_MONO,
+            fontSize: 30,
+            lineHeight: '44px',
+            color: '#C9D1D9',
+            minHeight: 520,
+            transform: `translateY(${-lift}px)`,
+          }}
+        >
+          {LOG.map(([kind, text], i) => {
+            const at = 2 + i * 1.4; // 滚动期逐行落下（≈16 帧落完，随后停）
+            const seen = frame >= at;
+            const lineNo = String(GUTTER0 + i).padStart(2, ' ');
+            const isHit = kind === 'hit';
+            const hl = isHit ? prog(frame, HL_AT, 6) : 0;
+            const color =
+              kind === 'err'
+                ? ERROR
+                : kind === 'warn'
+                ? TS_GRAY
+                : kind === 'net'
+                ? ERROR
+                : kind === 'dim'
+                ? TS_GRAY
+                : '#C9D1D9';
+            const shown = isHit ? text.replace(' --concurrency 8', '') : text;
+            return (
+              <div
+                key={text}
+                style={{
+                  whiteSpace: 'nowrap',
+                  opacity: seen ? 1 : 0,
+                  color,
+                  paddingLeft: 8,
+                  backgroundColor: hl > 0 ? `rgba(212,244,62,${(0.16 * hl).toFixed(3)})` : 'transparent',
+                  borderLeft: hl > 0 ? `6px solid rgba(212,244,62,${hl.toFixed(3)})` : '6px solid transparent',
+                }}
+              >
+                <span style={{ color: TS_GRAY, marginRight: 18 }}>{lineNo}</span>
+                {shown}
+                {isHit ? (
+                  <span style={{ color: LIME, fontWeight: 700 }}>{' --concurrency 8'}</span>
+                ) : null}
+              </div>
+            );
+          })}
+        </div>
+      </Terminal>
+      {scrolled && frame >= HL_AT ? (
+        <div
+          style={{
+            position: 'absolute',
+            left: TS_X,
+            top: TS_Y,
+            fontFamily: FONT_MONO,
+            fontSize: 34,
+            color: TS_GRAY,
+            opacity: prog(frame, HL_AT, 6),
+          }}
+        >
+          {'// 第 47 行'}
+        </div>
+      ) : null}
+      {dim > 0 ? (
+        <div style={{ position: 'absolute', inset: 0, backgroundColor: `rgba(0,0,0,${dim})` }} />
+      ) : null}
+    </AbsoluteFill>
+  );
+};
+
+// B3：单行 diff 修复 + git push
+const PushPanel: React.FC<{ frame: number }> = ({ frame }) => {
+  const l = frame - 120; // 本拍本地帧
+  const pushCmd = 'git push origin main';
+  const n = typed(frame, 148, pushCmd.length);
+  const enterPressed = frame >= 148 + Math.ceil((pushCmd.length * 30) / 32) + 6;
+  return (
+    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <Terminal>
+        <div style={{ fontFamily: FONT_MONO, fontSize: 32, lineHeight: '52px', color: '#C9D1D9' }}>
+          <div style={{ color: TS_GRAY }}>
+            {'remotion.render.sh'}
+            <span style={{ color: ERROR }}>{' −1'}</span>
+            <span style={{ color: TERM_FG }}>{' +1'}</span>
+          </div>
+          {l >= 6 ? (
+            <div
+              style={{
+                color: ERROR,
+                backgroundColor: RED_TINT,
+                fontWeight: 700,
+                paddingLeft: 10,
+                opacity: prog(frame, 126, 4),
+                transform: `translateX(${(1 - prog(frame, 126, 4)) * 22}px)`,
+              }}
+            >
+              {'- --concurrency 8'}
+            </div>
+          ) : null}
+          {l >= 22 ? (
+            <div
+              style={{
+                color: TERM_FG,
+                backgroundColor: GREEN_TINT,
+                fontWeight: 700,
+                paddingLeft: 10,
+                opacity: prog(frame, 142, 4),
+                transform: `translateY(${(1 - prog(frame, 142, 4)) * 12}px)`,
+              }}
+            >
+              {'+ --concurrency 4'}
+            </div>
+          ) : null}
+          {l >= 28 ? (
+            <div style={{ marginTop: 8 }}>
+              <span style={{ color: TERM_FG }}>{'anthropos@local $ '}</span>
+              <span style={{ color: TEXT }}>{pushCmd.slice(0, n)}</span>
+              <span
+                style={{
+                  display: 'inline-block',
+                  width: 14,
+                  height: 30,
+                  marginLeft: 6,
+                  verticalAlign: 'middle',
+                  backgroundColor: (enterPressed ? blink(frame, 168, 2) : 1) ? TEXT : 'transparent',
+                }}
+              />
+            </div>
+          ) : null}
+          {enterPressed ? (
+            <div style={{ color: TS_GRAY, opacity: prog(frame, 174, 4) }}>
+              {'Enumerating objects: 7, done.'}
+            </div>
+          ) : null}
+        </div>
+      </Terminal>
+    </AbsoluteFill>
+  );
+};
+
+// B4：✓ run 41208859484 盖章 + 角标时间戳连跳（每跳 8 帧）
+const RunStamp: React.FC<{ frame: number }> = ({ frame }) => {
+  const p = prog(frame, 180, 6);
+  const jump = (i: number): number => {
+    const at = 192 + i * 12; // 03:21@192、03:40@204（8 帧过渡 + 4 帧停留再跳）
+    const fin = prog(frame, at, 8);
+    const fout = i === 2 ? 1 : 1 - prog(frame, at + 12, 8);
+    return Math.min(fin, fout);
+  };
+  return (
+    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <div
+        style={{
+          fontFamily: FONT_MONO,
+          fontSize: 92,
+          fontWeight: 700,
+          color: LIME,
+          whiteSpace: 'nowrap',
+          opacity: Math.min(1, p * 1.6),
+          transform: `scale(${1.22 - 0.22 * p})`,
+          textShadow: '0 0 48px rgba(212,244,62,0.28)',
+        }}
+      >
+        {'✓ run 41208859484'}
+      </div>
+      <div
+        style={{
+          marginTop: 22,
+          fontFamily: FONT_SANS,
+          fontSize: 28,
+          color: TS_GRAY,
+          opacity: prog(frame, 194, 8),
+        }}
+      >
+        {'第 5 次，过了。'}
+      </div>
+      {/* 角标时间戳（§三位置）：03:14→03:21→03:40 连跳 */}
+      <div
+        style={{
+          position: 'absolute',
+          left: TS_X,
+          top: TS_Y,
+          fontFamily: FONT_MONO,
+          fontSize: TS_PX,
+          color: TS_GRAY,
+          height: TS_PX * 1.4,
+        }}
+      >
+        {TS_SEQ.map((ts, i) => {
+          const o = i === 0 ? 1 - prog(frame, 192, 8) : jump(i);
+          if (o <= 0.004) return null;
+          return (
+            <span
+              key={ts}
+              style={{
+                position: 'absolute',
+                left: 0,
+                top: 0,
+                opacity: o,
+                color: i === 2 ? LIME : TS_GRAY,
+                whiteSpace: 'nowrap',
+              }}
+            >
+              {ts}
+            </span>
+          );
+        })}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+export const S5: React.FC = () => {
+  const frame = useCurrentFrame();
+  const beat = Math.floor(frame / 60); // 0/1/2/3 四拍
+  const beatIn = prog(frame, beat * 60, HARDCUT); // 4 帧硬切入
+  const sub2 = beat === 1 ? prog(frame, 66, 10) : 0;
+
+  return (
+    <AbsoluteFill style={{ fontFamily: FONT_SANS }}>
+      {/* B1 / B2 背景日志：B2 压暗留存 */}
+      {frame < 120 ? (
+        <div style={{ opacity: beatIn }} key={`log${beat}`}>
+          <LogPanel frame={frame} dim={beat === 1 ? 0.62 : 0} />
+        </div>
+      ) : null}
+
+      {/* B2：字幕「不是网络的问题。是参数写错了。」（「参数」珊瑚色） */}
+      {beat === 1 ? (
+        <div
+          style={{
+            position: 'absolute',
+            left: 0,
+            right: 0,
+            bottom: SUB_SAFE_BOTTOM,
+            textAlign: 'center',
+            fontSize: 62,
+            fontWeight: 700,
+            color: TEXT,
+            opacity: sub2,
+            transform: `translateY(${(1 - sub2) * 30}px)`,
+          }}
+        >
+          {SUB2[0]}
+          {'是'}
+          <span style={{ color: CORAL }}>{'参数'}</span>
+          {'写错了。'}
+        </div>
+      ) : null}
+
+      {beat === 2 ? (
+        <div style={{ opacity: beatIn }}>
+          <PushPanel frame={frame} />
+        </div>
+      ) : null}
+      {beat === 3 ? (
+        <div style={{ opacity: beatIn }}>
+          <RunStamp frame={frame} />
+        </div>
+      ) : null}
+    </AbsoluteFill>
+  );
+};
