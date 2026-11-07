@@ -1,1 +1,108 @@
-ewogICJtb2RlIjogImF1dG8iLAogICJsYWJlbCI6ICLprZTmkK0x5LyY5YWI77yI5bi45oCBwrfmlrAga2V577yJIiwKICAicmVhc29uIjogIumtlOaQrTEv6a2U5pCtMiDlrp7mtYvlnYcgMjAw77yMQU1EIOaYryBPbmVDbGljayAkMS/ml6XlupTmgKXmoaPvvIzkuI3or6XlvZPkuLvlipsiLAogICJ1cGRhdGVkIjogIjIwMjYtMTEtMDZUMTU6MTY6MDEuODgzWiIsCiAgImhpc3RvcnkiOiBbCiAgICB7CiAgICAgICJtb2RlIjogImFtZCIsCiAgICAgICJhdCI6ICIyMDI2LTExLTA0VDA5OjQ0OjAzLjg3OVoiLAogICAgICAicmVhc29uIjogIueOr+W9ouWIh+aNou+8muaooeWei+mineW6pueUqOWujOS6hu+8iDQyOSAvIOS9memineS4jei2s++8iSIKICAgIH0sCiAgICB7CiAgICAgICJtb2RlIjogImF1dG8iLAogICAgICAiYXQiOiAiMjAyNi0xMS0wNFQxMDowMTo0My4xNDZaIiwKICAgICAgInJlYXNvbiI6ICLnjq/lvaLliIfmjaLvvJrmqKHlnovpop3luqbnlKjlrozkuobvvIg0MjkgLyDkvZnpop3kuI3otrPvvIkiCiAgICB9LAogICAgewogICAgICAibW9kZSI6ICJhbWQiLAogICAgICAiYXQiOiAiMjAyNi0xMS0wNFQxMjo0Njo1My4wNjNaIiwKICAgICAgInJlYXNvbiI6ICLnjq/lvaLliIfmjaLvvJrmqKHlnovpop3luqbnlKjlrozkuobvvIg0MjkgLyDkvZnpop3kuI3otrPvvIkiCiAgICB9LAogICAgewogICAgICAibW9kZSI6ICJhdXRvIiwKICAgICAgImF0IjogIjIwMjYtMTEtMDRUMTM6NTM6MzUuNDY5WiIsCiAgICAgICJyZWFzb24iOiAi546v5b2i5YiH5o2i77ya5qih5Z6L6aKd5bqm55So5a6M5LqG77yINDI5IC8g5L2Z6aKd5LiN6Laz77yJIgogICAgfSwKICAgIHsKICAgICAgIm1vZGUiOiAiYW1kIiwKICAgICAgImF0IjogIjIwMjYtMTEtMDRUMTQ6MTM6MDguODE1WiIsCiAgICAgICJyZWFzb24iOiAi546v5b2i5YiH5o2i77ya5qih5Z6L6aKd5bqm55So5a6M5LqG77yINDI5IC8g5L2Z6aKd5LiN6Laz77yJIgogICAgfSwKICAgIHsKICAgICAgIm1vZGUiOiAiYXV0byIsCiAgICAgICJhdCI6ICIyMDI2LTExLTA0VDE1OjMyOjAzLjM3MFoiLAogICAgICAicmVhc29uIjogIumtlOaQreaLhuWIhuS4uumtlOaQrTEo5pawa2V5KS/prZTmkK0yKOaXp2tleSnvvIzprZTmkK0x5LyY5YWIIgogICAgfSwKICAgIHsKICAgICAgIm1vZGUiOiAiYW1kIiwKICAgICAgImF0IjogIjIwMjYtMTEtMDRUMTg6MDk6MzIuMDA4WiIsCiAgICAgICJyZWFzb24iOiAi546v5b2i5YiH5o2i77ya5qih5Z6L6aKd5bqm55So5a6M5LqG77yINDI5IC8g5L2Z6aKd5LiN6Laz77yJIgogICAgfSwKICAgIHsKICAgICAgIm1vZGUiOiAiYXV0byIsCiAgICAgICJhdCI6ICIyMDI2LTExLTA1VDAxOjM0OjM5LjY5NloiLAogICAgICAicmVhc29uIjogIueOr+W9ouWIh+aNou+8muaooeWei+mineW6pueUqOWujOS6hu+8iDQyOSAvIOS9memineS4jei2s++8iSIKICAgIH0sCiAgICB7CiAgICAgICJtb2RlIjogImFtZCIsCiAgICAgICJhdCI6ICIyMDI2LTExLTA1VDA0OjA4OjM0LjczM1oiLAogICAgICAicmVhc29uIjogIueOr+W9ouWIh+aNou+8muaooeWei+mineW6pueUqOWujOS6hu+8iDQyOSAvIOS9memineS4jei2s++8iSIKICAgIH0sCiAgICB7CiAgICAgICJtb2RlIjogImF1dG8iLAogICAgICAiYXQiOiAiMjAyNi0xMS0wNVQwNDoyMjoyMS4wNDlaIiwKICAgICAgInJlYXNvbiI6ICLnjq/lvaLliIfmjaLvvJrmqKHlnovpop3luqbnlKjlrozkuobvvIg0MjkgLyDkvZnpop3kuI3otrPvvIkiCiAgICB9LAogICAgewogICAgICAibW9kZSI6ICJhbWQiLAogICAgICAiYXQiOiAiMjAyNi0xMS0wNVQwOToyNjozNC4xMTVaIiwKICAgICAgInJlYXNvbiI6ICLnjq/lvaLliIfmjaLvvJrmqKHlnovpop3luqbnlKjlrozkuobvvIg0MjkgLyDkvZnpop3kuI3otrPvvIkiCiAgICB9LAogICAgewogICAgICAibW9kZSI6ICJhdXRvIiwKICAgICAgImF0IjogIjIwMjYtMTEtMDVUMTA6MDg6MjkuMzQzWiIsCiAgICAgICJyZWFzb24iOiAi546v5b2i5YiH5o2i77ya5qih5Z6L6aKd5bqm55So5a6M5LqG77yINDI5IC8g5L2Z6aKd5LiN6Laz77yJIgogICAgfSwKICAgIHsKICAgICAgIm1vZGUiOiAiYW1kIiwKICAgICAgImF0IjogIjIwMjYtMTEtMDVUMTA6NTI6MzEuNzEzWiIsCiAgICAgICJyZWFzb24iOiAi546v5b2i5YiH5o2i77ya5qih5Z6L6aKd5bqm55So5a6M5LqG77yINDI5IC8g5L2Z6aKd5LiN6Laz77yJIgogICAgfSwKICAgIHsKICAgICAgIm1vZGUiOiAiYXV0byIsCiAgICAgICJhdCI6ICIyMDI2LTExLTA1VDEzOjU3OjQzLjQxN1oiLAogICAgICAicmVhc29uIjogIueOr+W9ouWIh+aNou+8muaooeWei+mineW6pueUqOWujOS6hu+8iDQyOSAvIOS9memineS4jei2s++8iSIKICAgIH0sCiAgICB7CiAgICAgICJtb2RlIjogImFtZCIsCiAgICAgICJhdCI6ICIyMDI2LTExLTA1VDE0OjM0OjU2LjQzOFoiLAogICAgICAicmVhc29uIjogIueOr+W9ouWIh+aNou+8muaooeWei+mineW6pueUqOWujOS6hu+8iDQyOSAvIOS9memineS4jei2s++8iSIKICAgIH0sCiAgICB7CiAgICAgICJtb2RlIjogImF1dG8iLAogICAgICAiYXQiOiAiMjAyNi0xMS0wNVQxNDo0OTowNC4xNTVaIiwKICAgICAgInJlYXNvbiI6ICLnjq/lvaLliIfmjaLvvJrmqKHlnovpop3luqbnlKjlrozkuobvvIg0MjkgLyDkvZnpop3kuI3otrPvvIkiCiAgICB9LAogICAgewogICAgICAibW9kZSI6ICJhbWQiLAogICAgICAiYXQiOiAiMjAyNi0xMS0wNVQxNTowNTo1NS44ODVaIiwKICAgICAgInJlYXNvbiI6ICLnjq/lvaLliIfmjaLvvJrmqKHlnovpop3luqbnlKjlrozkuobvvIg0MjkgLyDkvZnpop3kuI3otrPvvIkiCiAgICB9LAogICAgewogICAgICAibW9kZSI6ICJhdXRvIiwKICAgICAgImF0IjogIjIwMjYtMTEtMDVUMTY6MDA6MjYuNTg0WiIsCiAgICAgICJyZWFzb24iOiAiMCDngrnml6XliIfvvIzliIflm57prZTmkK0iCiAgICB9LAogICAgewogICAgICAibW9kZSI6ICJhbWQiLAogICAgICAiYXQiOiAiMjAyNi0xMS0wNVQyMzoxNDoyMS40NDJaIiwKICAgICAgInJlYXNvbiI6ICLnjq/lvaLliIfmjaLvvJrmqKHlnovpop3luqbnlKjlrozkuobvvIg0MjkgLyDkvZnpop3kuI3otrPvvIkiCiAgICB9LAogICAgewogICAgICAibW9kZSI6ICJhdXRvIiwKICAgICAgImF0IjogIjIwMjYtMTEtMDZUMTU6MTY6MDEuODgzWiIsCiAgICAgICJyZWFzb24iOiAi6a2U5pCtMS/prZTmkK0yIOWunua1i+WdhyAyMDDvvIxBTUQg5pivIE9uZUNsaWNrICQxL+aXpeW6lOaApeaho++8jOS4jeivpeW9k+S4u+WKmyIKICAgIH0KICBdCn0K
+{
+  "mode": "auto",
+  "label": "魔搭1优先（常态·新 key）",
+  "reason": "魔搭1/魔搭2 实测均 200，AMD 是 OneClick $1/日应急档，不该当主力",
+  "updated": "2026-11-06T15:16:01.883Z",
+  "history": [
+    {
+      "mode": "amd",
+      "at": "2026-11-04T09:44:03.879Z",
+      "reason": "环形切换：模型额度用完了（429 / 余额不足）"
+    },
+    {
+      "mode": "auto",
+      "at": "2026-11-04T10:01:43.146Z",
+      "reason": "环形切换：模型额度用完了（429 / 余额不足）"
+    },
+    {
+      "mode": "amd",
+      "at": "2026-11-04T12:46:53.063Z",
+      "reason": "环形切换：模型额度用完了（429 / 余额不足）"
+    },
+    {
+      "mode": "auto",
+      "at": "2026-11-04T13:53:35.469Z",
+      "reason": "环形切换：模型额度用完了（429 / 余额不足）"
+    },
+    {
+      "mode": "amd",
+      "at": "2026-11-04T14:13:08.815Z",
+      "reason": "环形切换：模型额度用完了（429 / 余额不足）"
+    },
+    {
+      "mode": "auto",
+      "at": "2026-11-04T15:32:03.370Z",
+      "reason": "魔搭拆分为魔搭1(新key)/魔搭2(旧key)，魔搭1优先"
+    },
+    {
+      "mode": "amd",
+      "at": "2026-11-04T18:09:32.008Z",
+      "reason": "环形切换：模型额度用完了（429 / 余额不足）"
+    },
+    {
+      "mode": "auto",
+      "at": "2026-11-05T01:34:39.696Z",
+      "reason": "环形切换：模型额度用完了（429 / 余额不足）"
+    },
+    {
+      "mode": "amd",
+      "at": "2026-11-05T04:08:34.733Z",
+      "reason": "环形切换：模型额度用完了（429 / 余额不足）"
+    },
+    {
+      "mode": "auto",
+      "at": "2026-11-05T04:22:21.049Z",
+      "reason": "环形切换：模型额度用完了（429 / 余额不足）"
+    },
+    {
+      "mode": "amd",
+      "at": "2026-11-05T09:26:34.115Z",
+      "reason": "环形切换：模型额度用完了（429 / 余额不足）"
+    },
+    {
+      "mode": "auto",
+      "at": "2026-11-05T10:08:29.343Z",
+      "reason": "环形切换：模型额度用完了（429 / 余额不足）"
+    },
+    {
+      "mode": "amd",
+      "at": "2026-11-05T10:52:31.713Z",
+      "reason": "环形切换：模型额度用完了（429 / 余额不足）"
+    },
+    {
+      "mode": "auto",
+      "at": "2026-11-05T13:57:43.417Z",
+      "reason": "环形切换：模型额度用完了（429 / 余额不足）"
+    },
+    {
+      "mode": "amd",
+      "at": "2026-11-05T14:34:56.438Z",
+      "reason": "环形切换：模型额度用完了（429 / 余额不足）"
+    },
+    {
+      "mode": "auto",
+      "at": "2026-11-05T14:49:04.155Z",
+      "reason": "环形切换：模型额度用完了（429 / 余额不足）"
+    },
+    {
+      "mode": "amd",
+      "at": "2026-11-05T15:05:55.885Z",
+      "reason": "环形切换：模型额度用完了（429 / 余额不足）"
+    },
+    {
+      "mode": "auto",
+      "at": "2026-11-05T16:00:26.584Z",
+      "reason": "0 点日切，切回魔搭"
+    },
+    {
+      "mode": "amd",
+      "at": "2026-11-05T23:14:21.442Z",
+      "reason": "环形切换：模型额度用完了（429 / 余额不足）"
+    },
+    {
+      "mode": "auto",
+      "at": "2026-11-06T15:16:01.883Z",
+      "reason": "魔搭1/魔搭2 实测均 200，AMD 是 OneClick $1/日应急档，不该当主力"
+    }
+  ]
+}

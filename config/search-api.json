@@ -1,1 +1,8 @@
-ewogICJiYXNlVXJsIjogImh0dHBzOi8vYXBpLmV4YS5haSIsCiAgImtleUZpbGUiOiAic2VjcmV0cy9leGFfa2V5LnR4dCIsCiAgImF1dGhIZWFkZXIiOiAieC1hcGkta2V5IiwKICAic2VhcmNoUGF0aCI6ICIvc2VhcmNoIiwKICAiY29udGVudHNQYXRoIjogIi9jb250ZW50cyIsCiAgInNpbWlsYXJQYXRoIjogIi9maW5kU2ltaWxhciIKfQ==
+{
+  "baseUrl": "https://api.exa.ai",
+  "keyFile": "secrets/exa_key.txt",
+  "authHeader": "x-api-key",
+  "searchPath": "/search",
+  "contentsPath": "/contents",
+  "similarPath": "/findSimilar"
+}

@@ -1,1 +1,55 @@
-IyEvdXNyL2Jpbi9lbnYgbm9kZQovKioKICogY2hlY2stcHVibGlzaC5tanMg4oCU4oCUIOWumuaXtuaKleeov+WPkeW4g+aguOafpe+8iDIwMjYtMTAtMzEg5Li75Lq65Luk77yJCiAqIOeUqOazle+8mm5vZGUgY2hlY2stcHVibGlzaC5tanMgW0JW5Y+3XSAgIOm7mOiupCBCVjFyWnhrNjlFdVgKICog6YC76L6R77yaCiAqICAgdmlldyBjb2RlPTAgICAgICAgIOKGkiDlt7Llj5HluIPvvJrmi4nov5nmnaHnmoTor4Torrrov5vkuovku7bpmJ/liJfvvIznp4Hkv6HlkYror4nkuLvkurrjgIzmn6XlvpfliLDjgI0KICogICB2aWV3IGNvZGU9NjIwMDMgICAg4oaSIOi/mOayoeWPke+8mjEwIOWIhumSn+WQjiBzeXN0ZW1kIOS8muWGjei3keS4gOasoe+8iHRpbWVyIOavjyAxMCDliIbpkp/vvIzlj5HluIPlkI7oh6rooYzpgIDlh7rvvIkKICogICDlhbbku5YgICAgICAgICAgICAgICDihpIg56eB5L+h5oql5byC5bi4CiAqIOmAgOWHuuegge+8mjA95bey5Y+R5biD5oiW5b6F5Y+R5biD77yI5q2j5bi477yJ77yMMT3lvILluLgKICovCmltcG9ydCBmcyBmcm9tICJub2RlOmZzIjsKaW1wb3J0IHBhdGggZnJvbSAibm9kZTpwYXRoIjsKaW1wb3J0IHsgZXhlY0ZpbGVTeW5jIH0gZnJvbSAibm9kZTpjaGlsZF9wcm9jZXNzIjsKCmNvbnN0IEhPTUUgPSBwcm9jZXNzLmVudi5MSUZFX0hPTUUgfHwgIi9vcHQvbGlmZSI7CmNvbnN0IEJWSUQgPSBwcm9jZXNzLmFyZ3ZbMl0gfHwgIkJWMXJaeGs2OUV1WCI7CmNvbnN0IGNvb2tpZSA9IGZzLnJlYWRGaWxlU3luYyhwYXRoLmpvaW4oSE9NRSwgInNlY3JldHMvYmlsaV9jb29raWUudHh0IiksICJ1dGY4IikudHJpbSgpOwpjb25zdCBIID0geyBDb29raWU6IGNvb2tpZSwgIlVzZXItQWdlbnQiOiAiTW96aWxsYS81LjAiIH07Cgpjb25zdCByID0gYXdhaXQgZmV0Y2goYGh0dHBzOi8vYXBpLmJpbGliaWxpLmNvbS94L3dlYi1pbnRlcmZhY2Uvdmlldz9idmlkPSR7QlZJRH1gLCB7IGhlYWRlcnM6IEggfSkKICAudGhlbigoeCkgPT4geC5qc29uKCkpLmNhdGNoKChlKSA9PiAoeyBjb2RlOiAtMSwgbWVzc2FnZTogZS5tZXNzYWdlIH0pKTsKCmNvbnN0IG1hcmsgPSAocykgPT4gY29uc29sZS5sb2cobmV3IERhdGUoKS50b0lTT1N0cmluZygpLCAifCIsIHMpOwoKZnVuY3Rpb24gZG0odGV4dCkgewogIHRyeSB7CiAgICBleGVjRmlsZVN5bmMoIm5vZGUiLCBbcGF0aC5qb2luKEhPTUUsICJzY3JpcHRzL2JpbGktZG0ubWpzIiksIHRleHRdLCB7IHRpbWVvdXQ6IDQ1XzAwMCB9KTsKICAgIG1hcmsoIkRNIOW3suWPkSIpOwogIH0gY2F0Y2ggKGUpIHsgbWFyaygiRE0g5Y+R6YCB5aSx6LSlOiAiICsgZS5tZXNzYWdlLnNsaWNlKDAsIDgwKSk7IH0KfQoKaWYgKHIuY29kZSA9PT0gMCkgewogIGNvbnN0IGQgPSByLmRhdGE7CiAgbWFyayhg5bey5Y+R5biD77ya44CKJHtkLnRpdGxlfeOAiyDmkq3mlL4ke2Quc3RhdD8udmlld30g6K+E6K66JHtkLnN0YXQ/LnJlcGx5fWApOwogIC8vIOivhOiuuuaUtui/m+S6i+S7tumYn+WIl++8iDMwcyDnmoQgYnJpZGdlIOiKguaLjemaj+WQjuS8muiHquWKqOa0vuWPke+8iQogIHRyeSB7CiAgICBjb25zdCBvdXQgPSBleGVjRmlsZVN5bmMoIm5vZGUiLCBbcGF0aC5qb2luKEhPTUUsICJzY3JpcHRzL2JpbGktaW5ib3gubWpzIiksICJwdWxsIiwgIi0tdmlkZW8iLCBCVklEXSwgeyB0aW1lb3V0OiA2MF8wMDAgfSkudG9TdHJpbmcoKTsKICAgIG1hcmsoImluYm94IHB1bGw6ICIgKyBvdXQuc3BsaXQoIlxuIikuZmlsdGVyKEJvb2xlYW4pLnNsaWNlKC0yKS5qb2luKCIgLyAiKSk7CiAgfSBjYXRjaCAoZSkgeyBtYXJrKCJpbmJveCBwdWxsIOWksei0pTogIiArIGUubWVzc2FnZS5zbGljZSgwLCA4MCkpOyB9CiAgZG0oYOWumuaXtuaKleeov+afpeWIsOS6hu+8muOAiiR7ZC50aXRsZX3jgIske0JWSUR9IOW3suWPkeW4g++8jOaSreaUviAke2Quc3RhdD8udmlld33jgILov5nmnaHnmoTor4Torrrlt7Lov5vmlLbku7bpmJ/liJfvvIzmnInor4TorrrmiJHkvJrmjInpl7jpl6jop4TliJnlm57vvIgwLTcg54K56Z2Z6buY56qX5YaF5Lya5Y6L5YiwIDcg54K55ZCO5Y+R77yJ44CCYCk7CiAgLy8g5LiA5qyh5oCn5Lu75Yqh77ya5Y+R5biD56Gu6K6k5ZCO6Ieq5p2A77yM5Yir6K6pIHRpbWVyIOWPjeWkjeWPkSBETQogIHRyeSB7CiAgICBleGVjRmlsZVN5bmMoInN5c3RlbWN0bCIsIFsiZGlzYWJsZSIsICItLW5vdyIsICJhbnRocm9wb3MtcHVibGlzaC1jaGVjay50aW1lciJdLCB7IHRpbWVvdXQ6IDE1XzAwMCB9KTsKICAgIGV4ZWNGaWxlU3luYygicm0iLCBbIi1mIiwgIi9ldGMvc3lzdGVtZC9zeXN0ZW0vYW50aHJvcG9zLXB1Ymxpc2gtY2hlY2sudGltZXIiLCAiL2V0Yy9zeXN0ZW1kL3N5c3RlbS9hbnRocm9wb3MtcHVibGlzaC1jaGVjay5zZXJ2aWNlIl0sIHsgdGltZW91dDogMTBfMDAwIH0pOwogICAgbWFyaygidGltZXIg5bey6Ieq5Yig77yI5LiA5qyh5oCn5Lu75Yqh5a6M5oiQ77yJIik7CiAgfSBjYXRjaCAoZSkgeyBtYXJrKCJ0aW1lciDoh6rliKDlpLHotKU6ICIgKyBlLm1lc3NhZ2Uuc2xpY2UoMCwgODApKTsgfQogIHByb2Nlc3MuZXhpdCgwKTsKfSBlbHNlIGlmIChyLmNvZGUgPT09IDYyMDAzKSB7CiAgbWFyaygi6L+Y5rKh5Y+R5biD77yINjIwMDMg562J5b6F5Y+R5biD77yJ77yM5LiL5qyhIHRpbWVyIOWGjeafpSIpOwogIHByb2Nlc3MuZXhpdCgwKTsKfSBlbHNlIHsKICBtYXJrKGDlvILluLggY29kZT0ke3IuY29kZX0gJHtyLm1lc3NhZ2UgfHwgIiJ9YCk7CiAgZG0oYOafpeWumuaXtuaKleeovyAke0JWSUR9IOW8guW4uO+8mmNvZGU9JHtyLmNvZGV9ICR7ci5tZXNzYWdlIHx8ICIifeOAguS9oOWOuyBCIOermeWIm+S9nOS4reW/g+eci+S4gOecvOeKtuaAgeOAgmApOwogIHByb2Nlc3MuZXhpdCgxKTsKfQo=
+#!/usr/bin/env node
+/**
+ * check-publish.mjs —— 定时投稿发布核查（2026-10-31 主人令）
+ * 用法：node check-publish.mjs [BV号]   默认 BV1rZxk69EuX
+ * 逻辑：
+ *   view code=0        → 已发布：拉这条的评论进事件队列，私信告诉主人「查得到」
+ *   view code=62003    → 还没发：10 分钟后 systemd 会再跑一次（timer 每 10 分钟，发布后自行退出）
+ *   其他               → 私信报异常
+ * 退出码：0=已发布或待发布（正常），1=异常
+ */
+import fs from "node:fs";
+import path from "node:path";
+import { execFileSync } from "node:child_process";
+
+const HOME = process.env.LIFE_HOME || "/opt/life";
+const BVID = process.argv[2] || "BV1rZxk69EuX";
+const cookie = fs.readFileSync(path.join(HOME, "secrets/bili_cookie.txt"), "utf8").trim();
+const H = { Cookie: cookie, "User-Agent": "Mozilla/5.0" };
+
+const r = await fetch(`https://api.bilibili.com/x/web-interface/view?bvid=${BVID}`, { headers: H })
+  .then((x) => x.json()).catch((e) => ({ code: -1, message: e.message }));
+
+const mark = (s) => console.log(new Date().toISOString(), "|", s);
+
+function dm(text) {
+  try {
+    execFileSync("node", [path.join(HOME, "scripts/bili-dm.mjs"), text], { timeout: 45_000 });
+    mark("DM 已发");
+  } catch (e) { mark("DM 发送失败: " + e.message.slice(0, 80)); }
+}
+
+if (r.code === 0) {
+  const d = r.data;
+  mark(`已发布：《${d.title}》 播放${d.stat?.view} 评论${d.stat?.reply}`);
+  // 评论收进事件队列（30s 的 bridge 节拍随后会自动派发）
+  try {
+    const out = execFileSync("node", [path.join(HOME, "scripts/bili-inbox.mjs"), "pull", "--video", BVID], { timeout: 60_000 }).toString();
+    mark("inbox pull: " + out.split("\n").filter(Boolean).slice(-2).join(" / "));
+  } catch (e) { mark("inbox pull 失败: " + e.message.slice(0, 80)); }
+  dm(`定时投稿查到了：《${d.title}》${BVID} 已发布，播放 ${d.stat?.view}。这条的评论已进收件队列，有评论我会按闸门规则回（0-7 点静默窗内会压到 7 点后发）。`);
+  // 一次性任务：发布确认后自杀，别让 timer 反复发 DM
+  try {
+    execFileSync("systemctl", ["disable", "--now", "anthropos-publish-check.timer"], { timeout: 15_000 });
+    execFileSync("rm", ["-f", "/etc/systemd/system/anthropos-publish-check.timer", "/etc/systemd/system/anthropos-publish-check.service"], { timeout: 10_000 });
+    mark("timer 已自删（一次性任务完成）");
+  } catch (e) { mark("timer 自删失败: " + e.message.slice(0, 80)); }
+  process.exit(0);
+} else if (r.code === 62003) {
+  mark("还没发布（62003 等待发布），下次 timer 再查");
+  process.exit(0);
+} else {
+  mark(`异常 code=${r.code} ${r.message || ""}`);
+  dm(`查定时投稿 ${BVID} 异常：code=${r.code} ${r.message || ""}。你去 B 站创作中心看一眼状态。`);
+  process.exit(1);
+}

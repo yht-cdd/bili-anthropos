@@ -1,1 +1,261 @@
-IyEvdXNyL2Jpbi9lbnYgbm9kZQovKioKICogcmVuZGVyLXZpZGVvLm1qcyDigJTigJQg5oqK5riy5p+T5Lii57uZIEdpdEh1YiBBY3Rpb25z77yM6LeR5a6M5oqK54mH5a2Q5Y+W5Zue5p2lCiAqID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQogKiDkuLrku4DkuYjkuI3lnKjlpbnoh6rlt7HnmoTmnLrlmajkuIrmuLLmn5PvvJoKICogICDlpbnnmoTmnLrlmajphY3nva7lvojkvY7vvIxSZW1vdGlvbiDotbfkuIDkuKogQ2hyb21pdW0g5bCx5rKh5LqG44CC5riy5p+T5piv44CM56qB5Y+R6YeN5rS744CN77yMCiAqICAg5pyA6YCC5ZCI5oyJ6ZyA56ef566X5Yqb77yaR2l0SHViIEFjdGlvbnMg55qEIHVidW50dS1sYXRlc3Qg5bCx5pivIDQgdkNQVSAvIDE2IEdC77yMCiAqICAg5YWs5byA5LuT5bqT5q+P5pyIIDIwMDAg5YiG6ZKf5YWN6LS56aKd5bqm77yM5LiA5p2hIDE1IOenkuerluWxj+eJh+Wkp+e6piAx4oCTMiDliIbpkp/jgIIKICoKICog5rWB56iL77yaCiAqICAg6Kem5Y+RIHdvcmtmbG93X2Rpc3BhdGNoIOKGkiDova7or6IgcnVuIOeKtuaAgSDihpIg5LiL6L29IGFydGlmYWN077yIemlw77yJ4oaSIOino+WHuiBtcDQKICoKICog55So5rOV77yaCiAqICAgbm9kZSByZW5kZXItdmlkZW8ubWpzIC0tdGl0bGUgIuagh+mimCIgWy0tc3VidGl0bGUgIuWJr+agh+mimCJdIFstLXNlY29uZHMgMTVdCiAqICAgbm9kZSByZW5kZXItdmlkZW8ubWpzIC0tc3RhdHVzICAgICAgICAgICAgIyDnnIvmnIDov5HkuIDmrKHmuLLmn5MKICogICBub2RlIHJlbmRlci12aWRlby5tanMgLS10aXRsZSAiLi4uIiAtLW5vLXdhaXQgLS1vdXQgfi92aWRlby5tcDQKICoKICog5Yet5o2u77ya546v5aKD5Y+Y6YePIEdIX1RPS0VO77yI6ZyA6KaBIGFjdGlvbnM6d3JpdGXvvInvvIzmiJYgJExJRkVfSE9NRS9zZWNyZXRzL2dpdGh1Yl90b2tlbi50eHQKICovCgppbXBvcnQgZnMgZnJvbSAibm9kZTpmcyI7CmltcG9ydCBwYXRoIGZyb20gIm5vZGU6cGF0aCI7CmltcG9ydCB7IGV4ZWNTeW5jIH0gZnJvbSAibm9kZTpjaGlsZF9wcm9jZXNzIjsKaW1wb3J0IHsgY29tbWl0RmlsZXMgfSBmcm9tICIuL2dpdGh1Yi1jb21taXQubWpzIjsKCmNvbnN0IEhPTUUgPSBwcm9jZXNzLmVudi5MSUZFX0hPTUUgfHwgIi9vcHQvbGlmZSI7CmNvbnN0IFJFUE8gPSBwcm9jZXNzLmVudi5HSVRIVUJfUkVQTyB8fCAieWh0LWNkZC9iaWxpLWFudGhyb3BvcyI7CmNvbnN0IFdPUktGTE9XID0gcHJvY2Vzcy5lbnYuUkVOREVSX1dPUktGTE9XIHx8ICJyZW5kZXIueW1sIjsKY29uc3QgQVBJID0gImh0dHBzOi8vYXBpLmdpdGh1Yi5jb20iOwpjb25zdCBUT0tFTl9GSUxFID0gcGF0aC5qb2luKEhPTUUsICJzZWNyZXRzL2dpdGh1Yl90b2tlbi50eHQiKTsKCmNvbnN0IGFyZ3YgPSBwcm9jZXNzLmFyZ3Yuc2xpY2UoMik7CmNvbnN0IG9wdCA9IHt9Owpmb3IgKGxldCBpID0gMDsgaSA8IGFyZ3YubGVuZ3RoOyBpICs9IDEpIHsKICBpZiAoYXJndltpXS5zdGFydHNXaXRoKCItLSIpKSB7CiAgICBjb25zdCB2ID0gYXJndltpICsgMV07CiAgICBpZiAodiA9PT0gdW5kZWZpbmVkIHx8IHYuc3RhcnRzV2l0aCgiLS0iKSkgb3B0W2FyZ3ZbaV0uc2xpY2UoMildID0gdHJ1ZTsKICAgIGVsc2UgeyBvcHRbYXJndltpXS5zbGljZSgyKV0gPSB2OyBpICs9IDE7IH0KICB9Cn0KCmZ1bmN0aW9uIHRva2VuKCkgewogIGNvbnN0IGVudiA9IFN0cmluZyhwcm9jZXNzLmVudi5HSF9UT0tFTiB8fCBwcm9jZXNzLmVudi5HSVRIVUJfVE9LRU4gfHwgIiIpLnRyaW0oKTsKICBpZiAoZW52KSByZXR1cm4gZW52OwogIHRyeSB7IHJldHVybiBmcy5yZWFkRmlsZVN5bmMoVE9LRU5fRklMRSwgInV0ZjgiKS50cmltKCk7IH0gY2F0Y2ggeyByZXR1cm4gIiI7IH0KfQoKYXN5bmMgZnVuY3Rpb24gZ2gocGF0aG5hbWUsIGluaXQgPSB7fSkgewogIGNvbnN0IHQgPSB0b2tlbigpOwogIGlmICghdCkgdGhyb3cgbmV3IEVycm9yKGDmsqHmnIkgR2l0SHViIHRva2Vu77yIZW52IEdIX1RPS0VOIOaIliAke1RPS0VOX0ZJTEV977yJYCk7CiAgY29uc3QgciA9IGF3YWl0IGZldGNoKEFQSSArIHBhdGhuYW1lLCB7CiAgICAuLi5pbml0LAogICAgaGVhZGVyczogewogICAgICBBdXRob3JpemF0aW9uOiBgQmVhcmVyICR7dH1gLAogICAgICBBY2NlcHQ6ICJhcHBsaWNhdGlvbi92bmQuZ2l0aHViK2pzb24iLAogICAgICAiWC1HaXRIdWItQXBpLVZlcnNpb24iOiAiMjAyMi0xMS0yOCIsCiAgICAgICJDb250ZW50LVR5cGUiOiAiYXBwbGljYXRpb24vanNvbiIsCiAgICAgIC4uLihpbml0LmhlYWRlcnMgfHwge30pLAogICAgfSwKICAgIHNpZ25hbDogQWJvcnRTaWduYWwudGltZW91dCg2MF8wMDApLAogIH0pOwogIGNvbnN0IHRleHQgPSBhd2FpdCByLnRleHQoKTsKICBsZXQgaiA9IG51bGw7CiAgdHJ5IHsgaiA9IHRleHQgPyBKU09OLnBhcnNlKHRleHQpIDogbnVsbDsgfSBjYXRjaCB7fQogIGlmIChyLnN0YXR1cyA+PSAzMDApIHRocm93IG5ldyBFcnJvcihgR2l0SHViICR7ci5zdGF0dXN9OiAke3RleHQuc2xpY2UoMCwgMjAwKX1gKTsKICByZXR1cm4gajsKfQoKY29uc3Qgc2xlZXAgPSAobXMpID0+IG5ldyBQcm9taXNlKChyKSA9PiBzZXRUaW1lb3V0KHIsIG1zKSk7Cgphc3luYyBmdW5jdGlvbiBsYXRlc3RSdW4oKSB7CiAgY29uc3QgaiA9IGF3YWl0IGdoKGAvcmVwb3MvJHtSRVBPfS9hY3Rpb25zL3dvcmtmbG93cy8ke1dPUktGTE9XfS9ydW5zP3Blcl9wYWdlPTFgKTsKICByZXR1cm4gaj8ud29ya2Zsb3dfcnVucz8uWzBdIHx8IG51bGw7Cn0KCihhc3luYyAoKSA9PiB7CiAgaWYgKG9wdC5zdGF0dXMpIHsKICAgIGNvbnN0IHIgPSBhd2FpdCBsYXRlc3RSdW4oKTsKICAgIGlmICghcikgeyBjb25zb2xlLmxvZygi77yI6L+Y5rKh5pyJ5Lu75L2V5riy5p+T6K6w5b2V77yJIik7IHByb2Nlc3MuZXhpdCgwKTsgfQogICAgY29uc29sZS5sb2coCiAgICAgIEpTT04uc3RyaW5naWZ5KAogICAgICAgIHsKICAgICAgICAgIHJ1bjogci5pZCwKICAgICAgICAgIHN0YXR1czogci5zdGF0dXMsCiAgICAgICAgICBjb25jbHVzaW9uOiByLmNvbmNsdXNpb24sCiAgICAgICAgICBjcmVhdGVkOiByLmNyZWF0ZWRfYXQsCiAgICAgICAgICB1cmw6IHIuaHRtbF91cmwsCiAgICAgICAgICBicmFuY2g6IHIuaGVhZF9icmFuY2gsCiAgICAgICAgfSwKICAgICAgICBudWxsLAogICAgICAgIDIKICAgICAgKQogICAgKTsKICAgIHByb2Nlc3MuZXhpdCgwKTsKICB9CgogIGNvbnN0IHRpdGxlID0gU3RyaW5nKG9wdC50aXRsZSB8fCAiIikudHJpbSgpOwogIGlmICghdGl0bGUgJiYgIW9wdC5wcm9qZWN0KSB7CiAgICBjb25zb2xlLmVycm9yKCfnlKjms5U6IG5vZGUgcmVuZGVyLXZpZGVvLm1qcyAtLXRpdGxlICLmoIfpopgiIFstLXN1YnRpdGxlICIuLi4iXSBbLS1zZWNvbmRzIDE1XSBbLS1uby13YWl0XScpOwogICAgY29uc29sZS5lcnJvcignICDmiJY6IG5vZGUgcmVuZGVyLXZpZGVvLm1qcyAtLXByb2plY3QgPHNsdWc+ICAgIyDmuLLmn5MgdmlkZW9wcm9qLzxzbHVnPi9zcmMg6YeM55qE6Ieq5a6a5LmJ5bel56iLJyk7CiAgICBwcm9jZXNzLmV4aXQoMik7CiAgfQoKICBjb25zdCBpbnB1dHMgPSB7CiAgICB0aXRsZTogdGl0bGUgfHwgU3RyaW5nKG9wdC5wcm9qZWN0KSwKICAgIHN1YnRpdGxlOiBTdHJpbmcob3B0LnN1YnRpdGxlIHx8ICIiKSwKICAgIGtpY2tlcjogU3RyaW5nKG9wdC5raWNrZXIgfHwgIkFOVEhST1BPUyIpLAogICAgYWNjZW50OiBTdHJpbmcob3B0LmFjY2VudCB8fCAiI0ZGNkI2QiIpLAogICAgc2Vjb25kczogU3RyaW5nKG9wdC5zZWNvbmRzIHx8IDE1KSwKICAgIHNlZ21lbnRzOiAiIiwKICAgIHByb2plY3Q6ICIiLAogICAgLy8g5Y+q5riy5p+T5LiA5q6177ya6LCD6K+V55So77yM55yB5b6X5q+P5qyh562J5pW05p2h54mH5a2QCiAgICBmcmFtZXM6IFN0cmluZyhvcHQuZnJhbWVzIHx8ICIiKSwKICB9OwoKICAvLyDilIDilIAg6Ieq5a6a5LmJ5bel56iL77ya5oqKIHZpZGVvcHJvai88c2x1Zz4vc3JjIOaOqOWIsOS7k+W6k+WGjea4suafkyDilIDilIAKICAvLyDkuLrku4DkuYjotbDov5nkuIDmraXvvJrlpbnpgqPlj7DmnLrlmajkuI3mmK8gZ2l0IOS7k+W6k++8jOWtkOS7o+eQhuWGmeeahOS7o+eggeayoeazleebtOaOpQogIC8vIOWHuueOsOWcqCBHaXRIdWIgQWN0aW9ucyDnmoQgY2hlY2tvdXQg6YeM44CC5omA5Lul55SoIENvbnRlbnRzIEFQSSDpgJDkuKrmlofku7bmjqjkuIrljrvjgIIKICBpZiAob3B0LnByb2plY3QpIHsKICAgIGNvbnN0IHNsdWcgPSBTdHJpbmcob3B0LnByb2plY3QpOwogICAgaWYgKCEvXlthLXowLTldW2EtejAtOS1dezEsNjB9JC8udGVzdChzbHVnKSkgewogICAgICBjb25zb2xlLmVycm9yKGDinYwgcHJvamVjdCDlkI3kuI3lkIjms5XvvJoke3NsdWd9YCk7CiAgICAgIHByb2Nlc3MuZXhpdCgyKTsKICAgIH0KICAgIGNvbnN0IHNyY0RpciA9IG9wdFsic3JjLWRpciJdID8gU3RyaW5nKG9wdFsic3JjLWRpciJdKSA6IHBhdGguam9pbihIT01FLCAidmlkZW9wcm9qIiwgc2x1ZywgInNyYyIpOwogICAgaWYgKCFmcy5leGlzdHNTeW5jKHNyY0RpcikpIHsKICAgICAgY29uc29sZS5lcnJvcihg4p2MIOaJvuS4jeWIsOa6kOeggeebruW9le+8miR7c3JjRGlyfWApOwogICAgICBwcm9jZXNzLmV4aXQoMik7CiAgICB9CiAgICBjb25zdCBmaWxlcyA9IGZzLnJlYWRkaXJTeW5jKHNyY0RpciwgeyByZWN1cnNpdmU6IHRydWUgfSkKICAgICAgLm1hcCgoZikgPT4gU3RyaW5nKGYpLnJlcGxhY2UoL1xcL2csICIvIikpCiAgICAgIC5maWx0ZXIoKGYpID0+IC9cLih0c3g/fGpzeD98Y3NzfGpzb258bWR8Z2xzbHxzdmcpJC9pLnRlc3QoZikgJiYgIWYuaW5jbHVkZXMoIm5vZGVfbW9kdWxlcyIpKTsKICAgIGlmICghZmlsZXMubGVuZ3RoKSB7CiAgICAgIGNvbnNvbGUuZXJyb3IoYOKdjCAke3NyY0Rpcn0g6YeM5rKh5pyJ5Y+v5riy5p+T55qE5rqQ56CB77yILnRzeC8udHMvLmNzc++8iWApOwogICAgICBwcm9jZXNzLmV4aXQoMik7CiAgICB9CgogICAgLy8g5LiA5qyh5o+Q5Lqk5omA5pyJ5paH5Lu2IOKAlOKAlCDku6XliY3mmK/pgJDmlofku7YgUFVU77yM5LiA5Liq5paH5Lu25LiA5LiqIGNvbW1pdO+8jAogICAgLy8g5LiA5Liq6aG555uu6IO954GM6L+b5Y67IDEwMCDlpJrkuKogYHZpZGVvKHh4eCk6IHVwZGF0ZSBTOS50c3hgIOi/meenjeWeg+WcvuaPkOS6pOOAggogICAgY29uc29sZS5sb2coYOKWtiDkuIrkvKDpobnnm64gJHtzbHVnfe+8iCR7ZmlsZXMubGVuZ3RofSDkuKrmlofku7bvvInihpIgdmlkZW9wcm9qLyR7c2x1Z30vc3JjL2ApOwogICAgY29uc3QgcHVzaGVkID0gYXdhaXQgY29tbWl0RmlsZXMoewogICAgICBmaWxlczogZmlsZXMubWFwKChmKSA9PiAoewogICAgICAgIHBhdGg6IGB2aWRlb3Byb2ovJHtzbHVnfS9zcmMvJHtmfWAsCiAgICAgICAgY29udGVudDogZnMucmVhZEZpbGVTeW5jKHBhdGguam9pbihzcmNEaXIsIGYpKSwKICAgICAgfSkpLAogICAgICBtZXNzYWdlOiBgdmlkZW8oJHtzbHVnfSk6ICR7ZmlsZXMubGVuZ3RofSDkuKrmupDnoIHmlofku7ZgLAogICAgICBicmFuY2g6IFN0cmluZyhvcHQucmVmIHx8ICJtYWluIiksCiAgICAgIGxvZzogKHMpID0+IGNvbnNvbGUuZXJyb3IoYCAgICR7c31gKSwKICAgIH0pOwogICAgZm9yIChjb25zdCByIG9mIHB1c2hlZC5yZXN1bHRzIHx8IFtdKSB7CiAgICAgIGNvbnNvbGUubG9nKGAgICDinJMgY29tbWl0ICR7U3RyaW5nKHIuY29tbWl0IHx8ICJkcnkiKS5zbGljZSgwLCA3KX3vvIgke3IuZmlsZXN9IOS4quaWh+S7tu+8iWApOwogICAgfQogICAgaW5wdXRzLnByb2plY3QgPSBzbHVnOwogICAgLy8g6Ieq5a6a5LmJ5bel56iL6Ieq5bex5Yaz5a6a5pe26ZW/77yM6L+Z6YeM5Y+q5YGa5YWc5bqVCiAgICBpbnB1dHMuc2Vjb25kcyA9IFN0cmluZyhvcHQuc2Vjb25kcyB8fCAxNSk7CiAgfQoKICAvLyDmnInphY3pn7Pml7bpl7TovbTvvJrop4bpopHlnLrmma/kuKXmoLzmjInlroPnmoTnp5LmlbDliIfvvIzmuLLmn5Plrozlho3miorpn7PovajlkIjkuIrljrsKICBsZXQgdG90YWxTZWNvbmRzID0gTnVtYmVyKG9wdC5zZWNvbmRzIHx8IDE1KTsKICBpZiAob3B0LnRpbWVsaW5lKSB7CiAgICBjb25zdCB0bCA9IEpTT04ucGFyc2UoZnMucmVhZEZpbGVTeW5jKFN0cmluZyhvcHQudGltZWxpbmUpLCAidXRmOCIpKTsKICAgIGNvbnN0IHNlZ3MgPSAodGwuc2VnbWVudHMgfHwgW10pLm1hcCgocykgPT4gKHsKICAgICAgaW5kZXg6IHMuaW5kZXgsCiAgICAgIHRleHQ6IFN0cmluZyhzLnRleHQgfHwgIiIpLnNsaWNlKDAsIDkwKSwKICAgICAgZnJvbTogTnVtYmVyKHMuZnJvbSksCiAgICAgIHRvOiBOdW1iZXIocy50byksCiAgICB9KSk7CiAgICBpZiAoIXNlZ3MubGVuZ3RoKSB7IGNvbnNvbGUuZXJyb3IoIuKdjCB0aW1lbGluZSDph4zmsqHmnIkgc2VnbWVudHMiKTsgcHJvY2Vzcy5leGl0KDIpOyB9CiAgICB0b3RhbFNlY29uZHMgPSBOdW1iZXIoc2Vnc1tzZWdzLmxlbmd0aCAtIDFdLnRvKTsKICAgIGlucHV0cy5zZWdtZW50cyA9IEpTT04uc3RyaW5naWZ5KHNlZ3MpOwogICAgaW5wdXRzLnNlY29uZHMgPSBTdHJpbmcodG90YWxTZWNvbmRzKTsKICAgIGNvbnNvbGUubG9nKGAgIOaMieaXtumXtOi9tOa4suafk++8miR7c2Vncy5sZW5ndGh9IOaute+8jOWFsSAke3RvdGFsU2Vjb25kc31zYCk7CiAgfQoKICBjb25zdCB0MCA9IERhdGUubm93KCk7CiAgY29uc29sZS5sb2coYOKWtiDop6blj5HmuLLmn5PvvJoke3RpdGxlfWApOwogIGF3YWl0IGdoKGAvcmVwb3MvJHtSRVBPfS9hY3Rpb25zL3dvcmtmbG93cy8ke1dPUktGTE9XfS9kaXNwYXRjaGVzYCwgewogICAgbWV0aG9kOiAiUE9TVCIsCiAgICBib2R5OiBKU09OLnN0cmluZ2lmeSh7IHJlZjogU3RyaW5nKG9wdC5yZWYgfHwgIm1haW4iKSwgaW5wdXRzIH0pLAogIH0pOwoKICAvLyDnrYnkuIDkuKrjgIzliJrliJvlu7rjgI3nmoQgcnVuIOWHuueOsO+8iGRpc3BhdGNoIOaYr+W8guatpeeahO+8jOeri+WIu+afpeWPr+iDveaYr+aXp+eahO+8iQogIGxldCBydW4gPSBudWxsOwogIGZvciAobGV0IGkgPSAwOyBpIDwgMjA7IGkgKz0gMSkgewogICAgYXdhaXQgc2xlZXAoMzAwMCk7CiAgICBjb25zdCByID0gYXdhaXQgbGF0ZXN0UnVuKCk7CiAgICBpZiAociAmJiBuZXcgRGF0ZShyLmNyZWF0ZWRfYXQpLmdldFRpbWUoKSA+PSB0MCAtIDUwMDApIHsgcnVuID0gcjsgYnJlYWs7IH0KICB9CiAgaWYgKCFydW4pIHsgY29uc29sZS5lcnJvcigi4p2MIOayoeetieWIsOaWsOeahOa4suafk+S7u+WKoe+8jOWOuyBBY3Rpb25zIOmhtemdoueci+eciyIpOyBwcm9jZXNzLmV4aXQoMSk7IH0KICBjb25zb2xlLmxvZyhgICAgcnVuICR7cnVuLmlkfSDihpIgJHtydW4uaHRtbF91cmx9YCk7CgogIGlmIChvcHRbIm5vLXdhaXQiXSkgewogICAgY29uc29sZS5sb2coSlNPTi5zdHJpbmdpZnkoeyBvazogdHJ1ZSwgcnVuOiBydW4uaWQsIHVybDogcnVuLmh0bWxfdXJsLCB3YWl0aW5nOiBmYWxzZSB9KSk7CiAgICBwcm9jZXNzLmV4aXQoMCk7CiAgfQoKICAvLyDova7or6LliLDnu5PmnZ/vvIjkuIrpmZAgMjAg5YiG6ZKf77yJCiAgY29uc3QgZGVhZGxpbmUgPSBEYXRlLm5vdygpICsgMjAgKiA2MF8wMDA7CiAgd2hpbGUgKERhdGUubm93KCkgPCBkZWFkbGluZSkgewogICAgYXdhaXQgc2xlZXAoMTBfMDAwKTsKICAgIGNvbnN0IHIgPSBhd2FpdCBnaChgL3JlcG9zLyR7UkVQT30vYWN0aW9ucy9ydW5zLyR7cnVuLmlkfWApOwogICAgcHJvY2Vzcy5zdGRvdXQud3JpdGUoYCAgIOeKtuaAgSAke3Iuc3RhdHVzfSR7ci5jb25jbHVzaW9uID8gIiAvICIgKyByLmNvbmNsdXNpb24gOiAiIn1ccmApOwogICAgaWYgKHIuc3RhdHVzID09PSAiY29tcGxldGVkIikgewogICAgICBjb25zb2xlLmxvZygiIik7CiAgICAgIGlmIChyLmNvbmNsdXNpb24gIT09ICJzdWNjZXNzIikgewogICAgICAgIGNvbnNvbGUuZXJyb3IoYOKdjCDmuLLmn5PlpLHotKXvvJoke3IuY29uY2x1c2lvbn0g4oaSICR7ci5odG1sX3VybH1gKTsKICAgICAgICBwcm9jZXNzLmV4aXQoMSk7CiAgICAgIH0KICAgICAgcnVuID0gcjsKICAgICAgYnJlYWs7CiAgICB9CiAgfQoKICAvLyDlj5bkuqfniakKICBjb25zdCBhcnRzID0gYXdhaXQgZ2goYC9yZXBvcy8ke1JFUE99L2FjdGlvbnMvcnVucy8ke3J1bi5pZH0vYXJ0aWZhY3RzYCk7CiAgY29uc3QgYXJ0ID0gKGFydHM/LmFydGlmYWN0cyB8fCBbXSkuZmluZCgoYSkgPT4gYS5uYW1lID09PSAidmlkZW8iKTsKICBpZiAoIWFydCkgeyBjb25zb2xlLmVycm9yKCLinYwg5Lu75Yqh5oiQ5Yqf5L2G5rKh5pyJIHZpZGVvIOS6p+eJqSIpOyBwcm9jZXNzLmV4aXQoMSk7IH0KCiAgY29uc3Qgb3V0ID0gcGF0aC5yZXNvbHZlKFN0cmluZyhvcHQub3V0IHx8IHBhdGguam9pbihIT01FLCAidG1wL3ZpZGVvLm1wNCIpKSk7CiAgZnMubWtkaXJTeW5jKHBhdGguZGlybmFtZShvdXQpLCB7IHJlY3Vyc2l2ZTogdHJ1ZSB9KTsKICBjb25zdCB6aXAgPSBgJHtvdXR9LnppcGA7CgogIGNvbnN0IHQgPSB0b2tlbigpOwogIGNvbnN0IHIgPSBhd2FpdCBmZXRjaChhcnQuYXJjaGl2ZV9kb3dubG9hZF91cmwsIHsKICAgIGhlYWRlcnM6IHsgQXV0aG9yaXphdGlvbjogYEJlYXJlciAke3R9YCwgQWNjZXB0OiAiYXBwbGljYXRpb24vdm5kLmdpdGh1Yitqc29uIiB9LAogICAgcmVkaXJlY3Q6ICJmb2xsb3ciLAogICAgc2lnbmFsOiBBYm9ydFNpZ25hbC50aW1lb3V0KDMwMF8wMDApLAogIH0pOwogIGlmICghci5vaykgeyBjb25zb2xlLmVycm9yKGDinYwg5LiL6L295Lqn54mp5aSx6LSlIEhUVFAgJHtyLnN0YXR1c31gKTsgcHJvY2Vzcy5leGl0KDEpOyB9CiAgZnMud3JpdGVGaWxlU3luYyh6aXAsIEJ1ZmZlci5mcm9tKGF3YWl0IHIuYXJyYXlCdWZmZXIoKSkpOwoKICB0cnkgewogICAgLy8gdXBsb2FkLWFydGlmYWN0IOS8muaKiuaWh+S7tuaRiuW5s+WIsOWOi+e8qeWMheagueebruW9le+8jOi3r+W+hOWwseaYryB2aWRlby5tcDQKICAgIGV4ZWNTeW5jKGB1bnppcCAtbyAtaiAiJHt6aXB9IiB2aWRlby5tcDQgLWQgIiR7cGF0aC5kaXJuYW1lKG91dCl9ImAsIHsgc3RkaW86ICJwaXBlIiB9KTsKICAgIGZzLnJlbmFtZVN5bmMocGF0aC5qb2luKHBhdGguZGlybmFtZShvdXQpLCAidmlkZW8ubXA0IiksIG91dCk7CiAgfSBjYXRjaCAoZSkgewogICAgY29uc29sZS5lcnJvcihg4pqg77iPIOino+WOi+Wksei0pe+8iHppcCDnlZnlnKggJHt6aXB977yJ77yaJHtTdHJpbmcoZS5tZXNzYWdlKS5zcGxpdCgiXG4iKVswXX1gKTsKICAgIHByb2Nlc3MuZXhpdCgxKTsKICB9IGZpbmFsbHkgewogICAgdHJ5IHsgZnMudW5saW5rU3luYyh6aXApOyB9IGNhdGNoIHt9CiAgfQoKICBjb25zdCBzaXplID0gZnMuc3RhdFN5bmMob3V0KS5zaXplOwogIGNvbnNvbGUubG9nKEpTT04uc3RyaW5naWZ5KHsgb2s6IHRydWUsIGZpbGU6IG91dCwgYnl0ZXM6IHNpemUsIHJ1bjogcnVuLmlkLCB1cmw6IHJ1bi5odG1sX3VybCB9LCBudWxsLCAyKSk7CgogIC8vIOaciemFjemfs+WwseWQiOi/m+WOu++8mueUu+mdoua1geebtOaOpeWkjeWItu+8jOS4jeWKqOeUu+i0qO+8jOWPquWKoOmfs+i9qAogIGlmIChvcHQuYXVkaW8pIHsKICAgIGNvbnN0IGF1ZGlvID0gcGF0aC5yZXNvbHZlKFN0cmluZyhvcHQuYXVkaW8pKTsKICAgIGlmICghZnMuZXhpc3RzU3luYyhhdWRpbykpIHsgY29uc29sZS5lcnJvcihg4pqg77iPIOaJvuS4jeWIsOmfs+i9qCAke2F1ZGlvfe+8jOinhumikeS/neaMgeaXoOWjsGApOyBwcm9jZXNzLmV4aXQoMCk7IH0KICAgIGNvbnN0IG11eGVkID0gb3V0LnJlcGxhY2UoL1wubXA0JC8sICIiKSArICItd2l0aC1hdWRpby5tcDQiOwogICAgdHJ5IHsKICAgICAgZXhlY1N5bmMoCiAgICAgICAgYGZmbXBlZyAteSAtbG9nbGV2ZWwgZXJyb3IgLWkgIiR7b3V0fSIgLWkgIiR7YXVkaW99IiAtYzp2IGNvcHkgLWM6YSBhYWMgLWI6YSAxOTJrIC1zaG9ydGVzdCAiJHttdXhlZH0iYCwKICAgICAgICB7IHRpbWVvdXQ6IDMwMF8wMDAgfQogICAgICApOwogICAgICBjb25zb2xlLmxvZyhg8J+UiiDlt7LlkIjlhaXpn7PovajvvJoke211eGVkfe+8iCR7KGZzLnN0YXRTeW5jKG11eGVkKS5zaXplIC8gMTAyNCkudG9GaXhlZCgwKX0gS0LvvIlgKTsKICAgIH0gY2F0Y2ggKGUpIHsKICAgICAgY29uc29sZS5lcnJvcihg4pqg77iPIOWQiOmfs+i9qOWksei0pe+8miR7U3RyaW5nKGUubWVzc2FnZSkuc3BsaXQoIlxuIilbMF19YCk7CiAgICB9CiAgfQp9KSgpOwo=
+#!/usr/bin/env node
+/**
+ * render-video.mjs —— 把渲染丢给 GitHub Actions，跑完把片子取回来
+ * ============================================================
+ * 为什么不在她自己的机器上渲染：
+ *   她的机器配置很低，Remotion 起一个 Chromium 就没了。渲染是「突发重活」，
+ *   最适合按需租算力：GitHub Actions 的 ubuntu-latest 就是 4 vCPU / 16 GB，
+ *   公开仓库每月 2000 分钟免费额度，一条 15 秒竖屏片大约 1–2 分钟。
+ *
+ * 流程：
+ *   触发 workflow_dispatch → 轮询 run 状态 → 下载 artifact（zip）→ 解出 mp4
+ *
+ * 用法：
+ *   node render-video.mjs --title "标题" [--subtitle "副标题"] [--seconds 15]
+ *   node render-video.mjs --status            # 看最近一次渲染
+ *   node render-video.mjs --title "..." --no-wait --out ~/video.mp4
+ *
+ * 凭据：环境变量 GH_TOKEN（需要 actions:write），或 $LIFE_HOME/secrets/github_token.txt
+ */
+
+import fs from "node:fs";
+import path from "node:path";
+import { execSync } from "node:child_process";
+import { commitFiles } from "./github-commit.mjs";
+
+const HOME = process.env.LIFE_HOME || "/opt/life";
+const REPO = process.env.GITHUB_REPO || "yht-cdd/bili-anthropos";
+const WORKFLOW = process.env.RENDER_WORKFLOW || "render.yml";
+const API = "https://api.github.com";
+const TOKEN_FILE = path.join(HOME, "secrets/github_token.txt");
+
+const argv = process.argv.slice(2);
+const opt = {};
+for (let i = 0; i < argv.length; i += 1) {
+  if (argv[i].startsWith("--")) {
+    const v = argv[i + 1];
+    if (v === undefined || v.startsWith("--")) opt[argv[i].slice(2)] = true;
+    else { opt[argv[i].slice(2)] = v; i += 1; }
+  }
+}
+
+function token() {
+  const env = String(process.env.GH_TOKEN || process.env.GITHUB_TOKEN || "").trim();
+  if (env) return env;
+  try { return fs.readFileSync(TOKEN_FILE, "utf8").trim(); } catch { return ""; }
+}
+
+async function gh(pathname, init = {}) {
+  const t = token();
+  if (!t) throw new Error(`没有 GitHub token（env GH_TOKEN 或 ${TOKEN_FILE}）`);
+  const r = await fetch(API + pathname, {
+    ...init,
+    headers: {
+      Authorization: `Bearer ${t}`,
+      Accept: "application/vnd.github+json",
+      "X-GitHub-Api-Version": "2022-11-28",
+      "Content-Type": "application/json",
+      ...(init.headers || {}),
+    },
+    signal: AbortSignal.timeout(60_000),
+  });
+  const text = await r.text();
+  let j = null;
+  try { j = text ? JSON.parse(text) : null; } catch {}
+  if (r.status >= 300) throw new Error(`GitHub ${r.status}: ${text.slice(0, 200)}`);
+  return j;
+}
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function latestRun() {
+  const j = await gh(`/repos/${REPO}/actions/workflows/${WORKFLOW}/runs?per_page=1`);
+  return j?.workflow_runs?.[0] || null;
+}
+
+(async () => {
+  if (opt.status) {
+    const r = await latestRun();
+    if (!r) { console.log("（还没有任何渲染记录）"); process.exit(0); }
+    console.log(
+      JSON.stringify(
+        {
+          run: r.id,
+          status: r.status,
+          conclusion: r.conclusion,
+          created: r.created_at,
+          url: r.html_url,
+          branch: r.head_branch,
+        },
+        null,
+        2
+      )
+    );
+    process.exit(0);
+  }
+
+  const title = String(opt.title || "").trim();
+  if (!title && !opt.project) {
+    console.error('用法: node render-video.mjs --title "标题" [--subtitle "..."] [--seconds 15] [--no-wait]');
+    console.error('  或: node render-video.mjs --project <slug>   # 渲染 videoproj/<slug>/src 里的自定义工程');
+    process.exit(2);
+  }
+
+  const inputs = {
+    title: title || String(opt.project),
+    subtitle: String(opt.subtitle || ""),
+    kicker: String(opt.kicker || "ANTHROPOS"),
+    accent: String(opt.accent || "#FF6B6B"),
+    seconds: String(opt.seconds || 15),
+    segments: "",
+    project: "",
+    // 只渲染一段：调试用，省得每次等整条片子
+    frames: String(opt.frames || ""),
+  };
+
+  // ── 自定义工程：把 videoproj/<slug>/src 推到仓库再渲染 ──
+  // 为什么走这一步：她那台机器不是 git 仓库，子代理写的代码没法直接
+  // 出现在 GitHub Actions 的 checkout 里。所以用 Contents API 逐个文件推上去。
+  if (opt.project) {
+    const slug = String(opt.project);
+    if (!/^[a-z0-9][a-z0-9-]{1,60}$/.test(slug)) {
+      console.error(`❌ project 名不合法：${slug}`);
+      process.exit(2);
+    }
+    const srcDir = opt["src-dir"] ? String(opt["src-dir"]) : path.join(HOME, "videoproj", slug, "src");
+    if (!fs.existsSync(srcDir)) {
+      console.error(`❌ 找不到源码目录：${srcDir}`);
+      process.exit(2);
+    }
+    const files = fs.readdirSync(srcDir, { recursive: true })
+      .map((f) => String(f).replace(/\\/g, "/"))
+      .filter((f) => /\.(tsx?|jsx?|css|json|md|glsl|svg)$/i.test(f) && !f.includes("node_modules"));
+    if (!files.length) {
+      console.error(`❌ ${srcDir} 里没有可渲染的源码（.tsx/.ts/.css）`);
+      process.exit(2);
+    }
+
+    // 一次提交所有文件 —— 以前是逐文件 PUT，一个文件一个 commit，
+    // 一个项目能灌进去 100 多个 `video(xxx): update S9.tsx` 这种垃圾提交。
+    console.log(`▶ 上传项目 ${slug}（${files.length} 个文件）→ videoproj/${slug}/src/`);
+    const pushed = await commitFiles({
+      files: files.map((f) => ({
+        path: `videoproj/${slug}/src/${f}`,
+        content: fs.readFileSync(path.join(srcDir, f)),
+      })),
+      message: `video(${slug}): ${files.length} 个源码文件`,
+      branch: String(opt.ref || "main"),
+      log: (s) => console.error(`   ${s}`),
+    });
+    for (const r of pushed.results || []) {
+      console.log(`   ✓ commit ${String(r.commit || "dry").slice(0, 7)}（${r.files} 个文件）`);
+    }
+    inputs.project = slug;
+    // 自定义工程自己决定时长，这里只做兜底
+    inputs.seconds = String(opt.seconds || 15);
+  }
+
+  // 有配音时间轴：视频场景严格按它的秒数切，渲染完再把音轨合上去
+  let totalSeconds = Number(opt.seconds || 15);
+  if (opt.timeline) {
+    const tl = JSON.parse(fs.readFileSync(String(opt.timeline), "utf8"));
+    const segs = (tl.segments || []).map((s) => ({
+      index: s.index,
+      text: String(s.text || "").slice(0, 90),
+      from: Number(s.from),
+      to: Number(s.to),
+    }));
+    if (!segs.length) { console.error("❌ timeline 里没有 segments"); process.exit(2); }
+    totalSeconds = Number(segs[segs.length - 1].to);
+    inputs.segments = JSON.stringify(segs);
+    inputs.seconds = String(totalSeconds);
+    console.log(`  按时间轴渲染：${segs.length} 段，共 ${totalSeconds}s`);
+  }
+
+  const t0 = Date.now();
+  console.log(`▶ 触发渲染：${title}`);
+  await gh(`/repos/${REPO}/actions/workflows/${WORKFLOW}/dispatches`, {
+    method: "POST",
+    body: JSON.stringify({ ref: String(opt.ref || "main"), inputs }),
+  });
+
+  // 等一个「刚创建」的 run 出现（dispatch 是异步的，立刻查可能是旧的）
+  let run = null;
+  for (let i = 0; i < 20; i += 1) {
+    await sleep(3000);
+    const r = await latestRun();
+    if (r && new Date(r.created_at).getTime() >= t0 - 5000) { run = r; break; }
+  }
+  if (!run) { console.error("❌ 没等到新的渲染任务，去 Actions 页面看看"); process.exit(1); }
+  console.log(`   run ${run.id} → ${run.html_url}`);
+
+  if (opt["no-wait"]) {
+    console.log(JSON.stringify({ ok: true, run: run.id, url: run.html_url, waiting: false }));
+    process.exit(0);
+  }
+
+  // 轮询到结束（上限 20 分钟）
+  const deadline = Date.now() + 20 * 60_000;
+  while (Date.now() < deadline) {
+    await sleep(10_000);
+    const r = await gh(`/repos/${REPO}/actions/runs/${run.id}`);
+    process.stdout.write(`   状态 ${r.status}${r.conclusion ? " / " + r.conclusion : ""}\r`);
+    if (r.status === "completed") {
+      console.log("");
+      if (r.conclusion !== "success") {
+        console.error(`❌ 渲染失败：${r.conclusion} → ${r.html_url}`);
+        process.exit(1);
+      }
+      run = r;
+      break;
+    }
+  }
+
+  // 取产物
+  const arts = await gh(`/repos/${REPO}/actions/runs/${run.id}/artifacts`);
+  const art = (arts?.artifacts || []).find((a) => a.name === "video");
+  if (!art) { console.error("❌ 任务成功但没有 video 产物"); process.exit(1); }
+
+  const out = path.resolve(String(opt.out || path.join(HOME, "tmp/video.mp4")));
+  fs.mkdirSync(path.dirname(out), { recursive: true });
+  const zip = `${out}.zip`;
+
+  const t = token();
+  const r = await fetch(art.archive_download_url, {
+    headers: { Authorization: `Bearer ${t}`, Accept: "application/vnd.github+json" },
+    redirect: "follow",
+    signal: AbortSignal.timeout(300_000),
+  });
+  if (!r.ok) { console.error(`❌ 下载产物失败 HTTP ${r.status}`); process.exit(1); }
+  fs.writeFileSync(zip, Buffer.from(await r.arrayBuffer()));
+
+  try {
+    // upload-artifact 会把文件摊平到压缩包根目录，路径就是 video.mp4
+    execSync(`unzip -o -j "${zip}" video.mp4 -d "${path.dirname(out)}"`, { stdio: "pipe" });
+    fs.renameSync(path.join(path.dirname(out), "video.mp4"), out);
+  } catch (e) {
+    console.error(`⚠️ 解压失败（zip 留在 ${zip}）：${String(e.message).split("\n")[0]}`);
+    process.exit(1);
+  } finally {
+    try { fs.unlinkSync(zip); } catch {}
+  }
+
+  const size = fs.statSync(out).size;
+  console.log(JSON.stringify({ ok: true, file: out, bytes: size, run: run.id, url: run.html_url }, null, 2));
+
+  // 有配音就合进去：画面流直接复制，不动画质，只加音轨
+  if (opt.audio) {
+    const audio = path.resolve(String(opt.audio));
+    if (!fs.existsSync(audio)) { console.error(`⚠️ 找不到音轨 ${audio}，视频保持无声`); process.exit(0); }
+    const muxed = out.replace(/\.mp4$/, "") + "-with-audio.mp4";
+    try {
+      execSync(
+        `ffmpeg -y -loglevel error -i "${out}" -i "${audio}" -c:v copy -c:a aac -b:a 192k -shortest "${muxed}"`,
+        { timeout: 300_000 }
+      );
+      console.log(`🔊 已合入音轨：${muxed}（${(fs.statSync(muxed).size / 1024).toFixed(0)} KB）`);
+    } catch (e) {
+      console.error(`⚠️ 合音轨失败：${String(e.message).split("\n")[0]}`);
+    }
+  }
+})();

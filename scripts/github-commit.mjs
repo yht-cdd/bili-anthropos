@@ -1,1 +1,240 @@
-IyEvdXNyL2Jpbi9lbnYgbm9kZQovKioKICogZ2l0aHViLWNvbW1pdC5tanMg4oCU4oCUIOS4gOasoeaPkOS6pOWkmuS4quaWh+S7tu+8jOWPquS6p+eUn+S4gOS4qiBjb21taXQKICogPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CiAqIOS4uuS7gOS5iOimgeacieWug++8mgogKiAgIDIwMjYtMTAtMzEg5oiR5YaZ55qEIHJlbmRlci12aWRlby5tanMg55SoIENvbnRlbnRzIEFQSSDpgJDmlofku7YgUFVU77yMCiAqICAgKirmr4/kuKrmlofku7bkuqfnlJ/kuIDkuKogY29tbWl0KirjgIJ3ZWVrMC0xMTA1IOS4gOS4qumhueebruWwseeBjOS6hiAxMDArIOS4qgogKiAgIGB2aWRlbyh3ZWVrMC0xMTA1KTogdXBkYXRlIHNob3RzL1M5LnRzeGAg6L+Z56eN5o+Q5Lqk77yM5Y6G5Y+y5b275bqV5rKh5rOV55yL44CCCiAqCiAqICAg5q2j56Gu5YGa5rOV5piv6LWwIEdpdCBEYXRhIEFQSe+8mmJsb2Ig4oaSIHRyZWUg4oaSIGNvbW1pdCDihpIg56e7IHJlZu+8jAogKiAgIOWbm+S4quivt+axguaNouS4gOasoeaPkOS6pO+8jOS4jeeuoeWkmuWwkeS4quaWh+S7tuOAggogKgogKiDnlKjms5XvvIjnu5nliKvnmoTohJrmnKwgaW1wb3J077yJ77yaCiAqICAgaW1wb3J0IHsgY29tbWl0RmlsZXMgfSBmcm9tICIuL2dpdGh1Yi1jb21taXQubWpzIjsKICogICBhd2FpdCBjb21taXRGaWxlcyh7IGZpbGVzOiBbeyBwYXRoLCBjb250ZW50IH1dLCBtZXNzYWdlLCBicmFuY2ggfSk7CiAqCiAqIOWRveS7pOihjOebtOaOpei3ke+8iOiwg+ivleeUqO+8ie+8mgogKiAgIG5vZGUgZ2l0aHViLWNvbW1pdC5tanMgLS1kcnkgLS1saXN0IHZpZGVvL2EudHMgdmlkZW8vYi50cwogKi8KCmltcG9ydCBmcyBmcm9tICJub2RlOmZzIjsKaW1wb3J0IHBhdGggZnJvbSAibm9kZTpwYXRoIjsKCmNvbnN0IEhPTUUgPSBwcm9jZXNzLmVudi5MSUZFX0hPTUUgfHwgIi9vcHQvbGlmZSI7CmNvbnN0IFJFUE8gPSBwcm9jZXNzLmVudi5HSVRIVUJfUkVQTyB8fCAieWh0LWNkZC9iaWxpLWFudGhyb3BvcyI7CmNvbnN0IEFQSSA9ICJodHRwczovL2FwaS5naXRodWIuY29tIjsKCmZ1bmN0aW9uIHRva2VuKCkgewogIGNvbnN0IGVudiA9IFN0cmluZyhwcm9jZXNzLmVudi5HSF9UT0tFTiB8fCBwcm9jZXNzLmVudi5HSVRIVUJfVE9LRU4gfHwgIiIpLnRyaW0oKTsKICBpZiAoZW52KSByZXR1cm4gZW52OwogIHRyeSB7CiAgICByZXR1cm4gZnMucmVhZEZpbGVTeW5jKHBhdGguam9pbihIT01FLCAic2VjcmV0cy9naXRodWJfdG9rZW4udHh0IiksICJ1dGY4IikudHJpbSgpOwogIH0gY2F0Y2ggewogICAgdGhyb3cgbmV3IEVycm9yKCLmsqHmnIkgR2l0SHViIHRva2Vu77yIZW52IEdIX1RPS0VOIOaIliBzZWNyZXRzL2dpdGh1Yl90b2tlbi50eHTvvIkiKTsKICB9Cn0KCmFzeW5jIGZ1bmN0aW9uIGdoKHBhdGhuYW1lLCBpbml0ID0ge30pIHsKICBjb25zdCB0ID0gdG9rZW4oKTsKICBjb25zdCByID0gYXdhaXQgZmV0Y2goQVBJICsgcGF0aG5hbWUsIHsKICAgIC4uLmluaXQsCiAgICBoZWFkZXJzOiB7CiAgICAgIEF1dGhvcml6YXRpb246IGBCZWFyZXIgJHt0fWAsCiAgICAgIEFjY2VwdDogImFwcGxpY2F0aW9uL3ZuZC5naXRodWIranNvbiIsCiAgICAgICJYLUdpdEh1Yi1BcGktVmVyc2lvbiI6ICIyMDIyLTExLTI4IiwKICAgICAgLi4uKGluaXQuaGVhZGVycyB8fCB7fSksCiAgICB9LAogICAgc2lnbmFsOiBBYm9ydFNpZ25hbC50aW1lb3V0KDkwXzAwMCksCiAgfSk7CiAgY29uc3QgdHh0ID0gYXdhaXQgci50ZXh0KCk7CiAgaWYgKCFyLm9rKSB7CiAgICBsZXQgbXNnID0gdHh0LnNsaWNlKDAsIDIwMCk7CiAgICB0cnkgeyBtc2cgPSBKU09OLnBhcnNlKHR4dCkubWVzc2FnZSB8fCBtc2c7IH0gY2F0Y2gge30KICAgIHRocm93IG5ldyBFcnJvcihgR2l0SHViICR7ci5zdGF0dXN9ICR7cGF0aG5hbWV9OiAke21zZ31gKTsKICB9CiAgcmV0dXJuIEpTT04ucGFyc2UodHh0KTsKfQoKLyoqCiAqIOS4gOasoeaPkOS6pOWkmuS4quaWh+S7tuOAggogKiBAcGFyYW0ge29iamVjdH0gbwogKiBAcGFyYW0ge0FycmF5PHtwYXRoOnN0cmluZywgY29udGVudDpCdWZmZXJ8c3RyaW5nfT59IG8uZmlsZXMgIOS7k+W6k+WGheeahOWujOaVtOi3r+W+hAogKiBAcGFyYW0ge3N0cmluZ30gby5tZXNzYWdlICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbW1pdCBtZXNzYWdlCiAqIEBwYXJhbSB7c3RyaW5nfSBbby5icmFuY2hdICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg6buY6K6kIG1haW4KICogQHBhcmFtIHtib29sZWFufSBbby5kcnldICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICDlj6rmiqXlkYrkuI3mj5DkuqQKICogQHBhcmFtIHsoczpzdHJpbmcpPT52b2lkfSBbby5sb2ddCiAqLwpleHBvcnQgYXN5bmMgZnVuY3Rpb24gY29tbWl0RmlsZXMobykgewogIGNvbnN0IGJyYW5jaCA9IG8uYnJhbmNoIHx8ICJtYWluIjsKICBjb25zdCBsb2cgPSBvLmxvZyB8fCAoKHMpID0+IGNvbnNvbGUuZXJyb3IocykpOwogIGNvbnN0IGZpbGVzID0gKG8uZmlsZXMgfHwgW10pLmZpbHRlcigoZikgPT4gZiAmJiBmLnBhdGggJiYgZi5jb250ZW50ICE9PSB1bmRlZmluZWQpOwoKICBpZiAoIWZpbGVzLmxlbmd0aCkgcmV0dXJuIHsgb2s6IHRydWUsIHNraXBwZWQ6ICLmsqHmnInmlofku7bopoHmj5DkuqQiLCBjb21taXQ6IG51bGwgfTsKCiAgLy8g5YiG5om56KeE5YiZ77yaKirmjInlrZfoioLmlbAqKu+8jOS4jeaMieaWh+S7tuaVsOOAggogIC8vIDIwMjYtMTEtMDcg5a6e5rWL77yaMjU1IOS4quaWh+S7tu+8iDcuNk1CIOWOn+aWhyDihpIgYmFzZTY0IOe6piAxME1C77yJ5LiA5qyh5o+Q5Lqk77yMCiAgLy8gdHJlZSDlu7rlh7rmnaXkuobkvYYgY29tbWl0IOaKpeOAjFRyZWUgU0hBIGRvZXMgbm90IGV4aXN044CN4oCU4oCU6K+35rGC5L2T6LaF6ZmQ77yMdHJlZSDmsqHokL3lupPjgIIKICAvLyDmr4/mibnmjqfliLblnKggMi41TUIg5Y6f5paH77yIYmFzZTY0IOWQjue6piAzLjRNQu+8ieS7peWGheOAggogIGNvbnN0IE1BWF9CQVRDSF9CWVRFUyA9IDIuNSAqIDEwMjQgKiAxMDI0OwogIGNvbnN0IE1BWF9CQVRDSF9GSUxFUyA9IDEyMDsKICBjb25zdCBiYXRjaGVzID0gW107CiAgbGV0IGN1ciA9IFtdOwogIGxldCBjdXJCeXRlcyA9IDA7CiAgZm9yIChjb25zdCBmIG9mIGZpbGVzKSB7CiAgICBjb25zdCBzaXplID0gQnVmZmVyLmlzQnVmZmVyKGYuY29udGVudCkgPyBmLmNvbnRlbnQubGVuZ3RoIDogQnVmZmVyLmJ5dGVMZW5ndGgoU3RyaW5nKGYuY29udGVudCkpOwogICAgaWYgKGN1ci5sZW5ndGggJiYgKGN1ckJ5dGVzICsgc2l6ZSA+IE1BWF9CQVRDSF9CWVRFUyB8fCBjdXIubGVuZ3RoID49IE1BWF9CQVRDSF9GSUxFUykpIHsKICAgICAgYmF0Y2hlcy5wdXNoKGN1cik7CiAgICAgIGN1ciA9IFtdOwogICAgICBjdXJCeXRlcyA9IDA7CiAgICB9CiAgICBjdXIucHVzaChmKTsKICAgIGN1ckJ5dGVzICs9IHNpemU7CiAgfQogIGlmIChjdXIubGVuZ3RoKSBiYXRjaGVzLnB1c2goY3VyKTsKCiAgY29uc3QgcmVzdWx0cyA9IFtdOwogIGZvciAobGV0IGIgPSAwOyBiIDwgYmF0Y2hlcy5sZW5ndGg7IGIgKz0gMSkgewogICAgY29uc3QgYmF0Y2ggPSBiYXRjaGVzW2JdOwogICAgY29uc3Qgc3VmZml4ID0gYmF0Y2hlcy5sZW5ndGggPiAxID8gYCAoJHtiICsgMX0vJHtiYXRjaGVzLmxlbmd0aH0pYCA6ICIiOwogICAgY29uc3QgbXNnID0gby5tZXNzYWdlICsgc3VmZml4OwoKICAgIGxvZyhgICDmi78gJHticmFuY2h9IOeahOW9k+WJjeaPkOS6pOKApmApOwogICAgY29uc3QgcmVmID0gYXdhaXQgZ2goYC9yZXBvcy8ke1JFUE99L2dpdC9yZWYvaGVhZHMvJHticmFuY2h9YCk7CiAgICBjb25zdCBiYXNlQ29tbWl0ID0gcmVmLm9iamVjdC5zaGE7CiAgICBjb25zdCBjb21taXRPYmogPSBhd2FpdCBnaChgL3JlcG9zLyR7UkVQT30vZ2l0L2NvbW1pdHMvJHtiYXNlQ29tbWl0fWApOwogICAgY29uc3QgYmFzZVRyZWUgPSBjb21taXRPYmoudHJlZS5zaGE7CgogICAgY29uc3QgZW50cmllcyA9IGJhdGNoLm1hcCgoZikgPT4gKHsKICAgICAgcGF0aDogZi5wYXRoLAogICAgICBtb2RlOiAiMTAwNjQ0IiwKICAgICAgdHlwZTogImJsb2IiLAogICAgICBjb250ZW50OiBCdWZmZXIuaXNCdWZmZXIoZi5jb250ZW50KSA/IGYuY29udGVudC50b1N0cmluZygiYmFzZTY0IikgOiBCdWZmZXIuZnJvbShTdHJpbmcoZi5jb250ZW50KSkudG9TdHJpbmcoImJhc2U2NCIpLAogICAgICBlbmNvZGluZzogImJhc2U2NCIsCiAgICB9KSk7CgogICAgaWYgKG8uZHJ5KSB7CiAgICAgIGxvZyhgICAoZHJ5LXJ1bikg5Lya5o+Q5LqkICR7ZW50cmllcy5sZW5ndGh9IOS4quaWh+S7tu+8mmApOwogICAgICBmb3IgKGNvbnN0IGUgb2YgZW50cmllcy5zbGljZSgwLCAxMikpIGxvZyhgICAgICAke2UucGF0aH1gKTsKICAgICAgaWYgKGVudHJpZXMubGVuZ3RoID4gMTIpIGxvZyhgICAgICDigKbov5jmnIkgJHtlbnRyaWVzLmxlbmd0aCAtIDEyfSDkuKpgKTsKICAgICAgcmVzdWx0cy5wdXNoKHsgZHJ5OiB0cnVlLCBmaWxlczogZW50cmllcy5sZW5ndGgsIG1lc3NhZ2U6IG1zZyB9KTsKICAgICAgY29udGludWU7CiAgICB9CgogICAgbG9nKGAgIOW7uiB0cmVl77yIJHtlbnRyaWVzLmxlbmd0aH0g5Liq5paH5Lu277yJ4oCmYCk7CiAgICBjb25zdCB0cmVlID0gYXdhaXQgZ2goYC9yZXBvcy8ke1JFUE99L2dpdC90cmVlc2AsIHsKICAgICAgbWV0aG9kOiAiUE9TVCIsCiAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KHsgYmFzZV90cmVlOiBiYXNlVHJlZSwgdHJlZTogZW50cmllcyB9KSwKICAgIH0pOwoKICAgIC8vIOWGheWuueWSjOeOsOacieaWh+S7tuWujOWFqOS4gOiHtOaXtu+8jOaWsCB0cmVlIOeahCBTSEEg5bCx562J5LqOIGJhc2UgdHJlZeOAggogICAgLy8g6L+Z5pe25YaN5bu6IGNvbW1pdCDlsLHmmK/kuIDkuKrnqbrmj5DkuqQg4oCU4oCUIDIwMjYtMTEtMDcg6YeN6LeR5ZCM5q2l5pe25bCx5aSa5Ye65p2l5Lik5LiqCiAgICAvLyDvvIgwMTg2ZDQ444CBOThlMWU5Ze+8jHN0YXRzIOWFqOaYryArMCAtMO+8ieOAguepuuaPkOS6pOS4jeaYr+iEj+WOhuWPsu+8jOS9huS8mua3ueaOieecn+iusOW9leOAggogICAgaWYgKHRyZWUuc2hhID09PSBiYXNlVHJlZSkgewogICAgICBsb2coYCAg5YaF5a655peg5Y+Y5YyW77yM6Lez6L+HIGNvbW1pdO+8iCR7ZW50cmllcy5sZW5ndGh9IOS4quaWh+S7tumDveW3suS4gOiHtO+8iWApOwogICAgICByZXN1bHRzLnB1c2goeyBjb21taXQ6IG51bGwsIHVuY2hhbmdlZDogdHJ1ZSwgZmlsZXM6IGVudHJpZXMubGVuZ3RoLCBtZXNzYWdlOiBtc2cgfSk7CiAgICAgIGNvbnRpbnVlOwogICAgfQoKICAgIGxvZygiICDlu7ogY29tbWl04oCmIik7CiAgICBjb25zdCBuZXdDb21taXQgPSBhd2FpdCBnaChgL3JlcG9zLyR7UkVQT30vZ2l0L2NvbW1pdHNgLCB7CiAgICAgIG1ldGhvZDogIlBPU1QiLAogICAgICBib2R5OiBKU09OLnN0cmluZ2lmeSh7IG1lc3NhZ2U6IG1zZywgdHJlZTogdHJlZS5zaGEsIHBhcmVudHM6IFtiYXNlQ29tbWl0XSB9KSwKICAgIH0pOwoKICAgIGxvZyhgICDnp7sgcmVmIOKGkiAke25ld0NvbW1pdC5zaGEuc2xpY2UoMCwgNyl9YCk7CiAgICBhd2FpdCBnaChgL3JlcG9zLyR7UkVQT30vZ2l0L3JlZnMvaGVhZHMvJHticmFuY2h9YCwgewogICAgICBtZXRob2Q6ICJQQVRDSCIsCiAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KHsgc2hhOiBuZXdDb21taXQuc2hhLCBmb3JjZTogZmFsc2UgfSksCiAgICB9KTsKCiAgICByZXN1bHRzLnB1c2goeyBjb21taXQ6IG5ld0NvbW1pdC5zaGEsIGZpbGVzOiBlbnRyaWVzLmxlbmd0aCwgbWVzc2FnZTogbXNnIH0pOwogIH0KCiAgcmV0dXJuIHsgb2s6IHRydWUsIHJlcG86IFJFUE8sIGJyYW5jaCwgcmVzdWx0cyB9Owp9CgovLyDilIDilIAg5ZG95Luk6KGM5YWl5Y+j77yI6LCD6K+V55So77yJ4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACmlmIChpbXBvcnQubWV0YS51cmwgPT09IGBmaWxlOi8vJHtwcm9jZXNzLmFyZ3ZbMV19YCkgewogIGNvbnN0IGFyZ3YgPSBwcm9jZXNzLmFyZ3Yuc2xpY2UoMik7CiAgY29uc3QgcGF0aHMgPSBhcmd2LmZpbHRlcigoYSkgPT4gIWEuc3RhcnRzV2l0aCgiLS0iKSk7CiAgY29uc3QgZHJ5ID0gYXJndi5pbmNsdWRlcygiLS1kcnkiKTsKICBpZiAoIXBhdGhzLmxlbmd0aCkgewogICAgY29uc29sZS5sb2coIueUqOazlTogbm9kZSBnaXRodWItY29tbWl0Lm1qcyBbLS1kcnldIDzmlofku7bot6/lvoTigKY+Iik7CiAgICBjb25zb2xlLmxvZygiICDnu5nmnKzlnLDot6/lvoTvvIzljp/moLfkvZzkuLrku5PlupPlhoXot6/lvoTmj5DkuqTvvIjmibnph4/ooaXlpIfku73or7fnlKggc3luYy12aWRlb3Byb2oubWpz77yJIik7CiAgICBwcm9jZXNzLmV4aXQoMCk7CiAgfQogIGNvbnN0IGZpbGVzID0gcGF0aHMubWFwKChwKSA9PiAoeyBwYXRoOiBwLCBjb250ZW50OiBmcy5yZWFkRmlsZVN5bmMocCkgfSkpOwogIGNvbW1pdEZpbGVzKHsgZmlsZXMsIG1lc3NhZ2U6IGBjaG9yZTogJHtmaWxlcy5sZW5ndGh9IOS4quaWh+S7tmAsIGRyeSwgbG9nOiBjb25zb2xlLmVycm9yIH0pCiAgICAudGhlbigocikgPT4gY29uc29sZS5sb2coSlNPTi5zdHJpbmdpZnkociwgbnVsbCwgMikpKQogICAgLmNhdGNoKChlKSA9PiB7IGNvbnNvbGUuZXJyb3IoIuKdjCIsIGUubWVzc2FnZSk7IHByb2Nlc3MuZXhpdCgxKTsgfSk7Cn0K
+#!/usr/bin/env node
+/**
+ * github-commit.mjs —— 一次提交多个文件，只产生一个 commit
+ * ============================================================
+ * 为什么要有它：
+ *   2026-10-31 我写的 render-video.mjs 用 Contents API 逐文件 PUT，
+ *   **每个文件产生一个 commit**。week0-1105 一个项目就灌了 100+ 个
+ *   `video(week0-1105): update shots/S9.tsx` 这种提交，历史彻底没法看。
+ *
+ *   正确做法是走 Git Data API：tree → commit → 移 ref，
+ *   四个请求换一次提交，不管多少个文件。
+ *
+ * ⚠️ 2026-11-07 踩的第二个坑，这个更贵：
+ *   第一版我在 tree 的 entry 里写了
+ *       { path, content: <base64>, encoding: "base64" }
+ *   看着天经地义 —— Contents API 就是这么传的。
+ *   但 **Create a Tree 的 entry 根本没有 encoding 这个字段**，GitHub 把它
+ *   当多余参数丢掉，然后按 UTF-8 字面把那一长串 base64 存成了文件正文。
+ *   结果：render.yml 仓库里 7504 字节（原文 5.5KB），theme.ts 3724 字节
+ *   （原文 2793 字节，正好 ×4/3），270 个文件全是「一行的 base64 乱码」。
+ *   commit 统计 `+22 -5584` 就是信号：22 个文件每个只"加了一行"。
+ *
+ *   规矩：
+ *     文本文件 → tree entry 用 content 传**原文**（不加 encoding）
+ *     二进制   → 先 POST /git/blobs（那里 encoding 才合法）拿 sha，tree 里只引用 sha
+ *   验证方法：拿回来的 size 必须等于原文件字节数，blob sha 必须等于本地 git hash-object。
+ *
+ * 用法（给别的脚本 import）：
+ *   import { commitFiles } from "./github-commit.mjs";
+ *   await commitFiles({ files: [{ path, content }], message, branch });
+ *
+ * 命令行直接跑（调试用）：
+ *   node github-commit.mjs --dry path/in/repo.ts
+ */
+
+import fs from "node:fs";
+import path from "node:path";
+
+const HOME = process.env.LIFE_HOME || "/opt/life";
+const REPO = process.env.GITHUB_REPO || "yht-cdd/bili-anthropos";
+const API = "https://api.github.com";
+
+// 明确是二进制的扩展名，一律走 blobs API
+const BINARY_EXT = /\.(png|jpe?g|gif|webp|ico|bmp|tiff|mp3|mp4|mov|webm|wav|m4a|aac|flac|zip|gz|tgz|bz2|xz|7z|pdf|onnx|bin|pt|ckpt|safetensors|woff2?|ttf|otf|eot|exe|dll|node|wasm)$/i;
+
+function isTextBuffer(buf) {
+  if (buf.includes(0)) return false;
+  try { new TextDecoder("utf-8", { fatal: true }).decode(buf); return true; } catch { return false; }
+}
+
+function token() {
+  const env = String(process.env.GH_TOKEN || process.env.GITHUB_TOKEN || "").trim();
+  if (env) return env;
+  try {
+    return fs.readFileSync(path.join(HOME, "secrets/github_token.txt"), "utf8").trim();
+  } catch {
+    throw new Error("没有 GitHub token（env GH_TOKEN 或 secrets/github_token.txt）");
+  }
+}
+
+async function gh(pathname, init = {}) {
+  const t = token();
+  const r = await fetch(API + pathname, {
+    ...init,
+    headers: {
+      Authorization: `Bearer ${t}`,
+      Accept: "application/vnd.github+json",
+      "X-GitHub-Api-Version": "2022-11-28",
+      ...(init.headers || {}),
+    },
+    signal: AbortSignal.timeout(120_000),
+  });
+  const txt = await r.text();
+  if (!r.ok) {
+    let msg = txt.slice(0, 200);
+    try { msg = JSON.parse(txt).message || msg; } catch {}
+    throw new Error(`GitHub ${r.status} ${pathname}: ${msg}`);
+  }
+  return JSON.parse(txt);
+}
+
+/** 文本内联原文；二进制先建 blob 再引用 sha */
+async function makeEntry(f, log) {
+  const buf = Buffer.isBuffer(f.content) ? f.content : Buffer.from(String(f.content));
+  const binary = BINARY_EXT.test(f.path) || !isTextBuffer(buf);
+  if (!binary) {
+    // 关键：这里绝不加 encoding，content 就是原文
+    return { path: f.path, mode: "100644", type: "blob", content: buf.toString("utf8") };
+  }
+  const b = await gh(`/repos/${REPO}/git/blobs`, {
+    method: "POST",
+    body: JSON.stringify({ content: buf.toString("base64"), encoding: "base64" }),
+  });
+  return { path: f.path, mode: "100644", type: "blob", sha: b.sha };
+}
+
+/** 二进制 blob 并发上限，别把二级限流打爆 */
+async function entriesFor(batch, log) {
+  const out = new Array(batch.length);
+  let i = 0;
+  let done = 0;
+  async function worker() {
+    while (i < batch.length) {
+      const k = i++;
+      out[k] = await makeEntry(batch[k], log);
+      done += 1;
+      if (done % 40 === 0) log(`    已处理 ${done}/${batch.length} 个`);
+    }
+  }
+  await Promise.all(Array.from({ length: 4 }, worker));
+  return out;
+}
+
+/**
+ * 一次提交多个文件。
+ * @param {object} o
+ * @param {Array<{path:string, content:Buffer|string}>} o.files  仓库内的完整路径
+ * @param {string} o.message                                     commit message
+ * @param {string} [o.branch]                                    默认 main
+ * @param {boolean} [o.dry]                                      只报告不提交
+ * @param {(s:string)=>void} [o.log]
+ */
+export async function commitFiles(o) {
+  const branch = o.branch || "main";
+  const log = o.log || ((s) => console.error(s));
+  const files = (o.files || []).filter((f) => f && f.path && f.content !== undefined);
+
+  if (!files.length) return { ok: true, skipped: "没有文件要提交", commit: null };
+
+  // 分批规则：**按字节数**，不按文件数。
+  // 2026-11-07 实测：255 个文件一次提交（base64 后约 10MB）建 tree 成功但
+  // commit 报「Tree SHA does not exist」—— 请求体超限，tree 没落库。
+  // 文本现在按原文内联（比 base64 小 25%），每批控制在 2.5MB 原文以内。
+  const MAX_BATCH_BYTES = 2.5 * 1024 * 1024;
+  const MAX_BATCH_FILES = 120;
+  const batches = [];
+  let cur = [];
+  let curBytes = 0;
+  for (const f of files) {
+    const size = Buffer.isBuffer(f.content) ? f.content.length : Buffer.byteLength(String(f.content));
+    if (cur.length && (curBytes + size > MAX_BATCH_BYTES || cur.length >= MAX_BATCH_FILES)) {
+      batches.push(cur);
+      cur = [];
+      curBytes = 0;
+    }
+    cur.push(f);
+    curBytes += size;
+  }
+  if (cur.length) batches.push(cur);
+
+  const results = [];
+  for (let b = 0; b < batches.length; b += 1) {
+    const batch = batches[b];
+    const suffix = batches.length > 1 ? ` (${b + 1}/${batches.length})` : "";
+    const msg = o.message + suffix;
+
+    log(`  拿 ${branch} 的当前提交…`);
+    const ref = await gh(`/repos/${REPO}/git/ref/heads/${branch}`);
+    const baseCommit = ref.object.sha;
+    const commitObj = await gh(`/repos/${REPO}/git/commits/${baseCommit}`);
+    const baseTree = commitObj.tree.sha;
+
+    if (o.dry) {
+      log(`  (dry-run) 会提交 ${batch.length} 个文件：`);
+      for (const e of batch.slice(0, 12)) log(`     ${e.path}`);
+      if (batch.length > 12) log(`     …还有 ${batch.length - 12} 个`);
+      results.push({ dry: true, files: batch.length, message: msg });
+      continue;
+    }
+
+    log(`  建 entries（${batch.length} 个文件，二进制走 blobs）…`);
+    const entries = await entriesFor(batch, log);
+
+    log(`  建 tree…`);
+    const tree = await gh(`/repos/${REPO}/git/trees`, {
+      method: "POST",
+      body: JSON.stringify({ base_tree: baseTree, tree: entries }),
+    });
+
+    // 内容和现有文件完全一致时，新 tree 的 SHA 就等于 base tree。
+    // 这时再建 commit 就是一个空提交 —— 2026-11-07 重跑同步就多出来两个
+    // （0186d48、98e1e9e，stats 全是 +0 -0）。
+    if (tree.sha === baseTree) {
+      log(`  内容无变化，跳过 commit（${batch.length} 个文件都已一致）`);
+      results.push({ commit: null, unchanged: true, files: batch.length, message: msg });
+      continue;
+    }
+
+    log("  建 commit…");
+    const newCommit = await gh(`/repos/${REPO}/git/commits`, {
+      method: "POST",
+      body: JSON.stringify({ message: msg, tree: tree.sha, parents: [baseCommit] }),
+    });
+
+    log(`  移 ref → ${newCommit.sha.slice(0, 7)}`);
+    await gh(`/repos/${REPO}/git/refs/heads/${branch}`, {
+      method: "PATCH",
+      body: JSON.stringify({ sha: newCommit.sha, force: false }),
+    });
+
+    results.push({ commit: newCommit.sha, tree: tree.sha, files: batch.length, message: msg });
+  }
+
+  return { ok: true, repo: REPO, branch, results };
+}
+
+// ── 提交后自检：仓库 size 必须等于原文 size ──────────
+export async function verifyCommitted(list, log = ((s) => console.error(s))) {
+  let bad = 0;
+  for (const f of list.slice(0, 20)) {
+    const buf = Buffer.isBuffer(f.content) ? f.content : Buffer.from(String(f.content));
+    const j = await gh(`/repos/${REPO}/contents/${encodeURIComponent(f.path).replace(/%2F/g, "/")}`)
+      .catch(() => null);
+    if (!j || !j.size) { log(`  ? 读不到 ${f.path}`); continue; }
+    if (j.size !== buf.length) {
+      log(`  ✗ ${f.path}  仓库 ${j.size} B ≠ 原文 ${buf.length} B`);
+      bad += 1;
+    }
+  }
+  return bad;
+}
+
+// ── 命令行入口（调试用）──────────────────────────────
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const argv = process.argv.slice(2);
+  const paths = argv.filter((a) => !a.startsWith("--"));
+  const dry = argv.includes("--dry");
+  if (!paths.length) {
+    console.log("用法: node github-commit.mjs [--dry] <仓库内路径=本地路径>");
+    console.log("  例: node github-commit.mjs --dry 'videoproj/demo-link/src/Demo.tsx=/opt/life/videoproj/demo-link/src/Demo.tsx'");
+    process.exit(0);
+  }
+  const files = paths.map((p) => {
+    const [rp, lp] = p.split("=");
+    return { path: lp ? rp : rp, content: fs.readFileSync(lp || rp) };
+  });
+  commitFiles({ files, message: `chore: ${files.length} 个文件`, dry, log: console.error })
+    .then((r) => console.log(JSON.stringify(r, null, 2)))
+    .catch((e) => { console.error("❌", e.message); process.exit(1); });
+}

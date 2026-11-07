@@ -1,1 +1,18 @@
-ewogICJiYXNlVXJsIjogImh0dHBzOi8vYXBpLnhpYW9taW1pbW8uY29tL3YxIiwKICAia2V5RmlsZSI6ICJzZWNyZXRzL21pbW9fa2V5LnR4dCIsCiAgImRhaWx5TWF4IjogODAsCiAgInR0cyI6IHsKICAgICJzdHlsZSI6ICJjaGF0IiwKICAgICJwYXRoIjogIi9jaGF0L2NvbXBsZXRpb25zIiwKICAgICJtb2RlbCI6ICJtaW1vLXYyLjUtdHRzIiwKICAgICJ2b2ljZSI6ICJtaW1vX2RlZmF1bHQiLAogICAgInJvbGUiOiAiYXNzaXN0YW50IiwKICAgICJmb3JtYXQiOiAid2F2IgogIH0sCiAgImFzciI6IHsKICAgICJzdHlsZSI6ICJjaGF0IiwKICAgICJwYXRoIjogIi9jaGF0L2NvbXBsZXRpb25zIiwKICAgICJtb2RlbCI6ICJtaW1vLXYyLjUtYXNyIgogIH0KfQ==
+{
+  "baseUrl": "https://api.xiaomimimo.com/v1",
+  "keyFile": "secrets/mimo_key.txt",
+  "dailyMax": 80,
+  "tts": {
+    "style": "chat",
+    "path": "/chat/completions",
+    "model": "mimo-v2.5-tts",
+    "voice": "mimo_default",
+    "role": "assistant",
+    "format": "wav"
+  },
+  "asr": {
+    "style": "chat",
+    "path": "/chat/completions",
+    "model": "mimo-v2.5-asr"
+  }
+}

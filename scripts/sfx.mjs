@@ -1,1 +1,234 @@
-IyEvdXNyL2Jpbi9lbnYgbm9kZQovKioKICogc2Z4Lm1qcyDigJTigJQg55So56iL5bqP5ZCI5oiQ6Z+z5pWI77yM6ZO65LiA5p2h5ZKM55S76Z2i5Lil5Lid5ZCI57yd55qE5aOw6L2oCiAqID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQogKiDkuLrku4DkuYjlhYjlgZrpn7PmlYjjgIFUVFMg5Y+N6ICM5Y+v6YCJ77yaCiAqICAg6Z+z5pWI5Y+v5LulKirnrpcqKuWHuuadpSDigJTigJQgZmZtcGVnIOWQiOaIkO+8jOaXtumVv+eyvuehruWIsOavq+enku+8jOS4jeiKsemSseOAgeS4jeaOkumYn+OAgeS4jeS+nei1luS7u+S9lSBBUEnjgIIKICogICDkurrlo7DkuI3ooYzvvIzlroPlv4XpobvosIPlpJbpg6jmnI3liqHjgIIKICogICDmiYDku6Xpu5jorqTot6/lvoTmmK/vvJrnqIvluo/pn7PmlYjpk7rlupUg4oaSIOmcgOimgeS6uuWjsOWGjeWKoCBUVFPjgILliKvorqnniYflrZDlm6DkuLrjgIzphY3pn7PmsqHphY3lpb3jgI3ogIzlj5HkuI3lh7rljrvjgIIKICoKICog5Lik56eN55So5rOV77yaCiAqICAgMSkg5Y2V5Liq6Z+z5pWI77yabm9kZSBzZngubWpzIG1ha2UgLS1jdWUgd2hvb3NoIC0tc2Vjb25kcyAwLjkgLS1vdXQgYS5tcDMKICogICAyKSDmlbTmnaHlo7DovajvvJpub2RlIHNmeC5tanMgbWl4IC0tcGxhbiBhdWRpby5qc29uIC0tb3V0IHZvaWNlLm1wMwogKgogKiBhdWRpby5qc29u77yI5pe26Ze05Y2V5L2N56eS77yM5Y+v5Lul5YaZICIwMDowMDowMy4yIu+8ie+8mgogKiAgIHsKICogICAgICJ0b3RhbCI6IDEzLAogKiAgICAgImJlZCI6ICB7ICJjdWUiOiAicGFkIiwgImdhaW4iOiAwLjE4IH0sCiAqICAgICAiY3VlcyI6IFsKICogICAgICAgeyAiYXQiOiAwLCAgICAiY3VlIjogImRpbmciLCAgICJnYWluIjogMC43IH0sCiAqICAgICAgIHsgImF0IjogMy44LCAgImN1ZSI6ICJ3aG9vc2giLCAic2Vjb25kcyI6IDAuOSwgImdhaW4iOiAwLjYgfSwKICogICAgICAgeyAiYXQiOiAxMCwgICAiY3VlIjogImJvb20iLCAgICJnYWluIjogMC44IH0KICogICAgIF0sCiAqICAgICAidm9pY2UiOiAiL29wdC9saWZlL3RtcC9lcDAxL3ZvaWNlLm1wMyIgICAgIC8vIOWPr+mAie+8muS6uuWjsOi9qAogKiAgIH0KICoKICog6YCA5Ye656CB77yaMCDmiJDlip8gLyAxIOWksei0pSAvIDIg5Y+C5pWw6ZSZCiAqLwoKaW1wb3J0IGZzIGZyb20gIm5vZGU6ZnMiOwppbXBvcnQgcGF0aCBmcm9tICJub2RlOnBhdGgiOwppbXBvcnQgeyBleGVjU3luYyB9IGZyb20gIm5vZGU6Y2hpbGRfcHJvY2VzcyI7Cgpjb25zdCBIT01FID0gcHJvY2Vzcy5lbnYuTElGRV9IT01FIHx8ICIvb3B0L2xpZmUiOwpjb25zdCBhcmd2ID0gcHJvY2Vzcy5hcmd2LnNsaWNlKDIpOwpjb25zdCBjbWQgPSBhcmd2WzBdIHx8ICIiOwpjb25zdCBvcHQgPSB7fTsKZm9yIChsZXQgaSA9IDE7IGkgPCBhcmd2Lmxlbmd0aDsgaSArPSAxKSB7CiAgaWYgKGFyZ3ZbaV0uc3RhcnRzV2l0aCgiLS0iKSkgewogICAgY29uc3QgdiA9IGFyZ3ZbaSArIDFdOwogICAgaWYgKHYgPT09IHVuZGVmaW5lZCB8fCB2LnN0YXJ0c1dpdGgoIi0tIikpIG9wdFthcmd2W2ldLnNsaWNlKDIpXSA9IHRydWU7CiAgICBlbHNlIHsgb3B0W2FyZ3ZbaV0uc2xpY2UoMildID0gdjsgaSArPSAxOyB9CiAgfQp9Cgpjb25zdCBTUiA9IDQ0MTAwOwoKLyoqCiAqIOmfs+aViOW6k+OAguavj+S4qumDvei/lOWbniBmZm1wZWcg55qEIGxhdmZpIOi+k+WFpeS4siArIOWQjuWkhOeQhumTvuOAggogKiDljp/liJnvvJrog73nrpflsLHliKvph4fmoLcg4oCU4oCUIOS4jeS+nei1luS7u+S9lee0oOadkOaWh+S7tu+8jOi3keWcqOWTquWPsOacuuWZqOS4iumDveS4gOagt+OAggogKi8KY29uc3QgQ1VFUyA9IHsKICAvLyDovbvngrnkuIDkuIvvvIznlKjkuo7lrZfluZUv5pWw5a2X5Ye6546wCiAgdGljazogKGQpID0+ICh7CiAgICBpbnB1dDogYHNpbmU9ZnJlcXVlbmN5PTE2MDA6ZHVyYXRpb249JHtkfTpzYW1wbGVfcmF0ZT0ke1NSfWAsCiAgICBmaWx0ZXJzOiBgYWZhZGU9dD1vdXQ6c3Q9MDpkPSR7TWF0aC5tYXgoMC4wMywgZCAqIDAuOSl9OmN1cnZlPWV4cCx2b2x1bWU9MC41YCwKICB9KSwKICAvLyDkuKTlo7DjgIzlj67lkprjgI3vvIznlKjkuo7nu5PorrrokL3lrpoKICBkaW5nOiAoZCkgPT4gKHsKICAgIGlucHV0OiBgc2luZT1mcmVxdWVuY3k9ODgwOmR1cmF0aW9uPSR7ZH06c2FtcGxlX3JhdGU9JHtTUn1gLAogICAgZmlsdGVyczogYGFmYWRlPXQ9b3V0OnN0PTA6ZD0ke2R9OmN1cnZlPWV4cCx2b2x1bWU9MC41NWAsCiAgfSksCiAgLy8g5L2O5rKJ55qE44CM5ZKa44CN77yM55So5LqO6YeN54K55by66LCDCiAgYm9vbTogKGQpID0+ICh7CiAgICBpbnB1dDogYHNpbmU9ZnJlcXVlbmN5PTcwOmR1cmF0aW9uPSR7ZH06c2FtcGxlX3JhdGU9JHtTUn1gLAogICAgZmlsdGVyczogYGFmYWRlPXQ9b3V0OnN0PTA6ZD0ke2R9OmN1cnZlPWV4cCx2b2x1bWU9MC45YCwKICB9KSwKICAvLyDlpLHotKUv6K2m5ZGKCiAgYnV6ejogKGQpID0+ICh7CiAgICBpbnB1dDogYHNpbmU9ZnJlcXVlbmN5PTE0MDpkdXJhdGlvbj0ke2R9OnNhbXBsZV9yYXRlPSR7U1J9YCwKICAgIGZpbHRlcnM6IGB2aWJyYXRvPWY9MTg6ZD0wLjYsYWZhZGU9dD1vdXQ6c3Q9JHtkICogMC43fTpkPSR7ZCAqIDAuM30sdm9sdW1lPTAuNWAsCiAgfSksCiAgLy8g6L2s5Zy65ZG85ZW477ya57KJ5Zmq5omr6aKRCiAgd2hvb3NoOiAoZCkgPT4gKHsKICAgIGlucHV0OiBgYW5vaXNlc3JjPWNvbG9yPXBpbms6ZHVyYXRpb249JHtkfTpzYW1wbGVfcmF0ZT0ke1NSfWAsCiAgICBmaWx0ZXJzOiBbCiAgICAgIGBoaWdocGFzcz1mPTMwMGAsCiAgICAgIGBsb3dwYXNzPWY9NjAwMGAsCiAgICAgIGBhZmFkZT10PWluOnN0PTA6ZD0keyhkICogMC4zNSkudG9GaXhlZCgzKX1gLAogICAgICBgYWZhZGU9dD1vdXQ6c3Q9JHsoZCAqIDAuNTUpLnRvRml4ZWQoMyl9OmQ9JHsoZCAqIDAuNDUpLnRvRml4ZWQoMyl9YCwKICAgICAgYHZvbHVtZT0wLjU1YCwKICAgIF0uam9pbigiLCIpLAogIH0pLAogIC8vIOS4iuWNh+mfs++8mumikeeOh+S7jiAxODAg5omr5YiwIDcyMAogIHJpc2VyOiAoZCkgPT4gKHsKICAgIGlucHV0OiBgYWV2YWxzcmM9MC4yNSpzaW4oMipQSSooMTgwKzU0MCp0LyR7ZH0pKnQpOmQ9JHtkfTpzPSR7U1J9YCwKICAgIGZpbHRlcnM6IGBhZmFkZT10PWluOnN0PTA6ZD0keyhkICogMC4yKS50b0ZpeGVkKDMpfSxhZmFkZT10PW91dDpzdD0keyhkICogMC44NSkudG9GaXhlZCgzKX06ZD0keyhkICogMC4xNSkudG9GaXhlZCgzKX1gLAogIH0pLAogIC8vIOawm+WbtOWeq++8muS4pOS4quS9jumikeato+W8piArIOi9u+W+rumipOWKqO+8jOmAguWQiOW9k+W6leWZqgogIHBhZDogKGQpID0+ICh7CiAgICBpbnB1dDogYGFldmFsc3JjPTAuMDgqc2luKDIqUEkqMTEwKnQpKzAuMDYqc2luKDIqUEkqMTY0LjgqdCkrMC4wNCpzaW4oMipQSSoyMjAqdCk6ZD0ke2R9OnM9JHtTUn1gLAogICAgZmlsdGVyczogYHRyZW1vbG89Zj0wLjI1OmQ9MC4zLGxvd3Bhc3M9Zj0xMjAwLGFmYWRlPXQ9aW46c3Q9MDpkPTAuOCxhZmFkZT10PW91dDpzdD0ke01hdGgubWF4KDAuNSwgZCAtIDEuMil9OmQ9MS4yYCwKICB9KSwKICAvLyDlpLHotKXph43lh7vvvJrkvY7popHkuIvmu5EgKyDmjK/luYXoobDlh4/vvIhicmllZiBhaS1hZ2VudC1wcm9tbyBTMeOAjGVycm9yIOmHjeWHu+OAje+8iQogIGVycm9yOiAoZCkgPT4gKHsKICAgIGlucHV0OiBgYWV2YWxzcmM9MC44KnNpbigyKlBJKigxNzAtMTIwKnQvJHtkfSkqdCkqKDEtdC8ke2R9KTpkPSR7ZH06cz0ke1NSfWAsCiAgICBmaWx0ZXJzOiBgbG93cGFzcz1mPTkwMCx2b2x1bWU9MC45NWAsCiAgfSksCiAgLy8g5YCS5bim77ya6auY6aKR6aKk6Z+z5b+r6YCf5LiL5ruR77yIYnJpZWYgYWktYWdlbnQtcHJvbW8gUzLjgIxyZXdpbmTjgI3vvIkKICByZXdpbmQ6IChkKSA9PiAoewogICAgaW5wdXQ6IGBhZXZhbHNyYz0wLjM1KnNpbigyKlBJKigyMjArMTEwMCooMS10LyR7ZH0pKSp0KSooMC43KzAuMypzaW4oMipQSSoyOCp0KSk6ZD0ke2R9OnM9JHtTUn1gLAogICAgZmlsdGVyczogYGFmYWRlPXQ9b3V0OnN0PSR7KGQgKiAwLjcpLnRvRml4ZWQoMyl9OmQ9JHsoZCAqIDAuMykudG9GaXhlZCgzKX0sdm9sdW1lPTAuN2AsCiAgfSksCiAgLy8g5omT5a2X5py677ya55+t5L+D55qE5Zmq5aOw54K5CiAgdHlwaW5nOiAoZCkgPT4gKHsKICAgIGlucHV0OiBgYW5vaXNlc3JjPWNvbG9yPXdoaXRlOmR1cmF0aW9uPSR7ZH06c2FtcGxlX3JhdGU9JHtTUn1gLAogICAgZmlsdGVyczogYGhpZ2hwYXNzPWY9MjAwMCxsb3dwYXNzPWY9OTAwMCx0cmVtb2xvPWY9MTI6ZD0wLjksYWZhZGU9dD1vdXQ6c3Q9JHsoZCAqIDAuOSkudG9GaXhlZCgzKX06ZD0keyhkICogMC4xKS50b0ZpeGVkKDMpfSx2b2x1bWU9MC4yNWAsCiAgfSksCn07CgpmdW5jdGlvbiB0b1NlYyh2LCBmYWxsYmFjayA9IDApIHsKICBpZiAodiA9PT0gdW5kZWZpbmVkIHx8IHYgPT09IG51bGwgfHwgdiA9PT0gIiIpIHJldHVybiBmYWxsYmFjazsKICBpZiAodHlwZW9mIHYgPT09ICJudW1iZXIiKSByZXR1cm4gdjsKICBjb25zdCBzID0gU3RyaW5nKHYpLnRyaW0oKTsKICBpZiAoL15cZCsoXC5cZCspPyQvLnRlc3QocykpIHJldHVybiBOdW1iZXIocyk7CiAgY29uc3QgbSA9IHMubWF0Y2goL14oXGQrKTooXGR7MSwyfSk6KFxkezEsMn0oPzpcLlxkKyk/KSQvKTsKICBpZiAobSkgcmV0dXJuIE51bWJlcihtWzFdKSAqIDM2MDAgKyBOdW1iZXIobVsyXSkgKiA2MCArIE51bWJlcihtWzNdKTsKICBjb25zdCBtMiA9IHMubWF0Y2goL14oXGR7MSwyfSk6KFxkezEsMn0oPzpcLlxkKyk/KSQvKTsKICBpZiAobTIpIHJldHVybiBOdW1iZXIobTJbMV0pICogNjAgKyBOdW1iZXIobTJbMl0pOwogIHJldHVybiBmYWxsYmFjazsKfQoKY29uc3QgREVGQVVMVF9TRUMgPSB7IHRpY2s6IDAuMDgsIGRpbmc6IDAuNSwgYm9vbTogMC45LCBidXp6OiAwLjYsIHdob29zaDogMC44LCByaXNlcjogMS40LCBwYWQ6IDgsIGVycm9yOiAwLjYsIHJld2luZDogMC40LCB0eXBpbmc6IDIgfTsKCmZ1bmN0aW9uIHJlbmRlckN1ZShuYW1lLCBzZWNvbmRzLCBvdXQsIGdhaW4gPSAxLCBleHRyYSA9ICIiKSB7CiAgY29uc3QgbWFrZSA9IENVRVNbbmFtZV07CiAgaWYgKCFtYWtlKSB0aHJvdyBuZXcgRXJyb3IoYOayoeaciei/meS4qumfs+aViO+8miR7bmFtZX3vvIjlj6/nlKjvvJoke09iamVjdC5rZXlzKENVRVMpLmpvaW4oIiwgIil977yJYCk7CiAgY29uc3QgZCA9IE51bWJlcihzZWNvbmRzIHx8IERFRkFVTFRfU0VDW25hbWVdIHx8IDAuNSk7CiAgY29uc3QgeyBpbnB1dCwgZmlsdGVycyB9ID0gbWFrZShkLnRvRml4ZWQoMykpOwogIGV4ZWNTeW5jKAogICAgYGZmbXBlZyAteSAtbG9nbGV2ZWwgZXJyb3IgLWYgbGF2ZmkgLWkgIiR7aW5wdXR9IiAtYWYgIiR7ZmlsdGVyc30sdm9sdW1lPSR7TnVtYmVyKGdhaW4pLnRvRml4ZWQoMil9JHtleHRyYSA/ICIsIiArIGV4dHJhIDogIiJ9IiAtdCAke2QudG9GaXhlZCgzKX0gLWFyICR7U1J9IC1hYyAxIC1jb2RlYzphIGxpYm1wM2xhbWUgLWI6YSAxMjhrICIke291dH0iYCwKICAgIHsgdGltZW91dDogMTIwXzAwMCB9CiAgKTsKICByZXR1cm4gZDsKfQoKZnVuY3Rpb24gZHVyYXRpb24oZmlsZSkgewogIGNvbnN0IHYgPSBleGVjU3luYyhgZmZwcm9iZSAtdiBlcnJvciAtc2hvd19lbnRyaWVzIGZvcm1hdD1kdXJhdGlvbiAtb2YgZGVmYXVsdD1udz0xOm5rPTEgIiR7ZmlsZX0iYCwgeyBlbmNvZGluZzogInV0ZjgiIH0pLnRyaW0oKTsKICByZXR1cm4gTnVtYmVyKHYpIHx8IDA7Cn0KCmZ1bmN0aW9uIG1ha2UoKSB7CiAgY29uc3QgbmFtZSA9IFN0cmluZyhvcHQuY3VlIHx8ICIiKTsKICBpZiAoIW5hbWUpIHsgY29uc29sZS5lcnJvcihg55So5rOVOiBzZngubWpzIG1ha2UgLS1jdWUgPCR7T2JqZWN0LmtleXMoQ1VFUykuam9pbigifCIpfT4gWy0tc2Vjb25kcyAwLjhdIFstLWdhaW4gMV0gLS1vdXQgeC5tcDNgKTsgcmV0dXJuIDI7IH0KICBjb25zdCBvdXQgPSBwYXRoLnJlc29sdmUoU3RyaW5nKG9wdC5vdXQgfHwgcGF0aC5qb2luKEhPTUUsICJ0bXAiLCBgc2Z4LSR7bmFtZX0tJHtEYXRlLm5vdygpfS5tcDNgKSkpOwogIGZzLm1rZGlyU3luYyhwYXRoLmRpcm5hbWUob3V0KSwgeyByZWN1cnNpdmU6IHRydWUgfSk7CiAgY29uc3QgZCA9IHJlbmRlckN1ZShuYW1lLCBOdW1iZXIob3B0LnNlY29uZHMgfHwgMCksIG91dCwgTnVtYmVyKG9wdC5nYWluIHx8IDEpKTsKICBjb25zb2xlLmxvZyhKU09OLnN0cmluZ2lmeSh7IG9rOiB0cnVlLCBjdWU6IG5hbWUsIHNlY29uZHM6IGQsIGZpbGU6IG91dCwgYnl0ZXM6IGZzLnN0YXRTeW5jKG91dCkuc2l6ZSB9LCBudWxsLCAyKSk7CiAgcmV0dXJuIDA7Cn0KCi8qKiDmlbTmnaHlo7DovajvvJrmsJvlm7TlnqsgKyDoi6XlubLpn7PmlYjvvIjmjIkgYXQg5pGG5pS+77yJKyDlj6/pgInkurrlo7AgKi8KZnVuY3Rpb24gbWl4KCkgewogIGNvbnN0IHBsYW5GaWxlID0gU3RyaW5nKG9wdC5wbGFuIHx8ICIiKTsKICBpZiAoIXBsYW5GaWxlIHx8ICFmcy5leGlzdHNTeW5jKHBsYW5GaWxlKSkgeyBjb25zb2xlLmVycm9yKCLnlKjms5U6IHNmeC5tanMgbWl4IC0tcGxhbiBhdWRpby5qc29uIC0tb3V0IHZvaWNlLm1wMyIpOyByZXR1cm4gMjsgfQogIGNvbnN0IHBsYW4gPSBKU09OLnBhcnNlKGZzLnJlYWRGaWxlU3luYyhwbGFuRmlsZSwgInV0ZjgiKSk7CiAgY29uc3QgdG90YWwgPSB0b1NlYyhwbGFuLnRvdGFsLCAwKTsKICBpZiAodG90YWwgPD0gMCkgeyBjb25zb2xlLmVycm9yKCLinYwgcGxhbiDph4zopoHmnIkgdG90YWzvvIjmgLvml7bplb/vvIznp5LvvIkiKTsgcmV0dXJuIDI7IH0KCiAgY29uc3QgZGlyID0gcGF0aC5yZXNvbHZlKFN0cmluZyhvcHRbIm91dC1kaXIiXSB8fCBwYXRoLmpvaW4oSE9NRSwgInRtcCIsIGBzZngtJHtEYXRlLm5vdygpfWApKSk7CiAgZnMubWtkaXJTeW5jKGRpciwgeyByZWN1cnNpdmU6IHRydWUgfSk7CiAgY29uc3Qgb3V0ID0gcGF0aC5yZXNvbHZlKFN0cmluZyhvcHQub3V0IHx8IHBhdGguam9pbihkaXIsICJhdWRpby5tcDMiKSkpOwoKICAvLyDikaAg5bqV5Zmq5bqK77ya5rKh5pyJ5bCx55Sf5oiQ5LiA5p2h6Z2Z6Z+zCiAgY29uc3QgYmVkRmlsZSA9IHBhdGguam9pbihkaXIsICJiZWQubXAzIik7CiAgaWYgKHBsYW4uYmVkICYmIHBsYW4uYmVkLmN1ZSkgewogICAgLy8gYmVkLnNpbGVuY2U6IFtmcm9tLCB0b13vvIjnp5LvvInihpIg6K+l56qX5Y+j5pW05q616Z2Z6Z+z77yI5aaCIGFpLWFnZW50LXByb21vIDMxLjDigJMzMS4zNXMg5YWo5Zy66Z2Z6buY6ZSa54K577yJCiAgICBjb25zdCBnYXAgPSBBcnJheS5pc0FycmF5KHBsYW4uYmVkLnNpbGVuY2UpCiAgICAgID8gYHZvbHVtZT1lbmFibGU9J2JldHdlZW4odCwke3RvU2VjKHBsYW4uYmVkLnNpbGVuY2VbMF0pfSwke3RvU2VjKHBsYW4uYmVkLnNpbGVuY2VbMV0pfSknOnZvbHVtZT0wYAogICAgICA6ICIiOwogICAgcmVuZGVyQ3VlKHBsYW4uYmVkLmN1ZSwgdG90YWwsIGJlZEZpbGUsIE51bWJlcihwbGFuLmJlZC5nYWluID8/IDAuMiksIGdhcCk7CiAgfSBlbHNlIHsKICAgIGV4ZWNTeW5jKAogICAgICBgZmZtcGVnIC15IC1sb2dsZXZlbCBlcnJvciAtZiBsYXZmaSAtaSAiYW51bGxzcmM9cj0ke1NSfTpjbD1tb25vIiAtdCAke3RvdGFsLnRvRml4ZWQoMyl9IC1jb2RlYzphIGxpYm1wM2xhbWUgLWI6YSAxMjhrICIke2JlZEZpbGV9ImAsCiAgICAgIHsgdGltZW91dDogNjBfMDAwIH0KICAgICk7CiAgfQoKICAvLyDikaEg6YCQ5Liq6Z+z5pWICiAgY29uc3QgaW5wdXRzID0gW2AtaSAiJHtiZWRGaWxlfSJgXTsKICBjb25zdCBjaGFpbnMgPSBbXTsKICBjb25zdCBsYWJlbHMgPSBbIlswOmFdIl07CiAgbGV0IGlkeCA9IDE7CgogIGZvciAoY29uc3QgYyBvZiBwbGFuLmN1ZXMgfHwgW10pIHsKICAgIGNvbnN0IGF0ID0gdG9TZWMoYy5hdCwgMCk7CiAgICBjb25zdCBmID0gcGF0aC5qb2luKGRpciwgYGN1ZS0ke2lkeH0ubXAzYCk7CiAgICBjb25zdCBkID0gcmVuZGVyQ3VlKGMuY3VlLCBOdW1iZXIoYy5zZWNvbmRzIHx8IDApLCBmLCAxKTsKICAgIGlucHV0cy5wdXNoKGAtaSAiJHtmfSJgKTsKICAgIGNvbnN0IGRlbGF5TXMgPSBNYXRoLm1heCgwLCBNYXRoLnJvdW5kKGF0ICogMTAwMCkpOwogICAgLy8gYWRlbGF5IOS5i+WQjuaMiSBnYWluIOiwg+mfs+mHj++8jOWGjeagh+S4quagh+etvuetiSBhbWl4CiAgICBjaGFpbnMucHVzaChgWyR7aWR4fTphXWFkZWxheT0ke2RlbGF5TXN9fCR7ZGVsYXlNc30sdm9sdW1lPSR7TnVtYmVyKGMuZ2FpbiA/PyAwLjcpLnRvRml4ZWQoMil9W2Mke2lkeH1dYCk7CiAgICBsYWJlbHMucHVzaChgW2Mke2lkeH1dYCk7CiAgICBpZHggKz0gMTsKICAgIGlmIChhdCArIGQgPiB0b3RhbCArIDAuMDUpIGNvbnNvbGUuZXJyb3IoYCAg4pqg77iPIOmfs+aViCAke2MuY3VlfSDlnKggJHthdH1zIOi1t+OAgemVvyAke2R9c++8jOi2heWHuuaAu+mVvyAke3RvdGFsfXNgKTsKICB9CgogIC8vIOKRoiDkurrlo7AKICBsZXQgdm9pY2VJZHggPSAtMTsKICBpZiAocGxhbi52b2ljZSAmJiBmcy5leGlzdHNTeW5jKHBsYW4udm9pY2UpKSB7CiAgICBpbnB1dHMucHVzaChgLWkgIiR7U3RyaW5nKHBsYW4udm9pY2UpfSJgKTsKICAgIHZvaWNlSWR4ID0gaWR4OwogICAgY2hhaW5zLnB1c2goYFske3ZvaWNlSWR4fTphXXZvbHVtZT0ke051bWJlcihwbGFuLnZvaWNlR2FpbiA/PyAxKS50b0ZpeGVkKDIpfVt2XWApOwogICAgbGFiZWxzLnB1c2goYFt2XWApOwogICAgaWR4ICs9IDE7CiAgfQoKICAvLyDikaMg5re36Z+z77ya5Lul5bqV5Zmq5bqK6ZW/5bqm5Li65YeG77yM5pyA5ZCO5Y6L5LiA5LiL6Ziy54iG6Z+zCiAgLy8g4pqg77iPIOavj+adoemTvuS5i+mXtOW/hemhu+aYr+WIhuWPt++8m+WwkeS4gOS4quWIhuWPt++8jGZmbXBlZyDkvJrmioogW3ZdWzA6YV0g5b2T5oiQ5Liy6IGU6ICM5LiN5piv5bm26IGUCiAgY29uc3QgcHJlID0gY2hhaW5zLmxlbmd0aCA/IGNoYWlucy5qb2luKCI7IikgKyAiOyIgOiAiIjsKICBjb25zdCBmaWx0ZXIgPSBgJHtwcmV9JHtsYWJlbHMuam9pbigiIil9YW1peD1pbnB1dHM9JHtsYWJlbHMubGVuZ3RofTpkdXJhdGlvbj1maXJzdDpkcm9wb3V0X3RyYW5zaXRpb249MCxhbGltaXRlcj1saW1pdD0wLjk1LGxvdWRub3JtPUk9LTE2OlRQPS0xLjU6TFJBPTExYDsKICBleGVjU3luYygKICAgIGBmZm1wZWcgLXkgLWxvZ2xldmVsIGVycm9yICR7aW5wdXRzLmpvaW4oIiAiKX0gLWZpbHRlcl9jb21wbGV4ICIke2ZpbHRlcn0iIC10ICR7dG90YWwudG9GaXhlZCgzKX0gLWFyICR7U1J9IC1hYyAxIC1jb2RlYzphIGxpYm1wM2xhbWUgLWI6YSAxMjhrICIke291dH0iYCwKICAgIHsgdGltZW91dDogMzAwXzAwMCB9CiAgKTsKCiAgY29uc3Qgc2VjcyA9IGR1cmF0aW9uKG91dCk7CiAgY29uc29sZS5sb2coCiAgICBKU09OLnN0cmluZ2lmeSgKICAgICAgeyBvazogTWF0aC5hYnMoc2VjcyAtIHRvdGFsKSA8IDAuMiwgZmlsZTogb3V0LCBzZWNvbmRzOiBOdW1iZXIoc2Vjcy50b0ZpeGVkKDIpKSwgcGxhbm5lZDogdG90YWwsIGN1ZXM6IChwbGFuLmN1ZXMgfHwgW10pLmxlbmd0aCwgdm9pY2U6IHBsYW4udm9pY2UgfHwgbnVsbCwgYnl0ZXM6IGZzLnN0YXRTeW5jKG91dCkuc2l6ZSB9LAogICAgICBudWxsLAogICAgICAyCiAgICApCiAgKTsKICByZXR1cm4gTWF0aC5hYnMoc2VjcyAtIHRvdGFsKSA8IDAuMiA/IDAgOiAxOwp9CgppZiAoY21kID09PSAibGlzdCIpIHsKICBmb3IgKGNvbnN0IGsgb2YgT2JqZWN0LmtleXMoQ1VFUykpIGNvbnNvbGUubG9nKGAke2sucGFkRW5kKDgpfSDpu5jorqQgJHtERUZBVUxUX1NFQ1trXX1zYCk7CiAgcHJvY2Vzcy5leGl0KDApOwp9CmlmIChjbWQgPT09ICJtYWtlIikgcHJvY2Vzcy5leGl0KG1ha2UoKSk7CmlmIChjbWQgPT09ICJtaXgiKSBwcm9jZXNzLmV4aXQobWl4KCkpOwpjb25zb2xlLmVycm9yKCLnlKjms5XvvJpub2RlIHNmeC5tanMgPGxpc3R8bWFrZXxtaXg+IC4uLiIpOwpwcm9jZXNzLmV4aXQoMik7Cg==
+#!/usr/bin/env node
+/**
+ * sfx.mjs —— 用程序合成音效，铺一条和画面严丝合缝的声轨
+ * ============================================================
+ * 为什么先做音效、TTS 反而可选：
+ *   音效可以**算**出来 —— ffmpeg 合成，时长精确到毫秒，不花钱、不排队、不依赖任何 API。
+ *   人声不行，它必须调外部服务。
+ *   所以默认路径是：程序音效铺底 → 需要人声再加 TTS。别让片子因为「配音没配好」而发不出去。
+ *
+ * 两种用法：
+ *   1) 单个音效：node sfx.mjs make --cue whoosh --seconds 0.9 --out a.mp3
+ *   2) 整条声轨：node sfx.mjs mix --plan audio.json --out voice.mp3
+ *
+ * audio.json（时间单位秒，可以写 "00:00:03.2"）：
+ *   {
+ *     "total": 13,
+ *     "bed":  { "cue": "pad", "gain": 0.18 },
+ *     "cues": [
+ *       { "at": 0,    "cue": "ding",   "gain": 0.7 },
+ *       { "at": 3.8,  "cue": "whoosh", "seconds": 0.9, "gain": 0.6 },
+ *       { "at": 10,   "cue": "boom",   "gain": 0.8 }
+ *     ],
+ *     "voice": "/opt/life/tmp/ep01/voice.mp3"     // 可选：人声轨
+ *   }
+ *
+ * 退出码：0 成功 / 1 失败 / 2 参数错
+ */
+
+import fs from "node:fs";
+import path from "node:path";
+import { execSync } from "node:child_process";
+
+const HOME = process.env.LIFE_HOME || "/opt/life";
+const argv = process.argv.slice(2);
+const cmd = argv[0] || "";
+const opt = {};
+for (let i = 1; i < argv.length; i += 1) {
+  if (argv[i].startsWith("--")) {
+    const v = argv[i + 1];
+    if (v === undefined || v.startsWith("--")) opt[argv[i].slice(2)] = true;
+    else { opt[argv[i].slice(2)] = v; i += 1; }
+  }
+}
+
+const SR = 44100;
+
+/**
+ * 音效库。每个都返回 ffmpeg 的 lavfi 输入串 + 后处理链。
+ * 原则：能算就别采样 —— 不依赖任何素材文件，跑在哪台机器上都一样。
+ */
+const CUES = {
+  // 轻点一下，用于字幕/数字出现
+  tick: (d) => ({
+    input: `sine=frequency=1600:duration=${d}:sample_rate=${SR}`,
+    filters: `afade=t=out:st=0:d=${Math.max(0.03, d * 0.9)}:curve=exp,volume=0.5`,
+  }),
+  // 两声「叮咚」，用于结论落定
+  ding: (d) => ({
+    input: `sine=frequency=880:duration=${d}:sample_rate=${SR}`,
+    filters: `afade=t=out:st=0:d=${d}:curve=exp,volume=0.55`,
+  }),
+  // 低沉的「咚」，用于重点强调
+  boom: (d) => ({
+    input: `sine=frequency=70:duration=${d}:sample_rate=${SR}`,
+    filters: `afade=t=out:st=0:d=${d}:curve=exp,volume=0.9`,
+  }),
+  // 失败/警告
+  buzz: (d) => ({
+    input: `sine=frequency=140:duration=${d}:sample_rate=${SR}`,
+    filters: `vibrato=f=18:d=0.6,afade=t=out:st=${d * 0.7}:d=${d * 0.3},volume=0.5`,
+  }),
+  // 转场呼啸：粉噪扫频
+  whoosh: (d) => ({
+    input: `anoisesrc=color=pink:duration=${d}:sample_rate=${SR}`,
+    filters: [
+      `highpass=f=300`,
+      `lowpass=f=6000`,
+      `afade=t=in:st=0:d=${(d * 0.35).toFixed(3)}`,
+      `afade=t=out:st=${(d * 0.55).toFixed(3)}:d=${(d * 0.45).toFixed(3)}`,
+      `volume=0.55`,
+    ].join(","),
+  }),
+  // 上升音：频率从 180 扫到 720
+  riser: (d) => ({
+    input: `aevalsrc=0.25*sin(2*PI*(180+540*t/${d})*t):d=${d}:s=${SR}`,
+    filters: `afade=t=in:st=0:d=${(d * 0.2).toFixed(3)},afade=t=out:st=${(d * 0.85).toFixed(3)}:d=${(d * 0.15).toFixed(3)}`,
+  }),
+  // 氛围垫：两个低频正弦 + 轻微颤动，适合当底噪
+  pad: (d) => ({
+    input: `aevalsrc=0.08*sin(2*PI*110*t)+0.06*sin(2*PI*164.8*t)+0.04*sin(2*PI*220*t):d=${d}:s=${SR}`,
+    filters: `tremolo=f=0.25:d=0.3,lowpass=f=1200,afade=t=in:st=0:d=0.8,afade=t=out:st=${Math.max(0.5, d - 1.2)}:d=1.2`,
+  }),
+  // 失败重击：低频下滑 + 振幅衰减（brief ai-agent-promo S1「error 重击」）
+  error: (d) => ({
+    input: `aevalsrc=0.8*sin(2*PI*(170-120*t/${d})*t)*(1-t/${d}):d=${d}:s=${SR}`,
+    filters: `lowpass=f=900,volume=0.95`,
+  }),
+  // 倒带：高频颤音快速下滑（brief ai-agent-promo S2「rewind」）
+  rewind: (d) => ({
+    input: `aevalsrc=0.35*sin(2*PI*(220+1100*(1-t/${d}))*t)*(0.7+0.3*sin(2*PI*28*t)):d=${d}:s=${SR}`,
+    filters: `afade=t=out:st=${(d * 0.7).toFixed(3)}:d=${(d * 0.3).toFixed(3)},volume=0.7`,
+  }),
+  // 打字机：短促的噪声点
+  typing: (d) => ({
+    input: `anoisesrc=color=white:duration=${d}:sample_rate=${SR}`,
+    filters: `highpass=f=2000,lowpass=f=9000,tremolo=f=12:d=0.9,afade=t=out:st=${(d * 0.9).toFixed(3)}:d=${(d * 0.1).toFixed(3)},volume=0.25`,
+  }),
+};
+
+function toSec(v, fallback = 0) {
+  if (v === undefined || v === null || v === "") return fallback;
+  if (typeof v === "number") return v;
+  const s = String(v).trim();
+  if (/^\d+(\.\d+)?$/.test(s)) return Number(s);
+  const m = s.match(/^(\d+):(\d{1,2}):(\d{1,2}(?:\.\d+)?)$/);
+  if (m) return Number(m[1]) * 3600 + Number(m[2]) * 60 + Number(m[3]);
+  const m2 = s.match(/^(\d{1,2}):(\d{1,2}(?:\.\d+)?)$/);
+  if (m2) return Number(m2[1]) * 60 + Number(m2[2]);
+  return fallback;
+}
+
+const DEFAULT_SEC = { tick: 0.08, ding: 0.5, boom: 0.9, buzz: 0.6, whoosh: 0.8, riser: 1.4, pad: 8, error: 0.6, rewind: 0.4, typing: 2 };
+
+function renderCue(name, seconds, out, gain = 1, extra = "") {
+  const make = CUES[name];
+  if (!make) throw new Error(`没有这个音效：${name}（可用：${Object.keys(CUES).join(", ")}）`);
+  const d = Number(seconds || DEFAULT_SEC[name] || 0.5);
+  const { input, filters } = make(d.toFixed(3));
+  execSync(
+    `ffmpeg -y -loglevel error -f lavfi -i "${input}" -af "${filters},volume=${Number(gain).toFixed(2)}${extra ? "," + extra : ""}" -t ${d.toFixed(3)} -ar ${SR} -ac 1 -codec:a libmp3lame -b:a 128k "${out}"`,
+    { timeout: 120_000 }
+  );
+  return d;
+}
+
+function duration(file) {
+  const v = execSync(`ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 "${file}"`, { encoding: "utf8" }).trim();
+  return Number(v) || 0;
+}
+
+function make() {
+  const name = String(opt.cue || "");
+  if (!name) { console.error(`用法: sfx.mjs make --cue <${Object.keys(CUES).join("|")}> [--seconds 0.8] [--gain 1] --out x.mp3`); return 2; }
+  const out = path.resolve(String(opt.out || path.join(HOME, "tmp", `sfx-${name}-${Date.now()}.mp3`)));
+  fs.mkdirSync(path.dirname(out), { recursive: true });
+  const d = renderCue(name, Number(opt.seconds || 0), out, Number(opt.gain || 1));
+  console.log(JSON.stringify({ ok: true, cue: name, seconds: d, file: out, bytes: fs.statSync(out).size }, null, 2));
+  return 0;
+}
+
+/** 整条声轨：氛围垫 + 若干音效（按 at 摆放）+ 可选人声 */
+function mix() {
+  const planFile = String(opt.plan || "");
+  if (!planFile || !fs.existsSync(planFile)) { console.error("用法: sfx.mjs mix --plan audio.json --out voice.mp3"); return 2; }
+  const plan = JSON.parse(fs.readFileSync(planFile, "utf8"));
+  const total = toSec(plan.total, 0);
+  if (total <= 0) { console.error("❌ plan 里要有 total（总时长，秒）"); return 2; }
+
+  const dir = path.resolve(String(opt["out-dir"] || path.join(HOME, "tmp", `sfx-${Date.now()}`)));
+  fs.mkdirSync(dir, { recursive: true });
+  const out = path.resolve(String(opt.out || path.join(dir, "audio.mp3")));
+
+  // ① 底噪床：没有就生成一条静音
+  const bedFile = path.join(dir, "bed.mp3");
+  if (plan.bed && plan.bed.cue) {
+    // bed.silence: [from, to]（秒）→ 该窗口整段静音（如 ai-agent-promo 31.0–31.35s 全场静默锚点）
+    const gap = Array.isArray(plan.bed.silence)
+      ? `volume=enable='between(t,${toSec(plan.bed.silence[0])},${toSec(plan.bed.silence[1])})':volume=0`
+      : "";
+    renderCue(plan.bed.cue, total, bedFile, Number(plan.bed.gain ?? 0.2), gap);
+  } else {
+    execSync(
+      `ffmpeg -y -loglevel error -f lavfi -i "anullsrc=r=${SR}:cl=mono" -t ${total.toFixed(3)} -codec:a libmp3lame -b:a 128k "${bedFile}"`,
+      { timeout: 60_000 }
+    );
+  }
+
+  // ② 逐个音效
+  const inputs = [`-i "${bedFile}"`];
+  const chains = [];
+  const labels = ["[0:a]"];
+  let idx = 1;
+
+  for (const c of plan.cues || []) {
+    const at = toSec(c.at, 0);
+    const f = path.join(dir, `cue-${idx}.mp3`);
+    const d = renderCue(c.cue, Number(c.seconds || 0), f, 1);
+    inputs.push(`-i "${f}"`);
+    const delayMs = Math.max(0, Math.round(at * 1000));
+    // adelay 之后按 gain 调音量，再标个标签等 amix
+    chains.push(`[${idx}:a]adelay=${delayMs}|${delayMs},volume=${Number(c.gain ?? 0.7).toFixed(2)}[c${idx}]`);
+    labels.push(`[c${idx}]`);
+    idx += 1;
+    if (at + d > total + 0.05) console.error(`  ⚠️ 音效 ${c.cue} 在 ${at}s 起、长 ${d}s，超出总长 ${total}s`);
+  }
+
+  // ③ 人声
+  let voiceIdx = -1;
+  if (plan.voice && fs.existsSync(plan.voice)) {
+    inputs.push(`-i "${String(plan.voice)}"`);
+    voiceIdx = idx;
+    chains.push(`[${voiceIdx}:a]volume=${Number(plan.voiceGain ?? 1).toFixed(2)}[v]`);
+    labels.push(`[v]`);
+    idx += 1;
+  }
+
+  // ④ 混音：以底噪床长度为准，最后压一下防爆音
+  // ⚠️ 每条链之间必须是分号；少一个分号，ffmpeg 会把 [v][0:a] 当成串联而不是并联
+  const pre = chains.length ? chains.join(";") + ";" : "";
+  const filter = `${pre}${labels.join("")}amix=inputs=${labels.length}:duration=first:dropout_transition=0,alimiter=limit=0.95,loudnorm=I=-16:TP=-1.5:LRA=11`;
+  execSync(
+    `ffmpeg -y -loglevel error ${inputs.join(" ")} -filter_complex "${filter}" -t ${total.toFixed(3)} -ar ${SR} -ac 1 -codec:a libmp3lame -b:a 128k "${out}"`,
+    { timeout: 300_000 }
+  );
+
+  const secs = duration(out);
+  console.log(
+    JSON.stringify(
+      { ok: Math.abs(secs - total) < 0.2, file: out, seconds: Number(secs.toFixed(2)), planned: total, cues: (plan.cues || []).length, voice: plan.voice || null, bytes: fs.statSync(out).size },
+      null,
+      2
+    )
+  );
+  return Math.abs(secs - total) < 0.2 ? 0 : 1;
+}
+
+if (cmd === "list") {
+  for (const k of Object.keys(CUES)) console.log(`${k.padEnd(8)} 默认 ${DEFAULT_SEC[k]}s`);
+  process.exit(0);
+}
+if (cmd === "make") process.exit(make());
+if (cmd === "mix") process.exit(mix());
+console.error("用法：node sfx.mjs <list|make|mix> ...");
+process.exit(2);

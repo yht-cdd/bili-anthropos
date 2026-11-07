@@ -1,1 +1,27 @@
-ewogICJiYXNlVXJsIjogImh0dHBzOi8vYXBpLmFnbmVzLWFpLmNuIiwKICAia2V5RmlsZSI6ICJzZWNyZXRzL2FnbmVzX2tleS50eHQiLAogICJtb2RlbHNQYXRoIjogIi92MS9tb2RlbHMiLAogICJpbWFnZSI6IHsKICAgICJwYXRoIjogIi92MS9pbWFnZXMvZ2VuZXJhdGlvbnMiLAogICAgIm1vZGVsIjogImFnbmVzLWltYWdlLTIuNS1mbGFzaCIsCiAgICAic2l6ZSI6ICIxOTIweDEwODAiLAogICAgImV4dHJhQm9keSI6IHsKICAgICAgInJlc3BvbnNlX2Zvcm1hdCI6ICJ1cmwiCiAgICB9CiAgfSwKICAidmlkZW8iOiB7CiAgICAicGF0aCI6ICIvdjEvdmlkZW9zIiwKICAgICJtb2RlbCI6ICJhZ25lcy12aWRlby0yLjUtZmxhc2giLAogICAgIm1vZGVGaWVsZCI6ICJtb2RlIiwKICAgICJtb2RlcyI6IHsKICAgICAgInRleHQiOiAidGV4dCIsCiAgICAgICJrZXlmcmFtZSI6ICJrZXlmcmFtZSIKICAgIH0sCiAgICAic3RhdHVzUGF0aHMiOiBbCiAgICAgICIvdjEvdmlkZW9zL3tpZH0iLAogICAgICAiL3YxL3ZpZGVvcy9xdWVyeT9pZD17aWR9IgogICAgXQogIH0sCiAgImRhaWx5TWF4VW5saW1pdGVkIjogdHJ1ZQp9
+{
+  "baseUrl": "https://api.agnes-ai.cn",
+  "keyFile": "secrets/agnes_key.txt",
+  "modelsPath": "/v1/models",
+  "image": {
+    "path": "/v1/images/generations",
+    "model": "agnes-image-2.5-flash",
+    "size": "1920x1080",
+    "extraBody": {
+      "response_format": "url"
+    }
+  },
+  "video": {
+    "path": "/v1/videos",
+    "model": "agnes-video-2.5-flash",
+    "modeField": "mode",
+    "modes": {
+      "text": "text",
+      "keyframe": "keyframe"
+    },
+    "statusPaths": [
+      "/v1/videos/{id}",
+      "/v1/videos/query?id={id}"
+    ]
+  },
+  "dailyMaxUnlimited": true
+}
