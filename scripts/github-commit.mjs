@@ -193,10 +193,26 @@ export async function commitFiles(o) {
     });
 
     log(`  移 ref → ${newCommit.sha.slice(0, 7)}`);
-    await gh(`/repos/${REPO}/git/refs/heads/${branch}`, {
-      method: "PATCH",
-      body: JSON.stringify({ sha: newCommit.sha, force: false }),
-    });
+    // GitHub 的 Git Data API 是写后读最终一致的：刚建出来的 commit 可能在另一个
+    // 后端副本上还没可见，PATCH ref 就会报 422「Object does not exist」。
+    // 2026-11-07 连撞两次（sync 第 4 批、AGENTS 合并），只能靠重跑，所以在这里重试。
+    let lastErr = null;
+    for (let a = 1; a <= 4; a += 1) {
+      try {
+        await gh(`/repos/${REPO}/git/refs/heads/${branch}`, {
+          method: "PATCH",
+          body: JSON.stringify({ sha: newCommit.sha, force: false }),
+        });
+        lastErr = null;
+        break;
+      } catch (e) {
+        lastErr = e;
+        if (!/does not exist|422|404/.test(String(e.message))) break;
+        log(`    ref 还没可见（第 ${a} 次），等 2s 重试…`);
+        await new Promise((r) => setTimeout(r, 2000));
+      }
+    }
+    if (lastErr) throw lastErr;
 
     results.push({ commit: newCommit.sha, tree: tree.sha, files: batch.length, message: msg });
   }
