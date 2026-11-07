@@ -73,7 +73,10 @@ function walk(dir, base, acc) {
     }
     let st;
     try { st = fs.statSync(abs); } catch { continue; }
-    if (SKIP_FILE.test(rel)) continue;
+    // 例外：public/audio/ 下的成品音轨要进仓库 —— 片子里用 staticFile() 引用，
+    // CI 渲染时缺了它要么报错、要么静默出无声版（2026-11-07 letter-1107 加音效时发现）
+    const isTrack = /(^|\/)public\/audio\/[^/]+\.(mp3|wav|m4a)$/i.test(rel);
+    if (SKIP_FILE.test(rel) && !isTrack) continue;
     if (st.size > 5 * 1024 * 1024) continue;              // 单文件超 5MB 不传
     if (SRC_EXT.test(rel)) {
       acc.push({ abs, rel, size: st.size });
