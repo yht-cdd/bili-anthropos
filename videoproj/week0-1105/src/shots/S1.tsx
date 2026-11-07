@@ -1,1 +1,145 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEVBU0VfRVhQT19PVVQsIHByb2csIHRmLCB0eXBlZExpbmUgfSBmcm9tICcuLi9hbmltJzsKaW1wb3J0IHsKICBCRywKICBCR19HUkFELAogIEZPTlRfTU9OTywKICBGT05UX1NBTlMsCiAgRlNfQ09ERSwKICBGU19TTE9HQU4sCiAgTEVER0VSLAogIE1JRCwKICBQQVBFUiwKICBSQURJVVMsCiAgU0hBRE9XLAp9IGZyb20gJy4uL3RoZW1lJzsKCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8gUzEgwrcgOTDigJMyMTBm77yIMy4w4oCTNy4wc++8iSBbdHlwb2dyYXBoeV0gdHlwZXdyaXRlci1tb3ZlcyArIFtlZmZlY3RzXSBzY2FubGluZS1hbm5vdGF0ZS1mb2N1cwovLyDkuIrmmpfkuIvkuq7muJDlj5jlupXvvJvlt6bkvqfkuKTlj6Ug4piFIOagh+ivremAkOWtl+aJk+WHuu+8iDNmL+Wtl++8ie+8m+WPs+S+p+i/m+eoi+eKtuaAgee7iOerr+eqlyBmYWRlaW7jgIIKLy8g5bGA6YOo5binID0g5YWo5bGA5binIOKIkiA5MO+8iOS4i+aWh+azqOmHiumHjOeahOW4p+WPt+Wdh+S4uuWFqOWxgO+8jOingeaRhOW9seihqCBTMe+8ieOAggovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Cgpjb25zdCBMSU5FMSA9ICcyNOWwj+aXtuiHquS4u+W3peS9nO+8jCc7IC8vIOKYhSDpgJDlrZfvvIzmoIfngrnkuI3liqgKY29uc3QgTElORTIgPSAn5LiN5piv5YWz55S16ISR5bCx552h6KeJ55qE5a6g54mp44CCJzsgLy8g4piFIOmAkOWtl++8jOagh+eCueS4jeWKqAoKLy8g57uI56uvIG1vY2vvvIg2NDDDlzM2MCBAICgxMjAwLDMwMCnvvIwyOHB4IE1vbm896KOF6aWw5bGC5bqV57q/5a2X5Y+377ybCi8vIOiuvuiuoeeovyAzNnB4IOaUvuS4jei/myA2NDAg5a6977yM5oyJIMKn5LiA44CM5Luj56CBIDI4cHgg5bqV57q/5LuF57uI56uv6KOF6aWw5bGC44CN6ZmN57qn77yM6KeBIHByb2dyZXNzIOWBj+W3ruiusOW9le+8iQpjb25zdCBURVJNX0xJTkVTOiBBcnJheTx7IHRleHQ6IHN0cmluZzsgZGltPzogYm9vbGVhbiB9PiA9IFsKICB7IHRleHQ6ICdhbnRocm9wb3MtYWdlbnQgICAgUlVOTklORycgfSwKICB7IHRleHQ6ICdwaWQgMTg0NywgdXB0aW1lIDdkIDJoIDE0bScsIGRpbTogdHJ1ZSB9LAogIHsgdGV4dDogJ+KUnOKUgCBzY2hlZHVsZXIgICAgICAgYWN0aXZlJyB9LAogIHsgdGV4dDogJ+KUgiAgICBuZXh0OiAyMzowMCBkYWlseV9yZXBvcnQnLCBkaW06IHRydWUgfSwKICB7IHRleHQ6ICfilJzilIAgaW5ib3hfbW9uaXRvciAgIHBvbGxpbmcnIH0sCiAgeyB0ZXh0OiAn4pSCICAgIGludGVydmFsOiA1bWluJywgZGltOiB0cnVlIH0sCiAgeyB0ZXh0OiAn4pSU4pSAIG1vZGVsX2NsaWVudCAgICBpZGxlJyB9LAogIHsgdGV4dDogJyAgICAgbGFzdF9jYWxsOiAybSBhZ28nLCBkaW06IHRydWUgfSwKXTsKCmNvbnN0IFR5cGVMaW5lOiBSZWFjdC5GQzx7IHRleHQ6IHN0cmluZzsgZnJhbWU6IG51bWJlcjsgc3RhcnQ6IG51bWJlciB9PiA9ICh7IHRleHQsIGZyYW1lLCBzdGFydCB9KSA9PiB7CiAgY29uc3QgbiA9IHR5cGVkTGluZShmcmFtZSwgc3RhcnQsIDAsIDAsIHRleHQubGVuZ3RoLCAzKTsKICByZXR1cm4gKAogICAgPHNwYW4+CiAgICAgIHt0ZXh0LnNsaWNlKDAsIG4pfQogICAgICB7Lyog5YWJ5qCH77ya5omT5a2X5pyf6Ze05bi45Lqu77yM5omT5a6M5b+r6ZeqIDRmIOWRqOacnyAqL30KICAgICAge2ZyYW1lID49IHN0YXJ0ICYmIGZyYW1lIC0gc3RhcnQgPCB0ZXh0Lmxlbmd0aCAqIDMgKyAxMiA/ICgKICAgICAgICA8c3BhbiBzdHlsZT17eyBvcGFjaXR5OiBuIDwgdGV4dC5sZW5ndGggPyAxIDogTWF0aC5mbG9vcigoKGZyYW1lIC0gc3RhcnQpICUgOCkgLyA0KSA9PT0gMCA/IDEgOiAwLCBjb2xvcjogJyNENEY0M0UnIH19PgogICAgICAgICAg4paNCiAgICAgICAgPC9zcGFuPgogICAgICApIDogbnVsbH0KICAgIDwvc3Bhbj4KICApOwp9OwoKZXhwb3J0IGNvbnN0IFMxOiBSZWFjdC5GQyA9ICgpID0+IHsKICBjb25zdCBnID0gdXNlQ3VycmVudEZyYW1lKCkgKyA5MDsgLy8g5YWo5bGA5binCgogIC8vIDE5MOKAkzIxMGbvvJrnu4jnq6/nqpcgb3BhY2l0eSAw4oaSMSBmYWRlaW4gMjBmCiAgY29uc3QgdGVybVAgPSBwcm9nKGcsIDE5MCwgMjAsIEVBU0VfRVhQT19PVVQpOwoKICByZXR1cm4gKAogICAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBiYWNrZ3JvdW5kOiBCR19HUkFEIH19PgogICAgICB7Lyog5bem5L6n5Lik5Y+l5qCH6K+t77yIMTYwLDIwMO+8ie+8iDE2MCwyODDvvIkgKi99CiAgICAgIDxkaXYgc3R5bGU9e3sgcG9zaXRpb246ICdhYnNvbHV0ZScsIGxlZnQ6IDE2MCwgdG9wOiAyMDAsIHdpZHRoOiAxMDAwIH19PgogICAgICAgIDxkaXYKICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfU0FOUywKICAgICAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgICAgICBmb250U2l6ZTogRlNfU0xPR0FOLAogICAgICAgICAgICBsaW5lSGVpZ2h0OiAnODBweCcsCiAgICAgICAgICAgIGhlaWdodDogODAsCiAgICAgICAgICAgIGNvbG9yOiBQQVBFUiwKICAgICAgICAgICAgd2hpdGVTcGFjZTogJ25vd3JhcCcsCiAgICAgICAgICB9fQogICAgICAgID4KICAgICAgICAgIDxUeXBlTGluZSB0ZXh0PXtMSU5FMX0gZnJhbWU9e2d9IHN0YXJ0PXs5MH0gLz4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBmb250RmFtaWx5OiBGT05UX1NBTlMsCiAgICAgICAgICAgIGZvbnRXZWlnaHQ6IDcwMCwKICAgICAgICAgICAgZm9udFNpemU6IEZTX1NMT0dBTiwKICAgICAgICAgICAgbGluZUhlaWdodDogJzgwcHgnLAogICAgICAgICAgICBoZWlnaHQ6IDgwLAogICAgICAgICAgICBtYXJnaW5Ub3A6IDAsCiAgICAgICAgICAgIGNvbG9yOiBQQVBFUiwKICAgICAgICAgICAgd2hpdGVTcGFjZTogJ25vd3JhcCcsCiAgICAgICAgICB9fQogICAgICAgID4KICAgICAgICAgIDxUeXBlTGluZSB0ZXh0PXtMSU5FMn0gZnJhbWU9e2d9IHN0YXJ0PXsxNTB9IC8+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgoKICAgICAgey8qIOWPs+S+p+i/m+eoi+eKtuaAgee7iOerr+eql++8iDEyMDAsMzAw77yJNjQww5czNjAgKi99CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICBsZWZ0OiAxMjAwLAogICAgICAgICAgdG9wOiAzMDAsCiAgICAgICAgICB3aWR0aDogNjQwLAogICAgICAgICAgaGVpZ2h0OiAzNjAsCiAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6IE1JRCwKICAgICAgICAgIGJvcmRlclJhZGl1czogUkFESVVTLAogICAgICAgICAgYm9yZGVyOiAnMXB4IHNvbGlkIHJnYmEoNjMsMTgyLDEzOSwwLjI1KScsCiAgICAgICAgICBib3hTaGFkb3c6IFNIQURPVywKICAgICAgICAgIHBhZGRpbmc6ICcyMHB4IDI4cHgnLAogICAgICAgICAgYm94U2l6aW5nOiAnYm9yZGVyLWJveCcsCiAgICAgICAgICBvcGFjaXR5OiB0ZXJtUCwKICAgICAgICAgIHRyYW5zZm9ybTogdGYoW3Rlcm1QIDwgMSA/IGB0cmFuc2xhdGVZKCR7KDEgLSB0ZXJtUCkgKiAxNn1weClgIDogbnVsbF0pLAogICAgICAgIH19CiAgICAgID4KICAgICAgICB7Lyog57uI56uv6aG25qCP5LiJ54K5ICovfQogICAgICAgIDxkaXYgc3R5bGU9e3sgZGlzcGxheTogJ2ZsZXgnLCBnYXA6IDgsIG1hcmdpbkJvdHRvbTogMTIgfX0+CiAgICAgICAgICB7WycjRjA1MjREJywgJyNEOTc3NTcnLCAnIzNGQjY4QiddLm1hcCgoYykgPT4gKAogICAgICAgICAgICA8ZGl2IGtleT17Y30gc3R5bGU9e3sgd2lkdGg6IDEyLCBoZWlnaHQ6IDEyLCBib3JkZXJSYWRpdXM6IDYsIGJhY2tncm91bmRDb2xvcjogYywgb3BhY2l0eTogMC43IH19IC8+CiAgICAgICAgICApKX0KICAgICAgICA8L2Rpdj4KICAgICAgICB7VEVSTV9MSU5FUy5tYXAoKGwsIGkpID0+ICgKICAgICAgICAgIDxkaXYKICAgICAgICAgICAga2V5PXtpfQogICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfTU9OTywKICAgICAgICAgICAgICBmb250U2l6ZTogRlNfQ09ERSwKICAgICAgICAgICAgICBsaW5lSGVpZ2h0OiAnMzZweCcsCiAgICAgICAgICAgICAgY29sb3I6IGwuZGltID8gJyM4Qjk0OUUnIDogTEVER0VSLAogICAgICAgICAgICAgIHdoaXRlU3BhY2U6ICdwcmUnLAogICAgICAgICAgICB9fQogICAgICAgICAgPgogICAgICAgICAgICB7bC50ZXh0fQogICAgICAgICAgPC9kaXY+CiAgICAgICAgKSl9CiAgICAgIDwvZGl2PgoKICAgICAgey8qIOW6lemDqOawm+WbtO+8muS4i+S6ruWMuua4kOWPmOW3suWcqCBCR19HUkFE77yM6IGa5YWJ6ZSl6L6F5YqpICovfQogICAgICA8QWJzb2x1dGVGaWxsCiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIGJhY2tncm91bmQ6IGByYWRpYWwtZ3JhZGllbnQoY2lyY2xlIDgwMHB4IGF0IDMwJSAzMCUsIHJnYmEoMjYsMzEsNDQsMC4xMiksIHJnYmEoMjYsMzEsNDQsMCkgNzAlKWAsCiAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6ICd0cmFuc3BhcmVudCcsCiAgICAgICAgICBwb2ludGVyRXZlbnRzOiAnbm9uZScsCiAgICAgICAgfX0KICAgICAgLz4KICAgICAgPGRpdiBzdHlsZT17eyBwb3NpdGlvbjogJ2Fic29sdXRlJywgd2lkdGg6IDAsIGhlaWdodDogMCwgY29sb3I6IEJHIH19IC8+CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9Owo=
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { EASE_EXPO_OUT, prog, tf, typedLine } from '../anim';
+import {
+  BG,
+  BG_GRAD,
+  FONT_MONO,
+  FONT_SANS,
+  FS_CODE,
+  FS_SLOGAN,
+  LEDGER,
+  MID,
+  PAPER,
+  RADIUS,
+  SHADOW,
+} from '../theme';
+
+// ============================================================================
+// S1 · 90–210f（3.0–7.0s） [typography] typewriter-moves + [effects] scanline-annotate-focus
+// 上暗下亮渐变底；左侧两句 ★ 标语逐字打出（3f/字）；右侧进程状态终端窗 fadein。
+// 局部帧 = 全局帧 − 90（下文注释里的帧号均为全局，见摄影表 S1）。
+// ============================================================================
+
+const LINE1 = '24小时自主工作，'; // ★ 逐字，标点不动
+const LINE2 = '不是关电脑就睡觉的宠物。'; // ★ 逐字，标点不动
+
+// 终端 mock（640×360 @ (1200,300)，28px Mono=装饰层底线字号；
+// 设计稿 36px 放不进 640 宽，按 §一「代码 28px 底线仅终端装饰层」降级，见 progress 偏差记录）
+const TERM_LINES: Array<{ text: string; dim?: boolean }> = [
+  { text: 'anthropos-agent    RUNNING' },
+  { text: 'pid 1847, uptime 7d 2h 14m', dim: true },
+  { text: '├─ scheduler       active' },
+  { text: '│    next: 23:00 daily_report', dim: true },
+  { text: '├─ inbox_monitor   polling' },
+  { text: '│    interval: 5min', dim: true },
+  { text: '└─ model_client    idle' },
+  { text: '     last_call: 2m ago', dim: true },
+];
+
+const TypeLine: React.FC<{ text: string; frame: number; start: number }> = ({ text, frame, start }) => {
+  const n = typedLine(frame, start, 0, 0, text.length, 3);
+  return (
+    <span>
+      {text.slice(0, n)}
+      {/* 光标：打字期间常亮，打完快闪 4f 周期 */}
+      {frame >= start && frame - start < text.length * 3 + 12 ? (
+        <span style={{ opacity: n < text.length ? 1 : Math.floor(((frame - start) % 8) / 4) === 0 ? 1 : 0, color: '#D4F43E' }}>
+          ▍
+        </span>
+      ) : null}
+    </span>
+  );
+};
+
+export const S1: React.FC = () => {
+  const g = useCurrentFrame() + 90; // 全局帧
+
+  // 190–210f：终端窗 opacity 0→1 fadein 20f
+  const termP = prog(g, 190, 20, EASE_EXPO_OUT);
+
+  return (
+    <AbsoluteFill style={{ background: BG_GRAD }}>
+      {/* 左侧两句标语（160,200）（160,280） */}
+      <div style={{ position: 'absolute', left: 160, top: 200, width: 1000 }}>
+        <div
+          style={{
+            fontFamily: FONT_SANS,
+            fontWeight: 700,
+            fontSize: FS_SLOGAN,
+            lineHeight: '80px',
+            height: 80,
+            color: PAPER,
+            whiteSpace: 'nowrap',
+          }}
+        >
+          <TypeLine text={LINE1} frame={g} start={90} />
+        </div>
+        <div
+          style={{
+            fontFamily: FONT_SANS,
+            fontWeight: 700,
+            fontSize: FS_SLOGAN,
+            lineHeight: '80px',
+            height: 80,
+            marginTop: 0,
+            color: PAPER,
+            whiteSpace: 'nowrap',
+          }}
+        >
+          <TypeLine text={LINE2} frame={g} start={150} />
+        </div>
+      </div>
+
+      {/* 右侧进程状态终端窗（1200,300）640×360 */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 1200,
+          top: 300,
+          width: 640,
+          height: 360,
+          backgroundColor: MID,
+          borderRadius: RADIUS,
+          border: '1px solid rgba(63,182,139,0.25)',
+          boxShadow: SHADOW,
+          padding: '20px 28px',
+          boxSizing: 'border-box',
+          opacity: termP,
+          transform: tf([termP < 1 ? `translateY(${(1 - termP) * 16}px)` : null]),
+        }}
+      >
+        {/* 终端顶栏三点 */}
+        <div style={{ display: 'flex', gap: 8, marginBottom: 12 }}>
+          {['#F0524D', '#D97757', '#3FB68B'].map((c) => (
+            <div key={c} style={{ width: 12, height: 12, borderRadius: 6, backgroundColor: c, opacity: 0.7 }} />
+          ))}
+        </div>
+        {TERM_LINES.map((l, i) => (
+          <div
+            key={i}
+            style={{
+              fontFamily: FONT_MONO,
+              fontSize: FS_CODE,
+              lineHeight: '36px',
+              color: l.dim ? '#8B949E' : LEDGER,
+              whiteSpace: 'pre',
+            }}
+          >
+            {l.text}
+          </div>
+        ))}
+      </div>
+
+      {/* 底部氛围：下亮区渐变已在 BG_GRAD，聚光锥辅助 */}
+      <AbsoluteFill
+        style={{
+          background: `radial-gradient(circle 800px at 30% 30%, rgba(26,31,44,0.12), rgba(26,31,44,0) 70%)`,
+          backgroundColor: 'transparent',
+          pointerEvents: 'none',
+        }}
+      />
+      <div style={{ position: 'absolute', width: 0, height: 0, color: BG }} />
+    </AbsoluteFill>
+  );
+};

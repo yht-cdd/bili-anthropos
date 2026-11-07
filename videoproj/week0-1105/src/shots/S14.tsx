@@ -1,1 +1,71 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEVBU0VfTElORUFSLCBwcm9nIH0gZnJvbSAnLi4vYW5pbSc7CmltcG9ydCB7IEJHLCBGT05UX01PTk8sIEZPTlRfU0FOUywgRlNfQVVYLCBHUkFZLCBMSU1FIH0gZnJvbSAnLi4vdGhlbWUnOwppbXBvcnQgeyBHcm91cFN0aWxsIH0gZnJvbSAnLi9TMTMnOwoKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQovLyBTMTQgwrcgMTg5MOKAkzE5ODBm77yINjMuMOKAkzY2LjBz77yJIFtvdXRyb10gZ3JhaW4tZGlzc29sdmUKLy8g5pGE5b2x6KGoIFMxNO+8miMwQTBFMTQg5YWo5bGP77ybKDk2MCw0ODApIFVSTCAiZ2l0aHViLmNvbS95aHQtY2RkL2JpbGktYW50aHJvcG9zIgovLyA0MHB4IE1vbm8gI0Q0RjQzRe+8iEMxIMKnMTHvvJrmlLblsL7ooYzliqjlj7flj6wg4omlNDBweO+8jOajgOafpeeCueW4pyAxMkAxOTUwIOa4heaZsOWPr+ivu++8ie+8mwovLyAoOTYwLDYwMCkg5bCP5a2X44CM5byA5rqQIMK3IOiHquS4uyDCtyDnnJ/lrp7jgI0zMnB4IFJlZ3VsYXIgIzhCOTQ5ReOAggovLyAxODkw4oCTMTkyMO+8mlMxMyDlkIjlvbHmlbTkvZMgb3BhY2l0eSAx4oaSMCDmuJDpmpDvvIhHcm91cFN0aWxsIOmbtui/kOWKqOW/q+eFp++8ie+8jFVSTCBmYWRlaW7vvJsKLy8gMTkyMOKAkzE5NTDvvJpVUkwgaG9sZO+8mzE5NTDigJMxOTgw77ya5bCP5a2XIGZhZGVpbiAzMGbjgIIKLy8gU0ZY77yIcGFkQDE4OTAgM3MgZ2FpbjAuMTIgLyB0aWNrQDE5MjAgMC4xNe+8ieW9kiBhdWRpby5tcDPjgIIKLy8g5a2X5Y+35YGP5beu6K6w5b2V77yaVVJMIDQwcHgg5Li65pGE5b2x6KGo6KeE5a6a5YC877yI5LuL5LqOIEZTX0FVWDMyIOS4jiBGU19EQVRBMzYg5LmL5LiK77yJ77yM6Zi25qKv5aSW5Yi75oSP5pS+5aSn77yM6L6+5qCHIOKJpTQwcHjjgIIKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKY29uc3QgVVJMX1RFWFQgPSAnZ2l0aHViLmNvbS95aHQtY2RkL2JpbGktYW50aHJvcG9zJzsgLy8g4piFIOmAkOWtlwpjb25zdCBGU19VUkwgPSA0MDsgLy8g5pGE5b2x6KGo6KeE5a6a77yI5pS25bC+6KGM5Yqo5Y+35Y+sIOKJpTQwcHjvvIxDMSDCpzEx77yJCmNvbnN0IFRBR0xJTkUgPSAn5byA5rqQIMK3IOiHquS4uyDCtyDnnJ/lrp4nOyAvLyDimIUg6YCQ5a2XCgpleHBvcnQgY29uc3QgUzE0OiBSZWFjdC5GQyA9ICgpID0+IHsKICBjb25zdCBnID0gdXNlQ3VycmVudEZyYW1lKCkgKyAxODkwOyAvLyDlhajlsYDluKcKCiAgY29uc3QgZmFkZSA9IHByb2coZywgMTg5MCwgMzAsIEVBU0VfTElORUFSKTsgLy8gUzEzIOWQiOW9sea3oeWHuu+8iDHihpIwIOeUqCAxLWZhZGXvvIkKICBjb25zdCB1cmxPbiA9IHByb2coZywgMTg5MCwgMzAsIEVBU0VfTElORUFSKTsgLy8gVVJMIOS4juWQiOW9seS6pOWPiea4kOaYvgogIGNvbnN0IHRhZ09uID0gcHJvZyhnLCAxOTUwLCAzMCwgRUFTRV9MSU5FQVIpOyAvLyDlsI/lrZfmnIDlkI4gMzBmIOa4kOaYvgoKICByZXR1cm4gKAogICAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBiYWNrZ3JvdW5kQ29sb3I6IEJHIH19PgogICAgICB7Lyog5YmNIDMwZu+8mlMxMyDlrprmoLzlkIjlvbHmuJDpmpDvvIjpm7bov5Dliqjlv6vnhafvvIxSMSDlrprmoLzkuI3lpI3mtLvvvIkgKi99CiAgICAgIHtmYWRlIDwgMSAmJiA8R3JvdXBTdGlsbCBvcGFjaXR5PXsxIC0gZmFkZX0gLz59CgogICAgICB7LyogKDk2MCw0ODApIFVSTO+8mjQwcHggTW9ubyAjRDRGNDNFICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgbGVmdDogMCwKICAgICAgICAgIHRvcDogNDgwIC0gMzAsCiAgICAgICAgICB3aWR0aDogMTkyMCwKICAgICAgICAgIHRleHRBbGlnbjogJ2NlbnRlcicsCiAgICAgICAgICBmb250RmFtaWx5OiBGT05UX01PTk8sCiAgICAgICAgICBmb250V2VpZ2h0OiA3MDAsCiAgICAgICAgICBmb250U2l6ZTogRlNfVVJMLAogICAgICAgICAgY29sb3I6IExJTUUsCiAgICAgICAgICBvcGFjaXR5OiB1cmxPbiwKICAgICAgICB9fQogICAgICA+CiAgICAgICAge1VSTF9URVhUfQogICAgICA8L2Rpdj4KCiAgICAgIHsvKiAoOTYwLDYwMCkg5bCP5a2X77yaMzJweCBSZWd1bGFyICM4Qjk0OUUgKi99CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICBsZWZ0OiAwLAogICAgICAgICAgdG9wOiA2MDAgLSAyNCwKICAgICAgICAgIHdpZHRoOiAxOTIwLAogICAgICAgICAgdGV4dEFsaWduOiAnY2VudGVyJywKICAgICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfU0FOUywKICAgICAgICAgIGZvbnRXZWlnaHQ6IDQwMCwKICAgICAgICAgIGZvbnRTaXplOiBGU19BVVgsCiAgICAgICAgICBjb2xvcjogR1JBWSwKICAgICAgICAgIG9wYWNpdHk6IHRhZ09uLAogICAgICAgIH19CiAgICAgID4KICAgICAgICB7VEFHTElORX0KICAgICAgPC9kaXY+CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9Owo=
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { EASE_LINEAR, prog } from '../anim';
+import { BG, FONT_MONO, FONT_SANS, FS_AUX, GRAY, LIME } from '../theme';
+import { GroupStill } from './S13';
+
+// ============================================================================
+// S14 · 1890–1980f（63.0–66.0s） [outro] grain-dissolve
+// 摄影表 S14：#0A0E14 全屏；(960,480) URL "github.com/yht-cdd/bili-anthropos"
+// 40px Mono #D4F43E（C1 §11：收尾行动号召 ≥40px，检查点帧 12@1950 清晰可读）；
+// (960,600) 小字「开源 · 自主 · 真实」32px Regular #8B949E。
+// 1890–1920：S13 合影整体 opacity 1→0 渐隐（GroupStill 零运动快照），URL fadein；
+// 1920–1950：URL hold；1950–1980：小字 fadein 30f。
+// SFX（pad@1890 3s gain0.12 / tick@1920 0.15）归 audio.mp3。
+// 字号偏差记录：URL 40px 为摄影表规定值（介于 FS_AUX32 与 FS_DATA36 之上），阶梯外刻意放大，达标 ≥40px。
+// ============================================================================
+
+const URL_TEXT = 'github.com/yht-cdd/bili-anthropos'; // ★ 逐字
+const FS_URL = 40; // 摄影表规定（收尾行动号召 ≥40px，C1 §11）
+const TAGLINE = '开源 · 自主 · 真实'; // ★ 逐字
+
+export const S14: React.FC = () => {
+  const g = useCurrentFrame() + 1890; // 全局帧
+
+  const fade = prog(g, 1890, 30, EASE_LINEAR); // S13 合影淡出（1→0 用 1-fade）
+  const urlOn = prog(g, 1890, 30, EASE_LINEAR); // URL 与合影交叉渐显
+  const tagOn = prog(g, 1950, 30, EASE_LINEAR); // 小字最后 30f 渐显
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: BG }}>
+      {/* 前 30f：S13 定格合影渐隐（零运动快照，R1 定格不复活） */}
+      {fade < 1 && <GroupStill opacity={1 - fade} />}
+
+      {/* (960,480) URL：40px Mono #D4F43E */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          top: 480 - 30,
+          width: 1920,
+          textAlign: 'center',
+          fontFamily: FONT_MONO,
+          fontWeight: 700,
+          fontSize: FS_URL,
+          color: LIME,
+          opacity: urlOn,
+        }}
+      >
+        {URL_TEXT}
+      </div>
+
+      {/* (960,600) 小字：32px Regular #8B949E */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          top: 600 - 24,
+          width: 1920,
+          textAlign: 'center',
+          fontFamily: FONT_SANS,
+          fontWeight: 400,
+          fontSize: FS_AUX,
+          color: GRAY,
+          opacity: tagOn,
+        }}
+      >
+        {TAGLINE}
+      </div>
+    </AbsoluteFill>
+  );
+};

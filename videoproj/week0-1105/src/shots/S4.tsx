@@ -1,1 +1,116 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IHByb2csIHNpbmVQdWxzZSwgc3ByaW5nSW4sIHRmIH0gZnJvbSAnLi4vYW5pbSc7CmltcG9ydCB7IENhcmQgfSBmcm9tICcuLi9jb21wb25lbnRzL0NhcmQnOwppbXBvcnQgewogIEJMVUVfQk9ULAogIEJMVUVfVE9QLAogIENPUkFMLAogIEZPTlRfTU9OTywKICBGT05UX1NBTlMsCiAgRlNfQVVYLAogIEZTX0RBVEEsCiAgRlNfU0xPR0FOLAogIEdSQVksCiAgTUlELAogIFBBUEVSLAp9IGZyb20gJy4uL3RoZW1lJzsKCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8gUzQgwrcgNDgw4oCTNjAwZu+8iDE2LjDigJMyMC4wc++8iSDoh6rmi5/vvIjmkYTlvbHmo5rnga/lhYkgKyDmiYvmnK/lj7DpmpDllrvvvIkKLy8g5omL5pyv5a6k6JOd6LCD5b6E5ZCR5riQ5Y+Y5bqV77yb5Li75Y+l44CM5LiN5b+F5YOP5Yir5Lq66YKj5qC35Y2W5oOo44CC44CNZXhwby1vdXQg5YWl5Zy677ybCi8vIOS4pOW8oOaJi+acr+iusOW9leWNoeW3puWPsyBzcHJpbmcg6aOe5YWlIOKGkiDlj4zljaEgcHVsc2XvvIhzY2FsZSAx4oaSMS4wM+KGkjHvvInjgIIKLy8g5YWo5bGA5bin5Y+36KeB5pGE5b2x6KGoIFM077ybcGFkIOawm+WbtOW6iu+8iDQ4MGYg6LW3IDhz77yMaGlnaHBhc3MgMjAwSHrvvInlsZ4gUjQgYXVkaW8g6L2u44CCCi8vIOWtl+WPt+WBj+W3ru+8muWNoeWGhSAyOHB4IOS4pOihjO+8iOaXtumXtOaIsy/lpIfms6jvvInkvY7kuo7noaznur/vvIzmjIkgUzMg5YWI5L6L5Y2H6IezIDMycHjvvIjop4EgcHJvZ3Jlc3PvvInjgIIKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKdHlwZSBSZWNvcmQgPSB7CiAgbm86IHN0cmluZzsKICB0aW1lOiBzdHJpbmc7CiAgd2hhdDogc3RyaW5nOwogIHdobzogc3RyaW5nOwogIHN0YXJ0OiBudW1iZXI7IC8vIOmjnuWFpei1t+Wni+WFqOWxgOW4pwogIGRpcjogLTEgfCAxOyAvLyDpo57lhaXmlrnlkJEKfTsKCmNvbnN0IFJFQ09SRFM6IFJlY29yZFtdID0gWwogIHsgbm86ICfkv67lpI0gIzEnLCB0aW1lOiAnMTEtMDMgMjM6NDcnLCB3aGF0OiAn5Y2V54K54oaS546v5b2i6ZmN57qn6ZO+Jywgd2hvOiAn5Li75Lq65pON5YiAIC8gNiDlsI/ml7blgZzmnLonLCBzdGFydDogNTEwLCBkaXI6IC0xIH0sCiAgeyBubzogJ+S/ruWkjSAjMicsIHRpbWU6ICcxMS0wNCAwMjozMycsIHdoYXQ6ICfkuLvlpIcga2V5IOaho+S9jeWQjOatpScsIHdobzogJ+S4u+S6uuaTjeWIgCAvIOWlkee6pue6p+aUueWKqCcsIHN0YXJ0OiA1NDAsIGRpcjogMSB9LApdOwoKY29uc3QgUkVDX1cgPSA0MDA7CmNvbnN0IFJFQ19IID0gMjAwOwpjb25zdCBSRUNfR0FQID0gODA7IC8vIOiuvuiuoeeov+e7meWumuWNoemXtOi3nQoKZXhwb3J0IGNvbnN0IFM0OiBSZWFjdC5GQyA9ICgpID0+IHsKICBjb25zdCBnID0gdXNlQ3VycmVudEZyYW1lKCkgKyA0ODA7IC8vIOWFqOWxgOW4pwoKICBjb25zdCBzbG9nYW5QID0gcHJvZyhnLCA0ODAsIDMwKTsgLy8gdHJhbnNsYXRlWSgtMzDihpIwKSArIGZhZGVpbu+8jGV4cG8tb3V0CiAgLy8gNTcw4oCTNjAwZu+8muWPjOWNoeWQjOaXtiBwdWxzZSAx4oaSMS4wM+KGkjHvvIgzMGYg5Y2V56iLID0g5ZGo5pyfIDYwIOeahOWNiueoi++8iQogIGNvbnN0IHB1bHNlID0gMSArIDAuMDMgKiBzaW5lUHVsc2UoZywgNTcwLCA2MCk7CgogIGNvbnN0IHJvd1cgPSBSRUNfVyAqIDIgKyBSRUNfR0FQOwoKICByZXR1cm4gKAogICAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBiYWNrZ3JvdW5kOiBgcmFkaWFsLWdyYWRpZW50KGNpcmNsZSA5MDBweCBhdCA1MCUgNDIlLCAke0JMVUVfVE9QfSAwJSwgJHtCTFVFX0JPVH0gNzglKWAgfX0+CiAgICAgIHsvKiDkuLvlj6XvvIg5NjAsNDAwIOS4reW/g++8iSAqL30KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGxlZnQ6IDAsCiAgICAgICAgICByaWdodDogMCwKICAgICAgICAgIHRvcDogMzYwLAogICAgICAgICAgdGV4dEFsaWduOiAnY2VudGVyJywKICAgICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfU0FOUywKICAgICAgICAgIGZvbnRXZWlnaHQ6IDcwMCwKICAgICAgICAgIGZvbnRTaXplOiBGU19TTE9HQU4sCiAgICAgICAgICBsaW5lSGVpZ2h0OiAnODBweCcsCiAgICAgICAgICBjb2xvcjogUEFQRVIsCiAgICAgICAgICBvcGFjaXR5OiBzbG9nYW5QLAogICAgICAgICAgdHJhbnNmb3JtOiB0ZihbYHRyYW5zbGF0ZVkoJHsoMSAtIHNsb2dhblApICogLTMwfXB4KWBdKSwKICAgICAgICB9fQogICAgICA+CiAgICAgICAg5LiN5b+F5YOP5Yir5Lq66YKj5qC35Y2W5oOo44CCCiAgICAgIDwvZGl2PgoKICAgICAgey8qIOS4pOW8oOaJi+acr+iusOW9leWNoe+8iOS4reW/gyA5NjAsNjUw77yJICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgbGVmdDogOTYwIC0gcm93VyAvIDIsCiAgICAgICAgICB0b3A6IDY1MCAtIFJFQ19IIC8gMiwKICAgICAgICAgIHdpZHRoOiByb3dXLAogICAgICAgICAgZGlzcGxheTogJ2ZsZXgnLAogICAgICAgICAgZ2FwOiBSRUNfR0FQLAogICAgICAgICAgdHJhbnNmb3JtOiB0ZihbcHVsc2UgIT09IDEgPyBgc2NhbGUoJHtwdWxzZX0pYCA6IG51bGxdKSwKICAgICAgICB9fQogICAgICA+CiAgICAgICAge1JFQ09SRFMubWFwKChyKSA9PiB7CiAgICAgICAgICBjb25zdCBzID0gc3ByaW5nSW4oZywgci5zdGFydCk7IC8vIHNwcmluZygxLDgwLDEwKQogICAgICAgICAgcmV0dXJuICgKICAgICAgICAgICAgPENhcmQKICAgICAgICAgICAgICBrZXk9e3Iubm99CiAgICAgICAgICAgICAgdz17UkVDX1d9CiAgICAgICAgICAgICAgaD17UkVDX0h9CiAgICAgICAgICAgICAgYmc9e01JRH0KICAgICAgICAgICAgICBsaW1lQm9yZGVyCiAgICAgICAgICAgICAgc2hhZG93PSIwIDRweCAxNnB4IHJnYmEoMCwwLDAsMC41KSIgLy8g6K6+6K6h56i/IFM0IOaMh+Wumu+8iOavlOWFqOWxgCBTSEFET1cg6YeN77yJCiAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgIG9wYWNpdHk6IE1hdGgubWluKDEsIHMgKiAxLjQpLAogICAgICAgICAgICAgICAgdHJhbnNmb3JtOiB0ZihbYHRyYW5zbGF0ZVgoJHsoMSAtIHMpICogci5kaXIgKiAyMDB9cHgpYF0pLAogICAgICAgICAgICAgIH19CiAgICAgICAgICAgID4KICAgICAgICAgICAgICB7Lyog5qiqIHBhZGRpbmcgMjBweO+8mjMycHgg5bqV57q/5a2X5Y+35LiL44CM5Li75Lq65pON5YiAIC8gNiDlsI/ml7blgZzmnLrjgI3pnIAgMzM1cHgg5YaF5a69ICovfQogICAgICAgICAgICAgIDxkaXYgc3R5bGU9e3sgcGFkZGluZzogJzE2cHggMjBweCcsIGJveFNpemluZzogJ2JvcmRlci1ib3gnIH19PgogICAgICAgICAgICAgICAgPGRpdiBzdHlsZT17eyBmb250RmFtaWx5OiBGT05UX1NBTlMsIGZvbnRXZWlnaHQ6IDcwMCwgZm9udFNpemU6IEZTX0RBVEEsIGxpbmVIZWlnaHQ6ICc0OHB4JywgY29sb3I6IENPUkFMIH19PntyLm5vfTwvZGl2PgogICAgICAgICAgICAgICAgPGRpdiBzdHlsZT17eyBmb250RmFtaWx5OiBGT05UX01PTk8sIGZvbnRTaXplOiBGU19BVVgsIGxpbmVIZWlnaHQ6ICczOHB4JywgY29sb3I6IEdSQVkgfX0+e3IudGltZX08L2Rpdj4KICAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9e3sgZm9udEZhbWlseTogRk9OVF9TQU5TLCBmb250U2l6ZTogRlNfQVVYLCBsaW5lSGVpZ2h0OiAnMzhweCcsIGNvbG9yOiBQQVBFUiB9fT57ci53aGF0fTwvZGl2PgogICAgICAgICAgICAgICAgPGRpdiBzdHlsZT17eyBmb250RmFtaWx5OiBGT05UX1NBTlMsIGZvbnRTaXplOiBGU19BVVgsIGxpbmVIZWlnaHQ6ICczOHB4JywgY29sb3I6IEdSQVkgfX0+e3Iud2hvfTwvZGl2PgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L0NhcmQ+CiAgICAgICAgICApOwogICAgICAgIH0pfQogICAgICA8L2Rpdj4KICAgIDwvQWJzb2x1dGVGaWxsPgogICk7Cn07Cg==
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { prog, sinePulse, springIn, tf } from '../anim';
+import { Card } from '../components/Card';
+import {
+  BLUE_BOT,
+  BLUE_TOP,
+  CORAL,
+  FONT_MONO,
+  FONT_SANS,
+  FS_AUX,
+  FS_DATA,
+  FS_SLOGAN,
+  GRAY,
+  MID,
+  PAPER,
+} from '../theme';
+
+// ============================================================================
+// S4 · 480–600f（16.0–20.0s） 自拟（摄影棚灯光 + 手术台隐喻）
+// 手术室蓝调径向渐变底；主句「不必像别人那样卖惨。」expo-out 入场；
+// 两张手术记录卡左右 spring 飞入 → 双卡 pulse（scale 1→1.03→1）。
+// 全局帧号见摄影表 S4；pad 氛围床（480f 起 8s，highpass 200Hz）属 R4 audio 轮。
+// 字号偏差：卡内 28px 两行（时间戳/备注）低于硬线，按 S3 先例升至 32px（见 progress）。
+// ============================================================================
+
+type Record = {
+  no: string;
+  time: string;
+  what: string;
+  who: string;
+  start: number; // 飞入起始全局帧
+  dir: -1 | 1; // 飞入方向
+};
+
+const RECORDS: Record[] = [
+  { no: '修复 #1', time: '11-03 23:47', what: '单点→环形降级链', who: '主人操刀 / 6 小时停机', start: 510, dir: -1 },
+  { no: '修复 #2', time: '11-04 02:33', what: '主备 key 档位同步', who: '主人操刀 / 契约级改动', start: 540, dir: 1 },
+];
+
+const REC_W = 400;
+const REC_H = 200;
+const REC_GAP = 80; // 设计稿给定卡间距
+
+export const S4: React.FC = () => {
+  const g = useCurrentFrame() + 480; // 全局帧
+
+  const sloganP = prog(g, 480, 30); // translateY(-30→0) + fadein，expo-out
+  // 570–600f：双卡同时 pulse 1→1.03→1（30f 单程 = 周期 60 的半程）
+  const pulse = 1 + 0.03 * sinePulse(g, 570, 60);
+
+  const rowW = REC_W * 2 + REC_GAP;
+
+  return (
+    <AbsoluteFill style={{ background: `radial-gradient(circle 900px at 50% 42%, ${BLUE_TOP} 0%, ${BLUE_BOT} 78%)` }}>
+      {/* 主句（960,400 中心） */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          top: 360,
+          textAlign: 'center',
+          fontFamily: FONT_SANS,
+          fontWeight: 700,
+          fontSize: FS_SLOGAN,
+          lineHeight: '80px',
+          color: PAPER,
+          opacity: sloganP,
+          transform: tf([`translateY(${(1 - sloganP) * -30}px)`]),
+        }}
+      >
+        不必像别人那样卖惨。
+      </div>
+
+      {/* 两张手术记录卡（中心 960,650） */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 960 - rowW / 2,
+          top: 650 - REC_H / 2,
+          width: rowW,
+          display: 'flex',
+          gap: REC_GAP,
+          transform: tf([pulse !== 1 ? `scale(${pulse})` : null]),
+        }}
+      >
+        {RECORDS.map((r) => {
+          const s = springIn(g, r.start); // spring(1,80,10)
+          return (
+            <Card
+              key={r.no}
+              w={REC_W}
+              h={REC_H}
+              bg={MID}
+              limeBorder
+              shadow="0 4px 16px rgba(0,0,0,0.5)" // 设计稿 S4 指定（比全局 SHADOW 重）
+              style={{
+                opacity: Math.min(1, s * 1.4),
+                transform: tf([`translateX(${(1 - s) * r.dir * 200}px)`]),
+              }}
+            >
+              {/* 横 padding 20px：32px 底线字号下「主人操刀 / 6 小时停机」需 335px 内宽 */}
+              <div style={{ padding: '16px 20px', boxSizing: 'border-box' }}>
+                <div style={{ fontFamily: FONT_SANS, fontWeight: 700, fontSize: FS_DATA, lineHeight: '48px', color: CORAL }}>{r.no}</div>
+                <div style={{ fontFamily: FONT_MONO, fontSize: FS_AUX, lineHeight: '38px', color: GRAY }}>{r.time}</div>
+                <div style={{ fontFamily: FONT_SANS, fontSize: FS_AUX, lineHeight: '38px', color: PAPER }}>{r.what}</div>
+                <div style={{ fontFamily: FONT_SANS, fontSize: FS_AUX, lineHeight: '38px', color: GRAY }}>{r.who}</div>
+              </div>
+            </Card>
+          );
+        })}
+      </div>
+    </AbsoluteFill>
+  );
+};

@@ -1,1 +1,362 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEVBU0VfRVhQT19PVVQsIEVBU0VfU1dFRVAsIGxlcnBGLCBwcm9nIH0gZnJvbSAnLi4vYW5pbSc7CmltcG9ydCB7IEJHLCBDT1JBTCwgRk9OVF9NT05PLCBGT05UX1NBTlMsIEdSQVksIExFREdFUl9HUkVFTiwgVEVSTV9HUkFZLCBURVhUIH0gZnJvbSAnLi4vdGhlbWUnOwoKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQovLyBTMiDkuI3mmK/lrqDniakgwrcg5YWo5bGAIDIxMOKAkzQ4MO+8iGJyaWVmIMKn5LqMwrdTMu+8icK3IOmFjeaWueWNoSBbaW50ZXJhY3Rpb25dIOWIhuWxjyArIFtkYXRhXSB0aW1lbGluZS10cmF2ZWwKLy8g5pys5Zyw5binID0g5YWo5bGAIOKIkiAyMTDjgIIKLy8gMOKAkzEwICAgd2hvb3NoIOi9rOWcuiArIOW3puWPs+WIhuWxj+aOqOWFpe+8iFBhcmFsbGF477ya5bem5Z2XIHjiiJIyNuOAgeWPs+WdlyB4KzI2IOKGkiAw77yMMTAg5binIGV4cG8tb3V077ybCi8vICAgICAgICDkuK3nvJ0gMnB4IOerlue6vyAxNuKAkzI0IOW4p+S7jueUu+W/gyBncm9377yJ44CC5bqT6YeM5peg5ZCM5ZCN44CM5YiG5bGP44CN5Y2h77yM5oyJIHJoeXRobS9xdWFkLXNwbGl0LXBhcmFsbGVsLXNjZW5lcwovLyAgICAgICAg44CM5Lik5bGP5ZCE6Ieq54us56uL5YWl5Zy644CB5Lit57yd5a+56b2Q44CN55qE5pyA5bCP5a6e5L6L5a6e546w77yM5L2N56e76YeP54WnIGJyaWVm77yM6K6w5q2n5LmJ44CCCi8vIOW3piA0MCXvvIg3NDBweO+8ie+8muKYheaWh+ahiOOAjOWFs+eUteiEkeWwseedoeinieeahOWuoOeJqeOAjTU2cHggIzhCOTQ5RSArIOS4gOadoeW5s+ebtOaXtumXtOe6v++8jDAzOjAwIOWQjueGhOeBrQovLyAgICAgICAg77yIMDA6MDDigJMwMzowMCDlrp7lv4PjgIHkuYvlkI4gMTYlIOiZmue6v+aute+8m+i9tOS4iuaghyAwMzowMCDnnJ/lrp7ml7bliLvvvInjgILmk6bpmaQgMTLigJMzMuOAggovLyDlj7MgNDAl77yINzQwcHjvvInvvJrimIXmlofmoYjjgIwyNOWwj+aXtuiHquS4u+W3peS9nOOAjTU2cHgg57Gz55m9ICsg5rOi5b2i5pe26Ze057q/77yINDgg5bCP5pe2IMK3IOS4pOagueaWreS+m+e8uuWPo++8ieOAggovLyAgICAgICAg6LWw5p+l77ya5p+x5L2T5oyJIGkg6ZSZ5bOw5bem4oaS5Y+z55Sf6ZW/77yIMjjigJM5Nu+8ie+8jOe8uuWPo+auteeUu+aIkOaal+W4pu+8jAovLyAgICAgICAg55yf5a6e5pe25Yi7IDEyOjA44oCTMjI6MDUgLyAxMjozMeKAkzIyOjE3IOS7peerlue6vyArIOaLrOWPt+agh+etvuagh+WcqOi9tOS4iu+8iDEwMOKAkzEyNO+8ieOAggovLyAgICAgICAg5p+x5L2T55So44CM6LSm5pys57u/44CNIzNGQjY4Qu+8iGJyaWVmIMKn5LiAIOaWsOWinuiJsu+8jOivreS5iT3mtLvnnYAvT0vvvInvvJvpnZLmn6DnlZnnu5kgUzMg55qEIG9wZW5jb2RlIOS9je+8jAovLyAgICAgICAg5Lik6ZWc5ZCM6Imy5Lya5LqS55u45oqi6Lqr5Lu944CC5Lik5YiX5pe26Ze06L205ZCM5Z+657q/77yI5YiG5bGP5a+55q+U55qE5Y+v6K+75oCn5ZG96Zeo77yJ44CCCi8vICAgICAgICDimqDvuI8g5a6e546w5YGP5beu77yadGltZWxpbmUtdHJhdmVsIOWNoeesrCA0IOmYtuauteOAjOaApeWBnOaOqOi/kSBzY2FsZSAx4oaSMS4yOOOAjeacquWBmuKAlOKAlOacrOauteacq+WwvgovLyAgICAgICAg6KaB6K6p5L2N57uZ5bqV6YOo5a2X5bmV77yIYnJpZWYgMzgw4oCTNDUw77yJ77yM5o6o6L+R5Lya5Y6L5o6J5a2X5bmV6ZiF6K+777yb5bey6K6wIHByb2dyZXNzLm1k44CCCi8vIDE3MOKAkzI0MO+8iOWFqOWxgCAzODDigJM0NTDvvInvvJrlupXpg6jlrZfluZUgNDBweCDpgJDlrZfvvIhicmllZiDCp+S6jOWOn+WPpe+8jOmdniDimIUg5Y+l5Lqm5LiN5pS55YaZ77yJ44CCCi8vIDI2NOKAkzI3MCDmlbTmrrUgNiDluKfmt6Hlh7rvvIjpgIDlnLrnuqrlvovvvInvvIznlLEgUzMg55qEIEZvY3VzUmFjayDmjqXnrqHjgIIKLy8g5pat5L6b5pe25Yi75p2l5rqQ77yawqfkupTntKDmnZDms6jjgIzmnaXoh6ogZGlhcnkg5Y2g5L2N6KGM55yf5a6e5pe26Ze05oiz44CN77yM5pWw5YC854WnIGJyaWVmIOmAkOWtl+OAggovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Cgpjb25zdCBDT0xfVyA9IDc0MDsKY29uc3QgTEVGVF9YID0gMTMwOwpjb25zdCBSSUdIVF9YID0gMTA1MDsgLy8gMTkyMCDiiJIgMTMwIOKIkiBDT0xfVwpjb25zdCBUSVRMRV9ZID0gMjM2OwovLyDkuKTliJflhoXpg6jpg73mnInkuIDkuKogdG9wOjE4MCDnmoTnu5Hlm77lrrnlmajvvIzku6XkuIvkuLrmnKzmrrXjgIzovbTjgI3lnKjor6XlrrnlmajlhoXnmoQgee+8iOWFqOWxgCB5ID0gVElUTEVfWSArIDE4MCArIOacrOWAvO+8iQovLyDkuKTliJflkIzpq5jvvIg1NjDvvInvvJrliIblsY/lr7nmr5TnmoTkuKTmnaHovbTlv4XpobvlkIzkuIDln7rnur/vvIzlkKbliJnor7vkvZzkuKTlvKDkuI3nm7jlubLnmoTlm74KY29uc3QgTF9BWElTID0gMTQ0OyAvLyDlt6bvvJrlubPnm7Tml7bpl7Tnur8KY29uc3QgUl9BWElTID0gMTQ0OyAvLyDlj7PvvJrms6LlvaLln7rnur8KCmNvbnN0IEhPVVJTID0gNDg7IC8vIOS4pOWkqQpjb25zdCBQWF9QRVJfSCA9IENPTF9XIC8gSE9VUlM7CmNvbnN0IHJ4ID0gKGg6IG51bWJlcik6IG51bWJlciA9PiBSSUdIVF9YICsgaCAqIFBYX1BFUl9IOwoKLy8g5Lik5qC55pat5L6b57y65Y+j77yIYnJpZWYg57uZ5a6a55yf5a6e5pe25Yi777yJCnR5cGUgR2FwID0geyBmcm9tOiBudW1iZXI7IHRvOiBudW1iZXI7IGxhYmVsOiBzdHJpbmcgfTsKY29uc3QgR0FQUzogR2FwW10gPSBbCiAgeyBmcm9tOiAxMiArIDggLyA2MCwgdG86IDIyICsgNSAvIDYwLCBsYWJlbDogJzEyOjA44oCTMjI6MDUnIH0sCiAgeyBmcm9tOiAyNCArIDEyICsgMzEgLyA2MCwgdG86IDI0ICsgMjIgKyAxNyAvIDYwLCBsYWJlbDogJzEyOjMx4oCTMjI6MTcnIH0sCl07CgovLyDlsI/ml7bmp73ooqvnvLrlj6Popobnm5bnmoTmr5Tkvosg4oaSIOivpeafseWPr+ingeW6pu+8iOmDqOWIhuimhueblueUu+efruafse+8jOivu+S9nOOAjOmCo+WNiuWwj+aXtui/mOWJqeS4gOeCueOAje+8iQpjb25zdCBjb3ZlciA9IChpOiBudW1iZXIpOiBudW1iZXIgPT4gewogIGxldCBjID0gMDsKICBmb3IgKGNvbnN0IGcgb2YgR0FQUykgewogICAgYyArPSBNYXRoLm1heCgwLCBNYXRoLm1pbihpICsgMSwgZy50bykgLSBNYXRoLm1heChpLCBnLmZyb20pKTsKICB9CiAgcmV0dXJuIE1hdGgubWluKDEsIGMpOwp9OwoKLy8g5p+x6auY77ya5oyJ5bCP5pe25qe95Y+356Gu5a6a55qE5Lyq6ZqP5py677yI5bin5peg5YWz77yM6YG/5YWN5riy5p+T5oqW5Yqo77yJCmNvbnN0IGhhc2ggPSAobjogbnVtYmVyKTogbnVtYmVyID0+IHsKICBjb25zdCB4ID0gTWF0aC5zaW4obiAqIDEyNy4xICsgMC4zNykgKiA0Mzc1OC41NDUzOwogIHJldHVybiB4IC0gTWF0aC5mbG9vcih4KTsKfTsKY29uc3QgYmFySCA9IChpOiBudW1iZXIpOiBudW1iZXIgPT4gMjAgKyA1NCAqIGhhc2goaSk7Cgpjb25zdCBTVUIgPSAn5Yy65Yir5LiN5piv5a6D5LiN552h4oCU4oCU5piv5pat5LqG5Y2B5LqM5bCP5pe277yM6YaS5p2l6L+Y6IO95o6l552A5rS744CCJzsKCmNvbnN0IFNXRUVQID0gMjg7IC8vIOWPs+WIl+i1sOafpei1t+i3kQpjb25zdCBTV0VFUF9TVEVQID0gMS40OyAvLyA0OCDmp70gw5cgMS40IOKJiCA2NyDluKcg4oaSIDk2IOi1sOWujAoKZXhwb3J0IGNvbnN0IFMyOiBSZWFjdC5GQyA9ICgpID0+IHsKICBjb25zdCBmID0gdXNlQ3VycmVudEZyYW1lKCk7CiAgY29uc3QgcHVzaCA9IHByb2coZiwgMCwgMTAsIEVBU0VfRVhQT19PVVQpOyAvLyDliIblsY/mjqjlhaUKICBjb25zdCBkeCA9IDI2ICogKDEgLSBwdXNoKTsKICBjb25zdCBzZWFtID0gcHJvZyhmLCAxNiwgOCwgRUFTRV9FWFBPX09VVCk7IC8vIOS4ree8neerlue6vwogIGNvbnN0IGxlZnRXaXBlID0gcHJvZyhmLCAxMiwgMjAsIEVBU0VfU1dFRVApOyAvLyDlt6bvvJrlubPnm7Tml7bpl7Tnur/mk6bpmaQKICBjb25zdCBnYXBNYXJrID0gcHJvZyhmLCAxMDAsIDI0LCBFQVNFX0VYUE9fT1VUKTsgLy8g57y65Y+j5qCH562+ICsg6L205LiK5pe25Yi7CiAgY29uc3Qgc3ViID0gcHJvZyhmLCAxNzAsIDEwLCBFQVNFX0VYUE9fT1VUKTsgLy8g5bqV6YOo5a2X5bmV5YWl5Zy6CiAgY29uc3QgZXhpdCA9IHByb2coZiwgMjY0LCA2LCBFQVNFX0VYUE9fT1VUKTsgLy8g5q615bC+5reh5Ye6CgogIGNvbnN0IHBsYXloZWFkID0gbGVycEYoZiwgW1NXRUVQLCBTV0VFUCArIDQ4ICogU1dFRVBfU1RFUF0sIFtSSUdIVF9YLCBSSUdIVF9YICsgQ09MX1ddKTsKCiAgcmV0dXJuICgKICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sgYmFja2dyb3VuZENvbG9yOiBCRywgZm9udEZhbWlseTogRk9OVF9TQU5TLCBvcGFjaXR5OiAxIC0gZXhpdCB9fT4KICAgICAgey8qIOKUgOKUgCDlt6YgNDAl77ya5a6g54mpIOKUgOKUgCAqL30KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGxlZnQ6IExFRlRfWCAtIGR4LAogICAgICAgICAgdG9wOiBUSVRMRV9ZLAogICAgICAgICAgd2lkdGg6IENPTF9XLAogICAgICAgICAgb3BhY2l0eTogcHVzaCwKICAgICAgICB9fQogICAgICA+CiAgICAgICAgPGRpdiBzdHlsZT17eyBmb250U2l6ZTogNTYsIGZvbnRXZWlnaHQ6IDcwMCwgY29sb3I6IFRFUk1fR1JBWSB9fT7lhbPnlLXohJHlsLHnnaHop4nnmoTlrqDniak8L2Rpdj4KCiAgICAgICAgPGRpdiBzdHlsZT17eyBwb3NpdGlvbjogJ2Fic29sdXRlJywgbGVmdDogMCwgdG9wOiAxODAsIHdpZHRoOiBDT0xfVywgaGVpZ2h0OiAyMDAgfX0+CiAgICAgICAgICB7Lyog6L20ICovfQogICAgICAgICAgPGRpdgogICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgICAgIGxlZnQ6IDAsCiAgICAgICAgICAgICAgdG9wOiBMX0FYSVMsCiAgICAgICAgICAgICAgd2lkdGg6IENPTF9XLAogICAgICAgICAgICAgIGhlaWdodDogMiwKICAgICAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6ICdyZ2JhKDEzOSwxNDgsMTU4LDAuMzUpJywKICAgICAgICAgICAgfX0KICAgICAgICAgIC8+CiAgICAgICAgICB7Lyog5a6e5b+D5q61IDAwOjAw4oCTMDM6MDDvvIhjbGlwIOaTpumZpO+8iSAqL30KICAgICAgICAgIDxkaXYKICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgICAgICBsZWZ0OiAwLAogICAgICAgICAgICAgIHRvcDogTF9BWElTIC0gNiwKICAgICAgICAgICAgICB3aWR0aDogQ09MX1cgKiBsZWZ0V2lwZSwKICAgICAgICAgICAgICBoZWlnaHQ6IDgsCiAgICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiBURVJNX0dSQVksCiAgICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiA0LAogICAgICAgICAgICAgIGNsaXBQYXRoOiBgaW5zZXQoMCAkeygxMDAgLSAoMyAvIDI0KSAqIDEwMCkudG9GaXhlZCgyKX0lIDAgMClgLAogICAgICAgICAgICB9fQogICAgICAgICAgLz4KICAgICAgICAgIHsvKiDnhoTnga3mrrXvvJowMzowMCDkuYvlkI4gMTYlIOiZmue6vyAqL30KICAgICAgICAgIDxkaXYKICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgICAgICBsZWZ0OiAoMyAvIDI0KSAqIENPTF9XLAogICAgICAgICAgICAgIHRvcDogTF9BWElTIC0gMiwKICAgICAgICAgICAgICB3aWR0aDogKDIxIC8gMjQpICogQ09MX1cgKiBsZWZ0V2lwZSwKICAgICAgICAgICAgICBoZWlnaHQ6IDIsCiAgICAgICAgICAgICAgYm9yZGVyTGVmdDogJzJweCBkYXNoZWQgcmdiYSgxMzksMTQ4LDE1OCwwLjE2KScsCiAgICAgICAgICAgICAgYmFja2dyb3VuZEltYWdlOgogICAgICAgICAgICAgICAgJ3JlcGVhdGluZy1saW5lYXItZ3JhZGllbnQoOTBkZWcsIHJnYmEoMTM5LDE0OCwxNTgsMC4xNikgMCAxMHB4LCB0cmFuc3BhcmVudCAxMHB4IDIwcHgpJywKICAgICAgICAgICAgfX0KICAgICAgICAgIC8+CiAgICAgICAgICB7LyogMDM6MDAg5pe25Yi75qCH6K6wICovfQogICAgICAgICAge2xlZnRXaXBlID4gMC41ID8gKAogICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgICAgICAgbGVmdDogKDMgLyAyNCkgKiBDT0xfVywKICAgICAgICAgICAgICAgIHRvcDogTF9BWElTIC0gMjYsCiAgICAgICAgICAgICAgICBoZWlnaHQ6IDUyLAogICAgICAgICAgICAgICAgd2lkdGg6IDIsCiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6IENPUkFMLAogICAgICAgICAgICAgICAgb3BhY2l0eTogKGxlZnRXaXBlIC0gMC41KSAqIDIsCiAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIDxzcGFuCiAgICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgICAgICAgICAgbGVmdDogOCwKICAgICAgICAgICAgICAgICAgdG9wOiAtNiwKICAgICAgICAgICAgICAgICAgZm9udEZhbWlseTogRk9OVF9NT05PLAogICAgICAgICAgICAgICAgICBmb250U2l6ZTogMjQsCiAgICAgICAgICAgICAgICAgIGNvbG9yOiBDT1JBTCwKICAgICAgICAgICAgICAgICAgd2hpdGVTcGFjZTogJ25vd3JhcCcsCiAgICAgICAgICAgICAgICB9fQogICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgIDAzOjAwIOWQjueGhOeBrQogICAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICApIDogbnVsbH0KICAgICAgICAgIHsvKiDliLvluqYgKi99CiAgICAgICAgICB7WzAsIDYsIDEyLCAxOCwgMjRdLm1hcCgoaCkgPT4gKAogICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAga2V5PXtofQogICAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgICAgICAgIGxlZnQ6IChoIC8gMjQpICogQ09MX1csCiAgICAgICAgICAgICAgICB0b3A6IExfQVhJUyArIDEwLAogICAgICAgICAgICAgICAgZm9udEZhbWlseTogRk9OVF9NT05PLAogICAgICAgICAgICAgICAgZm9udFNpemU6IDIwLAogICAgICAgICAgICAgICAgY29sb3I6IEdSQVksCiAgICAgICAgICAgICAgICB0cmFuc2Zvcm06ICd0cmFuc2xhdGVYKC01MCUpJywKICAgICAgICAgICAgICB9fQogICAgICAgICAgICA+CiAgICAgICAgICAgICAge1N0cmluZyhoKS5wYWRTdGFydCgyLCAnMCcpfTowMAogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICkpfQogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KCiAgICAgIHsvKiDilIDilIAg5Y+zIDQwJe+8mjI0IOWwj+aXtuiHquS4u+W3peS9nO+8iOKYheaWh+ahiOmAkOWtl++8iSDilIDilIAgKi99CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICBsZWZ0OiBSSUdIVF9YICsgZHgsCiAgICAgICAgICB0b3A6IFRJVExFX1ksCiAgICAgICAgICB3aWR0aDogQ09MX1csCiAgICAgICAgICBvcGFjaXR5OiBwdXNoLAogICAgICAgIH19CiAgICAgID4KICAgICAgICA8ZGl2IHN0eWxlPXt7IGZvbnRTaXplOiA1NiwgZm9udFdlaWdodDogNzAwLCBjb2xvcjogVEVYVCB9fT4yNOWwj+aXtuiHquS4u+W3peS9nDwvZGl2PgoKICAgICAgICA8ZGl2IHN0eWxlPXt7IHBvc2l0aW9uOiAnYWJzb2x1dGUnLCBsZWZ0OiAwLCB0b3A6IDE4MCwgd2lkdGg6IENPTF9XLCBoZWlnaHQ6IDI2MCB9fT4KICAgICAgICAgIHsvKiDmlq3kvpvmmpfluKbvvIjms6LlvaLph4znmoTkuKTkuKrmtJ7vvIkgKi99CiAgICAgICAgICB7R0FQUy5tYXAoKGcsIGkpID0+IHsKICAgICAgICAgICAgY29uc3QgcCA9IHByb2coZiwgU1dFRVAgKyBnLmZyb20gKiBTV0VFUF9TVEVQLCAxMCwgRUFTRV9FWFBPX09VVCk7CiAgICAgICAgICAgIHJldHVybiAoCiAgICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgICAga2V5PXtnLmxhYmVsfQogICAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICAgICAgICAgIGxlZnQ6IGcuZnJvbSAqIFBYX1BFUl9ILAogICAgICAgICAgICAgICAgICB0b3A6IFJfQVhJUyAtIDk2LAogICAgICAgICAgICAgICAgICB3aWR0aDogKGcudG8gLSBnLmZyb20pICogUFhfUEVSX0gsCiAgICAgICAgICAgICAgICAgIGhlaWdodDogMTAwLAogICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6ICdyZ2JhKDI0MCw4Miw3NywwLjEwKScsCiAgICAgICAgICAgICAgICAgIGJvcmRlckxlZnQ6ICcxcHggc29saWQgcmdiYSgyNDAsODIsNzcsMC4zNSknLAogICAgICAgICAgICAgICAgICBib3JkZXJSaWdodDogJzFweCBzb2xpZCByZ2JhKDI0MCw4Miw3NywwLjM1KScsCiAgICAgICAgICAgICAgICAgIG9wYWNpdHk6IHAsCiAgICAgICAgICAgICAgICB9fQogICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICk7CiAgICAgICAgICB9KX0KCiAgICAgICAgICB7Lyog5rOi5b2i5p+x77ya6LWw5p+l5byP5bem4oaS5Y+z55Sf6ZW/ICovfQogICAgICAgICAge0FycmF5LmZyb20oeyBsZW5ndGg6IEhPVVJTIH0sIChfLCBpKSA9PiB7CiAgICAgICAgICAgIGNvbnN0IHZpcyA9IDEgLSBjb3ZlcihpKTsKICAgICAgICAgICAgaWYgKHZpcyA8IDAuMikgcmV0dXJuIG51bGw7CiAgICAgICAgICAgIGNvbnN0IHAgPSBwcm9nKGYsIFNXRUVQICsgaSAqIFNXRUVQX1NURVAsIDgsIEVBU0VfRVhQT19PVVQpOwogICAgICAgICAgICBjb25zdCBoID0gYmFySChpKSAqIHZpczsKICAgICAgICAgICAgcmV0dXJuICgKICAgICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAgICBrZXk9e2l9CiAgICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgICAgICAgICAgbGVmdDogaSAqIFBYX1BFUl9IICsgMSwKICAgICAgICAgICAgICAgICAgdG9wOiBSX0FYSVMgLSBoICogcCwKICAgICAgICAgICAgICAgICAgd2lkdGg6IE1hdGgubWF4KDMsIFBYX1BFUl9IIC0gMyksCiAgICAgICAgICAgICAgICAgIGhlaWdodDogaCAqIHAsCiAgICAgICAgICAgICAgICAgIGJvcmRlclJhZGl1czogMiwKICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiBMRURHRVJfR1JFRU4sCiAgICAgICAgICAgICAgICAgIG9wYWNpdHk6IDAuNDIgKyAwLjQ4ICogdmlzLAogICAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgICAvPgogICAgICAgICAgICApOwogICAgICAgICAgfSl9CgogICAgICAgICAgey8qIOi9tCAqL30KICAgICAgICAgIDxkaXYKICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgICAgICBsZWZ0OiAwLAogICAgICAgICAgICAgIHRvcDogUl9BWElTLAogICAgICAgICAgICAgIHdpZHRoOiBDT0xfVywKICAgICAgICAgICAgICBoZWlnaHQ6IDIsCiAgICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiAncmdiYSgyMzYsMjMzLDIyNSwwLjMpJywKICAgICAgICAgICAgfX0KICAgICAgICAgIC8+CiAgICAgICAgICB7Lyog6LWw5p+l5ri45qCH77yI5pOm6Zmk5YmN57yY77yb5Y2h5Yik5L6L77ya5peg5Lqu57q/55qE5pOm6Zmk6K+75L2cIFBQVO+8iSAqL30KICAgICAgICAgIHtmID49IFNXRUVQICYmIGYgPD0gU1dFRVAgKyA0OCAqIFNXRUVQX1NURVAgPyAoCiAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICAgICAgICBsZWZ0OiBwbGF5aGVhZCAtIFJJR0hUX1gsCiAgICAgICAgICAgICAgICB0b3A6IFJfQVhJUyAtIDEwNCwKICAgICAgICAgICAgICAgIHdpZHRoOiAyLAogICAgICAgICAgICAgICAgaGVpZ2h0OiAxMDgsCiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6IFRFWFQsCiAgICAgICAgICAgICAgICBvcGFjaXR5OiAwLjU1LAogICAgICAgICAgICAgICAgYm94U2hhZG93OiAnMCAwIDE0cHggcmdiYSgyMzYsMjMzLDIyNSwwLjUpJywKICAgICAgICAgICAgICB9fQogICAgICAgICAgICAvPgogICAgICAgICAgKSA6IG51bGx9CgogICAgICAgICAgey8qIOe8uuWPo+agh+etviArIOecn+WunuaXtuWIu+agh+WcqOi9tOS4iu+8iGJyaWVmIMKn5LqMwrdTMiDnu5nlrprlgLzvvIkgKi99CiAgICAgICAgICB7R0FQUy5tYXAoKGcsIGkpID0+ICgKICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgIGtleT17Zy5sYWJlbH0KICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICAgICAgICBsZWZ0OiBnLmZyb20gKiBQWF9QRVJfSCwKICAgICAgICAgICAgICAgIHRvcDogUl9BWElTIC0gMTI4IC0gaSAqIDMwLAogICAgICAgICAgICAgICAgd2lkdGg6IChnLnRvIC0gZy5mcm9tKSAqIFBYX1BFUl9ILAogICAgICAgICAgICAgICAgb3BhY2l0eTogZ2FwTWFyaywKICAgICAgICAgICAgICB9fQogICAgICAgICAgICA+CiAgICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgICAgZm9udEZhbWlseTogRk9OVF9NT05PLAogICAgICAgICAgICAgICAgICBmb250U2l6ZTogMjIsCiAgICAgICAgICAgICAgICAgIGNvbG9yOiBpID09PSAwID8gQ09SQUwgOiBURVhULAogICAgICAgICAgICAgICAgICB0ZXh0QWxpZ246ICdjZW50ZXInLAogICAgICAgICAgICAgICAgICB3aGl0ZVNwYWNlOiAnbm93cmFwJywKICAgICAgICAgICAgICAgICAgdHJhbnNmb3JtOiAndHJhbnNsYXRlWCgtNiUpJywKICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAge2cubGFiZWx9CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgICAgaGVpZ2h0OiAxLAogICAgICAgICAgICAgICAgICBtYXJnaW5Ub3A6IDQsCiAgICAgICAgICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogaSA9PT0gMCA/IENPUkFMIDogJ3JnYmEoMjM2LDIzMywyMjUsMC41NSknLAogICAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgICAvPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICkpfQogICAgICAgICAge0dBUFMuZmxhdE1hcCgoZykgPT4gW2cuZnJvbSwgZy50b10pLm1hcCgoaCwgaSkgPT4gKAogICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAga2V5PXtgdCR7aX1gfQogICAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgICAgICAgIGxlZnQ6IGggKiBQWF9QRVJfSCwKICAgICAgICAgICAgICAgIHRvcDogUl9BWElTLAogICAgICAgICAgICAgICAgd2lkdGg6IDIsCiAgICAgICAgICAgICAgICBoZWlnaHQ6IDEyLAogICAgICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiBDT1JBTCwKICAgICAgICAgICAgICAgIG9wYWNpdHk6IGdhcE1hcmsgKiAwLjksCiAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgLz4KICAgICAgICAgICkpfQoKICAgICAgICAgIHsvKiDml6XliLvluqYgKi99CiAgICAgICAgICB7WzAsIDI0LCA0OF0ubWFwKChoKSA9PiAoCiAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICBrZXk9e2h9CiAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgICAgICAgbGVmdDogaCAqIFBYX1BFUl9ILAogICAgICAgICAgICAgICAgdG9wOiBSX0FYSVMgKyAxMiwKICAgICAgICAgICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfTU9OTywKICAgICAgICAgICAgICAgIGZvbnRTaXplOiAyMCwKICAgICAgICAgICAgICAgIGNvbG9yOiBHUkFZLAogICAgICAgICAgICAgICAgdHJhbnNmb3JtOiBoID09PSA0OCA/ICd0cmFuc2xhdGVYKC0xMDAlKScgOiAndHJhbnNsYXRlWCgtNTAlKScsCiAgICAgICAgICAgICAgICB3aGl0ZVNwYWNlOiAnbm93cmFwJywKICAgICAgICAgICAgICB9fQogICAgICAgICAgICA+CiAgICAgICAgICAgICAge2ggPT09IDAgPyAnMTEtMDMgMDA6MDAnIDogaCA9PT0gMjQgPyAnMTEtMDQnIDogJzExLTA1IDAwOjAwJ30KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICApKX0KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CgogICAgICB7Lyog5Lit57yd56uW57q/ICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgbGVmdDogOTU5LAogICAgICAgICAgdG9wOiAyNDAgKyAoMTYwICogKDEgLSBzZWFtKSksCiAgICAgICAgICB3aWR0aDogMiwKICAgICAgICAgIGhlaWdodDogNjQwICogc2VhbSwKICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogJ3JnYmEoMTM5LDE0OCwxNTgsMC40KScsCiAgICAgICAgICBvcGFjaXR5OiBzZWFtID4gMCA/IDAuOCA6IDAsCiAgICAgICAgfX0KICAgICAgLz4KCiAgICAgIHsvKiDlupXpg6jlrZfluZXvvIhicmllZiDCp+S6jMK3UzIg5Y6f5Y+l77yJICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgbGVmdDogMCwKICAgICAgICAgIHJpZ2h0OiAwLAogICAgICAgICAgYm90dG9tOiAxMTgsCiAgICAgICAgICBkaXNwbGF5OiAnZmxleCcsCiAgICAgICAgICBqdXN0aWZ5Q29udGVudDogJ2NlbnRlcicsCiAgICAgICAgICBvcGFjaXR5OiBzdWIsCiAgICAgICAgICB0cmFuc2Zvcm06IGB0cmFuc2xhdGVZKCR7MTQgKiAoMSAtIHN1Yil9cHgpYCwKICAgICAgICB9fQogICAgICA+CiAgICAgICAgPGRpdiBzdHlsZT17eyBmb250U2l6ZTogNDAsIGZvbnRXZWlnaHQ6IDcwMCwgY29sb3I6IFRFWFQsIHdoaXRlU3BhY2U6ICdwcmUnIH19PntTVUJ9PC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9BYnNvbHV0ZUZpbGw+CiAgKTsKfTsK
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { EASE_EXPO_OUT, EASE_SWEEP, lerpF, prog } from '../anim';
+import { BG, CORAL, FONT_MONO, FONT_SANS, GRAY, LEDGER_GREEN, TERM_GRAY, TEXT } from '../theme';
+
+// ============================================================================
+// S2 不是宠物 · 全局 210–480（brief §二·S2）· 配方卡 [interaction] 分屏 + [data] timeline-travel
+// 本地帧 = 全局 − 210。
+// 0–10   whoosh 转场 + 左右分屏推入（Parallax：左块 x−26、右块 x+26 → 0，10 帧 expo-out；
+//        中缝 2px 竖线 16–24 帧从画心 grow）。库里无同名「分屏」卡，按 rhythm/quad-split-parallel-scenes
+//        「两屏各自独立入场、中缝对齐」的最小实例实现，位移量照 brief，记歧义。
+// 左 40%（740px）：★文案「关电脑就睡觉的宠物」56px #8B949E + 一条平直时间线，03:00 后熄灭
+//        （00:00–03:00 实心、之后 16% 虚线段；轴上标 03:00 真实时刻）。擦除 12–32。
+// 右 40%（740px）：★文案「24小时自主工作」56px 米白 + 波形时间线（48 小时 · 两根断供缺口）。
+//        走查：柱体按 i 错峰左→右生长（28–96），缺口段画成暗带，
+//        真实时刻 12:08–22:05 / 12:31–22:17 以竖线 + 括号标签标在轴上（100–124）。
+//        柱体用「账本绿」#3FB68B（brief §一 新增色，语义=活着/OK）；青柠留给 S3 的 opencode 位，
+//        两镜同色会互相抢身份。两列时间轴同基线（分屏对比的可读性命门）。
+//        ⚠️ 实现偏差：timeline-travel 卡第 4 阶段「急停推近 scale 1→1.28」未做——本段末尾
+//        要让位给底部字幕（brief 380–450），推近会压掉字幕阅读；已记 progress.md。
+// 170–240（全局 380–450）：底部字幕 40px 逐字（brief §二原句，非 ★ 句亦不改写）。
+// 264–270 整段 6 帧淡出（退场纪律），由 S3 的 FocusRack 接管。
+// 断供时刻来源：§五素材注「来自 diary 占位行真实时间戳」，数值照 brief 逐字。
+// ============================================================================
+
+const COL_W = 740;
+const LEFT_X = 130;
+const RIGHT_X = 1050; // 1920 − 130 − COL_W
+const TITLE_Y = 236;
+// 两列内部都有一个 top:180 的绑图容器，以下为本段「轴」在该容器内的 y（全局 y = TITLE_Y + 180 + 本值）
+// 两列同高（560）：分屏对比的两条轴必须同一基线，否则读作两张不相干的图
+const L_AXIS = 144; // 左：平直时间线
+const R_AXIS = 144; // 右：波形基线
+
+const HOURS = 48; // 两天
+const PX_PER_H = COL_W / HOURS;
+const rx = (h: number): number => RIGHT_X + h * PX_PER_H;
+
+// 两根断供缺口（brief 给定真实时刻）
+type Gap = { from: number; to: number; label: string };
+const GAPS: Gap[] = [
+  { from: 12 + 8 / 60, to: 22 + 5 / 60, label: '12:08–22:05' },
+  { from: 24 + 12 + 31 / 60, to: 24 + 22 + 17 / 60, label: '12:31–22:17' },
+];
+
+// 小时槽被缺口覆盖的比例 → 该柱可见度（部分覆盖画矮柱，读作「那半小时还剩一点」）
+const cover = (i: number): number => {
+  let c = 0;
+  for (const g of GAPS) {
+    c += Math.max(0, Math.min(i + 1, g.to) - Math.max(i, g.from));
+  }
+  return Math.min(1, c);
+};
+
+// 柱高：按小时槽号确定的伪随机（帧无关，避免渲染抖动）
+const hash = (n: number): number => {
+  const x = Math.sin(n * 127.1 + 0.37) * 43758.5453;
+  return x - Math.floor(x);
+};
+const barH = (i: number): number => 20 + 54 * hash(i);
+
+const SUB = '区别不是它不睡——是断了十二小时，醒来还能接着活。';
+
+const SWEEP = 28; // 右列走查起跑
+const SWEEP_STEP = 1.4; // 48 槽 × 1.4 ≈ 67 帧 → 96 走完
+
+export const S2: React.FC = () => {
+  const f = useCurrentFrame();
+  const push = prog(f, 0, 10, EASE_EXPO_OUT); // 分屏推入
+  const dx = 26 * (1 - push);
+  const seam = prog(f, 16, 8, EASE_EXPO_OUT); // 中缝竖线
+  const leftWipe = prog(f, 12, 20, EASE_SWEEP); // 左：平直时间线擦除
+  const gapMark = prog(f, 100, 24, EASE_EXPO_OUT); // 缺口标签 + 轴上时刻
+  const sub = prog(f, 170, 10, EASE_EXPO_OUT); // 底部字幕入场
+  const exit = prog(f, 264, 6, EASE_EXPO_OUT); // 段尾淡出
+
+  const playhead = lerpF(f, [SWEEP, SWEEP + 48 * SWEEP_STEP], [RIGHT_X, RIGHT_X + COL_W]);
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: BG, fontFamily: FONT_SANS, opacity: 1 - exit }}>
+      {/* ── 左 40%：宠物 ── */}
+      <div
+        style={{
+          position: 'absolute',
+          left: LEFT_X - dx,
+          top: TITLE_Y,
+          width: COL_W,
+          opacity: push,
+        }}
+      >
+        <div style={{ fontSize: 56, fontWeight: 700, color: TERM_GRAY }}>关电脑就睡觉的宠物</div>
+
+        <div style={{ position: 'absolute', left: 0, top: 180, width: COL_W, height: 200 }}>
+          {/* 轴 */}
+          <div
+            style={{
+              position: 'absolute',
+              left: 0,
+              top: L_AXIS,
+              width: COL_W,
+              height: 2,
+              backgroundColor: 'rgba(139,148,158,0.35)',
+            }}
+          />
+          {/* 实心段 00:00–03:00（clip 擦除） */}
+          <div
+            style={{
+              position: 'absolute',
+              left: 0,
+              top: L_AXIS - 6,
+              width: COL_W * leftWipe,
+              height: 8,
+              backgroundColor: TERM_GRAY,
+              borderRadius: 4,
+              clipPath: `inset(0 ${(100 - (3 / 24) * 100).toFixed(2)}% 0 0)`,
+            }}
+          />
+          {/* 熄灭段：03:00 之后 16% 虚线 */}
+          <div
+            style={{
+              position: 'absolute',
+              left: (3 / 24) * COL_W,
+              top: L_AXIS - 2,
+              width: (21 / 24) * COL_W * leftWipe,
+              height: 2,
+              borderLeft: '2px dashed rgba(139,148,158,0.16)',
+              backgroundImage:
+                'repeating-linear-gradient(90deg, rgba(139,148,158,0.16) 0 10px, transparent 10px 20px)',
+            }}
+          />
+          {/* 03:00 时刻标记 */}
+          {leftWipe > 0.5 ? (
+            <div
+              style={{
+                position: 'absolute',
+                left: (3 / 24) * COL_W,
+                top: L_AXIS - 26,
+                height: 52,
+                width: 2,
+                backgroundColor: CORAL,
+                opacity: (leftWipe - 0.5) * 2,
+              }}
+            >
+              <span
+                style={{
+                  position: 'absolute',
+                  left: 8,
+                  top: -6,
+                  fontFamily: FONT_MONO,
+                  fontSize: 24,
+                  color: CORAL,
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                03:00 后熄灭
+              </span>
+            </div>
+          ) : null}
+          {/* 刻度 */}
+          {[0, 6, 12, 18, 24].map((h) => (
+            <div
+              key={h}
+              style={{
+                position: 'absolute',
+                left: (h / 24) * COL_W,
+                top: L_AXIS + 10,
+                fontFamily: FONT_MONO,
+                fontSize: 20,
+                color: GRAY,
+                transform: 'translateX(-50%)',
+              }}
+            >
+              {String(h).padStart(2, '0')}:00
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── 右 40%：24 小时自主工作（★文案逐字） ── */}
+      <div
+        style={{
+          position: 'absolute',
+          left: RIGHT_X + dx,
+          top: TITLE_Y,
+          width: COL_W,
+          opacity: push,
+        }}
+      >
+        <div style={{ fontSize: 56, fontWeight: 700, color: TEXT }}>24小时自主工作</div>
+
+        <div style={{ position: 'absolute', left: 0, top: 180, width: COL_W, height: 260 }}>
+          {/* 断供暗带（波形里的两个洞） */}
+          {GAPS.map((g, i) => {
+            const p = prog(f, SWEEP + g.from * SWEEP_STEP, 10, EASE_EXPO_OUT);
+            return (
+              <div
+                key={g.label}
+                style={{
+                  position: 'absolute',
+                  left: g.from * PX_PER_H,
+                  top: R_AXIS - 96,
+                  width: (g.to - g.from) * PX_PER_H,
+                  height: 100,
+                  backgroundColor: 'rgba(240,82,77,0.10)',
+                  borderLeft: '1px solid rgba(240,82,77,0.35)',
+                  borderRight: '1px solid rgba(240,82,77,0.35)',
+                  opacity: p,
+                }}
+              />
+            );
+          })}
+
+          {/* 波形柱：走查式左→右生长 */}
+          {Array.from({ length: HOURS }, (_, i) => {
+            const vis = 1 - cover(i);
+            if (vis < 0.2) return null;
+            const p = prog(f, SWEEP + i * SWEEP_STEP, 8, EASE_EXPO_OUT);
+            const h = barH(i) * vis;
+            return (
+              <div
+                key={i}
+                style={{
+                  position: 'absolute',
+                  left: i * PX_PER_H + 1,
+                  top: R_AXIS - h * p,
+                  width: Math.max(3, PX_PER_H - 3),
+                  height: h * p,
+                  borderRadius: 2,
+                  backgroundColor: LEDGER_GREEN,
+                  opacity: 0.42 + 0.48 * vis,
+                }}
+              />
+            );
+          })}
+
+          {/* 轴 */}
+          <div
+            style={{
+              position: 'absolute',
+              left: 0,
+              top: R_AXIS,
+              width: COL_W,
+              height: 2,
+              backgroundColor: 'rgba(236,233,225,0.3)',
+            }}
+          />
+          {/* 走查游标（擦除前缘；卡判例：无亮线的擦除读作 PPT） */}
+          {f >= SWEEP && f <= SWEEP + 48 * SWEEP_STEP ? (
+            <div
+              style={{
+                position: 'absolute',
+                left: playhead - RIGHT_X,
+                top: R_AXIS - 104,
+                width: 2,
+                height: 108,
+                backgroundColor: TEXT,
+                opacity: 0.55,
+                boxShadow: '0 0 14px rgba(236,233,225,0.5)',
+              }}
+            />
+          ) : null}
+
+          {/* 缺口标签 + 真实时刻标在轴上（brief §二·S2 给定值） */}
+          {GAPS.map((g, i) => (
+            <div
+              key={g.label}
+              style={{
+                position: 'absolute',
+                left: g.from * PX_PER_H,
+                top: R_AXIS - 128 - i * 30,
+                width: (g.to - g.from) * PX_PER_H,
+                opacity: gapMark,
+              }}
+            >
+              <div
+                style={{
+                  fontFamily: FONT_MONO,
+                  fontSize: 22,
+                  color: i === 0 ? CORAL : TEXT,
+                  textAlign: 'center',
+                  whiteSpace: 'nowrap',
+                  transform: 'translateX(-6%)',
+                }}
+              >
+                {g.label}
+              </div>
+              <div
+                style={{
+                  height: 1,
+                  marginTop: 4,
+                  backgroundColor: i === 0 ? CORAL : 'rgba(236,233,225,0.55)',
+                }}
+              />
+            </div>
+          ))}
+          {GAPS.flatMap((g) => [g.from, g.to]).map((h, i) => (
+            <div
+              key={`t${i}`}
+              style={{
+                position: 'absolute',
+                left: h * PX_PER_H,
+                top: R_AXIS,
+                width: 2,
+                height: 12,
+                backgroundColor: CORAL,
+                opacity: gapMark * 0.9,
+              }}
+            />
+          ))}
+
+          {/* 日刻度 */}
+          {[0, 24, 48].map((h) => (
+            <div
+              key={h}
+              style={{
+                position: 'absolute',
+                left: h * PX_PER_H,
+                top: R_AXIS + 12,
+                fontFamily: FONT_MONO,
+                fontSize: 20,
+                color: GRAY,
+                transform: h === 48 ? 'translateX(-100%)' : 'translateX(-50%)',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              {h === 0 ? '11-03 00:00' : h === 24 ? '11-04' : '11-05 00:00'}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* 中缝竖线 */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 959,
+          top: 240 + (160 * (1 - seam)),
+          width: 2,
+          height: 640 * seam,
+          backgroundColor: 'rgba(139,148,158,0.4)',
+          opacity: seam > 0 ? 0.8 : 0,
+        }}
+      />
+
+      {/* 底部字幕（brief §二·S2 原句） */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          bottom: 118,
+          display: 'flex',
+          justifyContent: 'center',
+          opacity: sub,
+          transform: `translateY(${14 * (1 - sub)}px)`,
+        }}
+      >
+        <div style={{ fontSize: 40, fontWeight: 700, color: TEXT, whiteSpace: 'pre' }}>{SUB}</div>
+      </div>
+    </AbsoluteFill>
+  );
+};

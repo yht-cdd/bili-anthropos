@@ -1,1 +1,31 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHR5cGUgeyBDU1MgfSBmcm9tICcuLi9hbmltJzsKaW1wb3J0IHsgUkFESVVTLCBTSEFET1cgfSBmcm9tICcuLi90aGVtZSc7CgovLyDCp+S6lMK357uE5Lu25aSN55So5bu66K6uIDHvvJrljaHniYfln7rnoYDnu4Tku7YgPENhcmQ+Ci8vIOe7n+S4gOinhOagvCA0ODDDlzI3MCAvIDMyMMOXMTgw77yMYm9yZGVyLXJhZGl1cyA4cHggKyBvdmVyZmxvdyBoaWRkZW7vvIhRNO+8muWFieS4jea6ouWHuuWchuinku+8ie+8jAovLyDmipXlvbEgMCA0cHggMTJweCByZ2JhKDAsMCwwLDAuNCnvvIzlt6bovrnmoYblj6/pgIkgNHB4ICNENEY0M0XjgIIKZXhwb3J0IGNvbnN0IENhcmQ6IFJlYWN0LkZDPHsKICB3OiBudW1iZXI7CiAgaDogbnVtYmVyOwogIGJnPzogc3RyaW5nOwogIGxpbWVCb3JkZXI/OiBib29sZWFuOwogIHNoYWRvdz86IHN0cmluZzsKICBzdHlsZT86IENTUzsKICBjaGlsZHJlbj86IFJlYWN0LlJlYWN0Tm9kZTsKfT4gPSAoeyB3LCBoLCBiZyA9ICcjMUExRjJDJywgbGltZUJvcmRlciA9IGZhbHNlLCBzaGFkb3cgPSBTSEFET1csIHN0eWxlLCBjaGlsZHJlbiB9KSA9PiAoCiAgPGRpdgogICAgc3R5bGU9e3sKICAgICAgd2lkdGg6IHcsCiAgICAgIGhlaWdodDogaCwKICAgICAgYmFja2dyb3VuZENvbG9yOiBiZywKICAgICAgYm9yZGVyUmFkaXVzOiBSQURJVVMsCiAgICAgIG92ZXJmbG93OiAnaGlkZGVuJywKICAgICAgYm94U2hhZG93OiBzaGFkb3csCiAgICAgIGJvcmRlckxlZnQ6IGxpbWVCb3JkZXIgPyAnNHB4IHNvbGlkICNENEY0M0UnIDogdW5kZWZpbmVkLAogICAgICAuLi5zdHlsZSwKICAgIH19CiAgPgogICAge2NoaWxkcmVufQogIDwvZGl2PgopOwo=
+import React from 'react';
+import type { CSS } from '../anim';
+import { RADIUS, SHADOW } from '../theme';
+
+// §五·组件复用建议 1：卡片基础组件 <Card>
+// 统一规格 480×270 / 320×180，border-radius 8px + overflow hidden（Q4：光不溢出圆角），
+// 投影 0 4px 12px rgba(0,0,0,0.4)，左边框可选 4px #D4F43E。
+export const Card: React.FC<{
+  w: number;
+  h: number;
+  bg?: string;
+  limeBorder?: boolean;
+  shadow?: string;
+  style?: CSS;
+  children?: React.ReactNode;
+}> = ({ w, h, bg = '#1A1F2C', limeBorder = false, shadow = SHADOW, style, children }) => (
+  <div
+    style={{
+      width: w,
+      height: h,
+      backgroundColor: bg,
+      borderRadius: RADIUS,
+      overflow: 'hidden',
+      boxShadow: shadow,
+      borderLeft: limeBorder ? '4px solid #D4F43E' : undefined,
+      ...style,
+    }}
+  >
+    {children}
+  </div>
+);

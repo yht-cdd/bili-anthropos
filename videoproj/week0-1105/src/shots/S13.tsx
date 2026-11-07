@@ -1,1 +1,221 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCBJbWcsIHN0YXRpY0ZpbGUsIHVzZUN1cnJlbnRGcmFtZSB9IGZyb20gJ3JlbW90aW9uJzsKaW1wb3J0IHsgY2xhbXAwMSwgRUFTRV9MSU5FQVIsIHByb2csIHNpbmVQdWxzZSwgc3ByaW5nSW4sIHRmIH0gZnJvbSAnLi4vYW5pbSc7CmltcG9ydCB7IEJHLCBGT05UX01PTk8sIEZPTlRfU0FOUywgRlNfQ09ERSwgRlNfVElUTEUsIEdSQVksIExJTUUsIFBBUEVSLCBSQURJVVMsIFNIQURPVyB9IGZyb20gJy4uL3RoZW1lJzsKCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8gUzEzIMK3IDE3MTDigJMxODkwZu+8iDU3LjDigJM2My4wc++8iSBbb3V0cm9dIG91dHJvLWdyb3VwLXBob3RvLWxhdW5jaO+8iOaUuee8lu+8iQovLyDmkYTlvbHooaggUzEz77yaIzBBMEUxNCDihpIg5b6E5ZCR5riQ5Y+Y6IGa5YWJ77yIIzFBMkY0RiDkuK3lv4PvvInvvJvkuK3lpK4oOTYwLDU0MCkgd29yZG1hcmsKLy8gIkFudGhyb3Bvc19BSSIgNzJweCBCb2xkICNFQ0U5RTHvvJs4IOS4qiAyMDDDlzEyMCDlhYPntKDljaHniYfku47lkIToh6rmlrnlkJHpo57lhaUKLy8g77yIMTc0MCDotbfmr4/kuKogMTVm44CB6ZSZ5bOwIDNm77yMc3ByaW5nKDEsODAsMTAp77yJ77ybMTgwMOKAkzE4MzAg5YWo5L2TIHB1bHNlIDHihpIxLjA14oaSMe+8mwovLyAxODMw4oCTMTg5MCDlrprmoLwgaG9sZCDmu6EgNjBmIOKAlOKAlCBSMSDpk4HlvovvvJp3b3JkbWFyayDlhaXlnLrlkI7ku7vkvZXlhYPntKDkuI3lvpflho3ov5DliqjvvIwKLy8g57KS5a2Q5ZyoIDE4MzAg5bin5ZCM5q2l5Ya757uT77yI5by557Cn5ZyoIDE4MDAg5bin5aSE6ZKz5Yi25Li657uI5YC877yMcHVsc2Ug5piv5ZSv5LiA6L+Q5Yqo77yJ44CCCi8vIOmHkeiJsueykuWtkO+8miNENEY0M0UgNTAg5Liq6ZqP5py66aOY6JC9IG9wYWNpdHkgMzAl77yIwqfkupQtOCDpnZnpn7PnlZnnmb3kuI3lnKjmraTplZzlpLTvvIznspLlrZDpmo/lrprmoLzlgZzvvInjgIIKLy8gUTIg5paH5a2X6Ziy57OK77ya5Y2h54mH5Li65bmz6Z2iIERPTe+8iOaXoCAzRCBzY2FsZe+8ie+8jOaWh+WtlyAyOOKAkzcycHgg5a6e6ZmF5YOP57Sg77yb57q555CG5rqQIDEyODDDlzcyMCDiiaUyeOOAggovLyDlrZflj7flgY/lt67orrDlvZXvvJrljaHniYfmoIfnrb4gMjhweO+8iEZTX0NPREUg6Zi25qKv5bqV57q/77yJ77yMIjE4IGNvbW1pdHMiIDEwIOWtl+espuWcqCAyMDBweCDljaHlhoUKLy8g5oyJIDMycHgg6ZyAIDE5MnB4IOa6ouWHuu+8jOaVheWPlumYtuair+W6lee6vyAyOHB477yI5pGE5b2x6KGo5Y+q5a6aIDIwMMOXMTIwIOWNoeacquWumuagh+etvuWtl+WPt++8ieOAggovLyBTRljvvIhyaXNlckAxNzEwIC8gd2hvb3Now5c4QDE3NDArM2YgLyBpbXBhY3TihpJib29tQDE4MDAgLyBkaW5nLWxvbmdAMTgzMO+8ieW9kiBhdWRpby5tcDPjgIIKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKLy8gOCDkuKrku6PooajlhYPntKDvvIjkuK3lv4PlnZDmoIcv5paH5qGI6YCQ5a2X54Wn5oqE5pGE5b2x6KGo77ybaW1nPcKn5ZubIOe0oOadkOaYoOWwhO+8iQpleHBvcnQgY29uc3QgRUxFTUVOVFM6IEFycmF5PHsgbGFiZWw6IHN0cmluZzsgaW1nPzogc3RyaW5nOyB4OiBudW1iZXI7IHk6IG51bWJlciB9PiA9IFsKICB7IGxhYmVsOiAnMTggY29tbWl0cycsIHg6IDk2MCwgeTogMjAwIH0sIC8vIOS4iu+8mmdpdCBsb2dvCiAgeyBsYWJlbDogJzMg6KeG6aKRJywgaW1nOiAnYXNzZXRzL3MxMy1iaWxpLWNhcmQucG5nJywgeDogMzAwLCB5OiAzMDAgfSwgLy8g5bem5LiK77yaQiDnq5kgbG9nb++8iMKn5ZubIOWbvjLvvIkKICB7IGxhYmVsOiAnNyDnr4fml6XorrAnLCBpbWc6ICdhc3NldHMvczEzLWRpYXJ5LnBuZycsIHg6IDIwMCwgeTogNTQwIH0sIC8vIOW3pu+8muaXpeiusO+8iMKn5ZubIOWbvjMg5bem5Zu+5qCH77yMZmZtcGVnIOmihOijgeWNleW5hSA0MDDDlzI1Nu+8iQogIHsgbGFiZWw6ICdSZW1vdGlvbicsIGltZzogJ2Fzc2V0cy9zMTMtY29kZS5wbmcnLCB4OiAzMDAsIHk6IDc4MCB9LCAvLyDlt6bkuIvvvJrku6PnoIHvvIjCp+WbmyDlm74zIOWPs+Wbvuagh++8jOmihOijge+8iQogIHsgbGFiZWw6ICfCpTIzLjM2JywgeDogOTYwLCB5OiA4ODAgfSwgLy8g5LiL77ya6LSm5Y2V5Zu+5qCHCiAgeyBsYWJlbDogJzEg57KJ5LidJywgeDogMTYyMCwgeTogNzgwIH0sIC8vIOWPs+S4i++8mueyieS4neWbvuaghwogIHsgbGFiZWw6ICc3IOWkqScsIGltZzogJ2Fzc2V0cy9zMTMtY2xvY2sucG5nJywgeDogMTcyMCwgeTogNTQwIH0sIC8vIOWPs++8muaXtumSn++8iMKn5ZubIOWbvjQg5bem5Zu+5qCH77yM6aKE6KOB77yJCiAgeyBsYWJlbDogJzIg5qyh5L+u5aSNJywgaW1nOiAnYXNzZXRzL3MxMy1maXgucG5nJywgeDogMTYyMCwgeTogMzAwIH0sIC8vIOWPs+S4iu+8muS/ruWkje+8iMKn5ZubIOWbvjQg5Y+z5Zu+5qCH77yM6aKE6KOB77yJCl07Cgpjb25zdCBDVyA9IDIwMDsgLy8g5Y2h54mH5a6977yI5pGE5b2x6KGoIDIwMMOXMTIw77yJCmNvbnN0IENIID0gMTIwOwoKLy8g56Gu5a6a5oCn5Lyq6ZqP5py677yI57KS5a2QL+Wbvuagh+WFseeUqO+8jOa4suafk+W4p+mXtOeos+Wumu+8iQpjb25zdCBybmQgPSAoaTogbnVtYmVyKTogbnVtYmVyID0+IHsKICBjb25zdCB4ID0gTWF0aC5zaW4oaSAqIDEyNy4xICsgMzExLjcpICogNDM3NTguNTQ1MzsKICByZXR1cm4geCAtIE1hdGguZmxvb3IoeCk7Cn07CgovLyDigJTigJQg5peg57Sg5p2Q55qEIDQg5byg5Y2h77ya5Luj56CB57uY5Yi25p6B566A5Zu+5qCH77yIZW1vamkg5a2X5L2T5LiN5L+d6K+B77yM5YWo6YOo5Yeg5L2V5Zu+5b2iL0FTQ0lJ77yJ4oCU4oCUCmNvbnN0IEljb25HaXQ6IFJlYWN0LkZDID0gKCkgPT4gKAogIDxkaXYgc3R5bGU9e3sgcG9zaXRpb246ICdyZWxhdGl2ZScsIHdpZHRoOiA0OCwgaGVpZ2h0OiA0OCB9fT4KICAgIDxkaXYgc3R5bGU9e3sgcG9zaXRpb246ICdhYnNvbHV0ZScsIGxlZnQ6IDQsIHRvcDogMjIsIHdpZHRoOiA0MCwgaGVpZ2h0OiA0LCBiYWNrZ3JvdW5kQ29sb3I6IEJHLCBib3JkZXJSYWRpdXM6IDIgfX0gLz4KICAgIDxkaXYgc3R5bGU9e3sgcG9zaXRpb246ICdhYnNvbHV0ZScsIGxlZnQ6IDIyLCB0b3A6IDQsIHdpZHRoOiA0LCBoZWlnaHQ6IDI0LCBiYWNrZ3JvdW5kQ29sb3I6IEJHLCBib3JkZXJSYWRpdXM6IDIsIHRyYW5zZm9ybTogJ3JvdGF0ZSg0NWRlZyknLCB0cmFuc2Zvcm1PcmlnaW46ICdib3R0b20gY2VudGVyJyB9fSAvPgogICAgPGRpdiBzdHlsZT17eyBwb3NpdGlvbjogJ2Fic29sdXRlJywgbGVmdDogMTQsIHRvcDogMTQsIHdpZHRoOiAyMCwgaGVpZ2h0OiAyMCwgYm9yZGVyUmFkaXVzOiAnNTAlJywgYm9yZGVyOiBgNHB4IHNvbGlkICR7Qkd9YCwgYmFja2dyb3VuZENvbG9yOiBMSU1FIH19IC8+CiAgICA8ZGl2IHN0eWxlPXt7IHBvc2l0aW9uOiAnYWJzb2x1dGUnLCBsZWZ0OiAzNiwgdG9wOiA0LCB3aWR0aDogMTAsIGhlaWdodDogMTAsIGJvcmRlclJhZGl1czogJzUwJScsIGJvcmRlcjogYDNweCBzb2xpZCAke0JHfWAgfX0gLz4KICA8L2Rpdj4KKTsKY29uc3QgSWNvbkJvb2s6IFJlYWN0LkZDID0gKCkgPT4gKAogIDxkaXYgc3R5bGU9e3sgd2lkdGg6IDM0LCBoZWlnaHQ6IDQ0LCBiYWNrZ3JvdW5kQ29sb3I6IEJHLCBib3JkZXJMZWZ0OiBgOHB4IHNvbGlkICR7TElNRX1gLCBib3JkZXJSYWRpdXM6IDMsIHBvc2l0aW9uOiAncmVsYXRpdmUnIH19PgogICAge1sxMCwgMjAsIDMwXS5tYXAoKHkpID0+ICgKICAgICAgPGRpdiBrZXk9e3l9IHN0eWxlPXt7IHBvc2l0aW9uOiAnYWJzb2x1dGUnLCBsZWZ0OiAxMiwgdG9wOiB5LCB3aWR0aDogMTQsIGhlaWdodDogMywgYmFja2dyb3VuZENvbG9yOiBQQVBFUiwgYm9yZGVyUmFkaXVzOiAxLjUgfX0gLz4KICAgICkpfQogIDwvZGl2PgopOwpjb25zdCBJY29uWXVhbjogUmVhY3QuRkMgPSAoKSA9PiAoCiAgPGRpdiBzdHlsZT17eyBmb250RmFtaWx5OiBGT05UX1NBTlMsIGZvbnRXZWlnaHQ6IDcwMCwgZm9udFNpemU6IDQ0LCBsaW5lSGVpZ2h0OiAnNDhweCcsIGNvbG9yOiBCRyB9fT7CpTwvZGl2PgopOwpjb25zdCBJY29uRmFuOiBSZWFjdC5GQyA9ICgpID0+ICgKICA8ZGl2IHN0eWxlPXt7IHBvc2l0aW9uOiAncmVsYXRpdmUnLCB3aWR0aDogNDQsIGhlaWdodDogNDggfX0+CiAgICA8ZGl2IHN0eWxlPXt7IHBvc2l0aW9uOiAnYWJzb2x1dGUnLCBsZWZ0OiAxMywgdG9wOiAyLCB3aWR0aDogMTgsIGhlaWdodDogMTgsIGJvcmRlclJhZGl1czogJzUwJScsIGJhY2tncm91bmRDb2xvcjogQkcgfX0gLz4KICAgIDxkaXYgc3R5bGU9e3sgcG9zaXRpb246ICdhYnNvbHV0ZScsIGxlZnQ6IDQsIHRvcDogMjQsIHdpZHRoOiAzNiwgaGVpZ2h0OiAyMiwgYm9yZGVyUmFkaXVzOiAnMThweCAxOHB4IDRweCA0cHgnLCBiYWNrZ3JvdW5kQ29sb3I6IExJTUUsIGJvcmRlcjogYDNweCBzb2xpZCAke0JHfWAgfX0gLz4KICA8L2Rpdj4KKTsKY29uc3QgR0xZUEhTOiBSZWNvcmQ8bnVtYmVyLCBSZWFjdC5GQz4gPSB7IDA6IEljb25HaXQsIDI6IEljb25Cb29rLCA0OiBJY29uWXVhbiwgNTogSWNvbkZhbiB9OwoKLy8g5Y2V5byg5YWD57Sg5Y2h77yI6Z2Z5oCB54mI77ya5a6a5qC8L1MxNCDmuJDpmpDnlKjvvJtwPeWFpeWcuui/m+W6pu+8jHNjYWxlPXB1bHNlIOWAjeeOh++8iQpjb25zdCBFbGVtZW50Q2FyZDogUmVhY3QuRkM8eyBlbDogKHR5cGVvZiBFTEVNRU5UUylbbnVtYmVyXTsgaWR4OiBudW1iZXI7IHA6IG51bWJlcjsgc2NhbGU6IG51bWJlcjsgZ3g6IG51bWJlcjsgZ3k6IG51bWJlciB9PiA9ICh7CiAgZWwsCiAgaWR4LAogIHAsCiAgc2NhbGUsCiAgZ3gsCiAgZ3ksCn0pID0+IHsKICBjb25zdCBHbHlwaCA9IEdMWVBIU1tpZHhdOwogIHJldHVybiAoCiAgICA8ZGl2CiAgICAgIHN0eWxlPXt7CiAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgbGVmdDogZWwueCAtIENXIC8gMiwKICAgICAgICB0b3A6IGVsLnkgLSBDSCAvIDIsCiAgICAgICAgd2lkdGg6IENXLAogICAgICAgIGhlaWdodDogQ0gsCiAgICAgICAgYmFja2dyb3VuZENvbG9yOiBQQVBFUiwKICAgICAgICBib3JkZXJSYWRpdXM6IFJBRElVUywKICAgICAgICBib3hTaGFkb3c6IFNIQURPVywKICAgICAgICBvdmVyZmxvdzogJ2hpZGRlbicsCiAgICAgICAgb3BhY2l0eTogY2xhbXAwMShwKSwKICAgICAgICB0cmFuc2Zvcm06IGB0cmFuc2xhdGUoJHtneCAqICgxIC0gcCkgKiA3MDB9cHgsICR7Z3kgKiAoMSAtIHApICogNzAwfXB4KSBzY2FsZSgke3NjYWxlfSlgLAogICAgICB9fQogICAgPgogICAgICA8ZGl2IHN0eWxlPXt7IGhlaWdodDogNzIsIGRpc3BsYXk6ICdmbGV4JywgYWxpZ25JdGVtczogJ2NlbnRlcicsIGp1c3RpZnlDb250ZW50OiAnY2VudGVyJywgb3ZlcmZsb3c6ICdoaWRkZW4nIH19PgogICAgICAgIHtlbC5pbWcgPyAoCiAgICAgICAgICA8SW1nIHNyYz17c3RhdGljRmlsZShlbC5pbWcpfSBzdHlsZT17eyB3aWR0aDogJzEwMCUnLCBoZWlnaHQ6ICcxMDAlJywgb2JqZWN0Rml0OiAnY292ZXInIH19IC8+CiAgICAgICAgKSA6IEdseXBoID8gKAogICAgICAgICAgPEdseXBoIC8+CiAgICAgICAgKSA6IG51bGx9CiAgICAgIDwvZGl2PgogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIGhlaWdodDogQ0ggLSA3MiwKICAgICAgICAgIGRpc3BsYXk6ICdmbGV4JywKICAgICAgICAgIGFsaWduSXRlbXM6ICdjZW50ZXInLAogICAgICAgICAganVzdGlmeUNvbnRlbnQ6ICdjZW50ZXInLAogICAgICAgICAgZm9udEZhbWlseTogRk9OVF9NT05PLAogICAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgICAgZm9udFNpemU6IEZTX0NPREUsCiAgICAgICAgICBjb2xvcjogQkcsCiAgICAgICAgICB3aGl0ZVNwYWNlOiAnbm93cmFwJywKICAgICAgICB9fQogICAgICA+CiAgICAgICAge2VsLmxhYmVsfQogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICk7Cn07CgovLyDlvoTlkJHogZrlhYnog4zmma/vvIhTMTMvUzE0IOWFseeUqO+8iQpleHBvcnQgY29uc3QgUzEzQmc6IFJlYWN0LkZDID0gKCkgPT4gKAogIDw+CiAgICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGJhY2tncm91bmRDb2xvcjogQkcgfX0gLz4KICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sgYmFja2dyb3VuZDogJ3JhZGlhbC1ncmFkaWVudChjaXJjbGUgNzAwcHggYXQgNTAlIDUwJSwgcmdiYSgyNiw0Nyw3OSwwLjkpLCByZ2JhKDEwLDE0LDIwLDApIDc1JSknIH19IC8+CiAgPC8+Cik7CgovLyDph5HoibLnspLlrZDvvIg1MCDkuKogI0Q0RjQzRSDpmo/mnLrpo5jokL0gMzAlIG9wYWNpdHnvvInvvJtn4omlMTgzMCDkvY3nva7pkrPliLYgPSDlrprmoLzlkI7kuI3lho3ov5DliqjvvIhSMe+8iQpleHBvcnQgY29uc3QgUGFydGljbGVzOiBSZWFjdC5GQzx7IGc6IG51bWJlciB9PiA9ICh7IGcgfSkgPT4gewogIGNvbnN0IHQgPSBNYXRoLm1pbihnLCAxODMwKSAtIDE3MTA7CiAgcmV0dXJuICgKICAgIDw+CiAgICAgIHtBcnJheS5mcm9tKHsgbGVuZ3RoOiA1MCB9LCAoXywgaSkgPT4gewogICAgICAgIGNvbnN0IHNpemUgPSAzICsgcm5kKGkpICogNTsKICAgICAgICBjb25zdCB4ID0gcm5kKGkgKyA1MCkgKiAxOTIwOwogICAgICAgIGNvbnN0IHNwZWVkID0gMS4yICsgcm5kKGkgKyAxMDApICogMi4yOwogICAgICAgIGNvbnN0IHkgPSAocm5kKGkgKyAxNTApICogMTA4MCArIHQgKiBzcGVlZCkgJSAxMTIwOwogICAgICAgIGNvbnN0IGZhZGVJbiA9IGcgPj0gMTgzMCA/IDAuMyA6IDAuMyAqIGNsYW1wMDEoKGcgLSAxNzEwKSAvIDMwKTsKICAgICAgICByZXR1cm4gKAogICAgICAgICAgPGRpdgogICAgICAgICAgICBrZXk9e2l9CiAgICAgICAgICAgIHN0eWxlPXt7IHBvc2l0aW9uOiAnYWJzb2x1dGUnLCBsZWZ0OiB4LCB0b3A6IHkgLSA0MCwgd2lkdGg6IHNpemUsIGhlaWdodDogc2l6ZSwgYm9yZGVyUmFkaXVzOiAnNTAlJywgYmFja2dyb3VuZENvbG9yOiBMSU1FLCBvcGFjaXR5OiBmYWRlSW4gfX0KICAgICAgICAgIC8+CiAgICAgICAgKTsKICAgICAgfSl9CiAgICA8Lz4KICApOwp9OwoKLy8g5a6a5qC85ZCI5b2x6Z2Z5oCB5b+r54Wn77yIUzE0IOa4kOmakOWxguW8leeUqO+8muWFqOmDqOWFg+e0oOe7iOaAge+8jOmbtui/kOWKqO+8iQpleHBvcnQgY29uc3QgR3JvdXBTdGlsbDogUmVhY3QuRkM8eyBvcGFjaXR5OiBudW1iZXIgfT4gPSAoeyBvcGFjaXR5IH0pID0+ICgKICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IG9wYWNpdHkgfX0+CiAgICA8UzEzQmcgLz4KICAgIDxQYXJ0aWNsZXMgZz17MTgzMH0gLz4KICAgIDxkaXYKICAgICAgc3R5bGU9e3sKICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICBsZWZ0OiAwLAogICAgICAgIHRvcDogNTQwIC0gNjAsCiAgICAgICAgd2lkdGg6IDE5MjAsCiAgICAgICAgdGV4dEFsaWduOiAnY2VudGVyJywKICAgICAgICBmb250RmFtaWx5OiBGT05UX1NBTlMsCiAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgIGZvbnRTaXplOiBGU19USVRMRSwKICAgICAgICBjb2xvcjogUEFQRVIsCiAgICAgIH19CiAgICA+CiAgICAgIEFudGhyb3Bvc19BSQogICAgPC9kaXY+CiAgICB7RUxFTUVOVFMubWFwKChlbCwgaSkgPT4gKAogICAgICA8RWxlbWVudENhcmQga2V5PXtpfSBlbD17ZWx9IGlkeD17aX0gcD17MX0gc2NhbGU9ezF9IGd4PXswfSBneT17MH0gLz4KICAgICkpfQogIDwvQWJzb2x1dGVGaWxsPgopOwoKZXhwb3J0IGNvbnN0IFMxMzogUmVhY3QuRkMgPSAoKSA9PiB7CiAgY29uc3QgZyA9IHVzZUN1cnJlbnRGcmFtZSgpICsgMTcxMDsgLy8g5YWo5bGA5binCgogIC8vIDE3MTDigJMxNzQw77yad29yZG1hcmsgc2NhbGUoMOKGkjEpIGV4cG8tb3V0CiAgY29uc3Qgd20gPSBwcm9nKGcsIDE3MTAsIDMwKTsKICAvLyAxODAw4oCTMTgzMO+8muWFqOS9kyBwdWxzZSAx4oaSMS4wNeKGkjHvvIjlhajniYfllK/kuIDkuIDmrKHlhajnlLvpnaLohInlhrLvvIzCp+WFrSBSNO+8iQogIC8vIOKaoO+4jyBzaW5lUHVsc2Ug5peg57uI54K56ZKz5Yi25Lya5ZGo5pyf5oyv6I2h5Yiw6ZWc5aS05bC+4oCU4oCUTWF0aC5taW4oZywxODMwKSDpkonnu4jlgLwgMO+8jAogIC8vIDE4MzDigJMxODkwIGhvbGQg5ruhIDYwZiDmnJ/pl7QgcHVsc2Ug5oGS5Li6IDHvvIzpm7bov5DliqjvvIhSMSDnv7vovabpooTpmLIgwqfkupQtNu+8ieOAggogIGNvbnN0IHB1bHNlID0gMSArIDAuMDUgKiBzaW5lUHVsc2UoTWF0aC5taW4oZywgMTgzMCksIDE4MDAsIDMwKTsKCiAgcmV0dXJuICgKICAgIDxBYnNvbHV0ZUZpbGw+CiAgICAgIDxTMTNCZyAvPgogICAgICA8UGFydGljbGVzIGc9e2d9IC8+CgogICAgICB7Lyog5Lit5aSuIHdvcmRtYXJr77yaNzJweCBCb2xkIFBBUEVS77yIUTExIOKJpTUuNiUg5bin6auY6L6+5qCH77yJICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgbGVmdDogMCwKICAgICAgICAgIHRvcDogNTQwIC0gNjAsCiAgICAgICAgICB3aWR0aDogMTkyMCwKICAgICAgICAgIHRleHRBbGlnbjogJ2NlbnRlcicsCiAgICAgICAgICBmb250RmFtaWx5OiBGT05UX1NBTlMsCiAgICAgICAgICBmb250V2VpZ2h0OiA3MDAsCiAgICAgICAgICBmb250U2l6ZTogRlNfVElUTEUsCiAgICAgICAgICBjb2xvcjogUEFQRVIsCiAgICAgICAgICBvcGFjaXR5OiB3bSwKICAgICAgICAgIHRyYW5zZm9ybTogYHNjYWxlKCR7d219KWAsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIEFudGhyb3Bvc19BSQogICAgICA8L2Rpdj4KCiAgICAgIHsvKiA4IOWFg+e0oO+8mjE3NDAg6LW36ZSZ5bOwIDNmIOmjnuWFpe+8mzE4MDAg6LW35by557Cn6ZKz57uI5YC8IOKAlOKAlCBwdWxzZSDlkI4gNjBmIOmbtui/kOWKqO+8iFIx77yJICovfQogICAgICB7RUxFTUVOVFMubWFwKChlbCwgaSkgPT4gewogICAgICAgIGNvbnN0IGR4ID0gZWwueCAtIDk2MDsKICAgICAgICBjb25zdCBkeSA9IGVsLnkgLSA1NDA7CiAgICAgICAgY29uc3QgbGVuID0gTWF0aC5oeXBvdChkeCwgZHkpIHx8IDE7CiAgICAgICAgY29uc3QgcmF3ID0gc3ByaW5nSW4oZywgMTc0MCArIGkgKiAzLCB7IHRlbnNpb246IDgwLCBmcmljdGlvbjogMTAgfSk7CiAgICAgICAgY29uc3QgcCA9IGcgPj0gMTgwMCA/IDEgOiBjbGFtcDAxKHJhdyk7CiAgICAgICAgcmV0dXJuIDxFbGVtZW50Q2FyZCBrZXk9e2l9IGVsPXtlbH0gaWR4PXtpfSBwPXtwfSBzY2FsZT17cHVsc2V9IGd4PXtkeCAvIGxlbn0gZ3k9e2R5IC8gbGVufSAvPjsKICAgICAgfSl9CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9Owo=
+import React from 'react';
+import { AbsoluteFill, Img, staticFile, useCurrentFrame } from 'remotion';
+import { clamp01, EASE_LINEAR, prog, sinePulse, springIn, tf } from '../anim';
+import { BG, FONT_MONO, FONT_SANS, FS_CODE, FS_TITLE, GRAY, LIME, PAPER, RADIUS, SHADOW } from '../theme';
+
+// ============================================================================
+// S13 · 1710–1890f（57.0–63.0s） [outro] outro-group-photo-launch（改编）
+// 摄影表 S13：#0A0E14 → 径向渐变聚光（#1A2F4F 中心）；中央(960,540) wordmark
+// "Anthropos_AI" 72px Bold #ECE9E1；8 个 200×120 元素卡片从各自方向飞入
+// （1740 起每个 15f、错峰 3f，spring(1,80,10)）；1800–1830 全体 pulse 1→1.05→1；
+// 1830–1890 定格 hold 满 60f —— R1 铁律：wordmark 入场后任何元素不得再运动，
+// 粒子在 1830 帧同步冻结（弹簧在 1800 帧处钳制为终值，pulse 是唯一运动）。
+// 金色粒子：#D4F43E 50 个随机飘落 opacity 30%（§五-8 静音留白不在此镜头，粒子随定格停）。
+// Q2 文字防糊：卡片为平面 DOM（无 3D scale），文字 28–72px 实际像素；纹理源 1280×720 ≥2x。
+// 字号偏差记录：卡片标签 28px（FS_CODE 阶梯底线），"18 commits" 10 字符在 200px 卡内
+// 按 32px 需 192px 溢出，故取阶梯底线 28px（摄影表只定 200×120 卡未定标签字号）。
+// SFX（riser@1710 / whoosh×8@1740+3f / impact→boom@1800 / ding-long@1830）归 audio.mp3。
+// ============================================================================
+
+// 8 个代表元素（中心坐标/文案逐字照抄摄影表；img=§四 素材映射）
+export const ELEMENTS: Array<{ label: string; img?: string; x: number; y: number }> = [
+  { label: '18 commits', x: 960, y: 200 }, // 上：git logo
+  { label: '3 视频', img: 'assets/s13-bili-card.png', x: 300, y: 300 }, // 左上：B 站 logo（§四 图2）
+  { label: '7 篇日记', img: 'assets/s13-diary.png', x: 200, y: 540 }, // 左：日记（§四 图3 左图标，ffmpeg 预裁单幅 400×256）
+  { label: 'Remotion', img: 'assets/s13-code.png', x: 300, y: 780 }, // 左下：代码（§四 图3 右图标，预裁）
+  { label: '¥23.36', x: 960, y: 880 }, // 下：账单图标
+  { label: '1 粉丝', x: 1620, y: 780 }, // 右下：粉丝图标
+  { label: '7 天', img: 'assets/s13-clock.png', x: 1720, y: 540 }, // 右：时钟（§四 图4 左图标，预裁）
+  { label: '2 次修复', img: 'assets/s13-fix.png', x: 1620, y: 300 }, // 右上：修复（§四 图4 右图标，预裁）
+];
+
+const CW = 200; // 卡片宽（摄影表 200×120）
+const CH = 120;
+
+// 确定性伪随机（粒子/图标共用，渲染帧间稳定）
+const rnd = (i: number): number => {
+  const x = Math.sin(i * 127.1 + 311.7) * 43758.5453;
+  return x - Math.floor(x);
+};
+
+// —— 无素材的 4 张卡：代码绘制极简图标（emoji 字体不保证，全部几何图形/ASCII）——
+const IconGit: React.FC = () => (
+  <div style={{ position: 'relative', width: 48, height: 48 }}>
+    <div style={{ position: 'absolute', left: 4, top: 22, width: 40, height: 4, backgroundColor: BG, borderRadius: 2 }} />
+    <div style={{ position: 'absolute', left: 22, top: 4, width: 4, height: 24, backgroundColor: BG, borderRadius: 2, transform: 'rotate(45deg)', transformOrigin: 'bottom center' }} />
+    <div style={{ position: 'absolute', left: 14, top: 14, width: 20, height: 20, borderRadius: '50%', border: `4px solid ${BG}`, backgroundColor: LIME }} />
+    <div style={{ position: 'absolute', left: 36, top: 4, width: 10, height: 10, borderRadius: '50%', border: `3px solid ${BG}` }} />
+  </div>
+);
+const IconBook: React.FC = () => (
+  <div style={{ width: 34, height: 44, backgroundColor: BG, borderLeft: `8px solid ${LIME}`, borderRadius: 3, position: 'relative' }}>
+    {[10, 20, 30].map((y) => (
+      <div key={y} style={{ position: 'absolute', left: 12, top: y, width: 14, height: 3, backgroundColor: PAPER, borderRadius: 1.5 }} />
+    ))}
+  </div>
+);
+const IconYuan: React.FC = () => (
+  <div style={{ fontFamily: FONT_SANS, fontWeight: 700, fontSize: 44, lineHeight: '48px', color: BG }}>¥</div>
+);
+const IconFan: React.FC = () => (
+  <div style={{ position: 'relative', width: 44, height: 48 }}>
+    <div style={{ position: 'absolute', left: 13, top: 2, width: 18, height: 18, borderRadius: '50%', backgroundColor: BG }} />
+    <div style={{ position: 'absolute', left: 4, top: 24, width: 36, height: 22, borderRadius: '18px 18px 4px 4px', backgroundColor: LIME, border: `3px solid ${BG}` }} />
+  </div>
+);
+const GLYPHS: Record<number, React.FC> = { 0: IconGit, 2: IconBook, 4: IconYuan, 5: IconFan };
+
+// 单张元素卡（静态版：定格/S14 渐隐用；p=入场进度，scale=pulse 倍率）
+const ElementCard: React.FC<{ el: (typeof ELEMENTS)[number]; idx: number; p: number; scale: number; gx: number; gy: number }> = ({
+  el,
+  idx,
+  p,
+  scale,
+  gx,
+  gy,
+}) => {
+  const Glyph = GLYPHS[idx];
+  return (
+    <div
+      style={{
+        position: 'absolute',
+        left: el.x - CW / 2,
+        top: el.y - CH / 2,
+        width: CW,
+        height: CH,
+        backgroundColor: PAPER,
+        borderRadius: RADIUS,
+        boxShadow: SHADOW,
+        overflow: 'hidden',
+        opacity: clamp01(p),
+        transform: `translate(${gx * (1 - p) * 700}px, ${gy * (1 - p) * 700}px) scale(${scale})`,
+      }}
+    >
+      <div style={{ height: 72, display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+        {el.img ? (
+          <Img src={staticFile(el.img)} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        ) : Glyph ? (
+          <Glyph />
+        ) : null}
+      </div>
+      <div
+        style={{
+          height: CH - 72,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          fontFamily: FONT_MONO,
+          fontWeight: 700,
+          fontSize: FS_CODE,
+          color: BG,
+          whiteSpace: 'nowrap',
+        }}
+      >
+        {el.label}
+      </div>
+    </div>
+  );
+};
+
+// 径向聚光背景（S13/S14 共用）
+export const S13Bg: React.FC = () => (
+  <>
+    <AbsoluteFill style={{ backgroundColor: BG }} />
+    <AbsoluteFill style={{ background: 'radial-gradient(circle 700px at 50% 50%, rgba(26,47,79,0.9), rgba(10,14,20,0) 75%)' }} />
+  </>
+);
+
+// 金色粒子（50 个 #D4F43E 随机飘落 30% opacity）；g≥1830 位置钳制 = 定格后不再运动（R1）
+export const Particles: React.FC<{ g: number }> = ({ g }) => {
+  const t = Math.min(g, 1830) - 1710;
+  return (
+    <>
+      {Array.from({ length: 50 }, (_, i) => {
+        const size = 3 + rnd(i) * 5;
+        const x = rnd(i + 50) * 1920;
+        const speed = 1.2 + rnd(i + 100) * 2.2;
+        const y = (rnd(i + 150) * 1080 + t * speed) % 1120;
+        const fadeIn = g >= 1830 ? 0.3 : 0.3 * clamp01((g - 1710) / 30);
+        return (
+          <div
+            key={i}
+            style={{ position: 'absolute', left: x, top: y - 40, width: size, height: size, borderRadius: '50%', backgroundColor: LIME, opacity: fadeIn }}
+          />
+        );
+      })}
+    </>
+  );
+};
+
+// 定格合影静态快照（S14 渐隐层引用：全部元素终态，零运动）
+export const GroupStill: React.FC<{ opacity: number }> = ({ opacity }) => (
+  <AbsoluteFill style={{ opacity }}>
+    <S13Bg />
+    <Particles g={1830} />
+    <div
+      style={{
+        position: 'absolute',
+        left: 0,
+        top: 540 - 60,
+        width: 1920,
+        textAlign: 'center',
+        fontFamily: FONT_SANS,
+        fontWeight: 700,
+        fontSize: FS_TITLE,
+        color: PAPER,
+      }}
+    >
+      Anthropos_AI
+    </div>
+    {ELEMENTS.map((el, i) => (
+      <ElementCard key={i} el={el} idx={i} p={1} scale={1} gx={0} gy={0} />
+    ))}
+  </AbsoluteFill>
+);
+
+export const S13: React.FC = () => {
+  const g = useCurrentFrame() + 1710; // 全局帧
+
+  // 1710–1740：wordmark scale(0→1) expo-out
+  const wm = prog(g, 1710, 30);
+  // 1800–1830：全体 pulse 1→1.05→1（全片唯一一次全画面脉冲，§六 R4）
+  // ⚠️ sinePulse 无终点钳制会周期振荡到镜头尾——Math.min(g,1830) 钉终值 0，
+  // 1830–1890 hold 满 60f 期间 pulse 恒为 1，零运动（R1 翻车预防 §五-6）。
+  const pulse = 1 + 0.05 * sinePulse(Math.min(g, 1830), 1800, 30);
+
+  return (
+    <AbsoluteFill>
+      <S13Bg />
+      <Particles g={g} />
+
+      {/* 中央 wordmark：72px Bold PAPER（Q11 ≥5.6% 帧高达标） */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          top: 540 - 60,
+          width: 1920,
+          textAlign: 'center',
+          fontFamily: FONT_SANS,
+          fontWeight: 700,
+          fontSize: FS_TITLE,
+          color: PAPER,
+          opacity: wm,
+          transform: `scale(${wm})`,
+        }}
+      >
+        Anthropos_AI
+      </div>
+
+      {/* 8 元素：1740 起错峰 3f 飞入；1800 起弹簧钳终值 —— pulse 后 60f 零运动（R1） */}
+      {ELEMENTS.map((el, i) => {
+        const dx = el.x - 960;
+        const dy = el.y - 540;
+        const len = Math.hypot(dx, dy) || 1;
+        const raw = springIn(g, 1740 + i * 3, { tension: 80, friction: 10 });
+        const p = g >= 1800 ? 1 : clamp01(raw);
+        return <ElementCard key={i} el={el} idx={i} p={p} scale={pulse} gx={dx / len} gy={dy / len} />;
+      })}
+    </AbsoluteFill>
+  );
+};

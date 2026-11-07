@@ -1,1 +1,18 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsIH0gZnJvbSAncmVtb3Rpb24nOwppbXBvcnQgeyBCRywgRk9OVF9NT05PLCBGU19EQVRBLCBGU19TTE9HQU4sIEdSQVkgfSBmcm9tICcuLi90aGVtZSc7CgovLyDljaDkvY3plZzvvIhTNOKAk1MxNO+8jFIxIOaWveW3peiMg+WbtOWklu+8ieKAlCDpu5HlupUgKyDplZzlj7cgKyDlhajlsYDluKfljLrpl7TvvIzkvpvnspfliarnnIvoioLlpY/jgIIKLy8g5bin5Yy66Ze055SxIE1haW4udHN4IOeahCBTRUcg6KGo5Yaz5a6a77yM5Y2g5L2N6ZWc5LiN5Yqo5pe26Ze06L2077yM5a6e6KOF5pe25Y+q5pu/5o2iIGNvbXAg5byV55So44CCCmV4cG9ydCBjb25zdCBTaG90UGxhY2Vob2xkZXI6IFJlYWN0LkZDPHsKICBsYWJlbDogc3RyaW5nOwogIGZyb206IG51bWJlcjsKICB0bzogbnVtYmVyOwp9PiA9ICh7IGxhYmVsLCBmcm9tLCB0byB9KSA9PiAoCiAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBiYWNrZ3JvdW5kQ29sb3I6IEJHLCBhbGlnbkl0ZW1zOiAnY2VudGVyJywganVzdGlmeUNvbnRlbnQ6ICdjZW50ZXInIH19PgogICAgPGRpdiBzdHlsZT17eyBmb250RmFtaWx5OiBGT05UX01PTk8sIGZvbnRXZWlnaHQ6IDcwMCwgZm9udFNpemU6IEZTX1NMT0dBTiwgY29sb3I6IEdSQVkgfX0+e2xhYmVsfTwvZGl2PgogICAgPGRpdiBzdHlsZT17eyBmb250RmFtaWx5OiBGT05UX01PTk8sIGZvbnRTaXplOiBGU19EQVRBLCBjb2xvcjogR1JBWSwgbWFyZ2luVG9wOiAyMCwgb3BhY2l0eTogMC43IH19PgogICAgICBmcmFtZXMge2Zyb2194oCTe3RvfSDCtyBwbGFjZWhvbGRlcu+8iFIy4oCTUjQg5a6e6KOF77yJCiAgICA8L2Rpdj4KICA8L0Fic29sdXRlRmlsbD4KKTsK
+import React from 'react';
+import { AbsoluteFill } from 'remotion';
+import { BG, FONT_MONO, FS_DATA, FS_SLOGAN, GRAY } from '../theme';
+
+// 占位镜（S4–S14，R1 施工范围外）— 黑底 + 镜号 + 全局帧区间，供粗剪看节奏。
+// 帧区间由 Main.tsx 的 SEG 表决定，占位镜不动时间轴，实装时只替换 comp 引用。
+export const ShotPlaceholder: React.FC<{
+  label: string;
+  from: number;
+  to: number;
+}> = ({ label, from, to }) => (
+  <AbsoluteFill style={{ backgroundColor: BG, alignItems: 'center', justifyContent: 'center' }}>
+    <div style={{ fontFamily: FONT_MONO, fontWeight: 700, fontSize: FS_SLOGAN, color: GRAY }}>{label}</div>
+    <div style={{ fontFamily: FONT_MONO, fontSize: FS_DATA, color: GRAY, marginTop: 20, opacity: 0.7 }}>
+      frames {from}–{to} · placeholder（R2–R4 实装）
+    </div>
+  </AbsoluteFill>
+);

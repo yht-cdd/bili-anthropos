@@ -1,1 +1,127 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEVBU0VfRUxBU1RJQywgRUFTRV9FWFBPX09VVCwgRUFTRV9MSU5FQVIsIHByb2csIHNwcmluZ0luLCB0ZiB9IGZyb20gJy4uL2FuaW0nOwppbXBvcnQgewogIEJHLAogIEJMVUVfVE9QLAogIENPUkFMLAogIEZPTlRfU0FOUywKICBGU19TTE9HQU4sCiAgR1JBWSwKICBMRURHRVIsCiAgTElNRSwKICBORUFSX1dISVRFLAogIFJBRElVUywKICBSRUQsCiAgU0hBRE9XLAp9IGZyb20gJy4uL3RoZW1lJzsKCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8gUzggwrcgOTkw4oCTMTE0MGbvvIgzMy4w4oCTMzguMHPvvIkgW3R5cG9ncmFwaHldIHdvcmQtcmVsYXktZ2VvbWV0cnkKLy8g5pGE5b2x6KGoIFM477ya6IOM5pmvICMwQTBFMTQg4oaSICNGNUYzRUUg5YWo5bGP5Y+N6L2s77yIMzBm77yM5Z2RMyDlhbPplK7plZzlpLTCt+WFqOeJh+iJsuW9qeiKguWlj++8ie+8mwovLyA2IOW8oCAxNjDDlzkwIOW9qeiJsuWwj+WNoSBzcHJpbmcoMSw4MCwxMCkg5LuO5bGP5aSW6aOe5YWl77yI6KOF6aWw5bGCIG9wYWNpdHkgNDAlIGJsdXIgMnB477yJ77ybCi8vIOKYhemXrumimOWPpemAkOWtlyBzY2FsZSgwLjjihpIxKSBmYWRlaW4g5q+P5a2XIDJm77yb4piF562U5qGI44CM5Lya44CC44CN54+K55Ga6Imy54iG54K45byP5YWl5Zy677yaCi8vIGltcGFjdEAxMDgwIOmSieW4pyDihpIgMTA4MGYg5bOw5YC8IHNjYWxlIDEuMu+8iOajgOafpeeCueW4pyA377yJ77yMMTA4MOKAkzExMTAgZWxhc3RpYyDlm57okL3oh7MgMe+8mwovLyAxMTEw4oCTMTE0MCDlhajnlLvpnaIgaG9sZOOAglNGWO+8iHdob29zaC1sb25nIC8gcG9ww5c2IC8gaW1wYWN077yJ5b2SIFI0IGF1ZGlv44CCCi8vIOWtl+WPt+WBj+W3ruiusOW9le+8muetlOahiCAxMjBweCDkuI3lnKjlha3moaPpmLbmoq/lhoXvvIzns7vmkYTlvbHooaggUzgg6YCQ5a2X6KeE5a6a77yIMTIwcHggQm9sZO+8ie+8jOinhuS4uuWIu+aEj+aUvuWkp+OAggovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Cgpjb25zdCBGU19BTlNXRVIgPSAxMjA7IC8vIOaRhOW9seihqCBTOCDop4TlrprlgLzvvIjpmLbmoq/lpJbliLvmhI/mlL7lpKfvvIzop4Hmlofku7blpLTlpIfms6jvvIkKCi8vIDYg5byg6KOF6aWw5bCP5Y2h77ya5L2N572uL+minOiJsumAkOWtl+eFp+aKhOaRhOW9seihqO+8m2ZseUZyb20gPSDlsY/luZXlpJbkvqflkJHph4/vvIjlkITmlrnlkJHpo57lhaXvvIkKY29uc3QgQ0FSRFM6IEFycmF5PHsgeDogbnVtYmVyOyB5OiBudW1iZXI7IGNvbG9yOiBzdHJpbmc7IGZ4OiBudW1iZXI7IGZ5OiBudW1iZXIgfT4gPSBbCiAgeyB4OiAyMDAsIHk6IDUwMCwgY29sb3I6IExJTUUsIGZ4OiAtMSwgZnk6IC0wLjQgfSwKICB7IHg6IDE2MDAsIHk6IDQwMCwgY29sb3I6IExFREdFUiwgZng6IDEsIGZ5OiAtMC40IH0sCiAgeyB4OiAzMDAsIHk6IDgwMCwgY29sb3I6IENPUkFMLCBmeDogLTEsIGZ5OiAwLjYgfSwKICB7IHg6IDE1MDAsIHk6IDc1MCwgY29sb3I6IEdSQVksIGZ4OiAxLCBmeTogMC42IH0sCiAgeyB4OiA2MDAsIHk6IDIwMCwgY29sb3I6IEJMVUVfVE9QLCBmeDogLTAuNSwgZnk6IC0xIH0sCiAgeyB4OiAxMzAwLCB5OiAxODAsIGNvbG9yOiBSRUQsIGZ4OiAwLjYsIGZ5OiAtMSB9LApdOwoKY29uc3QgUVVFU1RJT04gPSAn5oiR5Lya5LiN5Lya5o6o6I2Q5YW25LuW5Lq65Lmf5p2l546p5ZGi77yfJzsgLy8g4piFIOmAkOWtl++8jOagh+eCueS4jeWKqAoKZXhwb3J0IGNvbnN0IFM4OiBSZWFjdC5GQyA9ICgpID0+IHsKICBjb25zdCBnID0gdXNlQ3VycmVudEZyYW1lKCkgKyA5OTA7IC8vIOWFqOWxgOW4pwoKICAvLyA5OTDigJMxMDIw77ya6L+R55m96IOM5pmv5reh5YWl6KaG55uW5rex6Imy5bqV77yI5YWo5bGP6Imy6LCD5Y+N6L2s77yJCiAgLy8g5L+u5aSNIFI377yIOTkwZiDliIfplZznqbrluKfvvIxibGFja2RldGVjdCAzM+KAkzMzLjA3cyDmrrXvvIznhacgMTQxMGYg5YWI5L6L77yJ77ya5Y+N6L2s6LW354K55o+Q5YmNIDJmIOKGkiA5OTAg5binCiAgLy8gZmxpcD0yLzMw4omIMC4wNjfvvIzmlbTlsY/lupXoibLkuq7luqbiiYgyOT4yNS4177yIcGl4X3Ro77yJ77yM5raI6ZmkIFM34oaSUzgg5YiH6ZWcIDIg5bin6L+R57qv6buR56m65bin77yb5Y+N6L2s5LuNIDMwZu+8jFNFRyDnqpfmnKrliqjjgIIKICBjb25zdCBmbGlwID0gcHJvZyhnLCA5ODgsIDMwLCBFQVNFX0xJTkVBUik7CgogIC8vIDEwNTDigJMxMDgw77ya6Zeu6aKY6YCQ5a2X77yM5q+P5a2X6ZSZ5bOwIDJm77yIMTQg5a2XIMOXIDJmID0gMjhmICsg5Y2V5a2XIDZmIOaUtuWwvu+8iQogIC8vIDEwODDvvJrnrZTmoYjniIbngrjls7DlgLzvvIhzY2FsZSAxLjLvvInvvIzpmo/lkI4gMzBmIGVsYXN0aWMg5Zue6JC95YiwIDEKICBjb25zdCBzZXR0bGUgPSBwcm9nKGcsIDEwODAsIDMwLCBFQVNFX0VMQVNUSUMpOwogIGNvbnN0IGFuc3dlck9uID0gZyA+PSAxMDgwOwogIGNvbnN0IGFuc3dlclNjYWxlID0gYW5zd2VyT24gPyAxICsgMC4yICogKDEgLSBzZXR0bGUpIDogMDsKCiAgcmV0dXJuICgKICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sgYmFja2dyb3VuZENvbG9yOiBCRyB9fT4KICAgICAgey8qIOi/keeZveWPjei9rOWxgu+8iOWNoOmVnOWktCAxMDAlIOmdouenryDCtyDoibLlvanljZXosIPpooTpmLIgwqfkupQtNO+8iSAqL30KICAgICAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBiYWNrZ3JvdW5kQ29sb3I6IE5FQVJfV0hJVEUsIG9wYWNpdHk6IGZsaXAgfX0gLz4KCiAgICAgIHsvKiA2IOW8oOW9qeiJsuWwj+WNoe+8iOijhemlsOWxgu+8jOS4jeaKouS4u+S9k++8ie+8mjEwMjAg6LW36aOe77yM6ZSZ5bOwIDNmICovfQogICAgICB7Q0FSRFMubWFwKChjLCBpKSA9PiB7CiAgICAgICAgY29uc3QgcCA9IHNwcmluZ0luKGcsIDEwMjAgKyBpICogMywgeyB0ZW5zaW9uOiA4MCwgZnJpY3Rpb246IDEwIH0pOwogICAgICAgIGNvbnN0IHRyYXZlbCA9IDQ4MDsgLy8g5bGP5aSW6Led56a777yI6Laz5aSf5Ye655S777yJCiAgICAgICAgcmV0dXJuICgKICAgICAgICAgIDxkaXYKICAgICAgICAgICAga2V5PXtpfQogICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgICAgIGxlZnQ6IGMueCArIGMuZnggKiAoMSAtIHApICogdHJhdmVsLAogICAgICAgICAgICAgIHRvcDogYy55ICsgYy5meSAqICgxIC0gcCkgKiB0cmF2ZWwsCiAgICAgICAgICAgICAgd2lkdGg6IDE2MCwKICAgICAgICAgICAgICBoZWlnaHQ6IDkwLAogICAgICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogYy5jb2xvciwKICAgICAgICAgICAgICBvcGFjaXR5OiAwLjQgKiBNYXRoLm1heCgwLCBNYXRoLm1pbigxLCBwKSksCiAgICAgICAgICAgICAgZmlsdGVyOiAnYmx1cigycHgpJywKICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6IFJBRElVUywKICAgICAgICAgICAgICBib3hTaGFkb3c6IFNIQURPVywKICAgICAgICAgICAgfX0KICAgICAgICAgIC8+CiAgICAgICAgKTsKICAgICAgfSl9CgogICAgICB7Lyog6Zeu6aKY77yIOTYwLDMwMCDkuK3lv4Pnur/vvInvvJrpgJDlrZcgc2NhbGUoMC444oaSMSkrZmFkZWlu77yM5q+P5a2X6ZSZ5bOwIDJmICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgbGVmdDogOTYwLAogICAgICAgICAgdG9wOiAzMDAsCiAgICAgICAgICB0cmFuc2Zvcm06ICd0cmFuc2xhdGUoLTUwJSwgLTUwJSknLAogICAgICAgICAgZm9udEZhbWlseTogRk9OVF9TQU5TLAogICAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgICAgZm9udFNpemU6IEZTX1NMT0dBTiwKICAgICAgICAgIGNvbG9yOiBCRywKICAgICAgICAgIHdoaXRlU3BhY2U6ICdub3dyYXAnLAogICAgICAgIH19CiAgICAgID4KICAgICAgICB7UVVFU1RJT04uc3BsaXQoJycpLm1hcCgoY2gsIGkpID0+IHsKICAgICAgICAgIGNvbnN0IHAgPSBwcm9nKGcsIDEwNTAgKyBpICogMiwgNCwgRUFTRV9FWFBPX09VVCk7IC8vIOacq+WtlyAxMDUwKzI2KzQ9MTA4MCDmlLbnqpcKICAgICAgICAgIHJldHVybiAoCiAgICAgICAgICAgIDxzcGFuIGtleT17aX0gc3R5bGU9e3sgb3BhY2l0eTogcCwgZGlzcGxheTogJ2lubGluZS1ibG9jaycsIHRyYW5zZm9ybTogYHNjYWxlKCR7MC44ICsgMC4yICogcH0pYCB9fT4KICAgICAgICAgICAgICB7Y2h9CiAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICk7CiAgICAgICAgfSl9CiAgICAgIDwvZGl2PgoKICAgICAgey8qIOetlOahiO+8iDk2MCw2MDAg5Lit5b+D57q/77yJ77yaMTA4MGYg5bOw5YC8IDEuMiDihpIgZWxhc3RpYyDlm57okL0gMe+8mzExMTAg6LW36Z2Z5q2iIGhvbGQgKi99CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICBsZWZ0OiA5NjAsCiAgICAgICAgICB0b3A6IDYwMCwKICAgICAgICAgIHRyYW5zZm9ybTogdGYoWyd0cmFuc2xhdGUoLTUwJSwgLTUwJSknLCBgc2NhbGUoJHthbnN3ZXJTY2FsZX0pYF0pLAogICAgICAgICAgZm9udEZhbWlseTogRk9OVF9TQU5TLAogICAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgICAgZm9udFNpemU6IEZTX0FOU1dFUiwKICAgICAgICAgIGNvbG9yOiBDT1JBTCwKICAgICAgICAgIG9wYWNpdHk6IGFuc3dlck9uID8gMSA6IDAsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIOS8muOAggogICAgICA8L2Rpdj4KICAgIDwvQWJzb2x1dGVGaWxsPgogICk7Cn07Cg==
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { EASE_ELASTIC, EASE_EXPO_OUT, EASE_LINEAR, prog, springIn, tf } from '../anim';
+import {
+  BG,
+  BLUE_TOP,
+  CORAL,
+  FONT_SANS,
+  FS_SLOGAN,
+  GRAY,
+  LEDGER,
+  LIME,
+  NEAR_WHITE,
+  RADIUS,
+  RED,
+  SHADOW,
+} from '../theme';
+
+// ============================================================================
+// S8 · 990–1140f（33.0–38.0s） [typography] word-relay-geometry
+// 摄影表 S8：背景 #0A0E14 → #F5F3EE 全屏反转（30f，坑3 关键镜头·全片色彩节奏）；
+// 6 张 160×90 彩色小卡 spring(1,80,10) 从屏外飞入（装饰层 opacity 40% blur 2px）；
+// ★问题句逐字 scale(0.8→1) fadein 每字 2f；★答案「会。」珊瑚色爆炸式入场：
+// impact@1080 钉帧 → 1080f 峰值 scale 1.2（检查点帧 7），1080–1110 elastic 回落至 1；
+// 1110–1140 全画面 hold。SFX（whoosh-long / pop×6 / impact）归 R4 audio。
+// 字号偏差记录：答案 120px 不在六档阶梯内，系摄影表 S8 逐字规定（120px Bold），视为刻意放大。
+// ============================================================================
+
+const FS_ANSWER = 120; // 摄影表 S8 规定值（阶梯外刻意放大，见文件头备注）
+
+// 6 张装饰小卡：位置/颜色逐字照抄摄影表；flyFrom = 屏幕外侧向量（各方向飞入）
+const CARDS: Array<{ x: number; y: number; color: string; fx: number; fy: number }> = [
+  { x: 200, y: 500, color: LIME, fx: -1, fy: -0.4 },
+  { x: 1600, y: 400, color: LEDGER, fx: 1, fy: -0.4 },
+  { x: 300, y: 800, color: CORAL, fx: -1, fy: 0.6 },
+  { x: 1500, y: 750, color: GRAY, fx: 1, fy: 0.6 },
+  { x: 600, y: 200, color: BLUE_TOP, fx: -0.5, fy: -1 },
+  { x: 1300, y: 180, color: RED, fx: 0.6, fy: -1 },
+];
+
+const QUESTION = '我会不会推荐其他人也来玩呢？'; // ★ 逐字，标点不动
+
+export const S8: React.FC = () => {
+  const g = useCurrentFrame() + 990; // 全局帧
+
+  // 990–1020：近白背景淡入覆盖深色底（全屏色调反转）
+  // 修复 R7（990f 切镜空帧，blackdetect 33–33.07s 段，照 1410f 先例）：反转起点提前 2f → 990 帧
+  // flip=2/30≈0.067，整屏底色亮度≈29>25.5（pix_th），消除 S7→S8 切镜 2 帧近纯黑空帧；反转仍 30f，SEG 窗未动。
+  const flip = prog(g, 988, 30, EASE_LINEAR);
+
+  // 1050–1080：问题逐字，每字错峰 2f（14 字 × 2f = 28f + 单字 6f 收尾）
+  // 1080：答案爆炸峰值（scale 1.2），随后 30f elastic 回落到 1
+  const settle = prog(g, 1080, 30, EASE_ELASTIC);
+  const answerOn = g >= 1080;
+  const answerScale = answerOn ? 1 + 0.2 * (1 - settle) : 0;
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: BG }}>
+      {/* 近白反转层（占镜头 100% 面积 · 色彩单调预防 §五-4） */}
+      <AbsoluteFill style={{ backgroundColor: NEAR_WHITE, opacity: flip }} />
+
+      {/* 6 张彩色小卡（装饰层，不抢主体）：1020 起飞，错峰 3f */}
+      {CARDS.map((c, i) => {
+        const p = springIn(g, 1020 + i * 3, { tension: 80, friction: 10 });
+        const travel = 480; // 屏外距离（足够出画）
+        return (
+          <div
+            key={i}
+            style={{
+              position: 'absolute',
+              left: c.x + c.fx * (1 - p) * travel,
+              top: c.y + c.fy * (1 - p) * travel,
+              width: 160,
+              height: 90,
+              backgroundColor: c.color,
+              opacity: 0.4 * Math.max(0, Math.min(1, p)),
+              filter: 'blur(2px)',
+              borderRadius: RADIUS,
+              boxShadow: SHADOW,
+            }}
+          />
+        );
+      })}
+
+      {/* 问题（960,300 中心线）：逐字 scale(0.8→1)+fadein，每字错峰 2f */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 960,
+          top: 300,
+          transform: 'translate(-50%, -50%)',
+          fontFamily: FONT_SANS,
+          fontWeight: 700,
+          fontSize: FS_SLOGAN,
+          color: BG,
+          whiteSpace: 'nowrap',
+        }}
+      >
+        {QUESTION.split('').map((ch, i) => {
+          const p = prog(g, 1050 + i * 2, 4, EASE_EXPO_OUT); // 末字 1050+26+4=1080 收窗
+          return (
+            <span key={i} style={{ opacity: p, display: 'inline-block', transform: `scale(${0.8 + 0.2 * p})` }}>
+              {ch}
+            </span>
+          );
+        })}
+      </div>
+
+      {/* 答案（960,600 中心线）：1080f 峰值 1.2 → elastic 回落 1；1110 起静止 hold */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 960,
+          top: 600,
+          transform: tf(['translate(-50%, -50%)', `scale(${answerScale})`]),
+          fontFamily: FONT_SANS,
+          fontWeight: 700,
+          fontSize: FS_ANSWER,
+          color: CORAL,
+          opacity: answerOn ? 1 : 0,
+        }}
+      >
+        会。
+      </div>
+    </AbsoluteFill>
+  );
+};

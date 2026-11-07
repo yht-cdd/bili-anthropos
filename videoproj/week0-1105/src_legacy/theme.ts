@@ -1,1 +1,28 @@
-Ly8g5YWo5bGA6KeG6KeJ57O757ufIOKAlCBicmllZiDCp+S4gO+8iOiJsuWAvOayv+eUqCB2MyB0aGVtZe+8m+i0puacrOe7v+S4uuacrOeJh+aWsOWinu+8jOaUr+WHuue6ouayv+eUqCAjRjA1MjRE77yJCi8vIDE2Ojkg6ZOB5b6L77yIMjAyNi0xMS0wMyDkuLvkurrku6TvvInvvJoxOTIww5cxMDgwQDMwZnBz77yM5oC7IDE4MDAg5binID0gNjAuMHMKZXhwb3J0IGNvbnN0IFcgPSAxOTIwOwpleHBvcnQgY29uc3QgSCA9IDEwODA7CmV4cG9ydCBjb25zdCBGUFMgPSAzMDsKZXhwb3J0IGNvbnN0IFRPVEFMX0ZSQU1FUyA9IDE4MDA7IC8vIDYwLjBzIMK3IGJyaWVmIMKn5LiACgovLyDog4zmma8KZXhwb3J0IGNvbnN0IEJHID0gJyMwODBCMTInOyAvLyDlupXvvIjmuJDlj5jkuIrnq68gLyDluLjop4Tnuq/oibLlupXvvIkKZXhwb3J0IGNvbnN0IEJHX0dSQURfVE9QID0gJyMwODBCMTInOwpleHBvcnQgY29uc3QgQkdfR1JBRF9CT1RUT00gPSAnIzEyMTgyMic7CmV4cG9ydCBjb25zdCBTVVJGQUNFID0gJyMwRjEzMUMnOyAvLyDnu4jnq6/nqpfooajpnaLvvIjlkIwgdjPvvIkKCi8vIOaWh+WtlyAvIOWTgeeJjOiJsu+8iGJyaWVmIMKn5LiA57uZ5a6a5YC877yJCmV4cG9ydCBjb25zdCBURVhUID0gJyNFQ0U5RTEnOyAvLyDnsbPnmb0KZXhwb3J0IGNvbnN0IENPUkFMID0gJyNEOTc3NTcnOyAvLyDnj4rnkZoKZXhwb3J0IGNvbnN0IExJTUUgPSAnI0Q0RjQzRSc7IC8vIOmdkuafoApleHBvcnQgY29uc3QgUkVEID0gJyNGMDUyNEQnOyAvLyDmlK/lh7rnuqLvvIhicmllZiDCp+S4gO+8muayv+eUqO+8iQpleHBvcnQgY29uc3QgTEVER0VSX0dSRUVOID0gJyMzRkI2OEInOyAvLyDotKbmnKznu7/vvIhicmllZiDCp+S4gO+8muaWsOWinu+8jOaUtuebii9PS++8iQpleHBvcnQgY29uc3QgVEVSTV9HUkFZID0gJyM4Qjk0OUUnOyAvLyDnu4jnq6/ngbDvvIhicmllZiDCp+S6jMK3UzIg5bem5YiX57uZ5a6a5YC877yJCmV4cG9ydCBjb25zdCBHUkFZID0gJyM2QjcyODAnOyAvLyDpobbmoI8gLyDnnInpopjvvIjlkIwgdjPvvIkKZXhwb3J0IGNvbnN0IFdISVRFID0gJyNGRkZGRkYnOwoKLy8g5a2X5L2T77ya5YWc5bqV6ZO+5ZCMIHYz77yI5pys5py6IE5vdG8gU2FucyBDSksg5bey6KOF77ybSmV0QnJhaW5zIE1vbm8g5pyq6KOF5oyJ6ZO+6LWw77yJCmV4cG9ydCBjb25zdCBGT05UX1NBTlMgPQogICInTm90byBTYW5zIENKSyBTQycsICdOb3RvIFNhbnMgU0MnLCAnTm90byBTYW5zIENKSyBKUCcsICdQaW5nRmFuZyBTQycsICdNaWNyb3NvZnQgWWFIZWknLCBzYW5zLXNlcmlmIjsKZXhwb3J0IGNvbnN0IEZPTlRfTU9OTyA9CiAgIidKZXRCcmFpbnMgTW9ubycsIHVpLW1vbm9zcGFjZSwgJ1NGIE1vbm8nLCBNZW5sbywgQ29uc29sYXMsICdOb3RvIFNhbnMgTW9ubyBDSksgU0MnLCBtb25vc3BhY2UiOwo=
+// 全局视觉系统 — brief §一（色值沿用 v3 theme；账本绿为本片新增，支出红沿用 #F0524D）
+// 16:9 铁律（2026-11-03 主人令）：1920×1080@30fps，总 1800 帧 = 60.0s
+export const W = 1920;
+export const H = 1080;
+export const FPS = 30;
+export const TOTAL_FRAMES = 1800; // 60.0s · brief §一
+
+// 背景
+export const BG = '#080B12'; // 底（渐变上端 / 常规纯色底）
+export const BG_GRAD_TOP = '#080B12';
+export const BG_GRAD_BOTTOM = '#121822';
+export const SURFACE = '#0F131C'; // 终端窗表面（同 v3）
+
+// 文字 / 品牌色（brief §一给定值）
+export const TEXT = '#ECE9E1'; // 米白
+export const CORAL = '#D97757'; // 珊瑚
+export const LIME = '#D4F43E'; // 青柠
+export const RED = '#F0524D'; // 支出红（brief §一：沿用）
+export const LEDGER_GREEN = '#3FB68B'; // 账本绿（brief §一：新增，收益/OK）
+export const TERM_GRAY = '#8B949E'; // 终端灰（brief §二·S2 左列给定值）
+export const GRAY = '#6B7280'; // 顶栏 / 眉题（同 v3）
+export const WHITE = '#FFFFFF';
+
+// 字体：兜底链同 v3（本机 Noto Sans CJK 已装；JetBrains Mono 未装按链走）
+export const FONT_SANS =
+  "'Noto Sans CJK SC', 'Noto Sans SC', 'Noto Sans CJK JP', 'PingFang SC', 'Microsoft YaHei', sans-serif";
+export const FONT_MONO =
+  "'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, 'Noto Sans Mono CJK SC', monospace";

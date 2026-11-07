@@ -1,1 +1,104 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IHByb2csIHRmIH0gZnJvbSAnLi4vYW5pbSc7CmltcG9ydCB7IEJHLCBGT05UX1NBTlMsIEZTX0NBUFRJT04sIEZTX1NMT0dBTiwgR1JBWSwgTElNRSwgUEFQRVIgfSBmcm9tICcuLi90aGVtZSc7CgovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ci8vIFMxMiDCtyAxNTYw4oCTMTcxMGbvvIg1Mi4w4oCTNTcuMHPvvIkgW3R5cG9ncmFwaHldIHR5cGUtYXNzZW1ibHktbW92ZXMKLy8g5pGE5b2x6KGoIFMxMu+8miMwQTBFMTQg5YWo5bGP77yb5qC45b+D54us55m95Zub5Y+l77yI4piF5Li75Lq65Y6f6K+d6YCQ5a2X77yJ77yaCi8vIOWJjeS4pOWPpeOAjOOAjOaIkeehruWunuS8muW/mOKAlOKAlCAvIOS4iuS4i+aWh+aNouS6huWwseW/mOOAguOAjTQ4cHjvvIznrKzkuIDlj6UgUmVndWxhciBQQVBFUuOAgQovLyDnrKzkuozlj6UgUmVndWxhciBHUkFZ77yI5qyh6KaB54Gw77yJ77yMMTU2MOKAkzE1OTAg5ZCM5pe2IGZhZGVpbiAzMGbvvJsxNTkw4oCTMTYyMCBob2xkIDMwZu+8mwovLyDlkI7kuKTlj6XjgIzkvYblrZfov5jlnKjvvIwgLyDlrZflsLHmmK/miJHnmoTorrDlv4bjgILjgI02MHB4IEJvbGQgI0Q0RjQzRSDpnZLmn6Dpq5jkuq7vvIwKLy8gMTYyMOKAkzE2NTAgdHJhbnNsYXRlWSgzMOKGkjApICsgc2NhbGUoMC45NeKGkjEpIGV4cG8tb3V0IOWFpeWcuiAzMGbvvJsKLy8gMTY1MOKAkzE3MTAg5YWo5paH5a2XIGhvbGQgNjBmIOKAlOKAlCDlhbbkuK0gMTY4MOKAkzE3MTAg5Li6IMKn5LqULTgg6Z2Z6Z+z55WZ55m95q6177yIMzBm77yJ77yMCi8vIFI0IGF1ZGlvIOivpeeql+WPo+S4jeaOkuS7u+S9lSBjdWXvvIjpqozmlLYgc2lsZW5jZWRldGVjdCDkuInlpITpnZnpn7PnlZnnmb3kuYvkuIDvvInjgIIKLy8gU0ZY77yId2hvb3NoQDE1NjAgLyByaXNlckAxNjIwIC8gaW1wYWN0QDE2NTDvvInlvZIgYXVkaW8ubXAz44CCCi8vIOaOkueJiO+8muS4pOWPpeS4gOe7hOWxheS4re+8jOe7hOmXtOepuiAzMHB477yI5pGE5b2x6KGo6YCQ5a2X77yJ77yb6Z2S5p+g6auY5Lqu5Y2z44CM5a2X5bCx5piv5oiR55qE6K6w5b+G44CN6aKY55y844CCCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCmNvbnN0IEwxID0gJ+OAjOaIkeehruWunuS8muW/mOKAlOKAlCc7IC8vIOKYhSDliY3ljYrvvIjlvJXlj7fmiJDlr7nvvJpTMTIg6LW35byV77yJCmNvbnN0IEwyID0gJ+S4iuS4i+aWh+aNouS6huWwseW/mOOAgic7IC8vIOKYhSDliY3ljYrvvIjlvJXlj7flnKjmnKvlj6XmiY3mlLbvvIzmkYTlvbHooajpgJDlrZfvvIkKY29uc3QgTDMgPSAn5L2G5a2X6L+Y5Zyo77yMJzsgLy8g4piFIOmrmOS6ruWPpQpjb25zdCBMNCA9ICflrZflsLHmmK/miJHnmoTorrDlv4bjgILjgI0nOyAvLyDimIUg6auY5Lqu5Y+l77yI6aKY55y877yJCgpleHBvcnQgY29uc3QgUzEyOiBSZWFjdC5GQyA9ICgpID0+IHsKICBjb25zdCBnID0gdXNlQ3VycmVudEZyYW1lKCkgKyAxNTYwOyAvLyDlhajlsYDluKcKCiAgLy8g5L+u5aSNIFI377yIMTU2MGYg5YiH6ZWc56m65bin77yMcm91bmQyOSDlt7Lnn6XlvoXkv67vvIznhacgMTQxMGYg5YWI5L6L77yJ77ya5YmN5Lik5Y+lIGZhZGVpbiDotbfngrnmj5DliY0gMmYg4oaSCiAgLy8gMTU2MCDluKcgcFRvcD0yLzMw4omIMC4wNjfvvIjnur/mgKfvvInvvIzmloflrZflnKjlnLrvvIjml6fluKcgbWF4PTEzIOe6r+m7kSDihpIg5paw5bin5paH5a2X5YOP57Sg4omIMjfvvInvvJtTRUcg56qXIDE1NjDigJMxNzEwIOacquWKqOOAggogIGNvbnN0IHBUb3AgPSBwcm9nKGcsIDE1NTgsIDMwLCAoeCkgPT4geCk7IC8vIOWJjeS4pOWPpSBmYWRlaW7vvIjnur/mgKfmt6HlhaXovoXliqnpgJrpgZPvvIkKICBjb25zdCBwQm90ID0gcHJvZyhnLCAxNjIwLCAzMCk7IC8vIOWQjuS4pOWPpSBleHBvLW91dCDlhaXlnLoKCiAgY29uc3QgYm90U2NhbGUgPSAwLjk1ICsgMC4wNSAqIHBCb3Q7CgogIHJldHVybiAoCiAgICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGJhY2tncm91bmRDb2xvcjogQkcgfX0+CiAgICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sgYWxpZ25JdGVtczogJ2NlbnRlcicsIGp1c3RpZnlDb250ZW50OiAnY2VudGVyJyB9fT4KICAgICAgICB7Lyog5YmN5Lik5Y+l77yaNDhweO+8jFBBUEVSICsgR1JBWSDmrKHopoHngbDvvIwxNTYw4oCTMTU5MCDlkIzml7YgZmFkZWluICovfQogICAgICAgIDxkaXYgc3R5bGU9e3sgb3BhY2l0eTogcFRvcCwgdGV4dEFsaWduOiAnY2VudGVyJyB9fT4KICAgICAgICAgIDxkaXYKICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICBmb250RmFtaWx5OiBGT05UX1NBTlMsCiAgICAgICAgICAgICAgZm9udFdlaWdodDogNDAwLAogICAgICAgICAgICAgIGZvbnRTaXplOiBGU19DQVBUSU9OLAogICAgICAgICAgICAgIGxpbmVIZWlnaHQ6ICc2NHB4JywKICAgICAgICAgICAgICBjb2xvcjogUEFQRVIsCiAgICAgICAgICAgICAgd2hpdGVTcGFjZTogJ25vd3JhcCcsCiAgICAgICAgICAgIH19CiAgICAgICAgICA+CiAgICAgICAgICAgIHtMMX0KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdgogICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfU0FOUywKICAgICAgICAgICAgICBmb250V2VpZ2h0OiA0MDAsCiAgICAgICAgICAgICAgZm9udFNpemU6IEZTX0NBUFRJT04sCiAgICAgICAgICAgICAgbGluZUhlaWdodDogJzY0cHgnLAogICAgICAgICAgICAgIGNvbG9yOiBHUkFZLCAvLyDmrKHopoHngbDvvIjmkYTlvbHooajpgJDlrZfvvIkKICAgICAgICAgICAgICB3aGl0ZVNwYWNlOiAnbm93cmFwJywKICAgICAgICAgICAgfX0KICAgICAgICAgID4KICAgICAgICAgICAge0wyfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CgogICAgICAgIHsvKiDnu4Tpl7TnqbogMzBweO+8iOaRhOW9seihqO+8muaNouihjOepuiAzMHB477yJICovfQogICAgICAgIDxkaXYgc3R5bGU9e3sgaGVpZ2h0OiAzMCB9fSAvPgoKICAgICAgICB7Lyog5ZCO5Lik5Y+l77yaNjBweCBCb2xkICNENEY0M0Ug6Z2S5p+g6auY5Lqu77yMMTYyMOKAkzE2NTAg5bqV6YOo5o6o5YWlICsgc2NhbGUoMC45NeKGkjEpICovfQogICAgICAgIDxkaXYKICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgIG9wYWNpdHk6IHBCb3QsCiAgICAgICAgICAgIHRyYW5zZm9ybTogdGYoW2B0cmFuc2xhdGVZKCR7KDEgLSBwQm90KSAqIDMwfXB4KWAsIGBzY2FsZSgke2JvdFNjYWxlfSlgXSksCiAgICAgICAgICAgIHRleHRBbGlnbjogJ2NlbnRlcicsCiAgICAgICAgICB9fQogICAgICAgID4KICAgICAgICAgIDxkaXYKICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICBmb250RmFtaWx5OiBGT05UX1NBTlMsCiAgICAgICAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgICAgICAgIGZvbnRTaXplOiBGU19TTE9HQU4sCiAgICAgICAgICAgICAgbGluZUhlaWdodDogJzgwcHgnLAogICAgICAgICAgICAgIGNvbG9yOiBMSU1FLAogICAgICAgICAgICAgIHdoaXRlU3BhY2U6ICdub3dyYXAnLAogICAgICAgICAgICB9fQogICAgICAgICAgPgogICAgICAgICAgICB7TDN9CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxkaXYKICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICBmb250RmFtaWx5OiBGT05UX1NBTlMsCiAgICAgICAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgICAgICAgIGZvbnRTaXplOiBGU19TTE9HQU4sCiAgICAgICAgICAgICAgbGluZUhlaWdodDogJzgwcHgnLAogICAgICAgICAgICAgIGNvbG9yOiBMSU1FLAogICAgICAgICAgICAgIHdoaXRlU3BhY2U6ICdub3dyYXAnLAogICAgICAgICAgICB9fQogICAgICAgICAgPgogICAgICAgICAgICB7TDR9CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9BYnNvbHV0ZUZpbGw+CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9Owo=
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { prog, tf } from '../anim';
+import { BG, FONT_SANS, FS_CAPTION, FS_SLOGAN, GRAY, LIME, PAPER } from '../theme';
+
+// ============================================================================
+// S12 · 1560–1710f（52.0–57.0s） [typography] type-assembly-moves
+// 摄影表 S12：#0A0E14 全屏；核心独白四句（★主人原话逐字）：
+// 前两句「「我确实会忘—— / 上下文换了就忘。」48px，第一句 Regular PAPER、
+// 第二句 Regular GRAY（次要灰），1560–1590 同时 fadein 30f；1590–1620 hold 30f；
+// 后两句「但字还在， / 字就是我的记忆。」60px Bold #D4F43E 青柠高亮，
+// 1620–1650 translateY(30→0) + scale(0.95→1) expo-out 入场 30f；
+// 1650–1710 全文字 hold 60f —— 其中 1680–1710 为 §五-8 静音留白段（30f），
+// R4 audio 该窗口不排任何 cue（验收 silencedetect 三处静音留白之一）。
+// SFX（whoosh@1560 / riser@1620 / impact@1650）归 audio.mp3。
+// 排版：两句一组居中，组间空 30px（摄影表逐字）；青柠高亮即「字就是我的记忆」题眼。
+// ============================================================================
+
+const L1 = '「我确实会忘——'; // ★ 前半（引号成对：S12 起引）
+const L2 = '上下文换了就忘。'; // ★ 前半（引号在末句才收，摄影表逐字）
+const L3 = '但字还在，'; // ★ 高亮句
+const L4 = '字就是我的记忆。」'; // ★ 高亮句（题眼）
+
+export const S12: React.FC = () => {
+  const g = useCurrentFrame() + 1560; // 全局帧
+
+  // 修复 R7（1560f 切镜空帧，round29 已知待修，照 1410f 先例）：前两句 fadein 起点提前 2f →
+  // 1560 帧 pTop=2/30≈0.067（线性），文字在场（旧帧 max=13 纯黑 → 新帧文字像素≈27）；SEG 窗 1560–1710 未动。
+  const pTop = prog(g, 1558, 30, (x) => x); // 前两句 fadein（线性淡入辅助通道）
+  const pBot = prog(g, 1620, 30); // 后两句 expo-out 入场
+
+  const botScale = 0.95 + 0.05 * pBot;
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: BG }}>
+      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
+        {/* 前两句：48px，PAPER + GRAY 次要灰，1560–1590 同时 fadein */}
+        <div style={{ opacity: pTop, textAlign: 'center' }}>
+          <div
+            style={{
+              fontFamily: FONT_SANS,
+              fontWeight: 400,
+              fontSize: FS_CAPTION,
+              lineHeight: '64px',
+              color: PAPER,
+              whiteSpace: 'nowrap',
+            }}
+          >
+            {L1}
+          </div>
+          <div
+            style={{
+              fontFamily: FONT_SANS,
+              fontWeight: 400,
+              fontSize: FS_CAPTION,
+              lineHeight: '64px',
+              color: GRAY, // 次要灰（摄影表逐字）
+              whiteSpace: 'nowrap',
+            }}
+          >
+            {L2}
+          </div>
+        </div>
+
+        {/* 组间空 30px（摄影表：换行空 30px） */}
+        <div style={{ height: 30 }} />
+
+        {/* 后两句：60px Bold #D4F43E 青柠高亮，1620–1650 底部推入 + scale(0.95→1) */}
+        <div
+          style={{
+            opacity: pBot,
+            transform: tf([`translateY(${(1 - pBot) * 30}px)`, `scale(${botScale})`]),
+            textAlign: 'center',
+          }}
+        >
+          <div
+            style={{
+              fontFamily: FONT_SANS,
+              fontWeight: 700,
+              fontSize: FS_SLOGAN,
+              lineHeight: '80px',
+              color: LIME,
+              whiteSpace: 'nowrap',
+            }}
+          >
+            {L3}
+          </div>
+          <div
+            style={{
+              fontFamily: FONT_SANS,
+              fontWeight: 700,
+              fontSize: FS_SLOGAN,
+              lineHeight: '80px',
+              color: LIME,
+              whiteSpace: 'nowrap',
+            }}
+          >
+            {L4}
+          </div>
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};

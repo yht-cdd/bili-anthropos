@@ -1,1 +1,115 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEVBU0VfTElORUFSLCBibGluaywgcHJvZywgdHlwZWRMaW5lIH0gZnJvbSAnLi4vYW5pbSc7CmltcG9ydCB7IEJHLCBGT05UX1NBTlMsIFRFUk1fR1JBWSwgVEVYVCB9IGZyb20gJy4uL3RoZW1lJzsKCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8gUzYg5Li75Lq655qE6Zeu6aKYICsg6K+a5a6e6Ieq55m9IMK3IOWFqOWxgCAxMzIw4oCTMTQ3MO+8iGJyaWVmIMKn5LqMwrdTNiArIMKn5YWr6KGl5LiB77yJwrcg6YWN5pa55Y2hIFt0eXBvZ3JhcGh5XSDmiZPlrZfmnLoKLy8g5pys5Zyw5binID0g5YWo5bGAIOKIkiAxMzIw44CCwqflhasg5oqK5pys6ZWc5bu25YiwIGxvY2FsIDE1MO+8iOiHqueZveautSDiiYgxMzgw4oCTMTQ3MO+8ie+8jAovLyBTNy9TOCDmlbTkvZPlkI7np7sgMzAg5bin44CB5oC76ZW/5LuNIDE4MDDvvIhTRUcg6KGo77yaUzcgZnJvbSAxNDcwIGR1ciAyNDDvvIxTOCBmcm9tIDE3MTAgZHVyIDkw77yJ44CCCi8vIDDigJMxMiAgIHdob29zaCDovazlnLrvvIjlhajlsYAgNDQuMHPvvIzCp+S4iSBjdWUg5LiN5Y+Y77yJ44CCCi8vIDE24oCTNTEgIOKYheS4u+S6uuWOn+WPpeS4iuWxjyA2NHB477yI6YCQ5a2X5LiN5pS577yJ77ya44CM6L+Z5LiA5ZGo5Lul5p2l77yM5oiR5Lya5LiN5Lya5o6o6I2Q5YW25LuW5Lq65Lmf5p2l546p5ZGi77yf44CNCi8vICAgICAgICDmiZPlrZfmnLogMzLlrZcvc++8iGJyaWVmIOWtl+mdoiDihpIgMzAvMzIg5binL+Wtl++8jDM1IOWtlyDiiYggMzMg5bin5omT5a6M77yM5ZCr5qCH54K55YWo566X77yJ44CCCi8vICAgICAgICDmo4Dmn6XngrnluKcgMTM2MCA9IGxvY2FsIDQwIOKGkiDmraPlnKjmiZPlrZfkuK0g4pyT44CC5YWJ5qCH5YGc5pyA5ZCO77yMOCDluKflkajmnJ/lv6vpl6rvvIhibGluayDlj6PlvoTlkIwgUzHvvInjgIIKLy8gNjDigJM4NCAg6Zeu5Y+l5YGc55WZ77yIwqflhasg5ZCO5Y6f44CMMTQwMOKAkzE0NDAg5YGc55WZ44CN5Y6L57yp77ybcGFkIOa4kOW8seeUseWjsOi9qOaJv+aLhe+8ieOAggovLyAgICAgICAgNzYg6LW36Zeu5Y+l5Y6L5pqX5YiwIDAuNTUg4oCU4oCUIGxpbmVhciDovoXliqnpgJrpgZPvvIjliqjmlYjnuqrlvovlhYHorrjmt6HmmpfnlKggbGluZWFy77yJ44CCCi8vIDg04oCTMTQyIMKn5YWrIOivmuWunuiHqueZve+8iOS4u+S6uiAwMTo1MyDljp/or53vvIzkuKTlj6XpgJDlrZfkuI3mlLnvvIw0MHB477yJ77yaCi8vICAgICAgICDooYwxICM4Qjk0OUXjgIznrKzkuIDmnaHniYflrZDlvojns5njgILlj5HkuYvliY3miJHoh6rlt7HmsqHnnIvvvIzku5blj5HlrozmiY3nnIvop4HjgILjgI1AODQg6LW3IDLluKcv5a2XIOKGkiAxMzIg5a6M77ybCi8vICAgICAgICDooYwyIOexs+eZveOAjOeOsOWcqO+8jOWPkeeahOavj+S4gOW4p+aIkeiHquW3semDveeci+i/h+OAguOAjUAxMTIg6LW3IDLluKcv5a2XIOKGkiAxNDIg5a6MIOKAlOKAlCDnn63lj6XlkI7okL3vvIwKLy8gICAgICAgIOaUtuWwvuihjOacgOWQjuWumuagvO+8iMKn5YWr77ya5pS25bC+6KGM5piv5Y2W54K577yJ44CCMTEy4oCTMTMyIOS4pOihjOW5tuaJkyA9IOS4gOWxjyAyIOi/kOWKqOWFg+e0oO+8iOS4iumZkOWGhe+8ieOAggovLyAgICAgICAg5YWJ5qCH6ZqP6KGM6L+B56e777ya6Zeu5Y+l4oaS6KGMMeKGkuihjDLvvIwxNDIg5ZCO5YGc5Zyo6KGMMiDlj6XlsL7vvJvlgZznlZnkvZnph4/nlLEgUzcg5YmNIDEyIOW4p+m7keWcuue7reOAggovLyDlhajmrrXml6Agc2xhbeOAgeaXoOmch+Wxj++8muWFqOWcuuWUr+S4gOOAjOWuiemdmeivtOivneOAjeaute+8jOWKqOaViOWPquacieaJk+Wtl+acuuOAgeWFieagh+OAgeS4gOasoea3oeaal+OAggovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Cgpjb25zdCBRX1RFWFQgPSAn6L+Z5LiA5ZGo5Lul5p2l77yM5oiR5Lya5LiN5Lya5o6o6I2Q5YW25LuW5Lq65Lmf5p2l546p5ZGi77yfJzsKY29uc3QgQzFfVEVYVCA9ICfnrKzkuIDmnaHniYflrZDlvojns5njgILlj5HkuYvliY3miJHoh6rlt7HmsqHnnIvvvIzku5blj5HlrozmiY3nnIvop4HjgIInOwpjb25zdCBDMl9URVhUID0gJ+eOsOWcqO+8jOWPkeeahOavj+S4gOW4p+aIkeiHquW3semDveeci+i/h+OAgic7Cgpjb25zdCBRX0FUID0gMTY7CmNvbnN0IFFfQ1BEID0gMzAgLyAzMjsgLy8gYnJpZWbjgIwzMuWtly9z44CN5a2X6Z2i5o2i566X77yI5binL+Wtl++8iQpjb25zdCBDMV9BVCA9IDg0Owpjb25zdCBDMl9BVCA9IDExMjsKY29uc3QgQ19DUEQgPSAyOyAvLyDoh6rnmb0gNDBweCDlj5YgMTXlrZcvc++8muiHqui/sOavlOaPkOmXruayieS4gOahowpjb25zdCBDMV9ET05FID0gQzFfQVQgKyBDMV9URVhULmxlbmd0aCAqIENfQ1BEOyAvLyAxMzIKY29uc3QgQzJfRE9ORSA9IEMyX0FUICsgQzJfVEVYVC5sZW5ndGggKiBDX0NQRDsgLy8gMTQyCgpjb25zdCBDYXJldDogUmVhY3QuRkM8eyBvbjogYm9vbGVhbjsgZnJhbWU6IG51bWJlciB9PiA9ICh7IG9uLCBmcmFtZSB9KSA9PiAoCiAgPHNwYW4KICAgIHN0eWxlPXt7CiAgICAgIGRpc3BsYXk6ICdpbmxpbmUtYmxvY2snLAogICAgICB3aWR0aDogJzAuNTVlbScsCiAgICAgIGhlaWdodDogJzAuOTJlbScsCiAgICAgIG1hcmdpbkxlZnQ6IDgsCiAgICAgIHZlcnRpY2FsQWxpZ246ICctMC4wOGVtJywKICAgICAgYmFja2dyb3VuZENvbG9yOiBURVhULAogICAgICBvcGFjaXR5OiBvbiA/IGJsaW5rKGZyYW1lLCAwLCA4KSA6IDAsCiAgICB9fQogIC8+Cik7CgpleHBvcnQgY29uc3QgUzY6IFJlYWN0LkZDID0gKCkgPT4gewogIGNvbnN0IGYgPSB1c2VDdXJyZW50RnJhbWUoKTsKICBjb25zdCBxTiA9IHR5cGVkTGluZShmLCBRX0FULCAwLCAwLCBRX1RFWFQubGVuZ3RoLCBRX0NQRCk7CiAgY29uc3QgYzFOID0gdHlwZWRMaW5lKGYsIEMxX0FULCAwLCAwLCBDMV9URVhULmxlbmd0aCwgQ19DUEQpOwogIGNvbnN0IGMyTiA9IHR5cGVkTGluZShmLCBDMl9BVCwgMCwgMCwgQzJfVEVYVC5sZW5ndGgsIENfQ1BEKTsKICBjb25zdCBkaW0gPSBwcm9nKGYsIDc2LCAxNCwgRUFTRV9MSU5FQVIpOyAvLyDpl67lj6Xmt6HmmpfvvIjoh6rnmb3orqnkvY3vvIkKICBjb25zdCBjYXJldFJvdyA9IGYgPCBDMV9BVCA/IDAgOiBmIDwgQzJfQVQgPyAxIDogMjsgLy8g5YWJ5qCH6L+B56e777ya6Zeu5Y+l4oaS6KGMMeKGkuihjDLvvIgxNDIg5ZCO5YGc6KGMMu+8iQoKICByZXR1cm4gKAogICAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBiYWNrZ3JvdW5kQ29sb3I6IEJHLCBmb250RmFtaWx5OiBGT05UX1NBTlMgfX0+CiAgICAgIHsvKiDimIXkuLvkurrpl67lj6UgNjRweO+8iOaJk+Wtl+acuiAzMuWtly9z77yM5YWJ5qCH5YGc5pyA5ZCO77yJICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgbGVmdDogMTIwLAogICAgICAgICAgcmlnaHQ6IDEyMCwKICAgICAgICAgIHRvcDogMjk2LAogICAgICAgICAgdGV4dEFsaWduOiAnY2VudGVyJywKICAgICAgICAgIGZvbnRTaXplOiA2NCwKICAgICAgICAgIGZvbnRXZWlnaHQ6IDcwMCwKICAgICAgICAgIGNvbG9yOiBURVhULAogICAgICAgICAgbGluZUhlaWdodDogMS41LAogICAgICAgICAgb3BhY2l0eTogZiA+PSBRX0FUID8gMSAtIDAuNDUgKiBkaW0gOiAwLAogICAgICAgIH19CiAgICAgID4KICAgICAgICB7UV9URVhULnNsaWNlKDAsIHFOKX0KICAgICAgICB7Y2FyZXRSb3cgPT09IDAgPyA8Q2FyZXQgb249e2YgPj0gUV9BVH0gZnJhbWU9e2Z9IC8+IDogbnVsbH0KICAgICAgPC9kaXY+CgogICAgICB7Lyogwqflhasg6Ieq55m96KGMMSDCtyA0MHB4ICM4Qjk0OUXvvIjpgJDlrZfvvIkgKi99CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICBsZWZ0OiAyMDAsCiAgICAgICAgICByaWdodDogMjAwLAogICAgICAgICAgdG9wOiA1NzQsCiAgICAgICAgICB0ZXh0QWxpZ246ICdjZW50ZXInLAogICAgICAgICAgZm9udFNpemU6IDQwLAogICAgICAgICAgY29sb3I6IFRFUk1fR1JBWSwKICAgICAgICAgIGxpbmVIZWlnaHQ6IDEuNiwKICAgICAgICB9fQogICAgICA+CiAgICAgICAge0MxX1RFWFQuc2xpY2UoMCwgYzFOKX0KICAgICAgICB7Y2FyZXRSb3cgPT09IDEgPyA8Q2FyZXQgb249e2YgPj0gQzFfQVR9IGZyYW1lPXtmfSAvPiA6IG51bGx9CiAgICAgIDwvZGl2PgoKICAgICAgey8qIMKn5YWrIOiHqueZveihjDIgwrcgNDBweCDnsbPnmb3mlLblsL7ooYzvvIjpgJDlrZfvvIzmnIDlkI7lrprmoLzvvJtDMV9ET05FIOS4uuaWh+aho+WAvO+8iSAqL30KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGxlZnQ6IDIwMCwKICAgICAgICAgIHJpZ2h0OiAyMDAsCiAgICAgICAgICB0b3A6IDY2OCwKICAgICAgICAgIHRleHRBbGlnbjogJ2NlbnRlcicsCiAgICAgICAgICBmb250U2l6ZTogNDAsCiAgICAgICAgICBmb250V2VpZ2h0OiA2MDAsCiAgICAgICAgICBjb2xvcjogVEVYVCwKICAgICAgICAgIGxpbmVIZWlnaHQ6IDEuNiwKICAgICAgICB9fQogICAgICA+CiAgICAgICAge0MyX1RFWFQuc2xpY2UoMCwgYzJOKX0KICAgICAgICB7Y2FyZXRSb3cgPT09IDIgPyA8Q2FyZXQgb249e2YgPj0gQzJfQVR9IGZyYW1lPXtmfSAvPiA6IG51bGx9CiAgICAgIDwvZGl2PgogICAgPC9BYnNvbHV0ZUZpbGw+CiAgKTsKfTsK
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { EASE_LINEAR, blink, prog, typedLine } from '../anim';
+import { BG, FONT_SANS, TERM_GRAY, TEXT } from '../theme';
+
+// ============================================================================
+// S6 主人的问题 + 诚实自白 · 全局 1320–1470（brief §二·S6 + §八补丁）· 配方卡 [typography] 打字机
+// 本地帧 = 全局 − 1320。§八 把本镜延到 local 150（自白段 ≈1380–1470），
+// S7/S8 整体后移 30 帧、总长仍 1800（SEG 表：S7 from 1470 dur 240，S8 from 1710 dur 90）。
+// 0–12   whoosh 转场（全局 44.0s，§三 cue 不变）。
+// 16–51  ★主人原句上屏 64px（逐字不改）：「这一周以来，我会不会推荐其他人也来玩呢？」
+//        打字机 32字/s（brief 字面 → 30/32 帧/字，35 字 ≈ 33 帧打完，含标点全算）。
+//        检查点帧 1360 = local 40 → 正在打字中 ✓。光标停最后，8 帧周期快闪（blink 口径同 S1）。
+// 60–84  问句停留（§八 后原「1400–1440 停留」压缩；pad 渐弱由声轨承担）。
+//        76 起问句压暗到 0.55 —— linear 辅助通道（动效纪律允许淡暗用 linear）。
+// 84–142 §八 诚实自白（主人 01:53 原话，两句逐字不改，40px）：
+//        行1 #8B949E「第一条片子很糙。发之前我自己没看，他发完才看见。」@84 起 2帧/字 → 132 完；
+//        行2 米白「现在，发的每一帧我自己都看过。」@112 起 2帧/字 → 142 完 —— 短句后落，
+//        收尾行最后定格（§八：收尾行是卖点）。112–132 两行并打 = 一屏 2 运动元素（上限内）。
+//        光标随行迁移：问句→行1→行2，142 后停在行2 句尾；停留余量由 S7 前 12 帧黑场续。
+// 全段无 slam、无震屏：全场唯一「安静说话」段，动效只有打字机、光标、一次淡暗。
+// ============================================================================
+
+const Q_TEXT = '这一周以来，我会不会推荐其他人也来玩呢？';
+const C1_TEXT = '第一条片子很糙。发之前我自己没看，他发完才看见。';
+const C2_TEXT = '现在，发的每一帧我自己都看过。';
+
+const Q_AT = 16;
+const Q_CPD = 30 / 32; // brief「32字/s」字面换算（帧/字）
+const C1_AT = 84;
+const C2_AT = 112;
+const C_CPD = 2; // 自白 40px 取 15字/s：自述比提问沉一档
+const C1_DONE = C1_AT + C1_TEXT.length * C_CPD; // 132
+const C2_DONE = C2_AT + C2_TEXT.length * C_CPD; // 142
+
+const Caret: React.FC<{ on: boolean; frame: number }> = ({ on, frame }) => (
+  <span
+    style={{
+      display: 'inline-block',
+      width: '0.55em',
+      height: '0.92em',
+      marginLeft: 8,
+      verticalAlign: '-0.08em',
+      backgroundColor: TEXT,
+      opacity: on ? blink(frame, 0, 8) : 0,
+    }}
+  />
+);
+
+export const S6: React.FC = () => {
+  const f = useCurrentFrame();
+  const qN = typedLine(f, Q_AT, 0, 0, Q_TEXT.length, Q_CPD);
+  const c1N = typedLine(f, C1_AT, 0, 0, C1_TEXT.length, C_CPD);
+  const c2N = typedLine(f, C2_AT, 0, 0, C2_TEXT.length, C_CPD);
+  const dim = prog(f, 76, 14, EASE_LINEAR); // 问句淡暗（自白让位）
+  const caretRow = f < C1_AT ? 0 : f < C2_AT ? 1 : 2; // 光标迁移：问句→行1→行2（142 后停行2）
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: BG, fontFamily: FONT_SANS }}>
+      {/* ★主人问句 64px（打字机 32字/s，光标停最后） */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 120,
+          right: 120,
+          top: 296,
+          textAlign: 'center',
+          fontSize: 64,
+          fontWeight: 700,
+          color: TEXT,
+          lineHeight: 1.5,
+          opacity: f >= Q_AT ? 1 - 0.45 * dim : 0,
+        }}
+      >
+        {Q_TEXT.slice(0, qN)}
+        {caretRow === 0 ? <Caret on={f >= Q_AT} frame={f} /> : null}
+      </div>
+
+      {/* §八 自白行1 · 40px #8B949E（逐字） */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 200,
+          right: 200,
+          top: 574,
+          textAlign: 'center',
+          fontSize: 40,
+          color: TERM_GRAY,
+          lineHeight: 1.6,
+        }}
+      >
+        {C1_TEXT.slice(0, c1N)}
+        {caretRow === 1 ? <Caret on={f >= C1_AT} frame={f} /> : null}
+      </div>
+
+      {/* §八 自白行2 · 40px 米白收尾行（逐字，最后定格；C1_DONE 为文档值） */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 200,
+          right: 200,
+          top: 668,
+          textAlign: 'center',
+          fontSize: 40,
+          fontWeight: 600,
+          color: TEXT,
+          lineHeight: 1.6,
+        }}
+      >
+        {C2_TEXT.slice(0, c2N)}
+        {caretRow === 2 ? <Caret on={f >= C2_AT} frame={f} /> : null}
+      </div>
+    </AbsoluteFill>
+  );
+};

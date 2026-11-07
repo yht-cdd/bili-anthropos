@@ -1,1 +1,74 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEVBU0VfRVhQT19PVVQsIGxlcnBGLCBwcm9nLCB0ZiB9IGZyb20gJy4uL2FuaW0nOwppbXBvcnQgeyBCRywgRk9OVF9TQU5TLCBGU19TTE9HQU4sIE5FQVJfV0hJVEUsIFJFRCB9IGZyb20gJy4uL3RoZW1lJzsKCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8gUzkgwrcgMTE0MOKAkzEyNjBm77yIMzguMOKAkzQyLjBz77yJIFt0eXBvZ3JhcGh5XSB3b3JkLXJlbGF5LWdlb21ldHJ5Ci8vIOaRhOW9seihqCBTOe+8muiDjOaZr+W7tue7rSAjRjVGM0VF77yI6L+R55m95Lik6L+e6ZWc77yM5Z2RMyDoibLlvanoioLlpY/vvInvvJsKLy8g4piF6Zeu6aKY5Y+l44CM6KaB5LiN6KaB5raI6LS5QUnlvaLosaHvvJ/jgI02MHB4ICMwQTBFMTQgZmFkZWluIDExNDDigJMxMTcw77ybCi8vIOKYheetlOahiOOAjOS4jeOAguOAjTEyMHB4IOaEj+W/l+e6oiAjRjA1MjRE77yI57qi6Imy5ZSv5LiA5ZCI5rOV55So6YCU5LmL5LiAIMKn5LiDLTTvvInvvJoKLy8gMTE3MOKAkzEyMDAgdHJhbnNsYXRlWSgxMDDihpIwKStzY2FsZSgwLjjihpIxKSBleHBvLW91dO+8mwovLyAxMjAw4oCTMTIzMCBwdWxzZSAyIOasoe+8iOajgOafpeeCueW4pyA477yaMTIwMGYgc2NhbGU9MS4wNe+8ie+8jDEyMzAg6LW35a6M5YWo6Z2Z5q2i77ybCi8vIDEyMzDigJMxMjYwIGhvbGTjgIJTRljvvIh3aG9vc2gtc29mdCAvIGltcGFjdCAvIGRpbmfvvInlvZIgUjQgYXVkaW/jgIIKLy8g5a2X5Y+35YGP5beu6K6w5b2V77ya562U5qGIIDEyMHB4IOmYtuair+Wklu+8jOaRhOW9seihqOmAkOWtl+inhOWumu+8iOWQjCBTOCDliKTkvovvvInjgIIKLy8g5rOo77ya6K6+6K6h56i/5paH5qGI44CM6KaB5LiN6KaB5raI6LS5IEFJIOW9ouixoe+8n+OAjeWQq+epuuagvO+8m+KYhemXruetlOWPpeaMieS7u+WKoeWPo+W+hOmAkOWtl+S4ugovLyDjgIzopoHkuI3opoHmtojotLlBSeW9ouixoe+8n+OAjeKAlOKAlOS7peS7u+WKoeKYheWOn+aWh+S4uuWHhu+8jOepuuagvOWOu+mZpOOAggovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Cgpjb25zdCBGU19BTlNXRVIgPSAxMjA7IC8vIOaRhOW9seihqOinhOWumuWAvO+8iOmYtuair+WkluWIu+aEj+aUvuWkp++8iQoKY29uc3QgUVVFU1RJT04gPSAn6KaB5LiN6KaB5raI6LS5QUnlvaLosaHvvJ8nOyAvLyDimIUg6YCQ5a2X77yM5qCH54K55LiN5YqoCgpleHBvcnQgY29uc3QgUzk6IFJlYWN0LkZDID0gKCkgPT4gewogIGNvbnN0IGcgPSB1c2VDdXJyZW50RnJhbWUoKSArIDExNDA7IC8vIOWFqOWxgOW4pwoKICBjb25zdCBxUCA9IHByb2coZywgMTE0MCwgMzApOyAvLyDpl67popggZmFkZWluCiAgY29uc3QgYVAgPSBwcm9nKGcsIDExNzAsIDMwLCBFQVNFX0VYUE9fT1VUKTsgLy8g562U5qGIIGJvdHRvbSDmjqjlhaUKCiAgLy8gcHVsc2XvvJoxMjAw4oCTMTIzMCDkuKTmrKHvvIzls7DlgLzpkokgMTIwMGYvMTIxNWYgPSAxLjA177yI5qOA5p+l54K55binIDjvvInvvJsxMjIy4oCTMTIzMCDmkYbluYXmlLbmlZvlvZLpm7bvvIwKICAvLyAxMjMwIOi1t+WujOWFqOmdmeatoui/myBob2xk77yI6YG/5YWNIDEuMDXihpIxIOeahOi3s+WPmO+8iQogIGNvbnN0IGluUHVsc2UgPSBnID49IDEyMDAgJiYgZyA8IDEyMzA7CiAgY29uc3QgcGggPSAoMiAqIE1hdGguUEkgKiAoZyAtIDEyMDApKSAvIDE1OwogIGNvbnN0IGRhbXAgPSBsZXJwRihnLCBbMTIyMiwgMTIzMF0sIFsxLCAwXSk7CiAgY29uc3QgcHVsc2UgPSBpblB1bHNlID8gMSArIDAuMDUgKiBNYXRoLmNvcyhwaCkgKiBNYXRoLmNvcyhwaCkgKiBkYW1wIDogMTsKCiAgcmV0dXJuICgKICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sgYmFja2dyb3VuZENvbG9yOiBORUFSX1dISVRFIH19PgogICAgICB7Lyog6Zeu6aKY77yIOTYwLDMwMCDkuK3lv4Pnur/vvIkgKi99CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICBsZWZ0OiA5NjAsCiAgICAgICAgICB0b3A6IDMwMCwKICAgICAgICAgIHRyYW5zZm9ybTogJ3RyYW5zbGF0ZSgtNTAlLCAtNTAlKScsCiAgICAgICAgICBmb250RmFtaWx5OiBGT05UX1NBTlMsCiAgICAgICAgICBmb250V2VpZ2h0OiA3MDAsCiAgICAgICAgICBmb250U2l6ZTogRlNfU0xPR0FOLAogICAgICAgICAgY29sb3I6IEJHLAogICAgICAgICAgb3BhY2l0eTogcVAsCiAgICAgICAgICB3aGl0ZVNwYWNlOiAnbm93cmFwJywKICAgICAgICB9fQogICAgICA+CiAgICAgICAge1FVRVNUSU9OfQogICAgICA8L2Rpdj4KCiAgICAgIHsvKiDnrZTmoYjvvIg5NjAsNjAwIOS4reW/g+e6v++8ie+8muaEj+W/l+e6oiAqL30KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGxlZnQ6IDk2MCwKICAgICAgICAgIHRvcDogNjAwLAogICAgICAgICAgdHJhbnNmb3JtOiB0ZihbJ3RyYW5zbGF0ZSgtNTAlLCAtNTAlKScsIGB0cmFuc2xhdGVZKCR7KDEgLSBhUCkgKiAxMDB9cHgpYCwgYHNjYWxlKCR7KDAuOCArIDAuMiAqIGFQKSAqIHB1bHNlfSlgXSksCiAgICAgICAgICBmb250RmFtaWx5OiBGT05UX1NBTlMsCiAgICAgICAgICBmb250V2VpZ2h0OiA3MDAsCiAgICAgICAgICBmb250U2l6ZTogRlNfQU5TV0VSLAogICAgICAgICAgY29sb3I6IFJFRCwKICAgICAgICAgIG9wYWNpdHk6IGcgPj0gMTE3MCA/IDEgOiAwLAogICAgICAgIH19CiAgICAgID4KICAgICAgICDkuI3jgIIKICAgICAgPC9kaXY+CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9Owo=
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { EASE_EXPO_OUT, lerpF, prog, tf } from '../anim';
+import { BG, FONT_SANS, FS_SLOGAN, NEAR_WHITE, RED } from '../theme';
+
+// ============================================================================
+// S9 · 1140–1260f（38.0–42.0s） [typography] word-relay-geometry
+// 摄影表 S9：背景延续 #F5F3EE（近白两连镜，坑3 色彩节奏）；
+// ★问题句「要不要消费AI形象？」60px #0A0E14 fadein 1140–1170；
+// ★答案「不。」120px 意志红 #F0524D（红色唯一合法用途之一 §七-4）：
+// 1170–1200 translateY(100→0)+scale(0.8→1) expo-out；
+// 1200–1230 pulse 2 次（检查点帧 8：1200f scale=1.05），1230 起完全静止；
+// 1230–1260 hold。SFX（whoosh-soft / impact / ding）归 R4 audio。
+// 字号偏差记录：答案 120px 阶梯外，摄影表逐字规定（同 S8 判例）。
+// 注：设计稿文案「要不要消费 AI 形象？」含空格；★问答句按任务口径逐字为
+// 「要不要消费AI形象？」——以任务★原文为准，空格去除。
+// ============================================================================
+
+const FS_ANSWER = 120; // 摄影表规定值（阶梯外刻意放大）
+
+const QUESTION = '要不要消费AI形象？'; // ★ 逐字，标点不动
+
+export const S9: React.FC = () => {
+  const g = useCurrentFrame() + 1140; // 全局帧
+
+  const qP = prog(g, 1140, 30); // 问题 fadein
+  const aP = prog(g, 1170, 30, EASE_EXPO_OUT); // 答案 bottom 推入
+
+  // pulse：1200–1230 两次，峰值钉 1200f/1215f = 1.05（检查点帧 8）；1222–1230 摆幅收敛归零，
+  // 1230 起完全静止进 hold（避免 1.05→1 的跳变）
+  const inPulse = g >= 1200 && g < 1230;
+  const ph = (2 * Math.PI * (g - 1200)) / 15;
+  const damp = lerpF(g, [1222, 1230], [1, 0]);
+  const pulse = inPulse ? 1 + 0.05 * Math.cos(ph) * Math.cos(ph) * damp : 1;
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: NEAR_WHITE }}>
+      {/* 问题（960,300 中心线） */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 960,
+          top: 300,
+          transform: 'translate(-50%, -50%)',
+          fontFamily: FONT_SANS,
+          fontWeight: 700,
+          fontSize: FS_SLOGAN,
+          color: BG,
+          opacity: qP,
+          whiteSpace: 'nowrap',
+        }}
+      >
+        {QUESTION}
+      </div>
+
+      {/* 答案（960,600 中心线）：意志红 */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 960,
+          top: 600,
+          transform: tf(['translate(-50%, -50%)', `translateY(${(1 - aP) * 100}px)`, `scale(${(0.8 + 0.2 * aP) * pulse})`]),
+          fontFamily: FONT_SANS,
+          fontWeight: 700,
+          fontSize: FS_ANSWER,
+          color: RED,
+          opacity: g >= 1170 ? 1 : 0,
+        }}
+      >
+        不。
+      </div>
+    </AbsoluteFill>
+  );
+};

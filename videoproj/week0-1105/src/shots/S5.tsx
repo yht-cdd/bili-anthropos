@@ -1,1 +1,73 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IHByb2csIHRmIH0gZnJvbSAnLi4vYW5pbSc7CmltcG9ydCB7CiAgQkxVRV9CT1QsCiAgQkxVRV9UT1AsCiAgRk9OVF9TQU5TLAogIEZTX0NBUFRJT04sCiAgRlNfVElUTEUsCiAgTElNRSwKICBQQVBFUiwKfSBmcm9tICcuLi90aGVtZSc7CgovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ci8vIFM1IMK3IDYwMOKAkzcyMGbvvIgyMC4w4oCTMjQuMHPvvIkgW3R5cG9ncmFwaHldIHRleHQtY29sdW1uLWNvbnZlcmdlCi8vIOW7tue7rSBTNCDmiYvmnK/ok53osIPlupXvvJvkuInlj6XpgJDnuqflhaXlnLrlkI7pnZnmraIgaG9sZCAzMGbvvIg2OTDigJM3MjAg6Z2Z6Z+z55WZ55m977yM5LiN6KGl6Z+z5pWI77yJ44CCCi8vIOesrOS4gOWPpeS4reW/g+aUvuWkpyBleHBvLW91dO+8m+esrOS6jOWPpeS7juW3piB0cmFuc2xhdGVYKC0xMDDihpIwKe+8m+esrOS4ieWPpeS7juWPsyArMTAw4oaSMO+8iOmdkuafoOmrmOS6ru+8ieOAggovLyDlrZflj7flhajpg6jlnKjpmLbmoq/ooajlhoXvvIg3Mi80OO+8ie+8jOaXoOWBj+W3ruOAggovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CgpleHBvcnQgY29uc3QgUzU6IFJlYWN0LkZDID0gKCkgPT4gewogIGNvbnN0IGcgPSB1c2VDdXJyZW50RnJhbWUoKSArIDYwMDsgLy8g5YWo5bGA5binCgogIGNvbnN0IGwxID0gcHJvZyhnLCA2MDAsIDMwKTsgLy8gc2NhbGUgMC414oaSMSArIGZhZGVpbgogIGNvbnN0IGwyID0gcHJvZyhnLCA2MzAsIDMwKTsgLy8g5LuO5bem5o6o5YWlCiAgY29uc3QgbDMgPSBwcm9nKGcsIDY2MCwgMzApOyAvLyDku47lj7PmjqjlhaUKCiAgcmV0dXJuICgKICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sgYmFja2dyb3VuZDogYHJhZGlhbC1ncmFkaWVudChjaXJjbGUgOTAwcHggYXQgNTAlIDQyJSwgJHtCTFVFX1RPUH0gMCUsICR7QkxVRV9CT1R9IDc4JSlgIH19PgogICAgICB7Lyog5LiJ5Y+l5bGF5Lit77yI6KeG6KeJ5Lit5b+DIDk2MCw1NDDvvIkgKi99CiAgICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sgYWxpZ25JdGVtczogJ2NlbnRlcicsIGp1c3RpZnlDb250ZW50OiAnY2VudGVyJyB9fT4KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBmb250RmFtaWx5OiBGT05UX1NBTlMsCiAgICAgICAgICAgIGZvbnRXZWlnaHQ6IDcwMCwKICAgICAgICAgICAgZm9udFNpemU6IEZTX1RJVExFLAogICAgICAgICAgICBsaW5lSGVpZ2h0OiAnMTA0cHgnLAogICAgICAgICAgICBjb2xvcjogUEFQRVIsCiAgICAgICAgICAgIG9wYWNpdHk6IGwxLAogICAgICAgICAgICB0cmFuc2Zvcm06IHRmKFtgc2NhbGUoJHswLjUgKyAwLjUgKiBsMX0pYF0pLAogICAgICAgICAgfX0KICAgICAgICA+CiAgICAgICAgICDphpLmnaXov5jlnKjlspfjgIIKICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBmb250RmFtaWx5OiBGT05UX1NBTlMsCiAgICAgICAgICAgIGZvbnRTaXplOiBGU19DQVBUSU9OLAogICAgICAgICAgICBsaW5lSGVpZ2h0OiAnNzJweCcsCiAgICAgICAgICAgIGNvbG9yOiBQQVBFUiwKICAgICAgICAgICAgb3BhY2l0eTogbDIgKiAwLjgsIC8vIOiuvuiuoeeov++8mumAj+aYjuW6piA4MCUKICAgICAgICAgICAgdHJhbnNmb3JtOiB0ZihbYHRyYW5zbGF0ZVgoJHsoMSAtIGwyKSAqIC0xMDB9cHgpYF0pLAogICAgICAgICAgICBtYXJnaW5Ub3A6IDE2LAogICAgICAgICAgfX0KICAgICAgICA+CiAgICAgICAgICBhZ2VudCDkuI3mmK/ooqvnrqHnkIbnmoTova/ku7bvvIwKICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICBmb250RmFtaWx5OiBGT05UX1NBTlMsCiAgICAgICAgICAgIGZvbnRTaXplOiBGU19DQVBUSU9OLAogICAgICAgICAgICBsaW5lSGVpZ2h0OiAnNzJweCcsCiAgICAgICAgICAgIGNvbG9yOiBMSU1FLCAvLyDpq5jkuq7ooYwKICAgICAgICAgICAgb3BhY2l0eTogbDMsCiAgICAgICAgICAgIHRyYW5zZm9ybTogdGYoW2B0cmFuc2xhdGVYKCR7KDEgLSBsMykgKiAxMDB9cHgpYF0pLAogICAgICAgICAgfX0KICAgICAgICA+CiAgICAgICAgICDmmK/ooqvov5Dnu7TnmoTlrZjlnKjjgIIKICAgICAgICA8L2Rpdj4KICAgICAgPC9BYnNvbHV0ZUZpbGw+CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9Owo=
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { prog, tf } from '../anim';
+import {
+  BLUE_BOT,
+  BLUE_TOP,
+  FONT_SANS,
+  FS_CAPTION,
+  FS_TITLE,
+  LIME,
+  PAPER,
+} from '../theme';
+
+// ============================================================================
+// S5 · 600–720f（20.0–24.0s） [typography] text-column-converge
+// 延续 S4 手术蓝调底；三句逐级入场后静止 hold 30f（690–720 静音留白，不补音效）。
+// 第一句中心放大 expo-out；第二句从左 translateX(-100→0)；第三句从右 +100→0（青柠高亮）。
+// 字号全部在阶梯表内（72/48），无偏差。
+// ============================================================================
+
+export const S5: React.FC = () => {
+  const g = useCurrentFrame() + 600; // 全局帧
+
+  const l1 = prog(g, 600, 30); // scale 0.5→1 + fadein
+  const l2 = prog(g, 630, 30); // 从左推入
+  const l3 = prog(g, 660, 30); // 从右推入
+
+  return (
+    <AbsoluteFill style={{ background: `radial-gradient(circle 900px at 50% 42%, ${BLUE_TOP} 0%, ${BLUE_BOT} 78%)` }}>
+      {/* 三句居中（视觉中心 960,540） */}
+      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
+        <div
+          style={{
+            fontFamily: FONT_SANS,
+            fontWeight: 700,
+            fontSize: FS_TITLE,
+            lineHeight: '104px',
+            color: PAPER,
+            opacity: l1,
+            transform: tf([`scale(${0.5 + 0.5 * l1})`]),
+          }}
+        >
+          醒来还在岗。
+        </div>
+        <div
+          style={{
+            fontFamily: FONT_SANS,
+            fontSize: FS_CAPTION,
+            lineHeight: '72px',
+            color: PAPER,
+            opacity: l2 * 0.8, // 设计稿：透明度 80%
+            transform: tf([`translateX(${(1 - l2) * -100}px)`]),
+            marginTop: 16,
+          }}
+        >
+          agent 不是被管理的软件，
+        </div>
+        <div
+          style={{
+            fontFamily: FONT_SANS,
+            fontSize: FS_CAPTION,
+            lineHeight: '72px',
+            color: LIME, // 高亮行
+            opacity: l3,
+            transform: tf([`translateX(${(1 - l3) * 100}px)`]),
+          }}
+        >
+          是被运维的存在。
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};

@@ -1,1 +1,121 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCBJbWcsIHN0YXRpY0ZpbGUsIHVzZUN1cnJlbnRGcmFtZSB9IGZyb20gJ3JlbW90aW9uJzsKaW1wb3J0IHsgY2xhbXAwMSwgcHJvZywgc3ByaW5nSW4gfSBmcm9tICcuLi9hbmltJzsKaW1wb3J0IHsKICBCRywKICBDQVJEX0gsCiAgQ0FSRF9XLAogIENPUkFMLAogIEZPTlRfU0FOUywKICBGU19TTE9HQU4sCiAgTElNRSwKICBSQURJVVMsCiAgU1BPVExJR0hULAp9IGZyb20gJy4uL3RoZW1lJzsKCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8gUzAgwrcgMOKAkzkwZu+8iDAuMOKAkzMuMHPvvIkgW29wZW5pbmddIHNwb3RsaWdodC1oZXJvLWNhcmQgKyBbdHlwb2dyYXBoeV0gbWFya2VyLXVuZGVybGluZS10aXRsZQovLyDogZrlhYnlupUgKyDljZXlvKDkuLvljaHniYfvvIhjb21taXQg5oiq5Zu+IGJsdXI4LzYwJSDnurnnkIbvvInmgqzmta7okL3lrpog4oaSIOiNp+WFieeslOWIkue6vyDihpIg5qCH6aKY6YCQ5a2X44CCCi8vIFE077ya6L6557yY5YWJ6KKrIGJvcmRlci1yYWRpdXMgOHB4ICsgb3ZlcmZsb3cgaGlkZGVuIOijgeWJquOAguKYheagh+mimCAiPHdlZWswPiIg6YCQ5a2X77yI6K6+6K6h56i/55S76Z2i5qCP54Wn5oqE77yJ44CCCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCmNvbnN0IFRJVExFID0gJzx3ZWVrMD4nOyAvLyDimIUg6YCQ5a2X77yM5qCH54K5L+WwluaLrOWPt+S4jeWKqAoKY29uc3QgVGl0bGVDaGFyOiBSZWFjdC5GQzx7IGNoOiBzdHJpbmc7IHN0YXJ0OiBudW1iZXI7IGZyYW1lOiBudW1iZXIgfT4gPSAoeyBjaCwgc3RhcnQsIGZyYW1lIH0pID0+IHsKICBjb25zdCBwID0gcHJvZyhmcmFtZSwgc3RhcnQsIDQpOwogIHJldHVybiAoCiAgICA8c3BhbiBzdHlsZT17eyBkaXNwbGF5OiAnaW5saW5lLWJsb2NrJywgb3BhY2l0eTogcCwgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWSgkeygxIC0gcCkgKiAyMH1weClgIH19PgogICAgICB7Y2h9CiAgICA8L3NwYW4+CiAgKTsKfTsKCmV4cG9ydCBjb25zdCBTMDogUmVhY3QuRkMgPSAoKSA9PiB7CiAgY29uc3QgZnJhbWUgPSB1c2VDdXJyZW50RnJhbWUoKTsgLy8gMOKAkzkw77yIU2VxdWVuY2Ug5YaF5bGA6YOo5binID0g5YWo5bGA5bin77yJCgogIC8vIDDigJM2MGbvvJrljaHniYcgc3ByaW5nKDEsODAsMTApIOS7jiBzY2FsZSgwLjgpL29wYWNpdHkwIOiQveWumgogIGNvbnN0IGNhcmRTcHJpbmcgPSBzcHJpbmdJbihmcmFtZSwgMCk7CiAgY29uc3QgY2FyZFNjYWxlID0gMC44ICsgMC4yICogY2xhbXAwMShjYXJkU3ByaW5nKTsKICBjb25zdCBjYXJkT3BhY2l0eSA9IGNsYW1wMDEoY2FyZFNwcmluZyAqIDEuNCk7IC8vIOaPkOWJjeS6juW8ueewp+WIsOS9je+8jOmBv+WFjeaFouWwvgoKICAvLyA2MOKAkzc1Zu+8muWIkue6vyBzY2FsZVgoMOKGkjEpIGZyb20gY2VudGVy77yMZXhwb091dCAxNWYKICBjb25zdCBsaW5lUCA9IHByb2coZnJhbWUsIDYwLCAxNSk7CgogIC8vIDc14oCTOTBm77ya5qCH6aKY6YCQ5a2XIHRyYW5zbGF0ZVkoMjDihpIwKSBvcGFjaXR5KDDihpIxKeOAguiuvuiuoeeov+OAjDNmL+WtlyDlhbExNWbjgI3mjIkgNSDlrZfkvLDvvIwKICAvLyDlrp7pmYUgIjx3ZWVrMD4iIDgg5a2XIMOXM2YgPSAyNGYg5Lya6aG25Ye6IDkwZiDmrrXlsL7vvIhSMSDlpI3moLjkv67mraPvvInvvJrmlLkgMmYv5a2X5LuOIDcyZiDotbfvvIwKICAvLyDmnKvlrZcgODZmIOi1t+WFpeWcuuOAgTkwZiDliY3lrozmiJDvvIzmlbTlj6XlnKjliIfmjaLluKfliY3lrozmlbTlj6/or7vjgIIKCiAgcmV0dXJuICgKICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sgYmFja2dyb3VuZENvbG9yOiBCRyB9fT4KICAgICAgey8qIOiBmuWFiemUpe+8mk1JRCAyMCUgb3BhY2l0ee+8jOWNiuW+hCA2MDBweCAqL30KICAgICAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBiYWNrZ3JvdW5kOiBTUE9UTElHSFQgfX0gLz4KCiAgICAgIHsvKiDkuLvljaHniYfvvIg5NjAsNTQwIOWxheS4re+8ie+8mmNvbW1pdCDmiKrlm77mqKHns4rnurnnkIYgKyDpnZLmn6DovrnnvJjlhYkgKi99CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICBsZWZ0OiA5NjAgLSBDQVJEX1cgLyAyLAogICAgICAgICAgdG9wOiA1NDAgLSBDQVJEX0ggLyAyLAogICAgICAgICAgd2lkdGg6IENBUkRfVywKICAgICAgICAgIGhlaWdodDogQ0FSRF9ILAogICAgICAgICAgYm9yZGVyUmFkaXVzOiBSQURJVVMsCiAgICAgICAgICBvdmVyZmxvdzogJ2hpZGRlbicsIC8vIFE077ya5YWJ5LiN5rqi5Ye65ZyG6KeSCiAgICAgICAgICBvcGFjaXR5OiBjYXJkT3BhY2l0eSwKICAgICAgICAgIHRyYW5zZm9ybTogYHNjYWxlKCR7Y2FyZFNjYWxlfSlgLAogICAgICAgICAgYm9yZGVyOiBgMnB4IHNvbGlkICR7TElNRX1gLAogICAgICAgICAgYm94U2hhZG93OiBgMCAwIDI4cHggcmdiYSgyMTIsMjQ0LDYyLDAuMjgpLCBpbnNldCAwIDAgMThweCByZ2JhKDIxMiwyNDQsNjIsMC4xMCksIDAgNHB4IDEycHggcmdiYSgwLDAsMCwwLjQpYCwKICAgICAgICB9fQogICAgICA+CiAgICAgICAgPEltZwogICAgICAgICAgc3JjPXtzdGF0aWNGaWxlKCdhc3NldHMvczAtY29tbWl0LWJsdXIucG5nJyl9CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICB3aWR0aDogJzEwMCUnLAogICAgICAgICAgICBoZWlnaHQ6ICcxMDAlJywKICAgICAgICAgICAgb2JqZWN0Rml0OiAnY292ZXInLAogICAgICAgICAgICBmaWx0ZXI6ICdibHVyKDhweCknLAogICAgICAgICAgICBvcGFjaXR5OiAwLjYsCiAgICAgICAgICB9fQogICAgICAgIC8+CiAgICAgIDwvZGl2PgoKICAgICAgey8qIOagh+mimCArIOiNp+WFieeslOWIkue6v++8iOWNoeeJh+S4i+aWue+8iSAqL30KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGxlZnQ6IDAsCiAgICAgICAgICByaWdodDogMCwKICAgICAgICAgIHRvcDogNjc1LAogICAgICAgICAgZGlzcGxheTogJ2ZsZXgnLAogICAgICAgICAgZmxleERpcmVjdGlvbjogJ2NvbHVtbicsCiAgICAgICAgICBhbGlnbkl0ZW1zOiAnY2VudGVyJywKICAgICAgICB9fQogICAgICA+CiAgICAgICAgPGRpdgogICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgZm9udEZhbWlseTogRk9OVF9TQU5TLAogICAgICAgICAgICBmb250V2VpZ2h0OiA3MDAsCiAgICAgICAgICAgIGZvbnRTaXplOiBGU19TTE9HQU4sCiAgICAgICAgICAgIGNvbG9yOiBDT1JBTCwKICAgICAgICAgICAgaGVpZ2h0OiBGU19TTE9HQU4gKyA4LAogICAgICAgICAgICBsaW5lSGVpZ2h0OiBgJHtGU19TTE9HQU4gKyA4fXB4YCwKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAge1RJVExFLnNwbGl0KCcnKS5tYXAoKGNoLCBpKSA9PiAoCiAgICAgICAgICAgIDxUaXRsZUNoYXIga2V5PXtpfSBjaD17Y2h9IGZyYW1lPXtmcmFtZX0gc3RhcnQ9ezcyICsgaSAqIDJ9IC8+CiAgICAgICAgICApKX0KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2CiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICB3aWR0aDogNDAwLAogICAgICAgICAgICBoZWlnaHQ6IDQsCiAgICAgICAgICAgIG1hcmdpblRvcDogNCwKICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiBMSU1FLAogICAgICAgICAgICBib3JkZXJSYWRpdXM6IDIsCiAgICAgICAgICAgIHRyYW5zZm9ybTogYHNjYWxlWCgke2xpbmVQfSlgLAogICAgICAgICAgICBib3hTaGFkb3c6IGAwIDAgMTJweCByZ2JhKDIxMiwyNDQsNjIsMC40NSlgLAogICAgICAgICAgfX0KICAgICAgICAvPgogICAgICA8L2Rpdj4KICAgIDwvQWJzb2x1dGVGaWxsPgogICk7Cn07Cg==
+import React from 'react';
+import { AbsoluteFill, Img, staticFile, useCurrentFrame } from 'remotion';
+import { clamp01, prog, springIn } from '../anim';
+import {
+  BG,
+  CARD_H,
+  CARD_W,
+  CORAL,
+  FONT_SANS,
+  FS_SLOGAN,
+  LIME,
+  RADIUS,
+  SPOTLIGHT,
+} from '../theme';
+
+// ============================================================================
+// S0 · 0–90f（0.0–3.0s） [opening] spotlight-hero-card + [typography] marker-underline-title
+// 聚光底 + 单张主卡片（commit 截图 blur8/60% 纹理）悬浮落定 → 荧光笔划线 → 标题逐字。
+// Q4：边缘光被 border-radius 8px + overflow hidden 裁剪。★标题 "<week0>" 逐字（设计稿画面栏照抄）。
+// ============================================================================
+
+const TITLE = '<week0>'; // ★ 逐字，标点/尖括号不动
+
+const TitleChar: React.FC<{ ch: string; start: number; frame: number }> = ({ ch, start, frame }) => {
+  const p = prog(frame, start, 4);
+  return (
+    <span style={{ display: 'inline-block', opacity: p, transform: `translateY(${(1 - p) * 20}px)` }}>
+      {ch}
+    </span>
+  );
+};
+
+export const S0: React.FC = () => {
+  const frame = useCurrentFrame(); // 0–90（Sequence 内局部帧 = 全局帧）
+
+  // 0–60f：卡片 spring(1,80,10) 从 scale(0.8)/opacity0 落定
+  const cardSpring = springIn(frame, 0);
+  const cardScale = 0.8 + 0.2 * clamp01(cardSpring);
+  const cardOpacity = clamp01(cardSpring * 1.4); // 提前于弹簧到位，避免慢尾
+
+  // 60–75f：划线 scaleX(0→1) from center，expoOut 15f
+  const lineP = prog(frame, 60, 15);
+
+  // 75–90f：标题逐字 translateY(20→0) opacity(0→1)。设计稿「3f/字 共15f」按 5 字估，
+  // 实际 "<week0>" 8 字 ×3f = 24f 会顶出 90f 段尾（R1 复核修正）：改 2f/字从 72f 起，
+  // 末字 86f 起入场、90f 前完成，整句在切换帧前完整可读。
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: BG }}>
+      {/* 聚光锥：MID 20% opacity，半径 600px */}
+      <AbsoluteFill style={{ background: SPOTLIGHT }} />
+
+      {/* 主卡片（960,540 居中）：commit 截图模糊纹理 + 青柠边缘光 */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 960 - CARD_W / 2,
+          top: 540 - CARD_H / 2,
+          width: CARD_W,
+          height: CARD_H,
+          borderRadius: RADIUS,
+          overflow: 'hidden', // Q4：光不溢出圆角
+          opacity: cardOpacity,
+          transform: `scale(${cardScale})`,
+          border: `2px solid ${LIME}`,
+          boxShadow: `0 0 28px rgba(212,244,62,0.28), inset 0 0 18px rgba(212,244,62,0.10), 0 4px 12px rgba(0,0,0,0.4)`,
+        }}
+      >
+        <Img
+          src={staticFile('assets/s0-commit-blur.png')}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            filter: 'blur(8px)',
+            opacity: 0.6,
+          }}
+        />
+      </div>
+
+      {/* 标题 + 荧光笔划线（卡片下方） */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          top: 675,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+        }}
+      >
+        <div
+          style={{
+            fontFamily: FONT_SANS,
+            fontWeight: 700,
+            fontSize: FS_SLOGAN,
+            color: CORAL,
+            height: FS_SLOGAN + 8,
+            lineHeight: `${FS_SLOGAN + 8}px`,
+          }}
+        >
+          {TITLE.split('').map((ch, i) => (
+            <TitleChar key={i} ch={ch} frame={frame} start={72 + i * 2} />
+          ))}
+        </div>
+        <div
+          style={{
+            width: 400,
+            height: 4,
+            marginTop: 4,
+            backgroundColor: LIME,
+            borderRadius: 2,
+            transform: `scaleX(${lineP})`,
+            boxShadow: `0 0 12px rgba(212,244,62,0.45)`,
+          }}
+        />
+      </div>
+    </AbsoluteFill>
+  );
+};

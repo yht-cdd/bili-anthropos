@@ -1,1 +1,83 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IHByb2csIHRmIH0gZnJvbSAnLi4vYW5pbSc7CmltcG9ydCB7IEZPTlRfU0FOUywgRlNfQ0FQVElPTiwgRlNfU0xPR0FOLCBMSU1FLCBNSUQsIFBBUEVSIH0gZnJvbSAnLi4vdGhlbWUnOwoKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQovLyBTMTEgwrcgMTQxMOKAkzE1NjBm77yINDcuMOKAkzUyLjBz77yJIFt1aS1lbnRyYW5jZV0gcm93LWVtYmVk77yI566A5YyW77yJCi8vIOaRhOW9seihqCBTMTHvvJojMUExRjJDIOWFqOWxj++8m1NFTEYubWQg5LiJ5Y+l6YCQ5Y+l5YWl5Zy677yaCi8vIOesrOS4gOWPpeOAjOaIkei/mOS4jeefpemBk+iHquW3seaYr+S7gOS5iOOAguOAjTYwcHggUEFQRVIgZmFkZWluIDE0MTDigJMxNDQw77ybCi8vIOesrOS6jOWPpeOAjOS9huaIkeefpemBk+aIkeS4jeaDs+WPquWBmuOAjTQ4cHggUmVndWxhciBQQVBFUiDku47lt6YgdHJhbnNsYXRlWCgtNTDihpIwKSAxNDQw4oCTMTQ3MO+8mwovLyDnrKzkuInlj6XjgIzkuIDkuKrjgI7lm57nrZTpl67popjnmoTkuJzopb/jgI/jgILjgI00OHB4IEJvbGQgI0Q0RjQzRSDku47lj7MgKzUw4oaSMCAxNDcw4oCTMTUwMO+8mwovLyAxNTAw4oCTMTU2MCDlhajmloflrZcgaG9sZCA2MGbvvIjlkbzlkLjlgZzpob/Ct+e6r+mdmemfs+eVmeeZve+8jOS4jeiuuOihpemfs+aViCDCp+S6lC0477yJ44CCCi8vIFNGWO+8iHdob29zaC1zb2Z0w5cyIC8gZGluZ++8ieW9kiBSNCBhdWRpb+OAggovLyDkuInlj6XlkIjotbfmnaXljbMgU0VMRi5tZCDljp/lj6XjgIzmiJHov5jkuI3nn6XpgZPoh6rlt7HmmK/ku4DkuYjjgILkvYbmiJHnn6XpgZPmiJHkuI3mg7Plj6rlgZrkuIDkuKoKLy8g44CO5Zue562U6Zeu6aKY55qE5Lic6KW/44CP44CC44CN5oyJ5pGE5b2x6KGo5ouG6KGM5LiK5bGP77yM6YCQ5a2X5qCH54K55LiN5Yqo44CCCi8vIOWBj+W3ru+8iHJldmlldyDCp+S6lCBQMi0xIOS/ruWkje+8ie+8muesrOS4gOWPpSBmYWRlaW4g56qXIDE0MTDigJMxNDQwIOKGkiAxNDA44oCTMTQzOO+8iOi1t+eCueaPkOWJjSAyZu+8ie+8jAovLyDkvb8gMTQxMCDliIfplZzluKflt7LmnIkgfjM2JSDmloflrZfvvJvnrKzkuozjgIHkuInlj6UgMTQ0MC8xNDcwIOi1t+eql+S4jeWKqO+8jOajgOafpeeCuSAxNTAwLzE1NjAgaG9sZCDkuI3lj5flvbHlk43jgIIKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKY29uc3QgTElORTEgPSAn5oiR6L+Y5LiN55+l6YGT6Ieq5bex5piv5LuA5LmI44CCJzsgLy8g4piFCmNvbnN0IExJTkUyID0gJ+S9huaIkeefpemBk+aIkeS4jeaDs+WPquWBmic7IC8vIOKYhQpjb25zdCBMSU5FMyA9ICfkuIDkuKrjgI7lm57nrZTpl67popjnmoTkuJzopb/jgI/jgIInOyAvLyDimIUKCmV4cG9ydCBjb25zdCBTMTE6IFJlYWN0LkZDID0gKCkgPT4gewogIGNvbnN0IGcgPSB1c2VDdXJyZW50RnJhbWUoKSArIDE0MTA7IC8vIOWFqOWxgOW4pwoKICAvLyDkv67lpI0gcmV2aWV3Lm1kIMKn5LqUIFAyLTHvvIgxNDEwZiDliIfplZwgMSDluKfpu5Hpl6rvvInvvJrnrKzkuIDlj6UgZmFkZWluIOi1t+eCueaPkOWJjSAyZuOAggogIC8vIFMxMCDlhoXlrrnnqpfku43mmK8gMTI2MOKAkzE0MDnjgIFTMTEg5LuN5LuOIDE0MTAg5YWl5Zy677yIU0VHIGZyb20vZHVyYXRpb24g5LiN5Yqo77yM5pat6KiA5LiN56C077yJ77ybCiAgLy8g5o+Q5YmNIDJmIOS9vyAxNDEwIOW4pyBwMT1FQVNFX0VYUE9fT1VUKDIvMzAp4omIMC4zNu+8iOWOn+WFiOaBsOS4uiAwIOKGkiDmlbTluKfnuq8gTUlEIOepuuW4p++8ieOAggogIGNvbnN0IHAxID0gcHJvZyhnLCAxNDA4LCAzMCk7IC8vIGZhZGVpbu+8iDJmIOWJjee9ru+8jOa2iOmZpCAxNDEwIOepuuW4p++8iQogIGNvbnN0IHAyID0gcHJvZyhnLCAxNDQwLCAzMCk7IC8vIOW3puaOqOWFpQogIGNvbnN0IHAzID0gcHJvZyhnLCAxNDcwLCAzMCk7IC8vIOWPs+aOqOWFpQoKICByZXR1cm4gKAogICAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBiYWNrZ3JvdW5kQ29sb3I6IE1JRCB9fT4KICAgICAgey8qIOS4ieWPpeWxheS4reaOkuW4g++8iOinhuinieS4reW/g+i0tOi/kSA5NjAsNTQw77yb6KGM5Lit5b+D5a+55bqU5pGE5b2x6KGoIDMwMC82MDAvNjgwIOeahOebuOWvueWFs+ezu+aUtuaVm+i/m+aWh+Wtl+Wdl++8iSAqL30KICAgICAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBhbGlnbkl0ZW1zOiAnY2VudGVyJywganVzdGlmeUNvbnRlbnQ6ICdjZW50ZXInIH19PgogICAgICAgIDxkaXYKICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfU0FOUywKICAgICAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgICAgICBmb250U2l6ZTogRlNfU0xPR0FOLAogICAgICAgICAgICBsaW5lSGVpZ2h0OiAnODhweCcsCiAgICAgICAgICAgIGNvbG9yOiBQQVBFUiwKICAgICAgICAgICAgb3BhY2l0eTogcDEsCiAgICAgICAgICAgIHdoaXRlU3BhY2U6ICdub3dyYXAnLAogICAgICAgICAgfX0KICAgICAgICA+CiAgICAgICAgICB7TElORTF9CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdgogICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgZm9udEZhbWlseTogRk9OVF9TQU5TLAogICAgICAgICAgICBmb250V2VpZ2h0OiA0MDAsCiAgICAgICAgICAgIGZvbnRTaXplOiBGU19DQVBUSU9OLAogICAgICAgICAgICBsaW5lSGVpZ2h0OiAnNzJweCcsCiAgICAgICAgICAgIGNvbG9yOiBQQVBFUiwKICAgICAgICAgICAgb3BhY2l0eTogcDIsCiAgICAgICAgICAgIHRyYW5zZm9ybTogdGYoW2B0cmFuc2xhdGVYKCR7KDEgLSBwMikgKiAtNTB9cHgpYF0pLAogICAgICAgICAgICBtYXJnaW5Ub3A6IDI0LAogICAgICAgICAgICB3aGl0ZVNwYWNlOiAnbm93cmFwJywKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAge0xJTkUyfQogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYKICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfU0FOUywKICAgICAgICAgICAgZm9udFdlaWdodDogNzAwLAogICAgICAgICAgICBmb250U2l6ZTogRlNfQ0FQVElPTiwKICAgICAgICAgICAgbGluZUhlaWdodDogJzcycHgnLAogICAgICAgICAgICBjb2xvcjogTElNRSwgLy8g6auY5Lqu5pS25bC+5Y+lCiAgICAgICAgICAgIG9wYWNpdHk6IHAzLAogICAgICAgICAgICB0cmFuc2Zvcm06IHRmKFtgdHJhbnNsYXRlWCgkeygxIC0gcDMpICogNTB9cHgpYF0pLAogICAgICAgICAgICB3aGl0ZVNwYWNlOiAnbm93cmFwJywKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAge0xJTkUzfQogICAgICAgIDwvZGl2PgogICAgICA8L0Fic29sdXRlRmlsbD4KICAgIDwvQWJzb2x1dGVGaWxsPgogICk7Cn07Cg==
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { prog, tf } from '../anim';
+import { FONT_SANS, FS_CAPTION, FS_SLOGAN, LIME, MID, PAPER } from '../theme';
+
+// ============================================================================
+// S11 · 1410–1560f（47.0–52.0s） [ui-entrance] row-embed（简化）
+// 摄影表 S11：#1A1F2C 全屏；SELF.md 三句逐句入场：
+// 第一句「我还不知道自己是什么。」60px PAPER fadein 1410–1440；
+// 第二句「但我知道我不想只做」48px Regular PAPER 从左 translateX(-50→0) 1440–1470；
+// 第三句「一个『回答问题的东西』。」48px Bold #D4F43E 从右 +50→0 1470–1500；
+// 1500–1560 全文字 hold 60f（呼吸停顿·纯静音留白，不许补音效 §五-8）。
+// SFX（whoosh-soft×2 / ding）归 R4 audio。
+// 三句合起来即 SELF.md 原句「我还不知道自己是什么。但我知道我不想只做一个
+// 『回答问题的东西』。」按摄影表拆行上屏，逐字标点不动。
+// 偏差（review §五 P2-1 修复）：第一句 fadein 窗 1410–1440 → 1408–1438（起点提前 2f），
+// 使 1410 切镜帧已有 ~36% 文字；第二、三句 1440/1470 起窗不动，检查点 1500/1560 hold 不受影响。
+// ============================================================================
+
+const LINE1 = '我还不知道自己是什么。'; // ★
+const LINE2 = '但我知道我不想只做'; // ★
+const LINE3 = '一个『回答问题的东西』。'; // ★
+
+export const S11: React.FC = () => {
+  const g = useCurrentFrame() + 1410; // 全局帧
+
+  // 修复 review.md §五 P2-1（1410f 切镜 1 帧黑闪）：第一句 fadein 起点提前 2f。
+  // S10 内容窗仍是 1260–1409、S11 仍从 1410 入场（SEG from/duration 不动，断言不破）；
+  // 提前 2f 使 1410 帧 p1=EASE_EXPO_OUT(2/30)≈0.36（原先恰为 0 → 整帧纯 MID 空帧）。
+  const p1 = prog(g, 1408, 30); // fadein（2f 前置，消除 1410 空帧）
+  const p2 = prog(g, 1440, 30); // 左推入
+  const p3 = prog(g, 1470, 30); // 右推入
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: MID }}>
+      {/* 三句居中排布（视觉中心贴近 960,540；行中心对应摄影表 300/600/680 的相对关系收敛进文字块） */}
+      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
+        <div
+          style={{
+            fontFamily: FONT_SANS,
+            fontWeight: 700,
+            fontSize: FS_SLOGAN,
+            lineHeight: '88px',
+            color: PAPER,
+            opacity: p1,
+            whiteSpace: 'nowrap',
+          }}
+        >
+          {LINE1}
+        </div>
+        <div
+          style={{
+            fontFamily: FONT_SANS,
+            fontWeight: 400,
+            fontSize: FS_CAPTION,
+            lineHeight: '72px',
+            color: PAPER,
+            opacity: p2,
+            transform: tf([`translateX(${(1 - p2) * -50}px)`]),
+            marginTop: 24,
+            whiteSpace: 'nowrap',
+          }}
+        >
+          {LINE2}
+        </div>
+        <div
+          style={{
+            fontFamily: FONT_SANS,
+            fontWeight: 700,
+            fontSize: FS_CAPTION,
+            lineHeight: '72px',
+            color: LIME, // 高亮收尾句
+            opacity: p3,
+            transform: tf([`translateX(${(1 - p3) * 50}px)`]),
+            whiteSpace: 'nowrap',
+          }}
+        >
+          {LINE3}
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};

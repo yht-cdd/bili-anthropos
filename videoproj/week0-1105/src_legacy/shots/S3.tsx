@@ -1,1 +1,234 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEVBU0VfRVhQT19PVVQsIEVBU0VfU1dFRVAsIHByb2csIHNoYWtlWCwgc2luZVB1bHNlIH0gZnJvbSAnLi4vYW5pbSc7CmltcG9ydCB7IEJHLCBDT1JBTCwgRk9OVF9NT05PLCBGT05UX1NBTlMsIExJTUUsIFNVUkZBQ0UsIFRFUk1fR1JBWSwgVEVYVCB9IGZyb20gJy4uL3RoZW1lJzsKCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8gUzMg5Y+m6L6f6LmK5b6EIMK3IOWFqOWxgCA0ODDigJM3MjDvvIhicmllZiDCp+S6jMK3UzPvvInCtyDphY3mlrnljaEgW2VmZmVjdHNdIGljb24tcGVyZm9ybWFuY2UtbW92ZXMgKyBzbGFtLWVudHJhbmNlLW1vdmVzKEIg5byPKQovLyDmnKzlnLDluKcgPSDlhajlsYAg4oiSIDQ4MOOAggovLyAw4oCTMTIgICBGb2N1c1JhY2sg5YiH5YWl77ya5pW05q61IGJsdXIgMTBweOKGkjAgKyBzY2FsZSAxLjA04oaSMe+8iDEyIOW4pyBleHBvLW91dO+8ieOAggovLyAgICAgICAg4pqg77iPIOW6k+mHjOaXoOWQjOWQjeOAjEZvY3VzUmFja+OAjeWNoe+8jOWPliBpY29uLXBlcmZvcm1hbmNlLW1vdmVz44CM6YK75bGFIHJhY2sgZm9jdXMg5aSx54Sm44CN55qE5Y+N5ZCR6K+t5LmJCi8vICAgICAgICDvvIjlhajlnLromZrihpLlrp7vvIzmqKHmi5/plZzlpLTlr7nkuIrnhKbvvInvvIzlj4LmlbDnhacgYnJpZWbvvIzorrDmrafkuYnkuo4gcHJvZ3Jlc3MubWTjgIIKLy8gMTTigJM0NCAg5bqV6YOo55Sf5oCB5L2N5LiA6KGM5bCP5Zu+5qCH77yaNSDkuKrjgIxkc2gg5aSn5LyX44CN54Gw6IO25ZuKIFN0YWdnZXIgc3RlcCA277yIMTQvMjAvMjYvMzIvMzjvvInvvIwKLy8gICAgICAgIOesrCA2IOS4quOAjG9wZW5jb2Rl44CN6Z2S5p+g5ZyoIGxvY2FsIDQw77yIPSDlhajlsYAgNTIw77yMYnJpZWYgdGlja0A1MjDvvInkuq7otbfvvJoKLy8gICAgICAgIOiQveWcsCBzcXVhc2jvvIjlrr0gMS4xMi/pq5ggMC44OO+8jDIg5bin77yJKyDlvLnnsKflm57nqLMgKyDlhrLlh7vnjq/mianmlaPvvIhhdHRlbnRpb24tYm91bmNlIOeahOacgOWwj+WunuS+i++8ie+8jAovLyAgICAgICAg5ZCM5pe2IDUg5Liq54Gw5L2N6ZmN6aWx5ZKM5YiwIDQ1Je+8iOmCu+WxheiuqeS9je+8ieOAggovLyA4MOKAkzE0MO+8iOWFqOWxgCA1NjDigJM2MjDvvInkuLvlj6UgNjRweCBzbGFtIOKYheOAjOWPpui+n+i5iuW+hOeahCBvcGVuY29kZe+8jOS4jeaYryBkc2gg5aSn5LyX44CC44CNCi8vICAgICAgICBzY2FsZSAxLjPihpIxLjAg6LWwIDYg5binIGVhc2UtaW7vvIzokL3lrprlj6Agc2hha2VYIGFtcGxpdHVkZSA444CCCi8vICAgICAgICDimqDvuI8gYnJpZWYg5pyq57uZIFMzIOmch+W5he+8jOWPliA477yIPCBTMSDnmoQgMTLvvIzkuLvmrKHmnInliKvvvInvvIzorrDmrafkuYnjgIIKLy8gICAgICAgIOOAjG9wZW5jb2Rl44CN5LiK6Z2S5p+g44CB44CMZHNoIOWkp+S8l+OAjeS4iue7iOerr+eBsCA9IOS4juWbvuagh+ihjOWQjOiJsuezu++8iOinhuinieWPo+W+hO+8jOaWh+Wtl+mAkOWtl+acquWKqO+8ieOAggovLyAxNjDigJMyMjDvvIjlhajlsYAgNjQw4oCTNzAw77yJ5Ymv5Y+lIDQ0cHgg5ouG5Lik6KGM77yI4piF5Li75Lq65Y+l77yJ77yM44CM5Y2W5oOo44CN44CM5pak5pak6K6h6L6D44CN54+K55Ga44CCCi8vIDIzNOKAkzI0MCDmlbTmrrUgNiDluKfmt6Hlh7rvvIjpgIDlnLrnuqrlvovvvInvvIzkuqTnu5kgUzQg55qEIHdob29zaOOAggovLyDnoLjlhaXorqHmlbDvvJrmnKzniYcgUzEg5ZCI6K6hICsgUzMg5Li75Y+lID0gMiDmrKHvvIznrKblkIggc2xhbSDljaHjgIzlhajniYcg4omkMuOAjee6quW+i+OAggovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Cgpjb25zdCBDSElQID0gMTEwOwpjb25zdCBDSElQX0dBUCA9IDQ2Owpjb25zdCBST1dfVyA9IDYgKiBDSElQICsgNSAqIENISVBfR0FQOwpjb25zdCBST1dfWCA9ICgxOTIwIC0gUk9XX1cpIC8gMjsKY29uc3QgUk9XX1kgPSA3MzA7CgovLyDpopzoibLmj5LlgLzvvJrpnZLmn6DkvY3jgIzlhYjngbDlkI7kuq7jgI3nlKjov57nu63mj5LlgLzvvIzkuI3lgZrnoazliIfvvIjnoazliIfor7vkvZzotLTlm77mjaLkuoblvKDvvIkKdHlwZSBSR0IgPSBbbnVtYmVyLCBudW1iZXIsIG51bWJlcl07CmNvbnN0IHJnYmEgPSAoYzogUkdCLCBhOiBudW1iZXIpOiBzdHJpbmcgPT4gYHJnYmEoJHtjWzBdfSwke2NbMV19LCR7Y1syXX0sJHthLnRvRml4ZWQoMyl9KWA7CmNvbnN0IG1peCA9IChhOiBSR0IsIGI6IFJHQiwgdDogbnVtYmVyKTogUkdCID0+IFsKICBNYXRoLnJvdW5kKGFbMF0gKyAoYlswXSAtIGFbMF0pICogdCksCiAgTWF0aC5yb3VuZChhWzFdICsgKGJbMV0gLSBhWzFdKSAqIHQpLAogIE1hdGgucm91bmQoYVsyXSArIChiWzJdIC0gYVsyXSkgKiB0KSwKXTsKY29uc3QgR1JBWV9SR0I6IFJHQiA9IFsxMzksIDE0OCwgMTU4XTsgLy8gPSBURVJNX0dSQVkKY29uc3QgTElNRV9SR0I6IFJHQiA9IFsyMTIsIDI0NCwgNjJdOyAvLyA9IExJTUUKCmNvbnN0IFNVQl9MMSA9ICdhcGkg5qih5Z6L5q+P5aSp5pel5ouo6aKd5bqm4oCU4oCUJzsKY29uc3QgU1VCX0wyX0EgPSAn5LiN5b+FJzsKY29uc3QgU1VCX0wyX0IgPSAn5Y2W5oOoJzsKY29uc3QgU1VCX0wyX0MgPSAn77yM5Lmf5LiN5b+FJzsKY29uc3QgU1VCX0wyX0QgPSAn5pak5pak6K6h6L6DJzsKY29uc3QgU1VCX0wyX0UgPSAn5oiQ5pys44CCJzsKCnR5cGUgU2VnID0geyB0OiBzdHJpbmc7IGM6IHN0cmluZyB9Owpjb25zdCBNQUlOX1NFR1M6IFNlZ1tdID0gWwogIHsgdDogJ+WPpui+n+i5iuW+hOeahCAnLCBjOiBURVhUIH0sCiAgeyB0OiAnb3BlbmNvZGUnLCBjOiBMSU1FIH0sCiAgeyB0OiAn77yM5LiN5pivICcsIGM6IFRFWFQgfSwKICB7IHQ6ICdkc2gg5aSn5LyXJywgYzogVEVSTV9HUkFZIH0sCiAgeyB0OiAn44CCJywgYzogVEVYVCB9LApdOwoKY29uc3QgTElNRV9BVCA9IDQwOyAvLyDlhajlsYAgNTIw77yIYnJpZWYgdGlja0A1MjDvvIkKY29uc3QgTEFORCA9IExJTUVfQVQgKyA5OyAvLyDpnZLmn6DkvY3ljYfotbcgOSDluKflkI7okL3lnLDvvJrmjKTljovjgIHlhrLlh7vnjq/jgIHpgrvlsYXorqnkvY3pg73ku47ov5nluKfotbfnrpcKCmV4cG9ydCBjb25zdCBTMzogUmVhY3QuRkMgPSAoKSA9PiB7CiAgY29uc3QgZiA9IHVzZUN1cnJlbnRGcmFtZSgpOwogIGNvbnN0IHJhY2sgPSBwcm9nKGYsIDAsIDEyLCBFQVNFX0VYUE9fT1VUKTsgLy8gRm9jdXNSYWNrIOaLieeEpgogIGNvbnN0IHNsYW0gPSBwcm9nKGYsIDgwLCA2LCBFQVNFX1NXRUVQKTsgLy8g5Li75Y+lIHNjYWxlIOaUtgogIGNvbnN0IHNsYW1JbiA9IHByb2coZiwgODAsIDQsIEVBU0VfRVhQT19PVVQpOwogIGNvbnN0IHNoYWtlID0gc2hha2VYKGYsIDg2LCA4KTsgLy8g6JC95a6a5bin6LW36ZyHCiAgY29uc3QgaWduaXRlID0gcHJvZyhmLCBMQU5ELCAxMCwgRUFTRV9FWFBPX09VVCk7IC8vIOS6rui1t++8mui+ueahhi/lupXnurkv6L6J5YWJ5o+S5YC8CiAgY29uc3Qgc3EgPSBwcm9nKGYsIExBTkQsIDIsIEVBU0VfU1dFRVApICogKDEgLSBwcm9nKGYsIExBTkQgKyAyLCA4LCBFQVNFX0VYUE9fT1VUKSk7IC8vIOaOpeinpiAyZiDljovmiYHvvIw4ZiDlm57nqLMKICBjb25zdCByaW5nID0gcHJvZyhmLCBMQU5ELCAxNiwgRUFTRV9FWFBPX09VVCk7IC8vIOWGsuWHu+eOrwogIGNvbnN0IGRpbUdyYXkgPSBwcm9nKGYsIExBTkQsIDEyLCBFQVNFX0VYUE9fT1VUKTsgLy8g6YK75bGF6K6p5L2NCiAgY29uc3QgczEgPSBwcm9nKGYsIDE2MCwgMTAsIEVBU0VfRVhQT19PVVQpOwogIGNvbnN0IHMyID0gcHJvZyhmLCAxNzAsIDEwLCBFQVNFX0VYUE9fT1VUKTsKICBjb25zdCBleGl0ID0gcHJvZyhmLCAyMzQsIDYsIEVBU0VfRVhQT19PVVQpOwogIGNvbnN0IHB1bHNlID0gc2luZVB1bHNlKGYsIExBTkQgKyAxNiwgOTApOyAvLyDkuq7otbfnmoTlkbzlkLjvvIjovonlhYnlkajmnJ8gOTAg5bin77yM5bmF5bqm5Y+q57uZIGJveC1zaGFkb3fvvIkKCiAgY29uc3Qgc3F1YXNoWCA9IDEgKyAwLjE0ICogc3E7IC8vIOWNoe+8mnNxdWFzaCDnvLrluK0gPSDmsqHmnInph43ph48KICBjb25zdCBzcXVhc2hZID0gMSAtIDAuMTQgKiBzcTsKCiAgcmV0dXJuICgKICAgIDxBYnNvbHV0ZUZpbGwKICAgICAgc3R5bGU9e3sKICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6IEJHLAogICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfU0FOUywKICAgICAgICBvcGFjaXR5OiAxIC0gZXhpdCwKICAgICAgICBmaWx0ZXI6IGBibHVyKCR7KDEwICogKDEgLSByYWNrKSkudG9GaXhlZCgyKX1weClgLAogICAgICAgIHRyYW5zZm9ybTogYHNjYWxlKCR7MS4wNCAtIDAuMDQgKiByYWNrfSlgLAogICAgICB9fQogICAgPgogICAgICB7Lyog5Li75Y+lIDY0cHggc2xhbe+8iOKYheS4u+S6uuWPpemAkOWtl++8jOS7heWIhuauteedgOiJsu+8iSAqL30KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGxlZnQ6IDAsCiAgICAgICAgICB0b3A6IDI2MiwKICAgICAgICAgIHdpZHRoOiAxOTIwLAogICAgICAgICAgdGV4dEFsaWduOiAnY2VudGVyJywKICAgICAgICAgIGZvbnRTaXplOiA2NCwKICAgICAgICAgIGZvbnRXZWlnaHQ6IDcwMCwKICAgICAgICAgIGNvbG9yOiBURVhULAogICAgICAgICAgb3BhY2l0eTogc2xhbUluLAogICAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWCgke3NoYWtlfXB4KSBzY2FsZSgkezEuMyAtIDAuMyAqIHNsYW19KWAsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIHtNQUlOX1NFR1MubWFwKChzZywgaSkgPT4gKAogICAgICAgICAgPHNwYW4ga2V5PXtpfSBzdHlsZT17eyBjb2xvcjogc2cuYyB9fT4KICAgICAgICAgICAge3NnLnR9CiAgICAgICAgICA8L3NwYW4+CiAgICAgICAgKSl9CiAgICAgIDwvZGl2PgoKICAgICAgey8qIOWJr+WPpSA0NHB4IOS4pOihjO+8iOKYheS4u+S6uuWPpeaLhuWIhu+8jOePiueRmuW8uuiwg+S4pOS4quivje+8iSAqL30KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGxlZnQ6IDAsCiAgICAgICAgICB0b3A6IDQxNCwKICAgICAgICAgIHdpZHRoOiAxOTIwLAogICAgICAgICAgdGV4dEFsaWduOiAnY2VudGVyJywKICAgICAgICAgIGZvbnRTaXplOiA0NCwKICAgICAgICAgIGZvbnRXZWlnaHQ6IDUwMCwKICAgICAgICAgIGNvbG9yOiBURVhULAogICAgICAgICAgbGluZUhlaWdodDogMS41NSwKICAgICAgICB9fQogICAgICA+CiAgICAgICAgPGRpdiBzdHlsZT17eyBvcGFjaXR5OiBzMSwgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWSgkezEyICogKDEgLSBzMSl9cHgpYCB9fT57U1VCX0wxfTwvZGl2PgogICAgICAgIDxkaXYKICAgICAgICAgIHN0eWxlPXt7IG9wYWNpdHk6IHMyLCB0cmFuc2Zvcm06IGB0cmFuc2xhdGVZKCR7MTIgKiAoMSAtIHMyKX1weClgIH19CiAgICAgICAgPgogICAgICAgICAgPHNwYW4+e1NVQl9MMl9BfTwvc3Bhbj4KICAgICAgICAgIDxzcGFuIHN0eWxlPXt7IGNvbG9yOiBDT1JBTCwgZm9udFdlaWdodDogNzAwIH19PntTVUJfTDJfQn08L3NwYW4+CiAgICAgICAgICA8c3Bhbj57U1VCX0wyX0N9PC9zcGFuPgogICAgICAgICAgPHNwYW4gc3R5bGU9e3sgY29sb3I6IENPUkFMLCBmb250V2VpZ2h0OiA3MDAgfX0+e1NVQl9MMl9EfTwvc3Bhbj4KICAgICAgICAgIDxzcGFuPntTVUJfTDJfRX08L3NwYW4+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgoKICAgICAgey8qIOeUn+aAgeS9jeWbvuagh+ihjO+8mjUg54Gw44CMZHNoIOWkp+S8l+OAjSsgMeOAjG9wZW5jb2Rl44CN6Z2S5p+g77yIU3RhZ2dlciDlhYjngbDlkI7kuq7vvIkgKi99CiAgICAgIHtBcnJheS5mcm9tKHsgbGVuZ3RoOiA2IH0sIChfLCBpKSA9PiB7CiAgICAgICAgY29uc3QgaXNMaW1lID0gaSA9PT0gNTsKICAgICAgICBjb25zdCBhdCA9IGlzTGltZSA/IExJTUVfQVQgOiAxNCArIGkgKiA2OyAvLyBzdGVwIDYg5YWI6LW354Gw5L2N77yM6Z2S5p+g5ZyoIGxvY2FsIDQwIOWFpeWcugogICAgICAgIGNvbnN0IHAgPSBwcm9nKGYsIGF0LCA5LCBFQVNFX0VYUE9fT1VUKTsKICAgICAgICBjb25zdCB4ID0gUk9XX1ggKyBpICogKENISVAgKyBDSElQX0dBUCk7CiAgICAgICAgY29uc3QgbGlmdCA9IDI2ICogKDEgLSBwKTsKICAgICAgICBjb25zdCBncmF5RGltID0gaXNMaW1lID8gMSA6IDEgLSAwLjU1ICogZGltR3JheTsgLy8g6YK75bGF6K6p5L2N77yI5Y2h77ya6YK75bGF5aSx54SmL+mZjemlseWSjO+8iQogICAgICAgIGNvbnN0IGxpbWVSZ2IgPSBtaXgoR1JBWV9SR0IsIExJTUVfUkdCLCBpZ25pdGUpOwogICAgICAgIHJldHVybiAoCiAgICAgICAgICA8ZGl2CiAgICAgICAgICAgIGtleT17aX0KICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgICAgICBsZWZ0OiB4LAogICAgICAgICAgICAgIHRvcDogUk9XX1kgKyBsaWZ0LAogICAgICAgICAgICAgIHdpZHRoOiBDSElQLAogICAgICAgICAgICAgIG9wYWNpdHk6IHAgKiBncmF5RGltLAogICAgICAgICAgICAgIHRyYW5zZm9ybTogaXNMaW1lID8gYHNjYWxlKCR7c3F1YXNoWC50b0ZpeGVkKDQpfSwgJHtzcXVhc2hZLnRvRml4ZWQoNCl9KWAgOiB1bmRlZmluZWQsCiAgICAgICAgICAgICAgdHJhbnNmb3JtT3JpZ2luOiAnNTAlIDEwMCUnLAogICAgICAgICAgICAgIHRleHRBbGlnbjogJ2NlbnRlcicsCiAgICAgICAgICAgIH19CiAgICAgICAgICA+CiAgICAgICAgICAgIHsvKiDokL3lnLDlhrLlh7vnjq/vvIhhdHRlbnRpb24tYm91bmNlIOa6heeCueeahOacgOWwj+WunuS+i++8ie+8mueUu+WcqOWNoeS9k+S5i+WJjSDihpIg5Y6L5Zyo5Y2h54mH6IOM5ZCO77yMCiAgICAgICAgICAgICAgICDlkKbliJnnjq/lj6DlnKjlm77moIfkuIror7vkvZzjgIzpnbblrZDjgI0gKi99CiAgICAgICAgICAgIHtpc0xpbWUgJiYgZiA+PSBMQU5EICYmIHJpbmcgPCAxID8gKAogICAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgICAgICAgICBsZWZ0OiBDSElQIC8gMiAtIDE5MCAqIHJpbmcsCiAgICAgICAgICAgICAgICAgIHRvcDogQ0hJUCAvIDIgLSAxOTAgKiByaW5nLAogICAgICAgICAgICAgICAgICB3aWR0aDogMzgwICogcmluZywKICAgICAgICAgICAgICAgICAgaGVpZ2h0OiAzODAgKiByaW5nLAogICAgICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6ICc1MCUnLAogICAgICAgICAgICAgICAgICBib3JkZXI6IGAke01hdGgubWF4KDEsIDcgKiAoMSAtIHJpbmcpKS50b0ZpeGVkKDEpfXB4IHNvbGlkICR7cmdiYShMSU1FX1JHQiwgMC41NSl9YCwKICAgICAgICAgICAgICAgICAgb3BhY2l0eTogMSAtIHJpbmcsCiAgICAgICAgICAgICAgICB9fQogICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICkgOiBudWxsfQogICAgICAgICAgICB7Lyog5Y2h5L2TICovfQogICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgIHBvc2l0aW9uOiAncmVsYXRpdmUnLAogICAgICAgICAgICAgICAgd2lkdGg6IENISVAsCiAgICAgICAgICAgICAgICBoZWlnaHQ6IENISVAsCiAgICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6IDIyLAogICAgICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiBTVVJGQUNFLAogICAgICAgICAgICAgICAgYm9yZGVyOiBgMnB4IHNvbGlkICR7aXNMaW1lID8gcmdiYShsaW1lUmdiLCAwLjM1ICsgMC42NSAqIGlnbml0ZSkgOiByZ2JhKEdSQVlfUkdCLCAwLjM1KX1gLAogICAgICAgICAgICAgICAgZGlzcGxheTogJ2ZsZXgnLAogICAgICAgICAgICAgICAgYWxpZ25JdGVtczogJ2NlbnRlcicsCiAgICAgICAgICAgICAgICBqdXN0aWZ5Q29udGVudDogJ2NlbnRlcicsCiAgICAgICAgICAgICAgICBib3hTaGFkb3c6IGlzTGltZQogICAgICAgICAgICAgICAgICA/IGAwIDAgJHtNYXRoLnJvdW5kKCgxOCArIDE2ICogcHVsc2UpICogaWduaXRlKX1weCAke3JnYmEoTElNRV9SR0IsICgwLjM1ICsgMC4yNSAqIHB1bHNlKSAqIGlnbml0ZSl9YAogICAgICAgICAgICAgICAgICA6ICdub25lJywKICAgICAgICAgICAgICAgIG92ZXJmbG93OiAnaGlkZGVuJywKICAgICAgICAgICAgICB9fQogICAgICAgICAgICA+CiAgICAgICAgICAgICAgey8qIOS6rui1t+WQjueahOmdkuafoOW6lee6ue+8iOWPoOWxguaPkuWAvO+8jOS4jeehrOWIh++8iSAqL30KICAgICAgICAgICAgICB7aXNMaW1lID8gKAogICAgICAgICAgICAgICAgPGRpdiBzdHlsZT17eyBwb3NpdGlvbjogJ2Fic29sdXRlJywgaW5zZXQ6IDAsIGJhY2tncm91bmRDb2xvcjogcmdiYShMSU1FX1JHQiwgMC4xMiAqIGlnbml0ZSkgfX0gLz4KICAgICAgICAgICAgICApIDogbnVsbH0KICAgICAgICAgICAgICB7Lyog5bCP5Zu+5qCH5YWo55So5YaF6IGU5Zu+5b2i77yM5LiN5byV5aSW6YOoIGxvZ28gKi99CiAgICAgICAgICAgICAge2lzTGltZSA/ICgKICAgICAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgICAgICB3aWR0aDogNDQsCiAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiA0NCwKICAgICAgICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6IDgsCiAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiByZ2JhKGxpbWVSZ2IsIDAuOSksCiAgICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgICkgOiAoCiAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSI1NiIgaGVpZ2h0PSI1NiIgdmlld0JveD0iMCAwIDU2IDU2IiBhcmlhLWhpZGRlbj0idHJ1ZSI+CiAgICAgICAgICAgICAgICAgIDxjaXJjbGUgY3g9IjI4IiBjeT0iMTkiIHI9IjEwIiBmaWxsPXtURVJNX0dSQVl9IC8+CiAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik04IDUwYzAtMTEgOS0xNyAyMC0xN3MyMCA2IDIwIDE3eiIgZmlsbD17VEVSTV9HUkFZfSAvPgogICAgICAgICAgICAgICAgPC9zdmc+CiAgICAgICAgICAgICAgKX0KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIHsvKiDmoIfnrb4gKi99CiAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgbWFyZ2luVG9wOiAxNCwKICAgICAgICAgICAgICAgIGZvbnRGYW1pbHk6IEZPTlRfTU9OTywKICAgICAgICAgICAgICAgIGZvbnRTaXplOiAyMiwKICAgICAgICAgICAgICAgIGNvbG9yOiBpc0xpbWUgPyByZ2JhKGxpbWVSZ2IsIDEpIDogVEVSTV9HUkFZLAogICAgICAgICAgICAgICAgd2hpdGVTcGFjZTogJ25vd3JhcCcsCiAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIHtpc0xpbWUgPyAnb3BlbmNvZGUnIDogJ2RzaCDlpKfkvJcnfQogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICk7CiAgICAgIH0pfQoKICAgICAgey8qIOW6lemDqOeUn+aAgeS9jeWbvuagh+ihjOS7peWbvuW9ouiHquaYju+8jOS4jeWGjeWPoOazqOino+aWh+ahiCAqL30KICAgIDwvQWJzb2x1dGVGaWxsPgogICk7Cn07Cg==
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { EASE_EXPO_OUT, EASE_SWEEP, prog, shakeX, sinePulse } from '../anim';
+import { BG, CORAL, FONT_MONO, FONT_SANS, LIME, SURFACE, TERM_GRAY, TEXT } from '../theme';
+
+// ============================================================================
+// S3 另辟蹊径 · 全局 480–720（brief §二·S3）· 配方卡 [effects] icon-performance-moves + slam-entrance-moves(B 式)
+// 本地帧 = 全局 − 480。
+// 0–12   FocusRack 切入：整段 blur 10px→0 + scale 1.04→1（12 帧 expo-out）。
+//        ⚠️ 库里无同名「FocusRack」卡，取 icon-performance-moves「邻居 rack focus 失焦」的反向语义
+//        （全场虚→实，模拟镜头对上焦），参数照 brief，记歧义于 progress.md。
+// 14–44  底部生态位一行小图标：5 个「dsh 大众」灰胶囊 Stagger step 6（14/20/26/32/38），
+//        第 6 个「opencode」青柠在 local 40（= 全局 520，brief tick@520）亮起：
+//        落地 squash（宽 1.12/高 0.88，2 帧）+ 弹簧回稳 + 冲击环扩散（attention-bounce 的最小实例），
+//        同时 5 个灰位降饱和到 45%（邻居让位）。
+// 80–140（全局 560–620）主句 64px slam ★「另辟蹊径的 opencode，不是 dsh 大众。」
+//        scale 1.3→1.0 走 6 帧 ease-in，落定叠 shakeX amplitude 8。
+//        ⚠️ brief 未给 S3 震幅，取 8（< S1 的 12，主次有别），记歧义。
+//        「opencode」上青柠、「dsh 大众」上终端灰 = 与图标行同色系（视觉口径，文字逐字未动）。
+// 160–220（全局 640–700）副句 44px 拆两行（★主人句），「卖惨」「斤斤计较」珊瑚。
+// 234–240 整段 6 帧淡出（退场纪律），交给 S4 的 whoosh。
+// 砸入计数：本片 S1 合计 + S3 主句 = 2 次，符合 slam 卡「全片 ≤2」纪律。
+// ============================================================================
+
+const CHIP = 110;
+const CHIP_GAP = 46;
+const ROW_W = 6 * CHIP + 5 * CHIP_GAP;
+const ROW_X = (1920 - ROW_W) / 2;
+const ROW_Y = 730;
+
+// 颜色插值：青柠位「先灰后亮」用连续插值，不做硬切（硬切读作贴图换了张）
+type RGB = [number, number, number];
+const rgba = (c: RGB, a: number): string => `rgba(${c[0]},${c[1]},${c[2]},${a.toFixed(3)})`;
+const mix = (a: RGB, b: RGB, t: number): RGB => [
+  Math.round(a[0] + (b[0] - a[0]) * t),
+  Math.round(a[1] + (b[1] - a[1]) * t),
+  Math.round(a[2] + (b[2] - a[2]) * t),
+];
+const GRAY_RGB: RGB = [139, 148, 158]; // = TERM_GRAY
+const LIME_RGB: RGB = [212, 244, 62]; // = LIME
+
+const SUB_L1 = 'api 模型每天日拨额度——';
+const SUB_L2_A = '不必';
+const SUB_L2_B = '卖惨';
+const SUB_L2_C = '，也不必';
+const SUB_L2_D = '斤斤计较';
+const SUB_L2_E = '成本。';
+
+type Seg = { t: string; c: string };
+const MAIN_SEGS: Seg[] = [
+  { t: '另辟蹊径的 ', c: TEXT },
+  { t: 'opencode', c: LIME },
+  { t: '，不是 ', c: TEXT },
+  { t: 'dsh 大众', c: TERM_GRAY },
+  { t: '。', c: TEXT },
+];
+
+const LIME_AT = 40; // 全局 520（brief tick@520）
+const LAND = LIME_AT + 9; // 青柠位升起 9 帧后落地：挤压、冲击环、邻居让位都从这帧起算
+
+export const S3: React.FC = () => {
+  const f = useCurrentFrame();
+  const rack = prog(f, 0, 12, EASE_EXPO_OUT); // FocusRack 拉焦
+  const slam = prog(f, 80, 6, EASE_SWEEP); // 主句 scale 收
+  const slamIn = prog(f, 80, 4, EASE_EXPO_OUT);
+  const shake = shakeX(f, 86, 8); // 落定帧起震
+  const ignite = prog(f, LAND, 10, EASE_EXPO_OUT); // 亮起：边框/底纹/辉光插值
+  const sq = prog(f, LAND, 2, EASE_SWEEP) * (1 - prog(f, LAND + 2, 8, EASE_EXPO_OUT)); // 接触 2f 压扁，8f 回稳
+  const ring = prog(f, LAND, 16, EASE_EXPO_OUT); // 冲击环
+  const dimGray = prog(f, LAND, 12, EASE_EXPO_OUT); // 邻居让位
+  const s1 = prog(f, 160, 10, EASE_EXPO_OUT);
+  const s2 = prog(f, 170, 10, EASE_EXPO_OUT);
+  const exit = prog(f, 234, 6, EASE_EXPO_OUT);
+  const pulse = sinePulse(f, LAND + 16, 90); // 亮起的呼吸（辉光周期 90 帧，幅度只给 box-shadow）
+
+  const squashX = 1 + 0.14 * sq; // 卡：squash 缺席 = 没有重量
+  const squashY = 1 - 0.14 * sq;
+
+  return (
+    <AbsoluteFill
+      style={{
+        backgroundColor: BG,
+        fontFamily: FONT_SANS,
+        opacity: 1 - exit,
+        filter: `blur(${(10 * (1 - rack)).toFixed(2)}px)`,
+        transform: `scale(${1.04 - 0.04 * rack})`,
+      }}
+    >
+      {/* 主句 64px slam（★主人句逐字，仅分段着色） */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          top: 262,
+          width: 1920,
+          textAlign: 'center',
+          fontSize: 64,
+          fontWeight: 700,
+          color: TEXT,
+          opacity: slamIn,
+          transform: `translateX(${shake}px) scale(${1.3 - 0.3 * slam})`,
+        }}
+      >
+        {MAIN_SEGS.map((sg, i) => (
+          <span key={i} style={{ color: sg.c }}>
+            {sg.t}
+          </span>
+        ))}
+      </div>
+
+      {/* 副句 44px 两行（★主人句拆分，珊瑚强调两个词） */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          top: 414,
+          width: 1920,
+          textAlign: 'center',
+          fontSize: 44,
+          fontWeight: 500,
+          color: TEXT,
+          lineHeight: 1.55,
+        }}
+      >
+        <div style={{ opacity: s1, transform: `translateY(${12 * (1 - s1)}px)` }}>{SUB_L1}</div>
+        <div
+          style={{ opacity: s2, transform: `translateY(${12 * (1 - s2)}px)` }}
+        >
+          <span>{SUB_L2_A}</span>
+          <span style={{ color: CORAL, fontWeight: 700 }}>{SUB_L2_B}</span>
+          <span>{SUB_L2_C}</span>
+          <span style={{ color: CORAL, fontWeight: 700 }}>{SUB_L2_D}</span>
+          <span>{SUB_L2_E}</span>
+        </div>
+      </div>
+
+      {/* 生态位图标行：5 灰「dsh 大众」+ 1「opencode」青柠（Stagger 先灰后亮） */}
+      {Array.from({ length: 6 }, (_, i) => {
+        const isLime = i === 5;
+        const at = isLime ? LIME_AT : 14 + i * 6; // step 6 先起灰位，青柠在 local 40 入场
+        const p = prog(f, at, 9, EASE_EXPO_OUT);
+        const x = ROW_X + i * (CHIP + CHIP_GAP);
+        const lift = 26 * (1 - p);
+        const grayDim = isLime ? 1 : 1 - 0.55 * dimGray; // 邻居让位（卡：邻居失焦/降饱和）
+        const limeRgb = mix(GRAY_RGB, LIME_RGB, ignite);
+        return (
+          <div
+            key={i}
+            style={{
+              position: 'absolute',
+              left: x,
+              top: ROW_Y + lift,
+              width: CHIP,
+              opacity: p * grayDim,
+              transform: isLime ? `scale(${squashX.toFixed(4)}, ${squashY.toFixed(4)})` : undefined,
+              transformOrigin: '50% 100%',
+              textAlign: 'center',
+            }}
+          >
+            {/* 落地冲击环（attention-bounce 溅点的最小实例）：画在卡体之前 → 压在卡片背后，
+                否则环叠在图标上读作「靶子」 */}
+            {isLime && f >= LAND && ring < 1 ? (
+              <div
+                style={{
+                  position: 'absolute',
+                  left: CHIP / 2 - 190 * ring,
+                  top: CHIP / 2 - 190 * ring,
+                  width: 380 * ring,
+                  height: 380 * ring,
+                  borderRadius: '50%',
+                  border: `${Math.max(1, 7 * (1 - ring)).toFixed(1)}px solid ${rgba(LIME_RGB, 0.55)}`,
+                  opacity: 1 - ring,
+                }}
+              />
+            ) : null}
+            {/* 卡体 */}
+            <div
+              style={{
+                position: 'relative',
+                width: CHIP,
+                height: CHIP,
+                borderRadius: 22,
+                backgroundColor: SURFACE,
+                border: `2px solid ${isLime ? rgba(limeRgb, 0.35 + 0.65 * ignite) : rgba(GRAY_RGB, 0.35)}`,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                boxShadow: isLime
+                  ? `0 0 ${Math.round((18 + 16 * pulse) * ignite)}px ${rgba(LIME_RGB, (0.35 + 0.25 * pulse) * ignite)}`
+                  : 'none',
+                overflow: 'hidden',
+              }}
+            >
+              {/* 亮起后的青柠底纹（叠层插值，不硬切） */}
+              {isLime ? (
+                <div style={{ position: 'absolute', inset: 0, backgroundColor: rgba(LIME_RGB, 0.12 * ignite) }} />
+              ) : null}
+              {/* 小图标全用内联图形，不引外部 logo */}
+              {isLime ? (
+                <div
+                  style={{
+                    width: 44,
+                    height: 44,
+                    borderRadius: 8,
+                    backgroundColor: rgba(limeRgb, 0.9),
+                  }}
+                />
+              ) : (
+                <svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true">
+                  <circle cx="28" cy="19" r="10" fill={TERM_GRAY} />
+                  <path d="M8 50c0-11 9-17 20-17s20 6 20 17z" fill={TERM_GRAY} />
+                </svg>
+              )}
+            </div>
+            {/* 标签 */}
+            <div
+              style={{
+                marginTop: 14,
+                fontFamily: FONT_MONO,
+                fontSize: 22,
+                color: isLime ? rgba(limeRgb, 1) : TERM_GRAY,
+                whiteSpace: 'nowrap',
+              }}
+            >
+              {isLime ? 'opencode' : 'dsh 大众'}
+            </div>
+          </div>
+        );
+      })}
+
+      {/* 底部生态位图标行以图形自明，不再叠注解文案 */}
+    </AbsoluteFill>
+  );
+};

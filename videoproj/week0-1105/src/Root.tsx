@@ -1,1 +1,16 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQ29tcG9zaXRpb24gfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEZpbG0gfSBmcm9tICcuL01haW4nOwppbXBvcnQgeyBGUFMsIEgsIFRPVEFMX0ZSQU1FUywgVyB9IGZyb20gJy4vdGhlbWUnOwoKLy8gMTkyMHgxMDgwIOaoqueJiCBAMzBmcHMgwrcgNjYuMHMgPSAxOTgwIOW4p++8iOmZhOW9lSBEMu+8icK3IGlkPUFudGhyb3Bvc1ZpZGVv77yI5a+56b2QIENJIOa4suafk+WFpeWPo++8iQpleHBvcnQgY29uc3QgUmVtb3Rpb25Sb290OiBSZWFjdC5GQyA9ICgpID0+ICgKICA8Q29tcG9zaXRpb24KICAgIGlkPSJBbnRocm9wb3NWaWRlbyIKICAgIGNvbXBvbmVudD17RmlsbX0KICAgIGR1cmF0aW9uSW5GcmFtZXM9e1RPVEFMX0ZSQU1FU30KICAgIGZwcz17RlBTfQogICAgd2lkdGg9e1d9CiAgICBoZWlnaHQ9e0h9CiAgLz4KKTsK
+import React from 'react';
+import { Composition } from 'remotion';
+import { Film } from './Main';
+import { FPS, H, TOTAL_FRAMES, W } from './theme';
+
+// 1920x1080 横版 @30fps · 66.0s = 1980 帧（附录 D2）· id=AnthroposVideo（对齐 CI 渲染入口）
+export const RemotionRoot: React.FC = () => (
+  <Composition
+    id="AnthroposVideo"
+    component={Film}
+    durationInFrames={TOTAL_FRAMES}
+    fps={FPS}
+    width={W}
+    height={H}
+  />
+);

@@ -1,1 +1,15 @@
-ewogICJ0b3RhbCI6IDYwLAogICJiZWQiOiB7ICJjdWUiOiAicGFkIiwgImdhaW4iOiAwLjE2LCAic2lsZW5jZSI6IFszNC4wLCAzNC40XSB9LAogICJjdWVzIjogWwogICAgeyAiYXQiOiAwLjMsICJjdWUiOiAiZXJyb3IiLCAiZ2FpbiI6IDAuOCB9LAogICAgeyAiYXQiOiA1LjQsICJjdWUiOiAiYm9vbSIsICJnYWluIjogMC44NSB9LAogICAgeyAiYXQiOiA3LjAsICJjdWUiOiAid2hvb3NoIiwgInNlY29uZHMiOiAwLjksICJnYWluIjogMC42IH0sCiAgICB7ICJhdCI6IDE2LjAsICJjdWUiOiAid2hvb3NoIiwgInNlY29uZHMiOiAwLjksICJnYWluIjogMC42IH0sCiAgICB7ICJhdCI6IDE3LjMsICJjdWUiOiAidGljayIsICJnYWluIjogMC42IH0sCiAgICB7ICJhdCI6IDI0LjAsICJjdWUiOiAid2hvb3NoIiwgInNlY29uZHMiOiAwLjksICJnYWluIjogMC42IH0sCiAgICB7ICJhdCI6IDM3LjMsICJjdWUiOiAiZGluZyIsICJnYWluIjogMC43IH0sCiAgICB7ICJhdCI6IDQyLjAsICJjdWUiOiAiYm9vbSIsICJnYWluIjogMC44NSB9LAogICAgeyAiYXQiOiA0NC4wLCAiY3VlIjogIndob29zaCIsICJzZWNvbmRzIjogMC45LCAiZ2FpbiI6IDAuNiB9CiAgXQp9Cg==
+{
+  "total": 60,
+  "bed": { "cue": "pad", "gain": 0.16, "silence": [34.0, 34.4] },
+  "cues": [
+    { "at": 0.3, "cue": "error", "gain": 0.8 },
+    { "at": 5.4, "cue": "boom", "gain": 0.85 },
+    { "at": 7.0, "cue": "whoosh", "seconds": 0.9, "gain": 0.6 },
+    { "at": 16.0, "cue": "whoosh", "seconds": 0.9, "gain": 0.6 },
+    { "at": 17.3, "cue": "tick", "gain": 0.6 },
+    { "at": 24.0, "cue": "whoosh", "seconds": 0.9, "gain": 0.6 },
+    { "at": 37.3, "cue": "ding", "gain": 0.7 },
+    { "at": 42.0, "cue": "boom", "gain": 0.85 },
+    { "at": 44.0, "cue": "whoosh", "seconds": 0.9, "gain": 0.6 }
+  ]
+}

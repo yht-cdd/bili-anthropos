@@ -1,1 +1,115 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IHByb2csIHRmIH0gZnJvbSAnLi4vYW5pbSc7CmltcG9ydCB7CiAgQkcsCiAgRk9OVF9NT05PLAogIEZPTlRfU0FOUywKICBGU19DT0RFLAogIEZTX1NMT0dBTiwKICBHUkFZLAogIExFREdFUiwKICBNSUQsCiAgUEFQRVIsCiAgUkFESVVTLAogIFJFRCwKICBTSEFET1csCn0gZnJvbSAnLi4vdGhlbWUnOwoKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQovLyBTNiDCtyA3MjDigJM4NDBm77yIMjQuMOKAkzI4LjBz77yJIFtpbnRlcmFjdGlvbl0gdHlwZS1hbmQtZmlsdGVy77yI566A5YyW54mI77yJCi8vICMxQTFGMkMg5bqV77yb6aG26YOo5qCH6K+t44CM6L+Z5LiA5ZGo5Lul5p2l77yM44CNZmFkZWlu77yb5Lit5aSu5qih5ouf57uI56uv56qX77yIMTIwMMOXNTAw77yJOCDooYzmtLvliqgKLy8g5pel5b+X6YCQ6KGM5rWu546w77yI5q+P6KGMIDZm77yM6Ze06ZqU5Yqg6YCfIDEy4oaSOOKGkjZm77ybdGljayDov57lj5HpgJLlh4/lvZIgUjQgYXVkaW/vvInjgIIKLy8g5pel5b+X6KGMIDI4cHggTW9ubyA9IOe7iOerr+ijhemlsOWxguW6lee6v+Wtl+WPt++8iMKn5LiAIOWFgeiuuO+8jOaXoOWBj+W3ru+8ieOAggovLyDooYzlhoUgW+aXtumXtOaIs10g55So5qyh6KaB54Gw77yM5q2j5paH6LSm5pys57u/77yb44CM4pqg77iPIOaWreS+m+OAjeihjOi9rOe6ou+8iOe6ouiJsuS7heaWreS+m+S4gOivje+8ieOAggovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CgovLyDorr7orqHnqL8gwqdTNiBtb2NrIOmAkOWtl+eFp+aKhO+8iOaVsOaNruW3suiEseaVj++8muWBhyBoYXNoIC8gY2lkPeKApiDljaDkvY3vvIkKY29uc3QgTE9HUzogQXJyYXk8eyB0aW1lOiBzdHJpbmc7IHRleHQ6IHN0cmluZzsgYWxlcnQ/OiBib29sZWFuIH0+ID0gWwogIHsgdGltZTogJzExLTAxIDAzOjI0JywgdGV4dDogJ+inhumikeaKleeov+aIkOWKnyBCVjF4eC4uLicgfSwKICB7IHRpbWU6ICcxMS0wMSAxNDowNycsIHRleHQ6ICdjb21taXQgZGEzZjJlMTog5L+u5aSNQVNS5pe26Ze06L205a+56b2QJyB9LAogIHsgdGltZTogJzExLTAyIDA5OjE1JywgdGV4dDogJ+engeS/oeWbnuWkjSBA55So5oi3QSDlhbPkuo7lvIDmupDljY/orq4nIH0sCiAgeyB0aW1lOiAnMTEtMDIgMjI6MzMnLCB0ZXh0OiAn5pel6K6w5YaZ5YWlIGRheTIubWQnIH0sCiAgeyB0aW1lOiAnMTEtMDMgMTE6NDInLCB0ZXh0OiAn5Yig6Zmk5LiN5b2T6K+E6K66IGNpZD0uLi4nIH0sCiAgeyB0aW1lOiAnMTEtMDMgMjM6NDcnLCB0ZXh0OiAn4pqg77iPIOaWreS+myA2aO+8iOS6uuW3peS/ruWkjeS4re+8iScsIGFsZXJ0OiB0cnVlIH0sCiAgeyB0aW1lOiAnMTEtMDQgMDg6MTknLCB0ZXh0OiAn6KeG6aKR5riy5p+T5a6M5oiQIDE4IOmVnOWktCcgfSwKICB7IHRpbWU6ICcxMS0wNCAxNTo1NScsIHRleHQ6ICdjb21taXQgOGIyYTlmNDog6Z+z55S75ZCM5q2l5L+u5q2jJyB9LApdOwoKLy8g6YCQ6KGM6LW354K577yaNzUwIOi1t++8jOmXtOmalOWKoOmAnyAxMmbihpI44oaSNmbvvIg4IOihjCA3IOS4qumXtOmalO+8iQpjb25zdCBMSU5FX1NUQVJUUyA9IFs3NTAsIDc2MiwgNzczLCA3ODMsIDc5MiwgODAwLCA4MDcsIDgxM107CgpleHBvcnQgY29uc3QgUzY6IFJlYWN0LkZDID0gKCkgPT4gewogIGNvbnN0IGcgPSB1c2VDdXJyZW50RnJhbWUoKSArIDcyMDsgLy8g5YWo5bGA5binCgogIC8vIOS/ruWkjSBSN++8iDcyMGYg5YiH6ZWc56m65bin77yM54WnIDE0MTBmIOWFiOS+i++8ie+8muagh+ivrSBmYWRlaW4g6LW354K55o+Q5YmNIDJmIOKGkiA3MjAg5binIHDiiYgwLjM277yMCiAgLy8g5raI6ZmkIFM14oaSUzYg5YiH6ZWcIDEg5bin57qvIE1JRCDml6DmloflrZfnqbrluKfvvJtTRUcg56qXIDcyMOKAkzg0MCDmnKrliqjjgIIKICBjb25zdCBzbG9nYW5QID0gcHJvZyhnLCA3MTgsIDMwKTsKCiAgcmV0dXJuICgKICAgIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sgYmFja2dyb3VuZENvbG9yOiBNSUQgfX0+CiAgICAgIHsvKiDpobbpg6jmoIfor63vvIg5NjAsMTgw77yJICovfQogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgbGVmdDogMCwKICAgICAgICAgIHJpZ2h0OiAwLAogICAgICAgICAgdG9wOiAxODAgLSA0MCwKICAgICAgICAgIHRleHRBbGlnbjogJ2NlbnRlcicsCiAgICAgICAgICBmb250RmFtaWx5OiBGT05UX1NBTlMsCiAgICAgICAgICBmb250V2VpZ2h0OiA3MDAsCiAgICAgICAgICBmb250U2l6ZTogRlNfU0xPR0FOLAogICAgICAgICAgbGluZUhlaWdodDogJzgwcHgnLAogICAgICAgICAgY29sb3I6IFBBUEVSLAogICAgICAgICAgb3BhY2l0eTogc2xvZ2FuUCwKICAgICAgICB9fQogICAgICA+CiAgICAgICAg6L+Z5LiA5ZGo5Lul5p2l77yMCiAgICAgIDwvZGl2PgoKICAgICAgey8qIOaooeaLn+e7iOerr+eql++8iDEyMDDDlzUwMCDkuK3lv4MgOTYwLDQ1MCDihpIgdG9wPTIwMCDorqnkvY3moIfor63kuIvmsr/vvIkgKi99CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICBsZWZ0OiA5NjAgLSA2MDAsCiAgICAgICAgICB0b3A6IDIzMCwKICAgICAgICAgIHdpZHRoOiAxMjAwLAogICAgICAgICAgaGVpZ2h0OiA1MDAsCiAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6IEJHLAogICAgICAgICAgYm9yZGVyUmFkaXVzOiBSQURJVVMsCiAgICAgICAgICBib3JkZXI6ICcxcHggc29saWQgcmdiYSg2MywxODIsMTM5LDAuMjIpJywKICAgICAgICAgIGJveFNoYWRvdzogU0hBRE9XLAogICAgICAgICAgcGFkZGluZzogJzI4cHggNDBweCcsCiAgICAgICAgICBib3hTaXppbmc6ICdib3JkZXItYm94JywKICAgICAgICAgIG9wYWNpdHk6IHByb2coZywgNzQwLCAxNiksCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIHsvKiDnu4jnq6/pobbmoI/kuInngrkgKi99CiAgICAgICAgPGRpdiBzdHlsZT17eyBkaXNwbGF5OiAnZmxleCcsIGdhcDogOCwgbWFyZ2luQm90dG9tOiAyMCB9fT4KICAgICAgICAgIHtbJyNGMDUyNEQnLCAnI0Q5Nzc1NycsICcjM0ZCNjhCJ10ubWFwKChjKSA9PiAoCiAgICAgICAgICAgIDxkaXYga2V5PXtjfSBzdHlsZT17eyB3aWR0aDogMTIsIGhlaWdodDogMTIsIGJvcmRlclJhZGl1czogNiwgYmFja2dyb3VuZENvbG9yOiBjLCBvcGFjaXR5OiAwLjcgfX0gLz4KICAgICAgICAgICkpfQogICAgICAgIDwvZGl2PgogICAgICAgIHtMT0dTLm1hcCgobCwgaSkgPT4gewogICAgICAgICAgY29uc3QgcCA9IHByb2coZywgTElORV9TVEFSVFNbaV0sIDYpOwogICAgICAgICAgcmV0dXJuICgKICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgIGtleT17aX0KICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgZm9udEZhbWlseTogRk9OVF9NT05PLAogICAgICAgICAgICAgICAgZm9udFNpemU6IEZTX0NPREUsCiAgICAgICAgICAgICAgICBsaW5lSGVpZ2h0OiAnNDhweCcsCiAgICAgICAgICAgICAgICB3aGl0ZVNwYWNlOiAncHJlJywKICAgICAgICAgICAgICAgIG9wYWNpdHk6IHAsCiAgICAgICAgICAgICAgICB0cmFuc2Zvcm06IHRmKFtgdHJhbnNsYXRlWSgkeygxIC0gcCkgKiAxMH1weClgXSksCiAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIDxzcGFuIHN0eWxlPXt7IGNvbG9yOiBHUkFZIH19Plt7bC50aW1lfV0gPC9zcGFuPgogICAgICAgICAgICAgIDxzcGFuIHN0eWxlPXt7IGNvbG9yOiBsLmFsZXJ0ID8gUkVEIDogTEVER0VSIH19PntsLnRleHR9PC9zcGFuPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICk7CiAgICAgICAgfSl9CiAgICAgIDwvZGl2PgogICAgPC9BYnNvbHV0ZUZpbGw+CiAgKTsKfTsK
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { prog, tf } from '../anim';
+import {
+  BG,
+  FONT_MONO,
+  FONT_SANS,
+  FS_CODE,
+  FS_SLOGAN,
+  GRAY,
+  LEDGER,
+  MID,
+  PAPER,
+  RADIUS,
+  RED,
+  SHADOW,
+} from '../theme';
+
+// ============================================================================
+// S6 · 720–840f（24.0–28.0s） [interaction] type-and-filter（简化版）
+// #1A1F2C 底；顶部标语「这一周以来，」fadein；中央模拟终端窗（1200×500）8 行活动
+// 日志逐行浮现（每行 6f，间隔加速 12→8→6f；tick 连发递减归 R4 audio）。
+// 日志行 28px Mono = 终端装饰层底线字号（§一 允许，无偏差）。
+// 行内 [时间戳] 用次要灰，正文账本绿；「⚠️ 断供」行转红（红色仅断供一词）。
+// ============================================================================
+
+// 设计稿 §S6 mock 逐字照抄（数据已脱敏：假 hash / cid=… 占位）
+const LOGS: Array<{ time: string; text: string; alert?: boolean }> = [
+  { time: '11-01 03:24', text: '视频投稿成功 BV1xx...' },
+  { time: '11-01 14:07', text: 'commit da3f2e1: 修复ASR时间轴对齐' },
+  { time: '11-02 09:15', text: '私信回复 @用户A 关于开源协议' },
+  { time: '11-02 22:33', text: '日记写入 day2.md' },
+  { time: '11-03 11:42', text: '删除不当评论 cid=...' },
+  { time: '11-03 23:47', text: '⚠️ 断供 6h（人工修复中）', alert: true },
+  { time: '11-04 08:19', text: '视频渲染完成 18 镜头' },
+  { time: '11-04 15:55', text: 'commit 8b2a9f4: 音画同步修正' },
+];
+
+// 逐行起点：750 起，间隔加速 12f→8→6f（8 行 7 个间隔）
+const LINE_STARTS = [750, 762, 773, 783, 792, 800, 807, 813];
+
+export const S6: React.FC = () => {
+  const g = useCurrentFrame() + 720; // 全局帧
+
+  // 修复 R7（720f 切镜空帧，照 1410f 先例）：标语 fadein 起点提前 2f → 720 帧 p≈0.36，
+  // 消除 S5→S6 切镜 1 帧纯 MID 无文字空帧；SEG 窗 720–840 未动。
+  const sloganP = prog(g, 718, 30);
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: MID }}>
+      {/* 顶部标语（960,180） */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          top: 180 - 40,
+          textAlign: 'center',
+          fontFamily: FONT_SANS,
+          fontWeight: 700,
+          fontSize: FS_SLOGAN,
+          lineHeight: '80px',
+          color: PAPER,
+          opacity: sloganP,
+        }}
+      >
+        这一周以来，
+      </div>
+
+      {/* 模拟终端窗（1200×500 中心 960,450 → top=200 让位标语下沿） */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 960 - 600,
+          top: 230,
+          width: 1200,
+          height: 500,
+          backgroundColor: BG,
+          borderRadius: RADIUS,
+          border: '1px solid rgba(63,182,139,0.22)',
+          boxShadow: SHADOW,
+          padding: '28px 40px',
+          boxSizing: 'border-box',
+          opacity: prog(g, 740, 16),
+        }}
+      >
+        {/* 终端顶栏三点 */}
+        <div style={{ display: 'flex', gap: 8, marginBottom: 20 }}>
+          {['#F0524D', '#D97757', '#3FB68B'].map((c) => (
+            <div key={c} style={{ width: 12, height: 12, borderRadius: 6, backgroundColor: c, opacity: 0.7 }} />
+          ))}
+        </div>
+        {LOGS.map((l, i) => {
+          const p = prog(g, LINE_STARTS[i], 6);
+          return (
+            <div
+              key={i}
+              style={{
+                fontFamily: FONT_MONO,
+                fontSize: FS_CODE,
+                lineHeight: '48px',
+                whiteSpace: 'pre',
+                opacity: p,
+                transform: tf([`translateY(${(1 - p) * 10}px)`]),
+              }}
+            >
+              <span style={{ color: GRAY }}>[{l.time}] </span>
+              <span style={{ color: l.alert ? RED : LEDGER }}>{l.text}</span>
+            </div>
+          );
+        })}
+      </div>
+    </AbsoluteFill>
+  );
+};

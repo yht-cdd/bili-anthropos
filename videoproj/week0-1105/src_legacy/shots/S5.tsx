@@ -1,1 +1,126 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEVBU0VfRVhQT19PVVQsIEVBU0VfU1dFRVAsIHByb2csIHNoYWtlWCwgc2luZVB1bHNlIH0gZnJvbSAnLi4vYW5pbSc7CmltcG9ydCB7IEJHLCBGT05UX1NBTlMsIExFREdFUl9HUkVFTiwgVEVSTV9HUkFZLCBURVhUIH0gZnJvbSAnLi4vdGhlbWUnOwoKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQovLyBTNSDkuKTkuKrpl67nrZQgwrcg5YWo5bGAIDEwMjDigJMxMzIw77yIYnJpZWYgwqfkuozCt1M177yJwrcg6YWN5pa55Y2hIFtlZmZlY3RzXSBzbGFtLWVudHJhbmNlLW1vdmVzKEIg5byPKSDDlzIgKyBpbXBhY3QtZmVlZGJhY2sKLy8g5pys5Zyw5binID0g5YWo5bGAIOKIkiAxMDIw44CCCi8vIDDigJMxMiAgIOm7keWcuui9rOWcuu+8iOWFqOWxgCAzNC4w4oCTMzQuNHMgPSDCp+S4iSDpnZnpn7PnvLrlj6PikaDvvIxSMyDmjpLpn7PvvJvnlLvpnaLlhajpu5HljbPmnKzplZzlvIDlnLrvvInjgIIKLy8g6Zeu562U5L2T77ya6Zeu6aKYIDU2cHgg57Gz55m9IHNsYW3vvIznrZTmoYggODRweCDotKbmnKznu78gc2xhbe+8jOmXtOmalCAxMiDluKfvvIhicmllZiDnu5nlrprvvInjgIIKLy8gICBRMSBsb2NhbCAyMO+8iOWFqOWxgCAxMDQw77yJ44CM5pS255uK5LuN5pivIDDvvIzkvJrkuI3kvJrnu6fnu63vvJ/jgI1zbGFt77yb562U5qGI44CM5Lya44CC44CNbG9jYWwgMzIgc2xhbeOAggovLyAgICAgIGxvY2FsIDEwMO+8iOWFqOWxgCAxMTIwID0gZGluZ0AzNy4z77yJ562U5qGIIGltcGFjdC1mZWVkYmFjayDph43lh7vlm57lk43vvJoKLy8gICAgICBzY2FsZSAx4oaSMS4xNOKGkjHvvIg2Kzgg5bin77yJKyDmianmlaPnjq8gKyDlrZfoibLpl6rnmb0g4oCU4oCUIHNsYW0g5LmL5ZCO5bu26L+f5YaN6ZKJ5LiA5LiL77yMCi8vICAgICAg5oqK44CM5Lya44CC44CN5LuO44CM5Ye6546w44CN6K+75oiQ44CM6JC95a6a44CN44CC5YGc55WZ6IezIGxvY2FsIDE0MOOAggovLyAgIDE0MOKAkzE2MO+8iOWFqOWxgCAxMTYw4oCTMTE4MO+8iVExIOaVtOWvuSA4IOW4p+a3oeWHuuOAggovLyAgIFEyIGxvY2FsIDE2MO+8iOWFqOWxgCAxMTgw77yJ44CM6KaB5LiN6KaB5raI6LS5IEFJIOW9ouixoe+8n+OAjXNsYW3vvJvnrZTmoYjjgIzkuI3jgILjgI1sb2NhbCAxNzIgc2xhbeOAggovLyAgICAgIGxvY2FsIDI0MO+8iOWFqOWxgCAxMjYwID0gYm9vbUA0Mi4w77yJ5ZCM5qy+6YeN5Ye777yIYm9vbSDmm7TmsonvvIzpnIflsY/lj6AgNCDluKcgc2hha2VYIDTvvInjgILlgZznlZnoh7MgMjgw44CCCi8vICAgMjg44oCTMjk0IOaVtOautSA2IOW4p+a3oeWHuu+8iOmAgOWcuue6quW+i++8ie+8mzI5NOKAkzMwMCDpu5HvvIzmjqUgUzYgd2hvb3No44CCCi8vIHNsYW0g6K6h5pWw5rOo77ya5YWo54mHIHNsYW0tZW50cmFuY2Ug5Li756C4IFMxL1MzIOWFsSAyIOasoe+8m+acrOmVnOWbm+asoeS4uumXruetlOS9k+iKguWlj+aAp+eguOWFpe+8iGJyaWVmIMKn5LqMCi8vIOaYjuehruimgeaxguOAjOmXrumimCBzbGFtIC8g562U5qGIIHNsYW0gw5cyIOe7hOOAje+8ie+8jOmHj+e6p+WHj+WNiu+8iHNjYWxlIDEuMTgg6LW344CB6ZyH5bmFIDAvNO+8ie+8jOS4jeS4juWJjeS4pOasoeaKoumHjemHj+OAggovLyDlgZznlZnnuqrlvovvvJrnrZTmoYjokL3lrprlkI4g4omlNDAg5bin77yIMTAw4oaSMTQw44CBMjQw4oaSMjgwIOWQhCA0MCDluKfvvInvvIznrKblkIjjgIzlgZznlZkg4omlMjDjgI3jgIIKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKY29uc3QgUV9ZID0gMzYwOwpjb25zdCBBX1kgPSA1MTY7CmNvbnN0IFNMQU1fU0NBTEUgPSAxLjE4OyAvLyDpl67nrZTkvZPnoLjlhaXph4/nuqfvvIg8IFMxIOeahCAxLjPvvIzkuLvmrKHmnInliKvvvIkKCnR5cGUgUUEgPSB7CiAgcTogc3RyaW5nOwogIGE6IHN0cmluZzsKICBxQXQ6IG51bWJlcjsKICBhQXQ6IG51bWJlcjsKICBoaXRBdDogbnVtYmVyOyAvLyBpbXBhY3QtZmVlZGJhY2sg6YeN5Ye75Zue5ZON5binCiAgc2hha2U6IG51bWJlcjsgLy8g6YeN5Ye76ZyH5bmF77yIUTEgZGluZyDkuI3pnIflsY/vvIxRMiBib29tIOmchyA077yJCiAgb3V0QXQ6IG51bWJlcjsgLy8g5pys5a+55reh5Ye66LW35aeL77yIUTIg55So5pW05q615reh5Ye677yJCn07Cgpjb25zdCBRQVM6IFFBW10gPSBbCiAgeyBxOiAn5pS255uK5LuN5pivIDDvvIzkvJrkuI3kvJrnu6fnu63vvJ8nLCBhOiAn5Lya44CCJywgcUF0OiAyMCwgYUF0OiAzMiwgaGl0QXQ6IDEwMCwgc2hha2U6IDAsIG91dEF0OiAxNDAgfSwKICB7IHE6ICfopoHkuI3opoHmtojotLkgQUkg5b2i6LGh77yfJywgYTogJ+S4jeOAgicsIHFBdDogMTYwLCBhQXQ6IDE3MiwgaGl0QXQ6IDI0MCwgc2hha2U6IDQsIG91dEF0OiAyODAgfSwKXTsKCmV4cG9ydCBjb25zdCBTNTogUmVhY3QuRkMgPSAoKSA9PiB7CiAgY29uc3QgZiA9IHVzZUN1cnJlbnRGcmFtZSgpOwogIGNvbnN0IHNlZ091dCA9IHByb2coZiwgMjg4LCA2LCBFQVNFX0VYUE9fT1VUKTsgLy8g5pW05q615pS25bC+5reh5Ye6CgogIHJldHVybiAoCiAgICA8QWJzb2x1dGVGaWxsIHN0eWxlPXt7IGJhY2tncm91bmRDb2xvcjogQkcsIGZvbnRGYW1pbHk6IEZPTlRfU0FOUywgb3BhY2l0eTogMSAtIHNlZ091dCB9fT4KICAgICAge1FBUy5tYXAoKHFhLCBpKSA9PiB7CiAgICAgICAgY29uc3QgcUluID0gcHJvZyhmLCBxYS5xQXQsIDQsIEVBU0VfRVhQT19PVVQpOwogICAgICAgIGNvbnN0IHFTY2FsZSA9IHByb2coZiwgcWEucUF0LCA2LCBFQVNFX1NXRUVQKTsKICAgICAgICBjb25zdCBhSW4gPSBwcm9nKGYsIHFhLmFBdCwgNCwgRUFTRV9FWFBPX09VVCk7CiAgICAgICAgY29uc3QgYVNjYWxlID0gcHJvZyhmLCBxYS5hQXQsIDYsIEVBU0VfU1dFRVApOwogICAgICAgIC8vIGltcGFjdC1mZWVkYmFja++8mmhpdEF0IOi1tyBzY2FsZSDlvLnlhrIgNiDluKfmlLYgKyAxMCDluKfnvJPmlL7vvIznjq/mianmlaMgMTYg5binCiAgICAgICAgY29uc3QgaGl0ID0gcHJvZyhmLCBxYS5oaXRBdCwgNiwgRUFTRV9TV0VFUCk7CiAgICAgICAgY29uc3QgaGl0UmVsYXggPSBwcm9nKGYsIHFhLmhpdEF0ICsgNiwgMTAsIEVBU0VfRVhQT19PVVQpOwogICAgICAgIGNvbnN0IHJpbmcgPSBwcm9nKGYsIHFhLmhpdEF0LCAxNiwgRUFTRV9FWFBPX09VVCk7CiAgICAgICAgY29uc3QgZmxhc2ggPSBwcm9nKGYsIHFhLmhpdEF0LCAxMiwgRUFTRV9FWFBPX09VVCk7IC8vIOiQvemSieeerOmXtOWtl+iJsuWbnueZve+8iOS7juS6rue7v+i/h+WGsuWIsOacrOiJsu+8iQogICAgICAgIGNvbnN0IGhpdFNoYWtlID0gcWEuc2hha2UgPiAwID8gc2hha2VYKGYsIHFhLmhpdEF0LCBxYS5zaGFrZSwgOCkgOiAwOwogICAgICAgIGNvbnN0IHBhaXJPdXQgPSBwcm9nKGYsIHFhLm91dEF0LCA4LCBFQVNFX0VYUE9fT1VUKTsKICAgICAgICBjb25zdCBwdWxzZSA9IHNpbmVQdWxzZShmLCBxYS5oaXRBdCArIDIwLCA4MCk7IC8vIOiQveWumuWQjueahOWRvOWQuO+8iOWPque7mSBib3gg6Zi05b2x77yM4omkMiDov5DliqjlhYPntKDlhoXvvIkKCiAgICAgICAgY29uc3QgYWxpdmUgPSBmID49IHFhLnFBdCAmJiBwYWlyT3V0IDwgMTsKICAgICAgICBpZiAoIWFsaXZlKSByZXR1cm4gbnVsbDsKICAgICAgICBjb25zdCBhUG9wID0gMSArIDAuMTQgKiBNYXRoLm1heCgwLCBoaXQgLSBoaXRSZWxheCk7IC8vIOWGsuWHuuWOu+WGjeaUtuWbnuadpQogICAgICAgIGNvbnN0IHJpbmdSID0gNjAgKyAyMDAgKiByaW5nOwoKICAgICAgICByZXR1cm4gKAogICAgICAgICAgPGRpdiBrZXk9e2l9IHN0eWxlPXt7IHBvc2l0aW9uOiAnYWJzb2x1dGUnLCBpbnNldDogMCwgb3BhY2l0eTogMSAtIHBhaXJPdXQgfX0+CiAgICAgICAgICAgIHsvKiDpl67popggNTZweCDnsbPnmb0gc2xhbSAqL30KICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgICAgICAgIGxlZnQ6IDAsCiAgICAgICAgICAgICAgICB0b3A6IFFfWSwKICAgICAgICAgICAgICAgIHdpZHRoOiAxOTIwLAogICAgICAgICAgICAgICAgdGV4dEFsaWduOiAnY2VudGVyJywKICAgICAgICAgICAgICAgIGZvbnRTaXplOiA1NiwKICAgICAgICAgICAgICAgIGZvbnRXZWlnaHQ6IDYwMCwKICAgICAgICAgICAgICAgIGNvbG9yOiBURVJNX0dSQVksCiAgICAgICAgICAgICAgICBvcGFjaXR5OiBxSW4sCiAgICAgICAgICAgICAgICB0cmFuc2Zvcm06IGBzY2FsZSgke1NMQU1fU0NBTEUgLSAoU0xBTV9TQ0FMRSAtIDEpICogcVNjYWxlfSlgLAogICAgICAgICAgICAgIH19CiAgICAgICAgICAgID4KICAgICAgICAgICAgICB7cWEucX0KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIHsvKiDnrZTmoYggODRweCDotKbmnKznu78gc2xhbSArIOW7tui/n+mHjeWHu+WbnuWTjSAqL30KICAgICAgICAgICAgPGRpdiBzdHlsZT17eyBwb3NpdGlvbjogJ2Fic29sdXRlJywgbGVmdDogMCwgdG9wOiBBX1ksIHdpZHRoOiAxOTIwLCB0ZXh0QWxpZ246ICdjZW50ZXInIH19PgogICAgICAgICAgICAgIHtmID49IHFhLmhpdEF0ICYmIHJpbmcgPCAxID8gKAogICAgICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgICAgICAgICAgIGxlZnQ6IDk2MCAtIHJpbmdSLAogICAgICAgICAgICAgICAgICAgIHRvcDogNTIgLSByaW5nUiAqIDAuNTUsCiAgICAgICAgICAgICAgICAgICAgd2lkdGg6IHJpbmdSICogMiwKICAgICAgICAgICAgICAgICAgICBoZWlnaHQ6IHJpbmdSICogMS4xLAogICAgICAgICAgICAgICAgICAgIGJvcmRlclJhZGl1czogJzUwJScsCiAgICAgICAgICAgICAgICAgICAgYm9yZGVyOiBgJHtNYXRoLm1heCgxLCA2ICogKDEgLSByaW5nKSkudG9GaXhlZCgxKX1weCBzb2xpZCByZ2JhKDYzLDE4MiwxMzksJHsoMC41ICogKDEgLSByaW5nKSkudG9GaXhlZCgzKX0pYCwKICAgICAgICAgICAgICAgICAgICBvcGFjaXR5OiAxIC0gcmluZywKICAgICAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgKSA6IG51bGx9CiAgICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgICAgZm9udFNpemU6IDg0LAogICAgICAgICAgICAgICAgICBmb250V2VpZ2h0OiA4MDAsCiAgICAgICAgICAgICAgICAgIGNvbG9yOiBMRURHRVJfR1JFRU4sCiAgICAgICAgICAgICAgICAgIG9wYWNpdHk6IGFJbiwKICAgICAgICAgICAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWCgke2hpdFNoYWtlfXB4KSBzY2FsZSgkeygKICAgICAgICAgICAgICAgICAgICAoU0xBTV9TQ0FMRSAtIChTTEFNX1NDQUxFIC0gMSkgKiBhU2NhbGUpICoKICAgICAgICAgICAgICAgICAgICBhUG9wCiAgICAgICAgICAgICAgICAgICkudG9GaXhlZCg0KX0pYCwKICAgICAgICAgICAgICAgICAgdGV4dFNoYWRvdzogYDAgMCAke01hdGgucm91bmQoMjQgKiBwdWxzZSArIDMwICogZmxhc2ggKiAoMSAtIGZsYXNoKSAqIDQpfXB4IHJnYmEoNjMsMTgyLDEzOSwkeygKICAgICAgICAgICAgICAgICAgICAwLjI1ICsgMC40NSAqIGZsYXNoICogKDEgLSBmbGFzaCkgKiA0CiAgICAgICAgICAgICAgICAgICkudG9GaXhlZCgzKX0pYCwKICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAge3FhLmF9CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CiAgICAgICAgKTsKICAgICAgfSl9CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9Owo=
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { EASE_EXPO_OUT, EASE_SWEEP, prog, shakeX, sinePulse } from '../anim';
+import { BG, FONT_SANS, LEDGER_GREEN, TERM_GRAY, TEXT } from '../theme';
+
+// ============================================================================
+// S5 两个问答 · 全局 1020–1320（brief §二·S5）· 配方卡 [effects] slam-entrance-moves(B 式) ×2 + impact-feedback
+// 本地帧 = 全局 − 1020。
+// 0–12   黑场转场（全局 34.0–34.4s = §三 静音缺口①，R3 排音；画面全黑即本镜开场）。
+// 问答体：问题 56px 米白 slam，答案 84px 账本绿 slam，间隔 12 帧（brief 给定）。
+//   Q1 local 20（全局 1040）「收益仍是 0，会不会继续？」slam；答案「会。」local 32 slam。
+//      local 100（全局 1120 = ding@37.3）答案 impact-feedback 重击回响：
+//      scale 1→1.14→1（6+8 帧）+ 扩散环 + 字色闪白 —— slam 之后延迟再钉一下，
+//      把「会。」从「出现」读成「落定」。停留至 local 140。
+//   140–160（全局 1160–1180）Q1 整对 8 帧淡出。
+//   Q2 local 160（全局 1180）「要不要消费 AI 形象？」slam；答案「不。」local 172 slam。
+//      local 240（全局 1260 = boom@42.0）同款重击（boom 更沉，震屏叠 4 帧 shakeX 4）。停留至 280。
+//   288–294 整段 6 帧淡出（退场纪律）；294–300 黑，接 S6 whoosh。
+// slam 计数注：全片 slam-entrance 主砸 S1/S3 共 2 次；本镜四次为问答体节奏性砸入（brief §二
+// 明确要求「问题 slam / 答案 slam ×2 组」），量级减半（scale 1.18 起、震幅 0/4），不与前两次抢重量。
+// 停留纪律：答案落定后 ≥40 帧（100→140、240→280 各 40 帧），符合「停留 ≥20」。
+// ============================================================================
+
+const Q_Y = 360;
+const A_Y = 516;
+const SLAM_SCALE = 1.18; // 问答体砸入量级（< S1 的 1.3，主次有别）
+
+type QA = {
+  q: string;
+  a: string;
+  qAt: number;
+  aAt: number;
+  hitAt: number; // impact-feedback 重击回响帧
+  shake: number; // 重击震幅（Q1 ding 不震屏，Q2 boom 震 4）
+  outAt: number; // 本对淡出起始（Q2 用整段淡出）
+};
+
+const QAS: QA[] = [
+  { q: '收益仍是 0，会不会继续？', a: '会。', qAt: 20, aAt: 32, hitAt: 100, shake: 0, outAt: 140 },
+  { q: '要不要消费 AI 形象？', a: '不。', qAt: 160, aAt: 172, hitAt: 240, shake: 4, outAt: 280 },
+];
+
+export const S5: React.FC = () => {
+  const f = useCurrentFrame();
+  const segOut = prog(f, 288, 6, EASE_EXPO_OUT); // 整段收尾淡出
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: BG, fontFamily: FONT_SANS, opacity: 1 - segOut }}>
+      {QAS.map((qa, i) => {
+        const qIn = prog(f, qa.qAt, 4, EASE_EXPO_OUT);
+        const qScale = prog(f, qa.qAt, 6, EASE_SWEEP);
+        const aIn = prog(f, qa.aAt, 4, EASE_EXPO_OUT);
+        const aScale = prog(f, qa.aAt, 6, EASE_SWEEP);
+        // impact-feedback：hitAt 起 scale 弹冲 6 帧收 + 10 帧缓放，环扩散 16 帧
+        const hit = prog(f, qa.hitAt, 6, EASE_SWEEP);
+        const hitRelax = prog(f, qa.hitAt + 6, 10, EASE_EXPO_OUT);
+        const ring = prog(f, qa.hitAt, 16, EASE_EXPO_OUT);
+        const flash = prog(f, qa.hitAt, 12, EASE_EXPO_OUT); // 落钉瞬间字色回白（从亮绿过冲到本色）
+        const hitShake = qa.shake > 0 ? shakeX(f, qa.hitAt, qa.shake, 8) : 0;
+        const pairOut = prog(f, qa.outAt, 8, EASE_EXPO_OUT);
+        const pulse = sinePulse(f, qa.hitAt + 20, 80); // 落定后的呼吸（只给 box 阴影，≤2 运动元素内）
+
+        const alive = f >= qa.qAt && pairOut < 1;
+        if (!alive) return null;
+        const aPop = 1 + 0.14 * Math.max(0, hit - hitRelax); // 冲出去再收回来
+        const ringR = 60 + 200 * ring;
+
+        return (
+          <div key={i} style={{ position: 'absolute', inset: 0, opacity: 1 - pairOut }}>
+            {/* 问题 56px 米白 slam */}
+            <div
+              style={{
+                position: 'absolute',
+                left: 0,
+                top: Q_Y,
+                width: 1920,
+                textAlign: 'center',
+                fontSize: 56,
+                fontWeight: 600,
+                color: TERM_GRAY,
+                opacity: qIn,
+                transform: `scale(${SLAM_SCALE - (SLAM_SCALE - 1) * qScale})`,
+              }}
+            >
+              {qa.q}
+            </div>
+            {/* 答案 84px 账本绿 slam + 延迟重击回响 */}
+            <div style={{ position: 'absolute', left: 0, top: A_Y, width: 1920, textAlign: 'center' }}>
+              {f >= qa.hitAt && ring < 1 ? (
+                <div
+                  style={{
+                    position: 'absolute',
+                    left: 960 - ringR,
+                    top: 52 - ringR * 0.55,
+                    width: ringR * 2,
+                    height: ringR * 1.1,
+                    borderRadius: '50%',
+                    border: `${Math.max(1, 6 * (1 - ring)).toFixed(1)}px solid rgba(63,182,139,${(0.5 * (1 - ring)).toFixed(3)})`,
+                    opacity: 1 - ring,
+                  }}
+                />
+              ) : null}
+              <div
+                style={{
+                  fontSize: 84,
+                  fontWeight: 800,
+                  color: LEDGER_GREEN,
+                  opacity: aIn,
+                  transform: `translateX(${hitShake}px) scale(${(
+                    (SLAM_SCALE - (SLAM_SCALE - 1) * aScale) *
+                    aPop
+                  ).toFixed(4)})`,
+                  textShadow: `0 0 ${Math.round(24 * pulse + 30 * flash * (1 - flash) * 4)}px rgba(63,182,139,${(
+                    0.25 + 0.45 * flash * (1 - flash) * 4
+                  ).toFixed(3)})`,
+                }}
+              >
+                {qa.a}
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </AbsoluteFill>
+  );
+};

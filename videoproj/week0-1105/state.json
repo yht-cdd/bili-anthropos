@@ -1,1 +1,135 @@
-ewogICJzbHVnIjogIndlZWswLTExMDUiLAogICJ0aXRsZSI6ICI8d2VlazA+5byA5pSvMjMuMzbCpe+8jOS6uuW3peS7i+WFpeS/ruWkjTLmrKHvvIzmtYXosIjkupHnq6/lhbthaeWcqGLnq5nnmoTkuIDlkajigKbigKYiLAogICJzdGFnZSI6ICJuZXciLAogICJjcmVhdGVkQXQiOiAiMjAyNi0xMS0wNFQxNzozMzoxNS44MDBaIiwKICAidXBkYXRlZEF0IjogIjIwMjYtMTEtMDVUMTY6MjE6MjMuNTgwWiIsCiAgImhpc3RvcnkiOiBbCiAgICB7CiAgICAgICJhdCI6ICIyMDI2LTExLTA0VDE3OjMzOjE1LjgwMFoiLAogICAgICAiZXZlbnQiOiAiY3JlYXRlZCIKICAgIH0sCiAgICB7CiAgICAgICJhdCI6ICIyMDI2LTExLTA0VDE4OjA2OjQ3LjMzM1oiLAogICAgICAiZXZlbnQiOiAicm91bmQgMTogUjHvvJrpqqjmnrYrUzEtUzMiCiAgICB9LAogICAgewogICAgICAiYXQiOiAiMjAyNi0xMS0wNFQxODozNDoxNy43MTlaIiwKICAgICAgImV2ZW50IjogInJvdW5kIDI6IFIyLTHvvJpTNCDlrp7oo4XvvIjljaFB5LuL5YWl4pGg546v5b2i5YiH5o2iIGRhc2hvZmZzZXTmk6bpmaQr5ri45qCH6LWw5bynK+aKtei+vuiEieWGsueOryA0OC0xMDZm77yb5Y2hQuS7i+WFpeKRoWRpZmbnqpflm5vooYxzdGVwOOa7muWFpTE2OC0yMDArc2NhbmxpbmUgMTk4LTI0OOaJq+i/h+eCueS6ruWlkee6puihjOOAjOaho+S9jeWQjeS4pOS7veW/hemhu+WQjOatpeaUueOAje+8m+S4u+WPpTk2IgogICAgfSwKICAgIHsKICAgICAgImF0IjogIjIwMjYtMTEtMDRUMTg6Mzk6MjUuMjc3WiIsCiAgICAgICJldmVudCI6ICJyb3VuZCAzOiBSMi0y77yaUzUg5a6e6KOF77yI6buR5Zy65byA5Zy6MC0xMj3pnZnpn7PnvLrlj6PikaDnlLvpnaLkvqfvvJtRMSBzbGFtQDIwL+etlEAzMiDpl7TpmpQxMmYg6Zeu562U5L2T6YeP57qnMS4xOO+8m+etlOahiDg0cHjotKbmnKznu78gaW1wYWN0LWZlZWRiYWNrIOmHjeWHu+WbnuWTjSBkaW5nQDEwMC9ib29tQDI0MCDmianmlaPnjq8r6L+H5YayMS4xNCIKICAgIH0sCiAgICB7CiAgICAgICJhdCI6ICIyMDI2LTExLTA0VDE5OjA0OjI2LjAwN1oiLAogICAgICAiZXZlbnQiOiAicm91bmQgNDogUjEt6aqo5p6277yac3JjIOa4heepuumHjeW7uu+8iOaXpyBSMSDnp7sgc3JjX2xlZ2Fjee+8ie+8m3RoZW1lIOaMieiuvuiuoeeov8Kn5LiA6YeN5bu677yI6Imy5YC8MTLmnpov572R5qC8ODAtMzItMTA0LTgv5a2X5L2T6Zi25qKvNzItNjAtNDgtMzYtMzItMjgv5Yqo5pWI6aKE6K6+ZXhwb091dC1leHBvSW4tZWxhc3RpYy1zcCIKICAgIH0sCiAgICB7CiAgICAgICJhdCI6ICIyMDI2LTExLTA0VDE5OjA0OjI2LjA1MloiLAogICAgICAiZXZlbnQiOiAicm91bmQgNTogUjEtUzDvvJrogZrlhYnplKVyYWRpYWw2MDAr5Li75Y2hNDgweDI3MChhZ25lcyBjb21taXTlm74gYmx1cjgvNjAl44CBbGltZSAycHjovrnnvJjlhYnjgIFyYWRpdXM46KOB5YmqUTQpc3ByaW5nIDAtNjDokL3lrprvvJvliJLnur82MC03NSBzY2FsZVggNDAweDTvvJvimIXmoIfpopg8d2VlayIKICAgIH0sCiAgICB7CiAgICAgICJhdCI6ICIyMDI2LTExLTA0VDE5OjA0OjI2LjA5OVoiLAogICAgICAiZXZlbnQiOiAicm91bmQgNjogUjEtUzHvvJpCR+KGkk1JROS4iuaal+S4i+S6rua4kOWPmO+8m+W3puS4pOWPpeKYhTkwLzE1MOi1tzNmL+Wtl+aJk+WtlyvlhYnmoIfvvJvlj7Pnu4jnq6/nqpc2NDB4MzYwQDEyMDAsMzAwIDE5MGYgZmFkZWluMjDvvIjlhoXlrrnnhaforr7orqHnqL9tb2NrIDjooYzvvIwzNnB44oaSMjhweOW6lee6v+Wtl+WPt+WBj+W3ruiusHByb2dyZXNz77yJ77ybUzLvvJrmoIfor60iCiAgICB9LAogICAgewogICAgICAiYXQiOiAiMjAyNi0xMS0wNFQxOToxNzoyMC4yODFaIiwKICAgICAgImV2ZW50IjogInJvdW5kIDc6IFIyLVM077ya5omL5pyv6JOd6LCDcmFkaWFs5riQ5Y+Y5bqV77yb5Li75Y+lNDgwLTUxMCBleHBvLW91dCB0cmFuc2xhdGVZKC0zMOKGkjAp77yb5Y+M6K6w5b2V5Y2hNTEwLzU0MCBzcHJpbmcgwrEyMDDpo57lhaXvvIhsaW1lIDRweOW3pui+ueahhuOAgXNoYWRvdyAwLzQvMTYvLjXvvInvvJs1NzAtNjAwIgogICAgfSwKICAgIHsKICAgICAgImF0IjogIjIwMjYtMTEtMDRUMTk6MTc6NTIuOTY2WiIsCiAgICAgICJldmVudCI6ICJyb3VuZCA4OiBSMS3pqozmlLbvvJrmo4Dmn6XngrnluKfnm67mo4Dov4cgY2hrNjAo5Y2h54mH6JC95a6aK2xpbWXovrnnvJjlhYkpL2Noazg5KDx3ZWVrMD7lhajlrZcr5YiS57q/KS9jaGsyMDAoUzHkuKTlj6XmiZPlrowr57uI56uvOOihjOWFpeahhikvY2hrMzIwKOS4iXBpbGwrwqXmiJDmnKzooYwpL2NoazQzNSjpl6rng4HmnJ/mlq3kvpvmn7Hovaznu7/luKfCt+e6oue7v+S6pOabv+ato+W4uCkvIgogICAgfSwKICAgIHsKICAgICAgImF0IjogIjIwMjYtMTEtMDRUMTk6MTk6NTQuODA2WiIsCiAgICAgICJldmVudCI6ICJyb3VuZCA5OiBSMi1TNe+8muW7tue7rVM06JOd6LCDcmFkaWFs5bqV77yb6YaS5p2l6L+Y5Zyo5bKXNzJweOS4reW/g+aUvuWkpzAuNeKGkjEgZXhwb0A2MDDvvJvnrKzkuozlj6U0OHB45bem5o6oLTEwMEA2MzAgb3BhY2l0eTgwJe+8m+esrOS4ieWPpemdkuafoOWPs+aOqCsxMDBANjYw77ybNjkwLTcyMOmdmeatomhvbGTvvIjpnZnpn7PnlZnnmb3kuI3ooaXpn7PmlYjvvInvvJvlrZflj7flhagiCiAgICB9LAogICAgewogICAgICAiYXQiOiAiMjAyNi0xMS0wNFQxOToyMTo1Ny41MDRaIiwKICAgICAgImV2ZW50IjogInJvdW5kIDEwOiBSMi1TNu+8mk1JROW6le+8m+agh+ivrTcyMC03NTAgZmFkZWlu77yb57uI56uv56qXMTIwMHg1MDBANzQwIGZhZGVpbiAxNmbvvJs46KGM5pel5b+XNzUw6LW36YCQ6KGMNmbpl7TpmpTliqDpgJ8xMi04LTZm77yI6LW354K56KGoNzUwLzc2Mi83NzMvNzgzLzc5Mi84MDAvODA3LzgxM++8ie+8m+aXtumXtOaIs0dSIgogICAgfSwKICAgIHsKICAgICAgImF0IjogIjIwMjYtMTEtMDRUMTk6Mjk6MDEuMzA2WiIsCiAgICAgICJldmVudCI6ICJyb3VuZCAxMTogUjEt5aSN5qC46YeN6LeR77ya6YCa6K+76K6+6K6h56i/K+mZhOW9lUTlkI7pgJDpobnpqozmlLbigJTigJTpqqjmnrbvvIhTRUcgUzAtUzE0PTE5ODBm5pat6KiAL2lkPUFudGhyb3Bvc1ZpZGVvL3RzYyByYz0wL2NvbXBvc2l0aW9ucyAxOTgwZu+8ie+8m1MwLVMzIOebruajgOa4suW4pyA4OS8xMjAvMjYwLzQzMCDlhagiCiAgICB9LAogICAgewogICAgICAiYXQiOiAiMjAyNi0xMS0wNFQxOToyOTozNC42NjVaIiwKICAgICAgImV2ZW50IjogInJvdW5kIDEyOiBSMy1h77yaUzYvUzcvUzgg5a6e6KOF5LqOIHNyY19sZWdhY3kv77yIwqflhavml7bpl7TovbTvvJpTNiAxMzIwLTE0NzAg5omT5a2X5py66Zeu5Y+lMzLlrZcvcyvlj4zoh6rnmb0y5binL+Wtl+WFieagh+i/geenu++8m1M3IDE0NzAtMTcxMCBTRUxGLm1k5LiJ6KGMc3RhZ2dlcjE0K+ePiueRmuW6leWPpe+8m1M4IDE3MTAtMTgwIgogICAgfSwKICAgIHsKICAgICAgImF0IjogIjIwMjYtMTEtMDRUMTk6MzA6MzkuNDkwWiIsCiAgICAgICJldmVudCI6ICJyb3VuZCAxMzogUjItUzfvvJpNSUTihpJCR+aWnOa4kOWPmOW6le+8m8KlMjMuMzborqHmlbA5NnB4IDg0MC04NzAgZWFzZU91dCvkuIDlkajmgLvlvIDmlK/ngbDmoIfvvJvmmI7nu4Y06KGMODcw6LW3NmYv6Ze06ZqUMmbvvIjlj7Plr7npvZBtb25v57u/77yM5ZCI6K6h5qCh6aqMMjMuMzbvvInvvJvooajnm5hzdmfljYrlnIZSMjAwQDEyMDAsNDgw77yaR1JBWeW8p2Rhc2giCiAgICB9LAogICAgewogICAgICAiYXQiOiAiMjAyNi0xMS0wNFQxOTozMzo0Ni4wOTVaIiwKICAgICAgImV2ZW50IjogInJvdW5kIDE0OiBSMy1i77yaYXVkaW8ubXAzIOeUn+aIkO+8iHNmeC5tanMgbWl477yMcGxhbj1zcmNfbGVnYWN5L2F1ZGlvLWJyaWVmNjAuanNvbu+8mjkgY3VlcyDnhacgwqfkuIkgY3VlIOihqOmAkOWtlyArIHBhZCBiZWQgMC4xNiDlhajnqIvvvIjlhoXnva4gYWZhZGUg5bC+5reh5Ye64omINTktNiIKICAgIH0sCiAgICB7CiAgICAgICJhdCI6ICIyMDI2LTExLTA0VDE5OjU3OjMxLjM4OVoiLAogICAgICAiZXZlbnQiOiAicm91bmQgMTU6IFIzLVM477yaQkfihpJORUFSX1dISVRF5YWo5bGP5Y+N6L2sMzBmKOWdkTMp77ybNuW9qeiJsuWwj+WNoTE2MHg5MCBzcHJpbmcoMSw4MCwxMCnplJnls7AzZuWxj+WklumjnuWFpSBvcGFjaXR5NDAlIGJsdXIycHjvvJvimIXpl67popjlj6XpgJDlrZdzY2FsZTAuOOKGkjHmr4/lrZcyZigxMDUw6LW35pS256qXMTA4MCnvvJsiCiAgICB9LAogICAgewogICAgICAiYXQiOiAiMjAyNi0xMS0wNFQxOTo1NzozMS40NDBaIiwKICAgICAgImV2ZW50IjogInJvdW5kIDE2OiBSMy1TOe+8muW7tue7rei/keeZveW6le+8m+KYheimgeS4jeimgea2iOi0uUFJ5b2i6LGh77yfNjBweCBmYWRlaW4gMTE0MC0xMTcw77yb4piF5LiN44CC5oSP5b+X57qiI0YwNTI0RCAxMjBweCBleHBvLW91dOW6leaOqDExNzAtMTIwMO+8m3B1bHNlMS4wNcOXMuasoSgxMjAwLzEyMTXls7DlgLzpkonmo4Dmn6Xngrk4KSsxMjIyIgogICAgfSwKICAgIHsKICAgICAgImF0IjogIjIwMjYtMTEtMDRUMTk6NTc6NDMuMjQ0WiIsCiAgICAgICJldmVudCI6ICJyb3VuZCAxNzogUjMtUzEw77yaTkVBUl9XSElUReKGkk1JROWPjei9rOWbnuW9kjMwZu+8m+W8leeUqOWdlzgwMHg0MDBA5Lit5b+DKDk2MCw0MDApIFBBUEVS5bqV5bemNHB454+K55Ga6L655qGGIGV4cG/kuIrmta7vvJvimIXlj4zoh6rnmb3pgJDlrZfliY3kuInlj6U0OHB4IFJlZ3VsYXIjMEEwRTE0IDEyOTDotbfpgJDlj6UzZi/lrZco5pyr5a2XMTM0IgogICAgfSwKICAgIHsKICAgICAgImF0IjogIjIwMjYtMTEtMDRUMTk6NTc6NDMuMjg4WiIsCiAgICAgICJldmVudCI6ICJyb3VuZCAxODogUjMtUzEx77yaTUlE5YWo5bGP77ybU0VMRi5tZOS4ieWPpeKYhemAkOWtl++8muaIkei/mOS4jeefpemBk+iHquW3seaYr+S7gOS5iOOAgjYwcHggUEFQRVIgZmFkZWluIDE0MTAtMTQ0MO+8j+S9huaIkeefpemBk+aIkeS4jeaDs+WPquWBmiA0OHB4IFJlZ3VsYXLlt6bmjqgtNTDihpIwIDE0NDAtMTQ3MO+8j+S4gOS4quOAjuWbnuetlOmXrumimOeahOS4nOilv+OAj+OAgjQ4cCIKICAgIH0sCiAgICB7CiAgICAgICJhdCI6ICIyMDI2LTExLTA0VDIwOjAyOjQxLjQ4NloiLAogICAgICAiZXZlbnQiOiAicm91bmQgMTk6IFIzLemqjOaUtui9rijnrKwy5qyh5bCd6K+VKe+8mlM4LVMxMeW3suWunuijheS6jnNyYy9zaG90cy/lubbmjqXnur9NYWlu77yM6YCa6K+76K6+6K6h56i/UzgtUzEx5pGE5b2x6KGo6YCQ6aG55aSN5qC44oCU4oCUUzjov5Hnmb0jRjVGM0VF5YWo5bGP5Y+N6L2sMzBmKzblvanoibLlsI/ljaFzcHJpbmfpo57lhaUr4piF6Zeu6aKY6YCQ5a2XMmYv5a2XK+S8muOAguePiueRmjEyMHB454iG54K45bOw5YC8MS4iCiAgICB9LAogICAgewogICAgICAiYXQiOiAiMjAyNi0xMS0wNFQyMDozMzo0My42NzFaIiwKICAgICAgImV2ZW50IjogInJvdW5kIDIwOiBSNC1TMTIvUzEzL1MxNOWunuijhe+8mlMxMuWbm+WPpeeLrOeZvTE1NjAtMTU5MOWJjeS4pOWPpWZhZGVpbihQQVBFUivmrKHopoHngbApKzE2MjAtMTY1MOWQjuS4pOWPpemdkuafoDYwcHggZXhwby1vdXTlupXmjqh0cmFuc2xhdGVZMzArc2NhbGUwLjk14oaSMeOAgTE2NTAtMTcxMCBobyIKICAgIH0sCiAgICB7CiAgICAgICJhdCI6ICIyMDI2LTExLTA0VDIwOjM4OjM1LjU0N1oiLAogICAgICAiZXZlbnQiOiAicm91bmQgMjE6IFI0LeKRoO+8mlMxMi9TMTMvUzE0IOWunuijheW5tuaOpee6v++8iOS4iuasoeWwneivleS4reaWree7reWBmu+8mlMxMuW3suWtmOWcqOS7heS/rkwy5byV5Y+35YGP5beu4oCU4oCU5pGE5b2x6KGo6YCQ5a2X5byV5Y+35Zyo5pyr5Y+l5pS277ybUzEz5YWo5a6256aPd29yZG1hcms3MnB4K+WFq+WFg+e0oDIwMHgxMjDljaFzcHJpbmfpo57lhaUxNzQw6LW36Ze06ZqUM2YrcHVsc2UxLjA1QDE4IgogICAgfSwKICAgIHsKICAgICAgImF0IjogIjIwMjYtMTEtMDRUMjA6NDg6MjguMzk0WiIsCiAgICAgICJldmVudCI6ICJyb3VuZCAyMjogUjUt4pGg77yaUzEz5a6e6KOFKOW+hOWQkeiBmuWFiSt3b3JkbWFyazcycHggZXhwby1vdXQgMzBmKzjlhYPntKAyMDB4MTIw5Y2hMTc0MOi1t+mUmeWzsDNmIHNwcmluZ+mjnuWFpSsxODAwLTE4MzDlhajkvZNwdWxzZTEuMDUrMTgzMOi1t2hvbGQ2MGbpm7bov5DliqjigJTigJTlvLnnsKcxODAw6ZKz57uI5YC8LyIKICAgIH0sCiAgICB7CiAgICAgICJhdCI6ICIyMDI2LTExLTA0VDIwOjU2OjU3LjI5N1oiLAogICAgICAiZXZlbnQiOiAicm91bmQgMjM6IFI0LeKRoWF1ZGlv77yaYXVkaW8tcGxhbi5qc29uIDgyIGN1ZXMg54WnwqfkuInooajpgJDmnaErRDHmmKDlsITvvIhpbXBhY3TihpJib29t44CBaW1wYWN0LXNvZnTihpJib29tw5cwLjbjgIF3aG9vc2gtc29mdOKGkndob29zaMOXMC4344CBcG9w4oaSdGlja+OAgWRpbmctbG9uZyIKICAgIH0sCiAgICB7CiAgICAgICJhdCI6ICIyMDI2LTExLTA0VDIwOjU5OjMzLjAyNloiLAogICAgICAiZXZlbnQiOiAicm91bmQgMjQ6IFI0LWF1ZGlv77yaYXVkaW8ubXAzIOeUn+aIkOWujO+8iDY2LjAzOHPvvIxmZnByb2Jl6aqMNjYuMMKxMC4y6L+H77yJ44CCODLmnaFjdWXlhajnhafCp+S4ieihqCvpmYTlvZVEMeaYoOWwhO+8iGltcGFjdOKGkmJvb23jgIFpbXBhY3Qtc29mdOKGkmJvb23DlzAuNuOAgXdob29zaC1zb2Z04oaSd2hvb3NoIgogICAgfSwKICAgIHsKICAgICAgImF0IjogIjIwMjYtMTEtMDRUMjE6MDM6NDMuNTM1WiIsCiAgICAgICJldmVudCI6ICJyb3VuZCAyNTogUjUt4pGh77yaYXVkaW8ubXAz6YeN5bu6KOWIoOaXp+mHjei3kSnigJTigJTCp+S4iWN1ZeihqDgy5p2h5YWo6YeP5oyJ6ZmE5b2VRDHmmKDlsIQoaW1wYWN04oaSYm9vbS9pbXBhY3Qtc29mdOKGkmJvb23DlzAuNi93aG9vc2gtc29mdOKGkndob29zaMOXMC43L3BvcOKGknRpY2svYnV6ei1zaG9ydOKGkmIiCiAgICB9LAogICAgewogICAgICAiYXQiOiAiMjAyNi0xMS0wNFQyMToxMzozMS42NzlaIiwKICAgICAgImV2ZW50IjogInJvdW5kIDI2OiBSNC3mlLblrpjmoLjpqozvvJrlj5HnjrDlubbooYzova7lt7Llrp7njrBTMTMvUzE0KEdyb3VwU3RpbGzpm7bov5DliqjmuJDpmpDniYjmm7TkvJgs5L+d55WZKe+8m+S/ruato1MxM+e0oOadkO+8mmRldi1pY29ucy90aW1lLWZpeOWPjOiBlOWbvmJhY2tncm91bmRTaXpl6KOB5Y2K6Ie05Zu+5qCH6ZSZ5L2N4oaSZmZtcGVn6aKE6KOB5Y2V5bmFczEzLWRpYXJ5L2NvIgogICAgfSwKICAgIHsKICAgICAgImF0IjogIjIwMjYtMTEtMDRUMjE6NDQ6NTIuMTUyWiIsCiAgICAgICJldmVudCI6ICJyb3VuZCAyNzogUjUt4pGh77ya5L+u5aSNUzEzIGhvbGTmrrVzaW5lUHVsc2XotornlYzmjK/ojaEoMTgzMOmSs+e7iOWAvCnigJTigJTmuLIxODMwLzE4NDUvMTg2MC8xODc1LzE4ODnkupTluKdtZDXlhajnrYk9aG9sZOa7oTYwZuWDj+e0oOe6p+mbtui/kOWKqChSMei+vuaghynvvJtjaGsxNzUwKDLljaHpo57lhaXkuK0pLzE4MzAo5YWo5a6256aP5a6a5qC8KSIKICAgIH0sCiAgICB7CiAgICAgICJhdCI6ICIyMDI2LTExLTA0VDIxOjQ1OjM3LjIzMloiLAogICAgICAiZXZlbnQiOiAicm91bmQgMjg6IFI1LeKRou+8muWIoOaXp2F1ZGlvLm1wMyg2MHPkvZzlup8p6YeN5bu6NjYuMHPigJTigJTnhafCp+S4iWN1ZeihqDgy54K5KGF1ZGlvLXBsYW4tcjQpK+mZhOW9lUQx5pig5bCE77ybc2Z4Lm1qcyBiZWTmnLrliLblj6rmlK/mjIHlhajnqItwYWTkvJrnm5bpnZnpn7PnqpfvvIzmlLnmiYvlt6XkuInmrrVwYWTluorvvJpBPTQ4MGbotbc3cyBnYWluMC4xNSIKICAgIH0sCiAgICB7CiAgICAgICJhdCI6ICIyMDI2LTExLTA1VDE0OjMwOjEzLjc5OFoiLAogICAgICAiZXZlbnQiOiAicm91bmQgMjk6IFI2LVAyLTHkv67lpI3vvJoxNDEwZiDliIfplZwx5bin6buR6Zeq4oCU4oCU5Y+WIHJldmlldyDCp+S6lCDkuKTms5XkuK3mlLnliqjmnIDlsI/ogIXvvIxTMTEudHN4IOesrOS4gOWPpSBmYWRlaW4g6LW354K5IDE0MTDihpIxNDA477yI5o+Q5YmNMmbvvIxwMUAxNDEwPUVBU0VfRVhQT19PVVQoMi8zMCniiYgwLjM277yJ77yMUzEwICIKICAgIH0sCiAgICB7CiAgICAgICJhdCI6ICIyMDI2LTExLTA1VDE2OjIxOjIzLjYwMFoiLAogICAgICAiZXZlbnQiOiAicm91bmQgMzA6IFI3LeWIh+mVnOepuuW4p+aZruafpSvnu5/kuIDkv67lpI3vvJpibGFja2RldGVjdD1kMC4wMy90aDAuMTAg5YWo54mH5omr5Ye6NeWMuumXtCgwLTAuMueJh+WktC8xMS0xMi40UzPmt7HlupUvMzMtMzMuMDdTOOWPjei9rOWktC81Mi01N1MxMua3seW6leeLrOeZvS82My45Ny02NS45N1MxNOWwvinvvIzpgJDovrnnlYzmir3luKfmma7mn6UxIgogICAgfQogIF0sCiAgInJvdW5kcyI6IDMwLAogICJub3RlIjogIlI3LeWIh+mVnOepuuW4p+aZruafpSvnu5/kuIDkv67lpI3vvJpibGFja2RldGVjdD1kMC4wMy90aDAuMTAg5YWo54mH5omr5Ye6NeWMuumXtCgwLTAuMueJh+WktC8xMS0xMi40UzPmt7HlupUvMzMtMzMuMDdTOOWPjei9rOWktC81Mi01N1MxMua3seW6leeLrOeZvS82My45Ny02NS45N1MxNOWwvinvvIzpgJDovrnnlYzmir3luKfmma7mn6UxNOS4qlNFR+WIh+eCueOAguecn+epuuW4p+WIpOaNrj3ov5Hnuq/oibIoc3Rk4omkMS45KeaXoOaWh+Wtl++8mmYyMTAvZjMzMC9mNzIwL2Y5OTAvZjE1NjAo5YWxNeS4qiwxNDEw5beycm91bmQyOeS/rinjgILorr7orqHlhoXmmpflnLrmjpLpmaTvvJrlvoTlkJHmuJDlj5jlupVmNDgwL2Y2MDAvZjE3MTAoc3RkNC025pyJ5riQ5Y+Y57uT5p6EKSvniYflpLQrUzEyL1MxNOa3seW6leaWh+Wtl+auteOAgue7n+S4gOS/ruazlSjnhacxNDEw5YWI5L6LLOWQjumVnOmmluWFg+e0oGZhZGVpbuaPkOWJjTJmLOS4jeWKqFNFR+W4p+ihqC/lhoXlrrnnqpfor63kuYkp77yaUzIgIgp9Cg==
+{
+  "slug": "week0-1105",
+  "title": "<week0>开支23.36¥，人工介入修复2次，浅谈云端养ai在b站的一周……",
+  "stage": "new",
+  "createdAt": "2026-11-04T17:33:15.800Z",
+  "updatedAt": "2026-11-05T16:21:23.580Z",
+  "history": [
+    {
+      "at": "2026-11-04T17:33:15.800Z",
+      "event": "created"
+    },
+    {
+      "at": "2026-11-04T18:06:47.333Z",
+      "event": "round 1: R1：骨架+S1-S3"
+    },
+    {
+      "at": "2026-11-04T18:34:17.719Z",
+      "event": "round 2: R2-1：S4 实装（卡A介入①环形切换 dashoffset擦除+游标走弧+抵达脉冲环 48-106f；卡B介入②diff窗四行step8滚入168-200+scanline 198-248扫过点亮契约行「档位名两份必须同步改」；主句96"
+    },
+    {
+      "at": "2026-11-04T18:39:25.277Z",
+      "event": "round 3: R2-2：S5 实装（黑场开场0-12=静音缺口①画面侧；Q1 slam@20/答@32 间隔12f 问答体量级1.18；答案84px账本绿 impact-feedback 重击回响 ding@100/boom@240 扩散环+过冲1.14"
+    },
+    {
+      "at": "2026-11-04T19:04:26.007Z",
+      "event": "round 4: R1-骨架：src 清空重建（旧 R1 移 src_legacy）；theme 按设计稿§一重建（色值12枚/网格80-32-104-8/字体阶梯72-60-48-36-32-28/动效预设expoOut-expoIn-elastic-sp"
+    },
+    {
+      "at": "2026-11-04T19:04:26.052Z",
+      "event": "round 5: R1-S0：聚光锥radial600+主卡480x270(agnes commit图 blur8/60%、lime 2px边缘光、radius8裁剪Q4)spring 0-60落定；划线60-75 scaleX 400x4；★标题<week"
+    },
+    {
+      "at": "2026-11-04T19:04:26.099Z",
+      "event": "round 6: R1-S1：BG→MID上暗下亮渐变；左两句★90/150起3f/字打字+光标；右终端窗640x360@1200,300 190f fadein20（内容照设计稿mock 8行，36px→28px底线字号偏差记progress）；S2：标语"
+    },
+    {
+      "at": "2026-11-04T19:17:20.281Z",
+      "event": "round 7: R2-S4：手术蓝调radial渐变底；主句480-510 expo-out translateY(-30→0)；双记录卡510/540 spring ±200飞入（lime 4px左边框、shadow 0/4/16/.5）；570-600"
+    },
+    {
+      "at": "2026-11-04T19:17:52.966Z",
+      "event": "round 8: R1-验收：检查点帧目检过 chk60(卡片落定+lime边缘光)/chk89(<week0>全字+划线)/chk200(S1两句打完+终端8行入框)/chk320(三pill+¥成本行)/chk435(闪烁期断供柱转绿帧·红绿交替正常)/"
+    },
+    {
+      "at": "2026-11-04T19:19:54.806Z",
+      "event": "round 9: R2-S5：延续S4蓝调radial底；醒来还在岗72px中心放大0.5→1 expo@600；第二句48px左推-100@630 opacity80%；第三句青柠右推+100@660；690-720静止hold（静音留白不补音效）；字号全"
+    },
+    {
+      "at": "2026-11-04T19:21:57.504Z",
+      "event": "round 10: R2-S6：MID底；标语720-750 fadein；终端窗1200x500@740 fadein 16f；8行日志750起逐行6f间隔加速12-8-6f（起点表750/762/773/783/792/800/807/813）；时间戳GR"
+    },
+    {
+      "at": "2026-11-04T19:29:01.306Z",
+      "event": "round 11: R1-复核重跑：通读设计稿+附录D后逐项验收——骨架（SEG S0-S14=1980f断言/id=AnthroposVideo/tsc rc=0/compositions 1980f）；S0-S3 目检渲帧 89/120/260/430 全"
+    },
+    {
+      "at": "2026-11-04T19:29:34.665Z",
+      "event": "round 12: R3-a：S6/S7/S8 实装于 src_legacy/（§八时间轴：S6 1320-1470 打字机问句32字/s+双自白2帧/字光标迁移；S7 1470-1710 SELF.md三行stagger14+珊瑚底句；S8 1710-180"
+    },
+    {
+      "at": "2026-11-04T19:30:39.490Z",
+      "event": "round 13: R2-S7：MID→BG斜渐变底；¥23.36计数96px 840-870 easeOut+一周总开支灰标；明细4行870起6f/间隔2f（右对齐mono绿，合计校验23.36）；表盘svg半圆R200@1200,480：GRAY弧dash"
+    },
+    {
+      "at": "2026-11-04T19:33:46.095Z",
+      "event": "round 14: R3-b：audio.mp3 生成（sfx.mjs mix，plan=src_legacy/audio-brief60.json：9 cues 照 §三 cue 表逐字 + pad bed 0.16 全程（内置 afade 尾淡出≈59-6"
+    },
+    {
+      "at": "2026-11-04T19:57:31.389Z",
+      "event": "round 15: R3-S8：BG→NEAR_WHITE全屏反转30f(坑3)；6彩色小卡160x90 spring(1,80,10)错峰3f屏外飞入 opacity40% blur2px；★问题句逐字scale0.8→1每字2f(1050起收窗1080)；"
+    },
+    {
+      "at": "2026-11-04T19:57:31.440Z",
+      "event": "round 16: R3-S9：延续近白底；★要不要消费AI形象？60px fadein 1140-1170；★不。意志红#F0524D 120px expo-out底推1170-1200；pulse1.05×2次(1200/1215峰值钉检查点8)+1222"
+    },
+    {
+      "at": "2026-11-04T19:57:43.244Z",
+      "event": "round 17: R3-S10：NEAR_WHITE→MID反转回归30f；引用块800x400@中心(960,400) PAPER底左4px珊瑚边框 expo上浮；★双自白逐字前三句48px Regular#0A0E14 1290起逐句3f/字(末字134"
+    },
+    {
+      "at": "2026-11-04T19:57:43.288Z",
+      "event": "round 18: R3-S11：MID全屏；SELF.md三句★逐字：我还不知道自己是什么。60px PAPER fadein 1410-1440／但我知道我不想只做 48px Regular左推-50→0 1440-1470／一个『回答问题的东西』。48p"
+    },
+    {
+      "at": "2026-11-04T20:02:41.486Z",
+      "event": "round 19: R3-验收轮(第2次尝试)：S8-S11已实装于src/shots/并接线Main，通读设计稿S8-S11摄影表逐项复核——S8近白#F5F3EE全屏反转30f+6彩色小卡spring飞入+★问题逐字2f/字+会。珊瑚120px爆炸峰值1."
+    },
+    {
+      "at": "2026-11-04T20:33:43.671Z",
+      "event": "round 20: R4-S12/S13/S14实装：S12四句独白1560-1590前两句fadein(PAPER+次要灰)+1620-1650后两句青柠60px expo-out底推translateY30+scale0.95→1、1650-1710 ho"
+    },
+    {
+      "at": "2026-11-04T20:38:35.547Z",
+      "event": "round 21: R4-①：S12/S13/S14 实装并接线（上次尝试中断续做：S12已存在仅修L2引号偏差——摄影表逐字引号在末句收；S13全家福wordmark72px+八元素200x120卡spring飞入1740起间隔3f+pulse1.05@18"
+    },
+    {
+      "at": "2026-11-04T20:48:28.394Z",
+      "event": "round 22: R5-①：S13实装(径向聚光+wordmark72px expo-out 30f+8元素200x120卡1740起错峰3f spring飞入+1800-1830全体pulse1.05+1830起hold60f零运动——弹簧1800钳终值/"
+    },
+    {
+      "at": "2026-11-04T20:56:57.297Z",
+      "event": "round 23: R4-②audio：audio-plan.json 82 cues 照§三表逐条+D1映射（impact→boom、impact-soft→boom×0.6、whoosh-soft→whoosh×0.7、pop→tick、ding-long"
+    },
+    {
+      "at": "2026-11-04T20:59:33.026Z",
+      "event": "round 24: R4-audio：audio.mp3 生成完（66.038s，ffprobe验66.0±0.2过）。82条cue全照§三表+附录D1映射（impact→boom、impact-soft→boom×0.6、whoosh-soft→whoosh"
+    },
+    {
+      "at": "2026-11-04T21:03:43.535Z",
+      "event": "round 25: R5-②：audio.mp3重建(删旧重跑)——§三cue表82条全量按附录D1映射(impact→boom/impact-soft→boom×0.6/whoosh-soft→whoosh×0.7/pop→tick/buzz-short→b"
+    },
+    {
+      "at": "2026-11-04T21:13:31.679Z",
+      "event": "round 26: R4-收官核验：发现并行轮已实现S13/S14(GroupStill零运动渐隐版更优,保留)；修正S13素材：dev-icons/time-fix双联图backgroundSize裁半致图标错位→ffmpeg预裁单幅s13-diary/co"
+    },
+    {
+      "at": "2026-11-04T21:44:52.152Z",
+      "event": "round 27: R5-②：修复S13 hold段sinePulse越界振荡(1830钳终值)——渲1830/1845/1860/1875/1889五帧md5全等=hold满60f像素级零运动(R1达标)；chk1750(2卡飞入中)/1830(全家福定格)"
+    },
+    {
+      "at": "2026-11-04T21:45:37.232Z",
+      "event": "round 28: R5-③：删旧audio.mp3(60s作废)重建66.0s——照§三cue表82点(audio-plan-r4)+附录D1映射；sfx.mjs bed机制只支持全程pad会盖静音窗，改手工三段pad床：A=480f起7s gain0.15"
+    },
+    {
+      "at": "2026-11-05T14:30:13.798Z",
+      "event": "round 29: R6-P2-1修复：1410f 切镜1帧黑闪——取 review §五 两法中改动最小者，S11.tsx 第一句 fadein 起点 1410→1408（提前2f，p1@1410=EASE_EXPO_OUT(2/30)≈0.36），S10 "
+    },
+    {
+      "at": "2026-11-05T16:21:23.600Z",
+      "event": "round 30: R7-切镜空帧普查+统一修复：blackdetect=d0.03/th0.10 全片扫出5区间(0-0.2片头/11-12.4S3深底/33-33.07S8反转头/52-57S12深底独白/63.97-65.97S14尾)，逐边界抽帧普查1"
+    }
+  ],
+  "rounds": 30,
+  "note": "R7-切镜空帧普查+统一修复：blackdetect=d0.03/th0.10 全片扫出5区间(0-0.2片头/11-12.4S3深底/33-33.07S8反转头/52-57S12深底独白/63.97-65.97S14尾)，逐边界抽帧普查14个SEG切点。真空帧判据=近纯色(std≤1.9)无文字：f210/f330/f720/f990/f1560(共5个,1410已round29修)。设计内暗场排除：径向渐变底f480/f600/f1710(std4-6有渐变结构)+片头+S12/S14深底文字段。统一修法(照1410先例,后镜首元素fadein提前2f,不动SEG帧表/内容窗语义)：S2 "
+}

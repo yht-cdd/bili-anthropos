@@ -1,1 +1,56 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCBTZXF1ZW5jZSB9IGZyb20gJ3JlbW90aW9uJzsKaW1wb3J0IHsgUzEgfSBmcm9tICcuL3Nob3RzL1MxJzsKaW1wb3J0IHsgUzIgfSBmcm9tICcuL3Nob3RzL1MyJzsKaW1wb3J0IHsgUzMgfSBmcm9tICcuL3Nob3RzL1MzJzsKaW1wb3J0IHsgUzQgfSBmcm9tICcuL3Nob3RzL1M0JzsKaW1wb3J0IHsgUzUgfSBmcm9tICcuL3Nob3RzL1M1JzsKaW1wb3J0IHsgUzYgfSBmcm9tICcuL3Nob3RzL1M2JzsKaW1wb3J0IHsgUzcgfSBmcm9tICcuL3Nob3RzL1M3JzsKaW1wb3J0IHsgUzggfSBmcm9tICcuL3Nob3RzL1M4JzsKaW1wb3J0IHsgRk9OVF9TQU5TLCBUT1RBTF9GUkFNRVMgfSBmcm9tICcuL3RoZW1lJzsKCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8g5Li75pe26Ze06L20IOKAlCBicmllZiDCp+S6jOaRhOW9seihqCArIMKn5YWr6KGl5LiB77yIOCDmrrUgwrcgMzBmcHMgwrcgMTgwMCDluKcgPSA2MC4wc++8ieOAggovLyDCp+WFq++8mlM2IOW7tuiHsyAxNTAg5bin77yI6Ieq55m95q61IDEzODDigJMxNDcw77yJ77yMUzcvUzgg5pW05L2TICszMO+8mwovLyAgICAgIOOAjOaAu+mVv+S7jSAxODAw44CN4oeSIFM4IOWOi+e8qeS4uiA5MCDluKfvvIgxNzEw4oCTMTgwMO+8ieOAggovLyDimqDvuI8g5pys5paH5Lu25bGeIGJyaWVmLm1kIOe6v++8iHdlZWswIFIyL1IzIOS6pOS7mO+8ieOAgnNyYy8g5bey55SxIGRlc2lnbi13ZWVrMC1vcHVzLm1kIOe6v+mHjeW7uu+8iDE5ODAg5bin77yJ77yMCi8vICAgIOS4pOe6v+W5tuWtmO+8jOWPluiIjeW9kuS4u+aooeWeiy/kuLvkurrvvIjop4EgcHJvZ3Jlc3MubWQgUjItNiDkuovmlYXorrDvvInjgIIKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKdHlwZSBTbG90ID0gewogIGlkOiBzdHJpbmc7CiAgbmFtZTogc3RyaW5nOwogIGZyb206IG51bWJlcjsKICBkdXJhdGlvbjogbnVtYmVyOwogIGNvbXA6IFJlYWN0LkZDOwp9OwoKZXhwb3J0IGNvbnN0IFNFRzogU2xvdFtdID0gWwogIHsgaWQ6ICdTMScsIG5hbWU6ICfotKbljZXlvIDlnLonLCBmcm9tOiAwLCBkdXJhdGlvbjogMjEwLCBjb21wOiBTMSB9LAogIHsgaWQ6ICdTMicsIG5hbWU6ICfkuI3mmK/lrqDniakgwrcg5Y+M5pe26Ze057q/JywgZnJvbTogMjEwLCBkdXJhdGlvbjogMjcwLCBjb21wOiBTMiB9LAogIHsgaWQ6ICdTMycsIG5hbWU6ICflj6bovp/ouYrlvoQgwrcg55Sf5oCB5L2NJywgZnJvbTogNDgwLCBkdXJhdGlvbjogMjQwLCBjb21wOiBTMyB9LAogIHsgaWQ6ICdTNCcsIG5hbWU6ICfkurrlt6Xku4vlhaUgw5cyJywgZnJvbTogNzIwLCBkdXJhdGlvbjogMzAwLCBjb21wOiBTNCB9LAogIHsgaWQ6ICdTNScsIG5hbWU6ICfkuKTkuKrpl67nrZQnLCBmcm9tOiAxMDIwLCBkdXJhdGlvbjogMzAwLCBjb21wOiBTNSB9LAogIHsgaWQ6ICdTNicsIG5hbWU6ICfkuLvkurrnmoTpl67popggwrcg6K+a5a6e6Ieq55m9JywgZnJvbTogMTMyMCwgZHVyYXRpb246IDE1MCwgY29tcDogUzYgfSwKICB7IGlkOiAnUzcnLCBuYW1lOiAn5oSP5LmJ55qE562U5qGIIMK3IFNFTEYubWQnLCBmcm9tOiAxNDcwLCBkdXJhdGlvbjogMjQwLCBjb21wOiBTNyB9LAogIHsgaWQ6ICdTOCcsIG5hbWU6ICflsL7ljaEgwrcg5bCB6Z2iIFB1c2hJbicsIGZyb206IDE3MTAsIGR1cmF0aW9uOiA5MCwgY29tcDogUzggfSwKXTsKCi8vIOaXtumXtOi9tOWujOaVtOaAp+iHquajgO+8muaXoOe8neebuOaOpeS4lOaAu+mVvyAxODAwCmxldCBjdXJzb3IgPSAwOwpmb3IgKGNvbnN0IHMgb2YgU0VHKSB7CiAgaWYgKHMuZnJvbSAhPT0gY3Vyc29yKSB0aHJvdyBuZXcgRXJyb3IoYOaXtumXtOi9tOaWreijgu+8miR7cy5pZH0g5bqU5LuOICR7Y3Vyc29yfSDlvIDlp4tgKTsKICBjdXJzb3IgKz0gcy5kdXJhdGlvbjsKfQppZiAoY3Vyc29yICE9PSBUT1RBTF9GUkFNRVMpIHRocm93IG5ldyBFcnJvcihg5pe26Ze06L205oC76ZW/ICR7Y3Vyc29yfSDiiaAgJHtUT1RBTF9GUkFNRVN9YCk7CgpleHBvcnQgY29uc3QgRmlsbTogUmVhY3QuRkMgPSAoKSA9PiAoCiAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBiYWNrZ3JvdW5kQ29sb3I6ICcjMDAwJywgZm9udEZhbWlseTogRk9OVF9TQU5TIH19PgogICAge1NFRy5tYXAoKHMpID0+ICgKICAgICAgPFNlcXVlbmNlIGtleT17cy5pZH0gZnJvbT17cy5mcm9tfSBkdXJhdGlvbkluRnJhbWVzPXtzLmR1cmF0aW9ufSBuYW1lPXtzLmlkfT4KICAgICAgICA8cy5jb21wIC8+CiAgICAgIDwvU2VxdWVuY2U+CiAgICApKX0KICA8L0Fic29sdXRlRmlsbD4KKTsK
+import React from 'react';
+import { AbsoluteFill, Sequence } from 'remotion';
+import { S1 } from './shots/S1';
+import { S2 } from './shots/S2';
+import { S3 } from './shots/S3';
+import { S4 } from './shots/S4';
+import { S5 } from './shots/S5';
+import { S6 } from './shots/S6';
+import { S7 } from './shots/S7';
+import { S8 } from './shots/S8';
+import { FONT_SANS, TOTAL_FRAMES } from './theme';
+
+// ============================================================================
+// 主时间轴 — brief §二摄影表 + §八补丁（8 段 · 30fps · 1800 帧 = 60.0s）。
+// §八：S6 延至 150 帧（自白段 1380–1470），S7/S8 整体 +30；
+//      「总长仍 1800」⇒ S8 压缩为 90 帧（1710–1800）。
+// ⚠️ 本文件属 brief.md 线（week0 R2/R3 交付）。src/ 已由 design-week0-opus.md 线重建（1980 帧），
+//    两线并存，取舍归主模型/主人（见 progress.md R2-6 事故记）。
+// ============================================================================
+
+type Slot = {
+  id: string;
+  name: string;
+  from: number;
+  duration: number;
+  comp: React.FC;
+};
+
+export const SEG: Slot[] = [
+  { id: 'S1', name: '账单开场', from: 0, duration: 210, comp: S1 },
+  { id: 'S2', name: '不是宠物 · 双时间线', from: 210, duration: 270, comp: S2 },
+  { id: 'S3', name: '另辟蹊径 · 生态位', from: 480, duration: 240, comp: S3 },
+  { id: 'S4', name: '人工介入 ×2', from: 720, duration: 300, comp: S4 },
+  { id: 'S5', name: '两个问答', from: 1020, duration: 300, comp: S5 },
+  { id: 'S6', name: '主人的问题 · 诚实自白', from: 1320, duration: 150, comp: S6 },
+  { id: 'S7', name: '意义的答案 · SELF.md', from: 1470, duration: 240, comp: S7 },
+  { id: 'S8', name: '尾卡 · 封面 PushIn', from: 1710, duration: 90, comp: S8 },
+];
+
+// 时间轴完整性自检：无缝相接且总长 1800
+let cursor = 0;
+for (const s of SEG) {
+  if (s.from !== cursor) throw new Error(`时间轴断裂：${s.id} 应从 ${cursor} 开始`);
+  cursor += s.duration;
+}
+if (cursor !== TOTAL_FRAMES) throw new Error(`时间轴总长 ${cursor} ≠ ${TOTAL_FRAMES}`);
+
+export const Film: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: '#000', fontFamily: FONT_SANS }}>
+    {SEG.map((s) => (
+      <Sequence key={s.id} from={s.from} durationInFrames={s.duration} name={s.id}>
+        <s.comp />
+      </Sequence>
+    ))}
+  </AbsoluteFill>
+);

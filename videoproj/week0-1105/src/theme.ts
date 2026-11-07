@@ -1,1 +1,51 @@
-Ly8g5YWo5bGA6KeG6KeJ57O757ufIOKAlCBkZXNpZ24td2VlazAtb3B1cy5tZCDCp+S4gCDorr7orqHmgLvnurLvvIjllK/kuIDkvp3mja7vvIkKLy8g6Imy5b2p57O757uf77ya5aSa5bGC5qyh5YWJ5b2x77yI5rex6Imy5Z+65bqVIDQwLTUwJSAvIOS4reiwg+W3peS9nOWMuiAzMC00MCUgLyDkuq7oibLkv6Hmga/lsYIgLyDlvLrosIPoibLvvIkKZXhwb3J0IGNvbnN0IFcgPSAxOTIwOwpleHBvcnQgY29uc3QgSCA9IDEwODA7CmV4cG9ydCBjb25zdCBGUFMgPSAzMDsKZXhwb3J0IGNvbnN0IFRPVEFMX0ZSQU1FUyA9IDE5ODA7IC8vIDY2LjBzIEAzMGZwcyDCtyDpmYTlvZUgRDIKCi8vIOKAlOKAlCDoibLlvanvvIjorr7orqHnqL/nu5nlrprlgLzvvIzpgJDlrZfnhafmioTvvInigJTigJQKZXhwb3J0IGNvbnN0IEJHID0gJyMwQTBFMTQnOyAvLyDmt7HoibLln7rlupXlsYIKZXhwb3J0IGNvbnN0IE1JRCA9ICcjMUExRjJDJzsgLy8g5Lit6LCD5bel5L2c5Yy677yI5rWF54Gw6JOd77yJCmV4cG9ydCBjb25zdCBQQVBFUiA9ICcjRUNFOUUxJzsgLy8g5Lqu6Imy5L+h5oGv5bGCIMK3IOexs+eZvee6uOi0qApleHBvcnQgY29uc3QgTElNRSA9ICcjRDRGNDNFJzsgLy8g5Lqu6Imy5L+h5oGv5bGCIMK3IOmdkuafoOmrmOWFiQpleHBvcnQgY29uc3QgTEVER0VSID0gJyMzRkI2OEInOyAvLyDkuq7oibLkv6Hmga/lsYIgwrcg6LSm5pys57u/5pWw5o2uCmV4cG9ydCBjb25zdCBDT1JBTCA9ICcjRDk3NzU3JzsgLy8g5by66LCDIMK3IOePiueRmua4qeaalgpleHBvcnQgY29uc3QgUkVEID0gJyNGMDUyNEQnOyAvLyDlvLrosIMgwrcg6ZSZ6K+v57qi77yI5LuF44CM5pat5L6b44CN5LiOIFM544CM5LiN44CC44CN77yJCmV4cG9ydCBjb25zdCBCTFVFX1RPUCA9ICcjMkEzRjVGJzsgLy8gUzQtUzcg5omL5pyv6JOd6LCD5riQ5Y+Y5LiK56uvCmV4cG9ydCBjb25zdCBCTFVFX0JPVCA9ICcjMUEyRjRGJzsgLy8gUzQtUzcg5omL5pyv6JOd6LCD5riQ5Y+Y5LiL56uvCi8vIFMxIOiDjOaZr++8muS4iuaal+S4i+S6rua4kOWPmO+8iOaRhOW9seihqCBTMe+8iQpleHBvcnQgY29uc3QgQkdfR1JBRCA9IGBsaW5lYXItZ3JhZGllbnQoMTgwZGVnLCAke0JHfSAwJSwgJHtNSUR9IDEwMCUpYDsKZXhwb3J0IGNvbnN0IE5FQVJfV0hJVEUgPSAnI0Y1RjNFRSc7IC8vIFM4LVMxMCDov5Hnmb3og4zmma8KZXhwb3J0IGNvbnN0IEdSQVkgPSAnIzhCOTQ5RSc7IC8vIOasoeimgeeBsAoKLy8g4oCU4oCUIOe9keagvO+8iMKn5LiA77ya55u05o6l5Zue5bqU5Z2RMe+8ieKAlOKAlApleHBvcnQgY29uc3QgTUFSR0lOID0gODA7IC8vIOWuieWFqOi+uei3ne+8iOS4iuS4i+W3puWPs++8iQpleHBvcnQgY29uc3QgR1VUVEVSID0gMzI7IC8vIOWIl+mXtOmalApleHBvcnQgY29uc3QgQ09MID0gMTA0OyAvLyAxMiDliJfnvZHmoLzliJflrr0KZXhwb3J0IGNvbnN0IEJBU0UgPSA4OyAvLyA4cHgg5Z+657q/77ya5omA5pyJ5YWD57Sg6auY5bqmL+mXtOi3neS4uiA4IOeahOWAjeaVsApleHBvcnQgY29uc3QgQ0FSRF9XID0gNDgwOyAvLyDkuLvljaHniYcgMTY6OQpleHBvcnQgY29uc3QgQ0FSRF9IID0gMjcwOwpleHBvcnQgY29uc3QgQ0FSRF9TTV9XID0gMzIwOyAvLyDlsI/ljaHniYcKZXhwb3J0IGNvbnN0IENBUkRfU01fSCA9IDE4MDsKZXhwb3J0IGNvbnN0IENBUkRfR0FQID0gMjQ7IC8vIOWNoeeJh+mXtOi3nQpleHBvcnQgY29uc3QgUkFESVVTID0gODsgLy8gUTTvvJrovrnnvJjlhYnlv4XpobvooqsgYm9yZGVyLXJhZGl1cyA4cHgg6KOB5YmqCgovLyDigJTigJQg5a2X5L2T6Zi25qKv77yIcHggQDE5MjDDlzEwODDvvJo3Mi82MC80OC8zNi8zMi8yOCDlha3moaPvvInigJTigJQKZXhwb3J0IGNvbnN0IEZTX1RJVExFID0gNzI7IC8vIOS4u+agh+mimCBCb2xkCmV4cG9ydCBjb25zdCBGU19TTE9HQU4gPSA2MDsgLy8g6ZWc5aS05qCH6K+tIEJvbGTvvIjiiaU1LjYlIOW4p+mrmO+8iQpleHBvcnQgY29uc3QgRlNfQ0FQVElPTiA9IDQ4OyAvLyDop6Por7TlrZfluZXvvIjiiaU0LjQl77yJCmV4cG9ydCBjb25zdCBGU19EQVRBID0gMzY7IC8vIOaVsOaNruagh+azqCBNb25v77yI4omlMy4zJe+8iQpleHBvcnQgY29uc3QgRlNfQVVYID0gMzI7IC8vIOi+heWKqeS/oeaBr++8iOKJpTMuMCXvvIkKZXhwb3J0IGNvbnN0IEZTX0NPREUgPSAyODsgLy8g5Luj56CBL1VSTCDlupXnur/vvIjku4Xnu4jnq6/oo4XppbDlsYLvvIkKCi8vIOWtl+S9k++8muS7hSBOb3RvIFNhbnMgQ0pLIFNDICsgSmV0QnJhaW5zIE1vbm/vvIjCp+S4g+ehrOe6puadn++8ie+8m+WFnOW6lemTvuWQjOaXp+W3peeoiwpleHBvcnQgY29uc3QgRk9OVF9TQU5TID0KICAiJ05vdG8gU2FucyBDSksgU0MnLCAnTm90byBTYW5zIFNDJywgJ05vdG8gU2FucyBDSksgSlAnLCAnUGluZ0ZhbmcgU0MnLCAnTWljcm9zb2Z0IFlhSGVpJywgc2Fucy1zZXJpZiI7CmV4cG9ydCBjb25zdCBGT05UX01PTk8gPQogICInSmV0QnJhaW5zIE1vbm8nLCB1aS1tb25vc3BhY2UsICdTRiBNb25vJywgTWVubG8sIENvbnNvbGFzLCAnTm90byBTYW5zIE1vbm8gQ0pLIFNDJywgbW9ub3NwYWNlIjsKCi8vIOKAlOKAlCDlhYnlvbHvvIjCp+S4gO+8muiBmuWFiemUpSAvIOi+uee8mOWFiSAvIOaKleW9se+8ieKAlOKAlApleHBvcnQgY29uc3QgU0hBRE9XID0gJzAgNHB4IDEycHggcmdiYSgwLDAsMCwwLjQpJzsKZXhwb3J0IGNvbnN0IFNQT1RMSUdIVCA9IGByYWRpYWwtZ3JhZGllbnQoY2lyY2xlIDYwMHB4IGF0IDUwJSA1MCUsIHJnYmEoMjYsMzEsNDQsMC4yKSwgcmdiYSgyNiwzMSw0NCwwKSA3MCUpYDsK
+// 全局视觉系统 — design-week0-opus.md §一 设计总纲（唯一依据）
+// 色彩系统：多层次光影（深色基底 40-50% / 中调工作区 30-40% / 亮色信息层 / 强调色）
+export const W = 1920;
+export const H = 1080;
+export const FPS = 30;
+export const TOTAL_FRAMES = 1980; // 66.0s @30fps · 附录 D2
+
+// —— 色彩（设计稿给定值，逐字照抄）——
+export const BG = '#0A0E14'; // 深色基底层
+export const MID = '#1A1F2C'; // 中调工作区（浅灰蓝）
+export const PAPER = '#ECE9E1'; // 亮色信息层 · 米白纸质
+export const LIME = '#D4F43E'; // 亮色信息层 · 青柠高光
+export const LEDGER = '#3FB68B'; // 亮色信息层 · 账本绿数据
+export const CORAL = '#D97757'; // 强调 · 珊瑚温暖
+export const RED = '#F0524D'; // 强调 · 错误红（仅「断供」与 S9「不。」）
+export const BLUE_TOP = '#2A3F5F'; // S4-S7 手术蓝调渐变上端
+export const BLUE_BOT = '#1A2F4F'; // S4-S7 手术蓝调渐变下端
+// S1 背景：上暗下亮渐变（摄影表 S1）
+export const BG_GRAD = `linear-gradient(180deg, ${BG} 0%, ${MID} 100%)`;
+export const NEAR_WHITE = '#F5F3EE'; // S8-S10 近白背景
+export const GRAY = '#8B949E'; // 次要灰
+
+// —— 网格（§一：直接回应坑1）——
+export const MARGIN = 80; // 安全边距（上下左右）
+export const GUTTER = 32; // 列间隔
+export const COL = 104; // 12 列网格列宽
+export const BASE = 8; // 8px 基线：所有元素高度/间距为 8 的倍数
+export const CARD_W = 480; // 主卡片 16:9
+export const CARD_H = 270;
+export const CARD_SM_W = 320; // 小卡片
+export const CARD_SM_H = 180;
+export const CARD_GAP = 24; // 卡片间距
+export const RADIUS = 8; // Q4：边缘光必须被 border-radius 8px 裁剪
+
+// —— 字体阶梯（px @1920×1080：72/60/48/36/32/28 六档）——
+export const FS_TITLE = 72; // 主标题 Bold
+export const FS_SLOGAN = 60; // 镜头标语 Bold（≥5.6% 帧高）
+export const FS_CAPTION = 48; // 解说字幕（≥4.4%）
+export const FS_DATA = 36; // 数据标注 Mono（≥3.3%）
+export const FS_AUX = 32; // 辅助信息（≥3.0%）
+export const FS_CODE = 28; // 代码/URL 底线（仅终端装饰层）
+
+// 字体：仅 Noto Sans CJK SC + JetBrains Mono（§七硬约束）；兜底链同旧工程
+export const FONT_SANS =
+  "'Noto Sans CJK SC', 'Noto Sans SC', 'Noto Sans CJK JP', 'PingFang SC', 'Microsoft YaHei', sans-serif";
+export const FONT_MONO =
+  "'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, 'Noto Sans Mono CJK SC', monospace";
+
+// —— 光影（§一：聚光锥 / 边缘光 / 投影）——
+export const SHADOW = '0 4px 12px rgba(0,0,0,0.4)';
+export const SPOTLIGHT = `radial-gradient(circle 600px at 50% 50%, rgba(26,31,44,0.2), rgba(26,31,44,0) 70%)`;

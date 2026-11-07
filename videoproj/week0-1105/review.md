@@ -1,1 +1,67 @@
-IyB3ZWVrMC0xMTA1IOaIkOeJh+i0qOajgOaKpeWRigoKLSDmiJDniYfvvJpgb3V0L3ZpZGVvLXdpdGgtYXVkaW8ubXA0YO+8iDMzNjcgS0LvvIzlkKvpn7PovajvvInvvJvml6Dlo7DniYggYG91dC92aWRlby5tcDRgCi0g5riy5p+T77yaR2l0SHViIEFjdGlvbnMgcnVuIDQxOTEyOTAzMDE477yIaHR0cHM6Ly9naXRodWIuY29tL3lodC1jZGQvYmlsaS1hbnRocm9wb3MvYWN0aW9ucy9ydW5zLzQxOTEyOTAzMDE477yJCi0g5pel5pyf77yaMjAyNi0xMS0wNQotIOesrOS4gOasoSBydW4gNDE5MTEzODAzODkg5aSx6LSl77yaYHZpZGVvL3B1YmxpYy9hc3NldHMvYCA0IOW8oOmdmeaAgeWbvuacqumajyByZW5kZXItdmlkZW8ubWpzIOS4iuS8oO+8iOiEmuacrOWPquaOqCBzcmMv77yJ44CC5bey5omL5Yqo6KGl5o6o6LWE5Lqn5Yiw5LuT5bqT77yIY29tbWl0IGY5MzY3MTE4IOetiSA0IOaemu+8ieWQjumHjei3keaIkOWKn+OAggoKIyMg5LiA44CB56Gs5oyH5qCH77yIZmZwcm9iZe+8iQoKfCDpobkgfCDopoHmsYIgfCDlrp7mtYsgfCDliKTlrpogfAp8LS0tfC0tLXwtLS18LS0tfAp8IOaXtumVvyB8IDY2LjBzIMKxIDAuMiB8IDY2LjAwMHMgfCDinIUgfAp8IOWIhui+qOeOhyB8IDE5MjDDlzEwODAgfCAxOTIww5cxMDgwIHwg4pyFIHwKfCDluKfnjocgfCAzMGZwcyB8IDMwLzHvvIwxOTgwIOW4pyB8IOKchSB8Cnwg6Z+z6L2oIHwg5pyJIHwgYWFj77yMNjUuOTRz77yILXNob3J0ZXN0IOaIqum9kO+8iSB8IOKchSB8Cnwg5ZON5bqmIHwg4oCUIHwgbWVhbiAtMjQuMmRCIC8gbWF4IC0xLjNkQu+8jOaXoOWJiumhtiB8IOKchSB8CgojIyDkuozjgIHmo4Dmn6XngrkgMTIg5bin5a+554Wn77yI5bin5Y+3PTMwZnBzIOWFqOWxgOW4p++8jOaKveW4p+WtmCBgb3V0L2Noay9g77yJCgp8ICMgfCDluKcgfCDopoHmsYIgfCDlrp7mtYsgfCDliKTlrpogfAp8LS0tfC0tLXwtLS18LS0tfC0tLXwKfCAxIHwgNjAgfCBTMCDljaHniYfokL3lrpor6L6557yY5YWJIHwg6IGa5YWJ6ZSlK2NvbW1pdOWNoStsaW1l6L6557yY5YWJ6b2Q5YWo77yM6Z2Z5q2iIHwg4pyFIHwKfCAyIHwgMjQwIHwgUzIg5LiJIHBpbGwg5YWo5YWl77yM5LitIHBpbGwgbGltZSDpq5jkuq4gfCBEZWVwU2Vlay9vcGVuY29kZShsaW1lKS9PdGhlcnMg5YWo5YWlIHwg4pyFIHwKfCAzIHwgNDIwIHwgUzMg56ys5LqU5qC5KDExLTAzKeWPmOe6ou+8jOOAjOaWreS+mzZo44CN5Y+v6K+7IHwgMTEtMDMvMTEtMDQg5Lik5qC557qi6ImyIDAlIOWPr+ivu++8m+KaoOacrOW4p+acquingeOAjOaWreS+mzZo44CN5qCH5rOo77yI5ZCO5q615Ye6546w77yMY2hrNDY1IOeVmeaho+W3sumqjO+8iSB8IOKchSjluKbms6gpIHwKfCA0IHwgNTcwIHwgUzQg5Y+M6K6w5b2V5Y2h5bm25YiX77yM5bembGltZei+ueahhiB8IOS/ruWkjSMxLyMyIOWvuem9kO+8jGxpbWUgNHB4IOa4heaZsCB8IOKchSB8CnwgNSB8IDY5MCB8IFM1IOS4ieWPpeWFqOWFpSBob2xkIHwg5LiJ5Y+l5YWo5YWl77yI56ys5LiJ5Y+lbGltZe+8ie+8jOmdmeatoiB8IOKchSB8CnwgNiB8IDg0MCB8IFM3IOWkp+aVsOWtlyDCpTIzLjM2IOiuoeaVsOWIsOS9jSB8ICoq5a6e5Li66K6h5pWw6LW354K577yaODQwZiDmmL7npLogwqUwLjAwKirvvIw4NzBmIOWIsOS9jSAyMy4zNu+8iGNoayBuODcwIOmqjO+8iSB8IOKaoOWBj+W3rjMwZiB8CnwgNyB8IDEwODAgfCBTOOOAjOS8muOAguOAjeeIhueCuOWzsOWAvCBzY2FsZTEuMiB8IOePiueRmuOAjOS8muOAguOAjeWkp+Wtlys25b2p5Y2h5pWj5biDK+i/keeZveW6lSB8IOKchSB8CnwgOCB8IDEyMDAgfCBTOeOAjOS4jeOAguOAjemmluasoSBwdWxzZTEuMDUgfCDmhI/lv5fnuqLjgIzkuI3jgILjgI0r6L+R55m95bqVIHwg4pyFIHwKfCA5IHwgMTQxMCB8IFMxMCDlvJXnlKjlnZflrozmlbTmmL7npLogfCAqKjE0MTAg5pW05bin6L+R6buRKirvvIjliIfplZzpl6rluKfvvInjgIIxNDA4LzE0MDkg5bin5byV55So5Z2X5LqU5Y+l5a6M5pW05peg57y677yIZXhhY3QxL24xNDA5IOmqjO+8ie+8jDE0MTIg5bey6L+bIFMxMSB8IOKaoOWIh+mVnDHluKfpu5Hpl6ogfAp8IDEwIHwgMTY1MCB8IFMxMiDlkI7kuKTlj6UgbGltZSDlhajlhaUgfCDlm5vlj6XlrozmlbTvvIzlkI7kuKTlj6UgbGltZSB8IOKchSB8CnwgMTEgfCAxODMwIHwgUzEzIHdvcmRtYXJrKzjlhYPntKDlrprmoLwgfCBBbnRocm9wb3NfQUkgKyA4IOWNoeWFqOWcqO+8iGNvbW1pdHMv6KeG6aKRL+S/ruWkjS/lpKkv5pel6K6wL1JlbW90aW9uL8KlMjMuMzYv57KJ5Lid77yJIHwg4pyFIHwKfCAxMiB8IDE5NTAgfCBTMTQgVVJMIOKJpTQwcHgg5riF5pmwIHwgNDBweCBsaW1lIE1vbm8g5riF5pmw5Y+v6K+7IHwg4pyFIHwKCiMjIOS4ieOAgeWbm+WdkeWIpOWumgoKfCDlnZEgfCDliKTlrpogfCDkvp3mja4gfAp8LS0tfC0tLXwtLS18CnwgMSDotKjmhJ/nspfns5nlhYPntKAgfCAqKuWPr+aUvuihjCoqIHwg5YWo54mH55+i6YeP5omB5bmzIFVJ77yM5a2X5L2T6L6557yY6ZSQ5Yip77yM5peg56C05o2f5L2N5Zu+L+WOi+e8qeS8quW9seOAgjMg5aSE44CM5Lyq5pWw5o2u44CN5Z2H5p+l5a6e5Li65pyJ5oSP6K6+6K6h5oiW6K+v6K+777yI6KeB6Zeu6aKY5riF5Y2V77yJIHwKfCAyIOWZquWjsOaEnyBCR00gfCAqKuWPr+aUvuihjCoqIHwgcGFkIGJlZCBnYWluIDAuMTbvvIzlhajniYcgbWVhbiAtMjQuMmRC77yMbWF4IC0xLjNkQiDml6DliYrpobbniIbpn7PvvJtzaWxlbmNlZGV0ZWN0IOmdmemfs+aute+8iDIyLjgtMjUuMCAvIDMxLjMtMzMuMCAvIDM0LjUtNDIuMSAvIDQ5LjktNTIuMCAvIDYxLjItNjMuMXPvvInkuI7orr7orqHnmoQgUzUvUzExL1MxMiDpnZnpn7PnlZnnmb3lkLvlkIjvvIzpnZ7kuKLpn7MgfAp8IDMg5aSn6Z2i56ev5q276buRIHwgKirlj6/mlL7ooYzvvIjluKbms6jvvIkqKiB8IGJsYWNrZGV0ZWN0IOWFqOeJh+aJq+aPj++8mjAtMC4yc++8iOeJh+WktOa3oeWFpe+8ieOAgTExLTEyLjRz44CBNTItNTdz44CBNjQtNjZzIOiiq+agh+m7ke+8jOmAkOW4p+aguOmqjOWdh+S4uua3seW6lSvnqIDnlo/mloflrZfnmoTmraPluLjnlLvpnaLvvIjpu5Hmo4DmtYvlmajmioogPjkwJSDmmpflupXnrpfpu5HvvInjgILllK/kuIDnnJ/nqbrluKfvvJoqKjE0MTBmIOWIh+mVnOmXqiAxIOW4p+WFqOm7kSoq77yIUzEwIOeql+WwviAxNDA5IOacieWGheWuueOAgTE0MTIgUzExIOW3suWFpe+8jD0zM21z77yM6IKJ55y86L+R5LiN5Y+v6KeB77yJIHwKfCA0IOaBkOaAluawm+WbtCB8ICoq6YCa6L+HKiogfCDmt7Hok50v6L+R55m9L+m7kSArIGxpbWUv54+K55Ga54K557yA77yM5Ya36Z2Z56eR5oqA6LCD77yb44CM5LiN44CC44CN5aSn57qi5Li65oOF57uq6auY54K56Z2e5oGQ5oCW77yb5peg5Lu75L2V6Zi05qOu5YWD57SgIHwKCiMjIOWbm+OAgemfs+eUu+WQjOatpeaKveafpe+8iDMg5aSE77yMYXVkaW8tcGxhbi1yNC5qc29uIOKGlCDnlLvpnaLvvIkKCjEuICoqYm9vbUAyMC4wcyoqIOKGlCBTNSDkuLvlj6Ugc2xhbUA2MDBmKD0yMC4wcynvvJrinIUg5YeG54K5CjIuICoqYm9vbUAzNi4wcyAoZ2FpbjAuNSkqKiDihpQgUzjjgIzkvJrjgILjgI3lvLnmgKfls7DlgLxAMTA4MGYoPTM2LjBzKe+8muKchSDlh4bngrkKMy4gKipib29tQDM5LjBzKiog4oaUIFM544CM5LiN44CC44CN5bqV5o6o6LW3IDExNzBmKD0zOS4wcynvvJrinIUg5YeG54K5CgojIyDkupTjgIHpl67popjmuIXljZXkuI7liIbnuqcKCioq6Zi75pat57qn77ya5peg44CCKioKCioq5Y+v5pS+6KGM77yI6K6w5b2V5Zyo5qGI77yM5oqV56i/5YmN5Y+v6aG65omL5pS55Y+v5LiN5pS577yJ77yaKioKMS4gW1AyXSAxNDEwZiDliIfplZwgMSDluKfpu5Hpl6rvvIhTMTDihpJTMTEg5peg5Lqk5Y+J6L+H5rih77yJ44CCMzNtc++8jOiCieecvOWfuuacrOS4jeWPr+inge+8m+iLpeimgeS/ru+8jFMxMSBmYWRlaW4g6LW354K55o+Q5YmNIDJmIOaIliBTMTAg5bC+IGhvbGQgMmYKMi4gW1AyXSDmo4Dmn6XngrkjNiDluKflj7flgY/lt67vvJrorqHmlbDliLDkvY3lnKggODcwZiDogIzpnZ7orr7orqHnqL/lhpnnmoQgODQwZu+8iOiuvuiuoeeov+iHqui6q+S4juWunueOsOW3riAzMGbvvIznlLvpnaLpgLvovpHmraPnoa7vvIkKMy4gW1AzXSBTNiDml6Xlv5fooYwgYOinhumikeaKleeov+aIkOWKnyBCVjF4eC4uLmDvvJrljaDkvY3moLflvI/mloflrZfvvIx2aXNpb24g5Yik44CM5Y2K5oiQ5ZOB5oSf44CN44CC6K6+6K6hIG1vY2sg5Y6f5qC377yb5aaC5LuL5oSP5Y+v5pS55oiQ5qih57OK5YyW5YaZ5rOV44CM6KeG6aKR5oqV56i/5oiQ5YqfIOKck+OAjQo0LiBbUDNdIFMyIOS4pOS+pyBwaWxsIGDCpT8/P2DvvJrorr7orqHooajovr7vvIjmiJDmnKzmnKrnn6XvvIzooazkuK3pl7Qgb3BlbmNvZGUg5a6e5Lu377yJ77yM5L+d55WZCjUuIFtQM10g44CM5LiN5pivZHNo5aSn5LyX44CN77ya5Li75Lq6IOKYhSDmlofmoYjpgJDlrZfvvIwqKuS4jeW+l+aUuSoqCjYuIFvor6/miqVdIHZpc2lvbiDmiqUgYGRhM2YyZTFgIOacq+S9jemdnuazlSBoZXjigJTigJTmupDnoIHkuLogYGRhM2YyZTFg77yI5pWw5a2XMe+8ie+8jOezu+S9jua4hee9keagvOWbvuivr+ivu++8jOmdnumUmeWtlwo3LiBb6K+v5oqlXSBgQW50aHJvcG9zX0FJYCDkuLogQiDnq5notKblj7fmnKzlkI3vvIzpnZ7nrJTor68KCiMjIOWFreOAgee7k+iuugoKKirlj6/mlL7ooYzjgIIqKiDnoazmjIfmoIflhajov4fvvIzlm5vlnZHml6DkuIDop6bpm7fvvIzpn7PnlLvlkIzmraUgMy8zIOWHhueCue+8jDEyIOajgOafpeeCueW4pyAxMCDlhajov4cgKyAyIOW4puazqOWBj+W3ru+8jOaXoOmYu+aWree6p+mXrumimOOAgnZpc2lvbiDlhajniYfov4fmo4Dlt7LlrozmiJDvvIhBTUQgUXdlbjMuOCDmir3luKfpk77ot6/vvJvpn7Povajpg6jliIblm6AgQVNSIOWksei0peaUueeUqOWTjeW6pi/pnZnpn7Pmo4DmtYvooaXkvY3liKTvvInjgIIKCj4g5pa55rOV6K+05piO77yaMTIg5bin55uu5qOA5Li65oiR6Ieq5bex55yL55qE77ybdmlzaW9uLm1qcyDotbDjgIzmir3luKc55bygK0FTUuOAjeaooeW8j++8iEFNRCDkuI3lkIPop4bpopHnm7TkvKDvvInvvIxCR00v5ZCM5q2l5Lik6aG55YW25peg6Z+z6aKR5pWw5o2u77yM55SxIGZmcHJvYmUvdm9sdW1lZGV0ZWN0L3NpbGVuY2VkZXRlY3QgKyBjdWUg6KGo5q+U5a+56KGl5Yik44CCCg==
+# week0-1105 成片质检报告
+
+- 成片：`out/video-with-audio.mp4`（3367 KB，含音轨）；无声版 `out/video.mp4`
+- 渲染：GitHub Actions run 41912903018（https://github.com/yht-cdd/bili-anthropos/actions/runs/41912903018）
+- 日期：2026-11-05
+- 第一次 run 41911380389 失败：`video/public/assets/` 4 张静态图未随 render-video.mjs 上传（脚本只推 src/）。已手动补推资产到仓库（commit f9367118 等 4 枚）后重跑成功。
+
+## 一、硬指标（ffprobe）
+
+| 项 | 要求 | 实测 | 判定 |
+|---|---|---|---|
+| 时长 | 66.0s ± 0.2 | 66.000s | ✅ |
+| 分辨率 | 1920×1080 | 1920×1080 | ✅ |
+| 帧率 | 30fps | 30/1，1980 帧 | ✅ |
+| 音轨 | 有 | aac，65.94s（-shortest 截齐） | ✅ |
+| 响度 | — | mean -24.2dB / max -1.3dB，无削顶 | ✅ |
+
+## 二、检查点 12 帧对照（帧号=30fps 全局帧，抽帧存 `out/chk/`）
+
+| # | 帧 | 要求 | 实测 | 判定 |
+|---|---|---|---|---|
+| 1 | 60 | S0 卡片落定+边缘光 | 聚光锥+commit卡+lime边缘光齐全，静止 | ✅ |
+| 2 | 240 | S2 三 pill 全入，中 pill lime 高亮 | DeepSeek/opencode(lime)/Others 全入 | ✅ |
+| 3 | 420 | S3 第五根(11-03)变红，「断供6h」可读 | 11-03/11-04 两根红色 0% 可读；⚠本帧未见「断供6h」标注（后段出现，chk465 留档已验） | ✅(带注) |
+| 4 | 570 | S4 双记录卡并列，左lime边框 | 修复#1/#2 对齐，lime 4px 清晰 | ✅ |
+| 5 | 690 | S5 三句全入 hold | 三句全入（第三句lime），静止 | ✅ |
+| 6 | 840 | S7 大数字 ¥23.36 计数到位 | **实为计数起点：840f 显示 ¥0.00**，870f 到位 23.36（chk n870 验） | ⚠偏差30f |
+| 7 | 1080 | S8「会。」爆炸峰值 scale1.2 | 珊瑚「会。」大字+6彩卡散布+近白底 | ✅ |
+| 8 | 1200 | S9「不。」首次 pulse1.05 | 意志红「不。」+近白底 | ✅ |
+| 9 | 1410 | S10 引用块完整显示 | **1410 整帧近黑**（切镜闪帧）。1408/1409 帧引用块五句完整无缺（exact1/n1409 验），1412 已进 S11 | ⚠切镜1帧黑闪 |
+| 10 | 1650 | S12 后两句 lime 全入 | 四句完整，后两句 lime | ✅ |
+| 11 | 1830 | S13 wordmark+8元素定格 | Anthropos_AI + 8 卡全在（commits/视频/修复/天/日记/Remotion/¥23.36/粉丝） | ✅ |
+| 12 | 1950 | S14 URL ≥40px 清晰 | 40px lime Mono 清晰可读 | ✅ |
+
+## 三、四坑判定
+
+| 坑 | 判定 | 依据 |
+|---|---|---|
+| 1 质感粗糙元素 | **可放行** | 全片矢量扁平 UI，字体边缘锐利，无破损位图/压缩伪影。3 处「伪数据」均查实为有意设计或误读（见问题清单） |
+| 2 噪声感 BGM | **可放行** | pad bed gain 0.16，全片 mean -24.2dB，max -1.3dB 无削顶爆音；silencedetect 静音段（22.8-25.0 / 31.3-33.0 / 34.5-42.1 / 49.9-52.0 / 61.2-63.1s）与设计的 S5/S11/S12 静音留白吻合，非丢音 |
+| 3 大面积死黑 | **可放行（带注）** | blackdetect 全片扫描：0-0.2s（片头淡入）、11-12.4s、52-57s、64-66s 被标黑，逐帧核验均为深底+稀疏文字的正常画面（黑检测器把 >90% 暗底算黑）。唯一真空帧：**1410f 切镜闪 1 帧全黑**（S10 窗尾 1409 有内容、1412 S11 已入，=33ms，肉眼近不可见） |
+| 4 恐怖氛围 | **通过** | 深蓝/近白/黑 + lime/珊瑚点缀，冷静科技调；「不。」大红为情绪高点非恐怖；无任何阴森元素 |
+
+## 四、音画同步抽查（3 处，audio-plan-r4.json ↔ 画面）
+
+1. **boom@20.0s** ↔ S5 主句 slam@600f(=20.0s)：✅ 准点
+2. **boom@36.0s (gain0.5)** ↔ S8「会。」弹性峰值@1080f(=36.0s)：✅ 准点
+3. **boom@39.0s** ↔ S9「不。」底推起 1170f(=39.0s)：✅ 准点
+
+## 五、问题清单与分级
+
+**阻断级：无。**
+
+**可放行（记录在案，投稿前可顺手改可不改）：**
+1. [P2] 1410f 切镜 1 帧黑闪（S10→S11 无交叉过渡）。33ms，肉眼基本不可见；若要修，S11 fadein 起点提前 2f 或 S10 尾 hold 2f
+2. [P2] 检查点#6 帧号偏差：计数到位在 870f 而非设计稿写的 840f（设计稿自身与实现差 30f，画面逻辑正确）
+3. [P3] S6 日志行 `视频投稿成功 BV1xx...`：占位样式文字，vision 判「半成品感」。设计 mock 原样；如介意可改成模糊化写法「视频投稿成功 ✓」
+4. [P3] S2 两侧 pill `¥???`：设计表达（成本未知，衬中间 opencode 实价），保留
+5. [P3] 「不是dsh大众」：主人 ★ 文案逐字，**不得改**
+6. [误报] vision 报 `da3f2e1` 末位非法 hex——源码为 `da3f2e1`（数字1），系低清网格图误读，非错字
+7. [误报] `Anthropos_AI` 为 B 站账号本名，非笔误
+
+## 六、结论
+
+**可放行。** 硬指标全过，四坑无一触雷，音画同步 3/3 准点，12 检查点帧 10 全过 + 2 带注偏差，无阻断级问题。vision 全片过检已完成（AMD Qwen3.8 抽帧链路；音轨部分因 ASR 失败改用响度/静音检测补位判）。
+
+> 方法说明：12 帧目检为我自己看的；vision.mjs 走「抽帧9张+ASR」模式（AMD 不吃视频直传），BGM/同步两项其无音频数据，由 ffprobe/volumedetect/silencedetect + cue 表比对补判。

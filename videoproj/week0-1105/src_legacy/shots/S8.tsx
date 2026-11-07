@@ -1,1 +1,102 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCB1c2VDdXJyZW50RnJhbWUgfSBmcm9tICdyZW1vdGlvbic7CmltcG9ydCB7IEVBU0VfTElORUFSLCBFQVNFX1NXRUVQLCBwcm9nIH0gZnJvbSAnLi4vYW5pbSc7CmltcG9ydCB7IENPVkVSX0RBVEFfVVJJIH0gZnJvbSAnLi4vY292ZXJEYXRhJzsKaW1wb3J0IHsgRk9OVF9TQU5TLCBHUkFZLCBURVhUIH0gZnJvbSAnLi4vdGhlbWUnOwoKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQovLyBTOCDlsL7ljaEgwrcg5YWo5bGAIDE3MTDigJMxODAw77yIYnJpZWYgwqfkuozCt1M477yMwqflhasg5ZCO56e7IDMwIOKGkiDljovnvKnkuLogOTAg5bin5L+d5oC76ZW/IDE4MDDvvInCtyBbY2FtZXJhXSBQdXNoSW4gKyBbZWZmZWN0c10gYnJhbmQtZnJhbWUtc25hcAovLyDmnKzlnLDluKcgPSDlhajlsYAg4oiSIDE3MTDjgIIKLy8g4pqg77iPIGJyaWVmIOWOn+aWhyAxNzEwLzE3NzAg5Lik5Liq5a2Q6ZSa54K55piv44CM5Y6f5bin5Y+3ICszMOOAjeebtOaOpeW5s+enu+eahOe7k+aenO+8iDE2ODDihpIxNzEw44CBMTc0MOKGkjE3NzDjgIExODAwIOS4jeWPmO+8ie+8mgovLyAgICDnqpflj6Plj6rliakgOTAg5bin77yIMy4wc++8ieOAgmJyaWVmIOimgeaxguOAjOaAu+mVv+S7jSAxODAw44CN5LiO44CM5ZCO57ut6ZWc5Y+35pW05L2T5ZCO56e7IDMw44CN5Y+q6IO96L+Z5qC35ZCM5pe25oiQ56uL44CCCi8vIDDigJM5MCAgIHYyIOWwgemdoiBQdXNoSW7vvJpjb3ZlckRhdGHvvIh2MyDlrprnqL8gMTY6Oe+8iXNjYWxlIDEuMDbihpIxLjAwIOWFqOeoi+e8k+aOqO+8iGxpbmVhciDnm7jmnLrovoXliqnpgJrpgZPvvIwKLy8gICAgICAgIGJyaWVmIOacque7memAn+eOh++8m1B1c2hJbiDplb/plZzlpLTljIDpgJ/mmK/luLjop4TvvIzpnZ7kuLvliqjmlYjvvIxsaW5lYXIg5ZCI6KeE77yJKyDljovmmpflupXnvanmj5Dkuq7oh7MgMC4yNeKGkjAuNDLjgIIKLy8gMzDigJM2MO+8iOWFqOWxgCAxNzQw4oCTMTc3MO+8jGJyaWVmIDE3MTDigJMxNzcwIOWOn+mUmueCue+8ie+8mgovLyAgICAgICAg44CMQW50aHJvcG9zX0FJIMK3IHdlZWsw44CNNTZweCDnsbPnmb0gc2xhbS1saXRl77yI6YeP57qnIDEuMTDvvIzkuI3lho3ljaDnoLjlhaXorqHmlbDvvIkrCi8vICAgICAgICDjgIzkuIvkuIDlkajop4HjgI0zNnB4ICM4Qjk0OUUg5LiL5oyCIDYg5bin6ZSZ5bOw44CCCi8vIDYw4oCTOTDvvIjlhajlsYAgMTc3MOKAkzE4MDDvvInvvJrlsI/lrZcgMjhweOOAjOW3peeoi+W8gOa6kCBnaXRodWIuY29tL3lodC1jZGQvYmlsaS1hbnRocm9wb3PjgI3mt6HlhaXjgIIKLy8gICAgICAgIOajgOafpeeCueW4pyAxNzcw77yIYnJpZWYgwqflha0uMiDljp/lgLzljbPmraTplJrngrnvvInihpIg5bCP5a2X5YWl5Zy656ys5LiA5binIOKck+OAggovLyDpgIDlnLrvvJrkuI3lgZog4oCU4oCUIOeJh+WwvuebtOWIh+m7ke+8iGJyYW5kLWZyYW1lLXNuYXAg55qE5pS25bin5oSf55SxIFB1c2hJbiDlh4/pgJ/mib/mi4XvvInjgIIKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKY29uc3QgTDEgPSAnQW50aHJvcG9zX0FJIMK3IHdlZWswJzsKY29uc3QgTDIgPSAn5LiL5LiA5ZGo6KeBJzsKY29uc3QgTDMgPSAn5bel56iL5byA5rqQIGdpdGh1Yi5jb20veWh0LWNkZC9iaWxpLWFudGhyb3Bvcyc7CgpleHBvcnQgY29uc3QgUzg6IFJlYWN0LkZDID0gKCkgPT4gewogIGNvbnN0IGYgPSB1c2VDdXJyZW50RnJhbWUoKTsKICBjb25zdCBwdXNoID0gcHJvZyhmLCAwLCA5MCwgRUFTRV9MSU5FQVIpOyAvLyBQdXNoSW4g57yT5o6o5YWo56iLCiAgY29uc3QgbDEgPSBwcm9nKGYsIDMwLCA4LCBFQVNFX1NXRUVQKTsKICBjb25zdCBsMUluID0gcHJvZyhmLCAzMCwgNSwgRUFTRV9MSU5FQVIpOwogIGNvbnN0IGwyID0gcHJvZyhmLCA0MiwgOCwgRUFTRV9TV0VFUCk7CiAgY29uc3QgbDMgPSBwcm9nKGYsIDYwLCAxMCwgRUFTRV9MSU5FQVIpOwoKICByZXR1cm4gKAogICAgPEFic29sdXRlRmlsbCBzdHlsZT17eyBiYWNrZ3JvdW5kQ29sb3I6ICcjMDAwJywgZm9udEZhbWlseTogRk9OVF9TQU5TIH19PgogICAgICA8aW1nCiAgICAgICAgc3JjPXtDT1ZFUl9EQVRBX1VSSX0KICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICBpbnNldDogMCwKICAgICAgICAgIHdpZHRoOiAnMTAwJScsCiAgICAgICAgICBoZWlnaHQ6ICcxMDAlJywKICAgICAgICAgIG9iamVjdEZpdDogJ2NvdmVyJywKICAgICAgICAgIHRyYW5zZm9ybTogYHNjYWxlKCR7KDEuMDYgLSAwLjA2ICogcHVzaCkudG9GaXhlZCg0KX0pYCwKICAgICAgICB9fQogICAgICAvPgogICAgICB7Lyog5Y6L5pqX5bqV572p77ya5paH5a2X5Y+v6K+75oCn77yIUHVzaEluIOWQjOaXtui9u+W+ruaPkOS6ru+8jOivu+S9nOaOqOi/keaXtuWFiee6v+a2jOadpe+8iSAqL30KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGluc2V0OiAwLAogICAgICAgICAgYmFja2dyb3VuZENvbG9yOiBgcmdiYSg4LDExLDE4LCR7KDAuNDIgLSAwLjE3ICogcHVzaCkudG9GaXhlZCgzKX0pYCwKICAgICAgICB9fQogICAgICAvPgogICAgICA8ZGl2CiAgICAgICAgc3R5bGU9e3sKICAgICAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLAogICAgICAgICAgbGVmdDogMCwKICAgICAgICAgIHRvcDogNDAyLAogICAgICAgICAgd2lkdGg6IDE5MjAsCiAgICAgICAgICB0ZXh0QWxpZ246ICdjZW50ZXInLAogICAgICAgICAgZm9udFNpemU6IDU2LAogICAgICAgICAgZm9udFdlaWdodDogODAwLAogICAgICAgICAgY29sb3I6IFRFWFQsCiAgICAgICAgICBvcGFjaXR5OiBsMUluLAogICAgICAgICAgdHJhbnNmb3JtOiBgc2NhbGUoJHsoMS4xIC0gMC4xICogbDEpLnRvRml4ZWQoNCl9KWAsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIHtMMX0KICAgICAgPC9kaXY+CiAgICAgIDxkaXYKICAgICAgICBzdHlsZT17ewogICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsCiAgICAgICAgICBsZWZ0OiAwLAogICAgICAgICAgdG9wOiA1MDAsCiAgICAgICAgICB3aWR0aDogMTkyMCwKICAgICAgICAgIHRleHRBbGlnbjogJ2NlbnRlcicsCiAgICAgICAgICBmb250U2l6ZTogMzYsCiAgICAgICAgICBjb2xvcjogR1JBWSwKICAgICAgICAgIG9wYWNpdHk6IGwyLAogICAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlWSgkezEwICogKDEgLSBsMil9cHgpYCwKICAgICAgICB9fQogICAgICA+CiAgICAgICAge0wyfQogICAgICA8L2Rpdj4KICAgICAgPGRpdgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywKICAgICAgICAgIGxlZnQ6IDAsCiAgICAgICAgICB0b3A6IDk3NiwKICAgICAgICAgIHdpZHRoOiAxOTIwLAogICAgICAgICAgdGV4dEFsaWduOiAnY2VudGVyJywKICAgICAgICAgIGZvbnRTaXplOiAyOCwKICAgICAgICAgIGNvbG9yOiBHUkFZLAogICAgICAgICAgb3BhY2l0eTogbDMsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIHtMM30KICAgICAgPC9kaXY+CiAgICA8L0Fic29sdXRlRmlsbD4KICApOwp9Owo=
+import React from 'react';
+import { AbsoluteFill, useCurrentFrame } from 'remotion';
+import { EASE_LINEAR, EASE_SWEEP, prog } from '../anim';
+import { COVER_DATA_URI } from '../coverData';
+import { FONT_SANS, GRAY, TEXT } from '../theme';
+
+// ============================================================================
+// S8 尾卡 · 全局 1710–1800（brief §二·S8，§八 后移 30 → 压缩为 90 帧保总长 1800）· [camera] PushIn + [effects] brand-frame-snap
+// 本地帧 = 全局 − 1710。
+// ⚠️ brief 原文 1710/1770 两个子锚点是「原帧号 +30」直接平移的结果（1680→1710、1740→1770、1800 不变）：
+//    窗口只剩 90 帧（3.0s）。brief 要求「总长仍 1800」与「后续镜号整体后移 30」只能这样同时成立。
+// 0–90   v2 封面 PushIn：coverData（v3 定稿 16:9）scale 1.06→1.00 全程缓推（linear 相机辅助通道，
+//        brief 未给速率；PushIn 长镜头匀速是常规，非主动效，linear 合规）+ 压暗底罩提亮至 0.25→0.42。
+// 30–60（全局 1740–1770，brief 1710–1770 原锚点）：
+//        「Anthropos_AI · week0」56px 米白 slam-lite（量级 1.10，不再占砸入计数）+
+//        「下一周见」36px #8B949E 下挂 6 帧错峰。
+// 60–90（全局 1770–1800）：小字 28px「工程开源 github.com/yht-cdd/bili-anthropos」淡入。
+//        检查点帧 1770（brief §六.2 原值即此锚点）→ 小字入场第一帧 ✓。
+// 退场：不做 —— 片尾直切黑（brand-frame-snap 的收帧感由 PushIn 减速承担）。
+// ============================================================================
+
+const L1 = 'Anthropos_AI · week0';
+const L2 = '下一周见';
+const L3 = '工程开源 github.com/yht-cdd/bili-anthropos';
+
+export const S8: React.FC = () => {
+  const f = useCurrentFrame();
+  const push = prog(f, 0, 90, EASE_LINEAR); // PushIn 缓推全程
+  const l1 = prog(f, 30, 8, EASE_SWEEP);
+  const l1In = prog(f, 30, 5, EASE_LINEAR);
+  const l2 = prog(f, 42, 8, EASE_SWEEP);
+  const l3 = prog(f, 60, 10, EASE_LINEAR);
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: '#000', fontFamily: FONT_SANS }}>
+      <img
+        src={COVER_DATA_URI}
+        style={{
+          position: 'absolute',
+          inset: 0,
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          transform: `scale(${(1.06 - 0.06 * push).toFixed(4)})`,
+        }}
+      />
+      {/* 压暗底罩：文字可读性（PushIn 同时轻微提亮，读作推近时光线涌来） */}
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          backgroundColor: `rgba(8,11,18,${(0.42 - 0.17 * push).toFixed(3)})`,
+        }}
+      />
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          top: 402,
+          width: 1920,
+          textAlign: 'center',
+          fontSize: 56,
+          fontWeight: 800,
+          color: TEXT,
+          opacity: l1In,
+          transform: `scale(${(1.1 - 0.1 * l1).toFixed(4)})`,
+        }}
+      >
+        {L1}
+      </div>
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          top: 500,
+          width: 1920,
+          textAlign: 'center',
+          fontSize: 36,
+          color: GRAY,
+          opacity: l2,
+          transform: `translateY(${10 * (1 - l2)}px)`,
+        }}
+      >
+        {L2}
+      </div>
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          top: 976,
+          width: 1920,
+          textAlign: 'center',
+          fontSize: 28,
+          color: GRAY,
+          opacity: l3,
+        }}
+      >
+        {L3}
+      </div>
+    </AbsoluteFill>
+  );
+};

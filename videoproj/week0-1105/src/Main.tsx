@@ -1,1 +1,71 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQWJzb2x1dGVGaWxsLCBTZXF1ZW5jZSB9IGZyb20gJ3JlbW90aW9uJzsKaW1wb3J0IHsgU2hvdFBsYWNlaG9sZGVyIH0gZnJvbSAnLi9jb21wb25lbnRzL1Nob3RQbGFjZWhvbGRlcic7CmltcG9ydCB7IFMwIH0gZnJvbSAnLi9zaG90cy9TMCc7CmltcG9ydCB7IFMxIH0gZnJvbSAnLi9zaG90cy9TMSc7CmltcG9ydCB7IFMyIH0gZnJvbSAnLi9zaG90cy9TMic7CmltcG9ydCB7IFMzIH0gZnJvbSAnLi9zaG90cy9TMyc7CmltcG9ydCB7IFM0IH0gZnJvbSAnLi9zaG90cy9TNCc7CmltcG9ydCB7IFM1IH0gZnJvbSAnLi9zaG90cy9TNSc7CmltcG9ydCB7IFM2IH0gZnJvbSAnLi9zaG90cy9TNic7CmltcG9ydCB7IFM3IH0gZnJvbSAnLi9zaG90cy9TNyc7CmltcG9ydCB7IFM4IH0gZnJvbSAnLi9zaG90cy9TOCc7CmltcG9ydCB7IFM5IH0gZnJvbSAnLi9zaG90cy9TOSc7CmltcG9ydCB7IFMxMCB9IGZyb20gJy4vc2hvdHMvUzEwJzsKaW1wb3J0IHsgUzExIH0gZnJvbSAnLi9zaG90cy9TMTEnOwppbXBvcnQgeyBTMTIgfSBmcm9tICcuL3Nob3RzL1MxMic7CmltcG9ydCB7IFMxMyB9IGZyb20gJy4vc2hvdHMvUzEzJzsKaW1wb3J0IHsgUzE0IH0gZnJvbSAnLi9zaG90cy9TMTQnOwppbXBvcnQgeyBGT05UX1NBTlMsIFRPVEFMX0ZSQU1FUyB9IGZyb20gJy4vdGhlbWUnOwoKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQovLyDkuLvml7bpl7TovbQg4oCUIGRlc2lnbi13ZWVrMC1vcHVzLm1kIMKn5LqMIOaRhOW9seihqO+8iFMw4oCTUzE0IMK3IDMwZnBzIMK3IDE5ODAg5binID0gNjYuMHPvvInjgIIKLy8gUjQg6IyD5Zu077yaUzDigJNTMTQg5YWo6YeP5a6e6KOF77yIUzEy4oCTUzE0IOS6jiBSNCDmlLblrpjmlr3lt6XvvInjgIIKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKdHlwZSBTbG90ID0gewogIGlkOiBzdHJpbmc7CiAgZnJvbTogbnVtYmVyOwogIGR1cmF0aW9uOiBudW1iZXI7CiAgY29tcD86IFJlYWN0LkZDOwp9OwoKZXhwb3J0IGNvbnN0IFNFRzogU2xvdFtdID0gWwogIHsgaWQ6ICdTMCcsIGZyb206IDAsIGR1cmF0aW9uOiA5MCwgY29tcDogUzAgfSwKICB7IGlkOiAnUzEnLCBmcm9tOiA5MCwgZHVyYXRpb246IDEyMCwgY29tcDogUzEgfSwKICB7IGlkOiAnUzInLCBmcm9tOiAyMTAsIGR1cmF0aW9uOiAxMjAsIGNvbXA6IFMyIH0sCiAgeyBpZDogJ1MzJywgZnJvbTogMzMwLCBkdXJhdGlvbjogMTUwLCBjb21wOiBTMyB9LAogIHsgaWQ6ICdTNCcsIGZyb206IDQ4MCwgZHVyYXRpb246IDEyMCwgY29tcDogUzQgfSwKICB7IGlkOiAnUzUnLCBmcm9tOiA2MDAsIGR1cmF0aW9uOiAxMjAsIGNvbXA6IFM1IH0sCiAgeyBpZDogJ1M2JywgZnJvbTogNzIwLCBkdXJhdGlvbjogMTIwLCBjb21wOiBTNiB9LAogIHsgaWQ6ICdTNycsIGZyb206IDg0MCwgZHVyYXRpb246IDE1MCwgY29tcDogUzcgfSwKICB7IGlkOiAnUzgnLCBmcm9tOiA5OTAsIGR1cmF0aW9uOiAxNTAsIGNvbXA6IFM4IH0sCiAgeyBpZDogJ1M5JywgZnJvbTogMTE0MCwgZHVyYXRpb246IDEyMCwgY29tcDogUzkgfSwKICB7IGlkOiAnUzEwJywgZnJvbTogMTI2MCwgZHVyYXRpb246IDE1MCwgY29tcDogUzEwIH0sCiAgeyBpZDogJ1MxMScsIGZyb206IDE0MTAsIGR1cmF0aW9uOiAxNTAsIGNvbXA6IFMxMSB9LAogIHsgaWQ6ICdTMTInLCBmcm9tOiAxNTYwLCBkdXJhdGlvbjogMTUwLCBjb21wOiBTMTIgfSwKICB7IGlkOiAnUzEzJywgZnJvbTogMTcxMCwgZHVyYXRpb246IDE4MCwgY29tcDogUzEzIH0sCiAgeyBpZDogJ1MxNCcsIGZyb206IDE4OTAsIGR1cmF0aW9uOiA5MCwgY29tcDogUzE0IH0sCl07CgovLyDml7bpl7TovbTlrozmlbTmgKfoh6rmo4DvvJrml6DnvJ3nm7jmjqXkuJTmgLvplb8gMTk4MO+8iOWQjCB2My9ncmF2aXRlZSBNYWluIOeahOaWreiogO+8iQpsZXQgY3Vyc29yID0gMDsKZm9yIChjb25zdCBzIG9mIFNFRykgewogIGlmIChzLmZyb20gIT09IGN1cnNvcikgdGhyb3cgbmV3IEVycm9yKGDml7bpl7TovbTmlq3oo4LvvJoke3MuaWR9IOW6lOS7jiAke2N1cnNvcn0g5byA5aeLYCk7CiAgY3Vyc29yICs9IHMuZHVyYXRpb247Cn0KaWYgKGN1cnNvciAhPT0gVE9UQUxfRlJBTUVTKSB0aHJvdyBuZXcgRXJyb3IoYOaXtumXtOi9tOaAu+mVvyAke2N1cnNvcn0g4omgICR7VE9UQUxfRlJBTUVTfWApOwoKZXhwb3J0IGNvbnN0IEZpbG06IFJlYWN0LkZDID0gKCkgPT4gKAogIDxBYnNvbHV0ZUZpbGwgc3R5bGU9e3sgYmFja2dyb3VuZENvbG9yOiAnIzAwMCcsIGZvbnRGYW1pbHk6IEZPTlRfU0FOUyB9fT4KICAgIHtTRUcubWFwKChzKSA9PiAoCiAgICAgIDxTZXF1ZW5jZSBrZXk9e3MuaWR9IGZyb209e3MuZnJvbX0gZHVyYXRpb25JbkZyYW1lcz17cy5kdXJhdGlvbn0gbmFtZT17cy5pZH0+CiAgICAgICAge3MuY29tcCA/ICgKICAgICAgICAgIDxzLmNvbXAgLz4KICAgICAgICApIDogKAogICAgICAgICAgPFNob3RQbGFjZWhvbGRlciBsYWJlbD17cy5pZH0gZnJvbT17cy5mcm9tfSB0bz17cy5mcm9tICsgcy5kdXJhdGlvbn0gLz4KICAgICAgICApfQogICAgICA8L1NlcXVlbmNlPgogICAgKSl9CiAgPC9BYnNvbHV0ZUZpbGw+Cik7Cg==
+import React from 'react';
+import { AbsoluteFill, Sequence } from 'remotion';
+import { ShotPlaceholder } from './components/ShotPlaceholder';
+import { S0 } from './shots/S0';
+import { S1 } from './shots/S1';
+import { S2 } from './shots/S2';
+import { S3 } from './shots/S3';
+import { S4 } from './shots/S4';
+import { S5 } from './shots/S5';
+import { S6 } from './shots/S6';
+import { S7 } from './shots/S7';
+import { S8 } from './shots/S8';
+import { S9 } from './shots/S9';
+import { S10 } from './shots/S10';
+import { S11 } from './shots/S11';
+import { S12 } from './shots/S12';
+import { S13 } from './shots/S13';
+import { S14 } from './shots/S14';
+import { FONT_SANS, TOTAL_FRAMES } from './theme';
+
+// ============================================================================
+// 主时间轴 — design-week0-opus.md §二 摄影表（S0–S14 · 30fps · 1980 帧 = 66.0s）。
+// R4 范围：S0–S14 全量实装（S12–S14 于 R4 收官施工）。
+// ============================================================================
+
+type Slot = {
+  id: string;
+  from: number;
+  duration: number;
+  comp?: React.FC;
+};
+
+export const SEG: Slot[] = [
+  { id: 'S0', from: 0, duration: 90, comp: S0 },
+  { id: 'S1', from: 90, duration: 120, comp: S1 },
+  { id: 'S2', from: 210, duration: 120, comp: S2 },
+  { id: 'S3', from: 330, duration: 150, comp: S3 },
+  { id: 'S4', from: 480, duration: 120, comp: S4 },
+  { id: 'S5', from: 600, duration: 120, comp: S5 },
+  { id: 'S6', from: 720, duration: 120, comp: S6 },
+  { id: 'S7', from: 840, duration: 150, comp: S7 },
+  { id: 'S8', from: 990, duration: 150, comp: S8 },
+  { id: 'S9', from: 1140, duration: 120, comp: S9 },
+  { id: 'S10', from: 1260, duration: 150, comp: S10 },
+  { id: 'S11', from: 1410, duration: 150, comp: S11 },
+  { id: 'S12', from: 1560, duration: 150, comp: S12 },
+  { id: 'S13', from: 1710, duration: 180, comp: S13 },
+  { id: 'S14', from: 1890, duration: 90, comp: S14 },
+];
+
+// 时间轴完整性自检：无缝相接且总长 1980（同 v3/gravitee Main 的断言）
+let cursor = 0;
+for (const s of SEG) {
+  if (s.from !== cursor) throw new Error(`时间轴断裂：${s.id} 应从 ${cursor} 开始`);
+  cursor += s.duration;
+}
+if (cursor !== TOTAL_FRAMES) throw new Error(`时间轴总长 ${cursor} ≠ ${TOTAL_FRAMES}`);
+
+export const Film: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: '#000', fontFamily: FONT_SANS }}>
+    {SEG.map((s) => (
+      <Sequence key={s.id} from={s.from} durationInFrames={s.duration} name={s.id}>
+        {s.comp ? (
+          <s.comp />
+        ) : (
+          <ShotPlaceholder label={s.id} from={s.from} to={s.from + s.duration} />
+        )}
+      </Sequence>
+    ))}
+  </AbsoluteFill>
+);
