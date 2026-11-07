@@ -1,1 +1,30 @@
-ewogICJWZXJzaW9uIjogMywKICAiRmlsZVJlZmVyZW5jZXMiOiB7CiAgICAiTW9jIjogIm1vZGVsLm1vYzMiLAogICAgIlRleHR1cmVzIjogWwogICAgICAidGV4dHVyZXMvdGV4dHVyZV8wMC5wbmciLAogICAgICAidGV4dHVyZXMvdGV4dHVyZV8wMS5wbmciLAogICAgICAidGV4dHVyZXMvdGV4dHVyZV8wMi5wbmciLAogICAgICAidGV4dHVyZXMvdGV4dHVyZV8wMy5wbmciLAogICAgICAidGV4dHVyZXMvdGV4dHVyZV8wNC5wbmciCiAgICBdLAogICAgIlBoeXNpY3MiOiAibW9kZWwucGh5c2ljczMuanNvbiIsCiAgICAiRGlzcGxheUluZm8iOiAibW9kZWwuY2RpMy5qc29uIgogIH0sCiAgIkdyb3VwcyI6IFsKICAgIHsKICAgICAgIlRhcmdldCI6ICJQYXJhbWV0ZXIiLAogICAgICAiTmFtZSI6ICJFeWVCbGluayIsCiAgICAgICJJZHMiOiBbCiAgICAgICAgIlBhcmFtRXllUk9wZW4iLAogICAgICAgICJQYXJhbUV5ZUxPcGVuIgogICAgICBdCiAgICB9LAogICAgewogICAgICAiVGFyZ2V0IjogIlBhcmFtZXRlciIsCiAgICAgICJOYW1lIjogIkxpcFN5bmMiLAogICAgICAiSWRzIjogW10KICAgIH0KICBdCn0=
+{
+  "Version": 3,
+  "FileReferences": {
+    "Moc": "model.moc3",
+    "Textures": [
+      "textures/texture_00.png",
+      "textures/texture_01.png",
+      "textures/texture_02.png",
+      "textures/texture_03.png",
+      "textures/texture_04.png"
+    ],
+    "Physics": "model.physics3.json",
+    "DisplayInfo": "model.cdi3.json"
+  },
+  "Groups": [
+    {
+      "Target": "Parameter",
+      "Name": "EyeBlink",
+      "Ids": [
+        "ParamEyeROpen",
+        "ParamEyeLOpen"
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Name": "LipSync",
+      "Ids": []
+    }
+  ]
+}

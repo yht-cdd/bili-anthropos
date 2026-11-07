@@ -1,1 +1,53 @@
-Ly8gTGl2ZTJEIGxpcHN5bmMgY2FwdHVyZSBwYWdlOiBwaXhpNyArIHBpeGktbGl2ZTJkLWRpc3BsYXkoY3ViaXNtNCkgKyB3YXdhLWxpcHN5bmMuCi8vIERyaXZlbiBmcmFtZS1ieS1mcmFtZSBmcm9tIHByZWNvbXB1dGVkIHdhd2EgdmlzZW1lIHBhcmFtcyAoY2FwdHVyZS9mcmFtZV9wYXJhbXMuanNvbikuCi8qIGdsb2JhbCBQSVhJICovCihhc3luYyAoKSA9PiB7CiAgY29uc3QgRFQgPSAxMDAwIC8gMzA7CiAgY29uc3QgVyA9IDEyODAsIEggPSA3MjA7CiAgY29uc3QgbWFyayA9IChtKSA9PiAod2luZG93LkxPRyB8fCBbXSkucHVzaCgiYXBwOiIgKyBtKTsKCiAgbWFyaygiYm9vdCIpOwogIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKCJjYXB0dXJlL2ZyYW1lX3BhcmFtcy5qc29uIik7CiAgY29uc3QgeyBmcmFtZXMgfSA9IGF3YWl0IHJlcy5qc29uKCk7CiAgbWFyaygicGFyYW1zICIgKyBmcmFtZXMubGVuZ3RoKTsKCiAgY29uc3QgYXBwID0gbmV3IFBJWEkuQXBwbGljYXRpb24oeyB3aWR0aDogVywgaGVpZ2h0OiBILCBiYWNrZ3JvdW5kQ29sb3I6IDB4MTYxNjFjLCBhbnRpYWxpYXM6IHRydWUgfSk7CiAgYXBwLnRpY2tlci5zdG9wKCk7CiAgZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChhcHAudmlldyk7CiAgbWFyaygicGl4aSBvaywgcmVuZGVyZXI9IiArIChhcHAucmVuZGVyZXIgJiYgYXBwLnJlbmRlcmVyLnR5cGUpKTsKCiAgY29uc3QgbW9kZWwgPSBhd2FpdCBQSVhJLmxpdmUyZC5MaXZlMkRNb2RlbC5mcm9tKCJtb2RlbC9tb2RlbC5tb2RlbDMuanNvbiIsIHsgYXV0b1VwZGF0ZTogZmFsc2UgfSk7CiAgbWFyaygibW9kZWwgb2sgIiArIG1vZGVsLndpZHRoICsgIngiICsgbW9kZWwuaGVpZ2h0KTsKICBtb2RlbC5hbmNob3Iuc2V0KDAuNSwgMSk7CiAgY29uc3Qgc2NhbGUgPSAoSCAqIDAuOTgpIC8gbW9kZWwuaGVpZ2h0OwogIG1vZGVsLnNjYWxlLnNldChzY2FsZSk7CiAgbW9kZWwueCA9IFcgLyAyOwogIG1vZGVsLnkgPSBIOwogIGFwcC5zdGFnZS5hZGRDaGlsZChtb2RlbCk7CgogIGNvbnN0IFBfT1BFTiA9ICJQYXJhbU1vdXRoT3BlblkiLCBQX0ZPUk0gPSAiUGFyYW1Nb3V0aEZvcm0iOwogIGNvbnN0IGNvcmVNb2RlbCA9IG1vZGVsLmludGVybmFsTW9kZWwuY29yZU1vZGVsOwogIGxldCBpZHggPSAtMTsKCiAgd2luZG93LkNBUCA9IHsKICAgIHRvdGFsOiBmcmFtZXMubGVuZ3RoLAogICAgZnJhbWU6IDAsCiAgICByZWFkeTogZmFsc2UsCiAgICBlcnJvcjogbnVsbCwKICAgIHN0ZXAoKSB7CiAgICAgIGlkeCsrOwogICAgICBjb25zdCBbb3BlbiwgZm9ybV0gPSBmcmFtZXNbaWR4XTsKICAgICAgY29yZU1vZGVsLnNldFBhcmFtZXRlclZhbHVlQnlJZChQX09QRU4sIG9wZW4pOwogICAgICBjb3JlTW9kZWwuc2V0UGFyYW1ldGVyVmFsdWVCeUlkKFBfRk9STSwgZm9ybSk7CiAgICAgIG1vZGVsLnVwZGF0ZShEVCk7IC8vIGFjY3VtdWxhdGUgZGVsdGFUaW1lL2VsYXBzZWRUaW1lIGNvbnN1bWVkIGJ5IG5leHQgcmVuZGVyCiAgICAgIGFwcC5yZW5kZXIoKTsgICAgICAvLyB0cmlnZ2VycyBpbnRlcm5hbE1vZGVsLnVwZGF0ZSBvbmNlIChibGluay9waHlzaWNzL2JyZWF0aCkgKyBkcmF3CiAgICAgIHdpbmRvdy5DQVAuZnJhbWUgPSBpZHggKyAxOwogICAgICByZXR1cm4gd2luZG93LkNBUC5mcmFtZTsKICAgIH0sCiAgICBwdW1wKG4pIHsgLy8gc3luY2hyb25vdXMgYmF0Y2g6IG9ubHkgdGhlIGxhc3QgZnJhbWUgaXMgZ3VhcmFudGVlZCBwYWludGVkIChzY3JlZW5zaG90IGlzIHN5bmNlZCB0byBjb21wb3NpdG9yKQogICAgICBmb3IgKGxldCBpID0gMDsgaSA8IG47IGkrKykgd2luZG93LkNBUC5zdGVwKCk7CiAgICAgIHJldHVybiB3aW5kb3cuQ0FQLmZyYW1lOwogICAgfSwKICB9OwogIHdpbmRvdy5DQVAucmVhZHkgPSB0cnVlOwp9KSgpLmNhdGNoKChlKSA9PiB7IHdpbmRvdy5DQVAgPSB7IHJlYWR5OiBmYWxzZSwgZXJyb3I6IFN0cmluZyhlICYmIGUuc3RhY2sgfHwgZSkgfTsgfSk7Cg==
+// Live2D lipsync capture page: pixi7 + pixi-live2d-display(cubism4) + wawa-lipsync.
+// Driven frame-by-frame from precomputed wawa viseme params (capture/frame_params.json).
+/* global PIXI */
+(async () => {
+  const DT = 1000 / 30;
+  const W = 1280, H = 720;
+  const mark = (m) => (window.LOG || []).push("app:" + m);
+
+  mark("boot");
+  const res = await fetch("capture/frame_params.json");
+  const { frames } = await res.json();
+  mark("params " + frames.length);
+
+  const app = new PIXI.Application({ width: W, height: H, backgroundColor: 0x16161c, antialias: true });
+  app.ticker.stop();
+  document.body.appendChild(app.view);
+  mark("pixi ok, renderer=" + (app.renderer && app.renderer.type));
+
+  const model = await PIXI.live2d.Live2DModel.from("model/model.model3.json", { autoUpdate: false });
+  mark("model ok " + model.width + "x" + model.height);
+  model.anchor.set(0.5, 1);
+  const scale = (H * 0.98) / model.height;
+  model.scale.set(scale);
+  model.x = W / 2;
+  model.y = H;
+  app.stage.addChild(model);
+
+  const P_OPEN = "ParamMouthOpenY", P_FORM = "ParamMouthForm";
+  const coreModel = model.internalModel.coreModel;
+  let idx = -1;
+
+  window.CAP = {
+    total: frames.length,
+    frame: 0,
+    ready: false,
+    error: null,
+    step() {
+      idx++;
+      const [open, form] = frames[idx];
+      coreModel.setParameterValueById(P_OPEN, open);
+      coreModel.setParameterValueById(P_FORM, form);
+      model.update(DT); // accumulate deltaTime/elapsedTime consumed by next render
+      app.render();      // triggers internalModel.update once (blink/physics/breath) + draw
+      window.CAP.frame = idx + 1;
+      return window.CAP.frame;
+    },
+    pump(n) { // synchronous batch: only the last frame is guaranteed painted (screenshot is synced to compositor)
+      for (let i = 0; i < n; i++) window.CAP.step();
+      return window.CAP.frame;
+    },
+  };
+  window.CAP.ready = true;
+})().catch((e) => { window.CAP = { ready: false, error: String(e && e.stack || e) }; });

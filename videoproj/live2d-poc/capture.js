@@ -1,1 +1,129 @@
-LyogTGl2ZTJEIOWPo+Wei+mpseWKqCBjYXB0dXJl77yacGl4aS5qczcgKyBwaXhpLWxpdmUyZC1kaXNwbGF5KGN1YmlzbTQpICsgd2F3YS1saXBzeW5jCiAqIOS4pOmBjeazle+8mgogKiAgUGFzczEgX19yZWNvcmQoKSAgICAgICAg5a6e5pe25pKt5pS+IGF1ZGlvICsgd2F3YSDpgJDluKfph4cgdmlzZW1lIOKGkiB3aW5kb3cuX190aW1lbGluZQogKiAgUGFzczIgX19yZW5kZXJGcmFtZXMoKSAg56a757q/56Gu5a6a5oCn5o6o6L+b77ya5p+l6KGoIHZpc2VtZSArIOaJi+WKqCBpbnRlcm5hbE1vZGVsLnVwZGF0ZShtcykKICogICAgICAgICAgICAgICAgICAgICAgICAgICsgYmVmb3JlTW9kZWxVcGRhdGUg5LqL5Lu26YeM5YaZ5Zi05Y+C5pWw77yI5ZyoIHVwZGF0ZVBhcmFtZXRlcnMg5YmN77yJCiAqLwooZnVuY3Rpb24gKCkgewogIGNvbnN0IEZQUyA9IDMwLCBEVE1TID0gMTAwMCAvIEZQUzsKCiAgLy8gLS0tLSDomZrmi5/ml7bpkp/vvIh3YXdhIOeUqCBwZXJmb3JtYW5jZS5ub3cg5YGaIHZpc2VtZSDmjIHnu63mgKfliKTmlq3vvIktLS0tCiAgbGV0IHZub3cgPSAwOwogIGNvbnN0IHJlYWxOb3cgPSBwZXJmb3JtYW5jZS5ub3cuYmluZChwZXJmb3JtYW5jZSk7CiAgcGVyZm9ybWFuY2Uubm93ID0gKCkgPT4gdm5vdzsKCiAgY29uc3QgUkFDID0gd2luZG93LkF1ZGlvQ29udGV4dDsKICB3aW5kb3cuQXVkaW9Db250ZXh0ID0gd2luZG93LndlYmtpdEF1ZGlvQ29udGV4dCA9IGZ1bmN0aW9uIChvKSB7CiAgICByZXR1cm4gbmV3IFJBQyh7IHNhbXBsZVJhdGU6IDQ4MDAwLCAuLi4obyB8fCB7fSkgfSk7CiAgfTsKCiAgd2luZG93Ll9fc3RhdHVzID0geyBzdGFnZTogJ2Jvb3QnIH07CiAgd2luZG93Ll9fZnJhbWVEb25lID0gMDsKICB3aW5kb3cuX190aW1lbGluZSA9IG51bGw7CiAgd2luZG93Ll9fZnJhbWVzID0gW107CgogIGNvbnN0IExpdmUyRE1vZGVsID0gUElYSS5saXZlMmQuTGl2ZTJETW9kZWw7CgogIGNvbnN0IFcgPSAxMDgwLCBIID0gMTA4MDsKICBjb25zdCBhcHAgPSBuZXcgUElYSS5BcHBsaWNhdGlvbih7CiAgICB3aWR0aDogVywgaGVpZ2h0OiBILAogICAgYmFja2dyb3VuZDogJyNmMmVlZTgnLAogICAgYmFja2dyb3VuZENvbG9yOiAweGYyZWVlOCwKICAgIHRyYW5zcGFyZW50OiBmYWxzZSwKICAgIGF1dG9TdGFydDogZmFsc2UsCiAgICBwb3dlclByZWZlcmVuY2U6ICdsb3ctcG93ZXInLAogICAgcHJlc2VydmVEcmF3aW5nQnVmZmVyOiB0cnVlLAogIH0pOwogIGRvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoYXBwLnZpZXcpOwoKICBjb25zdCB2aXMyb3BlbiA9IHsKICAgIHZpc2VtZV9zaWw6IDAuMCwgdmlzZW1lX1BQOiAwLjA1LCB2aXNlbWVfRkY6IDAuMTUsIHZpc2VtZV9USDogMC4yNSwKICAgIHZpc2VtZV9ERDogMC41NSwgdmlzZW1lX2trOiAwLjQ1LCB2aXNlbWVfQ0g6IDAuNCwgdmlzZW1lX1NTOiAwLjIsCiAgICB2aXNlbWVfbm46IDAuMzUsIHZpc2VtZV9SUjogMC4zLCB2aXNlbWVfYWE6IDAuOTUsIHZpc2VtZV9FOiAwLjYsCiAgICB2aXNlbWVfSTogMC40NSwgdmlzZW1lX086IDAuNywgdmlzZW1lX1U6IDAuMzUsCiAgfTsKICBjb25zdCB2aXMyZm9ybSA9IHsKICAgIHZpc2VtZV9hYTogMC4wLCB2aXNlbWVfRTogMC40LCB2aXNlbWVfSTogMC42LCB2aXNlbWVfTzogLTAuNSwgdmlzZW1lX1U6IC0wLjgsCiAgfTsKCiAgY29uc3QgYXVkaW8gPSBuZXcgQXVkaW8oJ3ZvaWNlLm1wMycpOwogIGF1ZGlvLnByZWxvYWQgPSAnYXV0byc7CiAgbGV0IGxpcHN5bmMgPSBudWxsLCBtb2RlbCA9IG51bGw7CiAgbGV0IG1vdXRoT3BlbiA9IDAsIG1vdXRoRm9ybSA9IDA7CgogIExpdmUyRE1vZGVsLmZyb20oJ21vZGVsL21vZGVsLm1vZGVsMy5qc29uJywgewogICAgYXV0b1VwZGF0ZTogZmFsc2UsIGF1dG9JbnRlcmFjdDogZmFsc2UsCiAgfSkudGhlbihtID0+IHsKICAgIG1vZGVsID0gbTsKICAgIGNvbnN0IHMgPSBNYXRoLm1pbihXIC8gbS53aWR0aCwgSCAvIG0uaGVpZ2h0KSAqIDAuOTU7CiAgICBtLnNjYWxlLnNldChzKTsgbS5hbmNob3Iuc2V0KDAuNSwgMC41KTsgbS54ID0gVyAvIDI7IG0ueSA9IEggLyAyOwogICAgYXBwLnN0YWdlLmFkZENoaWxkKG0pOwogICAgLy8g5Zi05Y+C5pWw5b+F6aG75ZyoIGludGVybmFsTW9kZWwudXBkYXRlIOacq+WwviB1cGRhdGVQYXJhbWV0ZXJzKCkg5LmL5YmN5YaZ5YWlCiAgICBtb2RlbC5pbnRlcm5hbE1vZGVsLm9uKCdiZWZvcmVNb2RlbFVwZGF0ZScsICgpID0+IHsKICAgICAgY29uc3QgY20gPSBtb2RlbC5pbnRlcm5hbE1vZGVsLmNvcmVNb2RlbDsKICAgICAgY20uc2V0UGFyYW1ldGVyVmFsdWVCeUlkKCdQYXJhbU1vdXRoT3BlblknLCBtb3V0aE9wZW4pOwogICAgICBjbS5zZXRQYXJhbWV0ZXJWYWx1ZUJ5SWQoJ1BhcmFtTW91dGhGb3JtJywgbW91dGhGb3JtKTsKICAgIH0pOwogICAgbGlwc3luYyA9IG5ldyB3aW5kb3dbJ1dhd2EtbGlwc3luYyddLkxpcHN5bmMoeyBmZnRTaXplOiAyMDQ4LCBoaXN0b3J5U2l6ZTogMTAgfSk7CiAgICB3aW5kb3cuX19tb2RlbCA9IG07CiAgICB3aW5kb3cuX19hcHAgPSBhcHA7CiAgICB3aW5kb3cuX19zdGF0dXMgPSB7IHN0YWdlOiAnbW9kZWwtcmVhZHknIH07CiAgfSkuY2F0Y2goZSA9PiB7CiAgICB3aW5kb3cuX19zdGF0dXMgPSB7IHN0YWdlOiAnZXJyb3InLCBlcnI6IFN0cmluZygoZSAmJiBlLnN0YWNrKSB8fCBlKSB9OwogIH0pOwoKICAvLyAtLS0tIFBhc3MgMe+8muWunuaXtuW9lSB2aXNlbWUg5pe26Ze057q/IC0tLS0KICB3aW5kb3cuX19yZWNvcmQgPSBmdW5jdGlvbiAoKSB7CiAgICByZXR1cm4gbmV3IFByb21pc2UocmVzb2x2ZSA9PiB7CiAgICAgIGZ1bmN0aW9uIGJlZ2luKCkgewogICAgICAgIGxpcHN5bmMuY29ubmVjdEF1ZGlvKGF1ZGlvKTsKICAgICAgICBjb25zdCB0MCA9IHJlYWxOb3coKTsKICAgICAgICBjb25zdCB0bCA9IFtdOwogICAgICAgIHZub3cgPSAwOwogICAgICAgIGF1ZGlvLnBsYXkoKS50aGVuKCgpID0+IHsKICAgICAgICAgIGZ1bmN0aW9uIHN0ZXAoKSB7CiAgICAgICAgICAgIHZub3cgPSByZWFsTm93KCkgLSB0MDsKICAgICAgICAgICAgbGlwc3luYy5wcm9jZXNzQXVkaW8oKTsKICAgICAgICAgICAgdGwucHVzaChbTWF0aC5yb3VuZCh2bm93KSwgbGlwc3luYy52aXNlbWVdKTsKICAgICAgICAgICAgaWYgKGF1ZGlvLmVuZGVkIHx8IGF1ZGlvLnBhdXNlZCkgewogICAgICAgICAgICAgIHdpbmRvdy5fX3RpbWVsaW5lID0gdGw7CiAgICAgICAgICAgICAgd2luZG93Ll9fc3RhdHVzID0geyBzdGFnZTogJ3JlY29yZGVkJywgbjogdGwubGVuZ3RoLCBkdXI6IGF1ZGlvLmR1cmF0aW9uIH07CiAgICAgICAgICAgICAgcmVzb2x2ZSh0bC5sZW5ndGgpOwogICAgICAgICAgICAgIHJldHVybjsKICAgICAgICAgICAgfQogICAgICAgICAgICByZXF1ZXN0QW5pbWF0aW9uRnJhbWUoc3RlcCk7CiAgICAgICAgICB9CiAgICAgICAgICByZXF1ZXN0QW5pbWF0aW9uRnJhbWUoc3RlcCk7CiAgICAgICAgfSkuY2F0Y2goZSA9PiB7CiAgICAgICAgICB3aW5kb3cuX19zdGF0dXMgPSB7IHN0YWdlOiAncGxheS1lcnInLCBlcnI6IFN0cmluZyhlKSB9OwogICAgICAgICAgcmVzb2x2ZSgtMSk7CiAgICAgICAgfSk7CiAgICAgIH0KICAgICAgaWYgKGF1ZGlvLnJlYWR5U3RhdGUgPj0gMSkgYmVnaW4oKTsgZWxzZSBhdWRpby5vbmxvYWRlZG1ldGFkYXRhID0gYmVnaW47CiAgICB9KTsKICB9OwoKICAvLyAtLS0tIFBhc3MgMu+8muemu+e6v+ehruWumuaAp+a4suafk++8iOW6k+iHquW4puecqOecvC/lkbzlkLgv54mp55CG6LWwIGludGVybmFsTW9kZWzvvIktLS0tCiAgd2luZG93Ll9fcmVuZGVyRnJhbWVzID0gZnVuY3Rpb24gKCkgewogICAgY29uc3QgdGwgPSB3aW5kb3cuX190aW1lbGluZTsKICAgIGNvbnN0IHRvdGFsID0gTWF0aC5jZWlsKChhdWRpby5kdXJhdGlvbiB8fCAxMC43NzYpICogRlBTKTsKICAgIGxldCBwdHIgPSAwLCB2aXMgPSAndmlzZW1lX3NpbCc7CiAgICBtb3V0aE9wZW4gPSAwOyBtb3V0aEZvcm0gPSAwOwogICAgd2luZG93Ll9fZnJhbWVzID0gW107CiAgICB3aW5kb3cuX19tb3V0aExvZyA9IFtdOwogICAgZm9yIChsZXQgZiA9IDA7IGYgPCB0b3RhbDsgZisrKSB7CiAgICAgIHZub3cgPSBmICogRFRNUzsKICAgICAgd2hpbGUgKHB0ciArIDEgPCB0bC5sZW5ndGggJiYgdGxbcHRyICsgMV1bMF0gPD0gdm5vdykgeyBwdHIrKzsgdmlzID0gdGxbcHRyXVsxXTsgfQogICAgICBjb25zdCB0TyA9IHZpczJvcGVuW3Zpc10gPz8gMCwgdEYgPSB2aXMyZm9ybVt2aXNdID8/IDAuMTsKICAgICAgbW91dGhPcGVuICs9ICh0TyAtIG1vdXRoT3BlbikgKiAwLjQ7CiAgICAgIG1vdXRoRm9ybSArPSAodEYgLSBtb3V0aEZvcm0pICogMC4yNTsKICAgICAgbW9kZWwuaW50ZXJuYWxNb2RlbC51cGRhdGUoRFRNUywgRFRNUyk7CiAgICAgIGFwcC5yZW5kZXIoKTsKICAgICAgd2luZG93Ll9fbW91dGhMb2cucHVzaChbZiwgdmlzLnNsaWNlKDcpLCArbW91dGhPcGVuLnRvRml4ZWQoMiksICttb2RlbC5pbnRlcm5hbE1vZGVsLmNvcmVNb2RlbC5nZXRQYXJhbWV0ZXJWYWx1ZUJ5SWQoJ1BhcmFtTW91dGhPcGVuWScpLnRvRml4ZWQoMildKTsKICAgICAgd2luZG93Ll9fZnJhbWVzLnB1c2goYXBwLnZpZXcudG9EYXRhVVJMKCdpbWFnZS9qcGVnJywgMC45KSk7CiAgICAgIHdpbmRvdy5fX2ZyYW1lRG9uZSA9IGYgKyAxOwogICAgfQogICAgd2luZG93Ll9fc3RhdHVzID0geyBzdGFnZTogJ3JlbmRlcmVkJywgZnJhbWVzOiB0b3RhbCB9OwogICAgcmV0dXJuIHRvdGFsOwogIH07Cn0pKCk7Cg==
+/* Live2D 口型驱动 capture：pixi.js7 + pixi-live2d-display(cubism4) + wawa-lipsync
+ * 两遍法：
+ *  Pass1 __record()        实时播放 audio + wawa 逐帧采 viseme → window.__timeline
+ *  Pass2 __renderFrames()  离线确定性推进：查表 viseme + 手动 internalModel.update(ms)
+ *                          + beforeModelUpdate 事件里写嘴参数（在 updateParameters 前）
+ */
+(function () {
+  const FPS = 30, DTMS = 1000 / FPS;
+
+  // ---- 虚拟时钟（wawa 用 performance.now 做 viseme 持续性判断）----
+  let vnow = 0;
+  const realNow = performance.now.bind(performance);
+  performance.now = () => vnow;
+
+  const RAC = window.AudioContext;
+  window.AudioContext = window.webkitAudioContext = function (o) {
+    return new RAC({ sampleRate: 48000, ...(o || {}) });
+  };
+
+  window.__status = { stage: 'boot' };
+  window.__frameDone = 0;
+  window.__timeline = null;
+  window.__frames = [];
+
+  const Live2DModel = PIXI.live2d.Live2DModel;
+
+  const W = 1080, H = 1080;
+  const app = new PIXI.Application({
+    width: W, height: H,
+    background: '#f2eee8',
+    backgroundColor: 0xf2eee8,
+    transparent: false,
+    autoStart: false,
+    powerPreference: 'low-power',
+    preserveDrawingBuffer: true,
+  });
+  document.body.appendChild(app.view);
+
+  const vis2open = {
+    viseme_sil: 0.0, viseme_PP: 0.05, viseme_FF: 0.15, viseme_TH: 0.25,
+    viseme_DD: 0.55, viseme_kk: 0.45, viseme_CH: 0.4, viseme_SS: 0.2,
+    viseme_nn: 0.35, viseme_RR: 0.3, viseme_aa: 0.95, viseme_E: 0.6,
+    viseme_I: 0.45, viseme_O: 0.7, viseme_U: 0.35,
+  };
+  const vis2form = {
+    viseme_aa: 0.0, viseme_E: 0.4, viseme_I: 0.6, viseme_O: -0.5, viseme_U: -0.8,
+  };
+
+  const audio = new Audio('voice.mp3');
+  audio.preload = 'auto';
+  let lipsync = null, model = null;
+  let mouthOpen = 0, mouthForm = 0;
+
+  Live2DModel.from('model/model.model3.json', {
+    autoUpdate: false, autoInteract: false,
+  }).then(m => {
+    model = m;
+    const s = Math.min(W / m.width, H / m.height) * 0.95;
+    m.scale.set(s); m.anchor.set(0.5, 0.5); m.x = W / 2; m.y = H / 2;
+    app.stage.addChild(m);
+    // 嘴参数必须在 internalModel.update 末尾 updateParameters() 之前写入
+    model.internalModel.on('beforeModelUpdate', () => {
+      const cm = model.internalModel.coreModel;
+      cm.setParameterValueById('ParamMouthOpenY', mouthOpen);
+      cm.setParameterValueById('ParamMouthForm', mouthForm);
+    });
+    lipsync = new window['Wawa-lipsync'].Lipsync({ fftSize: 2048, historySize: 10 });
+    window.__model = m;
+    window.__app = app;
+    window.__status = { stage: 'model-ready' };
+  }).catch(e => {
+    window.__status = { stage: 'error', err: String((e && e.stack) || e) };
+  });
+
+  // ---- Pass 1：实时录 viseme 时间线 ----
+  window.__record = function () {
+    return new Promise(resolve => {
+      function begin() {
+        lipsync.connectAudio(audio);
+        const t0 = realNow();
+        const tl = [];
+        vnow = 0;
+        audio.play().then(() => {
+          function step() {
+            vnow = realNow() - t0;
+            lipsync.processAudio();
+            tl.push([Math.round(vnow), lipsync.viseme]);
+            if (audio.ended || audio.paused) {
+              window.__timeline = tl;
+              window.__status = { stage: 'recorded', n: tl.length, dur: audio.duration };
+              resolve(tl.length);
+              return;
+            }
+            requestAnimationFrame(step);
+          }
+          requestAnimationFrame(step);
+        }).catch(e => {
+          window.__status = { stage: 'play-err', err: String(e) };
+          resolve(-1);
+        });
+      }
+      if (audio.readyState >= 1) begin(); else audio.onloadedmetadata = begin;
+    });
+  };
+
+  // ---- Pass 2：离线确定性渲染（库自带眨眼/呼吸/物理走 internalModel）----
+  window.__renderFrames = function () {
+    const tl = window.__timeline;
+    const total = Math.ceil((audio.duration || 10.776) * FPS);
+    let ptr = 0, vis = 'viseme_sil';
+    mouthOpen = 0; mouthForm = 0;
+    window.__frames = [];
+    window.__mouthLog = [];
+    for (let f = 0; f < total; f++) {
+      vnow = f * DTMS;
+      while (ptr + 1 < tl.length && tl[ptr + 1][0] <= vnow) { ptr++; vis = tl[ptr][1]; }
+      const tO = vis2open[vis] ?? 0, tF = vis2form[vis] ?? 0.1;
+      mouthOpen += (tO - mouthOpen) * 0.4;
+      mouthForm += (tF - mouthForm) * 0.25;
+      model.internalModel.update(DTMS, DTMS);
+      app.render();
+      window.__mouthLog.push([f, vis.slice(7), +mouthOpen.toFixed(2), +model.internalModel.coreModel.getParameterValueById('ParamMouthOpenY').toFixed(2)]);
+      window.__frames.push(app.view.toDataURL('image/jpeg', 0.9));
+      window.__frameDone = f + 1;
+    }
+    window.__status = { stage: 'rendered', frames: total };
+    return total;
+  };
+})();

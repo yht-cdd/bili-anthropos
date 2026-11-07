@@ -1,1 +1,7 @@
-IyBsaXZlMmQtbGlwc3luYy1wb2MKCkxpdmUyRCDlj6PlnovpqbHliqggUG9D77yadm9pY2UubXAzIOKGkiB3YXdhLWxpcHN5bmMg6YeHIHZpc2VtZSDihpIgcGl4aS1saXZlMmQtZGlzcGxheSDpqbHliqggUGFyYW1Nb3V0aE9wZW5ZL0Zvcm0g4oaSIDMwZnBzIOmAkOW4p+a4suafkyDihpIgZmZtcGVnIOWQiOmfs+i9qOWHuiBtcDTjgIIKCi0g5qih5Z6L77yaRlhZWEwvZGFmZWl5dS1jb28tZmlndXJl77yIQ29vcGFuaW9uIGJhc2U2NCDlsIHoo4Xlt7Lop6PljIXov5sgbW9kZWwv77yJCi0g5YWz6ZSu5Z2R77yacGl4aSDlv4XpobsgNi5477yIMC40LjAg55qEIGN1YmlzbTQubWluLmpzIOaYryBwaXhpNiDmnoTlu7rvvInvvJtjb3JlIOW/hemhuyBTREs1IOWumOaWuSBsaXZlMmRjdWJpc21jb3Jl77yI5LuT5bqT6Ieq5bimIDIwMTkg54mI5LiN6K6kIG1vYzMgdjXvvInvvJvlmLTlj4LmlbDpobvlnKggaW50ZXJuYWxNb2RlbC51cGRhdGUg55qEIGJlZm9yZU1vZGVsVXBkYXRlIOS6i+S7tumHjOWGmQotIOi3keazle+8mmBucG0gaSAmJiBucG0gcnVuIGNhcHR1cmVg77yI6ZyA6KaB5pys5py6IGNocm9tZe+8jGBDSFJPTUVfUEFUSGAg5Y+v6KaG55uW77yJCg==
+# live2d-lipsync-poc
+
+Live2D 口型驱动 PoC：voice.mp3 → wawa-lipsync 采 viseme → pixi-live2d-display 驱动 ParamMouthOpenY/Form → 30fps 逐帧渲染 → ffmpeg 合音轨出 mp4。
+
+- 模型：FXYXL/dafeiyu-coo-figure（Coopanion base64 封装已解包进 model/）
+- 关键坑：pixi 必须 6.x（0.4.0 的 cubism4.min.js 是 pixi6 构建）；core 必须 SDK5 官方 live2dcubismcore（仓库自带 2019 版不认 moc3 v5）；嘴参数须在 internalModel.update 的 beforeModelUpdate 事件里写
+- 跑法：`npm i && npm run capture`（需要本机 chrome，`CHROME_PATH` 可覆盖）

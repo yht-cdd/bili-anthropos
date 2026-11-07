@@ -1,1 +1,27 @@
-PCFET0NUWVBFIGh0bWw+CjxodG1sPgo8aGVhZD4KPG1ldGEgY2hhcnNldD0idXRmLTgiPgo8c3R5bGU+CiAgaHRtbCxib2R5e21hcmdpbjowO3BhZGRpbmc6MDtiYWNrZ3JvdW5kOiMxMTE7b3ZlcmZsb3c6aGlkZGVufQogIGNhbnZhc3tkaXNwbGF5OmJsb2NrfQo8L3N0eWxlPgo8c2NyaXB0PgogIHdpbmRvdy5MT0cgPSBbXTsKICBjb25zdCBwdXNoID0gKC4uLmEpID0+IHsgdHJ5IHsgd2luZG93LkxPRy5wdXNoKGEubWFwKHggPT4gU3RyaW5nKHgpKS5qb2luKCIgIikuc2xpY2UoMCwgMzAwKSk7IGlmICh3aW5kb3cuTE9HLmxlbmd0aCA+IDIwMCkgd2luZG93LkxPRy5zaGlmdCgpOyB9IGNhdGNoIChlKSB7fSB9OwogIHdpbmRvdy5vbmVycm9yID0gKG0sIHMsIGwsIGMsIGVycikgPT4gcHVzaCgib25lcnJvcjoiLCBtLCBzICsgIjoiICsgbCwgZXJyICYmIGVyci5zdGFjayk7CiAgd2luZG93LmFkZEV2ZW50TGlzdGVuZXIoInVuaGFuZGxlZHJlamVjdGlvbiIsIChlKSA9PiBwdXNoKCJ1bmhhbmRsZWQ6IiwgZS5yZWFzb24gJiYgKGUucmVhc29uLnN0YWNrIHx8IGUucmVhc29uLm1lc3NhZ2UpIHx8IGUucmVhc29uKSk7CiAgY29uc3QgX2xvZyA9IGNvbnNvbGUubG9nLCBfd2FybiA9IGNvbnNvbGUud2FybiwgX2VyciA9IGNvbnNvbGUuZXJyb3I7CiAgY29uc29sZS5sb2cgPSAoLi4uYSkgPT4gKHB1c2goImxvZzoiLCAuLi5hKSwgX2xvZyguLi5hKSk7CiAgY29uc29sZS53YXJuID0gKC4uLmEpID0+IChwdXNoKCJ3YXJuOiIsIC4uLmEpLCBfd2FybiguLi5hKSk7CiAgY29uc29sZS5lcnJvciA9ICguLi5hKSA9PiAocHVzaCgiZXJyb3I6IiwgLi4uYSksIF9lcnIoLi4uYSkpOwo8L3NjcmlwdD4KPC9oZWFkPgo8Ym9keT4KPHNjcmlwdCBzcmM9InZlbmRvci9waXhpL3BpeGkubWluLmpzIj48L3NjcmlwdD4KPHNjcmlwdCBzcmM9InZlbmRvci9jdWJpc20vbGl2ZTJkY3ViaXNtY29yZS5taW4uanMiPjwvc2NyaXB0Pgo8c2NyaXB0IHNyYz0idmVuZG9yL3BpeGkvbGl2ZTJkLm1pbi5qcyI+PC9zY3JpcHQ+CjxzY3JpcHQgc3JjPSJ2ZW5kb3Ivd2F3YS93YXdhLWxpcHN5bmMudW1kLmpzIj48L3NjcmlwdD4KPHNjcmlwdCBzcmM9ImFwcC5qcyI+PC9zY3JpcHQ+CjwvYm9keT4KPC9odG1sPgo=
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html,body{margin:0;padding:0;background:#111;overflow:hidden}
+  canvas{display:block}
+</style>
+<script>
+  window.LOG = [];
+  const push = (...a) => { try { window.LOG.push(a.map(x => String(x)).join(" ").slice(0, 300)); if (window.LOG.length > 200) window.LOG.shift(); } catch (e) {} };
+  window.onerror = (m, s, l, c, err) => push("onerror:", m, s + ":" + l, err && err.stack);
+  window.addEventListener("unhandledrejection", (e) => push("unhandled:", e.reason && (e.reason.stack || e.reason.message) || e.reason));
+  const _log = console.log, _warn = console.warn, _err = console.error;
+  console.log = (...a) => (push("log:", ...a), _log(...a));
+  console.warn = (...a) => (push("warn:", ...a), _warn(...a));
+  console.error = (...a) => (push("error:", ...a), _err(...a));
+</script>
+</head>
+<body>
+<script src="vendor/pixi/pixi.min.js"></script>
+<script src="vendor/cubism/live2dcubismcore.min.js"></script>
+<script src="vendor/pixi/live2d.min.js"></script>
+<script src="vendor/wawa/wawa-lipsync.umd.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
