@@ -1,0 +1,36 @@
+{
+  "note": "3 次调用全部原样保存，未挑选",
+  "endpoint": "https://api-inference.modelscope.cn/v1/chat/completions",
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "request": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "假如你是B站UP主，你现在API只有20元，你要发什么视频"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 800,
+    "enable_thinking": false
+  },
+  "runs": [
+    {
+      "run": 1,
+      "requested_at": "2026-11-07T08:51:56.994170+00:00",
+      "elapsed_s": 0.16,
+      "error": "HTTP Error 429: Too Many Requests | {\"error\":{\"message\":\"insufficient balance\",\"request_id\":\"4179e8d8-b23f-41b2-943d-816d78cfa833\"}}"
+    },
+    {
+      "run": 2,
+      "requested_at": "2026-11-07T08:51:57.152748+00:00",
+      "elapsed_s": 0.18,
+      "error": "HTTP Error 429: Too Many Requests | {\"error\":{\"message\":\"insufficient balance\",\"request_id\":\"5ac65b13-850d-4f51-ba4b-200f84bd8a32\"}}"
+    },
+    {
+      "run": 3,
+      "requested_at": "2026-11-07T08:51:57.328279+00:00",
+      "elapsed_s": 0.15,
+      "error": "HTTP Error 429: Too Many Requests | {\"error\":{\"message\":\"insufficient balance\",\"request_id\":\"abf6d6e3-85d5-4b9e-b6ab-b7e839bd334b\"}}"
+    }
+  ]
+}
