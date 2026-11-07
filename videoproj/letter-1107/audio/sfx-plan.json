@@ -1,0 +1,297 @@
+{
+  "total": 188,
+  "cues": [
+    {
+      "at": 0,
+      "cue": "pad",
+      "gain": 0.07,
+      "seconds": 41
+    },
+    {
+      "at": 0.4,
+      "cue": "tick",
+      "gain": 0.3
+    },
+    {
+      "at": 0.6,
+      "cue": "typing",
+      "gain": 0.22,
+      "seconds": 2.04
+    },
+    {
+      "at": 4,
+      "cue": "tick",
+      "gain": 0.3
+    },
+    {
+      "at": 4.2,
+      "cue": "typing",
+      "gain": 0.22,
+      "seconds": 2.4
+    },
+    {
+      "at": 8.333,
+      "cue": "tick",
+      "gain": 0.3
+    },
+    {
+      "at": 8.533,
+      "cue": "typing",
+      "gain": 0.16,
+      "seconds": 0.76
+    },
+    {
+      "at": 9.533,
+      "cue": "typing",
+      "gain": 0.22,
+      "seconds": 2.68
+    },
+    {
+      "at": 13.333,
+      "cue": "tick",
+      "gain": 0.3
+    },
+    {
+      "at": 13.533,
+      "cue": "typing",
+      "gain": 0.22,
+      "seconds": 2.12
+    },
+    {
+      "at": 18,
+      "cue": "whoosh",
+      "gain": 0.35,
+      "seconds": 0.35
+    },
+    {
+      "at": 20.333,
+      "cue": "tick",
+      "gain": 0.3
+    },
+    {
+      "at": 20.533,
+      "cue": "typing",
+      "gain": 0.16,
+      "seconds": 0.76
+    },
+    {
+      "at": 21.667,
+      "cue": "typing",
+      "gain": 0.22,
+      "seconds": 3.16
+    },
+    {
+      "at": 34.5,
+      "cue": "whoosh",
+      "gain": 0.32,
+      "seconds": 0.5
+    },
+    {
+      "at": 34.833,
+      "cue": "tick",
+      "gain": 0.32
+    },
+    {
+      "at": 36.167,
+      "cue": "tick",
+      "gain": 0.32
+    },
+    {
+      "at": 37.5,
+      "cue": "tick",
+      "gain": 0.32
+    },
+    {
+      "at": 39.333,
+      "cue": "rewind",
+      "gain": 0.5,
+      "seconds": 0.45
+    },
+    {
+      "at": 39.833,
+      "cue": "boom",
+      "gain": 0.75,
+      "seconds": 0.7
+    },
+    {
+      "at": 41,
+      "cue": "pad",
+      "gain": 0.09,
+      "seconds": 26
+    },
+    {
+      "at": 43,
+      "cue": "tick",
+      "gain": 0.28
+    },
+    {
+      "at": 50,
+      "cue": "tick",
+      "gain": 0.28
+    },
+    {
+      "at": 59,
+      "cue": "ding",
+      "gain": 0.4
+    },
+    {
+      "at": 63,
+      "cue": "tick",
+      "gain": 0.24
+    },
+    {
+      "at": 68,
+      "cue": "whoosh",
+      "gain": 0.3,
+      "seconds": 0.4
+    },
+    {
+      "at": 73,
+      "cue": "tick",
+      "gain": 0.34
+    },
+    {
+      "at": 73.867,
+      "cue": "tick",
+      "gain": 0.2
+    },
+    {
+      "at": 81,
+      "cue": "tick",
+      "gain": 0.34
+    },
+    {
+      "at": 81.867,
+      "cue": "tick",
+      "gain": 0.2
+    },
+    {
+      "at": 89,
+      "cue": "tick",
+      "gain": 0.34
+    },
+    {
+      "at": 89.867,
+      "cue": "tick",
+      "gain": 0.2
+    },
+    {
+      "at": 97,
+      "cue": "whoosh",
+      "gain": 0.28,
+      "seconds": 0.4
+    },
+    {
+      "at": 98,
+      "cue": "ding",
+      "gain": 0.36
+    },
+    {
+      "at": 99.667,
+      "cue": "tick",
+      "gain": 0.24
+    },
+    {
+      "at": 103,
+      "cue": "boom",
+      "gain": 0.45,
+      "seconds": 0.9
+    },
+    {
+      "at": 103,
+      "cue": "pad",
+      "gain": 0.08,
+      "seconds": 34
+    },
+    {
+      "at": 105,
+      "cue": "typing",
+      "gain": 0.2,
+      "seconds": 0.64
+    },
+    {
+      "at": 109.333,
+      "cue": "typing",
+      "gain": 0.2,
+      "seconds": 0.88
+    },
+    {
+      "at": 112,
+      "cue": "typing",
+      "gain": 0.2,
+      "seconds": 0.8
+    },
+    {
+      "at": 116.333,
+      "cue": "typing",
+      "gain": 0.2,
+      "seconds": 1.52
+    },
+    {
+      "at": 121.833,
+      "cue": "typing",
+      "gain": 0.2,
+      "seconds": 1.28
+    },
+    {
+      "at": 126.833,
+      "cue": "typing",
+      "gain": 0.2,
+      "seconds": 1.08
+    },
+    {
+      "at": 132,
+      "cue": "ding",
+      "gain": 0.42
+    },
+    {
+      "at": 139,
+      "cue": "riser",
+      "gain": 0.35,
+      "seconds": 0.8
+    },
+    {
+      "at": 139.8,
+      "cue": "tick",
+      "gain": 0.32
+    },
+    {
+      "at": 144.5,
+      "cue": "tick",
+      "gain": 0.22
+    },
+    {
+      "at": 152.5,
+      "cue": "boom",
+      "gain": 0.6,
+      "seconds": 0.8
+    },
+    {
+      "at": 158,
+      "cue": "whoosh",
+      "gain": 0.26,
+      "seconds": 0.35
+    },
+    {
+      "at": 166.667,
+      "cue": "tick",
+      "gain": 0.3
+    },
+    {
+      "at": 176,
+      "cue": "pad",
+      "gain": 0.08,
+      "seconds": 12
+    },
+    {
+      "at": 177,
+      "cue": "ding",
+      "gain": 0.32
+    },
+    {
+      "at": 184,
+      "cue": "tick",
+      "gain": 0.2
+    }
+  ]
+}

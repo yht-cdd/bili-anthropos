@@ -1,5 +1,5 @@
 import React from 'react';
-import { AbsoluteFill, Sequence } from 'remotion';
+import { AbsoluteFill, Audio, Sequence, staticFile } from 'remotion';
 import { Subtitle } from './components/Subtitle';
 import { S1 } from './shots/S1';
 import { S2 } from './shots/S2';
@@ -31,5 +31,8 @@ export const Main: React.FC = () => (
       </Sequence>
     ))}
     <Subtitle />
+    {/* 音效轨：程序合成（scripts/gen-sfx-plan.mjs → sfx.mjs mix），时间轴与画面帧号一一对应。
+        以后人声单独再挂一条 <Audio>，两轨在合成器里混，不用回头重混音效。 */}
+    <Audio src={staticFile('audio/sfx.mp3')} />
   </AbsoluteFill>
 );
