@@ -16,10 +16,10 @@ export const Subtitle: React.FC = () => {
     if (frame >= NARRATION[i].from) idx = i;
   }
   if (idx < 0) return null;
-  // S-E 题眼本身就是口播原文，字幕会重复，直接让位给大字
-  if (frame >= SEG.e && frame < SEG.f) return null;
-  // S-F 从信正文起不再走底字幕（信自己排版，见 SF.tsx）；
-  // 但 S-F 开头那句「但在那之前…」仍要底字幕，所以不能一刀切到 SEG.e
+  // S-D 立定段：大字本身就是口播原文，底字幕重复（「第一/第二/第三」逐条同句），
+  // 从第一组大字进场起就让位；S-E 题眼同理。但 S-F 开头那句仍要字幕，所以分成两段判断。
+  if (frame >= SEG.d + 44 && frame < SEG.f) return null;
+  // S-F 从信正文起不再走底字幕（信自己排版，见 SF.tsx）
   if (frame >= LETTER_START) return null;
 
   const line = NARRATION[idx];

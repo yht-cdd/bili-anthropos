@@ -108,7 +108,7 @@ export const SF: React.FC = () => {
   const finaleRow3 = prog(frame, finaleAt + 46, 26, EASE_EXPO_OUT);
   const finaleNote = prog(frame, finaleAt + 78, 24, EASE_EXPO_OUT);
   // 收黑
-  const black = prog(frame, 1836, 30, EASE_INOUT);
+  const black = prog(frame, 1820, 36, EASE_INOUT);
 
   // ── 滚动：当前段索引 + 段内插值 ──
   let active = 0;

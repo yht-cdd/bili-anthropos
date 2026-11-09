@@ -4,15 +4,17 @@ import { EASE_EXPO_IN, EASE_EXPO_OUT, EASE_LINEAR, prog } from '../anim';
 import { STANCE } from '../data/preview';
 import { BG_2, FONT_SANS, GOLD, INK, INK_2, INK_3, RED } from '../theme';
 
-// S-D（1480–2224 帧，24.8s）：纯色底，三条大字逐行进，最后一行金黄收束。
-// 口播节奏：1576 第一 / 1769 第二 / 1918 token / 1991 第三 / 2099 鱼无罪
-const P1 = 96;
-const P2 = 289;
-const GOLD_AT = 438;
-const P3 = 511;
-const P4 = 619;
-const REDUCE = 464; // 全局 1944：token 金句念完，第二组退场
-const P3_IN = 498; // 全局 1978：第三组进场（口播 1991 前 13 帧起步，视觉先到位）
+// S-D（1555–2190 帧，21.2s）：纯色底，三条大字逐行进，最后一行金黄收束。
+// 关键帧按**新口播**（138s 版）重排，全局帧 → 本场景局部帧（减 1555）：
+//   第一 1611→56 / 第二 1767→212 / token 1885→330 / 第三 1956→401 / 鱼无罪 2060→505
+const P1 = 44;
+const P2 = 200;
+const GOLD_AT = 318;
+const P3 = 401;
+const P4 = 498;
+const REDUCE = 392; // token 金句念完、第二组退场，给第三组让位
+const P3_IN = 396; // 第三组进场（口播 401 前 5 帧起步，视觉先到位）
+const CLOSE_OUT = 640; // 收束一直留到场景切走（S-E 之前不淡出）
 
 const fade = (frame: number, start: number, end: number): number =>
   Math.min(prog(frame, start, 12, EASE_EXPO_OUT), 1 - prog(frame, end, 10, EASE_EXPO_IN));
@@ -20,11 +22,11 @@ const fade = (frame: number, start: number, end: number): number =>
 export const SD: React.FC = () => {
   const frame = useCurrentFrame();
 
-  const firstOp = fade(frame, P1, 278);
+  const firstOp = fade(frame, P1, 210);
   const secondOp = fade(frame, P2, REDUCE);
   const goldOp = fade(frame, GOLD_AT, REDUCE);
-  const thirdOp = fade(frame, P3_IN, 613);
-  const closeOp = fade(frame, P4, 736);
+  const thirdOp = fade(frame, P3_IN, 500);
+  const closeOp = fade(frame, P4, CLOSE_OUT);
 
   // 第二组退场后整组上移，给第三组让位（净高度 3×96+70 ≈ 360 → 上移 150）
   const secondShift = frame >= REDUCE ? -150 * prog(frame, P2, REDUCE - P2, EASE_EXPO_OUT) : 0;
