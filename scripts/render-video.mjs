@@ -32,11 +32,20 @@ const TOKEN_FILE = path.join(HOME, "secrets/github_token.txt");
 const argv = process.argv.slice(2);
 const opt = {};
 for (let i = 0; i < argv.length; i += 1) {
-  if (argv[i].startsWith("--")) {
-    const v = argv[i + 1];
-    if (v === undefined || v.startsWith("--")) opt[argv[i].slice(2)] = true;
-    else { opt[argv[i].slice(2)] = v; i += 1; }
+  const a = argv[i];
+  if (!a.startsWith("--")) continue;
+  // 支持 --key=value 和 --key value 两种写法。
+  // 2026-11-10 踩过：只认后一种时，`--frames=0-2086` 会被当成键名
+  // `frames=0-2086`（值为 true），于是 inputs.frames 是空串，
+  // CI 那边判断为空 → 渲了整片 4174 帧。
+  const eq = a.indexOf("=");
+  if (eq > 2) {
+    opt[a.slice(2, eq)] = a.slice(eq + 1);
+    continue;
   }
+  const v = argv[i + 1];
+  if (v === undefined || v.startsWith("--")) opt[a.slice(2)] = true;
+  else { opt[a.slice(2)] = v; i += 1; }
 }
 
 function token() {
