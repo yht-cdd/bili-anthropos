@@ -168,15 +168,74 @@ if (opt.status) {
 }
 
 // ── 参数校验 ──────────────────────────────────────────
-// 发图片：--image <公网 URL>。
-// 注意：B 站自己的上传通道（api/v1/image/upload）实测稳定 502，
-// 但 send_msg 的 msg_type=2 接受任意公网 URL（官方文档写「也可用三方图床」）。
-// 所以这里只负责「用现成的 URL 发出去」，上传由别的地方负责。
-const IMAGE_URL = typeof opt.image === "string" ? opt.image.trim() : "";
+// 发图片：--image <公网 URL>，或 --image-file <本地文件>（自动上传）。
+//
+// 2026-11-10 实测结论（主人反馈「空白内容，图片怎么了」后查的）：
+//   · 上传通道用 `x/dynamic/feed/draw/upload_bfs`，`biz=im_new`，可用，
+//     返回 `i0.hdslb.com/bfs/new_dyn/…png`。旧注释说的 api/v1/image/upload
+//     502 是另一条路，已不用。
+//   · **上传接口返回的是 http:// 地址，必须自己改成 https://**。
+//     私信页面是 https，http 图片会被当混合内容拦掉 —— 表现就是气泡空白。
+//     这是本次踩的坑，不是接口不通。
+//   · msg_type=2 的 content 带上 width/height/imageType/size 更稳。
+const IMAGE_FILE = typeof opt["image-file"] === "string" ? opt["image-file"].trim() : "";
+let IMAGE_URL = typeof opt.image === "string" ? opt.image.trim() : "";
+
+if (IMAGE_URL) IMAGE_URL = IMAGE_URL.replace(/^http:\/\//i, "https://");
+
+if (IMAGE_FILE) {
+  const abs = path.resolve(IMAGE_FILE);
+  if (!fs.existsSync(abs)) {
+    console.error(`❌ --image-file 不存在：${abs}`);
+    process.exit(1);
+  }
+  const buf = fs.readFileSync(abs);
+  const name = path.basename(abs);
+  const mime = /\.png$/i.test(name) ? "image/png" : /\.webp$/i.test(name) ? "image/webp" : "image/jpeg";
+  const form = new FormData();
+  form.append("file_up", new Blob([buf], { type: mime }), name);
+  form.append("biz", "im_new");
+  form.append("csrf", (fs.readFileSync(COOKIE_FILE, "utf8").split(";").map((s) => s.trim()).find((s) => s.startsWith("bili_jct=")) || "").split("=")[1] || "");
+  const up = await fetch("https://api.bilibili.com/x/dynamic/feed/draw/upload_bfs", {
+    method: "POST",
+    headers: { "User-Agent": UA, Referer: "https://message.bilibili.com/", Cookie: fs.readFileSync(COOKIE_FILE, "utf8").trim() },
+    body: form,
+    signal: AbortSignal.timeout(90_000),
+  });
+  const uj = await up.json().catch(() => ({}));
+  if (uj.code !== 0 || !uj.data?.image_url) {
+    console.error(`❌ 图片上传失败 code=${uj.code} ${uj.message || ""}`);
+    process.exit(1);
+  }
+  IMAGE_URL = String(uj.data.image_url).replace(/^http:\/\//i, "https://");
+  console.error(`图片已上传：${IMAGE_URL}（${uj.data.image_width}×${uj.data.image_height}）`);
+}
 
 if (IMAGE_URL && !/^https?:\/\//i.test(IMAGE_URL)) {
   console.error(`❌ --image 需要完整的 http(s) URL，收到：${IMAGE_URL}`);
   process.exit(1);
+}
+
+// 图片元信息：msg_type=2 带上这些更稳（实测只给 url 时对方气泡空白）
+let IMG_W = 0, IMG_H = 0, IMG_SZ = 0;
+let IMG_T = /\.png(\?|$)/i.test(IMAGE_URL) ? "png" : /\.webp(\?|$)/i.test(IMAGE_URL) ? "webp" : "jpg";
+if (IMAGE_FILE) {
+  const b = fs.readFileSync(path.resolve(IMAGE_FILE));
+  IMG_SZ = b.length;
+  // PNG / JPEG 尺寸头解析，只为填字段，不追求完整
+  if (b.slice(0, 8).toString("hex") === "89504e470d0a1a0a") {
+    IMG_W = b.readUInt32BE(16); IMG_H = b.readUInt32BE(20); IMG_T = "png";
+  } else if (b[0] === 0xff && b[1] === 0xd8) {
+    IMG_T = "jpg";
+    for (let i = 2; i < b.length - 9; ) {
+      if (b[i] !== 0xff) { i += 1; continue; }
+      const m = b[i + 1];
+      if (m >= 0xc0 && m <= 0xcf && m !== 0xc4 && m !== 0xc8 && m !== 0xcc) {
+        IMG_H = b.readUInt16BE(i + 5); IMG_W = b.readUInt16BE(i + 7); break;
+      }
+      i += 2 + b.readUInt16BE(i + 2);
+    }
+  }
 }
 
 // 把字面 "\n" 转成真换行：她在命令行里传的内容常常带转义符，
@@ -243,7 +302,7 @@ const form = new URLSearchParams({
   "msg[dev_id]": DEV,
   "msg[timestamp]": String(Math.floor(Date.now() / 1000)),
   "msg[content]": IMAGE_URL
-    ? JSON.stringify({ url: IMAGE_URL, original: 1 })
+    ? JSON.stringify({ url: IMAGE_URL, width: IMG_W, height: IMG_H, imageType: IMG_T, original: 1, size: IMG_SZ })
     : JSON.stringify({ content: clean }),
   csrf: CSRF,
 });
