@@ -6,11 +6,13 @@ import { S2 } from './shots/S2';
 import { S3 } from './shots/S3';
 import { S4 } from './shots/S4';
 import { S5 } from './shots/S5';
+import { S6 } from './shots/S6';
+import { S7 } from './shots/S7';
 import { FONT_SANS, TOTAL_FRAMES } from './theme';
 
 // ============================================================================
 // 主时间轴 — brief §二摄影表（7 段 · 30fps · 1650 帧 = 55.0s）。
-// R1 范围：骨架 + S1–S3 实装；S4–S7 占位（R2: S4–S5，R3: S6–S7+audio）。
+// R1: S1–S3；R2: S4–S5；R3: S6–S7 + audio（全段实装完毕）。
 // ============================================================================
 
 type Slot = {
@@ -27,8 +29,8 @@ export const SEG: Slot[] = [
   { id: 'S3', name: '问题 · 分屏对比', from: 330, duration: 300, comp: S3 },
   { id: 'S4', name: '三个修复动作', from: 630, duration: 510, comp: S4 },
   { id: 'S5', name: '深夜手术 · diff', from: 1140, duration: 240, comp: S5 },
-  { id: 'S6', name: '收束 · slam 双句', from: 1380, duration: 120 },
-  { id: 'S7', name: '尾卡 · 封面 PushIn', from: 1500, duration: 150 },
+  { id: 'S6', name: '收束 · slam 双句', from: 1380, duration: 120, comp: S6 },
+  { id: 'S7', name: '尾卡 · 封面 PushIn', from: 1500, duration: 150, comp: S7 },
 ];
 
 // 时间轴完整性自检：无缝相接且总长 1650（同 v3 Main 的断言）
