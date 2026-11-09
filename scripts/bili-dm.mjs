@@ -179,6 +179,7 @@ if (opt.status) {
 //     这是本次踩的坑，不是接口不通。
 //   · msg_type=2 的 content 带上 width/height/imageType/size 更稳。
 const IMAGE_FILE = typeof opt["image-file"] === "string" ? opt["image-file"].trim() : "";
+let UP_META = null; // 上传接口返回的元信息（含 img_size，单位 KB）
 let IMAGE_URL = typeof opt.image === "string" ? opt.image.trim() : "";
 
 if (IMAGE_URL) IMAGE_URL = IMAGE_URL.replace(/^http:\/\//i, "https://");
@@ -194,7 +195,9 @@ if (IMAGE_FILE) {
   const mime = /\.png$/i.test(name) ? "image/png" : /\.webp$/i.test(name) ? "image/webp" : "image/jpeg";
   const form = new FormData();
   form.append("file_up", new Blob([buf], { type: mime }), name);
-  form.append("biz", "im_new");
+  // biz=im 才是私信场景。注意反直觉：biz=im → 返回 bfs/im_new/ 路径（私信图床）；
+  // biz=im_new → 反而返回 bfs/new_dyn/ 路径（动态图床，私信气泡会空白）。
+  form.append("biz", "im");
   form.append("csrf", (fs.readFileSync(COOKIE_FILE, "utf8").split(";").map((s) => s.trim()).find((s) => s.startsWith("bili_jct=")) || "").split("=")[1] || "");
   const up = await fetch("https://api.bilibili.com/x/dynamic/feed/draw/upload_bfs", {
     method: "POST",
@@ -208,7 +211,8 @@ if (IMAGE_FILE) {
     process.exit(1);
   }
   IMAGE_URL = String(uj.data.image_url).replace(/^http:\/\//i, "https://");
-  console.error(`图片已上传：${IMAGE_URL}（${uj.data.image_width}×${uj.data.image_height}）`);
+  UP_META = uj.data;
+  console.error(`图片已上传：${IMAGE_URL}（${uj.data.image_width}×${uj.data.image_height}，${uj.data.img_size}KB）`);
 }
 
 if (IMAGE_URL && !/^https?:\/\//i.test(IMAGE_URL)) {
@@ -216,12 +220,19 @@ if (IMAGE_URL && !/^https?:\/\//i.test(IMAGE_URL)) {
   process.exit(1);
 }
 
-// 图片元信息：msg_type=2 带上这些更稳（实测只给 url 时对方气泡空白）
+// 图片元信息：msg_type=2 的 content 必须带这些，否则对方气泡空白。
+// 字段照抄私信前端：{url, width, height, imageType, size, original:1}
+// 注意 size 用的是上传接口返回的 img_size（单位 KB，不是字节数）。
 let IMG_W = 0, IMG_H = 0, IMG_SZ = 0;
 let IMG_T = /\.png(\?|$)/i.test(IMAGE_URL) ? "png" : /\.webp(\?|$)/i.test(IMAGE_URL) ? "webp" : "jpg";
-if (IMAGE_FILE) {
+if (UP_META) {
+  IMG_W = Number(UP_META.image_width) || 0;
+  IMG_H = Number(UP_META.image_height) || 0;
+  IMG_SZ = Number(UP_META.img_size) || 0;
+  IMG_T = /\.png(\?|$)/i.test(IMAGE_URL) ? "png" : /\.webp(\?|$)/i.test(IMAGE_URL) ? "webp" : "jpg";
+} else if (IMAGE_FILE) {
   const b = fs.readFileSync(path.resolve(IMAGE_FILE));
-  IMG_SZ = b.length;
+  IMG_SZ = Math.round(b.length / 1024 * 1000) / 1000;
   // PNG / JPEG 尺寸头解析，只为填字段，不追求完整
   if (b.slice(0, 8).toString("hex") === "89504e470d0a1a0a") {
     IMG_W = b.readUInt32BE(16); IMG_H = b.readUInt32BE(20); IMG_T = "png";
