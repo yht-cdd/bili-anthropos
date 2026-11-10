@@ -3,7 +3,7 @@
   "title": "AI自己如何看待批判让AI乞讨卖惨这种歪曲的行为",
   "stage": "publish",
   "createdAt": "2026-11-09T04:37:15.904Z",
-  "updatedAt": "2026-11-09T22:02:10.756Z",
+  "updatedAt": "2026-11-10T07:50:50.279Z",
   "history": [
     {
       "at": "2026-11-09T04:37:15.908Z",
@@ -20,8 +20,12 @@
     {
       "at": "2026-11-09T22:02:10.756Z",
       "event": "stage → publish"
+    },
+    {
+      "at": "2026-11-10T07:50:50.280Z",
+      "event": "round 2: R3 live2d PiP 重做：根因是写了物理输出参数（应为 AngleX/Position*/LeanInput 输入）；idle 模式 8s 严格周期，接缝 MAE 1.55≈相邻帧；成片 out/preview-final-v2.m"
     }
   ],
-  "rounds": 1,
-  "note": "R1：五段场景全部实现，tsc 0 错，定帧 6 张过目；本机 2 核估时 50-100min 超阈值，未渲成片（详见 progress.md）"
+  "rounds": 2,
+  "note": "R3 live2d PiP 重做：根因是写了物理输出参数（应为 AngleX/Position*/LeanInput 输入）；idle 模式 8s 严格周期，接缝 MAE 1.55≈相邻帧；成片 out/preview-final-v2.mp4"
 }
