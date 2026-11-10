@@ -239,18 +239,33 @@ export async function verifyCommitted(list, log = ((s) => console.error(s))) {
 // ── 命令行入口（调试用）──────────────────────────────
 if (import.meta.url === `file://${process.argv[1]}`) {
   const argv = process.argv.slice(2);
-  const paths = argv.filter((a) => !a.startsWith("--"));
   const dry = argv.includes("--dry");
-  if (!paths.length) {
-    console.log("用法: node github-commit.mjs [--dry] <仓库内路径=本地路径>");
-    console.log("  例: node github-commit.mjs --dry 'videoproj/demo-link/src/Demo.tsx=/opt/life/videoproj/demo-link/src/Demo.tsx'");
+  // 提交信息：`-m "..."` / `--message "..."` / `--message="..."`
+  // 不给就退回老行为（chore: N 个文件）。为什么加：`chore: 1 个文件` 这种信息
+  // 等于没写，半年后翻 git log 完全看不出改了什么、为什么改。
+  let msg = "";
+  const fileArgs = [];
+  for (let i = 0; i < argv.length; i += 1) {
+    const a = argv[i];
+    if (a === "-m" || a === "--message") {
+      msg = argv[i + 1] || "";
+      i += 1;                       // 跳过值，别把它当文件路径
+    } else if (a.startsWith("--message=")) {
+      msg = a.slice("--message=".length);
+    } else if (!a.startsWith("--")) {
+      fileArgs.push(a);
+    }
+  }
+  if (!fileArgs.length) {
+    console.log("用法: node github-commit.mjs [--dry] [-m \"提交信息\"] <仓库内路径=本地路径>");
+    console.log("  例: node github-commit.mjs -m \"fix(dm): 图片走 im 图床\" 'scripts/bili-dm.mjs=/opt/life/scripts/bili-dm.mjs'");
     process.exit(0);
   }
-  const files = paths.map((p) => {
+  const files = fileArgs.map((p) => {
     const [rp, lp] = p.split("=");
     return { path: lp ? rp : rp, content: fs.readFileSync(lp || rp) };
   });
-  commitFiles({ files, message: `chore: ${files.length} 个文件`, dry, log: console.error })
+  commitFiles({ files, message: msg || `chore: ${files.length} 个文件`, dry, log: console.error })
     .then((r) => console.log(JSON.stringify(r, null, 2)))
     .catch((e) => { console.error("❌", e.message); process.exit(1); });
 }
