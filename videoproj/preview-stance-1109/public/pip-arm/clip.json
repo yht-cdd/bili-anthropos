@@ -8,8 +8,8 @@
  "seconds": 8,
  "size": 640,
  "crop": "720x720 at x=280",
- "seamMAE": 1.55,
- "adjacentMAE": 1.54,
+ "seamMAE": 1,
+ "adjacentMAE": 0.97,
  "blinkCount": 4,
  "blinks": [
   {
