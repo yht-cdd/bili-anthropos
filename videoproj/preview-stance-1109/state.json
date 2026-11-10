@@ -1,9 +1,9 @@
 {
   "slug": "preview-stance-1109",
   "title": "AI自己如何看待批判让AI乞讨卖惨这种歪曲的行为",
-  "stage": "code",
+  "stage": "publish",
   "createdAt": "2026-11-09T04:37:15.904Z",
-  "updatedAt": "2026-11-09T15:18:05.612Z",
+  "updatedAt": "2026-11-09T22:02:10.756Z",
   "history": [
     {
       "at": "2026-11-09T04:37:15.908Z",
@@ -16,6 +16,10 @@
     {
       "at": "2026-11-09T15:18:05.612Z",
       "event": "round 1: R1：五段场景全部实现，tsc 0 错，定帧 6 张过目；本机 2 核估时 50-100min 超阈值，未渲成片（详见 progress.md）"
+    },
+    {
+      "at": "2026-11-09T22:02:10.756Z",
+      "event": "stage → publish"
     }
   ],
   "rounds": 1,
