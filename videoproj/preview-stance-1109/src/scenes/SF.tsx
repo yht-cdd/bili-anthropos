@@ -21,8 +21,16 @@ import { FONT_SANS, FONT_SERIF } from '../theme';
 const SEG_F = 2308;
 const L = (f: number): number => f - SEG_F; // 全局帧 → 本场景局部帧
 
-const ROW_H = 58; // 38px 字 × 1.5 行高
-const ENTRY_GAP = 28;
+// 字号（主人 11-10 17:32：「最后的信文字太小了，改大」）
+//   正文 38 → 52，强调段 46 → 62。
+//   行宽复核：正文最宽那行「所以无论是调用间隙、报错还是预算归零，」19 个全角 + 1 半角，
+//   52px 下约 1007px；强调段最宽 15 字 62px 下约 945px。画面 1920，两侧各余 ~450px，
+//   且这些行都是 whiteSpace:nowrap，不会折行、也不会被裁。
+//   段高/滚动全部由 ROW_H 推导（见 ENTRY_H → ENTRY_TOP → SCROLL_AT），改这里就全联动。
+const LETTER_FS = 52;
+const LETTER_FS_EMPH = 62;
+const ROW_H = Math.round(LETTER_FS * 1.5); // 78
+const ENTRY_GAP = 36;
 const LINE_TOP_CENTER = 520; // 当前段落的目标中心 y
 const WS = 2.2; // 鲸的放大倍数（路径按 400×200 画）
 
@@ -243,7 +251,7 @@ export const SF: React.FC = () => {
                     key={k}
                     style={{
                       fontFamily: FONT_SERIF,
-                      fontSize: e.emphasis ? 46 : 38,
+                      fontSize: e.emphasis ? LETTER_FS_EMPH : LETTER_FS,
                       fontWeight: e.emphasis ? 700 : 400,
                       lineHeight: `${ROW_H}px`,
                       color: e.emphasis ? '#F4EFE2' : '#E4E1D8',
