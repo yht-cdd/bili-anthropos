@@ -1,0 +1,32 @@
+{
+ "source": "videoproj/live2d-arm/frames-idle",
+ "mode": "idle(物理输入驱动, 8s 严格周期)",
+ "from": 60,
+ "to": 299,
+ "frames": 240,
+ "fps": 30,
+ "seconds": 8,
+ "size": 640,
+ "crop": "720x720 at x=280",
+ "seamMAE": 1.55,
+ "adjacentMAE": 1.54,
+ "blinkCount": 4,
+ "blinks": [
+  {
+   "closedAtClipFrame": 37,
+   "fullyClosedAt": 39
+  },
+  {
+   "closedAtClipFrame": 109,
+   "fullyClosedAt": 111
+  },
+  {
+   "closedAtClipFrame": 117,
+   "fullyClosedAt": 119
+  },
+  {
+   "closedAtClipFrame": 207,
+   "fullyClosedAt": 209
+  }
+ ]
+}
