@@ -80,6 +80,13 @@ const IP_RE = /(?<![\d.,])((?:25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)\.(?:25[0-5]|2[0-4
 // UA 里的版本号长得太像 IP（Chrome/154.0.0.0），前面 60 字符有浏览器标记就放过
 const UA_HINT = /(Mozilla\/|Chrome\/|Safari\/|Version\/|Edg\/|OPR\/|Gecko\/)/;
 
+// bup 上传协议的 version 字段长这样：version: "2.14.0.0"（build: 2140000）。
+// 它四段数字，形状完全符合 IP，11-12 因此把 scripts/bili-upload.mjs 整个卡住，
+// 而远端那份早就有这个值 —— 说明这条误报会永久挡住这个文件的后续改动。
+// 只放过「紧跟在 version:/ver: 引号后面」这一种形状；
+// 正文里裸写的 IP 仍然照拦（已用探针文件回归验证）。
+const VERSION_HINT = /(?:version|ver)["']?\s*[:=]\s*["']?$/i;
+
 function publicIps(text) {
   const hits = [];
   IP_RE.lastIndex = 0;
@@ -89,6 +96,7 @@ function publicIps(text) {
     if (NON_PUBLIC.test(ip)) continue;
     const before = text.slice(Math.max(0, m.index - 60), m.index);
     if (UA_HINT.test(before)) continue;
+    if (VERSION_HINT.test(before)) continue;
     const around = text.slice(Math.max(0, m.index - 16), m.index + ip.length + 16).replace(/\s+/g, " ");
     if (/\\d|\{\d|\d\}|x\.x\.x/.test(around)) continue;   // 正则/掩码示例
     hits.push(ip);
