@@ -90,8 +90,15 @@ const watched = rows(
   START_SEC,
   END_SEC
 );
+// ⚠️ 这里 11-12 之前是 LIMIT 3 且不报总数，犯的正是上面 watched 那条注释
+//   点名的毛病：把「展示前几条」当成「一共几条」。当天实际 5 条稿件，
+//   台账只列 3 条，新发的那条 updated_at 最旧被切掉，看起来像「没发出去」。
+//   计数一律用 COUNT(*) 真数，LIMIT 只限展示。
+const inProgressCount = count(
+  "SELECT COUNT(*) c FROM videos WHERE state IS NOT NULL AND state NOT IN ('done','published')"
+);
 const inProgress = rows(
-  "SELECT bvid, title, state FROM videos WHERE state IS NOT NULL AND state NOT IN ('done','published') ORDER BY updated_at DESC LIMIT 3"
+  "SELECT bvid, title, state FROM videos WHERE state IS NOT NULL AND state NOT IN ('done','published') ORDER BY updated_at DESC LIMIT 5"
 );
 
 // ── bridge.log ────────────────────────────────────────
@@ -125,7 +132,7 @@ push(`【${day} 的账】`);
 push(`私信：新到 ${dmNew} 条 / 回你 ${ownerTasks} 条`);
 push(`对外发送：${sentTotal} 条${sentDetail ? `（${sentDetail}）` : ""}`);
 push(`看视频：${watchedCount} 条${watched.length ? `（${watched.map((v) => v.bvid).join("、")}${watchedCount > 5 ? " 等" : ""}）` : ""}`);
-push(`进行中的视频：${inProgress.length ? inProgress.map((v) => `${v.bvid} ${v.state}`).join("、") : "无"}`);
+push(`进行中的视频：${inProgressCount} 条${inProgress.length ? `（${inProgress.map((v) => `${v.bvid} ${v.state}`).join("、")}${inProgressCount > 5 ? " 等" : ""}）` : ""}`);
 push(`醒来：${wakeTotal} 次（日切 ${wakeFixed} / 随机 ${Math.max(0, wakeTotal - wakeFixed)}）+ 自主动作 ${autoRounds} 回合`);
 if (fails) push(`失败：${fails} 次（看 exec/bridge.log）`);
 if (!dmNew && !ownerTasks && !autoRounds && !watched.length) push(`（这一天没有发生什么）`);
