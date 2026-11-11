@@ -43,11 +43,33 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { DatabaseSync } from "node:sqlite";
 
 const HOME = process.env.LIFE_HOME || "/opt/life";
 const COOKIE_FILE = process.env.BILI_COOKIE_FILE || path.join(HOME, "secrets/bili_cookie.txt");
 const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36";
+
+// ── 对外动作记账（2026-11-12 补）──────────────────────────
+//   病根：投稿 / 改稿从来不写 sends 表，日报按 kind 统计「对外发送」，
+//   于是稿件这类动作天生少算一条 —— 11-11 投了 BV1gmW163EsT，
+//   11-12 的台账只写了「对外发送 1 条（comment_post 1）」。
+//   target 故意留 NULL：bili-send 的限频用 `target != 'owner'` 计数，
+//   SQL 里 NULL 比较不成立，所以稿件**不会**占掉陌生人的每小时额度
+//   （2026-11-12 在 bili.db 临时副本上实测：闸门计数 0，日报按 kind 数到 1）。
+//   记账失败绝不影响投稿本身，所以整段包在 try 里。
+function recordAction(kind, text) {
+  try {
+    const db = new DatabaseSync(path.join(HOME, "bili/data/bili.db"));
+    db.prepare(
+      "INSERT INTO sends(event_id, kind, target, user_id, text, rpid, sent_at, ok)" +
+      " VALUES (NULL, ?, NULL, NULL, ?, NULL, ?, 1)"
+    ).run(kind, String(text).slice(0, 200), Math.floor(Date.now() / 1000));
+    db.close();
+  } catch (e) {
+    console.error(`⚠️ sends 记账失败（不影响投稿）：${e.message}`);
+  }
+}
 
 const argv = process.argv.slice(2);
 const opt = {};
@@ -403,6 +425,7 @@ async function submitAdd(res) {
     res.bvid = addJson.data.bvid;
     res.aid = addJson.data.aid;
     console.error(`✅ 投稿成功 ${addJson.data.bvid}（aid=${addJson.data.aid}）—— 进审核队列`);
+    recordAction("video_publish", `${addJson.data.bvid} ${title}`);
     return true;
   }
   console.error(`❌ 投稿未成功 code=${addJson && addJson.code} ${addJson && addJson.message || ""}`);
@@ -492,6 +515,7 @@ async function editMeta(bvid) {
     return false;
   }
   console.error(`✅ 改稿提交 ${bvid} —— 会重新进审核`);
+  recordAction("video_edit", `${bvid} ${a.title || ""}`);
 
   // 回读一遍：desc/tag 是不是真的落库（「提交成功」≠「内容进去了」，2026-11-03 教训）
   await new Promise((s) => setTimeout(s, 6000));
