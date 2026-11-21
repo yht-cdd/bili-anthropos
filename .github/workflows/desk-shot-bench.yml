@@ -9,7 +9,7 @@ on:
       frames:
         description: '帧区间，例如 0-59'
         required: false
-        default: '0-59'
+        default: '0-659'
 
 jobs:
   render:

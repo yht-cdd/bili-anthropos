@@ -1,6 +1,6 @@
 name: desk-shot-parallel
 
-# 同一仓库内并行：60 帧拆成 4 段，每段一个 job，最后按序合并。
+# 同一仓库内并行：660 帧拆成 4 段（每段 165 帧），每段一个 job，最后按序合并。
 # 不新建仓库，只在本仓库内并行，符合 GitHub 的使用条款。
 
 on:
@@ -14,7 +14,7 @@ jobs:
     steps:
       - id: p
         run: |
-          echo 'chunks=[{"name":"a","frames":"0-14"},{"name":"b","frames":"15-29"},{"name":"c","frames":"30-44"},{"name":"d","frames":"45-59"}]' >> $GITHUB_OUTPUT
+          echo 'chunks=[{"name":"a","frames":"0-164"},{"name":"b","frames":"165-329"},{"name":"c","frames":"330-494"},{"name":"d","frames":"495-659"}]' >> $GITHUB_OUTPUT
 
   render:
     needs: plan
