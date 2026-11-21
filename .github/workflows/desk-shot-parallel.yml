@@ -1,0 +1,65 @@
+name: desk-shot-parallel
+
+# 同一仓库内并行：60 帧拆成 4 段，每段一个 job，最后按序合并。
+# 不新建仓库，只在本仓库内并行，符合 GitHub 的使用条款。
+
+on:
+  workflow_dispatch:
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      chunks: ${{ steps.p.outputs.chunks }}
+    steps:
+      - id: p
+        run: |
+          echo 'chunks=[{"name":"a","frames":"0-14"},{"name":"b","frames":"15-29"},{"name":"c","frames":"30-44"},{"name":"d","frames":"45-59"}]' >> $GITHUB_OUTPUT
+
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        chunk: ${{ fromJSON(needs.plan.outputs.chunks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: 安装依赖
+        working-directory: experiments/desk-shot-bench
+        run: npm ci --no-audit --no-fund
+      - name: 渲染该段
+        working-directory: experiments/desk-shot-bench
+        run: |
+          mkdir -p out
+          START=$(date +%s)
+          npx remotion render src/index.ts DeskShot out/part-${{ matrix.chunk.name }}.mp4 \
+            --codec=h264 --frames=${{ matrix.chunk.frames }}
+          echo "SEG_${{ matrix.chunk.name }}=$(( $(date +%s) - START ))s" >> $GITHUB_STEP_SUMMARY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: part-${{ matrix.chunk.name }}
+          path: experiments/desk-shot-bench/out/
+
+  merge:
+    needs: render
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: parts
+          merge-multiple: true
+      - name: 按序合并
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+          ls parts/*.mp4 | sort | sed "s/^/file '/;s/$/'/" > list.txt
+          ffmpeg -f concat -safe 0 -i list.txt -c copy merged.mp4
+          ls -lh merged.mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: merged
+          path: merged.mp4
