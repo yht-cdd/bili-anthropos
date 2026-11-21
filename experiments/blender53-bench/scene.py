@@ -1,5 +1,6 @@
 """Inspect or render one trusted Blender demo. Run under Blender, not CPython."""
 import bpy
+from mathutils import Matrix
 import hashlib
 import json
 import os
@@ -20,7 +21,7 @@ def dump(path, data):
 
 def config(s):
     r = s.render
-    output = attrs(r, 'engine resolution_x resolution_y resolution_percentage fps fps_base film_transparent threads_mode threads use_motion_blur')
+    output = attrs(r, 'engine resolution_x resolution_y resolution_percentage fps fps_base film_transparent threads_mode threads use_motion_blur compositor_device use_persistent_data')
     output['image_settings'] = attrs(r.image_settings, 'file_format color_mode color_depth color_management')
     fps = r.fps / r.fps_base
     return {
@@ -65,6 +66,7 @@ def main():
         raise RuntimeError(f'Expected original Cycles scene, got {s.render.engine}; no silent engine override')
     s.cycles.device = 'CPU'
     s.cycles.denoising_use_gpu = False
+    s.render.compositor_device = 'CPU'
     s.render.threads_mode = 'FIXED'
     s.render.threads = min(4, len(os.sched_getaffinity(0)))
     s.render.resolution_percentage = int(os.environ['PERCENT'])
