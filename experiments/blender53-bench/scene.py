@@ -1,6 +1,5 @@
 """Inspect or render one trusted Blender demo. Run under Blender, not CPython."""
 import bpy
-from mathutils import Matrix
 import hashlib
 import json
 import os
@@ -74,13 +73,42 @@ def main():
     s.render.image_settings.file_format = 'PNG'
     start, stride = int(os.environ['FRAME_START']), int(os.environ['FRAME_STEP'])
     n, shards, shard = map(int, (os.environ['FRAME_COUNT'], os.environ['SHARDS'], os.environ['SHARD']))
-    frames = [start + i * stride for i in range(shard * n // shards, (shard + 1) * n // shards)]
-    if not frames or frames[0] < s.frame_start or frames[-1] > s.frame_end or not s.camera:
-        raise ValueError('Benchmark frames must be in the original scene range and have a camera')
+    if not s.camera or not s.frame_start <= start <= s.frame_end:
+        raise ValueError('Source frame must be in the original scene range and have a camera')
+    indices = range(shard * n // shards, (shard + 1) * n // shards)
+    if not indices:
+        raise ValueError('Empty shard')
+    s.frame_set(start)
+    derived = mode != 'inspect' and s.frame_start == s.frame_end
+    if derived:
+        if stride != 1:
+            raise ValueError('The derived camera sweep requires stride 1')
+        # Preserve the source pose and animation. Create a new, unattached camera at
+        # the original evaluated transform and sweep only the horizontal lens shift.
+        dg = bpy.context.evaluated_depsgraph_get()
+        src_camera = s.camera.evaluated_get(dg)
+        world = src_camera.matrix_world.copy()
+        camera_data = s.camera.data.copy()
+        camera_data.animation_data_clear()
+        base_shift = src_camera.data.shift_x
+        camera = bpy.data.objects.new('Benchmark camera', camera_data)
+        s.collection.objects.link(camera)
+        camera.matrix_world = world
+        s.camera = camera
+    elif start + indices[-1] * stride > s.frame_end:
+        raise ValueError('Frame range exceeds the original scene')
     report.update({'effective_scene': config(s), 'shard': shard, 'shards': shards, 'platform': platform.machine(),
-                   'visible_logical_cpus': len(os.sched_getaffinity(0)), 'frames': []})
-    for frame in frames:
-        s.frame_set(frame)
+                   'visible_logical_cpus': len(os.sched_getaffinity(0)), 'frames': [],
+                   'sequence_kind': 'derived-lens-shift' if derived else 'native-frames'})
+    for i in indices:
+        frame = i + 1 if derived else start + i * stride
+        source_frame = start if derived else frame
+        shift = None
+        if derived:
+            shift = base_shift + (-0.035 + 0.070 * i / (n - 1) if n > 1 else 0.0)
+            camera.data.shift_x = shift
+        else:
+            s.frame_set(source_frame)
         path = out / f'frame-{frame:06}.png'
         s.render.filepath = str(path)
         t = time.monotonic()
@@ -91,7 +119,7 @@ def main():
         if 'FINISHED' not in result or header[:8] != b'\x89PNG\r\n\x1a\n':
             raise RuntimeError(f'Invalid render for frame {frame}')
         width, height = (int.from_bytes(header[i:i+4], 'big') for i in (16, 20))
-        report['frames'].append({'frame': frame, 'seconds': round(elapsed, 3), 'width': width, 'height': height,
+        report['frames'].append({'frame': frame, 'source_frame': source_frame, 'lens_shift_x': shift, 'seconds': round(elapsed, 3), 'width': width, 'height': height,
                                  'bytes': path.stat().st_size, 'sha256': sha(path)})
         # Check every output; retain a preview for the pilot, not 100 PNG uploads.
         if mode != 'pilot':

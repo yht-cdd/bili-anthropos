@@ -123,12 +123,19 @@ jobs:
           printf '%s  %s\n' "$BLENDER_SHA" blender.tar.xz | sha256sum -c -
           printf '%s  %s\n' "$SCENE_SHA" demo.blend | sha256sum -c -
           tar -xf blender.tar.xz
+      - name: Install Mesa headless graphics libraries
+        if: inputs.mode != 'inspect'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libegl1 libegl-mesa0 libgl1-mesa-dri libglx-mesa0
       - name: Inspect or render
         env:
           RESULT_DIR: ${{ runner.temp }}/blender53-results
+          LIBGL_ALWAYS_SOFTWARE: '1'
+          EGL_PLATFORM: surfaceless
         run: |
           lscpu
-          "$RUNNER_TEMP/blender53-input/blender-5.3.0-linux-x64/blender" --background --factory-startup --disable-autoexec \
+          "$RUNNER_TEMP/blender53-input/blender-5.3.0-linux-x64/blender" --background --factory-startup --disable-autoexec --gpu-backend opengl \
             "$RUNNER_TEMP/blender53-input/demo.blend" --python-exit-code 2 \
             --python experiments/blender53-bench/scene.py
       - uses: actions/upload-artifact@v4
@@ -137,4 +144,42 @@ jobs:
           name: blender53-result-${{ matrix.shard }}
           path: ${{ runner.temp }}/blender53-results/*.json
           retention-days: 7
-          if-no-files-found: ignore
+          if-no-files-found: error
+
+  collect:
+    if: ${{ inputs.mode == 'benchmark' }}
+    needs: render
+    runs-on: ubuntu-24.04
+    timeout-minutes: 6
+    env:
+      EXPECTED_JOBS: ${{ inputs.jobs }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: blender53-result-*
+          path: results
+      - name: Validate frame coverage and consolidate timings
+        run: |
+          python - <<'PY'
+          import json, os, statistics
+          from pathlib import Path
+          reports = [json.loads(p.read_text()) for p in Path('results').glob('*/result.json')]
+          assert len(reports) == int(os.environ['EXPECTED_JOBS'])
+          frames = sorted((f for j in reports for f in j['frames']), key=lambda f: f['frame'])
+          assert len(frames) == len({f['frame'] for f in frames}) == 100
+          assert frames[0]['frame'] == 1 and frames[-1]['frame'] == 100
+          assert all(f['bytes'] > 24 and f['seconds'] > 0 for f in frames)
+          assert len({f['sha256'] for f in frames}) == 100, 'Camera variants must be distinct images'
+          t = [f['seconds'] for f in frames]
+          summary = {'shards': len(reports), 'frame_count': len(frames), 'unique_images': 100,
+                     'frame_seconds': {'min': min(t), 'median': statistics.median(t), 'max': max(t), 'sum': sum(t)},
+                     'max_rss_kib': max(r['max_rss_kib'] for r in reports), 'effective_scene': reports[0]['effective_scene'],
+                     'sequence_kind': reports[0]['sequence_kind'], 'frames': frames}
+          Path('benchmark.json').write_text(json.dumps(summary, indent=2) + '\n')
+          print(json.dumps({k: v for k, v in summary.items() if k not in ('frames','effective_scene')}, indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: blender53-benchmark-summary
+          path: benchmark.json
+          retention-days: 7
