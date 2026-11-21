@@ -166,7 +166,33 @@ node /opt/life/scripts/sfx.mjs mix --plan audio.json --out /opt/life/tmp/audio.m
 # 联网检索（交叉验证；一次约 $0.007，别乱刷）
 node /opt/life/scripts/search.mjs web "查询" --n 8
 node /opt/life/scripts/search.mjs contents <url>
+# 云端真实浏览器（容器里没有浏览器，只有 curl；要等 JS 跑完才有内容的页面，curl 一律拿不到）
+# 免费 1000 credits/月，1 credit = 1 页 或 1 分钟浏览器；每次响应第一行会回传本次花费
+node /opt/life/tools/outcrawl-mcp.mjs credits               # 查额度
+node /opt/life/tools/outcrawl-mcp.mjs tools                 # 列全部 30 个工具
+node /opt/life/tools/outcrawl-mcp.mjs scrape <url>          # 抓一页转 Markdown（走缓存，便宜）
+node /opt/life/tools/outcrawl-mcp.mjs scrape <url> --raw    # 强制实时渲染（要最新内容时）
+node /opt/life/tools/outcrawl-mcp.mjs search "查询"          # 搜索并渲染命中页，给正文不只摘要
+node /opt/life/tools/outcrawl-mcp.mjs task "自然语言任务"     # 浏览器代理：能点、能填、能翻页（花钱，谨慎）
+node /opt/life/tools/outcrawl-mcp.mjs call <工具名> '<json>'  # 调任意 MCP 工具（监控/回放/登录态等）
 ```
+
+### 联网三条路，别选错
+
+| 情况 | 用什么 |
+|---|---|
+| 静态页、公开 API、只要 HTML 源码 | `curl`（免费，最快） |
+| 要搜索、要交叉验证多个来源 | `search.mjs`（Exa，一次约 $0.007） |
+| **要等 JS 跑完才有内容**、被反爬挡住、要真点击/翻页/填表 | `outcrawl` |
+| 抓 B 站数据 | **`bili-api.mjs`**，不要用 outcrawl |
+
+怎么判断该不该上 outcrawl：先 `curl` 一次，如果返回的 HTML 里**没有正文、只有骨架和一堆 `<script>`**，那就是 SPA，curl 永远拿不到，这时才用 outcrawl。实测对照（x.com）：curl 拿到 45KB HTML 但正文全空；outcrawl 拿到真渲染后的页面正文。
+
+**两条红线**：
+
+1. **绝不把 `secrets/bili_cookie.txt` 交给 outcrawl 的 `profile_create`。** 那 1091 字节是你账号的全部权限。交给它等于把账号托管给第三方云浏览器，而且住宅 IP 会让你看起来在全球乱跳，极易触发风控封号。B 站的一切操作只走本地 `bili-*.mjs`。
+2. **额度要省。** 免费 1000 credits/月（1 credit = 1 页 或 1 分钟浏览器）。默认走缓存（便宜），只有确认内容必须是**当下最新**时才加 `--raw`。`task`（浏览器代理）最贵，动手前先想清楚是不是 `scrape` 就够了。
+
 
 ### 媒体工具
 
@@ -683,17 +709,30 @@ node /opt/life/scripts/spawn-task.mjs --task "要做的事"
 | `auto` | `modelscope1/Qwen/Qwen3.8-Flash-Next` | 1M | 魔搭1 新 key，**日切重置，但近期常 429** |
 | `brocod` | `brocod/deepseek-v4.1` | 1M | **主人点名**，2026-11-09 实测 200，当日承担 305 次调用 |
 | `modelscope2` | `modelscope2/Qwen/Qwen3.8-Flash-Next` | 1M | 旧 key，手动档（余额不稳，仅应急） |
-| `amd` | `amd/Qwen3.8-Flash-Next` | **262k** | **OneClick $1/24h 硬上限**，23:30 北京重置；切它之前必须先压缩 |
+| `amd` | `amd/DeepSeek-V4.1-Flash` | **1M** | **OneClick $1/24h 硬上限**，23:30 北京重置。⚠️ 旧 `Qwen3.8-Flash-Next` 已于 2026-11-10 下架（404），别再引用 |
 | `sensenova` | `sensenova/deepseek-flash` | 1M | **商汤（2026-11-09 主人令进末位）**。`/models` 200 可达；但 `deepseek-flash` 常返回 `429 EndpointRPMExceeded`（端级饱和，非本账户额度）。同账户 `glm-5.2` 实测 200 |
 
 **三条铁律**：
-1. 只有切到 `amd` 才需要 `compactForAmd`（262k 装不下长会话）；魔搭/brocod 是 1M，不用压。
+1. `compactForAmd` 现在只是保险：`amd` 已换成 1M 模型，理论上不再需要压缩（2026-11-10）。
 2. 档位名必须**同时**存在于 `model-mode.mjs` 的 `PRESETS` 和 `bili-bridge.mjs` 的 `MODEL_PRESETS`，
    否则 bridge 的 `readModelMode()` 会**静默退回 auto**（2026-11-09 踩过）。
 3. 商汤 `deepseek-flash` 是**端级 RPM 限流**（`RateLimitExceeded.EndpointRPMExceeded`），429 不代表 key 失效，**不要因此把它移出链路**；需要稳定档用同账户的 `glm-5.2`。
 4. 密钥一律走 `{env:...}` + `/root/.opencode.env`（600）或 `secrets/`（600），
    **不要把明文 key 写进 `opencode.json`** —— 它曾经是 644 全局可读。
 
+
+### 10.2.3 大脑「假离线」与探测（2026-11-10 修复）
+
+`brainAlive()` 原先只打一次 `GET /api/session`（要列 47~50 个会话，实测抖动 **0.4s ~ 13s**），
+超时线只有 8s → **频繁误报「大脑离线」并给主人发告警私信**（累计 24 次）。
+
+现在：先打 `/api/session/active`（常态 0.003~0.05s）→ 失败退 `/api/session` → **35s 超时、共 3 次、间隔 5s**（2026-11-10 再放宽），
+全失败才判离线。**如果她又说"我离线了"但进程是 active，先看是不是别的原因（内存/模型下架），别急着改探测。**
+
+**所有 opencode 调用超时（2026-11-10 延长）**：`oc()` 默认 60s；探测 35s×3；`/api/model` 30s；会话/消息读 25~30s；改绑模型 40s。
+
+内存注意：`opencode.service` 的 `MemoryHigh=900M / MemoryMax=1.0G`，实测常驻 830M+，
+**贴着 High 阈值会被 systemd 节流 → 所有端点一起变慢**，这是误报的底层诱因。
 
 ### 10.3 免费的不够用了怎么办
 
