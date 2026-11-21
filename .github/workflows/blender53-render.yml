@@ -1,0 +1,138 @@
+name: Blender 5.3 CPU render benchmark
+run-name: Blender 5.3 ${{ inputs.mode }} · ${{ inputs.jobs }} shards
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        options: [inspect, pilot, benchmark]
+        default: inspect
+      jobs:
+        type: choice
+        options: ['1', '20', '100']
+        default: '1'
+      frame_start:
+        type: number
+        default: 1
+      frame_count:
+        type: choice
+        options: ['1', '100']
+        default: '1'
+      frame_step:
+        type: number
+        default: 1
+      percent:
+        type: choice
+        options: ['25', '50', '100']
+        default: '25'
+      samples:
+        type: choice
+        options: ['8', '16', '32', '64']
+        default: '8'
+
+permissions:
+  contents: read
+concurrency:
+  group: blender53-render-bench
+  cancel-in-progress: false
+
+env:
+  BLENDER_SHA: dacb8264197a3f7fda6001285a5a506fc97ee943881261c2c3bd63c882f22e05
+  BLENDER_URL: https://download.blender.org/release/Blender5.3/blender-5.3.0-linux-x64.tar.xz
+  SCENE_URL: https://download.blender.org/demo/splash/blender-5.3-splash.blend
+
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    outputs:
+      matrix: ${{ steps.matrix.outputs.matrix }}
+    steps:
+      - id: matrix
+        env:
+          REQUESTED: ${{ inputs.jobs }}
+          FRAME_COUNT: ${{ inputs.frame_count }}
+          FRAME_START: ${{ inputs.frame_start }}
+          FRAME_STEP: ${{ inputs.frame_step }}
+          BENCH_MODE: ${{ inputs.mode }}
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import os, json
+          mode = os.environ['BENCH_MODE']
+          n, count, start, step = [int(os.environ[k]) for k in ('REQUESTED','FRAME_COUNT','FRAME_START','FRAME_STEP')]
+          assert 1 <= step <= 100 and 0 <= start <= 1000000
+          if mode != 'benchmark':
+              assert n == count == 1
+          else:
+              assert count == 100 and n in (1,20,100)
+          print('matrix=' + json.dumps(list(range(n))))
+          PY
+      - uses: actions/cache/restore@v4
+        id: cache
+        with:
+          path: ${{ runner.temp }}/blender53-input
+          key: blender53-official-splash-20261111-v1
+      - name: Fetch official Blender and scene once
+        if: steps.cache.outputs.cache-hit != 'true'
+        working-directory: ${{ runner.temp }}
+        run: |
+          mkdir -p blender53-input
+          curl --fail --silent --show-error --location --retry 3 --max-time 300 -o blender53-input/blender.tar.xz "$BLENDER_URL"
+          printf '%s  %s\n' "$BLENDER_SHA" blender53-input/blender.tar.xz | sha256sum -c -
+          curl --fail --silent --show-error --location --retry 3 --max-time 300 -o blender53-input/demo.blend "$SCENE_URL"
+          test "$(stat -c %s blender53-input/demo.blend)" = 336974572
+          (cd blender53-input && sha256sum demo.blend > scene.sha256)
+      - uses: actions/cache/save@v4
+        if: steps.cache.outputs.cache-hit != 'true'
+        with:
+          path: ${{ runner.temp }}/blender53-input
+          key: blender53-official-splash-20261111-v1
+
+  render:
+    needs: plan
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    env:
+      BENCH_MODE: ${{ inputs.mode }}
+      FRAME_START: ${{ inputs.frame_start }}
+      FRAME_COUNT: ${{ inputs.frame_count }}
+      FRAME_STEP: ${{ inputs.frame_step }}
+      SHARDS: ${{ inputs.jobs }}
+      SHARD: ${{ matrix.shard }}
+      PERCENT: ${{ inputs.percent }}
+      SAMPLES: ${{ inputs.samples }}
+      RESULT_DIR: ${{ runner.temp }}/blender53-results
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: experiments/blender53-bench
+          persist-credentials: false
+      - uses: actions/cache/restore@v4
+        with:
+          path: ${{ runner.temp }}/blender53-input
+          key: blender53-official-splash-20261111-v1
+          fail-on-cache-miss: true
+      - name: Verify and unpack Blender
+        working-directory: ${{ runner.temp }}/blender53-input
+        run: |
+          printf '%s  %s\n' "$BLENDER_SHA" blender.tar.xz | sha256sum -c -
+          sha256sum -c scene.sha256
+          tar -xf blender.tar.xz
+      - name: Inspect or render
+        run: |
+          lscpu
+          "$RUNNER_TEMP/blender53-input/blender-5.3.0-linux-x64/blender" --background --factory-startup --disable-autoexec \
+            "$RUNNER_TEMP/blender53-input/demo.blend" --python-exit-code 2 \
+            --python experiments/blender53-bench/scene.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: blender53-result-${{ matrix.shard }}
+          path: ${{ runner.temp }}/blender53-results/*.json
+          retention-days: 7
+          if-no-files-found: ignore
