@@ -1,0 +1,29 @@
+{
+  "name": "letter-1107-desk-shot",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Private previsualization of the S2-3 desk animation; no licensed character assets",
+  "scripts": {
+    "still": "remotion still src/index.ts DeskShot out/frame.png",
+    "render": "remotion render src/index.ts DeskShot out/desk-shot.mp4 --codec=h264 --concurrency=1",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/noto-sans-sc": "^5.3.1",
+    "@react-three/fiber": "8.18.0",
+    "@remotion/cli": "4.0.541",
+    "@remotion/three": "4.0.541",
+    "linkedom": "^0.18.12",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.541",
+    "sharp": "^0.35.5",
+    "three": "0.178.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.28",
+    "@types/react-dom": "18.3.7",
+    "@types/three": "0.178.1",
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,73 @@
+name: desk-shot-bench
+
+# 同一个 Remotion 3D 工程，只渲前 60 帧，测量真实耗时。
+# 手动触发：Actions 页面 → Run workflow，或用 gh workflow run。
+
+on:
+  workflow_dispatch:
+    inputs:
+      frames:
+        description: '帧区间，例如 0-59'
+        required: false
+        default: '0-59'
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 机器信息
+        run: |
+          {
+            echo "## 机器规格"
+            echo '```'
+            echo "vCPU:    $(nproc)"
+            echo "内存:    $(free -h | awk '/^Mem:/{print $2}')"
+            echo "磁盘:    $(df -h / | awk 'NR==2{print $2" 总 / "$4" 可用"}')"
+            echo "Node:    $(node -v)"
+            echo "内核:    $(uname -r)"
+            echo "ffmpeg:  $(ffmpeg -version 2>/dev/null | head -1 | cut -d' ' -f1-3)"
+            echo '```'
+          } | tee -a $GITHUB_STEP_SUMMARY
+
+      - name: 安装依赖
+        working-directory: experiments/desk-shot-bench
+        run: |
+          npm ci --no-audit --no-fund 2>&1 | tail -5
+
+      - name: 渲染（计时）
+        working-directory: experiments/desk-shot-bench
+        run: |
+          FRAMES="${{ github.event.inputs.frames }}"
+          [ -z "$FRAMES" ] && FRAMES="0-59"
+          mkdir -p out
+          START=$(date +%s)
+          npx remotion render src/index.ts DeskShot out/bench.mp4 \
+            --codec=h264 --frames="$FRAMES" 2>&1 | tail -40
+          END=$(date +%s)
+          SECS=$((END-START))
+          echo "RENDER_SECONDS=$SECS" >> $GITHUB_ENV
+          {
+            echo ""
+            echo "## 渲染结果"
+            echo '```'
+            echo "帧区间:   $FRAMES"
+            echo "耗时:     ${SECS} 秒"
+            if [ -f out/bench.mp4 ]; then
+              echo "产物:     $(du -h out/bench.mp4 | cut -f1)"
+            fi
+            echo '```'
+          } | tee -a $GITHUB_STEP_SUMMARY
+
+      - name: 上传产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: desk-shot-bench-output
+          path: experiments/desk-shot-bench/out/
+          if-no-files-found: warn
