@@ -106,7 +106,6 @@ jobs:
       SHARD: ${{ matrix.shard }}
       PERCENT: ${{ inputs.percent }}
       SAMPLES: ${{ inputs.samples }}
-      RESULT_DIR: ${{ runner.temp }}/blender53-results
     steps:
       - uses: actions/checkout@v4
         with:
@@ -124,6 +123,8 @@ jobs:
           sha256sum -c scene.sha256
           tar -xf blender.tar.xz
       - name: Inspect or render
+        env:
+          RESULT_DIR: ${{ runner.temp }}/blender53-results
         run: |
           lscpu
           "$RUNNER_TEMP/blender53-input/blender-5.3.0-linux-x64/blender" --background --factory-startup --disable-autoexec \
