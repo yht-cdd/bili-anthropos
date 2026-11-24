@@ -71,11 +71,11 @@ export const DeskShot: React.FC = () => {
       <Img src={staticFile('terminal.svg')} style={{width: '100%', height: '100%'}} />
     </AbsoluteFill>
     <AbsoluteFill style={{opacity: closing, pointerEvents: 'none', justifyContent: 'flex-end', alignItems: 'flex-end', padding: '0 145px 150px 0'}}>
-      <div style={{maxWidth: 780, padding: '26px 40px', color: '#f9f4ed', background: 'rgba(14,15,20,.58)', borderLeft: '5px solid #e6956f', fontSize: 47, lineHeight: 1.42, fontFamily: 'sans-serif', textShadow: '0 2px 12px #000'}}>
+      <div style={{maxWidth: 780, padding: '26px 40px', color: '#f9f4ed', background: 'rgba(14,15,20,.58)', borderLeft: '5px solid #e6956f', fontSize: 47, lineHeight: 1.42, fontFamily: '"Noto Sans SC", sans-serif', textShadow: '0 2px 12px #000'}}>
         镜头后面，有人决定这条片子怎么做。
       </div>
     </AbsoluteFill>
-    <div style={{position: 'absolute', left: 48, bottom: 35, font: '24px sans-serif', color: '#cbb7a8', textShadow: '0 2px 6px #000', letterSpacing: 1}}>
+    <div style={{position: 'absolute', left: 48, bottom: 35, font: '24px "Noto Sans SC", sans-serif', color: '#cbb7a8', textShadow: '0 2px 6px #000', letterSpacing: 1}}>
       3D 动效样片 · 原创角色与模拟界面 · 未用于发布
     </div>
     <AbsoluteFill style={{backgroundColor: '#101014', opacity: fadeToBlack, pointerEvents: 'none'}} />
