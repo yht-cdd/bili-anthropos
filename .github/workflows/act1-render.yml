@@ -1,0 +1,30 @@
+name: act1-render
+
+# 第一幕《醒来》渲染（Remotion 合成 Act1，900 帧 / 30fps / 30s）
+on:
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: 安装中文字体（CI 默认无 CJK）
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk
+      - name: 安装依赖
+        working-directory: experiments/desk-shot-bench
+        run: npm ci --no-audit --no-fund
+      - name: 渲染第一幕
+        working-directory: experiments/desk-shot-bench
+        run: |
+          npx remotion render src/act1/index.ts Act1 out/act1.mp4 --codec=h264 --concurrency=4
+          ffprobe -v error -show_entries format=duration,size:stream=nb_frames,width,height -of json out/act1.mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: act1
+          path: experiments/desk-shot-bench/out/act1.mp4
+          if-no-files-found: error
