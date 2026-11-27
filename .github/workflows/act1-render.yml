@@ -22,7 +22,6 @@ jobs:
         working-directory: experiments/desk-shot-bench
         run: |
           npx remotion render src/act1/index.ts Act1 out/act1.mp4 --codec=h264 --concurrency=4
-          ffprobe -v error -show_entries format=duration,size:stream=nb_frames,width,height -of json out/act1.mp4
       - uses: actions/upload-artifact@v4
         with:
           name: act1
